@@ -1,0 +1,16 @@
+[6.421s] Invoking command in '/home/f1/f1tenth_ws/build/key_teleop': PYTHONPATH=/home/f1/f1tenth_ws/build/key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/key_teleop/build --no-deps symlink_data
+[8.312s] running develop
+[9.117s] running egg_info
+[9.118s] writing key_teleop.egg-info/PKG-INFO
+[9.119s] writing dependency_links to key_teleop.egg-info/dependency_links.txt
+[9.121s] writing entry points to key_teleop.egg-info/entry_points.txt
+[9.122s] writing requirements to key_teleop.egg-info/requires.txt
+[9.123s] writing top-level names to key_teleop.egg-info/top_level.txt
+[9.296s] reading manifest file 'key_teleop.egg-info/SOURCES.txt'
+[9.300s] writing manifest file 'key_teleop.egg-info/SOURCES.txt'
+[9.495s] running build_ext
+[9.497s] Creating /home/f1/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key-teleop.egg-link (link to .)
+[9.501s] Installing key_teleop script to /home/f1/f1tenth_ws/install/key_teleop/lib/key_teleop
+[9.502s] 
+[9.503s] Installed /home/f1/f1tenth_ws/build/key_teleop
+[9.503s] running symlink_data

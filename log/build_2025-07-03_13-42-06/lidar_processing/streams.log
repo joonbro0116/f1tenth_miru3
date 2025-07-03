@@ -1,0 +1,184 @@
+[1.817s] Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/lidar_processing -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/lidar_processing
+[3.174s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.174s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.175s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.180s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[3.392s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.463s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[4.227s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.515s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[4.525s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.265s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[5.845s] -- Found pcl_conversions: 2.2.1 (/opt/ros/foxy/share/pcl_conversions/cmake)
+[6.888s] -- Checking for module 'eigen3'
+[7.076s] --   Found eigen3, version 3.3.7
+[7.426s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[7.427s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[7.914s] -- Found Boost: /usr/include (found suitable version "1.71.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex 
+[8.007s] -- Checking for module 'flann'
+[8.126s] --   Found flann, version 1.9.1
+[8.471s] -- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  
+[8.884s] -- The imported target "vtkParseOGLExt" references the file
+[8.885s]    "/usr/bin/vtkParseOGLExt-7.1"
+[8.885s] but this file does not exist.  Possible reasons include:
+[8.886s] * The file was deleted, renamed, or moved to another location.
+[8.886s] * An install or uninstall procedure did not complete successfully.
+[8.887s] * The installation package was faulty and contained
+[8.887s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[8.888s] but not all the files it references.
+[8.888s] 
+[8.897s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[8.898s]    "/usr/lib/aarch64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[8.899s] but this file does not exist.  Possible reasons include:
+[8.899s] * The file was deleted, renamed, or moved to another location.
+[8.900s] * An install or uninstall procedure did not complete successfully.
+[8.900s] * The installation package was faulty and contained
+[8.901s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[8.902s] but not all the files it references.
+[8.911s] 
+[8.912s] -- The imported target "vtk" references the file
+[8.912s]    "/usr/bin/vtk"
+[8.913s] but this file does not exist.  Possible reasons include:
+[8.913s] * The file was deleted, renamed, or moved to another location.
+[8.914s] * An install or uninstall procedure did not complete successfully.
+[8.914s] * The installation package was faulty and contained
+[8.915s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[8.915s] but not all the files it references.
+[8.916s] 
+[8.916s] -- The imported target "pvtk" references the file
+[8.916s]    "/usr/bin/pvtk"
+[8.917s] but this file does not exist.  Possible reasons include:
+[8.917s] * The file was deleted, renamed, or moved to another location.
+[8.918s] * An install or uninstall procedure did not complete successfully.
+[8.918s] * The installation package was faulty and contained
+[8.922s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[8.923s] but not all the files it references.
+[8.923s] 
+[9.067s] -- Checking for module 'libusb-1.0'
+[9.188s] --   Found libusb-1.0, version 1.0.23
+[9.481s] -- Found USB_10: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[9.900s] -- Found OpenNI: /usr/lib/libOpenNI.so  
+[9.900s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[10.335s] -- Found OpenNI2: /usr/lib/libOpenNI2.so  
+[10.336s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[10.337s] ** WARNING ** io features related to pcap will be disabled
+[10.338s] ** WARNING ** io features related to png will be disabled
+[10.419s] -- Found libusb-1.0: /usr/include  
+[10.420s] ** WARNING ** io features related to libusb-1.0 will be disabled
+[10.454s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[10.489s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[10.665s] -- Found Qhull: optimized;/usr/lib/aarch64-linux-gnu/libqhull.so;debug;/usr/lib/aarch64-linux-gnu/libqhull.so  
+[10.666s] -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/aarch64-linux-gnu/libqhull.so;debug;/usr/lib/aarch64-linux-gnu/libqhull.so)
+[10.703s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[10.774s] -- looking for PCL_COMMON
+[10.779s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[10.781s] -- looking for PCL_KDTREE
+[10.787s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[10.788s] -- looking for PCL_OCTREE
+[10.793s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[10.794s] -- looking for PCL_SEARCH
+[10.798s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[10.800s] -- looking for PCL_SAMPLE_CONSENSUS
+[10.804s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[10.805s] -- looking for PCL_FILTERS
+[10.810s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[10.811s] -- looking for PCL_2D
+[10.813s] -- Found PCL_2D: /usr/include/pcl-1.10  
+[10.815s] -- looking for PCL_GEOMETRY
+[10.816s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.10  
+[10.817s] -- looking for PCL_IO
+[10.822s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[10.824s] -- looking for PCL_FEATURES
+[10.828s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[10.830s] -- looking for PCL_ML
+[10.835s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[10.837s] -- looking for PCL_SEGMENTATION
+[10.842s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[10.844s] -- looking for PCL_VISUALIZATION
+[10.850s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[10.852s] -- looking for PCL_SURFACE
+[10.858s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[10.860s] -- looking for PCL_REGISTRATION
+[10.865s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[10.867s] -- looking for PCL_KEYPOINTS
+[10.873s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[10.875s] -- looking for PCL_TRACKING
+[10.880s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[10.882s] -- looking for PCL_RECOGNITION
+[10.888s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[10.890s] -- looking for PCL_STEREO
+[10.896s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[10.898s] -- looking for PCL_APPS
+[10.904s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[10.908s] -- looking for PCL_IN_HAND_SCANNER
+[10.910s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10  
+[10.911s] -- looking for PCL_POINT_CLOUD_EDITOR
+[10.915s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10  
+[10.916s] -- looking for PCL_OUTOFCORE
+[10.923s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[10.924s] -- looking for PCL_PEOPLE
+[10.930s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[10.937s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;/usr/lib/aarch64-linux-gnu/libboost_system.so;/usr/lib/aarch64-linux-gnu/libboost_filesystem.so;/usr/lib/aarch64-linux-gnu/libboost_date_time.so;/usr/lib/aarch64-linux-gnu/libboost_iostreams.so;/usr/lib/aarch64-linux-gnu/libboost_regex.so;optimized;/usr/lib/aarch64-linux-gnu/libqhull.so;debug;/usr/lib/aarch64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/aarch64-linux-gnu/libfreetype.so;/usr/lib/aarch64-linux-gnu/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/aarch64-linux-gnu/libjpeg.so;/usr/lib/aarch64-linux-gnu/libpng.so;/usr/lib/aarch64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;vtkIOXMLParser;/usr/lib/aarch64-linux-gnu/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;FLANN::FLANN  
+[11.506s] -- Configuring done
+[11.914s] -- Generating done
+[12.045s] -- Build files have been written to: /home/f1/f1tenth_ws/build/lidar_processing
+[12.639s] Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/lidar_processing -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/lidar_processing
+[12.658s] Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/lidar_processing -- -j6 -l6
+[12.934s] [35m[1mScanning dependencies of target lidar_node[0m
+[13.308s] [ 33%] [32mBuilding CXX object CMakeFiles/lidar_node.dir/src/lidar_node.cpp.o[0m
+[13.332s] [ 66%] [32mBuilding CXX object CMakeFiles/lidar_node.dir/src/lidar_processor.cpp.o[0m
+[13.381s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:1:26:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[13.383s]     1 | class LidarNode : public [01;31m[Krclcpp[m[K::Node {
+[13.384s]       |                          [01;31m[K^~~~~~[m[K
+[13.385s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:1:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[KNode[m[K’
+[13.385s]     1 | class LidarNode : public rclcpp::[01;31m[KNode[m[K {
+[13.386s]       |                                  [01;31m[K^~~~[m[K
+[13.386s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:2:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kpublic[m[K’
+[13.386s]     2 | [01;31m[Kpublic[m[K:
+[13.387s]       | [01;31m[K^~~~~~[m[K
+[13.388s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:2:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kpublic[m[K’
+[13.388s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:1:39:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[13.388s]     1 | class LidarNode : public rclcpp::Node [01;36m[K{[m[K
+[13.389s]       |                                       [01;36m[K^[m[K
+[13.389s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:14:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+[13.390s]    14 | [01;31m[Kprivate[m[K:
+[13.390s]       | [01;31m[K^~~~~~~[m[K
+[13.391s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:33:3:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarProcessor[m[K’ does not name a type
+[13.391s]    33 |   [01;31m[KLidarProcessor[m[K processor_;  // 전처리 클래스 인스턴스
+[13.392s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[13.392s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:34:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ does not name a type
+[13.393s]    34 |   [01;31m[Krclcpp[m[K::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr sub_;
+[13.393s]       |   [01;31m[K^~~~~~[m[K
+[13.394s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:35:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ does not name a type
+[13.394s]    35 |   [01;31m[Krclcpp[m[K::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr pub_;
+[13.394s]       |   [01;31m[K^~~~~~[m[K
+[13.395s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:36:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[13.395s]    36 | [01;31m[K}[m[K;
+[13.396s]       | [01;31m[K^[m[K
+[13.396s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[13.397s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:40:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[13.397s]    40 |   [01;31m[Krclcpp[m[K::init(argc, argv);
+[13.397s]       |   [01;31m[K^~~~~~[m[K
+[13.398s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:41:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[13.398s]    41 |   [01;31m[Krclcpp[m[K::spin(std::make_shared<LidarNode>());
+[13.399s]       |   [01;31m[K^~~~~~[m[K
+[13.399s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:41:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_shared[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[13.400s]    41 |   rclcpp::spin(std::[01;31m[Kmake_shared[m[K<LidarNode>());
+[13.400s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[13.400s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::make_shared[m[K’ is defined in header ‘[01m[K<memory>[m[K’; did you forget to ‘[01m[K#include <memory>[m[K’?
+[13.401s]   +++ |+[32m[K#include <memory>[m[K
+[13.401s]     1 | class LidarNode : public rclcpp::Node {
+[13.402s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:41:42:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[13.402s]    41 |   rclcpp::spin(std::make_shared<LidarNode[01;31m[K>[m[K());
+[13.402s]       |                                          [01;31m[K^[m[K
+[13.403s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:41:44:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[13.403s]    41 |   rclcpp::spin(std::make_shared<LidarNode>([01;31m[K)[m[K);
+[13.404s]       |                                            [01;31m[K^[m[K
+[13.404s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/lidar_node.cpp:42:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[13.405s]    42 |   [01;31m[Krclcpp[m[K::shutdown();
+[13.405s]       |   [01;31m[K^~~~~~[m[K
+[13.405s] make[2]: *** [CMakeFiles/lidar_node.dir/build.make:63: CMakeFiles/lidar_node.dir/src/lidar_node.cpp.o] Error 1
+[13.406s] make[2]: *** Waiting for unfinished jobs....
+[49.217s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lidar_node.dir/all] Error 2
+[49.218s] make: *** [Makefile:141: all] Error 2
+[49.230s] Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/lidar_processing -- -j6 -l6

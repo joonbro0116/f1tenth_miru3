@@ -1,0 +1,59 @@
+[1.964s] Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/lidar_processing -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/lidar_processing
+[3.454s] -- The C compiler identification is GNU 9.4.0
+[3.454s] -- The CXX compiler identification is GNU 9.4.0
+[3.455s] -- Check for working C compiler: /usr/bin/cc
+[3.527s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.552s] -- Detecting C compiler ABI info
+[4.213s] -- Detecting C compiler ABI info - done
+[4.325s] -- Detecting C compile features
+[4.327s] -- Detecting C compile features - done
+[4.347s] -- Check for working CXX compiler: /usr/bin/c++
+[4.898s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[4.904s] -- Detecting CXX compiler ABI info
+[5.484s] -- Detecting CXX compiler ABI info - done
+[5.568s] -- Detecting CXX compile features
+[5.573s] -- Detecting CXX compile features - done
+[5.598s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[5.836s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[5.838s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.197s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[7.524s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[8.012s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.100s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[8.817s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[9.012s] -- Found FastRTPS: /opt/ros/foxy/include  
+[9.584s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.021s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[10.033s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.040s] -- Looking for pthread.h
+[10.522s] -- Looking for pthread.h - found
+[10.524s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[10.997s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[10.999s] -- Looking for pthread_create in pthreads
+[11.378s] -- Looking for pthread_create in pthreads - not found
+[11.380s] -- Looking for pthread_create in pthread
+[11.827s] -- Looking for pthread_create in pthread - found
+[11.834s] -- Found Threads: TRUE  
+[12.747s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[13.327s] -- Found pcl_conversions: 2.2.1 (/opt/ros/foxy/share/pcl_conversions/cmake)
+[14.150s] CMake Error at CMakeLists.txt:23 (find_package):
+[14.150s]   By not providing "Findpcl_ros.cmake" in CMAKE_MODULE_PATH this project has
+[14.151s]   asked CMake to find a package configuration file provided by "pcl_ros", but
+[14.151s]   CMake did not find one.
+[14.152s] 
+[14.152s]   Could not find a package configuration file provided by "pcl_ros" with any
+[14.152s]   of the following names:
+[14.153s] 
+[14.153s]     pcl_rosConfig.cmake
+[14.154s]     pcl_ros-config.cmake
+[14.154s] 
+[14.155s]   Add the installation prefix of "pcl_ros" to CMAKE_PREFIX_PATH or set
+[14.155s]   "pcl_ros_DIR" to a directory containing one of the above files.  If
+[14.155s]   "pcl_ros" provides a separate development package or SDK, be sure it has
+[14.156s]   been installed.
+[14.156s] 
+[14.157s] 
+[14.168s] -- Configuring incomplete, errors occurred!
+[14.168s] See also "/home/f1/f1tenth_ws/build/lidar_processing/CMakeFiles/CMakeOutput.log".
+[14.169s] See also "/home/f1/f1tenth_ws/build/lidar_processing/CMakeFiles/CMakeError.log".
+[14.208s] Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/lidar_processing -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/lidar_processing

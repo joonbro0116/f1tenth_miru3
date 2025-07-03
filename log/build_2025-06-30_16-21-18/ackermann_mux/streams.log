@@ -1,0 +1,57 @@
+[0.257s] Invoking command in '/home/f1/f1tenth_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/ackermann_mux
+[3.358s] -- The C compiler identification is GNU 9.4.0
+[3.359s] -- The CXX compiler identification is GNU 9.4.0
+[3.359s] -- Check for working C compiler: /usr/bin/cc
+[3.360s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.360s] -- Detecting C compiler ABI info
+[3.361s] -- Detecting C compiler ABI info - done
+[3.363s] -- Detecting C compile features
+[3.363s] -- Detecting C compile features - done
+[3.364s] -- Check for working CXX compiler: /usr/bin/c++
+[3.364s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.365s] -- Detecting CXX compiler ABI info
+[3.650s] -- Detecting CXX compiler ABI info - done
+[3.757s] -- Detecting CXX compile features
+[3.761s] -- Detecting CXX compile features - done
+[3.780s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.923s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.926s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.141s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.368s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[5.744s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.787s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[6.518s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[6.746s] -- Found FastRTPS: /opt/ros/foxy/include  
+[7.323s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.772s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[7.784s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.791s] -- Looking for pthread.h
+[8.327s] -- Looking for pthread.h - found
+[8.329s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.850s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[8.851s] -- Looking for pthread_create in pthreads
+[9.251s] -- Looking for pthread_create in pthreads - not found
+[9.254s] -- Looking for pthread_create in pthread
+[9.739s] -- Looking for pthread_create in pthread - found
+[9.748s] -- Found Threads: TRUE  
+[10.826s] CMake Error at CMakeLists.txt:16 (find_package):
+[10.826s]   By not providing "Findackermann_msgs.cmake" in CMAKE_MODULE_PATH this
+[10.827s]   project has asked CMake to find a package configuration file provided by
+[10.827s]   "ackermann_msgs", but CMake did not find one.
+[10.828s] 
+[10.828s]   Could not find a package configuration file provided by "ackermann_msgs"
+[10.829s]   with any of the following names:
+[10.829s] 
+[10.829s]     ackermann_msgsConfig.cmake
+[10.831s]     ackermann_msgs-config.cmake
+[10.831s] 
+[10.833s]   Add the installation prefix of "ackermann_msgs" to CMAKE_PREFIX_PATH or set
+[10.833s]   "ackermann_msgs_DIR" to a directory containing one of the above files.  If
+[10.833s]   "ackermann_msgs" provides a separate development package or SDK, be sure it
+[10.834s]   has been installed.
+[10.834s] 
+[10.835s] 
+[10.844s] -- Configuring incomplete, errors occurred!
+[10.845s] See also "/home/f1/f1tenth_ws/build/ackermann_mux/CMakeFiles/CMakeOutput.log".
+[10.845s] See also "/home/f1/f1tenth_ws/build/ackermann_mux/CMakeFiles/CMakeError.log".
+[10.893s] Invoked command in '/home/f1/f1tenth_ws/build/ackermann_mux' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/ackermann_mux

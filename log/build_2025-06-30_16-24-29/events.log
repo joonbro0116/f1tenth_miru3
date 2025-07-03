@@ -1,0 +1,191 @@
+[0.000000] (-) TimerEvent: {}
+[0.002442] (ackermann_mux) JobQueued: {'identifier': 'ackermann_mux', 'dependencies': OrderedDict()}
+[0.002612] (key_teleop) JobQueued: {'identifier': 'key_teleop', 'dependencies': OrderedDict()}
+[0.002741] (mouse_teleop) JobQueued: {'identifier': 'mouse_teleop', 'dependencies': OrderedDict()}
+[0.003451] (teleop_tools_msgs) JobQueued: {'identifier': 'teleop_tools_msgs', 'dependencies': OrderedDict()}
+[0.003581] (vesc_msgs) JobQueued: {'identifier': 'vesc_msgs', 'dependencies': OrderedDict()}
+[0.003707] (joy_teleop) JobQueued: {'identifier': 'joy_teleop', 'dependencies': OrderedDict([('teleop_tools_msgs', '/home/f1/f1tenth_ws/install/teleop_tools_msgs')])}
+[0.004249] (vesc_ackermann) JobQueued: {'identifier': 'vesc_ackermann', 'dependencies': OrderedDict([('vesc_msgs', '/home/f1/f1tenth_ws/install/vesc_msgs')])}
+[0.004406] (vesc_driver) JobQueued: {'identifier': 'vesc_driver', 'dependencies': OrderedDict([('vesc_msgs', '/home/f1/f1tenth_ws/install/vesc_msgs')])}
+[0.004711] (teleop_tools) JobQueued: {'identifier': 'teleop_tools', 'dependencies': OrderedDict([('key_teleop', '/home/f1/f1tenth_ws/install/key_teleop'), ('teleop_tools_msgs', '/home/f1/f1tenth_ws/install/teleop_tools_msgs'), ('joy_teleop', '/home/f1/f1tenth_ws/install/joy_teleop')])}
+[0.005102] (vesc) JobQueued: {'identifier': 'vesc', 'dependencies': OrderedDict([('vesc_msgs', '/home/f1/f1tenth_ws/install/vesc_msgs'), ('vesc_ackermann', '/home/f1/f1tenth_ws/install/vesc_ackermann'), ('vesc_driver', '/home/f1/f1tenth_ws/install/vesc_driver')])}
+[0.005247] (f1tenth_stack) JobQueued: {'identifier': 'f1tenth_stack', 'dependencies': OrderedDict([('ackermann_mux', '/home/f1/f1tenth_ws/install/ackermann_mux'), ('teleop_tools_msgs', '/home/f1/f1tenth_ws/install/teleop_tools_msgs'), ('vesc_msgs', '/home/f1/f1tenth_ws/install/vesc_msgs'), ('joy_teleop', '/home/f1/f1tenth_ws/install/joy_teleop'), ('vesc_ackermann', '/home/f1/f1tenth_ws/install/vesc_ackermann'), ('vesc_driver', '/home/f1/f1tenth_ws/install/vesc_driver'), ('vesc', '/home/f1/f1tenth_ws/install/vesc')])}
+[0.005550] (vesc_msgs) JobStarted: {'identifier': 'vesc_msgs'}
+[0.046341] (teleop_tools_msgs) JobStarted: {'identifier': 'teleop_tools_msgs'}
+[0.093743] (ackermann_mux) JobStarted: {'identifier': 'ackermann_mux'}
+[0.100860] (-) TimerEvent: {}
+[0.136851] (key_teleop) JobStarted: {'identifier': 'key_teleop'}
+[0.184869] (mouse_teleop) JobStarted: {'identifier': 'mouse_teleop'}
+[0.202248] (-) TimerEvent: {}
+[0.248372] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'cmake'}
+[0.255472] (vesc_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/vesc_msgs'], 'cwd': '/home/f1/f1tenth_ws/build/vesc_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '2940'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/f1'), ('OLDPWD', '/home/f1/f1tenth_ws/src'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('MANAGERPID', '2845'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('COLCON_PREFIX_PATH', '/home/f1/f1tenth_ws/install'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:57273'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'f1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3001,unix/ubuntu:/tmp/.ICE-unix/3001'), ('PAPERSIZE', 'a4'), ('INVOCATION_ID', 'd89fbd2e7caa42148226cee39f3dfb48'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5580cd12_d884_464e_b176_f93420abd6a9'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('XMODIFIERS', '@im=fcitx'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/f1/f1tenth_ws/build/vesc_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/f1/f1tenth_ws/build/mouse_teleop:/home/f1/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/key_teleop:/home/f1/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy')]), 'shell': False}
+[0.283587] (teleop_tools_msgs) JobProgress: {'identifier': 'teleop_tools_msgs', 'progress': 'cmake'}
+[0.290587] (teleop_tools_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/teleop_tools_msgs'], 'cwd': '/home/f1/f1tenth_ws/build/teleop_tools_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '2940'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/f1'), ('OLDPWD', '/home/f1/f1tenth_ws/src'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('MANAGERPID', '2845'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('COLCON_PREFIX_PATH', '/home/f1/f1tenth_ws/install'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:57273'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'f1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3001,unix/ubuntu:/tmp/.ICE-unix/3001'), ('PAPERSIZE', 'a4'), ('INVOCATION_ID', 'd89fbd2e7caa42148226cee39f3dfb48'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5580cd12_d884_464e_b176_f93420abd6a9'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('XMODIFIERS', '@im=fcitx'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/f1/f1tenth_ws/build/teleop_tools_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/f1/f1tenth_ws/build/mouse_teleop:/home/f1/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/key_teleop:/home/f1/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy')]), 'shell': False}
+[0.310369] (-) TimerEvent: {}
+[0.312080] (ackermann_mux) JobProgress: {'identifier': 'ackermann_mux', 'progress': 'cmake'}
+[0.317509] (ackermann_mux) Command: {'cmd': ['/usr/bin/cmake', '/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/ackermann_mux'], 'cwd': '/home/f1/f1tenth_ws/build/ackermann_mux', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '2940'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/f1'), ('OLDPWD', '/home/f1/f1tenth_ws/src'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('MANAGERPID', '2845'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('COLCON_PREFIX_PATH', '/home/f1/f1tenth_ws/install'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:57273'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'f1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3001,unix/ubuntu:/tmp/.ICE-unix/3001'), ('PAPERSIZE', 'a4'), ('INVOCATION_ID', 'd89fbd2e7caa42148226cee39f3dfb48'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5580cd12_d884_464e_b176_f93420abd6a9'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('XMODIFIERS', '@im=fcitx'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/f1/f1tenth_ws/build/ackermann_mux'), ('LC_ALL', 'en_US.UTF-8'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/f1/f1tenth_ws/build/mouse_teleop:/home/f1/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/key_teleop:/home/f1/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy')]), 'shell': False}
+[0.411617] (-) TimerEvent: {}
+[0.514339] (-) TimerEvent: {}
+[0.615540] (-) TimerEvent: {}
+[0.716624] (-) TimerEvent: {}
+[0.817587] (-) TimerEvent: {}
+[0.918631] (-) TimerEvent: {}
+[1.019645] (-) TimerEvent: {}
+[1.120674] (-) TimerEvent: {}
+[1.221657] (-) TimerEvent: {}
+[1.322735] (-) TimerEvent: {}
+[1.423875] (-) TimerEvent: {}
+[1.524947] (-) TimerEvent: {}
+[1.626173] (-) TimerEvent: {}
+[1.728558] (-) TimerEvent: {}
+[1.831217] (-) TimerEvent: {}
+[1.932184] (-) TimerEvent: {}
+[2.033236] (-) TimerEvent: {}
+[2.134460] (-) TimerEvent: {}
+[2.235680] (-) TimerEvent: {}
+[2.336838] (-) TimerEvent: {}
+[2.437871] (-) TimerEvent: {}
+[2.539024] (-) TimerEvent: {}
+[2.640193] (-) TimerEvent: {}
+[2.741308] (-) TimerEvent: {}
+[2.842478] (-) TimerEvent: {}
+[2.943731] (-) TimerEvent: {}
+[3.049626] (-) TimerEvent: {}
+[3.066760] (vesc_msgs) StdoutLine: {'line': b'-- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)\n'}
+[3.069592] (vesc_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.070183] (vesc_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.070677] (vesc_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.073548] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.074151] (vesc_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[3.074605] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.075126] (teleop_tools_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[3.079225] (teleop_tools_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.080056] (teleop_tools_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.080748] (teleop_tools_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.081325] (teleop_tools_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[3.081832] (teleop_tools_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.083199] (teleop_tools_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[3.083900] (teleop_tools_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.084410] (teleop_tools_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[3.084870] (teleop_tools_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[3.087967] (ackermann_mux) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[3.090887] (ackermann_mux) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.096428] (ackermann_mux) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.099311] (ackermann_mux) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[3.100512] (ackermann_mux) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.102706] (ackermann_mux) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[3.105400] (ackermann_mux) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.106249] (ackermann_mux) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[3.107123] (ackermann_mux) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.153196] (-) TimerEvent: {}
+[3.259407] (-) TimerEvent: {}
+[3.360492] (-) TimerEvent: {}
+[3.412283] (vesc_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[3.460777] (-) TimerEvent: {}
+[3.561779] (-) TimerEvent: {}
+[3.602378] (ackermann_mux) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)\n'}
+[3.663032] (-) TimerEvent: {}
+[3.764063] (-) TimerEvent: {}
+[3.865063] (-) TimerEvent: {}
+[3.887189] (ackermann_mux) StderrLine: {'line': b'CMake Error at CMakeLists.txt:17 (find_package):\n'}
+[3.888326] (ackermann_mux) StderrLine: {'line': b'  By not providing "Finddiagnostic_updater.cmake" in CMAKE_MODULE_PATH this\n'}
+[3.888852] (ackermann_mux) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[3.889271] (ackermann_mux) StderrLine: {'line': b'  "diagnostic_updater", but CMake did not find one.\n'}
+[3.889678] (ackermann_mux) StderrLine: {'line': b'\n'}
+[3.890108] (ackermann_mux) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[3.890507] (ackermann_mux) StderrLine: {'line': b'  "diagnostic_updater" with any of the following names:\n'}
+[3.891036] (ackermann_mux) StderrLine: {'line': b'\n'}
+[3.891460] (ackermann_mux) StderrLine: {'line': b'    diagnostic_updaterConfig.cmake\n'}
+[3.891838] (ackermann_mux) StderrLine: {'line': b'    diagnostic_updater-config.cmake\n'}
+[3.892243] (ackermann_mux) StderrLine: {'line': b'\n'}
+[3.892627] (ackermann_mux) StderrLine: {'line': b'  Add the installation prefix of "diagnostic_updater" to CMAKE_PREFIX_PATH or\n'}
+[3.893006] (ackermann_mux) StderrLine: {'line': b'  set "diagnostic_updater_DIR" to a directory containing one of the above\n'}
+[3.893528] (ackermann_mux) StderrLine: {'line': b'  files.  If "diagnostic_updater" provides a separate development package or\n'}
+[3.893968] (ackermann_mux) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[3.894364] (ackermann_mux) StderrLine: {'line': b'\n'}
+[3.894734] (ackermann_mux) StderrLine: {'line': b'\n'}
+[3.902590] (ackermann_mux) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.904132] (ackermann_mux) StdoutLine: {'line': b'See also "/home/f1/f1tenth_ws/build/ackermann_mux/CMakeFiles/CMakeOutput.log".\n'}
+[3.904735] (ackermann_mux) StdoutLine: {'line': b'See also "/home/f1/f1tenth_ws/build/ackermann_mux/CMakeFiles/CMakeError.log".\n'}
+[3.941721] (ackermann_mux) CommandEnded: {'returncode': 1}
+[3.966724] (-) TimerEvent: {}
+[4.072981] (-) TimerEvent: {}
+[4.104536] (teleop_tools_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[4.129278] (ackermann_mux) JobEnded: {'identifier': 'ackermann_mux', 'rc': 1}
+[4.173249] (-) TimerEvent: {}
+[4.274311] (-) TimerEvent: {}
+[4.375579] (-) TimerEvent: {}
+[4.409668] (vesc_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[4.475828] (-) TimerEvent: {}
+[4.576944] (-) TimerEvent: {}
+[4.678087] (-) TimerEvent: {}
+[4.779131] (-) TimerEvent: {}
+[4.880233] (-) TimerEvent: {}
+[4.903355] (teleop_tools_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.980519] (-) TimerEvent: {}
+[5.081636] (-) TimerEvent: {}
+[5.144562] (teleop_tools_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.181872] (-) TimerEvent: {}
+[5.282940] (-) TimerEvent: {}
+[5.384055] (-) TimerEvent: {}
+[5.386435] (teleop_tools_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[5.389424] (teleop_tools_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[5.483005] (key_teleop) JobEnded: {'identifier': 'key_teleop', 'rc': 'SIGINT'}
+[5.485343] (-) TimerEvent: {}
+[5.579733] (teleop_tools_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.580584] (teleop_tools_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[5.581034] (teleop_tools_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[5.585590] (-) TimerEvent: {}
+[5.634977] (mouse_teleop) JobEnded: {'identifier': 'mouse_teleop', 'rc': 'SIGINT'}
+[5.685908] (-) TimerEvent: {}
+[5.755112] (teleop_tools_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.764405] (teleop_tools_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.769381] (teleop_tools_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.786091] (-) TimerEvent: {}
+[5.817349] (teleop_tools_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.886404] (-) TimerEvent: {}
+[5.887625] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.986683] (-) TimerEvent: {}
+[6.087873] (-) TimerEvent: {}
+[6.166744] (teleop_tools_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[6.188103] (-) TimerEvent: {}
+[6.274933] (teleop_tools_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/f1/f1tenth_ws/build/teleop_tools_msgs\n'}
+[6.288396] (-) TimerEvent: {}
+[6.310559] (teleop_tools_msgs) JobEnded: {'identifier': 'teleop_tools_msgs', 'rc': 'SIGINT'}
+[6.388664] (-) TimerEvent: {}
+[6.489737] (-) TimerEvent: {}
+[6.532183] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.589922] (-) TimerEvent: {}
+[6.691019] (-) TimerEvent: {}
+[6.695876] (vesc_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[6.697789] (vesc_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[6.791244] (-) TimerEvent: {}
+[6.848075] (vesc_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.849251] (vesc_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[6.849784] (vesc_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[6.891513] (-) TimerEvent: {}
+[6.992546] (-) TimerEvent: {}
+[7.093533] (-) TimerEvent: {}
+[7.171581] (vesc_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[7.193700] (-) TimerEvent: {}
+[7.242304] (vesc_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.253414] (vesc_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.259242] (vesc_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.293903] (-) TimerEvent: {}
+[7.297374] (vesc_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.394169] (-) TimerEvent: {}
+[7.495282] (-) TimerEvent: {}
+[7.596317] (-) TimerEvent: {}
+[7.697411] (-) TimerEvent: {}
+[7.732920] (vesc_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[7.797657] (-) TimerEvent: {}
+[7.846672] (vesc_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/f1/f1tenth_ws/build/vesc_msgs\n'}
+[7.884067] (vesc_msgs) JobEnded: {'identifier': 'vesc_msgs', 'rc': 'SIGINT'}
+[7.897300] (joy_teleop) JobSkipped: {'identifier': 'joy_teleop'}
+[7.897888] (-) TimerEvent: {}
+[7.899425] (vesc_ackermann) JobSkipped: {'identifier': 'vesc_ackermann'}
+[7.899659] (vesc_driver) JobSkipped: {'identifier': 'vesc_driver'}
+[7.899798] (teleop_tools) JobSkipped: {'identifier': 'teleop_tools'}
+[7.899924] (vesc) JobSkipped: {'identifier': 'vesc'}
+[7.900046] (f1tenth_stack) JobSkipped: {'identifier': 'f1tenth_stack'}
+[7.900183] (-) EventReactorShutdown: {}

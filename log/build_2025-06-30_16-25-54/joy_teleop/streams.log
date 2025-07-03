@@ -1,0 +1,30 @@
+[4.277s] Invoking command in '/home/f1/f1tenth_ws/build/joy_teleop': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/f1/f1tenth_ws/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/joy_teleop/build --no-deps symlink_data
+[5.791s] running develop
+[6.660s] running egg_info
+[6.662s] creating joy_teleop.egg-info
+[6.662s] writing joy_teleop.egg-info/PKG-INFO
+[6.665s] writing dependency_links to joy_teleop.egg-info/dependency_links.txt
+[6.666s] writing entry points to joy_teleop.egg-info/entry_points.txt
+[6.667s] writing requirements to joy_teleop.egg-info/requires.txt
+[6.667s] writing top-level names to joy_teleop.egg-info/top_level.txt
+[6.674s] writing manifest file 'joy_teleop.egg-info/SOURCES.txt'
+[6.856s] reading manifest file 'joy_teleop.egg-info/SOURCES.txt'
+[6.857s] writing manifest file 'joy_teleop.egg-info/SOURCES.txt'
+[7.069s] running build_ext
+[7.070s] Creating /home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/site.py
+[7.082s] Creating /home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy-teleop.egg-link (link to .)
+[7.086s] Installing incrementer_server script to /home/f1/f1tenth_ws/install/joy_teleop/lib/joy_teleop
+[7.087s] Installing joy_teleop script to /home/f1/f1tenth_ws/install/joy_teleop/lib/joy_teleop
+[7.090s] 
+[7.090s] Installed /home/f1/f1tenth_ws/build/joy_teleop
+[7.091s] running symlink_data
+[7.092s] symbolically linking /home/f1/f1tenth_ws/build/joy_teleop/package.xml -> /home/f1/f1tenth_ws/install/joy_teleop/share/joy_teleop
+[7.092s] creating /home/f1/f1tenth_ws/install/joy_teleop/share/joy_teleop/config
+[7.094s] symbolically linking /home/f1/f1tenth_ws/build/joy_teleop/config/joy_teleop_example.yaml -> /home/f1/f1tenth_ws/install/joy_teleop/share/joy_teleop/config
+[7.095s] creating /home/f1/f1tenth_ws/install/joy_teleop/share/joy_teleop/launch
+[7.096s] symbolically linking /home/f1/f1tenth_ws/build/joy_teleop/launch/example.launch.py -> /home/f1/f1tenth_ws/install/joy_teleop/share/joy_teleop/launch
+[7.096s] creating /home/f1/f1tenth_ws/install/joy_teleop/share/ament_index
+[7.097s] creating /home/f1/f1tenth_ws/install/joy_teleop/share/ament_index/resource_index
+[7.097s] creating /home/f1/f1tenth_ws/install/joy_teleop/share/ament_index/resource_index/packages
+[7.098s] symbolically linking /home/f1/f1tenth_ws/build/joy_teleop/resource/joy_teleop -> /home/f1/f1tenth_ws/install/joy_teleop/share/ament_index/resource_index/packages
+[7.241s] Invoked command in '/home/f1/f1tenth_ws/build/joy_teleop' returned '0': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/f1/f1tenth_ws/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/joy_teleop/build --no-deps symlink_data

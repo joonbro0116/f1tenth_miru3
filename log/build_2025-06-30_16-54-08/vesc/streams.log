@@ -1,0 +1,44 @@
+[0.114s] Invoking command in '/home/f1/f1tenth_ws/build/vesc': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/vesc
+[0.483s] -- The C compiler identification is GNU 9.4.0
+[0.855s] -- The CXX compiler identification is GNU 9.4.0
+[0.882s] -- Check for working C compiler: /usr/bin/cc
+[1.311s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.316s] -- Detecting C compiler ABI info
+[1.748s] -- Detecting C compiler ABI info - done
+[1.807s] -- Detecting C compile features
+[1.810s] -- Detecting C compile features - done
+[1.822s] -- Check for working CXX compiler: /usr/bin/c++
+[2.287s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.292s] -- Detecting CXX compiler ABI info
+[2.768s] -- Detecting CXX compiler ABI info - done
+[2.826s] -- Detecting CXX compile features
+[2.829s] -- Detecting CXX compile features - done
+[2.845s] -- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[3.040s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.041s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.018s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.569s] -- Configuring done
+[4.582s] -- Generating done
+[4.591s] -- Build files have been written to: /home/f1/f1tenth_ws/build/vesc
+[4.609s] Invoked command in '/home/f1/f1tenth_ws/build/vesc' returned '0': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/vesc
+[4.626s] Invoking command in '/home/f1/f1tenth_ws/build/vesc': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/f1/f1tenth_ws/build/vesc -- -j6 -l6
+[4.844s] Invoked command in '/home/f1/f1tenth_ws/build/vesc' returned '0': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/f1/f1tenth_ws/build/vesc -- -j6 -l6
+[4.862s] Invoking command in '/home/f1/f1tenth_ws/build/vesc': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/f1/f1tenth_ws/build/vesc
+[4.908s] -- Install configuration: ""
+[4.912s] -- Execute custom install script
+[4.915s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc/share/ament_index/resource_index/package_run_dependencies/vesc
+[4.968s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc/share/ament_index/resource_index/parent_prefix_path/vesc
+[5.020s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc/share/vesc/environment/ament_prefix_path.sh
+[5.071s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc/share/vesc/environment/ament_prefix_path.dsv
+[5.122s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc/share/vesc/environment/path.sh
+[5.174s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc/share/vesc/environment/path.dsv
+[5.225s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc/share/vesc/local_setup.bash
+[5.276s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc/share/vesc/local_setup.sh
+[5.328s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc/share/vesc/local_setup.zsh
+[5.379s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc/share/vesc/local_setup.dsv
+[5.431s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc/share/vesc/package.dsv
+[5.482s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc/share/ament_index/resource_index/packages/vesc
+[5.535s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc/share/vesc/cmake/vescConfig.cmake
+[5.586s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc/share/vesc/cmake/vescConfig-version.cmake
+[5.638s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc/share/vesc/package.xml
+[5.703s] Invoked command in '/home/f1/f1tenth_ws/build/vesc' returned '0': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/f1/f1tenth_ws/build/vesc

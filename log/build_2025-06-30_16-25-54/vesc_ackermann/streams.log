@@ -1,0 +1,64 @@
+[0.110s] Invoking command in '/home/f1/f1tenth_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/vesc_ackermann
+[0.537s] -- The C compiler identification is GNU 9.4.0
+[0.905s] -- The CXX compiler identification is GNU 9.4.0
+[0.937s] -- Check for working C compiler: /usr/bin/cc
+[1.415s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.421s] -- Detecting C compiler ABI info
+[1.925s] -- Detecting C compiler ABI info - done
+[2.013s] -- Detecting C compile features
+[2.016s] -- Detecting C compile features - done
+[2.035s] -- Check for working CXX compiler: /usr/bin/c++
+[2.559s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.568s] -- Detecting CXX compiler ABI info
+[3.107s] -- Detecting CXX compiler ABI info - done
+[3.182s] -- Detecting CXX compile features
+[3.184s] -- Detecting CXX compile features - done
+[3.197s] -- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[3.388s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.389s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.459s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.150s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.198s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[5.756s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[5.915s] -- Found FastRTPS: /opt/ros/foxy/include  
+[6.350s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.657s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[7.666s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.673s] -- Looking for pthread.h
+[8.144s] -- Looking for pthread.h - found
+[8.146s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.629s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[8.630s] -- Looking for pthread_create in pthreads
+[9.003s] -- Looking for pthread_create in pthreads - not found
+[9.004s] -- Looking for pthread_create in pthread
+[9.442s] -- Looking for pthread_create in pthread - found
+[9.449s] -- Found Threads: TRUE  
+[12.245s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[12.384s] -- Added test 'copyright' to check source files copyright and LICENSE
+[12.394s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[12.394s] -- Configured cppcheck include dirs: /home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/include
+[12.395s] -- Configured cppcheck exclude dirs and/or files: 
+[12.404s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[12.404s] -- Configured cpplint exclude dirs and/or files: 
+[12.410s] -- Added test 'lint_cmake' to check CMake code style
+[12.420s] -- Added test 'uncrustify' to check C / C++ code style
+[12.420s] -- Configured uncrustify additional arguments: 
+[12.423s] -- Added test 'xmllint' to check XML markup files
+[12.472s] -- Configuring done
+[12.631s] -- Generating done
+[12.694s] -- Build files have been written to: /home/f1/f1tenth_ws/build/vesc_ackermann
+[12.758s] Invoked command in '/home/f1/f1tenth_ws/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/vesc_ackermann
+[12.765s] Invoking command in '/home/f1/f1tenth_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/f1/f1tenth_ws/build/vesc_ackermann -- -j6 -l6
+[13.057s] [35m[1mScanning dependencies of target ackermann_to_vesc_node[0m
+[13.143s] [35m[1mScanning dependencies of target vesc_ackermann[0m
+[13.150s] [35m[1mScanning dependencies of target vesc_to_odom_node[0m
+[13.570s] [ 14%] [32mBuilding CXX object CMakeFiles/vesc_to_odom_node.dir/rclcpp_components/node_main_vesc_to_odom_node.cpp.o[0m
+[13.594s] [ 28%] [32mBuilding CXX object CMakeFiles/ackermann_to_vesc_node.dir/rclcpp_components/node_main_ackermann_to_vesc_node.cpp.o[0m
+[13.753s] [ 42%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/ackermann_to_vesc.cpp.o[0m
+[13.785s] [ 57%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o[0m
+[32.092s] [ 71%] [32m[1mLinking CXX executable ackermann_to_vesc_node[0m
+[32.463s] [ 85%] [32m[1mLinking CXX executable vesc_to_odom_node[0m
+[32.850s] [ 85%] Built target ackermann_to_vesc_node
+[33.116s] [ 85%] Built target vesc_to_odom_node
+[72.680s] [100%] [32m[1mLinking CXX shared library libvesc_ackermann.so[0m
+[73.642s] [100%] Built target vesc_ackermann

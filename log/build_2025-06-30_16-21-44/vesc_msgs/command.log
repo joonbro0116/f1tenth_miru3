@@ -1,0 +1,1 @@
+Invoking command in '/home/f1/f1tenth_ws/build/vesc_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/vesc_msgs

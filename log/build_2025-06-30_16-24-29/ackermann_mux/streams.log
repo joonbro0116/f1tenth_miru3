@@ -1,0 +1,32 @@
+[0.236s] Invoking command in '/home/f1/f1tenth_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/ackermann_mux
+[2.995s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.000s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.003s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.005s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[3.007s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.010s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.010s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.011s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.015s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.508s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[3.792s] CMake Error at CMakeLists.txt:17 (find_package):
+[3.793s]   By not providing "Finddiagnostic_updater.cmake" in CMAKE_MODULE_PATH this
+[3.793s]   project has asked CMake to find a package configuration file provided by
+[3.794s]   "diagnostic_updater", but CMake did not find one.
+[3.794s] 
+[3.795s]   Could not find a package configuration file provided by
+[3.795s]   "diagnostic_updater" with any of the following names:
+[3.796s] 
+[3.796s]     diagnostic_updaterConfig.cmake
+[3.796s]     diagnostic_updater-config.cmake
+[3.797s] 
+[3.797s]   Add the installation prefix of "diagnostic_updater" to CMAKE_PREFIX_PATH or
+[3.798s]   set "diagnostic_updater_DIR" to a directory containing one of the above
+[3.798s]   files.  If "diagnostic_updater" provides a separate development package or
+[3.799s]   SDK, be sure it has been installed.
+[3.799s] 
+[3.800s] 
+[3.808s] -- Configuring incomplete, errors occurred!
+[3.809s] See also "/home/f1/f1tenth_ws/build/ackermann_mux/CMakeFiles/CMakeOutput.log".
+[3.809s] See also "/home/f1/f1tenth_ws/build/ackermann_mux/CMakeFiles/CMakeError.log".
+[3.848s] Invoked command in '/home/f1/f1tenth_ws/build/ackermann_mux' returned '1': CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/ackermann_mux

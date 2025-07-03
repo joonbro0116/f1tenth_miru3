@@ -1,0 +1,70 @@
+[0.278s] Invoking command in '/home/f1/f1tenth_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/ackermann_mux
+[3.725s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.730s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.731s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.736s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.737s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[3.737s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.738s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.738s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.739s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.740s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.950s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[4.125s] -- Found diagnostic_updater: 3.1.2 (/opt/ros/foxy/share/diagnostic_updater/cmake)
+[4.624s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[5.458s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[5.694s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[5.731s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.734s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[5.735s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[5.872s] -- Added test 'xmllint' to check XML markup files
+[5.874s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.895s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.897s] -- Configured cppcheck include dirs: /home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux/include
+[5.897s] -- Configured cppcheck exclude dirs and/or files: 
+[5.918s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.919s] -- Configured cpplint exclude dirs and/or files: 
+[5.922s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.930s] -- Added test 'lint_cmake' to check CMake code style
+[5.934s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[5.963s] -- Added test 'uncrustify' to check C / C++ code style
+[5.966s] -- Configured uncrustify additional arguments: 
+[6.061s] -- Configuring done
+[6.135s] -- Generating done
+[6.164s] -- Build files have been written to: /home/f1/f1tenth_ws/build/ackermann_mux
+[6.213s] Invoked command in '/home/f1/f1tenth_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/ackermann_mux
+[6.217s] Invoking command in '/home/f1/f1tenth_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/ackermann_mux -- -j6 -l6
+[7.177s] [100%] Built target ackermann_mux
+[7.295s] Invoked command in '/home/f1/f1tenth_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/ackermann_mux -- -j6 -l6
+[7.399s] Invoking command in '/home/f1/f1tenth_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/ackermann_mux
+[7.538s] -- Install configuration: "Release"
+[7.543s] -- Execute custom install script
+[7.560s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/lib/ackermann_mux/ackermann_mux
+[7.565s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/launch/ackermann_mux_launch.py
+[7.574s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_locks.yaml
+[7.578s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_topics.yaml
+[7.585s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/joystick.yaml
+[7.593s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux.hpp
+[7.596s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics.hpp
+[7.607s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics_status.hpp
+[7.608s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/params_helpers.hpp
+[7.610s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/topic_handle.hpp
+[7.613s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/utils.hpp
+[7.617s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/package_run_dependencies/ackermann_mux
+[7.625s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/parent_prefix_path/ackermann_mux
+[7.629s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.sh
+[7.643s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.dsv
+[7.645s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/path.sh
+[7.647s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/path.dsv
+[7.649s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.bash
+[7.651s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.sh
+[7.665s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.zsh
+[7.667s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.dsv
+[7.669s] -- Symlinking: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/package.dsv
+[7.793s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/packages/ackermann_mux
+[7.795s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.797s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.801s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig.cmake
+[7.811s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig-version.cmake
+[7.812s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/package.xml
+[7.829s] Invoked command in '/home/f1/f1tenth_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/ackermann_mux

@@ -1,0 +1,18 @@
+[ 20%] Built target vesc_driver_node
+[ 70%] Built target vesc_driver
+[ 80%] [32m[1mLinking CXX executable vesc_device_namer[0m
+/usr/bin/ld: libvesc_driver.so: undefined reference to `drivers::serial_driver::SerialPort::async_send(std::vector<unsigned char, std::allocator<unsigned char> > const&)'
+/usr/bin/ld: libvesc_driver.so: undefined reference to `drivers::serial_driver::SerialPort::open()'
+/usr/bin/ld: libvesc_driver.so: undefined reference to `drivers::common::IoContext::IoContext(unsigned long)'
+/usr/bin/ld: libvesc_driver.so: undefined reference to `drivers::serial_driver::SerialDriver::port() const'
+/usr/bin/ld: libvesc_driver.so: undefined reference to `drivers::serial_driver::SerialDriver::SerialDriver(drivers::common::IoContext const&)'
+/usr/bin/ld: libvesc_driver.so: undefined reference to `drivers::serial_driver::SerialPort::is_open() const'
+/usr/bin/ld: libvesc_driver.so: undefined reference to `drivers::serial_driver::SerialDriver::init_port(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, drivers::serial_driver::SerialPortConfig const&)'
+/usr/bin/ld: libvesc_driver.so: undefined reference to `drivers::serial_driver::SerialPort::receive(std::vector<unsigned char, std::allocator<unsigned char> >&)'
+/usr/bin/ld: libvesc_driver.so: undefined reference to `drivers::common::IoContext::waitForExit()'
+/usr/bin/ld: libvesc_driver.so: undefined reference to `drivers::common::IoContext::~IoContext()'
+/usr/bin/ld: libvesc_driver.so: undefined reference to `drivers::serial_driver::SerialPort::close()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/vesc_device_namer.dir/build.make:171: vesc_device_namer] Error 1
+make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/vesc_device_namer.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

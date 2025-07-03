@@ -1,0 +1,31 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found pcl_conversions: 2.2.1 (/opt/ros/foxy/share/pcl_conversions/cmake)
+CMake Error at CMakeLists.txt:23 (find_package):
+  By not providing "Findpcl_ros.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "pcl_ros", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "pcl_ros" with any
+  of the following names:
+
+    pcl_rosConfig.cmake
+    pcl_ros-config.cmake
+
+  Add the installation prefix of "pcl_ros" to CMAKE_PREFIX_PATH or set
+  "pcl_ros_DIR" to a directory containing one of the above files.  If
+  "pcl_ros" provides a separate development package or SDK, be sure it has
+  been installed.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/f1/f1tenth_ws/build/lidar_processing/CMakeFiles/CMakeOutput.log".
+See also "/home/f1/f1tenth_ws/build/lidar_processing/CMakeFiles/CMakeError.log".

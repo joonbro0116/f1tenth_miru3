@@ -1,0 +1,37 @@
+[0.324s] Invoking command in '/home/f1/f1tenth_ws/build/vesc_ackermann': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/vesc_ackermann -- -j6 -l6
+[0.839s] [ 28%] Built target ackermann_to_vesc_node
+[0.869s] [ 57%] Built target vesc_to_odom_node
+[0.881s] [100%] Built target vesc_ackermann
+[1.884s] Invoked command in '/home/f1/f1tenth_ws/build/vesc_ackermann' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/vesc_ackermann -- -j6 -l6
+[1.906s] Invoking command in '/home/f1/f1tenth_ws/build/vesc_ackermann': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/vesc_ackermann
+[1.975s] -- Install configuration: "Release"
+[1.975s] -- Execute custom install script
+[1.976s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node
+[2.021s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node
+[2.077s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp
+[2.138s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp
+[2.199s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh
+[2.263s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv
+[2.324s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/lib/libvesc_ackermann.so
+[2.381s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml
+[2.438s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml
+[2.495s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann
+[2.552s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann
+[2.611s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh
+[2.665s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv
+[2.724s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh
+[2.776s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv
+[2.829s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash
+[2.888s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh
+[2.949s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh
+[3.012s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv
+[3.069s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/package.dsv
+[3.137s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann
+[3.202s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann
+[3.263s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.323s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.413s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake
+[3.476s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake
+[3.533s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake
+[3.590s] -- Symlinking: /home/f1/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/package.xml
+[3.663s] Invoked command in '/home/f1/f1tenth_ws/build/vesc_ackermann' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/vesc_ackermann

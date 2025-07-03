@@ -1,0 +1,6 @@
+Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': /usr/bin/cmake /home/f1/f1tenth_ws/src/lidar_processing -DCMAKE_BUILD_TYPE=Release -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/lidar_processing
+Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '0': /usr/bin/cmake /home/f1/f1tenth_ws/src/lidar_processing -DCMAKE_BUILD_TYPE=Release -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/lidar_processing
+Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': /usr/bin/cmake --build /home/f1/f1tenth_ws/build/lidar_processing -- -j6 -l6
+Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '0': /usr/bin/cmake --build /home/f1/f1tenth_ws/build/lidar_processing -- -j6 -l6
+Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': /usr/bin/cmake --install /home/f1/f1tenth_ws/build/lidar_processing
+Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '0': /usr/bin/cmake --install /home/f1/f1tenth_ws/build/lidar_processing

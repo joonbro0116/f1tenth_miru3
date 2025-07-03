@@ -1,0 +1,26 @@
+[1.828s] Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': /usr/bin/cmake --build /home/f1/f1tenth_ws/build/lidar_processing -- -j6 -l6
+[3.275s] [35m[1mScanning dependencies of target lidar_node[0m
+[3.276s] [ 50%] [32mBuilding CXX object CMakeFiles/lidar_node.dir/src/lidar_node.cpp.o[0m
+[39.051s] [100%] [32m[1mLinking CXX executable lidar_node[0m
+[39.691s] [100%] Built target lidar_node
+[39.754s] Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '0': /usr/bin/cmake --build /home/f1/f1tenth_ws/build/lidar_processing -- -j6 -l6
+[39.765s] Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': /usr/bin/cmake --install /home/f1/f1tenth_ws/build/lidar_processing
+[39.824s] -- Install configuration: "Release"
+[39.826s] -- Execute custom install script
+[39.829s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/lidar_node
+[39.831s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/package_run_dependencies/lidar_processing
+[39.833s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/parent_prefix_path/lidar_processing
+[39.835s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.sh
+[39.837s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.dsv
+[39.839s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/path.sh
+[39.841s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/path.dsv
+[39.843s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.bash
+[39.845s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.sh
+[39.846s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.zsh
+[39.848s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.dsv
+[39.850s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/package.dsv
+[39.905s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/packages/lidar_processing
+[39.906s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig.cmake
+[39.908s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig-version.cmake
+[39.910s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/package.xml
+[39.923s] Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '0': /usr/bin/cmake --install /home/f1/f1tenth_ws/build/lidar_processing
