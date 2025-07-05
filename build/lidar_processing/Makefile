@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named gap_follow_node
+
+# Build rule for target.
+gap_follow_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gap_follow_node
+.PHONY : gap_follow_node
+
+# fast build rule for target.
+gap_follow_node/fast:
+	$(MAKE) -f CMakeFiles/gap_follow_node.dir/build.make CMakeFiles/gap_follow_node.dir/build
+.PHONY : gap_follow_node/fast
+
+#=============================================================================
 # Target rules for targets named wall_follow_node
 
 # Build rule for target.
@@ -218,6 +231,33 @@ uninstall: cmake_check_build_system
 uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
+
+src/gap_follow_node.o: src/gap_follow_node.cpp.o
+
+.PHONY : src/gap_follow_node.o
+
+# target to build an object file
+src/gap_follow_node.cpp.o:
+	$(MAKE) -f CMakeFiles/gap_follow_node.dir/build.make CMakeFiles/gap_follow_node.dir/src/gap_follow_node.cpp.o
+.PHONY : src/gap_follow_node.cpp.o
+
+src/gap_follow_node.i: src/gap_follow_node.cpp.i
+
+.PHONY : src/gap_follow_node.i
+
+# target to preprocess a source file
+src/gap_follow_node.cpp.i:
+	$(MAKE) -f CMakeFiles/gap_follow_node.dir/build.make CMakeFiles/gap_follow_node.dir/src/gap_follow_node.cpp.i
+.PHONY : src/gap_follow_node.cpp.i
+
+src/gap_follow_node.s: src/gap_follow_node.cpp.s
+
+.PHONY : src/gap_follow_node.s
+
+# target to generate assembly for a file
+src/gap_follow_node.cpp.s:
+	$(MAKE) -f CMakeFiles/gap_follow_node.dir/build.make CMakeFiles/gap_follow_node.dir/src/gap_follow_node.cpp.s
+.PHONY : src/gap_follow_node.cpp.s
 
 src/lidar_node.o: src/lidar_node.cpp.o
 
@@ -281,6 +321,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... gap_follow_node"
 	@echo "... install/local"
 	@echo "... wall_follow_node"
 	@echo "... install"
@@ -290,6 +331,9 @@ help:
 	@echo "... install/strip"
 	@echo "... lidar_processing_uninstall"
 	@echo "... uninstall"
+	@echo "... src/gap_follow_node.o"
+	@echo "... src/gap_follow_node.i"
+	@echo "... src/gap_follow_node.s"
 	@echo "... src/lidar_node.o"
 	@echo "... src/lidar_node.i"
 	@echo "... src/lidar_node.s"

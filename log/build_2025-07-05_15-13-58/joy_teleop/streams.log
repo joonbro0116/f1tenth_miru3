@@ -1,0 +1,18 @@
+[6.353s] Invoking command in '/home/f1/f1tenth_ws/build/joy_teleop': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/f1/f1tenth_ws/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/joy_teleop/build --no-deps symlink_data
+[8.594s] running develop
+[9.738s] running egg_info
+[9.739s] writing joy_teleop.egg-info/PKG-INFO
+[9.741s] writing dependency_links to joy_teleop.egg-info/dependency_links.txt
+[9.742s] writing entry points to joy_teleop.egg-info/entry_points.txt
+[9.743s] writing requirements to joy_teleop.egg-info/requires.txt
+[9.744s] writing top-level names to joy_teleop.egg-info/top_level.txt
+[9.969s] reading manifest file 'joy_teleop.egg-info/SOURCES.txt'
+[9.976s] writing manifest file 'joy_teleop.egg-info/SOURCES.txt'
+[10.239s] running build_ext
+[10.246s] Creating /home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy-teleop.egg-link (link to .)
+[10.247s] Installing incrementer_server script to /home/f1/f1tenth_ws/install/joy_teleop/lib/joy_teleop
+[10.252s] Installing joy_teleop script to /home/f1/f1tenth_ws/install/joy_teleop/lib/joy_teleop
+[10.253s] 
+[10.254s] Installed /home/f1/f1tenth_ws/build/joy_teleop
+[10.254s] running symlink_data
+[10.481s] Invoked command in '/home/f1/f1tenth_ws/build/joy_teleop' returned '0': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/f1/f1tenth_ws/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/joy_teleop/build --no-deps symlink_data

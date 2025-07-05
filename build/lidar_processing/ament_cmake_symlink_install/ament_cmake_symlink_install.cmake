@@ -316,6 +316,9 @@ include("/home/f1/f1tenth_ws/build/lidar_processing/ament_cmake_symlink_install_
 # install("TARGETS" "wall_follow_node" "DESTINATION" "lib/lidar_processing")
 include("/home/f1/f1tenth_ws/build/lidar_processing/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
+# install("TARGETS" "gap_follow_node" "DESTINATION" "lib/lidar_processing")
+include("/home/f1/f1tenth_ws/build/lidar_processing/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
 # install(FILES "/home/f1/f1tenth_ws/build/lidar_processing/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/lidar_processing" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/lidar_processing" FILES "/home/f1/f1tenth_ws/build/lidar_processing/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/lidar_processing" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 

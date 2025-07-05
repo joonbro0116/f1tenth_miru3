@@ -1,5 +1,6 @@
 /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/lidar_node
 /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/wall_follow_node
+/home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/gap_follow_node
 /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/package_run_dependencies/lidar_processing
 /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/parent_prefix_path/lidar_processing
 /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.sh

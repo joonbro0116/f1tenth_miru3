@@ -31,6 +31,10 @@ add_executable(wall_follow_node
   src/wall_follow_node.cpp
 )
 
+add_executable(gap_follow_node
+  src/gap_follow_node.cpp
+)
+
 # 의존성 링크
 ament_target_dependencies(lidar_node
   rclcpp
@@ -43,12 +47,23 @@ ament_target_dependencies(wall_follow_node
   nav_msgs
   ackermann_msgs
 )
+
+ament_target_dependencies(gap_follow_node
+  rclcpp
+  sensor_msgs
+  nav_msgs
+  ackermann_msgs
+)
 # 설치 설정
 install(TARGETS lidar_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
 install(TARGETS wall_follow_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(TARGETS gap_follow_node
   DESTINATION lib/${PROJECT_NAME}
 )
 ament_package()

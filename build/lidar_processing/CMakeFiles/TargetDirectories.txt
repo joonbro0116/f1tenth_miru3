@@ -1,5 +1,6 @@
 /home/f1/f1tenth_ws/build/lidar_processing/CMakeFiles/edit_cache.dir
 /home/f1/f1tenth_ws/build/lidar_processing/CMakeFiles/test.dir
+/home/f1/f1tenth_ws/build/lidar_processing/CMakeFiles/gap_follow_node.dir
 /home/f1/f1tenth_ws/build/lidar_processing/CMakeFiles/install/local.dir
 /home/f1/f1tenth_ws/build/lidar_processing/CMakeFiles/wall_follow_node.dir
 /home/f1/f1tenth_ws/build/lidar_processing/CMakeFiles/install.dir

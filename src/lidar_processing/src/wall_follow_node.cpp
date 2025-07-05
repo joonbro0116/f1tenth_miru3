@@ -1,11 +1,11 @@
-#include "rclcpp/rclcpp.hpp"
-#include <string>
-#include "sensor_msgs/msg/laser_scan.hpp"
-#include "nav_msgs/msg/odometry.hpp"
-#include "ackermann_msgs/msg/ackermann_drive_stamped.hpp"
-#include <cmath>
+#include "rclcpp/rclcpp.hpp" // ROS 2 C++ client library
+#include <string> // for string manipulation
+#include "sensor_msgs/msg/laser_scan.hpp" // for LaserScan messages
+#include "nav_msgs/msg/odometry.hpp" // for Odometry messages
+#include "ackermann_msgs/msg/ackermann_drive_stamped.hpp" // for AckermannDriveStamped messages
+#include <cmath> // for mathematical functions
 
-class WallFollow : public rclcpp::Node {
+class WallFollow : public rclcpp::Node { // WallFollow class inherits from rclcpp::Node
 
 public:
     WallFollow() : Node("wall_follow_node")
@@ -30,7 +30,6 @@ private:
     // TODO: double kp =
     // TODO: double kd =
     // TODO: double ki =
-    double servo_offset = 0.0;
     /*double prev_error = 0.0;*/
     double error = 0.0;
     double integral = 0.0;
