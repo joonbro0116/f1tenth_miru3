@@ -1,3 +1,4 @@
+// 2025-07-23, adaptive bubble size, pure pursuit, gap follow
 #include "rclcpp/rclcpp.hpp"
 #include <string>
 #include <vector>
