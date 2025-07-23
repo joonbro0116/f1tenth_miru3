@@ -1,6 +1,7 @@
 package.xml
 setup.cfg
 setup.py
+config/backpack_2d.lua
 config/f1tenth_online_async.yaml
 config/joy_teleop.yaml
 config/mux.yaml
@@ -17,4 +18,5 @@ f1tenth_stack.egg-info/requires.txt
 f1tenth_stack.egg-info/top_level.txt
 f1tenth_stack.egg-info/zip-safe
 launch/bringup_launch.py
+launch/mapping_launch.py
 resource/f1tenth_stack

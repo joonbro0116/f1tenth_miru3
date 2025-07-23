@@ -16,6 +16,7 @@ find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(ackermann_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 # 헤더 검색 경로
 include_directories(
@@ -53,7 +54,9 @@ ament_target_dependencies(gap_follow_node
   sensor_msgs
   nav_msgs
   ackermann_msgs
+  geometry_msgs
 )
+
 # 설치 설정
 install(TARGETS lidar_node
   DESTINATION lib/${PROJECT_NAME}
@@ -66,4 +69,5 @@ install(TARGETS wall_follow_node
 install(TARGETS gap_follow_node
   DESTINATION lib/${PROJECT_NAME}
 )
+
 ament_package()

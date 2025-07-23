@@ -1,0 +1,58 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+-- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/f1/f1tenth_ws/build/lidar_processing
+[35m[1mScanning dependencies of target gap_follow_node[0m
+[35m[1mScanning dependencies of target wall_follow_node[0m
+[35m[1mScanning dependencies of target lidar_node[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/gap_follow_node.dir/src/gap_follow_node.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/lidar_node.dir/src/lidar_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/wall_follow_node.dir/src/wall_follow_node.cpp.o[0m
+[01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/wall_follow_node.cpp:[m[K In member function ‘[01m[Kvoid WallFollow::pid_control(double, double)[m[K’:
+[01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/wall_follow_node.cpp:120:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  120 |         double [01;35m[Kangle[m[K = 0.0;
+      |                [01;35m[K^~~~~[m[K
+[01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/wall_follow_node.cpp:104:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  104 |     void pid_control(double error, [01;35m[Kdouble velocity[m[K)
+      |                                    [01;35m[K~~~~~~~^~~~~~~~[m[K
+[01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/wall_follow_node.cpp:[m[K In member function ‘[01m[Kvoid WallFollow::scan_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/wall_follow_node.cpp:168:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvelocity[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  168 |         double [01;35m[Kvelocity[m[K = 0.0; // TODO: calculate desired car velocity based on error
+      |                [01;35m[K^~~~~~~~[m[K
+[ 66%] [32m[1mLinking CXX executable lidar_node[0m
+[ 66%] Built target lidar_node
+[ 83%] [32m[1mLinking CXX executable gap_follow_node[0m
+[ 83%] Built target gap_follow_node
+[100%] [32m[1mLinking CXX executable wall_follow_node[0m
+[100%] Built target wall_follow_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/lidar_node
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/wall_follow_node
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/gap_follow_node
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/package_run_dependencies/lidar_processing
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/parent_prefix_path/lidar_processing
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.sh
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.dsv
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/path.sh
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/path.dsv
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.bash
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.sh
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.zsh
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.dsv
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/package.dsv
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/packages/lidar_processing
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig.cmake
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig-version.cmake
+-- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/package.xml

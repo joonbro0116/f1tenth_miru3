@@ -360,6 +360,10 @@ CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o: /home/f1/f1tenth_ws/src/f1t
 CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o: /home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_driver/include/vesc_driver/vesc_packet.hpp
 CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o: /home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_driver/include/vesc_driver/vesc_packet_factory.hpp
 CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o: /home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_driver/src/vesc_interface.cpp
+CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o: /opt/ros/foxy/include/io_context/common.hpp
+CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o: /opt/ros/foxy/include/io_context/io_context.hpp
+CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o: /opt/ros/foxy/include/serial_driver/serial_driver.hpp
+CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o: /opt/ros/foxy/include/serial_driver/serial_port.hpp
 
 CMakeFiles/vesc_driver.dir/src/vesc_packet.cpp.o: /home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_driver/include/vesc_driver/crc.hpp
 CMakeFiles/vesc_driver.dir/src/vesc_packet.cpp.o: /home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_driver/include/vesc_driver/datatypes.hpp

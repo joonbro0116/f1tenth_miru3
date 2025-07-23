@@ -1,0 +1,30 @@
+[4.902s] Invoking command in '/home/f1/f1tenth_ws/build/joy_teleop': CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/lidar_processing:/home/f1/f1tenth_ws/install/ackermann_mux LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/f1/f1tenth_ws/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/mouse_teleop:/home/f1/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/key_teleop:/home/f1/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/joy_teleop/build --no-deps symlink_data
+[6.710s] running develop
+[7.707s] running egg_info
+[7.711s] creating joy_teleop.egg-info
+[7.711s] writing joy_teleop.egg-info/PKG-INFO
+[7.712s] writing dependency_links to joy_teleop.egg-info/dependency_links.txt
+[7.712s] writing entry points to joy_teleop.egg-info/entry_points.txt
+[7.718s] writing requirements to joy_teleop.egg-info/requires.txt
+[7.719s] writing top-level names to joy_teleop.egg-info/top_level.txt
+[7.720s] writing manifest file 'joy_teleop.egg-info/SOURCES.txt'
+[7.897s] reading manifest file 'joy_teleop.egg-info/SOURCES.txt'
+[7.901s] writing manifest file 'joy_teleop.egg-info/SOURCES.txt'
+[8.133s] running build_ext
+[8.135s] Creating /home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/site.py
+[8.146s] Creating /home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy-teleop.egg-link (link to .)
+[8.151s] Installing incrementer_server script to /home/f1/f1tenth_ws/install/joy_teleop/lib/joy_teleop
+[8.154s] Installing joy_teleop script to /home/f1/f1tenth_ws/install/joy_teleop/lib/joy_teleop
+[8.156s] 
+[8.157s] Installed /home/f1/f1tenth_ws/build/joy_teleop
+[8.157s] running symlink_data
+[8.158s] symbolically linking /home/f1/f1tenth_ws/build/joy_teleop/package.xml -> /home/f1/f1tenth_ws/install/joy_teleop/share/joy_teleop
+[8.158s] creating /home/f1/f1tenth_ws/install/joy_teleop/share/joy_teleop/config
+[8.165s] symbolically linking /home/f1/f1tenth_ws/build/joy_teleop/config/joy_teleop_example.yaml -> /home/f1/f1tenth_ws/install/joy_teleop/share/joy_teleop/config
+[8.166s] creating /home/f1/f1tenth_ws/install/joy_teleop/share/joy_teleop/launch
+[8.166s] symbolically linking /home/f1/f1tenth_ws/build/joy_teleop/launch/example.launch.py -> /home/f1/f1tenth_ws/install/joy_teleop/share/joy_teleop/launch
+[8.167s] creating /home/f1/f1tenth_ws/install/joy_teleop/share/ament_index
+[8.167s] creating /home/f1/f1tenth_ws/install/joy_teleop/share/ament_index/resource_index
+[8.168s] creating /home/f1/f1tenth_ws/install/joy_teleop/share/ament_index/resource_index/packages
+[8.169s] symbolically linking /home/f1/f1tenth_ws/build/joy_teleop/resource/joy_teleop -> /home/f1/f1tenth_ws/install/joy_teleop/share/ament_index/resource_index/packages
+[8.314s] Invoked command in '/home/f1/f1tenth_ws/build/joy_teleop' returned '0': CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/lidar_processing:/home/f1/f1tenth_ws/install/ackermann_mux LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/f1/f1tenth_ws/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/mouse_teleop:/home/f1/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/key_teleop:/home/f1/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/joy_teleop/build --no-deps symlink_data

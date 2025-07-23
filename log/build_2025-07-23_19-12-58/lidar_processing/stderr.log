@@ -1,0 +1,4 @@
+[01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/gap_follow_node.cpp:[m[K In member function ‘[01m[Kvoid GapFollow::add_dynamic_waypoint(const Point&)[m[K’:
+[01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/gap_follow_node.cpp:128:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kconst int[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  128 |         if ([01;35m[Kdynamic_waypoints_.size() > MAX_WAYPOINTS[m[K) {
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
