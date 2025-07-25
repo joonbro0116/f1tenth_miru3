@@ -1,0 +1,27 @@
+[2.341s] Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/lidar_processing -- -j6 -l6
+[3.842s] [ 33%] Built target lidar_node
+[3.843s] [ 66%] Built target gap_follow_node
+[3.843s] [100%] Built target wall_follow_node
+[3.980s] Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/lidar_processing -- -j6 -l6
+[4.005s] Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/lidar_processing
+[4.485s] -- Install configuration: "Release"
+[4.486s] -- Execute custom install script
+[4.487s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/lidar_node
+[4.487s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/wall_follow_node
+[4.488s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/gap_follow_node
+[4.491s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/package_run_dependencies/lidar_processing
+[4.492s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/parent_prefix_path/lidar_processing
+[4.492s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.sh
+[4.493s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.dsv
+[4.493s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/path.sh
+[4.494s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/path.dsv
+[4.494s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.bash
+[4.495s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.sh
+[4.495s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.zsh
+[4.496s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.dsv
+[4.497s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/package.dsv
+[4.589s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/packages/lidar_processing
+[4.590s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig.cmake
+[4.591s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig-version.cmake
+[4.592s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/package.xml
+[4.633s] Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/lidar_processing
