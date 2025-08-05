@@ -54,4 +54,16 @@ free_threshold: 자유공간으로 판단하는 임계값 (0.25)
 footprint: F1TENTH 차량 크기 (0.5m x 0.3m 직사각형)
 robot_radius: 차량 반지름 (0.3m)
 
-#
+# 맵 토픽 저장 및 재생
+
+**저장**
+```
+ros2 bag record -o /home/f1/f1tenth_ws/bags/maps/map_topic_data /map /map_metadata
+```
+
+**재생**
+```
+ros2 bag play /home/f1/f1tenth_ws/bags/map_topic_data
+```
+
+재생 후에 rviz2 켠 후 map topic add.
