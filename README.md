@@ -39,6 +39,7 @@ loop_search_maximum_distance: 루프 검색 최대 거리 (5m)
 loop_match_minimum_chain_size: 루프 매칭을 위한 최소 체인 크기
 
 **스캔 매칭**
+
 correlation_search_space_dimension: 스캔 매칭 검색 범위
 scan_buffer_size: 보관할 스캔 데이터 개수 (20개)
 max_laser_range: 사용할 라이다 최대 거리 (12m)
