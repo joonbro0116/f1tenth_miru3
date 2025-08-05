@@ -19,7 +19,7 @@ rsl
 
 ```
 # 맵 저장
-ros2 run nav2_map_server map_saver_cli -f map_name
+ros2 run nav2_map_server map_saver_cli -f /home/f1/f1tenth_ws/maps/map_name
 ```
 
 # SLAM
