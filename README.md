@@ -67,3 +67,11 @@ ros2 bag play /home/f1/f1tenth_ws/bags/map_topic_data
 ```
 
 재생 후에 rviz2 켠 후 map topic add.
+
+
+
+# Localization
+
+```
+ros2 launch nav2_bringup localization_launch.py map:=/path/to/your_map.yaml params_file:=amcl_params.yaml
+```
