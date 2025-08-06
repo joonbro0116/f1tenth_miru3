@@ -54,6 +54,9 @@ free_threshold: 자유공간으로 판단하는 임계값 (0.25)
 footprint: F1TENTH 차량 크기 (0.5m x 0.3m 직사각형)
 robot_radius: 차량 반지름 (0.3m)
 
+**Cartographer 실행**
+ros2 launch f1_stack carto_launch.py
+
 # 맵 토픽 저장 및 재생
 
 **저장**
@@ -75,3 +78,17 @@ ros2 bag play /home/f1/f1tenth_ws/bags/map_topic_data
 ```
 ros2 launch nav2_bringup localization_launch.py map:=/path/to/your_map.yaml params_file:=amcl_params.yaml
 ```
+
+### ROS2 통신
+---
+~/.bashrc 혹은 ~/.zshrc에서
+export ROS_DOMAIN_ID = 73
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+만 추가하면 된다. 
+(**같은 넷상에 있어야함 + HY-Wifi는 안됨**)
+----
+확인법
+ssh로 연결 후 ros2 run demo_nodes_cpp talker 와 listener를 실행 후 확인
+
+
+**[원격 복사(scp)](https://eehoeskrap.tistory.com/543)**
