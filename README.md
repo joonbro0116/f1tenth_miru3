@@ -3,7 +3,7 @@
 bringup launch 파일 실행
 
 ```
-rl
+rbl
 ```
 
 slam 파일
