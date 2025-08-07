@@ -132,7 +132,5 @@ export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
   ```bash
   scp user@<jetson_ip>:/remote/path/file /local/destination/
   ```
-
+**[원격 복사(scp)](https://eehoeskrap.tistory.com/543)**
 ---
-
-ℹ️  Feel free to tweak parameters as your track and sensor setup evolve.
