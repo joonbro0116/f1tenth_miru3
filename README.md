@@ -9,11 +9,12 @@
 | `rbl` | Bringup launch file             |
 | `rsp` | SLAM Mapping mode      |
 | `rsl` | SLAM Localization mode |
-> **Save map**
->
-> ```bash
-> ros2 run nav2_map_server map_saver_cli -f ~/f1/f1tenth_ws/maps/map_name
-> ```
+
+ ### Save map
+
+ ```bash
+ ros2 run nav2_map_server map_saver_cli -f ~/f1/f1tenth_ws/maps/map_name
+ ```
 
 ---
 
