@@ -39,7 +39,7 @@ private:
     std::vector<geometry_msgs::msg::Point> dynamic_waypoints_;
     double current_x_, current_y_, current_yaw_;
     double current_speed_;
-    const double LOOKAHEAD_DISTANCE = 1.5;
+    const double LOOKAHEAD_DISTANCE = 2.0;
     const double OBSTACLE_DETECTION_DISTANCE = 2.0;
     const size_t MAX_WAYPOINTS = 10;
     
@@ -289,7 +289,7 @@ private:
             // Pure Pursuit 모드: waypoint 추종
             auto target_point = get_lookahead_point();
             steering_angle = pure_pursuit_steering(target_point);
-            speed = 2.0;
+            speed = 0.8;
             mode = "PURE_PURSUIT";
             
             RCLCPP_INFO(this->get_logger(),

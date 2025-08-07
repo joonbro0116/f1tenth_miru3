@@ -1,9 +1,0 @@
-make[2]: *** [CMakeFiles/sync_slam_toolbox_node.dir/build.make:63: CMakeFiles/sync_slam_toolbox_node.dir/src/slam_toolbox_sync_node.cpp.o] Interrupt
-make[2]: *** [CMakeFiles/localization_slam_toolbox_node.dir/build.make:63: CMakeFiles/localization_slam_toolbox_node.dir/src/slam_toolbox_localization_node.cpp.o] Interrupt
-make[2]: *** [CMakeFiles/async_slam_toolbox_node.dir/build.make:63: CMakeFiles/async_slam_toolbox_node.dir/src/slam_toolbox_async_node.cpp.o] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:397: CMakeFiles/sync_slam_toolbox_node.dir/all] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:544: CMakeFiles/localization_slam_toolbox_node.dir/all] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:807: CMakeFiles/async_slam_toolbox_node.dir/all] Interrupt
-make[2]: *** [CMakeFiles/lifelong_slam_toolbox_node.dir/build.make:63: CMakeFiles/lifelong_slam_toolbox_node.dir/src/experimental/slam_toolbox_lifelong_node.cpp.o] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:866: CMakeFiles/lifelong_slam_toolbox_node.dir/all] Interrupt
-make: *** [Makefile:141: all] Interrupt

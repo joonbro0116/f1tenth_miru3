@@ -1,0 +1,27 @@
+[2.344s] Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/lidar_processing -- -j6 -l6
+[3.368s] [ 33%] Built target lidar_node
+[3.419s] [ 66%] Built target wall_follow_node
+[3.420s] [100%] Built target gap_follow_node
+[3.735s] Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/lidar_processing -- -j6 -l6
+[3.765s] Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/lidar_processing
+[3.923s] -- Install configuration: "Release"
+[3.936s] -- Execute custom install script
+[3.941s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/lidar_node
+[3.953s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/wall_follow_node
+[3.993s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/gap_follow_node
+[3.994s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/package_run_dependencies/lidar_processing
+[4.094s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/parent_prefix_path/lidar_processing
+[4.097s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.sh
+[4.101s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.dsv
+[4.110s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/path.sh
+[4.123s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/path.dsv
+[4.127s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.bash
+[4.130s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.sh
+[4.141s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.zsh
+[4.144s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.dsv
+[4.147s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/package.dsv
+[4.219s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/packages/lidar_processing
+[4.229s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig.cmake
+[4.233s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig-version.cmake
+[4.238s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/package.xml
+[5.904s] Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/lidar_processing

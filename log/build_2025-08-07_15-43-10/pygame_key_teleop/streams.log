@@ -1,0 +1,25 @@
+[12.437s] Invoking command in '/home/f1/f1tenth_ws/build/pygame_key_teleop': PYTHONPATH=/home/f1/f1tenth_ws/build/pygame_key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/pygame_key_teleop/build --no-deps symlink_data
+[16.236s] running develop
+[18.060s] running egg_info
+[18.061s] creating pygame_key_teleop.egg-info
+[18.081s] writing pygame_key_teleop.egg-info/PKG-INFO
+[18.089s] writing dependency_links to pygame_key_teleop.egg-info/dependency_links.txt
+[18.091s] writing entry points to pygame_key_teleop.egg-info/entry_points.txt
+[18.095s] writing requirements to pygame_key_teleop.egg-info/requires.txt
+[18.105s] writing top-level names to pygame_key_teleop.egg-info/top_level.txt
+[18.131s] writing manifest file 'pygame_key_teleop.egg-info/SOURCES.txt'
+[18.607s] reading manifest file 'pygame_key_teleop.egg-info/SOURCES.txt'
+[18.618s] writing manifest file 'pygame_key_teleop.egg-info/SOURCES.txt'
+[19.149s] running build_ext
+[19.150s] Creating /home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages/site.py
+[19.181s] Creating /home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages/pygame-key-teleop.egg-link (link to .)
+[19.187s] Installing pygame_key_teleop script to /home/f1/f1tenth_ws/install/pygame_key_teleop/lib/pygame_key_teleop
+[19.189s] 
+[19.189s] Installed /home/f1/f1tenth_ws/build/pygame_key_teleop
+[19.190s] running symlink_data
+[19.190s] creating /home/f1/f1tenth_ws/install/pygame_key_teleop/share/ament_index
+[19.191s] creating /home/f1/f1tenth_ws/install/pygame_key_teleop/share/ament_index/resource_index
+[19.192s] creating /home/f1/f1tenth_ws/install/pygame_key_teleop/share/ament_index/resource_index/packages
+[19.193s] symbolically linking /home/f1/f1tenth_ws/build/pygame_key_teleop/resource/pygame_key_teleop -> /home/f1/f1tenth_ws/install/pygame_key_teleop/share/ament_index/resource_index/packages
+[19.194s] symbolically linking /home/f1/f1tenth_ws/build/pygame_key_teleop/package.xml -> /home/f1/f1tenth_ws/install/pygame_key_teleop/share/pygame_key_teleop
+[19.476s] Invoked command in '/home/f1/f1tenth_ws/build/pygame_key_teleop' returned '0': PYTHONPATH=/home/f1/f1tenth_ws/build/pygame_key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/pygame_key_teleop/build --no-deps symlink_data

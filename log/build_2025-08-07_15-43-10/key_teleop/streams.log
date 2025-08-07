@@ -1,0 +1,27 @@
+[4.922s] Invoking command in '/home/f1/f1tenth_ws/build/key_teleop': PYTHONPATH=/home/f1/f1tenth_ws/build/key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/key_teleop/build --no-deps symlink_data
+[13.714s] running develop
+[13.733s] running egg_info
+[13.734s] creating key_teleop.egg-info
+[13.735s] writing key_teleop.egg-info/PKG-INFO
+[13.735s] writing dependency_links to key_teleop.egg-info/dependency_links.txt
+[13.736s] writing entry points to key_teleop.egg-info/entry_points.txt
+[13.736s] writing requirements to key_teleop.egg-info/requires.txt
+[13.737s] writing top-level names to key_teleop.egg-info/top_level.txt
+[13.738s] writing manifest file 'key_teleop.egg-info/SOURCES.txt'
+[13.738s] reading manifest file 'key_teleop.egg-info/SOURCES.txt'
+[13.739s] writing manifest file 'key_teleop.egg-info/SOURCES.txt'
+[13.739s] running build_ext
+[13.740s] Creating /home/f1/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/site.py
+[13.740s] Creating /home/f1/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key-teleop.egg-link (link to .)
+[13.741s] Installing key_teleop script to /home/f1/f1tenth_ws/install/key_teleop/lib/key_teleop
+[13.741s] 
+[13.742s] Installed /home/f1/f1tenth_ws/build/key_teleop
+[13.743s] running symlink_data
+[13.767s] symbolically linking /home/f1/f1tenth_ws/build/key_teleop/package.xml -> /home/f1/f1tenth_ws/install/key_teleop/share/key_teleop
+[13.768s] creating /home/f1/f1tenth_ws/install/key_teleop/share/key_teleop/config
+[13.769s] symbolically linking /home/f1/f1tenth_ws/build/key_teleop/config/key_teleop.yaml -> /home/f1/f1tenth_ws/install/key_teleop/share/key_teleop/config
+[13.769s] creating /home/f1/f1tenth_ws/install/key_teleop/share/ament_index
+[13.770s] creating /home/f1/f1tenth_ws/install/key_teleop/share/ament_index/resource_index
+[13.770s] creating /home/f1/f1tenth_ws/install/key_teleop/share/ament_index/resource_index/packages
+[13.770s] symbolically linking /home/f1/f1tenth_ws/build/key_teleop/resource/key_teleop -> /home/f1/f1tenth_ws/install/key_teleop/share/ament_index/resource_index/packages
+[13.806s] Invoked command in '/home/f1/f1tenth_ws/build/key_teleop' returned '0': PYTHONPATH=/home/f1/f1tenth_ws/build/key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/key_teleop/build --no-deps symlink_data

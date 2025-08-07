@@ -1,0 +1,3 @@
+[console_scripts]
+pygame_key_teleop = pygame_key_teleop.teleop_node:main
+

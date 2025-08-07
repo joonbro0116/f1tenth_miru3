@@ -1,0 +1,21 @@
+[0.086s] Invoking command in '/home/f1/f1tenth_ws/build/particle_filter': /usr/bin/cmake /home/f1/f1tenth_ws/src/particle_filter -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/particle_filter
+[0.287s] CMake Error at CMakeLists.txt:10 (find_package):
+[0.288s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.289s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.289s]   CMake did not find one.
+[0.290s] 
+[0.291s]   Could not find a package configuration file provided by "catkin" with any
+[0.292s]   of the following names:
+[0.292s] 
+[0.293s]     catkinConfig.cmake
+[0.293s]     catkin-config.cmake
+[0.294s] 
+[0.303s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.304s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.305s]   provides a separate development package or SDK, be sure it has been
+[0.305s]   installed.
+[0.306s] 
+[0.306s] 
+[0.307s] -- Configuring incomplete, errors occurred!
+[0.307s] See also "/home/f1/f1tenth_ws/build/particle_filter/CMakeFiles/CMakeOutput.log".
+[0.315s] Invoked command in '/home/f1/f1tenth_ws/build/particle_filter' returned '1': /usr/bin/cmake /home/f1/f1tenth_ws/src/particle_filter -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/particle_filter

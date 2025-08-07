@@ -1,0 +1,23 @@
+[2.329s] Invoking command in '/home/f1/f1tenth_ws/build/center_follow_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/center_follow_cpp -- -j6 -l6
+[3.256s] [100%] Built target center_follower
+[3.727s] Invoked command in '/home/f1/f1tenth_ws/build/center_follow_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/center_follow_cpp -- -j6 -l6
+[3.745s] Invoking command in '/home/f1/f1tenth_ws/build/center_follow_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/center_follow_cpp
+[3.867s] -- Install configuration: "Release"
+[3.881s] -- Execute custom install script
+[3.882s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/lib/center_follow_cpp/center_follower
+[3.882s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/ament_index/resource_index/package_run_dependencies/center_follow_cpp
+[3.883s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/ament_index/resource_index/parent_prefix_path/center_follow_cpp
+[3.903s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/environment/ament_prefix_path.sh
+[3.907s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/environment/ament_prefix_path.dsv
+[3.914s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/environment/path.sh
+[3.917s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/environment/path.dsv
+[3.917s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.bash
+[3.918s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.sh
+[3.918s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.zsh
+[3.919s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.dsv
+[3.921s] -- Symlinking: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/package.dsv
+[4.056s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/ament_index/resource_index/packages/center_follow_cpp
+[4.058s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/cmake/center_follow_cppConfig.cmake
+[4.064s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/cmake/center_follow_cppConfig-version.cmake
+[4.085s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/package.xml
+[5.867s] Invoked command in '/home/f1/f1tenth_ws/build/center_follow_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/center_follow_cpp

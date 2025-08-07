@@ -1,0 +1,94 @@
+[0.000000] (-) TimerEvent: {}
+[0.001541] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.002417] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.003103] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.003734] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.003966] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.004185] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.004326] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.004534] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.005744] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.005919] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.006107] (-) JobUnselected: {'identifier': 'vesc'}
+[0.006262] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.006460] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.007448] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.007642] (particle_filter) JobQueued: {'identifier': 'particle_filter', 'dependencies': OrderedDict()}
+[0.007795] (particle_filter) JobStarted: {'identifier': 'particle_filter'}
+[0.081425] (particle_filter) JobProgress: {'identifier': 'particle_filter', 'progress': 'cmake'}
+[0.087552] (particle_filter) Command: {'cmd': ['/usr/bin/cmake', '/home/f1/f1tenth_ws/src/particle_filter', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/particle_filter'], 'cwd': '/home/f1/f1tenth_ws/build/particle_filter', 'env': OrderedDict([('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_CLIENT', '172.16.64.212 62788 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/f1/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('BROWSER', '/home/f1/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/bin/helpers/browser.sh'), ('LD_LIBRARY_PATH', '/home/f1/install/vesc_driver/lib:/home/f1/install/vesc_ackermann/lib:/home/f1/install/vesc_msgs/lib:/home/f1/install/teleop_tools_msgs/lib:/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/f1'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/f1/f1tenth_ws/src'), ('LESS', '-R'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1001/vscode-ipc-66bec4c6-e8bd-44ed-89d9-a2c706a079f7.sock'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/f1/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/extensions/git/dist/askpass-main.js'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_GIT_ASKPASS_NODE', '/home/f1/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('ROS_DISTRO', 'foxy'), ('COLCON_PREFIX_PATH', '/home/f1/f1tenth_ws/install:/home/f1/install'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/home/f1/.vscode-server/cli/servers/Stable-488a1f239235055e34e673291fb8d8c810886f81/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/f1/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('PAPERSIZE', 'a4'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-f84bb00c88.sock'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/f1/install/f1tenth_stack:/home/f1/install/vesc:/home/f1/install/vesc_driver:/home/f1/install/vesc_ackermann:/home/f1/install/vesc_msgs:/home/f1/install/teleop_tools:/home/f1/install/joy_teleop:/home/f1/install/teleop_tools_msgs:/home/f1/install/mouse_teleop:/home/f1/install/lidar_processing:/home/f1/install/key_teleop:/home/f1/install/center_follow_cpp:/home/f1/install/ackermann_mux:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/lidar_processing:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/center_follow_cpp:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/f1/f1tenth_ws/build/particle_filter'), ('SSH_CONNECTION', '172.16.64.212 62788 172.16.73.76 22'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/f1/build/f1tenth_stack:/home/f1/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/build/joy_teleop:/home/f1/install/joy_teleop/lib/python3.8/site-packages:/home/f1/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/f1/build/mouse_teleop:/home/f1/install/mouse_teleop/lib/python3.8/site-packages:/home/f1/build/key_teleop:/home/f1/install/key_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/pygame_key_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/mouse_teleop:/home/f1/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/key_teleop:/home/f1/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/home/f1/install/vesc:/home/f1/install/vesc_driver:/home/f1/install/vesc_ackermann:/home/f1/install/vesc_msgs:/home/f1/install/teleop_tools:/home/f1/install/teleop_tools_msgs:/home/f1/install/lidar_processing:/home/f1/install/center_follow_cpp:/home/f1/install/ackermann_mux:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/lidar_processing:/home/f1/f1tenth_ws/install/center_follow_cpp:/home/f1/f1tenth_ws/install/ackermann_mux')]), 'shell': False}
+[0.099703] (-) TimerEvent: {}
+[0.201457] (-) TimerEvent: {}
+[0.303714] (-) TimerEvent: {}
+[0.405050] (-) TimerEvent: {}
+[0.506252] (-) TimerEvent: {}
+[0.607434] (-) TimerEvent: {}
+[0.689178] (particle_filter) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.709449] (-) TimerEvent: {}
+[0.810793] (-) TimerEvent: {}
+[0.911916] (-) TimerEvent: {}
+[1.013447] (-) TimerEvent: {}
+[1.114704] (-) TimerEvent: {}
+[1.215757] (-) TimerEvent: {}
+[1.239946] (particle_filter) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.289911] (particle_filter) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.316487] (-) TimerEvent: {}
+[1.419283] (-) TimerEvent: {}
+[1.520454] (-) TimerEvent: {}
+[1.621684] (-) TimerEvent: {}
+[1.722841] (-) TimerEvent: {}
+[1.818257] (particle_filter) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.823032] (-) TimerEvent: {}
+[1.824777] (particle_filter) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.923339] (-) TimerEvent: {}
+[2.024663] (-) TimerEvent: {}
+[2.125775] (-) TimerEvent: {}
+[2.227086] (-) TimerEvent: {}
+[2.328178] (-) TimerEvent: {}
+[2.354419] (particle_filter) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.428508] (-) TimerEvent: {}
+[2.471831] (particle_filter) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.474526] (particle_filter) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.499628] (particle_filter) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.528767] (-) TimerEvent: {}
+[2.629772] (-) TimerEvent: {}
+[2.730984] (-) TimerEvent: {}
+[2.832145] (-) TimerEvent: {}
+[2.933303] (-) TimerEvent: {}
+[3.035235] (-) TimerEvent: {}
+[3.064461] (particle_filter) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.070512] (particle_filter) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.135282] (-) TimerEvent: {}
+[3.236609] (-) TimerEvent: {}
+[3.338091] (-) TimerEvent: {}
+[3.440026] (-) TimerEvent: {}
+[3.541237] (-) TimerEvent: {}
+[3.616811] (particle_filter) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.641629] (-) TimerEvent: {}
+[3.716940] (particle_filter) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.722490] (particle_filter) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.741718] (-) TimerEvent: {}
+[3.801284] (particle_filter) StderrLine: {'line': b'CMake Error at CMakeLists.txt:10 (find_package):\n'}
+[3.802921] (particle_filter) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[3.803423] (particle_filter) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[3.803901] (particle_filter) StderrLine: {'line': b'  CMake did not find one.\n'}
+[3.804373] (particle_filter) StderrLine: {'line': b'\n'}
+[3.804825] (particle_filter) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[3.805398] (particle_filter) StderrLine: {'line': b'  of the following names:\n'}
+[3.805978] (particle_filter) StderrLine: {'line': b'\n'}
+[3.806902] (particle_filter) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[3.807773] (particle_filter) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[3.808184] (particle_filter) StderrLine: {'line': b'\n'}
+[3.808594] (particle_filter) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[3.809149] (particle_filter) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[3.809670] (particle_filter) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[3.810160] (particle_filter) StderrLine: {'line': b'  installed.\n'}
+[3.810655] (particle_filter) StderrLine: {'line': b'\n'}
+[3.811068] (particle_filter) StderrLine: {'line': b'\n'}
+[3.811458] (particle_filter) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.811949] (particle_filter) StdoutLine: {'line': b'See also "/home/f1/f1tenth_ws/build/particle_filter/CMakeFiles/CMakeOutput.log".\n'}
+[3.824240] (particle_filter) CommandEnded: {'returncode': 1}
+[3.842854] (-) TimerEvent: {}
+[3.949086] (-) TimerEvent: {}
+[3.979076] (particle_filter) JobEnded: {'identifier': 'particle_filter', 'rc': 1}
+[3.992363] (-) EventReactorShutdown: {}

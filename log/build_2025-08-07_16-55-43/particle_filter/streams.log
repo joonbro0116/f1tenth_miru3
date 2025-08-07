@@ -1,0 +1,35 @@
+[0.089s] Invoking command in '/home/f1/f1tenth_ws/build/particle_filter': /usr/bin/cmake /home/f1/f1tenth_ws/src/particle_filter -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/particle_filter
+[0.683s] -- The C compiler identification is GNU 9.4.0
+[1.233s] -- The CXX compiler identification is GNU 9.4.0
+[1.283s] -- Check for working C compiler: /usr/bin/cc
+[1.811s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.817s] -- Detecting C compiler ABI info
+[2.347s] -- Detecting C compiler ABI info - done
+[2.466s] -- Detecting C compile features
+[2.467s] -- Detecting C compile features - done
+[2.492s] -- Check for working CXX compiler: /usr/bin/c++
+[3.057s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.063s] -- Detecting CXX compiler ABI info
+[3.609s] -- Detecting CXX compiler ABI info - done
+[3.710s] -- Detecting CXX compile features
+[3.715s] -- Detecting CXX compile features - done
+[3.795s] CMake Error at CMakeLists.txt:10 (find_package):
+[3.795s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[3.796s]   asked CMake to find a package configuration file provided by "catkin", but
+[3.796s]   CMake did not find one.
+[3.797s] 
+[3.797s]   Could not find a package configuration file provided by "catkin" with any
+[3.798s]   of the following names:
+[3.799s] 
+[3.800s]     catkinConfig.cmake
+[3.800s]     catkin-config.cmake
+[3.801s] 
+[3.801s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[3.802s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[3.802s]   provides a separate development package or SDK, be sure it has been
+[3.803s]   installed.
+[3.803s] 
+[3.803s] 
+[3.804s] -- Configuring incomplete, errors occurred!
+[3.804s] See also "/home/f1/f1tenth_ws/build/particle_filter/CMakeFiles/CMakeOutput.log".
+[3.818s] Invoked command in '/home/f1/f1tenth_ws/build/particle_filter' returned '1': /usr/bin/cmake /home/f1/f1tenth_ws/src/particle_filter -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/particle_filter

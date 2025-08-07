@@ -1,0 +1,17 @@
+[10.660s] Invoking command in '/home/f1/f1tenth_ws/build/pygame_key_teleop': PYTHONPATH=/home/f1/f1tenth_ws/build/pygame_key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/pygame_key_teleop/build --no-deps symlink_data
+[12.879s] running develop
+[14.005s] running egg_info
+[14.007s] writing pygame_key_teleop.egg-info/PKG-INFO
+[14.011s] writing dependency_links to pygame_key_teleop.egg-info/dependency_links.txt
+[14.014s] writing entry points to pygame_key_teleop.egg-info/entry_points.txt
+[14.017s] writing requirements to pygame_key_teleop.egg-info/requires.txt
+[14.019s] writing top-level names to pygame_key_teleop.egg-info/top_level.txt
+[14.244s] reading manifest file 'pygame_key_teleop.egg-info/SOURCES.txt'
+[14.251s] writing manifest file 'pygame_key_teleop.egg-info/SOURCES.txt'
+[14.509s] running build_ext
+[14.512s] Creating /home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages/pygame-key-teleop.egg-link (link to .)
+[14.540s] Installing pygame_key_teleop script to /home/f1/f1tenth_ws/install/pygame_key_teleop/lib/pygame_key_teleop
+[14.543s] 
+[14.543s] Installed /home/f1/f1tenth_ws/build/pygame_key_teleop
+[14.544s] running symlink_data
+[14.943s] Invoked command in '/home/f1/f1tenth_ws/build/pygame_key_teleop' returned '0': PYTHONPATH=/home/f1/f1tenth_ws/build/pygame_key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/pygame_key_teleop/build --no-deps symlink_data

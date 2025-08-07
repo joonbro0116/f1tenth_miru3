@@ -8,4 +8,4 @@ ackermann_mux:
       joystick:
         topic   : teleop
         timeout : 0.2
-        priority: 100
+        priority: 5

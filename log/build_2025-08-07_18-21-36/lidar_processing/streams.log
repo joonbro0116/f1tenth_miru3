@@ -1,0 +1,30 @@
+[1.977s] Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/lidar_processing -- -j6 -l6
+[2.491s] [35m[1mScanning dependencies of target gap_follow_node[0m
+[2.763s] [ 33%] Built target lidar_node
+[2.798s] [ 66%] Built target wall_follow_node
+[3.093s] [ 83%] [32mBuilding CXX object CMakeFiles/gap_follow_node.dir/src/gap_follow_node.cpp.o[0m
+[58.823s] [100%] [32m[1mLinking CXX executable gap_follow_node[0m
+[59.702s] [100%] Built target gap_follow_node
+[59.763s] Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/lidar_processing -- -j6 -l6
+[59.778s] Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/lidar_processing
+[59.825s] -- Install configuration: "Release"
+[59.828s] -- Execute custom install script
+[59.832s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/lidar_node
+[59.835s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/wall_follow_node
+[59.838s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/gap_follow_node
+[59.840s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/package_run_dependencies/lidar_processing
+[59.843s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/parent_prefix_path/lidar_processing
+[59.844s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.sh
+[59.846s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.dsv
+[59.848s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/path.sh
+[59.850s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/path.dsv
+[59.852s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.bash
+[59.854s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.sh
+[59.856s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.zsh
+[59.858s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.dsv
+[59.859s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/package.dsv
+[59.910s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/packages/lidar_processing
+[59.911s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig.cmake
+[59.913s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig-version.cmake
+[59.915s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/package.xml
+[59.931s] Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/lidar_processing

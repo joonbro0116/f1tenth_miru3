@@ -1,0 +1,9 @@
+source;share/pygame_key_teleop/hook/pythonpath.ps1
+source;share/pygame_key_teleop/hook/pythonpath.dsv
+source;share/pygame_key_teleop/hook/pythonpath.sh
+source;share/pygame_key_teleop/hook/ament_prefix_path.ps1
+source;share/pygame_key_teleop/hook/ament_prefix_path.dsv
+source;share/pygame_key_teleop/hook/ament_prefix_path.sh
+source;../../build/pygame_key_teleop/share/pygame_key_teleop/hook/pythonpath_develop.ps1
+source;../../build/pygame_key_teleop/share/pygame_key_teleop/hook/pythonpath_develop.dsv
+source;../../build/pygame_key_teleop/share/pygame_key_teleop/hook/pythonpath_develop.sh

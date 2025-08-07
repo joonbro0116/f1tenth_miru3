@@ -1,1 +1,0 @@
-/home/f1/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config/backpack_2d.lua

@@ -1,0 +1,90 @@
+[1.931s] Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/install/f1tenth_stack:/home/f1/install/joy_teleop:/home/f1/install/mouse_teleop:/home/f1/install/key_teleop:/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/lidar_processing -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/lidar_processing
+[2.412s] -- The C compiler identification is GNU 9.4.0
+[2.874s] -- The CXX compiler identification is GNU 9.4.0
+[2.927s] -- Check for working C compiler: /usr/bin/cc
+[3.486s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.498s] -- Detecting C compiler ABI info
+[4.227s] -- Detecting C compiler ABI info - done
+[4.327s] -- Detecting C compile features
+[4.332s] -- Detecting C compile features - done
+[4.351s] -- Check for working CXX compiler: /usr/bin/c++
+[4.997s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[5.004s] -- Detecting CXX compiler ABI info
+[5.694s] -- Detecting CXX compiler ABI info - done
+[5.793s] -- Detecting CXX compile features
+[5.797s] -- Detecting CXX compile features - done
+[5.837s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[6.122s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[6.124s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.430s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[7.768s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[8.170s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.241s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[8.965s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[9.181s] -- Found FastRTPS: /opt/ros/foxy/include  
+[9.760s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.201s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[10.221s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.228s] -- Looking for pthread.h
+[10.771s] -- Looking for pthread.h - found
+[10.774s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[11.316s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[11.320s] -- Looking for pthread_create in pthreads
+[11.787s] -- Looking for pthread_create in pthreads - not found
+[11.788s] -- Looking for pthread_create in pthread
+[12.352s] -- Looking for pthread_create in pthread - found
+[12.364s] -- Found Threads: TRUE  
+[13.297s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[13.939s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[14.417s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[15.425s] -- Configuring done
+[15.718s] -- Generating done
+[15.865s] -- Build files have been written to: /home/f1/f1tenth_ws/build/lidar_processing
+[16.389s] Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/install/f1tenth_stack:/home/f1/install/joy_teleop:/home/f1/install/mouse_teleop:/home/f1/install/key_teleop:/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/lidar_processing -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/lidar_processing
+[16.413s] Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/install/f1tenth_stack:/home/f1/install/joy_teleop:/home/f1/install/mouse_teleop:/home/f1/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/lidar_processing -- -j6 -l6
+[17.030s] [35m[1mScanning dependencies of target gap_follow_node[0m
+[17.137s] [35m[1mScanning dependencies of target wall_follow_node[0m
+[17.145s] [35m[1mScanning dependencies of target lidar_node[0m
+[18.082s] [ 16%] [32mBuilding CXX object CMakeFiles/gap_follow_node.dir/src/gap_follow_node.cpp.o[0m
+[18.107s] [ 33%] [32mBuilding CXX object CMakeFiles/lidar_node.dir/src/lidar_node.cpp.o[0m
+[18.192s] [ 50%] [32mBuilding CXX object CMakeFiles/wall_follow_node.dir/src/wall_follow_node.cpp.o[0m
+[41.703s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/wall_follow_node.cpp:[m[K In member function ‘[01m[Kvoid WallFollow::pid_control(double, double)[m[K’:
+[41.704s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/wall_follow_node.cpp:120:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[41.704s]   120 |         double [01;35m[Kangle[m[K = 0.0;
+[41.705s]       |                [01;35m[K^~~~~[m[K
+[41.706s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/wall_follow_node.cpp:104:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[41.706s]   104 |     void pid_control(double error, [01;35m[Kdouble velocity[m[K)
+[41.707s]       |                                    [01;35m[K~~~~~~~^~~~~~~~[m[K
+[41.723s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/wall_follow_node.cpp:[m[K In member function ‘[01m[Kvoid WallFollow::scan_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[41.724s] [01m[K/home/f1/f1tenth_ws/src/lidar_processing/src/wall_follow_node.cpp:168:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvelocity[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[41.725s]   168 |         double [01;35m[Kvelocity[m[K = 0.0; // TODO: calculate desired car velocity based on error
+[41.725s]       |                [01;35m[K^~~~~~~~[m[K
+[99.182s] [ 66%] [32m[1mLinking CXX executable lidar_node[0m
+[100.382s] [ 66%] Built target lidar_node
+[117.400s] [ 83%] [32m[1mLinking CXX executable wall_follow_node[0m
+[118.542s] [ 83%] Built target wall_follow_node
+[120.824s] [100%] [32m[1mLinking CXX executable gap_follow_node[0m
+[122.048s] [100%] Built target gap_follow_node
+[122.241s] Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/install/f1tenth_stack:/home/f1/install/joy_teleop:/home/f1/install/mouse_teleop:/home/f1/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/lidar_processing -- -j6 -l6
+[122.259s] Invoking command in '/home/f1/f1tenth_ws/build/lidar_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/install/f1tenth_stack:/home/f1/install/joy_teleop:/home/f1/install/mouse_teleop:/home/f1/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/lidar_processing
+[122.386s] -- Install configuration: "Release"
+[122.391s] -- Execute custom install script
+[122.398s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/lidar_node
+[122.485s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/wall_follow_node
+[122.605s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/lib/lidar_processing/gap_follow_node
+[122.682s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/package_run_dependencies/lidar_processing
+[122.759s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/parent_prefix_path/lidar_processing
+[122.854s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.sh
+[122.935s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.dsv
+[123.025s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/path.sh
+[123.106s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/environment/path.dsv
+[123.227s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.bash
+[123.348s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.sh
+[123.446s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.zsh
+[123.594s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/local_setup.dsv
+[123.691s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/package.dsv
+[123.797s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/ament_index/resource_index/packages/lidar_processing
+[123.973s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig.cmake
+[124.089s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig-version.cmake
+[124.181s] -- Symlinking: /home/f1/f1tenth_ws/install/lidar_processing/share/lidar_processing/package.xml
+[124.322s] Invoked command in '/home/f1/f1tenth_ws/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/install/f1tenth_stack:/home/f1/install/joy_teleop:/home/f1/install/mouse_teleop:/home/f1/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/lidar_processing

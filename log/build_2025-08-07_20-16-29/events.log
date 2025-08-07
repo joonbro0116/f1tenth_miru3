@@ -1,0 +1,161 @@
+[0.000000] (-) TimerEvent: {}
+[0.001154] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.002799] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.003956] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.004698] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.005433] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.006940] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.008252] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.009572] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.010075] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.010757] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.011285] (-) JobUnselected: {'identifier': 'vesc'}
+[0.011735] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.012422] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.013206] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.017763] (f1tenth_slam_nav) JobQueued: {'identifier': 'f1tenth_slam_nav', 'dependencies': OrderedDict([('ackermann_mux', '/home/f1/f1tenth_ws/install/ackermann_mux'), ('teleop_tools_msgs', '/home/f1/f1tenth_ws/install/teleop_tools_msgs'), ('vesc_msgs', '/home/f1/f1tenth_ws/install/vesc_msgs'), ('joy_teleop', '/home/f1/f1tenth_ws/install/joy_teleop'), ('vesc_ackermann', '/home/f1/f1tenth_ws/install/vesc_ackermann'), ('vesc_driver', '/home/f1/f1tenth_ws/install/vesc_driver'), ('vesc', '/home/f1/f1tenth_ws/install/vesc'), ('f1tenth_stack', '/home/f1/f1tenth_ws/install/f1tenth_stack')])}
+[0.018726] (f1tenth_slam_nav) JobStarted: {'identifier': 'f1tenth_slam_nav'}
+[0.098861] (-) TimerEvent: {}
+[0.168242] (f1tenth_slam_nav) JobProgress: {'identifier': 'f1tenth_slam_nav', 'progress': 'cmake'}
+[0.173913] (f1tenth_slam_nav) Command: {'cmd': ['/usr/bin/cmake', '/home/f1/f1tenth_ws/src/f1tenth_slam_nav', '-DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/f1tenth_slam_nav'], 'cwd': '/home/f1/f1tenth_ws/build/f1tenth_slam_nav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('SSH_AGENT_PID', '3471'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/f1'), ('OLDPWD', '/home/f1/f1tenth_ws'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('MANAGERPID', '2702'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:58338'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'f1'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3532,unix/ubuntu:/tmp/.ICE-unix/3532'), ('PAPERSIZE', 'a4'), ('INVOCATION_ID', 'd906f11e1ea64bb0b499bbe463ff34d7'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/487ddb3b_eab6_490a_b268_c4215dabc8ac'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('XMODIFIERS', '@im=fcitx'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/f1/f1tenth_ws/build/f1tenth_slam_nav'), ('LC_ALL', 'en_US.UTF-8'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy')]), 'shell': False}
+[0.202680] (-) TimerEvent: {}
+[0.303329] (-) TimerEvent: {}
+[0.403991] (-) TimerEvent: {}
+[0.504640] (-) TimerEvent: {}
+[0.605330] (-) TimerEvent: {}
+[0.706182] (-) TimerEvent: {}
+[0.806087] (f1tenth_slam_nav) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.807448] (-) TimerEvent: {}
+[0.907877] (-) TimerEvent: {}
+[1.008482] (-) TimerEvent: {}
+[1.109176] (-) TimerEvent: {}
+[1.210037] (-) TimerEvent: {}
+[1.310955] (-) TimerEvent: {}
+[1.367437] (f1tenth_slam_nav) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.408495] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.411169] (-) TimerEvent: {}
+[1.511748] (-) TimerEvent: {}
+[1.612373] (-) TimerEvent: {}
+[1.712998] (-) TimerEvent: {}
+[1.813642] (-) TimerEvent: {}
+[1.914318] (-) TimerEvent: {}
+[1.950259] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.959784] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.014819] (-) TimerEvent: {}
+[2.115439] (-) TimerEvent: {}
+[2.216124] (-) TimerEvent: {}
+[2.316873] (-) TimerEvent: {}
+[2.417609] (-) TimerEvent: {}
+[2.518312] (-) TimerEvent: {}
+[2.519353] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.618642] (-) TimerEvent: {}
+[2.626967] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.629946] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.648052] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.718919] (-) TimerEvent: {}
+[2.819601] (-) TimerEvent: {}
+[2.920224] (-) TimerEvent: {}
+[3.021048] (-) TimerEvent: {}
+[3.121806] (-) TimerEvent: {}
+[3.222537] (-) TimerEvent: {}
+[3.239926] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.246501] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.322787] (-) TimerEvent: {}
+[3.423481] (-) TimerEvent: {}
+[3.524105] (-) TimerEvent: {}
+[3.624707] (-) TimerEvent: {}
+[3.725472] (-) TimerEvent: {}
+[3.826148] (-) TimerEvent: {}
+[3.850161] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.926452] (-) TimerEvent: {}
+[3.928950] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.932273] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.953671] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[4.026703] (-) TimerEvent: {}
+[4.127300] (-) TimerEvent: {}
+[4.159788] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[4.161276] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.227659] (-) TimerEvent: {}
+[4.328322] (-) TimerEvent: {}
+[4.428874] (-) TimerEvent: {}
+[4.529552] (-) TimerEvent: {}
+[4.630192] (-) TimerEvent: {}
+[4.731910] (-) TimerEvent: {}
+[4.832719] (-) TimerEvent: {}
+[4.933432] (-) TimerEvent: {}
+[5.034070] (-) TimerEvent: {}
+[5.134692] (-) TimerEvent: {}
+[5.235357] (-) TimerEvent: {}
+[5.335963] (-) TimerEvent: {}
+[5.436619] (-) TimerEvent: {}
+[5.537234] (-) TimerEvent: {}
+[5.637888] (-) TimerEvent: {}
+[5.702495] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[5.738156] (-) TimerEvent: {}
+[5.838763] (-) TimerEvent: {}
+[5.939370] (-) TimerEvent: {}
+[6.040059] (-) TimerEvent: {}
+[6.140727] (-) TimerEvent: {}
+[6.227519] (f1tenth_slam_nav) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[6.240969] (-) TimerEvent: {}
+[6.252545] (f1tenth_slam_nav) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[6.259333] (f1tenth_slam_nav) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.267477] (f1tenth_slam_nav) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[6.285534] (f1tenth_slam_nav) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.319466] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.340918] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Generating done\n'}
+[6.341932] (-) TimerEvent: {}
+[6.353786] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Build files have been written to: /home/f1/f1tenth_ws/build/f1tenth_slam_nav\n'}
+[6.373185] (f1tenth_slam_nav) CommandEnded: {'returncode': 0}
+[6.377345] (f1tenth_slam_nav) JobProgress: {'identifier': 'f1tenth_slam_nav', 'progress': 'build'}
+[6.382393] (f1tenth_slam_nav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/f1/f1tenth_ws/build/f1tenth_slam_nav', '--', '-j6', '-l6'], 'cwd': '/home/f1/f1tenth_ws/build/f1tenth_slam_nav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('SSH_AGENT_PID', '3471'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/f1'), ('OLDPWD', '/home/f1/f1tenth_ws'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('MANAGERPID', '2702'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:58338'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'f1'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3532,unix/ubuntu:/tmp/.ICE-unix/3532'), ('PAPERSIZE', 'a4'), ('INVOCATION_ID', 'd906f11e1ea64bb0b499bbe463ff34d7'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/487ddb3b_eab6_490a_b268_c4215dabc8ac'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('XMODIFIERS', '@im=fcitx'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/f1/f1tenth_ws/build/f1tenth_slam_nav'), ('LC_ALL', 'en_US.UTF-8'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy')]), 'shell': False}
+[6.442592] (-) TimerEvent: {}
+[6.543289] (-) TimerEvent: {}
+[6.643977] (-) TimerEvent: {}
+[6.677863] (f1tenth_slam_nav) CommandEnded: {'returncode': 0}
+[6.683546] (f1tenth_slam_nav) JobProgress: {'identifier': 'f1tenth_slam_nav', 'progress': 'install'}
+[6.745075] (-) TimerEvent: {}
+[6.757015] (f1tenth_slam_nav) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/f1/f1tenth_ws/build/f1tenth_slam_nav'], 'cwd': '/home/f1/f1tenth_ws/build/f1tenth_slam_nav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('SSH_AGENT_PID', '3471'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/f1'), ('OLDPWD', '/home/f1/f1tenth_ws'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('MANAGERPID', '2702'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:58338'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'f1'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3532,unix/ubuntu:/tmp/.ICE-unix/3532'), ('PAPERSIZE', 'a4'), ('INVOCATION_ID', 'd906f11e1ea64bb0b499bbe463ff34d7'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/487ddb3b_eab6_490a_b268_c4215dabc8ac'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('XMODIFIERS', '@im=fcitx'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/f1/f1tenth_ws/build/f1tenth_slam_nav'), ('LC_ALL', 'en_US.UTF-8'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy')]), 'shell': False}
+[6.818223] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.819938] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/launch/\n'}
+[6.820614] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/launch//localization_launch.py\n'}
+[6.822946] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/launch//slam_launch.py\n'}
+[6.824181] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/launch//slam_nav_launch.py\n'}
+[6.824649] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/config/\n'}
+[6.826634] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/config//cartographer_config.lua\n'}
+[6.827456] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/config//slam_toolbox_config.yaml\n'}
+[6.827911] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/config//slam_toolbox_async_config.yaml\n'}
+[6.830256] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/config//amcl_config.yaml\n'}
+[6.831239] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/environment/pythonpath.sh\n'}
+[6.831693] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/environment/pythonpath.dsv\n'}
+[6.833298] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/lib/python3.8/site-packages/f1tenth_slam_nav\n'}
+[6.834429] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/lib/python3.8/site-packages/f1tenth_slam_nav/__init__.py\n'}
+[6.835194] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/lib/python3.8/site-packages/f1tenth_slam_nav/slam_nav_manager.py\n'}
+[6.845036] (-) TimerEvent: {}
+[6.945694] (-) TimerEvent: {}
+[7.046282] (-) TimerEvent: {}
+[7.048072] (f1tenth_slam_nav) StdoutLine: {'line': b"Listing '/home/f1/f1tenth_ws/install/f1tenth_slam_nav/lib/python3.8/site-packages/f1tenth_slam_nav'...\n"}
+[7.048915] (f1tenth_slam_nav) StdoutLine: {'line': b"Compiling '/home/f1/f1tenth_ws/install/f1tenth_slam_nav/lib/python3.8/site-packages/f1tenth_slam_nav/__init__.py'...\n"}
+[7.049479] (f1tenth_slam_nav) StdoutLine: {'line': b"Compiling '/home/f1/f1tenth_ws/install/f1tenth_slam_nav/lib/python3.8/site-packages/f1tenth_slam_nav/slam_nav_manager.py'...\n"}
+[7.069174] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/lib/f1tenth_slam_nav/slam_nav_manager.py\n'}
+[7.071173] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/lib/python3.8/site-packages/f1tenth_slam_nav/slam_nav_manager.py\n'}
+[7.074130] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/ament_index/resource_index/package_run_dependencies/f1tenth_slam_nav\n'}
+[7.077047] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/ament_index/resource_index/parent_prefix_path/f1tenth_slam_nav\n'}
+[7.078444] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/environment/ament_prefix_path.sh\n'}
+[7.080603] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/environment/ament_prefix_path.dsv\n'}
+[7.081895] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/environment/path.sh\n'}
+[7.083144] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/environment/path.dsv\n'}
+[7.084441] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/local_setup.bash\n'}
+[7.085695] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/local_setup.sh\n'}
+[7.087209] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/local_setup.zsh\n'}
+[7.088469] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/local_setup.dsv\n'}
+[7.089640] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/package.dsv\n'}
+[7.091247] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/ament_index/resource_index/packages/f1tenth_slam_nav\n'}
+[7.092813] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/cmake/f1tenth_slam_navConfig.cmake\n'}
+[7.095130] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/cmake/f1tenth_slam_navConfig-version.cmake\n'}
+[7.096020] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/package.xml\n'}
+[7.105757] (f1tenth_slam_nav) CommandEnded: {'returncode': 0}
+[7.147882] (-) TimerEvent: {}
+[7.248731] (-) TimerEvent: {}
+[7.285577] (f1tenth_slam_nav) JobEnded: {'identifier': 'f1tenth_slam_nav', 'rc': 0}
+[7.289424] (-) EventReactorShutdown: {}
