@@ -6,9 +6,9 @@
 
 | Alias | Purpose                          | Underlying Command                                                                                             |
 | ----- | -------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `rbl` | Bring‑up launch file             | `ros2 launch f1_stack bringup_launch.py`                                                                       |
-| `rsp` | **S**LAM **p**—Mapping mode      | `ros2 launch slam_toolbox online_async_launch.py \`<br/>`  params_file:=~/f1/f1tenth_ws/config/mapper.yaml`    |
-| `rsl` | **S**LAM **l**—Localization mode | `ros2 launch slam_toolbox localization_launch.py \`<br/>`  params_file:=~/f1/f1tenth_ws/config/localizer.yaml` |
+| `rbl` | Bringup launch file             | `ros2 launch f1_stack bringup_launch.py`                                                                       |
+| `rsp` | SLAM Mapping mode      | `ros2 launch slam_toolbox online_async_launch.py \`<br/>`  params_file:=~/f1/f1tenth_ws/config/mapper.yaml`    |
+| `rsl` | SLAM Localization mode | `ros2 launch slam_toolbox localization_launch.py \`<br/>`  params_file:=~/f1/f1tenth_ws/config/localizer.yaml` |
 
 > **Save map**
 >
