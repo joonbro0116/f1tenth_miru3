@@ -13,7 +13,7 @@
 > **Save map**
 >
 > ```bash
-> ros2 run nav2_map_server map_saver_cli -f ~/f1/f1tenth_ws/maps/<map_name>
+> ros2 run nav2_map_server map_saver_cli -f ~/f1/f1tenth_ws/maps/map_name
 > ```
 
 ---
