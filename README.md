@@ -4,12 +4,11 @@
 
 ## 1. Execution Shortcuts
 
-| Alias | Purpose                          | Underlying Command                                                                                             |
-| ----- | -------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `rbl` | Bringup launch file             | `ros2 launch f1_stack bringup_launch.py`                                                                       |
-| `rsp` | SLAM Mapping mode      | `ros2 launch slam_toolbox online_async_launch.py \`<br/>`  params_file:=~/f1/f1tenth_ws/config/mapper.yaml`    |
-| `rsl` | SLAM Localization mode | `ros2 launch slam_toolbox localization_launch.py \`<br/>`  params_file:=~/f1/f1tenth_ws/config/localizer.yaml` |
-
+| Alias | Purpose                          |
+| ----- | -------------------------------- |
+| `rbl` | Bringup launch file             |
+| `rsp` | SLAM Mapping mode      |
+| `rsl` | SLAM Localization mode |
 > **Save map**
 >
 > ```bash
