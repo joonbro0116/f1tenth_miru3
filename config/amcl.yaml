@@ -43,9 +43,9 @@ amcl_map_client:
   ros__parameters:
     use_sim_time: True
 
-amcl_rclcpp_node:
-  ros__parameters:
-    use_sim_time: True
+# amcl_rclcpp_node:  # Disabled to avoid conflict with our custom AMCL
+#   ros__parameters:
+#     use_sim_time: True
 
 bt_navigator:
   ros__parameters:

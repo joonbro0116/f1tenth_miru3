@@ -1,3 +1,1 @@
-source;share/f1tenth_slam_nav/environment/ament_prefix_path.sh
-source;share/f1tenth_slam_nav/environment/path.sh
-source;share/f1tenth_slam_nav/environment/pythonpath.sh
+/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.dsv

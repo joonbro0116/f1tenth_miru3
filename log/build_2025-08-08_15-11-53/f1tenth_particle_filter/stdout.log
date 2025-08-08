@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating f1tenth_particle_filter.egg-info
+writing f1tenth_particle_filter.egg-info/PKG-INFO
+writing dependency_links to f1tenth_particle_filter.egg-info/dependency_links.txt
+writing entry points to f1tenth_particle_filter.egg-info/entry_points.txt
+writing requirements to f1tenth_particle_filter.egg-info/requires.txt
+writing top-level names to f1tenth_particle_filter.egg-info/top_level.txt
+writing manifest file 'f1tenth_particle_filter.egg-info/SOURCES.txt'
+reading manifest file 'f1tenth_particle_filter.egg-info/SOURCES.txt'
+writing manifest file 'f1tenth_particle_filter.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/f1/f1tenth_ws/install/f1tenth_particle_filter/lib/python3.8/site-packages/site.py
+Creating /home/f1/f1tenth_ws/install/f1tenth_particle_filter/lib/python3.8/site-packages/f1tenth-particle-filter.egg-link (link to .)
+Installing fast_particle_filter script to /home/f1/f1tenth_ws/install/f1tenth_particle_filter/lib/f1tenth_particle_filter
+
+Installed /home/f1/f1tenth_ws/build/f1tenth_particle_filter
+running symlink_data
+creating /home/f1/f1tenth_ws/install/f1tenth_particle_filter/share/ament_index
+creating /home/f1/f1tenth_ws/install/f1tenth_particle_filter/share/ament_index/resource_index
+creating /home/f1/f1tenth_ws/install/f1tenth_particle_filter/share/ament_index/resource_index/packages
+symbolically linking /home/f1/f1tenth_ws/build/f1tenth_particle_filter/resource/f1tenth_particle_filter -> /home/f1/f1tenth_ws/install/f1tenth_particle_filter/share/ament_index/resource_index/packages
+symbolically linking /home/f1/f1tenth_ws/build/f1tenth_particle_filter/package.xml -> /home/f1/f1tenth_ws/install/f1tenth_particle_filter/share/f1tenth_particle_filter

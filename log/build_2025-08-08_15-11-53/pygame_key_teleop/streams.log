@@ -1,0 +1,17 @@
+[6.091s] Invoking command in '/home/f1/f1tenth_ws/build/pygame_key_teleop': PYTHONPATH=/home/f1/f1tenth_ws/build/pygame_key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/pygame_key_teleop/build --no-deps symlink_data
+[7.782s] running develop
+[8.752s] running egg_info
+[8.764s] writing pygame_key_teleop.egg-info/PKG-INFO
+[8.772s] writing dependency_links to pygame_key_teleop.egg-info/dependency_links.txt
+[8.773s] writing entry points to pygame_key_teleop.egg-info/entry_points.txt
+[8.774s] writing requirements to pygame_key_teleop.egg-info/requires.txt
+[8.774s] writing top-level names to pygame_key_teleop.egg-info/top_level.txt
+[8.992s] reading manifest file 'pygame_key_teleop.egg-info/SOURCES.txt'
+[8.997s] writing manifest file 'pygame_key_teleop.egg-info/SOURCES.txt'
+[9.230s] running build_ext
+[9.232s] Creating /home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages/pygame-key-teleop.egg-link (link to .)
+[9.238s] Installing pygame_key_teleop script to /home/f1/f1tenth_ws/install/pygame_key_teleop/lib/pygame_key_teleop
+[9.241s] 
+[9.241s] Installed /home/f1/f1tenth_ws/build/pygame_key_teleop
+[9.242s] running symlink_data
+[9.391s] Invoked command in '/home/f1/f1tenth_ws/build/pygame_key_teleop' returned '0': PYTHONPATH=/home/f1/f1tenth_ws/build/pygame_key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/pygame_key_teleop/build --no-deps symlink_data

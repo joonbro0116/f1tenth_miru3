@@ -42,12 +42,19 @@ def generate_launch_description():
         default_value="true",
         description="Automatically start lifecycle nodes"
     )
+    
+    rviz_config_arg = DeclareLaunchArgument(
+        "rviz_config",
+        default_value=PathJoinSubstitution([pkg_share, "config", "localization.rviz"]),
+        description="Path to RViz config file"
+    )
 
     # Launch configurations
     use_sim_time = LaunchConfiguration("use_sim_time")
     map_yaml_file = LaunchConfiguration("map_yaml_file")
     amcl_config_file = LaunchConfiguration("amcl_config_file")
     autostart = LaunchConfiguration("autostart")
+    rviz_config = LaunchConfiguration("rviz_config")
 
     # Include F1TENTH bringup (sensors, VESC, TF, etc.)
     bringup_launch = IncludeLaunchDescription(
@@ -96,13 +103,25 @@ def generate_launch_description():
         }]
     )
 
+    # RViz2 node with localization config
+    rviz_node = Node(
+        package="rviz2",
+        executable="rviz2",
+        name="rviz2",
+        arguments=["-d", rviz_config],
+        parameters=[{"use_sim_time": use_sim_time}],
+        output="screen"
+    )
+
     return LaunchDescription([
         use_sim_time_arg,
         map_yaml_file_arg,
         amcl_config_file_arg,
         autostart_arg,
+        rviz_config_arg,
         bringup_launch,
         map_server_node,
         amcl_node,
-        lifecycle_manager_localization
+        lifecycle_manager_localization,
+        rviz_node
     ])

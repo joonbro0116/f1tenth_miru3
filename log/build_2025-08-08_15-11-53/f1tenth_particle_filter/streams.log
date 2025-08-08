@@ -1,0 +1,25 @@
+[9.821s] Invoking command in '/home/f1/f1tenth_ws/build/f1tenth_particle_filter': PYTHONPATH=/home/f1/f1tenth_ws/build/f1tenth_particle_filter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/f1tenth_particle_filter/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/f1tenth_particle_filter/build --no-deps symlink_data
+[12.275s] running develop
+[13.429s] running egg_info
+[13.430s] creating f1tenth_particle_filter.egg-info
+[13.430s] writing f1tenth_particle_filter.egg-info/PKG-INFO
+[13.435s] writing dependency_links to f1tenth_particle_filter.egg-info/dependency_links.txt
+[13.436s] writing entry points to f1tenth_particle_filter.egg-info/entry_points.txt
+[13.436s] writing requirements to f1tenth_particle_filter.egg-info/requires.txt
+[13.436s] writing top-level names to f1tenth_particle_filter.egg-info/top_level.txt
+[13.445s] writing manifest file 'f1tenth_particle_filter.egg-info/SOURCES.txt'
+[13.748s] reading manifest file 'f1tenth_particle_filter.egg-info/SOURCES.txt'
+[13.754s] writing manifest file 'f1tenth_particle_filter.egg-info/SOURCES.txt'
+[14.006s] running build_ext
+[14.014s] Creating /home/f1/f1tenth_ws/install/f1tenth_particle_filter/lib/python3.8/site-packages/site.py
+[14.023s] Creating /home/f1/f1tenth_ws/install/f1tenth_particle_filter/lib/python3.8/site-packages/f1tenth-particle-filter.egg-link (link to .)
+[14.031s] Installing fast_particle_filter script to /home/f1/f1tenth_ws/install/f1tenth_particle_filter/lib/f1tenth_particle_filter
+[14.032s] 
+[14.033s] Installed /home/f1/f1tenth_ws/build/f1tenth_particle_filter
+[14.033s] running symlink_data
+[14.034s] creating /home/f1/f1tenth_ws/install/f1tenth_particle_filter/share/ament_index
+[14.036s] creating /home/f1/f1tenth_ws/install/f1tenth_particle_filter/share/ament_index/resource_index
+[14.037s] creating /home/f1/f1tenth_ws/install/f1tenth_particle_filter/share/ament_index/resource_index/packages
+[14.037s] symbolically linking /home/f1/f1tenth_ws/build/f1tenth_particle_filter/resource/f1tenth_particle_filter -> /home/f1/f1tenth_ws/install/f1tenth_particle_filter/share/ament_index/resource_index/packages
+[14.038s] symbolically linking /home/f1/f1tenth_ws/build/f1tenth_particle_filter/package.xml -> /home/f1/f1tenth_ws/install/f1tenth_particle_filter/share/f1tenth_particle_filter
+[14.644s] Invoked command in '/home/f1/f1tenth_ws/build/f1tenth_particle_filter' returned '0': PYTHONPATH=/home/f1/f1tenth_ws/build/f1tenth_particle_filter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/f1tenth_particle_filter/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/f1tenth_particle_filter/build --no-deps symlink_data

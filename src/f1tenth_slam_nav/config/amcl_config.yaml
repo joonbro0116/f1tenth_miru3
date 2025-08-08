@@ -14,13 +14,13 @@ amcl:
     global_frame_id: "map"
     
     # Particle filter parameters (optimized for F1TENTH racing)
-    max_particles: 2000      # Maximum number of particles
-    min_particles: 500       # Minimum number of particles  
+    max_particles: 1000      # Maximum number of particles
+    min_particles: 300       # Minimum number of particles  
     kld_err: 0.05           # Maximum error between the true distribution and the KLD approximation
     kld_z: 0.99             # Upper standard normal quantile
-    update_min_d: 0.25      # Minimum translational movement to trigger filter update
-    update_min_a: 0.2       # Minimum rotational movement to trigger filter update
-    resample_interval: 1    # Number of filter updates required before resampling
+    update_min_d: 0.001      # Minimum translational movement to trigger filter update
+    update_min_a: 0.001       # Minimum rotational movement to trigger filter update
+    resample_interval: 2    # Number of filter updates required before resampling
     
     # Transform and timing
     transform_tolerance: 0.1
@@ -46,7 +46,7 @@ amcl:
     laser_likelihood_max_dist: 2.0  # Maximum distance to do obstacle inflation on map
     laser_max_range: 100.0  # Maximum scan range to be considered (set to LiDAR max range)
     laser_min_range: -1.0   # Minimum scan range (-1.0 will cause the laser's reported minimum range to be used)
-    laser_max_beams: 60     # How many evenly-spaced beams in each scan to be used when updating the filter
+    laser_max_beams: 40     # How many evenly-spaced beams in each scan to be used when updating the filter
     
     # Performance tuning for F1TENTH
     do_beamskip: false      # Ignore beams for which a majority of particles have a low weight
