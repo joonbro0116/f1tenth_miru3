@@ -253,3 +253,11 @@ export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 
   이제 SLAM과 localization을 하나의 통합된 인터페이스로 편리하게 사용하실 수 있습니다!
 
+
+  ## Global Path Planning
+   # 맵 기반 플래너 실행
+  ros2 launch path_planner map_planner_launch.py
+
+  # 특정 맵 파일 지정
+  ros2 launch path_planner map_planner_launch.py map_yaml_file:=/home/f1/f1tenth_ws/maps/joon_map_2.yaml
+
