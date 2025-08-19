@@ -1,0 +1,45 @@
+[5.342s] Invoking command in '/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/joy_teleop': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/src/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/src/install/teleop_tools_msgs LD_LIBRARY_PATH=/home/f1/f1tenth_ws/src/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/f1/f1tenth_ws/src/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/src/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/src/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/joy_teleop build --build-base /home/f1/f1tenth_ws/src/build/joy_teleop/build install --record /home/f1/f1tenth_ws/src/build/joy_teleop/install.log --install-scripts $base/lib/joy_teleop --single-version-externally-managed install_data
+[6.944s] running egg_info
+[6.950s] creating ../../../build/joy_teleop/joy_teleop.egg-info
+[6.952s] writing ../../../build/joy_teleop/joy_teleop.egg-info/PKG-INFO
+[6.956s] writing dependency_links to ../../../build/joy_teleop/joy_teleop.egg-info/dependency_links.txt
+[6.959s] writing entry points to ../../../build/joy_teleop/joy_teleop.egg-info/entry_points.txt
+[6.963s] writing requirements to ../../../build/joy_teleop/joy_teleop.egg-info/requires.txt
+[6.965s] writing top-level names to ../../../build/joy_teleop/joy_teleop.egg-info/top_level.txt
+[6.975s] writing manifest file '../../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'
+[7.199s] reading manifest file '../../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'
+[7.203s] writing manifest file '../../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'
+[7.204s] running build
+[7.205s] running build_py
+[7.206s] creating /home/f1/f1tenth_ws/src/build/joy_teleop/build
+[7.207s] creating /home/f1/f1tenth_ws/src/build/joy_teleop/build/lib
+[7.207s] creating /home/f1/f1tenth_ws/src/build/joy_teleop/build/lib/joy_teleop
+[7.209s] copying joy_teleop/__init__.py -> /home/f1/f1tenth_ws/src/build/joy_teleop/build/lib/joy_teleop
+[7.210s] copying joy_teleop/incrementer_server.py -> /home/f1/f1tenth_ws/src/build/joy_teleop/build/lib/joy_teleop
+[7.211s] copying joy_teleop/joy_teleop.py -> /home/f1/f1tenth_ws/src/build/joy_teleop/build/lib/joy_teleop
+[7.211s] running install
+[7.216s] running install_lib
+[7.222s] creating /home/f1/f1tenth_ws/src/install/joy_teleop/lib/python3.8/site-packages/joy_teleop
+[7.222s] copying /home/f1/f1tenth_ws/src/build/joy_teleop/build/lib/joy_teleop/__init__.py -> /home/f1/f1tenth_ws/src/install/joy_teleop/lib/python3.8/site-packages/joy_teleop
+[7.225s] copying /home/f1/f1tenth_ws/src/build/joy_teleop/build/lib/joy_teleop/incrementer_server.py -> /home/f1/f1tenth_ws/src/install/joy_teleop/lib/python3.8/site-packages/joy_teleop
+[7.237s] copying /home/f1/f1tenth_ws/src/build/joy_teleop/build/lib/joy_teleop/joy_teleop.py -> /home/f1/f1tenth_ws/src/install/joy_teleop/lib/python3.8/site-packages/joy_teleop
+[7.238s] byte-compiling /home/f1/f1tenth_ws/src/install/joy_teleop/lib/python3.8/site-packages/joy_teleop/__init__.py to __init__.cpython-38.pyc
+[7.240s] byte-compiling /home/f1/f1tenth_ws/src/install/joy_teleop/lib/python3.8/site-packages/joy_teleop/incrementer_server.py to incrementer_server.cpython-38.pyc
+[7.244s] byte-compiling /home/f1/f1tenth_ws/src/install/joy_teleop/lib/python3.8/site-packages/joy_teleop/joy_teleop.py to joy_teleop.cpython-38.pyc
+[7.258s] running install_data
+[7.262s] copying package.xml -> /home/f1/f1tenth_ws/src/install/joy_teleop/share/joy_teleop
+[7.265s] creating /home/f1/f1tenth_ws/src/install/joy_teleop/share/joy_teleop/config
+[7.265s] copying config/joy_teleop_example.yaml -> /home/f1/f1tenth_ws/src/install/joy_teleop/share/joy_teleop/config
+[7.266s] creating /home/f1/f1tenth_ws/src/install/joy_teleop/share/joy_teleop/launch
+[7.266s] copying launch/example.launch.py -> /home/f1/f1tenth_ws/src/install/joy_teleop/share/joy_teleop/launch
+[7.267s] creating /home/f1/f1tenth_ws/src/install/joy_teleop/share/ament_index
+[7.267s] creating /home/f1/f1tenth_ws/src/install/joy_teleop/share/ament_index/resource_index
+[7.267s] creating /home/f1/f1tenth_ws/src/install/joy_teleop/share/ament_index/resource_index/packages
+[7.268s] copying resource/joy_teleop -> /home/f1/f1tenth_ws/src/install/joy_teleop/share/ament_index/resource_index/packages
+[7.268s] running install_egg_info
+[7.277s] Copying ../../../build/joy_teleop/joy_teleop.egg-info to /home/f1/f1tenth_ws/src/install/joy_teleop/lib/python3.8/site-packages/joy_teleop-0.3.0-py3.8.egg-info
+[7.286s] running install_scripts
+[7.395s] Installing incrementer_server script to /home/f1/f1tenth_ws/src/install/joy_teleop/lib/joy_teleop
+[7.403s] Installing joy_teleop script to /home/f1/f1tenth_ws/src/install/joy_teleop/lib/joy_teleop
+[7.412s] writing list of installed files to '/home/f1/f1tenth_ws/src/build/joy_teleop/install.log'
+[7.550s] Invoked command in '/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/joy_teleop' returned '0': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/src/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/src/install/teleop_tools_msgs LD_LIBRARY_PATH=/home/f1/f1tenth_ws/src/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/f1/f1tenth_ws/src/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/src/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/src/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/joy_teleop build --build-base /home/f1/f1tenth_ws/src/build/joy_teleop/build install --record /home/f1/f1tenth_ws/src/build/joy_teleop/install.log --install-scripts $base/lib/joy_teleop --single-version-externally-managed install_data

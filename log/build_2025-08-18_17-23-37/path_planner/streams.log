@@ -1,0 +1,28 @@
+[0.087s] Invoking command in '/home/f1/f1tenth_ws/build/path_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_planner -- -j6 -l6
+[0.397s] [35m[1mScanning dependencies of target min_curvature_planner[0m
+[0.715s] [ 50%] [32mBuilding CXX object CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o[0m
+[36.560s] [100%] [32m[1mLinking CXX executable min_curvature_planner[0m
+[38.487s] [100%] Built target min_curvature_planner
+[38.557s] Invoked command in '/home/f1/f1tenth_ws/build/path_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_planner -- -j6 -l6
+[38.651s] Invoking command in '/home/f1/f1tenth_ws/build/path_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/path_planner
+[38.702s] -- Install configuration: ""
+[38.704s] -- Installing: /home/f1/f1tenth_ws/install/path_planner/lib/path_planner/min_curvature_planner
+[38.765s] -- Set runtime path of "/home/f1/f1tenth_ws/install/path_planner/lib/path_planner/min_curvature_planner" to ""
+[38.766s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/launch
+[38.766s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/launch/planner_launch.py
+[38.767s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/package_run_dependencies/path_planner
+[38.768s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/parent_prefix_path/path_planner
+[38.769s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/ament_prefix_path.sh
+[38.769s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/ament_prefix_path.dsv
+[38.770s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/path.sh
+[38.770s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/path.dsv
+[38.771s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.bash
+[38.772s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.sh
+[38.772s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.zsh
+[38.773s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.dsv
+[38.773s] -- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/package.dsv
+[38.774s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/packages/path_planner
+[38.777s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/cmake/path_plannerConfig.cmake
+[38.778s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/cmake/path_plannerConfig-version.cmake
+[38.778s] -- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/package.xml
+[38.788s] Invoked command in '/home/f1/f1tenth_ws/build/path_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/path_planner

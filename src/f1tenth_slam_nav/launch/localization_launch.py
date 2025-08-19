@@ -6,8 +6,12 @@ Uses Nav2 AMCL for particle filter based localization
 """
 
 import os
+import signal
+import sys
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, RegisterEventHandler
+from launch.event_handlers import OnProcessExit, OnShutdown
+from launch.events import Shutdown
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
@@ -17,6 +21,15 @@ from ament_index_python.packages import get_package_share_directory
 def generate_launch_description():
     pkg_share = get_package_share_directory("f1tenth_slam_nav")
     f1tenth_stack_share = get_package_share_directory("f1tenth_stack")
+    
+    # Safe mode exit handler
+    def signal_handler(sig, frame):
+        print("\n[SAFE MODE] Received interrupt signal. Shutting down safely...")
+        sys.exit(0)
+    
+    # Register signal handlers for safe exit
+    signal.signal(signal.SIGINT, signal_handler)
+    signal.signal(signal.SIGTERM, signal_handler)
 
     # Launch arguments
     use_sim_time_arg = DeclareLaunchArgument(
@@ -45,7 +58,7 @@ def generate_launch_description():
     
     rviz_config_arg = DeclareLaunchArgument(
         "rviz_config",
-        default_value=PathJoinSubstitution([pkg_share, "config", "localization.rviz"]),
+        default_value=PathJoinSubstitution([pkg_share, "config", "localization_with_path.rviz"]),
         description="Path to RViz config file"
     )
 
@@ -112,6 +125,13 @@ def generate_launch_description():
         parameters=[{"use_sim_time": use_sim_time}],
         output="screen"
     )
+    
+    # Shutdown event handler for safe mode
+    shutdown_event_handler = RegisterEventHandler(
+        OnShutdown(
+            on_shutdown=lambda event, context: print("[SAFE MODE] All nodes have been safely terminated.")
+        )
+    )
 
     return LaunchDescription([
         use_sim_time_arg,
@@ -119,6 +139,7 @@ def generate_launch_description():
         amcl_config_file_arg,
         autostart_arg,
         rviz_config_arg,
+        shutdown_event_handler,
         bringup_launch,
         map_server_node,
         amcl_node,

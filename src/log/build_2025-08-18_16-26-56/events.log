@@ -1,0 +1,21 @@
+[0.000000] (-) TimerEvent: {}
+[0.000776] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.004773] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.007515] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.008573] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.010800] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.011342] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.011791] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.013874] (-) JobUnselected: {'identifier': 'path_planner'}
+[0.017356] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.020723] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.021515] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.022301] (-) JobUnselected: {'identifier': 'vesc'}
+[0.023692] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.023955] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.024126] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.024704] (f1tenth_slam_nav) JobQueued: {'identifier': 'f1tenth_slam_nav', 'dependencies': OrderedDict([('ackermann_mux', '/home/f1/f1tenth_ws/src/install/ackermann_mux'), ('teleop_tools_msgs', '/home/f1/f1tenth_ws/src/install/teleop_tools_msgs'), ('vesc_msgs', '/home/f1/f1tenth_ws/src/install/vesc_msgs'), ('joy_teleop', '/home/f1/f1tenth_ws/src/install/joy_teleop'), ('vesc_ackermann', '/home/f1/f1tenth_ws/src/install/vesc_ackermann'), ('vesc_driver', '/home/f1/f1tenth_ws/src/install/vesc_driver'), ('vesc', '/home/f1/f1tenth_ws/src/install/vesc'), ('f1tenth_stack', '/home/f1/f1tenth_ws/src/install/f1tenth_stack')])}
+[0.025034] (f1tenth_slam_nav) JobStarted: {'identifier': 'f1tenth_slam_nav'}
+[0.095534] (-) TimerEvent: {}
+[0.108302] (f1tenth_slam_nav) JobEnded: {'identifier': 'f1tenth_slam_nav', 'rc': 1}
+[0.112951] (-) EventReactorShutdown: {}

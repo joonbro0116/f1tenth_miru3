@@ -53,8 +53,14 @@ slam_toolbox:
     use_response_expansion: true
 
     # === 추가 성능 최적화 설정 ===
-    # 라이다 설정
+    # 라이다 설정 - 자유공간 생성 최적화
     max_laser_range: 10.0
+    minimum_laser_range: 0.1
+    
+    # 자유공간 마킹 향상
+    mark_threshold: 0.0
+    update_factor_free: 0.4
+    update_factor_occupied: 0.9
 
     # 스캔 품질 향상
     use_scan_barycenter: true
@@ -66,9 +72,16 @@ slam_toolbox:
     coarse_search_angle_offset: 0.349
     fine_search_angle_offset: 0.00349
 
-    # 맵 품질 설정
+    # 맵 품질 설정 - 자유공간 생성 향상
     occupied_threshold: 0.65
-    free_threshold: 0.196
+    free_threshold: 0.25
+    
+    # 맵 업데이트 설정
+    map_update_interval: 0.5
+    
+    # 자유공간 생성을 위한 추가 설정
+    minimum_beam_count: 5
+    transform_timeout: 0.2
 
     # Other settings
     debug_logging: false

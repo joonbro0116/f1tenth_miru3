@@ -1,0 +1,28 @@
+Scanning dependencies of target min_curvature_planner
+[ 50%] Building CXX object CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘void MinCurvaturePlanner::extractTrackCenterline()’:
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:104:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<signed char, std::allocator<signed char> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  104 |             if (index < map_data_->data.size() && map_data_->data[index] == 0) {
+      |                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+[100%] Linking CXX executable min_curvature_planner
+[100%] Built target min_curvature_planner
+-- Install configuration: ""
+-- Installing: /home/f1/f1tenth_ws/install/path_planner/lib/path_planner/min_curvature_planner
+-- Set runtime path of "/home/f1/f1tenth_ws/install/path_planner/lib/path_planner/min_curvature_planner" to ""
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/launch
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/launch/planner_launch.py
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/package_run_dependencies/path_planner
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/parent_prefix_path/path_planner
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/ament_prefix_path.sh
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/path.sh
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/path.dsv
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.bash
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.sh
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.zsh
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.dsv
+-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/package.dsv
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/packages/path_planner
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/cmake/path_plannerConfig.cmake
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/cmake/path_plannerConfig-version.cmake
+-- Up-to-date: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/package.xml

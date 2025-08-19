@@ -1,0 +1,239 @@
+[0.090s] Invoking command in '/home/f1/f1tenth_ws/build/path_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_planner -- -j6 -l6
+[0.424s] [35m[1mScanning dependencies of target min_curvature_planner[0m
+[0.512s] [ 50%] [32mBuilding CXX object CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o[0m
+[0.605s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:3:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+[0.606s]     3 | [01;31m[Kprivate[m[K:
+[0.607s]       | [01;31m[K^~~~~~~[m[K
+[0.609s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:49:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+[0.610s]    49 |     std::[01;31m[Kvector[m[K<GridPoint> findOuterBoundaryContour(const std::vector<std::vector<bool>>& free_space, int width, int height)
+[0.611s]       |          [01;31m[K^~~~~~[m[K
+[0.611s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector[m[K’ is defined in header ‘[01m[K<vector>[m[K’; did you forget to ‘[01m[K#include <vector>[m[K’?
+[0.612s]   +++ |+[32m[K#include <vector>[m[K
+[0.613s]     1 | // 기존 코드에 추가할 함수들
+[0.615s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:100:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+[0.615s]   100 |     void floodFillAndMarkComponent(const std::[01;31m[Kvector[m[K<std::vector<bool>>& free_space,
+[0.616s]       |                                               [01;31m[K^~~~~~[m[K
+[0.617s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:100:42:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector[m[K’ is defined in header ‘[01m[K<vector>[m[K’; did you forget to ‘[01m[K#include <vector>[m[K’?
+[0.617s]   100 |     void floodFillAndMarkComponent(const [01;36m[Kstd[m[K::vector<std::vector<bool>>& free_space,
+[0.618s]       |                                          [01;36m[K^~~[m[K
+[0.619s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:100:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+[0.620s]   100 |     void floodFillAndMarkComponent(const std::vector[01;31m[K<[m[Kstd::vector<bool>>& free_space,
+[0.620s]       |                                                     [01;31m[K^[m[K
+[0.621s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:[m[K In function ‘[01m[Kvoid floodFillAndMarkComponent(int)[m[K’:
+[0.621s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:107:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kqueue[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[0.623s]   107 |         std::[01;31m[Kqueue[m[K<GridPoint> queue;
+[0.624s]       |              [01;31m[K^~~~~[m[K
+[0.625s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::queue[m[K’ is defined in header ‘[01m[K<queue>[m[K’; did you forget to ‘[01m[K#include <queue>[m[K’?
+[0.625s]   +++ |+[32m[K#include <queue>[m[K
+[0.626s]     1 | // 기존 코드에 추가할 함수들
+[0.627s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:107:20:[m[K [01;31m[Kerror: [m[K‘[01m[KGridPoint[m[K’ was not declared in this scope
+[0.628s]   107 |         std::queue<[01;31m[KGridPoint[m[K> queue;
+[0.630s]       |                    [01;31m[K^~~~~~~~~[m[K
+[0.631s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:107:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kqueue[m[K’ was not declared in this scope
+[0.632s]   107 |         std::queue<GridPoint> [01;31m[Kqueue[m[K;
+[0.633s]       |                               [01;31m[K^~~~~[m[K
+[0.634s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:108:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_x[m[K’ was not declared in this scope
+[0.634s]   108 |         queue.push(GridPoint([01;31m[Kstart_x[m[K, start_y));
+[0.635s]       |                              [01;31m[K^~~~~~~[m[K
+[0.636s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:108:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_y[m[K’ was not declared in this scope
+[0.636s]   108 |         queue.push(GridPoint(start_x, [01;31m[Kstart_y[m[K));
+[0.637s]       |                                       [01;31m[K^~~~~~~[m[K
+[0.638s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:109:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisited[m[K’ was not declared in this scope
+[0.638s]   109 |         [01;31m[Kvisited[m[K[start_y][start_x] = true;
+[0.639s]       |         [01;31m[K^~~~~~~[m[K
+[0.640s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:110:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcomponent_map[m[K’ was not declared in this scope
+[0.641s]   110 |         [01;31m[Kcomponent_map[m[K[start_y][start_x] = component_id;
+[0.641s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[0.642s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:110:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kcomponent_id[m[K’ was not declared in this scope
+[0.642s]   110 |         component_map[start_y][start_x] = [01;31m[Kcomponent_id[m[K;
+[0.643s]       |                                           [01;31m[K^~~~~~~~~~~~[m[K
+[0.643s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:116:22:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kcurrent[m[K’
+[0.644s]   116 |             GridPoint[01;31m[K [m[K[32m[Kcurrent[m[K = queue.front();
+[0.645s]       |                      [01;31m[K^[m[K[32m[K~~~~~~~[m[K
+[0.645s]       |                      [32m[K;[m[K
+[0.646s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:118:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcomponent_points[m[K’ was not declared in this scope
+[0.647s]   118 |             [01;31m[Kcomponent_points[m[K.push_back(current);
+[0.648s]       |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[0.649s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:118:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent[m[K’ was not declared in this scope
+[0.653s]   118 |             component_points.push_back([01;31m[Kcurrent[m[K);
+[0.654s]       |                                        [01;31m[K^~~~~~~[m[K
+[0.655s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:124:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kwidth[m[K’ was not declared in this scope
+[0.655s]   124 |                 if (nx >= 0 && nx < [01;31m[Kwidth[m[K && ny >= 0 && ny < height &&
+[0.656s]       |                                     [01;31m[K^~~~~[m[K
+[0.657s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:124:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kheight[m[K’ was not declared in this scope
+[0.659s]   124 |                 if (nx >= 0 && nx < width && ny >= 0 && ny < [01;31m[Kheight[m[K &&
+[0.659s]       |                                                              [01;31m[K^~~~~~[m[K
+[0.660s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:125:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kfree_space[m[K’ was not declared in this scope
+[0.661s]   125 |                     [01;31m[Kfree_space[m[K[ny][nx] && !visited[ny][nx]) {
+[0.663s]       |                     [01;31m[K^~~~~~~~~~[m[K
+[0.663s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:[m[K At global scope:
+[0.665s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:135:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+[0.667s]   135 |     std::[01;31m[Kvector[m[K<GridPoint> extractContour(const std::vector<GridPoint>& component_points,
+[0.668s]       |          [01;31m[K^~~~~~[m[K
+[0.669s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:135:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector[m[K’ is defined in header ‘[01m[K<vector>[m[K’; did you forget to ‘[01m[K#include <vector>[m[K’?
+[0.670s]   135 |     [01;36m[Kstd[m[K::vector<GridPoint> extractContour(const std::vector<GridPoint>& component_points,
+[0.671s]       |     [01;36m[K^~~[m[K
+[0.672s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:186:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+[0.675s]   186 |     double calculateContourBoundingArea(const std::[01;31m[Kvector[m[K<GridPoint>& contour)
+[0.676s]       |                                                    [01;31m[K^~~~~~[m[K
+[0.676s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:186:47:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector[m[K’ is defined in header ‘[01m[K<vector>[m[K’; did you forget to ‘[01m[K#include <vector>[m[K’?
+[0.678s]   186 |     double calculateContourBoundingArea(const [01;36m[Kstd[m[K::vector<GridPoint>& contour)
+[0.679s]       |                                               [01;36m[K^~~[m[K
+[0.679s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:186:58:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+[0.680s]   186 |     double calculateContourBoundingArea(const std::vector[01;31m[K<[m[KGridPoint>& contour)
+[0.680s]       |                                                          [01;31m[K^[m[K
+[0.681s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:[m[K In function ‘[01m[Kdouble calculateContourBoundingArea(int)[m[K’:
+[0.681s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:188:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontour[m[K’ was not declared in this scope
+[0.682s]   188 |         if ([01;31m[Kcontour[m[K.empty()) return 0;
+[0.683s]       |             [01;31m[K^~~~~~~[m[K
+[0.683s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:190:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontour[m[K’ was not declared in this scope
+[0.683s]   190 |         int min_x = [01;31m[Kcontour[m[K[0].x, max_x = contour[0].x;
+[0.684s]       |                     [01;31m[K^~~~~~~[m[K
+[0.685s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:194:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[0.685s]   194 |             min_x = std::[01;31m[Kmin[m[K(min_x, point.x);
+[0.686s]       |                          [01;31m[K^~~[m[K
+[0.686s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:195:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_x[m[K’ was not declared in this scope
+[0.687s]   195 |             [01;31m[Kmax_x[m[K = std::max(max_x, point.x);
+[0.687s]       |             [01;31m[K^~~~~[m[K
+[0.688s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:195:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[0.688s]   195 |             max_x = std::[01;31m[Kmax[m[K(max_x, point.x);
+[0.688s]       |                          [01;31m[K^~~[m[K
+[0.690s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:196:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[0.691s]   196 |             min_y = std::[01;31m[Kmin[m[K(min_y, point.y);
+[0.692s]       |                          [01;31m[K^~~[m[K
+[0.694s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:197:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_y[m[K’ was not declared in this scope
+[0.699s]   197 |             [01;31m[Kmax_y[m[K = std::max(max_y, point.y);
+[0.699s]       |             [01;31m[K^~~~~[m[K
+[0.701s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:197:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[0.702s]   197 |             max_y = std::[01;31m[Kmax[m[K(max_y, point.y);
+[0.707s]       |                          [01;31m[K^~~[m[K
+[0.708s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:200:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_x[m[K’ was not declared in this scope
+[0.709s]   200 |         return static_cast<double>(([01;31m[Kmax_x[m[K - min_x) * (max_y - min_y));
+[0.710s]       |                                     [01;31m[K^~~~~[m[K
+[0.711s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:200:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_y[m[K’ was not declared in this scope
+[0.712s]   200 |         return static_cast<double>((max_x - min_x) * ([01;31m[Kmax_y[m[K - min_y));
+[0.715s]       |                                                       [01;31m[K^~~~~[m[K
+[0.718s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:[m[K At global scope:
+[0.719s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:204:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+[0.719s]   204 |     std::[01;31m[Kvector[m[K<std::vector<bool>> createInteriorMask(const std::vector<GridPoint>& boundary,
+[0.720s]       |          [01;31m[K^~~~~~[m[K
+[0.721s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:204:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector[m[K’ is defined in header ‘[01m[K<vector>[m[K’; did you forget to ‘[01m[K#include <vector>[m[K’?
+[0.722s]   204 |     [01;36m[Kstd[m[K::vector<std::vector<bool>> createInteriorMask(const std::vector<GridPoint>& boundary,
+[0.723s]       |     [01;36m[K^~~[m[K
+[0.729s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:221:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+[0.733s]   221 |     bool isPointInsidePolygon(int x, int y, const std::[01;31m[Kvector[m[K<GridPoint>& polygon)
+[0.735s]       |                                                        [01;31m[K^~~~~~[m[K
+[0.735s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:221:51:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector[m[K’ is defined in header ‘[01m[K<vector>[m[K’; did you forget to ‘[01m[K#include <vector>[m[K’?
+[0.736s]   221 |     bool isPointInsidePolygon(int x, int y, const [01;36m[Kstd[m[K::vector<GridPoint>& polygon)
+[0.737s]       |                                                   [01;36m[K^~~[m[K
+[0.737s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:221:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+[0.739s]   221 |     bool isPointInsidePolygon(int x, int y, const std::vector[01;31m[K<[m[KGridPoint>& polygon)
+[0.740s]       |                                                              [01;31m[K^[m[K
+[0.741s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:[m[K In function ‘[01m[Kbool isPointInsidePolygon(int, int, int)[m[K’:
+[0.742s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:223:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpolygon[m[K’ was not declared in this scope
+[0.745s]   223 |         if ([01;31m[Kpolygon[m[K.size() < 3) return false;
+[0.746s]       |             [01;31m[K^~~~~~~[m[K
+[0.747s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:226:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kpolygon[m[K’ was not declared in this scope
+[0.748s]   226 |         int n = [01;31m[Kpolygon[m[K.size();
+[0.748s]       |                 [01;31m[K^~~~~~~[m[K
+[0.749s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:235:19:[m[K [01;31m[Kerror: [m[K‘[01m[Ky1[m[K’ was not declared in this scope; did you mean ‘[01m[Kx1[m[K’?
+[0.749s]   235 |             if ((([01;31m[Ky1[m[K > y) != (y2 > y)) &&
+[0.750s]       |                   [01;31m[K^~[m[K
+[0.751s]       |                   [32m[Kx1[m[K
+[0.754s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:235:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ky2[m[K’ was not declared in this scope; did you mean ‘[01m[Kx2[m[K’?
+[0.757s]   235 |             if (((y1 > y) != ([01;31m[Ky2[m[K > y)) &&
+[0.758s]       |                               [01;31m[K^~[m[K
+[0.759s]       |                               [32m[Kx2[m[K
+[0.760s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:[m[K In function ‘[01m[Kbool detectTrackBoundary()[m[K’:
+[0.762s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:247:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_data_[m[K’ was not declared in this scope
+[0.763s]   247 |         if (![01;31m[Kmap_data_[m[K) return false;
+[0.765s]       |              [01;31m[K^~~~~~~~~[m[K
+[0.767s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:249:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_data_[m[K’ was not declared in this scope
+[0.774s]   249 |         int width = [01;31m[Kmap_data_[m[K->info.width;
+[0.781s]       |                     [01;31m[K^~~~~~~~~[m[K
+[0.783s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:255:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[0.784s]   255 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "외곽 폐곡선 기반 트랙 바운더리 검출 시작...");
+[0.787s]       |                     [01;31m[K^~~~[m[K
+[0.791s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:255:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+[0.791s]   255 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "외곽 폐곡선 기반 트랙 바운더리 검출 시작...");
+[0.795s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[0.796s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:258:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[0.797s]   258 |         std::[01;31m[Kvector[m[K<std::vector<bool>> valid_track_region = findTrackRegionWithinOuterBoundary();
+[0.798s]       |              [01;31m[K^~~~~~[m[K
+[0.801s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:258:14:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector[m[K’ is defined in header ‘[01m[K<vector>[m[K’; did you forget to ‘[01m[K#include <vector>[m[K’?
+[0.801s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:258:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[0.803s]   258 |         std::vector<std::[01;31m[Kvector[m[K<bool>> valid_track_region = findTrackRegionWithinOuterBoundary();
+[0.806s]       |                          [01;31m[K^~~~~~[m[K
+[0.807s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:258:26:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector[m[K’ is defined in header ‘[01m[K<vector>[m[K’; did you forget to ‘[01m[K#include <vector>[m[K’?
+[0.809s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:258:33:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kbool[m[K’
+[0.812s]   258 |         std::vector<std::vector<[01;31m[Kbool[m[K>> valid_track_region = findTrackRegionWithinOuterBoundary();
+[0.815s]       |                                 [01;31m[K^~~~[m[K
+[0.816s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:260:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kvalid_track_region[m[K’ was not declared in this scope
+[0.819s]   260 |         if ([01;31m[Kvalid_track_region[m[K.empty()) {
+[0.820s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.822s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:261:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[0.823s]   261 |             RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "유효한 트랙 영역을 찾을 수 없습니다.");
+[0.824s]       |                         [01;31m[K^~~~[m[K
+[0.824s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:261:13:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_WARN[m[K’ was not declared in this scope
+[0.825s]   261 |             [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "유효한 트랙 영역을 찾을 수 없습니다.");
+[0.825s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[0.826s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:266:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[0.827s]   266 |         std::[01;31m[Kvector[m[K<GridPoint> boundary_points = extractBoundaryPoints(valid_track_region, width, height);
+[0.827s]       |              [01;31m[K^~~~~~[m[K
+[0.827s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:266:14:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector[m[K’ is defined in header ‘[01m[K<vector>[m[K’; did you forget to ‘[01m[K#include <vector>[m[K’?
+[0.828s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:266:21:[m[K [01;31m[Kerror: [m[K‘[01m[KGridPoint[m[K’ was not declared in this scope
+[0.828s]   266 |         std::vector<[01;31m[KGridPoint[m[K> boundary_points = extractBoundaryPoints(valid_track_region, width, height);
+[0.829s]       |                     [01;31m[K^~~~~~~~~[m[K
+[0.829s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:266:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kboundary_points[m[K’ was not declared in this scope
+[0.829s]   266 |         std::vector<GridPoint> [01;31m[Kboundary_points[m[K = extractBoundaryPoints(valid_track_region, width, height);
+[0.830s]       |                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[0.830s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:266:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kvalid_track_region[m[K’ was not declared in this scope
+[0.831s]   266 |         std::vector<GridPoint> boundary_points = extractBoundaryPoints([01;31m[Kvalid_track_region[m[K, width, height);
+[0.831s]       |                                                                        [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.832s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:266:50:[m[K [01;31m[Kerror: [m[K‘[01m[KextractBoundaryPoints[m[K’ was not declared in this scope
+[0.832s]   266 |         std::vector<GridPoint> boundary_points = [01;31m[KextractBoundaryPoints[m[K(valid_track_region, width, height);
+[0.832s]       |                                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[0.833s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:269:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[0.833s]   269 |             RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "충분한 트랙 바운더리 포인트를 찾을 수 없습니다.");
+[0.834s]       |                         [01;31m[K^~~~[m[K
+[0.834s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:269:13:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_WARN[m[K’ was not declared in this scope
+[0.835s]   269 |             [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "충분한 트랙 바운더리 포인트를 찾을 수 없습니다.");
+[0.835s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[0.835s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:274:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrack_boundary_[m[K’ was not declared in this scope
+[0.836s]   274 |         [01;31m[Ktrack_boundary_[m[K.clear();
+[0.836s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[0.837s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:281:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[0.837s]   281 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "외곽 폐곡선 기반 트랙 바운더리 검출 완료: %zu개 포인트",
+[0.837s]       |                     [01;31m[K^~~~[m[K
+[0.838s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:285:9:[m[K [01;31m[Kerror: [m[K‘[01m[KpublishBoundary[m[K’ was not declared in this scope
+[0.838s]   285 |         [01;31m[KpublishBoundary[m[K();
+[0.839s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[0.839s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:[m[K In function ‘[01m[Kvoid createTrackInteriorMask()[m[K’:
+[0.839s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:293:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_data_[m[K’ was not declared in this scope
+[0.840s]   293 |         if (![01;31m[Kmap_data_[m[K) return;
+[0.840s]       |              [01;31m[K^~~~~~~~~[m[K
+[0.841s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:295:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_data_[m[K’ was not declared in this scope
+[0.841s]   295 |         int width = [01;31m[Kmap_data_[m[K->info.width;
+[0.841s]       |                     [01;31m[K^~~~~~~~~[m[K
+[0.842s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:299:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrack_interior_mask_[m[K’ was not declared in this scope
+[0.842s]   299 |         [01;31m[Ktrack_interior_mask_[m[K = findTrackRegionWithinOuterBoundary();
+[0.843s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.843s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:299:32:[m[K [01;31m[Kerror: [m[K‘[01m[KfindTrackRegionWithinOuterBoundary[m[K’ was not declared in this scope
+[0.844s]   299 |         track_interior_mask_ = [01;31m[KfindTrackRegionWithinOuterBoundary[m[K();
+[0.844s]       |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.844s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:302:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kboundary_erosion_[m[K’ was not declared in this scope
+[0.845s]   302 |         if ([01;31m[Kboundary_erosion_[m[K > 0) {
+[0.845s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[0.846s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:303:13:[m[K [01;31m[Kerror: [m[K‘[01m[KapplyErosion[m[K’ was not declared in this scope
+[0.846s]   303 |             [01;31m[KapplyErosion[m[K(track_interior_mask_, boundary_erosion_, width, height);
+[0.847s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[0.847s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:306:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[0.848s]   306 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "외곽 폐곡선 기반 트랙 내부 마스크 생성 완료");
+[0.848s]       |                     [01;31m[K^~~~[m[K
+[0.849s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:306:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+[0.849s]   306 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "외곽 폐곡선 기반 트랙 내부 마스크 생성 완료");
+[0.849s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[0.850s] make[2]: *** [CMakeFiles/min_curvature_planner.dir/build.make:63: CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o] Error 1
+[0.850s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/min_curvature_planner.dir/all] Error 2
+[0.851s] make: *** [Makefile:141: all] Error 2
+[0.852s] Invoked command in '/home/f1/f1tenth_ws/build/path_planner' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_planner -- -j6 -l6

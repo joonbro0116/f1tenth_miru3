@@ -1,0 +1,295 @@
+[0.000000] (-) TimerEvent: {}
+[0.002284] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.003006] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.003635] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.003896] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.004292] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.004513] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.004650] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.004777] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.004916] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.005121] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.005289] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.006181] (-) JobUnselected: {'identifier': 'vesc'}
+[0.006394] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.006744] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.006941] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.007134] (path_planner) JobQueued: {'identifier': 'path_planner', 'dependencies': OrderedDict()}
+[0.007329] (path_planner) JobStarted: {'identifier': 'path_planner'}
+[0.070860] (path_planner) JobProgress: {'identifier': 'path_planner', 'progress': 'cmake'}
+[0.075718] (path_planner) JobProgress: {'identifier': 'path_planner', 'progress': 'build'}
+[0.081084] (path_planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/f1/f1tenth_ws/build/path_planner', '--', '-j6', '-l6'], 'cwd': '/home/f1/f1tenth_ws/build/path_planner', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('TMUX', '/tmp//tmux-1001/default,5646,0'), ('LC_TIME', 'ko_KR.UTF-8'), ('USER', 'f1'), ('SSH_AGENT_PID', '3003'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('SHLVL', '2'), ('HOME', '/home/f1'), ('LESS', '-R'), ('OLDPWD', '/home/f1/f1tenth_ws'), ('QT4_IM_MODULE', 'fcitx'), ('DESKTOP_SESSION', 'ubuntu'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/f1/.oh-my-zsh'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2667'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/f1/.nvm'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('COLCON_PREFIX_PATH', '/home/f1/f1tenth_ws/install'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'f1'), ('JOURNAL_STREAM', '8:58658'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('USERNAME', 'f1'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/f1/.npm-global/bin:/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('INVOCATION_ID', 'be7fd855e1c246dca155617e4fb54724'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3093,unix/ubuntu:/tmp/.ICE-unix/3093'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bf13f238_90f4_42e6_a285_746f001fcca9'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('GNOME_TERMINAL_SERVICE', ':1.85'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=fcitx'), ('AMENT_PREFIX_PATH', '/home/f1/f1tenth_ws/install/f1tenth_slam_nav:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/path_planner:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/lidar_processing:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/home/f1/f1tenth_ws/install/center_follow_cpp:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('LC_NAME', 'ko_KR.UTF-8'), ('SHELL', '/usr/bin/zsh'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/f1/f1tenth_ws/build/path_planner'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/f1/f1tenth_ws/install/f1tenth_slam_nav/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/pygame_key_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/mouse_teleop:/home/f1/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/key_teleop:/home/f1/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('TMUX_PLUGIN_MANAGER_PATH', '/home/f1/.tmux/plugins/'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('VTE_VERSION', '6003'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/home/f1/f1tenth_ws/install/f1tenth_slam_nav:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/path_planner:/home/f1/f1tenth_ws/install/lidar_processing:/home/f1/f1tenth_ws/install/center_follow_cpp:/home/f1/f1tenth_ws/install/ackermann_mux:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy')]), 'shell': False}
+[0.114741] (-) TimerEvent: {}
+[0.224031] (-) TimerEvent: {}
+[0.325142] (-) TimerEvent: {}
+[0.421371] (path_planner) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target min_curvature_planner\x1b[0m\n'}
+[0.425364] (-) TimerEvent: {}
+[0.526587] (-) TimerEvent: {}
+[0.627641] (-) TimerEvent: {}
+[0.728771] (-) TimerEvent: {}
+[0.751347] (path_planner) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o\x1b[0m\n'}
+[0.829075] (-) TimerEvent: {}
+[0.930366] (-) TimerEvent: {}
+[1.031512] (-) TimerEvent: {}
+[1.132648] (-) TimerEvent: {}
+[1.233700] (-) TimerEvent: {}
+[1.334827] (-) TimerEvent: {}
+[1.437255] (-) TimerEvent: {}
+[1.539679] (-) TimerEvent: {}
+[1.640860] (-) TimerEvent: {}
+[1.741914] (-) TimerEvent: {}
+[1.843123] (-) TimerEvent: {}
+[1.946620] (-) TimerEvent: {}
+[2.049369] (-) TimerEvent: {}
+[2.152099] (-) TimerEvent: {}
+[2.253222] (-) TimerEvent: {}
+[2.354304] (-) TimerEvent: {}
+[2.455328] (-) TimerEvent: {}
+[2.556441] (-) TimerEvent: {}
+[2.657565] (-) TimerEvent: {}
+[2.758787] (-) TimerEvent: {}
+[2.859900] (-) TimerEvent: {}
+[2.961031] (-) TimerEvent: {}
+[3.062254] (-) TimerEvent: {}
+[3.163348] (-) TimerEvent: {}
+[3.264490] (-) TimerEvent: {}
+[3.365581] (-) TimerEvent: {}
+[3.467256] (-) TimerEvent: {}
+[3.568364] (-) TimerEvent: {}
+[3.669472] (-) TimerEvent: {}
+[3.770716] (-) TimerEvent: {}
+[3.871987] (-) TimerEvent: {}
+[3.973082] (-) TimerEvent: {}
+[4.074269] (-) TimerEvent: {}
+[4.175433] (-) TimerEvent: {}
+[4.277153] (-) TimerEvent: {}
+[4.379385] (-) TimerEvent: {}
+[4.480504] (-) TimerEvent: {}
+[4.582672] (-) TimerEvent: {}
+[4.683840] (-) TimerEvent: {}
+[4.785018] (-) TimerEvent: {}
+[4.886184] (-) TimerEvent: {}
+[4.987391] (-) TimerEvent: {}
+[5.088547] (-) TimerEvent: {}
+[5.189609] (-) TimerEvent: {}
+[5.290976] (-) TimerEvent: {}
+[5.394319] (-) TimerEvent: {}
+[5.495481] (-) TimerEvent: {}
+[5.596678] (-) TimerEvent: {}
+[5.697870] (-) TimerEvent: {}
+[5.799167] (-) TimerEvent: {}
+[5.900417] (-) TimerEvent: {}
+[6.001643] (-) TimerEvent: {}
+[6.102938] (-) TimerEvent: {}
+[6.204357] (-) TimerEvent: {}
+[6.307016] (-) TimerEvent: {}
+[6.409936] (-) TimerEvent: {}
+[6.511185] (-) TimerEvent: {}
+[6.613337] (-) TimerEvent: {}
+[6.714509] (-) TimerEvent: {}
+[6.815650] (-) TimerEvent: {}
+[6.916778] (-) TimerEvent: {}
+[7.017839] (-) TimerEvent: {}
+[7.119078] (-) TimerEvent: {}
+[7.220242] (-) TimerEvent: {}
+[7.321422] (-) TimerEvent: {}
+[7.422595] (-) TimerEvent: {}
+[7.523705] (-) TimerEvent: {}
+[7.624832] (-) TimerEvent: {}
+[7.727550] (-) TimerEvent: {}
+[7.829051] (-) TimerEvent: {}
+[7.930286] (-) TimerEvent: {}
+[8.031431] (-) TimerEvent: {}
+[8.132580] (-) TimerEvent: {}
+[8.233694] (-) TimerEvent: {}
+[8.335161] (-) TimerEvent: {}
+[8.436326] (-) TimerEvent: {}
+[8.538067] (-) TimerEvent: {}
+[8.639368] (-) TimerEvent: {}
+[8.740505] (-) TimerEvent: {}
+[8.841665] (-) TimerEvent: {}
+[8.942894] (-) TimerEvent: {}
+[9.044055] (-) TimerEvent: {}
+[9.145182] (-) TimerEvent: {}
+[9.246319] (-) TimerEvent: {}
+[9.347497] (-) TimerEvent: {}
+[9.448616] (-) TimerEvent: {}
+[9.550556] (-) TimerEvent: {}
+[9.651913] (-) TimerEvent: {}
+[9.753135] (-) TimerEvent: {}
+[9.854334] (-) TimerEvent: {}
+[9.955484] (-) TimerEvent: {}
+[10.056695] (-) TimerEvent: {}
+[10.157795] (-) TimerEvent: {}
+[10.258961] (-) TimerEvent: {}
+[10.360048] (-) TimerEvent: {}
+[10.461092] (-) TimerEvent: {}
+[10.562210] (-) TimerEvent: {}
+[10.663249] (-) TimerEvent: {}
+[10.764402] (-) TimerEvent: {}
+[10.866225] (-) TimerEvent: {}
+[10.967317] (-) TimerEvent: {}
+[11.068629] (-) TimerEvent: {}
+[11.172058] (-) TimerEvent: {}
+[11.273464] (-) TimerEvent: {}
+[11.374764] (-) TimerEvent: {}
+[11.475982] (-) TimerEvent: {}
+[11.577128] (-) TimerEvent: {}
+[11.678289] (-) TimerEvent: {}
+[11.779472] (-) TimerEvent: {}
+[11.880525] (-) TimerEvent: {}
+[11.981626] (-) TimerEvent: {}
+[12.082871] (-) TimerEvent: {}
+[12.184594] (-) TimerEvent: {}
+[12.285772] (-) TimerEvent: {}
+[12.389217] (-) TimerEvent: {}
+[12.490500] (-) TimerEvent: {}
+[12.591619] (-) TimerEvent: {}
+[12.692734] (-) TimerEvent: {}
+[12.793900] (-) TimerEvent: {}
+[12.895071] (-) TimerEvent: {}
+[12.996147] (-) TimerEvent: {}
+[13.097301] (-) TimerEvent: {}
+[13.198497] (-) TimerEvent: {}
+[13.299633] (-) TimerEvent: {}
+[13.400783] (-) TimerEvent: {}
+[13.501938] (-) TimerEvent: {}
+[13.603126] (-) TimerEvent: {}
+[13.704251] (-) TimerEvent: {}
+[13.805554] (-) TimerEvent: {}
+[13.906925] (-) TimerEvent: {}
+[14.008018] (-) TimerEvent: {}
+[14.109181] (-) TimerEvent: {}
+[14.211241] (-) TimerEvent: {}
+[14.312547] (-) TimerEvent: {}
+[14.413741] (-) TimerEvent: {}
+[14.514935] (-) TimerEvent: {}
+[14.616086] (-) TimerEvent: {}
+[14.717227] (-) TimerEvent: {}
+[14.818318] (-) TimerEvent: {}
+[14.847556] (path_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMinCurvaturePlanner::MinCurvaturePlanner()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.849816] (path_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:78:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >::_data_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<signed char, std::allocator<signed char> >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> >\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[14.850589] (path_planner) StderrLine: {'line': b'   78 |         occupancy_grid->data = \x1b[01;31m\x1b[Kmap_pixels_\x1b[m\x1b[K; // \xed\x94\xbd\xec\x85\x80\xea\xb0\x92 \xea\xb7\xb8\xeb\x8c\x80\xeb\xa1\x9c \xec\x82\xac\xec\x9a\xa9\n'}
+[14.851906] (path_planner) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.852669] (path_planner) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/vector:72\x1b[m\x1b[K,\n'}
+[14.853064] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/functional:62\x1b[m\x1b[K,\n'}
+[14.854540] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[14.855131] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/algorithm:71\x1b[m\x1b[K,\n'}
+[14.855595] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[14.856035] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[14.856536] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[14.856957] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[14.857375] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1\x1b[m\x1b[K:\n'}
+[14.859464] (path_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/vector.tcc:198:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = signed char; _Alloc = std::allocator<signed char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.860144] (path_planner) StderrLine: {'line': b'  198 |     \x1b[01;36m\x1b[Kvector<_Tp, _Alloc>\x1b[m\x1b[K::\n'}
+[14.860620] (path_planner) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.861109] (path_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/vector.tcc:199:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<signed char, std::allocator<signed char> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.861582] (path_planner) StderrLine: {'line': b'  199 |     operator=(\x1b[01;36m\x1b[Kconst vector<_Tp, _Alloc>& __x\x1b[m\x1b[K)\n'}
+[14.861981] (path_planner) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[14.862572] (path_planner) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/vector:67\x1b[m\x1b[K,\n'}
+[14.862966] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/functional:62\x1b[m\x1b[K,\n'}
+[14.863364] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[14.863878] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/algorithm:71\x1b[m\x1b[K,\n'}
+[14.864272] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[14.864661] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[14.865066] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[14.865500] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[14.865892] (path_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1\x1b[m\x1b[K:\n'}
+[14.866885] (path_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_vector.h:706:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = signed char; _Alloc = std::allocator<signed char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.867544] (path_planner) StderrLine: {'line': b'  706 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())\n'}
+[14.867928] (path_planner) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.868302] (path_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_vector.h:706:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<signed char, std::allocator<signed char> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.868788] (path_planner) StderrLine: {'line': b'  706 |       operator=(\x1b[01;36m\x1b[Kvector&& __x\x1b[m\x1b[K) noexcept(_Alloc_traits::_S_nothrow_move())\n'}
+[14.869196] (path_planner) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[14.869558] (path_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_vector.h:727:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = signed char; _Alloc = std::allocator<signed char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.870051] (path_planner) StderrLine: {'line': b'  727 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(initializer_list<value_type> __l)\n'}
+[14.870648] (path_planner) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.871080] (path_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_vector.h:727:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<signed char>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.871472] (path_planner) StderrLine: {'line': b'  727 |       operator=(\x1b[01;36m\x1b[Kinitializer_list<value_type> __l\x1b[m\x1b[K)\n'}
+[14.871861] (path_planner) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[14.918580] (-) TimerEvent: {}
+[15.019734] (-) TimerEvent: {}
+[15.121203] (-) TimerEvent: {}
+[15.223909] (-) TimerEvent: {}
+[15.325089] (-) TimerEvent: {}
+[15.426451] (-) TimerEvent: {}
+[15.527876] (-) TimerEvent: {}
+[15.629110] (-) TimerEvent: {}
+[15.730573] (-) TimerEvent: {}
+[15.831737] (-) TimerEvent: {}
+[15.932897] (-) TimerEvent: {}
+[16.034130] (-) TimerEvent: {}
+[16.135235] (-) TimerEvent: {}
+[16.236322] (-) TimerEvent: {}
+[16.337790] (-) TimerEvent: {}
+[16.440273] (-) TimerEvent: {}
+[16.541565] (-) TimerEvent: {}
+[16.642726] (-) TimerEvent: {}
+[16.743843] (-) TimerEvent: {}
+[16.845332] (-) TimerEvent: {}
+[16.946649] (-) TimerEvent: {}
+[17.050638] (-) TimerEvent: {}
+[17.152665] (-) TimerEvent: {}
+[17.253805] (-) TimerEvent: {}
+[17.355007] (-) TimerEvent: {}
+[17.457650] (-) TimerEvent: {}
+[17.559096] (-) TimerEvent: {}
+[17.660230] (-) TimerEvent: {}
+[17.761324] (-) TimerEvent: {}
+[17.862509] (-) TimerEvent: {}
+[17.963808] (-) TimerEvent: {}
+[18.064926] (-) TimerEvent: {}
+[18.166130] (-) TimerEvent: {}
+[18.268738] (-) TimerEvent: {}
+[18.370496] (-) TimerEvent: {}
+[18.471639] (-) TimerEvent: {}
+[18.572828] (-) TimerEvent: {}
+[18.673989] (-) TimerEvent: {}
+[18.775171] (-) TimerEvent: {}
+[18.876254] (-) TimerEvent: {}
+[18.977364] (-) TimerEvent: {}
+[19.078447] (-) TimerEvent: {}
+[19.179592] (-) TimerEvent: {}
+[19.280747] (-) TimerEvent: {}
+[19.384334] (-) TimerEvent: {}
+[19.485706] (-) TimerEvent: {}
+[19.586933] (-) TimerEvent: {}
+[19.688089] (-) TimerEvent: {}
+[19.789267] (-) TimerEvent: {}
+[19.890513] (-) TimerEvent: {}
+[19.992280] (-) TimerEvent: {}
+[20.093586] (-) TimerEvent: {}
+[20.194840] (-) TimerEvent: {}
+[20.295905] (-) TimerEvent: {}
+[20.397084] (-) TimerEvent: {}
+[20.498233] (-) TimerEvent: {}
+[20.601750] (-) TimerEvent: {}
+[20.703426] (-) TimerEvent: {}
+[20.804613] (-) TimerEvent: {}
+[20.905763] (-) TimerEvent: {}
+[21.006911] (-) TimerEvent: {}
+[21.108023] (-) TimerEvent: {}
+[21.209096] (-) TimerEvent: {}
+[21.310269] (-) TimerEvent: {}
+[21.411353] (-) TimerEvent: {}
+[21.512518] (-) TimerEvent: {}
+[21.613685] (-) TimerEvent: {}
+[21.714824] (-) TimerEvent: {}
+[21.815977] (-) TimerEvent: {}
+[21.917123] (-) TimerEvent: {}
+[22.018317] (-) TimerEvent: {}
+[22.119468] (-) TimerEvent: {}
+[22.220580] (-) TimerEvent: {}
+[22.321646] (-) TimerEvent: {}
+[22.422841] (-) TimerEvent: {}
+[22.523976] (-) TimerEvent: {}
+[22.625119] (-) TimerEvent: {}
+[22.726303] (-) TimerEvent: {}
+[22.814967] (path_planner) StderrLine: {'line': b'make[2]: *** [CMakeFiles/min_curvature_planner.dir/build.make:63: CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o] Error 1\n'}
+[22.816536] (path_planner) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/min_curvature_planner.dir/all] Error 2\n'}
+[22.817847] (path_planner) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[22.826832] (-) TimerEvent: {}
+[22.836491] (path_planner) CommandEnded: {'returncode': 2}
+[22.919761] (path_planner) JobEnded: {'identifier': 'path_planner', 'rc': 2}
+[22.927035] (-) TimerEvent: {}
+[22.937294] (-) EventReactorShutdown: {}

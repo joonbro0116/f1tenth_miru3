@@ -1,0 +1,124 @@
+[0.000000] (-) TimerEvent: {}
+[0.000440] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.000643] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.002000] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.002574] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.004020] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.008285] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.008540] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.008704] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.008960] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.012280] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.012698] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.012879] (-) JobUnselected: {'identifier': 'vesc'}
+[0.015103] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.018880] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.020018] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.020313] (path_planner) JobQueued: {'identifier': 'path_planner', 'dependencies': OrderedDict()}
+[0.020673] (path_planner) JobStarted: {'identifier': 'path_planner'}
+[0.094200] (-) TimerEvent: {}
+[0.195508] (-) TimerEvent: {}
+[0.296065] (-) TimerEvent: {}
+[0.396600] (-) TimerEvent: {}
+[0.497676] (-) TimerEvent: {}
+[0.598263] (-) TimerEvent: {}
+[0.698784] (-) TimerEvent: {}
+[0.799355] (-) TimerEvent: {}
+[0.899905] (-) TimerEvent: {}
+[1.000521] (-) TimerEvent: {}
+[1.101153] (-) TimerEvent: {}
+[1.201899] (-) TimerEvent: {}
+[1.302493] (-) TimerEvent: {}
+[1.403084] (-) TimerEvent: {}
+[1.503739] (-) TimerEvent: {}
+[1.604377] (-) TimerEvent: {}
+[1.706810] (-) TimerEvent: {}
+[1.813074] (-) TimerEvent: {}
+[1.916876] (-) TimerEvent: {}
+[2.017436] (-) TimerEvent: {}
+[2.118127] (-) TimerEvent: {}
+[2.218705] (-) TimerEvent: {}
+[2.319209] (-) TimerEvent: {}
+[2.419768] (-) TimerEvent: {}
+[2.520289] (-) TimerEvent: {}
+[2.620912] (-) TimerEvent: {}
+[2.721527] (-) TimerEvent: {}
+[2.822905] (-) TimerEvent: {}
+[2.924138] (-) TimerEvent: {}
+[3.025561] (-) TimerEvent: {}
+[3.127448] (-) TimerEvent: {}
+[3.230091] (-) TimerEvent: {}
+[3.331117] (-) TimerEvent: {}
+[3.432669] (-) TimerEvent: {}
+[3.533685] (-) TimerEvent: {}
+[3.638221] (-) TimerEvent: {}
+[3.739331] (-) TimerEvent: {}
+[3.839893] (-) TimerEvent: {}
+[3.941827] (-) TimerEvent: {}
+[4.042435] (-) TimerEvent: {}
+[4.143116] (-) TimerEvent: {}
+[4.243910] (-) TimerEvent: {}
+[4.346650] (-) TimerEvent: {}
+[4.401994] (path_planner) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/path_planner', 'build', '--build-base', '/home/f1/f1tenth_ws/build/path_planner/build', 'install', '--record', '/home/f1/f1tenth_ws/build/path_planner/install.log', '--install-scripts', '$base/lib/f1tenth_path_planner', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/f1/f1tenth_ws/src/path_planner', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'USER': 'f1', 'LC_TIME': 'ko_KR.UTF-8', 'CLAUDE_CODE_ENTRYPOINT': 'cli', 'GIT_EDITOR': 'true', 'SSH_AGENT_PID': '4821', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/f1', 'QT4_IM_MODULE': 'fcitx', 'OLDPWD': '/home/f1/f1tenth_ws/src/path_planner', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'ZSH': '/home/f1/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'MANAGERPID': '3939', 'LC_MONETARY': 'ko_KR.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', 'VISUAL': 'nvim', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/foxy/', 'NVM_DIR': '/home/f1/.nvm', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'f1', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '8:74067', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'USERNAME': 'f1', 'TERM': 'xterm-256color', 'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE': 'delta', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/4883,unix/ubuntu:/tmp/.ICE-unix/4883', 'PAPERSIZE': 'a4', 'INVOCATION_ID': '82ccf46ec6744cc080f90e1180b8b6b6', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1a424917_da8a_4cba_b05b_d56943809565', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1001', 'LC_ADDRESS': 'ko_KR.UTF-8', 'COREPACK_ENABLE_AUTO_PIN': '0', 'DISPLAY': ':1', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XDG_SESSION_DESKTOP': 'ubuntu', 'GNOME_TERMINAL_SERVICE': ':1.84', 'XMODIFIERS': '@im=fcitx', 'XAUTHORITY': '/run/user/1001/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1001/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'ROS_DOMAIN_ID': '73', 'SHELL': '/usr/bin/zsh', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'CLAUDECODE': '1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1001/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'fcitx', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/f1/f1tenth_ws/build/path_planner', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'CLUTTER_IM_MODULE': 'fcitx', 'LC_NUMERIC': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/f1/f1tenth_ws/build/path_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/path_planner/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'EDITOR': 'nvim'}, 'shell': False}
+[4.447069] (-) TimerEvent: {}
+[4.547722] (-) TimerEvent: {}
+[4.648311] (-) TimerEvent: {}
+[4.748845] (-) TimerEvent: {}
+[4.849388] (-) TimerEvent: {}
+[4.950020] (-) TimerEvent: {}
+[5.050816] (-) TimerEvent: {}
+[5.154252] (-) TimerEvent: {}
+[5.254920] (-) TimerEvent: {}
+[5.355583] (-) TimerEvent: {}
+[5.456166] (-) TimerEvent: {}
+[5.556682] (-) TimerEvent: {}
+[5.657266] (-) TimerEvent: {}
+[5.757998] (-) TimerEvent: {}
+[5.858896] (-) TimerEvent: {}
+[5.959561] (-) TimerEvent: {}
+[6.016217] (path_planner) StdoutLine: {'line': b'running egg_info\n'}
+[6.021256] (path_planner) StdoutLine: {'line': b'creating ../../build/path_planner/path_planner.egg-info\n'}
+[6.022129] (path_planner) StdoutLine: {'line': b'writing ../../build/path_planner/path_planner.egg-info/PKG-INFO\n'}
+[6.023760] (path_planner) StdoutLine: {'line': b'writing dependency_links to ../../build/path_planner/path_planner.egg-info/dependency_links.txt\n'}
+[6.025061] (path_planner) StdoutLine: {'line': b'writing entry points to ../../build/path_planner/path_planner.egg-info/entry_points.txt\n'}
+[6.026372] (path_planner) StdoutLine: {'line': b'writing requirements to ../../build/path_planner/path_planner.egg-info/requires.txt\n'}
+[6.027406] (path_planner) StdoutLine: {'line': b'writing top-level names to ../../build/path_planner/path_planner.egg-info/top_level.txt\n'}
+[6.034391] (path_planner) StdoutLine: {'line': b"writing manifest file '../../build/path_planner/path_planner.egg-info/SOURCES.txt'\n"}
+[6.059856] (-) TimerEvent: {}
+[6.160928] (-) TimerEvent: {}
+[6.228799] (path_planner) StdoutLine: {'line': b"reading manifest file '../../build/path_planner/path_planner.egg-info/SOURCES.txt'\n"}
+[6.233154] (path_planner) StdoutLine: {'line': b"writing manifest file '../../build/path_planner/path_planner.egg-info/SOURCES.txt'\n"}
+[6.235612] (path_planner) StdoutLine: {'line': b'running build\n'}
+[6.236387] (path_planner) StdoutLine: {'line': b'running build_py\n'}
+[6.236866] (path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/build/path_planner/build\n'}
+[6.237315] (path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/build/path_planner/build/lib\n'}
+[6.238581] (path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/build/path_planner/build/lib/path_planner\n'}
+[6.239758] (path_planner) StdoutLine: {'line': b'copying path_planner/__init__.py -> /home/f1/f1tenth_ws/build/path_planner/build/lib/path_planner\n'}
+[6.240307] (path_planner) StdoutLine: {'line': b'copying path_planner/min_curvature_planner.py -> /home/f1/f1tenth_ws/build/path_planner/build/lib/path_planner\n'}
+[6.240753] (path_planner) StdoutLine: {'line': b'running install\n'}
+[6.242854] (path_planner) StdoutLine: {'line': b'running install_lib\n'}
+[6.252416] (path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/path_planner/lib/python3.8/site-packages/path_planner\n'}
+[6.253256] (path_planner) StdoutLine: {'line': b'copying /home/f1/f1tenth_ws/build/path_planner/build/lib/path_planner/__init__.py -> /home/f1/f1tenth_ws/install/path_planner/lib/python3.8/site-packages/path_planner\n'}
+[6.253714] (path_planner) StdoutLine: {'line': b'copying /home/f1/f1tenth_ws/build/path_planner/build/lib/path_planner/min_curvature_planner.py -> /home/f1/f1tenth_ws/install/path_planner/lib/python3.8/site-packages/path_planner\n'}
+[6.256854] (path_planner) StdoutLine: {'line': b'byte-compiling /home/f1/f1tenth_ws/install/path_planner/lib/python3.8/site-packages/path_planner/__init__.py to __init__.cpython-38.pyc\n'}
+[6.261640] (path_planner) StdoutLine: {'line': b'byte-compiling /home/f1/f1tenth_ws/install/path_planner/lib/python3.8/site-packages/path_planner/min_curvature_planner.py to min_curvature_planner.cpython-38.pyc\n'}
+[6.264654] (-) TimerEvent: {}
+[6.273916] (path_planner) StdoutLine: {'line': b'running install_data\n'}
+[6.275905] (path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/path_planner/share/ament_index\n'}
+[6.277906] (path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index\n'}
+[6.278531] (path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/packages\n'}
+[6.278955] (path_planner) StdoutLine: {'line': b'copying resource/path_planner -> /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/packages\n'}
+[6.279368] (path_planner) StdoutLine: {'line': b'copying package.xml -> /home/f1/f1tenth_ws/install/path_planner/share/path_planner\n'}
+[6.281052] (path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/path_planner/share/path_planner/launch\n'}
+[6.281716] (path_planner) StdoutLine: {'line': b'copying launch/planner_launch.py -> /home/f1/f1tenth_ws/install/path_planner/share/path_planner/launch\n'}
+[6.282342] (path_planner) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.288640] (path_planner) StdoutLine: {'line': b'Copying ../../build/path_planner/path_planner.egg-info to /home/f1/f1tenth_ws/install/path_planner/lib/python3.8/site-packages/path_planner-0.0.0-py3.8.egg-info\n'}
+[6.303209] (path_planner) StdoutLine: {'line': b'running install_scripts\n'}
+[6.364946] (-) TimerEvent: {}
+[6.399599] (path_planner) StdoutLine: {'line': b'Installing min_curvature_planner script to /home/f1/f1tenth_ws/install/path_planner/lib/f1tenth_path_planner\n'}
+[6.401422] (path_planner) StdoutLine: {'line': b"writing list of installed files to '/home/f1/f1tenth_ws/build/path_planner/install.log'\n"}
+[6.465204] (-) TimerEvent: {}
+[6.554078] (path_planner) CommandEnded: {'returncode': 0}
+[6.565403] (-) TimerEvent: {}
+[6.638929] (path_planner) JobEnded: {'identifier': 'path_planner', 'rc': 0}
+[6.642646] (-) EventReactorShutdown: {}

@@ -1,0 +1,27 @@
+[0.085s] Invoking command in '/home/f1/f1tenth_ws/build/path_planner': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_planner -- -j6 -l6
+[0.513s] [35m[1mScanning dependencies of target min_curvature_planner[0m
+[0.852s] [ 50%] [32mBuilding CXX object CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o[0m
+[47.991s] [100%] [32m[1mLinking CXX executable min_curvature_planner[0m
+[49.018s] [100%] Built target min_curvature_planner
+[49.090s] Invoked command in '/home/f1/f1tenth_ws/build/path_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_planner -- -j6 -l6
+[49.179s] Invoking command in '/home/f1/f1tenth_ws/build/path_planner': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/path_planner
+[49.230s] -- Install configuration: "Release"
+[49.237s] -- Execute custom install script
+[49.243s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/lib/path_planner/min_curvature_planner
+[49.246s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/launch/planner_launch.py
+[49.249s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/package_run_dependencies/path_planner
+[49.251s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/parent_prefix_path/path_planner
+[49.253s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/ament_prefix_path.sh
+[49.255s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/ament_prefix_path.dsv
+[49.258s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/path.sh
+[49.260s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/path.dsv
+[49.262s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.bash
+[49.264s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.sh
+[49.268s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.zsh
+[49.280s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.dsv
+[49.280s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/package.dsv
+[49.342s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/packages/path_planner
+[49.345s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/cmake/path_plannerConfig.cmake
+[49.346s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/cmake/path_plannerConfig-version.cmake
+[49.348s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/package.xml
+[49.362s] Invoked command in '/home/f1/f1tenth_ws/build/path_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/path_planner

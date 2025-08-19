@@ -1,0 +1,90 @@
+[0.066s] Invoking command in '/home/f1/f1tenth_ws/src/build/path_planner': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/path_planner -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/src/install/path_planner
+[0.733s] -- The C compiler identification is GNU 9.4.0
+[1.402s] -- The CXX compiler identification is GNU 9.4.0
+[1.466s] -- Check for working C compiler: /usr/bin/cc
+[2.093s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.100s] -- Detecting C compiler ABI info
+[2.689s] -- Detecting C compiler ABI info - done
+[2.795s] -- Detecting C compile features
+[2.800s] -- Detecting C compile features - done
+[2.823s] -- Check for working CXX compiler: /usr/bin/c++
+[3.431s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.441s] -- Detecting CXX compiler ABI info
+[4.095s] -- Detecting CXX compiler ABI info - done
+[4.179s] -- Detecting CXX compile features
+[4.183s] -- Detecting CXX compile features - done
+[4.205s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.383s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.384s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.755s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[6.131s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.199s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[6.890s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[7.073s] -- Found FastRTPS: /opt/ros/foxy/include  
+[7.640s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.117s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[8.126s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.134s] -- Looking for pthread.h
+[8.770s] -- Looking for pthread.h - found
+[8.783s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.533s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[9.533s] -- Looking for pthread_create in pthreads
+[10.127s] -- Looking for pthread_create in pthreads - not found
+[10.129s] -- Looking for pthread_create in pthread
+[10.770s] -- Looking for pthread_create in pthread - found
+[10.779s] -- Found Threads: TRUE  
+[11.729s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[11.937s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[12.315s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[14.130s] -- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[14.176s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[14.201s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[14.332s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[14.845s] -- Added test 'copyright' to check source files copyright and LICENSE
+[14.854s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[14.854s] -- Configured cppcheck include dirs: 
+[14.855s] -- Configured cppcheck exclude dirs and/or files: 
+[14.864s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[14.865s] -- Configured cpplint exclude dirs and/or files: 
+[14.867s] -- Added test 'flake8' to check Python code syntax and style conventions
+[14.872s] -- Added test 'lint_cmake' to check CMake code style
+[14.875s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[14.884s] -- Added test 'uncrustify' to check C / C++ code style
+[14.885s] -- Configured uncrustify additional arguments: 
+[14.887s] -- Added test 'xmllint' to check XML markup files
+[14.920s] -- Configuring done
+[15.017s] -- Generating done
+[15.061s] -- Build files have been written to: /home/f1/f1tenth_ws/src/build/path_planner
+[15.128s] Invoked command in '/home/f1/f1tenth_ws/src/build/path_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/path_planner -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/src/install/path_planner
+[15.153s] Invoking command in '/home/f1/f1tenth_ws/src/build/path_planner': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/src/build/path_planner -- -j6 -l6
+[15.794s] Scanning dependencies of target min_curvature_planner
+[15.909s] [ 50%] Building CXX object CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o
+[24.958s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘void MinCurvaturePlanner::extractTrackCenterline()’:
+[24.959s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:98:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<signed char, std::allocator<signed char> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[24.959s]    98 |             if (index < map_data_->data.size() && map_data_->data[index] == 0) {
+[24.960s]       |                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+[53.800s] [100%] Linking CXX executable min_curvature_planner
+[55.964s] [100%] Built target min_curvature_planner
+[56.046s] Invoked command in '/home/f1/f1tenth_ws/src/build/path_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/src/build/path_planner -- -j6 -l6
+[56.133s] Invoking command in '/home/f1/f1tenth_ws/src/build/path_planner': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/src/build/path_planner
+[56.189s] -- Install configuration: ""
+[56.190s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/lib/path_planner/min_curvature_planner
+[56.223s] -- Set runtime path of "/home/f1/f1tenth_ws/src/install/path_planner/lib/path_planner/min_curvature_planner" to ""
+[56.227s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/path_planner/launch
+[56.228s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/path_planner/launch/planner_launch.py
+[56.229s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/ament_index/resource_index/package_run_dependencies/path_planner
+[56.237s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/ament_index/resource_index/parent_prefix_path/path_planner
+[56.240s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/path_planner/environment/ament_prefix_path.sh
+[56.242s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/path_planner/environment/ament_prefix_path.dsv
+[56.244s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/path_planner/environment/path.sh
+[56.245s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/path_planner/environment/path.dsv
+[56.248s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/path_planner/local_setup.bash
+[56.250s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/path_planner/local_setup.sh
+[56.251s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/path_planner/local_setup.zsh
+[56.252s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/path_planner/local_setup.dsv
+[56.254s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/path_planner/package.dsv
+[56.259s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/ament_index/resource_index/packages/path_planner
+[56.260s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/path_planner/cmake/path_plannerConfig.cmake
+[56.260s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/path_planner/cmake/path_plannerConfig-version.cmake
+[56.267s] -- Installing: /home/f1/f1tenth_ws/src/install/path_planner/share/path_planner/package.xml
+[56.274s] Invoked command in '/home/f1/f1tenth_ws/src/build/path_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/src/build/path_planner

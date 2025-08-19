@@ -1,0 +1,59 @@
+[0.107s] Invoking command in '/home/f1/f1tenth_ws/src/build/path_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/src/build/path_follow -- -j6 -l6
+[0.371s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.568s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.178s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.502s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.522s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.380s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.685s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.692s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.624s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[4.922s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[5.303s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[5.648s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[5.695s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[7.310s] -- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[7.359s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[7.516s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[7.780s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[8.294s] -- Added test 'copyright' to check source files copyright and LICENSE
+[8.302s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.303s] -- Configured cppcheck include dirs: 
+[8.304s] -- Configured cppcheck exclude dirs and/or files: 
+[8.318s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[8.319s] -- Configured cpplint exclude dirs and/or files: 
+[8.319s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.326s] -- Added test 'lint_cmake' to check CMake code style
+[8.327s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[8.329s] -- Added test 'uncrustify' to check C / C++ code style
+[8.330s] -- Configured uncrustify additional arguments: 
+[8.334s] -- Added test 'xmllint' to check XML markup files
+[8.369s] -- Configuring done
+[8.485s] -- Generating done
+[8.551s] -- Build files have been written to: /home/f1/f1tenth_ws/src/build/path_follow
+[8.938s] [ 50%] Building CXX object CMakeFiles/path_follow_node.dir/src/path_follow_node.cpp.o
+[70.195s] [100%] Linking CXX executable path_follow_node
+[73.021s] [100%] Built target path_follow_node
+[73.104s] Invoked command in '/home/f1/f1tenth_ws/src/build/path_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/src/build/path_follow -- -j6 -l6
+[73.212s] Invoking command in '/home/f1/f1tenth_ws/src/build/path_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/src/build/path_follow
+[73.295s] -- Install configuration: ""
+[73.301s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/lib/path_follow/path_follow_node
+[73.341s] -- Set runtime path of "/home/f1/f1tenth_ws/src/install/path_follow/lib/path_follow/path_follow_node" to ""
+[73.345s] -- Up-to-date: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/launch
+[73.345s] -- Up-to-date: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/launch/path_follow_launch.py
+[73.346s] -- Up-to-date: /home/f1/f1tenth_ws/src/install/path_follow/share/ament_index/resource_index/package_run_dependencies/path_follow
+[73.347s] -- Up-to-date: /home/f1/f1tenth_ws/src/install/path_follow/share/ament_index/resource_index/parent_prefix_path/path_follow
+[73.347s] -- Up-to-date: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/environment/ament_prefix_path.sh
+[73.347s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/environment/ament_prefix_path.dsv
+[73.349s] -- Up-to-date: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/environment/path.sh
+[73.350s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/environment/path.dsv
+[73.350s] -- Up-to-date: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/local_setup.bash
+[73.351s] -- Up-to-date: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/local_setup.sh
+[73.351s] -- Up-to-date: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/local_setup.zsh
+[73.352s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/local_setup.dsv
+[73.354s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/package.dsv
+[73.356s] -- Up-to-date: /home/f1/f1tenth_ws/src/install/path_follow/share/ament_index/resource_index/packages/path_follow
+[73.356s] -- Up-to-date: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/cmake/path_followConfig.cmake
+[73.357s] -- Up-to-date: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/cmake/path_followConfig-version.cmake
+[73.357s] -- Up-to-date: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/package.xml
+[73.382s] Invoked command in '/home/f1/f1tenth_ws/src/build/path_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/src/build/path_follow

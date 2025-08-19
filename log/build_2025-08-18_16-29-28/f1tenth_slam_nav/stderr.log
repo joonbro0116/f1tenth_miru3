@@ -1,0 +1,8 @@
+/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/slam_nav_manager.cpp: In member function ‘void SlamNavManager::stopCurrentProcesses()’:
+/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/slam_nav_manager.cpp:175:28: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+  175 |                 std::system(kill_cmd.c_str());
+      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/slam_nav_manager.cpp: In member function ‘void SlamNavManager::saveMapCallback(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)’:
+/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/slam_nav_manager.cpp:133:24: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+  133 |             std::system(mkdir_cmd.c_str());
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~

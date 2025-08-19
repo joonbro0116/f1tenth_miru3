@@ -1,0 +1,599 @@
+[0.000000] (-) TimerEvent: {}
+[0.001117] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.006172] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.006373] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.006496] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.006608] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.006749] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.006870] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.006975] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.007103] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.007203] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.007301] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.007403] (-) JobUnselected: {'identifier': 'vesc'}
+[0.007510] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.007610] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.007706] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.007817] (path_planner) JobQueued: {'identifier': 'path_planner', 'dependencies': OrderedDict()}
+[0.007953] (path_planner) JobStarted: {'identifier': 'path_planner'}
+[0.061909] (path_planner) JobProgress: {'identifier': 'path_planner', 'progress': 'cmake'}
+[0.066447] (path_planner) Command: {'cmd': ['/usr/bin/cmake', '/home/f1/f1tenth_ws/src/path_planner', '-DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/path_planner'], 'cwd': '/home/f1/f1tenth_ws/build/path_planner', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('SSH_AGENT_PID', '4821'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/f1'), ('QT4_IM_MODULE', 'fcitx'), ('OLDPWD', '/home/f1/f1tenth_ws'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('MANAGERPID', '3939'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:74067'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'f1'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4883,unix/ubuntu:/tmp/.ICE-unix/4883'), ('PAPERSIZE', 'a4'), ('INVOCATION_ID', '82ccf46ec6744cc080f90e1180b8b6b6'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1a424917_da8a_4cba_b05b_d56943809565'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.84'), ('XMODIFIERS', '@im=fcitx'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'fcitx'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/f1/f1tenth_ws/build/path_planner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLUTTER_IM_MODULE', 'fcitx'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.098352] (-) TimerEvent: {}
+[0.199017] (-) TimerEvent: {}
+[0.299619] (-) TimerEvent: {}
+[0.400262] (-) TimerEvent: {}
+[0.500972] (-) TimerEvent: {}
+[0.535307] (path_planner) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.601206] (-) TimerEvent: {}
+[0.701781] (-) TimerEvent: {}
+[0.802327] (-) TimerEvent: {}
+[0.902851] (-) TimerEvent: {}
+[0.946447] (path_planner) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.970253] (path_planner) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.003121] (-) TimerEvent: {}
+[1.103631] (-) TimerEvent: {}
+[1.204215] (-) TimerEvent: {}
+[1.304877] (-) TimerEvent: {}
+[1.405649] (-) TimerEvent: {}
+[1.430665] (path_planner) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.436496] (path_planner) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.505884] (-) TimerEvent: {}
+[1.606453] (-) TimerEvent: {}
+[1.707023] (-) TimerEvent: {}
+[1.807643] (-) TimerEvent: {}
+[1.894456] (path_planner) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.907962] (-) TimerEvent: {}
+[1.957944] (path_planner) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.962335] (path_planner) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.981025] (path_planner) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.008393] (-) TimerEvent: {}
+[2.109531] (-) TimerEvent: {}
+[2.212445] (-) TimerEvent: {}
+[2.313057] (-) TimerEvent: {}
+[2.413705] (-) TimerEvent: {}
+[2.514323] (-) TimerEvent: {}
+[2.527220] (path_planner) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[2.545828] (path_planner) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.614614] (-) TimerEvent: {}
+[2.715217] (-) TimerEvent: {}
+[2.815842] (-) TimerEvent: {}
+[2.916440] (-) TimerEvent: {}
+[3.017168] (-) TimerEvent: {}
+[3.072065] (path_planner) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.117353] (-) TimerEvent: {}
+[3.138043] (path_planner) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.140997] (path_planner) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.153023] (path_planner) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[3.217615] (-) TimerEvent: {}
+[3.295336] (path_planner) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.296229] (path_planner) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.317889] (-) TimerEvent: {}
+[3.418459] (-) TimerEvent: {}
+[3.519029] (-) TimerEvent: {}
+[3.619594] (-) TimerEvent: {}
+[3.720127] (-) TimerEvent: {}
+[3.821104] (-) TimerEvent: {}
+[3.923106] (-) TimerEvent: {}
+[4.024744] (-) TimerEvent: {}
+[4.126129] (-) TimerEvent: {}
+[4.226728] (-) TimerEvent: {}
+[4.327717] (-) TimerEvent: {}
+[4.428678] (-) TimerEvent: {}
+[4.463324] (path_planner) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[4.529028] (-) TimerEvent: {}
+[4.632536] (-) TimerEvent: {}
+[4.713695] (path_planner) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.732801] (-) TimerEvent: {}
+[4.755392] (path_planner) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[4.833231] (-) TimerEvent: {}
+[4.933838] (-) TimerEvent: {}
+[5.034530] (-) TimerEvent: {}
+[5.135135] (-) TimerEvent: {}
+[5.235752] (-) TimerEvent: {}
+[5.330357] (path_planner) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[5.335907] (-) TimerEvent: {}
+[5.436363] (-) TimerEvent: {}
+[5.487179] (path_planner) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[5.536651] (-) TimerEvent: {}
+[5.637365] (-) TimerEvent: {}
+[5.738037] (-) TimerEvent: {}
+[5.838642] (-) TimerEvent: {}
+[5.939339] (-) TimerEvent: {}
+[5.951936] (path_planner) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.039619] (-) TimerEvent: {}
+[6.140291] (-) TimerEvent: {}
+[6.241127] (-) TimerEvent: {}
+[6.294837] (path_planner) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[6.305935] (path_planner) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.310705] (path_planner) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.341385] (-) TimerEvent: {}
+[6.442864] (-) TimerEvent: {}
+[6.543538] (-) TimerEvent: {}
+[6.644134] (-) TimerEvent: {}
+[6.744821] (-) TimerEvent: {}
+[6.826757] (path_planner) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.828221] (path_planner) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.845117] (-) TimerEvent: {}
+[6.945655] (-) TimerEvent: {}
+[7.046254] (-) TimerEvent: {}
+[7.146843] (-) TimerEvent: {}
+[7.247402] (-) TimerEvent: {}
+[7.297118] (path_planner) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[7.299023] (path_planner) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[7.347658] (-) TimerEvent: {}
+[7.449075] (-) TimerEvent: {}
+[7.549753] (-) TimerEvent: {}
+[7.650451] (-) TimerEvent: {}
+[7.706783] (path_planner) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[7.708432] (path_planner) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[7.750683] (-) TimerEvent: {}
+[7.851308] (-) TimerEvent: {}
+[7.951959] (-) TimerEvent: {}
+[8.052528] (-) TimerEvent: {}
+[8.153178] (-) TimerEvent: {}
+[8.157126] (path_planner) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[8.171236] (path_planner) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.253416] (-) TimerEvent: {}
+[8.354786] (-) TimerEvent: {}
+[8.455497] (-) TimerEvent: {}
+[8.556185] (-) TimerEvent: {}
+[8.656885] (-) TimerEvent: {}
+[8.757571] (-) TimerEvent: {}
+[8.858183] (-) TimerEvent: {}
+[8.938227] (path_planner) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[8.958426] (-) TimerEvent: {}
+[9.059055] (-) TimerEvent: {}
+[9.099284] (path_planner) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[9.159317] (-) TimerEvent: {}
+[9.263524] (-) TimerEvent: {}
+[9.364136] (-) TimerEvent: {}
+[9.451754] (path_planner) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[9.465215] (-) TimerEvent: {}
+[9.565756] (-) TimerEvent: {}
+[9.666303] (-) TimerEvent: {}
+[9.766932] (-) TimerEvent: {}
+[9.867467] (-) TimerEvent: {}
+[9.968112] (-) TimerEvent: {}
+[10.068741] (-) TimerEvent: {}
+[10.169393] (-) TimerEvent: {}
+[10.270015] (-) TimerEvent: {}
+[10.371254] (-) TimerEvent: {}
+[10.475949] (-) TimerEvent: {}
+[10.576605] (-) TimerEvent: {}
+[10.677258] (-) TimerEvent: {}
+[10.777863] (-) TimerEvent: {}
+[10.878790] (-) TimerEvent: {}
+[10.979940] (-) TimerEvent: {}
+[11.042469] (path_planner) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)\n'}
+[11.080171] (-) TimerEvent: {}
+[11.084511] (path_planner) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[11.100393] (path_planner) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[11.180600] (-) TimerEvent: {}
+[11.231598] (path_planner) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[11.280688] (-) TimerEvent: {}
+[11.381345] (-) TimerEvent: {}
+[11.481929] (-) TimerEvent: {}
+[11.582564] (-) TimerEvent: {}
+[11.657747] (path_planner) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[11.668761] (path_planner) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[11.670482] (path_planner) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[11.670949] (path_planner) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[11.676835] (path_planner) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[11.677751] (path_planner) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[11.679938] (path_planner) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[11.682717] (-) TimerEvent: {}
+[11.683690] (path_planner) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[11.686012] (path_planner) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[11.692401] (path_planner) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[11.693185] (path_planner) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[11.695243] (path_planner) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[11.729478] (path_planner) StdoutLine: {'line': b'-- Configuring done\n'}
+[11.782979] (-) TimerEvent: {}
+[11.808793] (path_planner) StdoutLine: {'line': b'-- Generating done\n'}
+[11.840724] (path_planner) StdoutLine: {'line': b'-- Build files have been written to: /home/f1/f1tenth_ws/build/path_planner\n'}
+[11.883281] (-) TimerEvent: {}
+[11.897883] (path_planner) CommandEnded: {'returncode': 0}
+[11.913239] (path_planner) JobProgress: {'identifier': 'path_planner', 'progress': 'build'}
+[11.915391] (path_planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/f1/f1tenth_ws/build/path_planner', '--', '-j6', '-l6'], 'cwd': '/home/f1/f1tenth_ws/build/path_planner', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('SSH_AGENT_PID', '4821'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/f1'), ('QT4_IM_MODULE', 'fcitx'), ('OLDPWD', '/home/f1/f1tenth_ws'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('MANAGERPID', '3939'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:74067'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'f1'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4883,unix/ubuntu:/tmp/.ICE-unix/4883'), ('PAPERSIZE', 'a4'), ('INVOCATION_ID', '82ccf46ec6744cc080f90e1180b8b6b6'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1a424917_da8a_4cba_b05b_d56943809565'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.84'), ('XMODIFIERS', '@im=fcitx'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'fcitx'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/f1/f1tenth_ws/build/path_planner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLUTTER_IM_MODULE', 'fcitx'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[11.983577] (-) TimerEvent: {}
+[12.084238] (-) TimerEvent: {}
+[12.184801] (-) TimerEvent: {}
+[12.285456] (-) TimerEvent: {}
+[12.342955] (path_planner) StdoutLine: {'line': b'Scanning dependencies of target min_curvature_planner\n'}
+[12.385714] (-) TimerEvent: {}
+[12.443487] (path_planner) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o\n'}
+[12.485953] (-) TimerEvent: {}
+[12.586738] (-) TimerEvent: {}
+[12.687309] (-) TimerEvent: {}
+[12.787931] (-) TimerEvent: {}
+[12.888582] (-) TimerEvent: {}
+[12.989201] (-) TimerEvent: {}
+[13.089827] (-) TimerEvent: {}
+[13.190502] (-) TimerEvent: {}
+[13.291191] (-) TimerEvent: {}
+[13.391849] (-) TimerEvent: {}
+[13.492468] (-) TimerEvent: {}
+[13.593141] (-) TimerEvent: {}
+[13.693805] (-) TimerEvent: {}
+[13.794499] (-) TimerEvent: {}
+[13.895179] (-) TimerEvent: {}
+[13.995858] (-) TimerEvent: {}
+[14.096524] (-) TimerEvent: {}
+[14.197176] (-) TimerEvent: {}
+[14.297858] (-) TimerEvent: {}
+[14.398493] (-) TimerEvent: {}
+[14.499165] (-) TimerEvent: {}
+[14.599820] (-) TimerEvent: {}
+[14.700742] (-) TimerEvent: {}
+[14.801470] (-) TimerEvent: {}
+[14.902138] (-) TimerEvent: {}
+[15.002969] (-) TimerEvent: {}
+[15.103566] (-) TimerEvent: {}
+[15.204179] (-) TimerEvent: {}
+[15.304816] (-) TimerEvent: {}
+[15.405530] (-) TimerEvent: {}
+[15.506164] (-) TimerEvent: {}
+[15.606849] (-) TimerEvent: {}
+[15.707506] (-) TimerEvent: {}
+[15.808136] (-) TimerEvent: {}
+[15.908715] (-) TimerEvent: {}
+[16.009311] (-) TimerEvent: {}
+[16.109931] (-) TimerEvent: {}
+[16.210600] (-) TimerEvent: {}
+[16.311275] (-) TimerEvent: {}
+[16.411899] (-) TimerEvent: {}
+[16.512489] (-) TimerEvent: {}
+[16.613123] (-) TimerEvent: {}
+[16.713744] (-) TimerEvent: {}
+[16.814394] (-) TimerEvent: {}
+[16.915064] (-) TimerEvent: {}
+[17.015621] (-) TimerEvent: {}
+[17.116223] (-) TimerEvent: {}
+[17.216883] (-) TimerEvent: {}
+[17.317569] (-) TimerEvent: {}
+[17.418210] (-) TimerEvent: {}
+[17.518785] (-) TimerEvent: {}
+[17.619404] (-) TimerEvent: {}
+[17.720033] (-) TimerEvent: {}
+[17.820661] (-) TimerEvent: {}
+[17.921281] (-) TimerEvent: {}
+[18.021821] (-) TimerEvent: {}
+[18.122466] (-) TimerEvent: {}
+[18.223104] (-) TimerEvent: {}
+[18.323773] (-) TimerEvent: {}
+[18.424443] (-) TimerEvent: {}
+[18.525173] (-) TimerEvent: {}
+[18.625797] (-) TimerEvent: {}
+[18.726408] (-) TimerEvent: {}
+[18.827027] (-) TimerEvent: {}
+[18.927583] (-) TimerEvent: {}
+[19.028244] (-) TimerEvent: {}
+[19.128891] (-) TimerEvent: {}
+[19.229641] (-) TimerEvent: {}
+[19.330235] (-) TimerEvent: {}
+[19.430862] (-) TimerEvent: {}
+[19.531597] (-) TimerEvent: {}
+[19.632206] (-) TimerEvent: {}
+[19.732831] (-) TimerEvent: {}
+[19.754093] (path_planner) StderrLine: {'line': b'/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function \xe2\x80\x98void MinCurvaturePlanner::extractTrackCenterline()\xe2\x80\x99:\n'}
+[19.755310] (path_planner) StderrLine: {'line': b'/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:98:23: warning: comparison of integer expressions of different signedness: \xe2\x80\x98int\xe2\x80\x99 and \xe2\x80\x98std::vector<signed char, std::allocator<signed char> >::size_type\xe2\x80\x99 {aka \xe2\x80\x98long unsigned int\xe2\x80\x99} [-Wsign-compare]\n'}
+[19.755908] (path_planner) StderrLine: {'line': b'   98 |             if (index < map_data_->data.size() && map_data_->data[index] == 0) {\n'}
+[19.756397] (path_planner) StderrLine: {'line': b'      |                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[19.833147] (-) TimerEvent: {}
+[19.933739] (-) TimerEvent: {}
+[20.034374] (-) TimerEvent: {}
+[20.134999] (-) TimerEvent: {}
+[20.235588] (-) TimerEvent: {}
+[20.336288] (-) TimerEvent: {}
+[20.436999] (-) TimerEvent: {}
+[20.537641] (-) TimerEvent: {}
+[20.638301] (-) TimerEvent: {}
+[20.738903] (-) TimerEvent: {}
+[20.839472] (-) TimerEvent: {}
+[20.940178] (-) TimerEvent: {}
+[21.040801] (-) TimerEvent: {}
+[21.141475] (-) TimerEvent: {}
+[21.242093] (-) TimerEvent: {}
+[21.342751] (-) TimerEvent: {}
+[21.443369] (-) TimerEvent: {}
+[21.544032] (-) TimerEvent: {}
+[21.644669] (-) TimerEvent: {}
+[21.745423] (-) TimerEvent: {}
+[21.846107] (-) TimerEvent: {}
+[21.946700] (-) TimerEvent: {}
+[22.047267] (-) TimerEvent: {}
+[22.147885] (-) TimerEvent: {}
+[22.248449] (-) TimerEvent: {}
+[22.349155] (-) TimerEvent: {}
+[22.449769] (-) TimerEvent: {}
+[22.550433] (-) TimerEvent: {}
+[22.651052] (-) TimerEvent: {}
+[22.751650] (-) TimerEvent: {}
+[22.852298] (-) TimerEvent: {}
+[22.952895] (-) TimerEvent: {}
+[23.053577] (-) TimerEvent: {}
+[23.154283] (-) TimerEvent: {}
+[23.254941] (-) TimerEvent: {}
+[23.355578] (-) TimerEvent: {}
+[23.456524] (-) TimerEvent: {}
+[23.557306] (-) TimerEvent: {}
+[23.657901] (-) TimerEvent: {}
+[23.758502] (-) TimerEvent: {}
+[23.859107] (-) TimerEvent: {}
+[23.959716] (-) TimerEvent: {}
+[24.060346] (-) TimerEvent: {}
+[24.161721] (-) TimerEvent: {}
+[24.262306] (-) TimerEvent: {}
+[24.362962] (-) TimerEvent: {}
+[24.463578] (-) TimerEvent: {}
+[24.564299] (-) TimerEvent: {}
+[24.665022] (-) TimerEvent: {}
+[24.765563] (-) TimerEvent: {}
+[24.866131] (-) TimerEvent: {}
+[24.966692] (-) TimerEvent: {}
+[25.067363] (-) TimerEvent: {}
+[25.167943] (-) TimerEvent: {}
+[25.268526] (-) TimerEvent: {}
+[25.369135] (-) TimerEvent: {}
+[25.469779] (-) TimerEvent: {}
+[25.570425] (-) TimerEvent: {}
+[25.671082] (-) TimerEvent: {}
+[25.771814] (-) TimerEvent: {}
+[25.872407] (-) TimerEvent: {}
+[25.973054] (-) TimerEvent: {}
+[26.073640] (-) TimerEvent: {}
+[26.174721] (-) TimerEvent: {}
+[26.275372] (-) TimerEvent: {}
+[26.376130] (-) TimerEvent: {}
+[26.477000] (-) TimerEvent: {}
+[26.577593] (-) TimerEvent: {}
+[26.678579] (-) TimerEvent: {}
+[26.780090] (-) TimerEvent: {}
+[26.880685] (-) TimerEvent: {}
+[26.981909] (-) TimerEvent: {}
+[27.082865] (-) TimerEvent: {}
+[27.184061] (-) TimerEvent: {}
+[27.284627] (-) TimerEvent: {}
+[27.385318] (-) TimerEvent: {}
+[27.485881] (-) TimerEvent: {}
+[27.586550] (-) TimerEvent: {}
+[27.687217] (-) TimerEvent: {}
+[27.787823] (-) TimerEvent: {}
+[27.888519] (-) TimerEvent: {}
+[27.989148] (-) TimerEvent: {}
+[28.089813] (-) TimerEvent: {}
+[28.190441] (-) TimerEvent: {}
+[28.291026] (-) TimerEvent: {}
+[28.391666] (-) TimerEvent: {}
+[28.492294] (-) TimerEvent: {}
+[28.592970] (-) TimerEvent: {}
+[28.693522] (-) TimerEvent: {}
+[28.794163] (-) TimerEvent: {}
+[28.894829] (-) TimerEvent: {}
+[28.995469] (-) TimerEvent: {}
+[29.096084] (-) TimerEvent: {}
+[29.196732] (-) TimerEvent: {}
+[29.297367] (-) TimerEvent: {}
+[29.397939] (-) TimerEvent: {}
+[29.498566] (-) TimerEvent: {}
+[29.599200] (-) TimerEvent: {}
+[29.699778] (-) TimerEvent: {}
+[29.800361] (-) TimerEvent: {}
+[29.901275] (-) TimerEvent: {}
+[30.002016] (-) TimerEvent: {}
+[30.102729] (-) TimerEvent: {}
+[30.203320] (-) TimerEvent: {}
+[30.304204] (-) TimerEvent: {}
+[30.404827] (-) TimerEvent: {}
+[30.505546] (-) TimerEvent: {}
+[30.606232] (-) TimerEvent: {}
+[30.706919] (-) TimerEvent: {}
+[30.807606] (-) TimerEvent: {}
+[30.908212] (-) TimerEvent: {}
+[31.008834] (-) TimerEvent: {}
+[31.109551] (-) TimerEvent: {}
+[31.210214] (-) TimerEvent: {}
+[31.310805] (-) TimerEvent: {}
+[31.411473] (-) TimerEvent: {}
+[31.512094] (-) TimerEvent: {}
+[31.612765] (-) TimerEvent: {}
+[31.713524] (-) TimerEvent: {}
+[31.814640] (-) TimerEvent: {}
+[31.915368] (-) TimerEvent: {}
+[32.016108] (-) TimerEvent: {}
+[32.116895] (-) TimerEvent: {}
+[32.217709] (-) TimerEvent: {}
+[32.318401] (-) TimerEvent: {}
+[32.419075] (-) TimerEvent: {}
+[32.519724] (-) TimerEvent: {}
+[32.620433] (-) TimerEvent: {}
+[32.721182] (-) TimerEvent: {}
+[32.821888] (-) TimerEvent: {}
+[32.922596] (-) TimerEvent: {}
+[33.023362] (-) TimerEvent: {}
+[33.124052] (-) TimerEvent: {}
+[33.224706] (-) TimerEvent: {}
+[33.325442] (-) TimerEvent: {}
+[33.426543] (-) TimerEvent: {}
+[33.527203] (-) TimerEvent: {}
+[33.627801] (-) TimerEvent: {}
+[33.728335] (-) TimerEvent: {}
+[33.829040] (-) TimerEvent: {}
+[33.929717] (-) TimerEvent: {}
+[34.030279] (-) TimerEvent: {}
+[34.130882] (-) TimerEvent: {}
+[34.231549] (-) TimerEvent: {}
+[34.332133] (-) TimerEvent: {}
+[34.432805] (-) TimerEvent: {}
+[34.533450] (-) TimerEvent: {}
+[34.634012] (-) TimerEvent: {}
+[34.734810] (-) TimerEvent: {}
+[34.835403] (-) TimerEvent: {}
+[34.936098] (-) TimerEvent: {}
+[35.037204] (-) TimerEvent: {}
+[35.137792] (-) TimerEvent: {}
+[35.238441] (-) TimerEvent: {}
+[35.339051] (-) TimerEvent: {}
+[35.440106] (-) TimerEvent: {}
+[35.540732] (-) TimerEvent: {}
+[35.641389] (-) TimerEvent: {}
+[35.742005] (-) TimerEvent: {}
+[35.842571] (-) TimerEvent: {}
+[35.943187] (-) TimerEvent: {}
+[36.043755] (-) TimerEvent: {}
+[36.144394] (-) TimerEvent: {}
+[36.245103] (-) TimerEvent: {}
+[36.345685] (-) TimerEvent: {}
+[36.446292] (-) TimerEvent: {}
+[36.546915] (-) TimerEvent: {}
+[36.647588] (-) TimerEvent: {}
+[36.748247] (-) TimerEvent: {}
+[36.848859] (-) TimerEvent: {}
+[36.949433] (-) TimerEvent: {}
+[37.050027] (-) TimerEvent: {}
+[37.150855] (-) TimerEvent: {}
+[37.251540] (-) TimerEvent: {}
+[37.352132] (-) TimerEvent: {}
+[37.452758] (-) TimerEvent: {}
+[37.553385] (-) TimerEvent: {}
+[37.654005] (-) TimerEvent: {}
+[37.754612] (-) TimerEvent: {}
+[37.855208] (-) TimerEvent: {}
+[37.955791] (-) TimerEvent: {}
+[38.056415] (-) TimerEvent: {}
+[38.157272] (-) TimerEvent: {}
+[38.258337] (-) TimerEvent: {}
+[38.359180] (-) TimerEvent: {}
+[38.459807] (-) TimerEvent: {}
+[38.560413] (-) TimerEvent: {}
+[38.661159] (-) TimerEvent: {}
+[38.761746] (-) TimerEvent: {}
+[38.862307] (-) TimerEvent: {}
+[38.962885] (-) TimerEvent: {}
+[39.063488] (-) TimerEvent: {}
+[39.164059] (-) TimerEvent: {}
+[39.264698] (-) TimerEvent: {}
+[39.365413] (-) TimerEvent: {}
+[39.466082] (-) TimerEvent: {}
+[39.567837] (-) TimerEvent: {}
+[39.668507] (-) TimerEvent: {}
+[39.769125] (-) TimerEvent: {}
+[39.869700] (-) TimerEvent: {}
+[39.970291] (-) TimerEvent: {}
+[40.070978] (-) TimerEvent: {}
+[40.171792] (-) TimerEvent: {}
+[40.272471] (-) TimerEvent: {}
+[40.373101] (-) TimerEvent: {}
+[40.475167] (-) TimerEvent: {}
+[40.575852] (-) TimerEvent: {}
+[40.676506] (-) TimerEvent: {}
+[40.777191] (-) TimerEvent: {}
+[40.877742] (-) TimerEvent: {}
+[40.978283] (-) TimerEvent: {}
+[41.078886] (-) TimerEvent: {}
+[41.179493] (-) TimerEvent: {}
+[41.280249] (-) TimerEvent: {}
+[41.380829] (-) TimerEvent: {}
+[41.481496] (-) TimerEvent: {}
+[41.582096] (-) TimerEvent: {}
+[41.682720] (-) TimerEvent: {}
+[41.783374] (-) TimerEvent: {}
+[41.883994] (-) TimerEvent: {}
+[41.984664] (-) TimerEvent: {}
+[42.085411] (-) TimerEvent: {}
+[42.186477] (-) TimerEvent: {}
+[42.288473] (-) TimerEvent: {}
+[42.389179] (-) TimerEvent: {}
+[42.489786] (-) TimerEvent: {}
+[42.590401] (-) TimerEvent: {}
+[42.691389] (-) TimerEvent: {}
+[42.792003] (-) TimerEvent: {}
+[42.892622] (-) TimerEvent: {}
+[42.993264] (-) TimerEvent: {}
+[43.093910] (-) TimerEvent: {}
+[43.194474] (-) TimerEvent: {}
+[43.295125] (-) TimerEvent: {}
+[43.395726] (-) TimerEvent: {}
+[43.496304] (-) TimerEvent: {}
+[43.596974] (-) TimerEvent: {}
+[43.697583] (-) TimerEvent: {}
+[43.798223] (-) TimerEvent: {}
+[43.898869] (-) TimerEvent: {}
+[43.999472] (-) TimerEvent: {}
+[44.100882] (-) TimerEvent: {}
+[44.202150] (-) TimerEvent: {}
+[44.302827] (-) TimerEvent: {}
+[44.404108] (-) TimerEvent: {}
+[44.505681] (-) TimerEvent: {}
+[44.606726] (-) TimerEvent: {}
+[44.707842] (-) TimerEvent: {}
+[44.808543] (-) TimerEvent: {}
+[44.909266] (-) TimerEvent: {}
+[45.009908] (-) TimerEvent: {}
+[45.110516] (-) TimerEvent: {}
+[45.211154] (-) TimerEvent: {}
+[45.311728] (-) TimerEvent: {}
+[45.412357] (-) TimerEvent: {}
+[45.513062] (-) TimerEvent: {}
+[45.613678] (-) TimerEvent: {}
+[45.715545] (-) TimerEvent: {}
+[45.816199] (-) TimerEvent: {}
+[45.916842] (-) TimerEvent: {}
+[46.017531] (-) TimerEvent: {}
+[46.118138] (-) TimerEvent: {}
+[46.218783] (-) TimerEvent: {}
+[46.319430] (-) TimerEvent: {}
+[46.420053] (-) TimerEvent: {}
+[46.520704] (-) TimerEvent: {}
+[46.621952] (-) TimerEvent: {}
+[46.714866] (path_planner) StdoutLine: {'line': b'[100%] Linking CXX executable min_curvature_planner\n'}
+[46.722231] (-) TimerEvent: {}
+[46.822880] (-) TimerEvent: {}
+[46.923506] (-) TimerEvent: {}
+[47.024033] (-) TimerEvent: {}
+[47.124701] (-) TimerEvent: {}
+[47.225332] (-) TimerEvent: {}
+[47.325995] (-) TimerEvent: {}
+[47.426594] (-) TimerEvent: {}
+[47.527223] (-) TimerEvent: {}
+[47.627896] (-) TimerEvent: {}
+[47.729127] (-) TimerEvent: {}
+[47.829861] (-) TimerEvent: {}
+[47.931057] (-) TimerEvent: {}
+[48.031684] (-) TimerEvent: {}
+[48.132416] (-) TimerEvent: {}
+[48.233148] (-) TimerEvent: {}
+[48.333781] (-) TimerEvent: {}
+[48.434425] (-) TimerEvent: {}
+[48.535085] (-) TimerEvent: {}
+[48.599333] (path_planner) StdoutLine: {'line': b'[100%] Built target min_curvature_planner\n'}
+[48.635338] (-) TimerEvent: {}
+[48.669777] (path_planner) CommandEnded: {'returncode': 0}
+[48.674240] (path_planner) JobProgress: {'identifier': 'path_planner', 'progress': 'install'}
+[48.736821] (-) TimerEvent: {}
+[48.742260] (path_planner) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/f1/f1tenth_ws/build/path_planner'], 'cwd': '/home/f1/f1tenth_ws/build/path_planner', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('SSH_AGENT_PID', '4821'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/f1'), ('QT4_IM_MODULE', 'fcitx'), ('OLDPWD', '/home/f1/f1tenth_ws'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('MANAGERPID', '3939'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:74067'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'f1'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4883,unix/ubuntu:/tmp/.ICE-unix/4883'), ('PAPERSIZE', 'a4'), ('INVOCATION_ID', '82ccf46ec6744cc080f90e1180b8b6b6'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1a424917_da8a_4cba_b05b_d56943809565'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.84'), ('XMODIFIERS', '@im=fcitx'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'fcitx'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/f1/f1tenth_ws/build/path_planner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLUTTER_IM_MODULE', 'fcitx'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[48.803715] (path_planner) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[48.809854] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/lib/path_planner/min_curvature_planner\n'}
+[48.836877] (-) TimerEvent: {}
+[48.846817] (path_planner) StdoutLine: {'line': b'-- Set runtime path of "/home/f1/f1tenth_ws/install/path_planner/lib/path_planner/min_curvature_planner" to ""\n'}
+[48.848219] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/launch\n'}
+[48.848703] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/launch/planner_launch.py\n'}
+[48.849769] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/package_run_dependencies/path_planner\n'}
+[48.850781] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/parent_prefix_path/path_planner\n'}
+[48.852342] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/ament_prefix_path.sh\n'}
+[48.853557] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/ament_prefix_path.dsv\n'}
+[48.854571] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/path.sh\n'}
+[48.855735] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/path.dsv\n'}
+[48.856815] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.bash\n'}
+[48.858454] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.sh\n'}
+[48.859790] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.zsh\n'}
+[48.863858] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.dsv\n'}
+[48.866206] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/package.dsv\n'}
+[48.868734] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/packages/path_planner\n'}
+[48.871504] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/cmake/path_plannerConfig.cmake\n'}
+[48.873227] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/cmake/path_plannerConfig-version.cmake\n'}
+[48.873886] (path_planner) StdoutLine: {'line': b'-- Installing: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/package.xml\n'}
+[48.879045] (path_planner) CommandEnded: {'returncode': 0}
+[48.937096] (-) TimerEvent: {}
+[48.998929] (path_planner) JobEnded: {'identifier': 'path_planner', 'rc': 0}
+[49.003334] (-) EventReactorShutdown: {}

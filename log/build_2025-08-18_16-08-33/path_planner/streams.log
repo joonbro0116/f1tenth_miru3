@@ -1,0 +1,39 @@
+[4.399s] Invoking command in '/home/f1/f1tenth_ws/src/path_planner': PYTHONPATH=/home/f1/f1tenth_ws/build/path_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/path_planner/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_planner build --build-base /home/f1/f1tenth_ws/build/path_planner/build install --record /home/f1/f1tenth_ws/build/path_planner/install.log --install-scripts $base/lib/f1tenth_path_planner --single-version-externally-managed install_data
+[5.996s] running egg_info
+[6.001s] creating ../../build/path_planner/path_planner.egg-info
+[6.002s] writing ../../build/path_planner/path_planner.egg-info/PKG-INFO
+[6.004s] writing dependency_links to ../../build/path_planner/path_planner.egg-info/dependency_links.txt
+[6.005s] writing entry points to ../../build/path_planner/path_planner.egg-info/entry_points.txt
+[6.006s] writing requirements to ../../build/path_planner/path_planner.egg-info/requires.txt
+[6.007s] writing top-level names to ../../build/path_planner/path_planner.egg-info/top_level.txt
+[6.016s] writing manifest file '../../build/path_planner/path_planner.egg-info/SOURCES.txt'
+[6.209s] reading manifest file '../../build/path_planner/path_planner.egg-info/SOURCES.txt'
+[6.213s] writing manifest file '../../build/path_planner/path_planner.egg-info/SOURCES.txt'
+[6.215s] running build
+[6.216s] running build_py
+[6.216s] creating /home/f1/f1tenth_ws/build/path_planner/build
+[6.218s] creating /home/f1/f1tenth_ws/build/path_planner/build/lib
+[6.218s] creating /home/f1/f1tenth_ws/build/path_planner/build/lib/path_planner
+[6.219s] copying path_planner/__init__.py -> /home/f1/f1tenth_ws/build/path_planner/build/lib/path_planner
+[6.220s] copying path_planner/min_curvature_planner.py -> /home/f1/f1tenth_ws/build/path_planner/build/lib/path_planner
+[6.220s] running install
+[6.223s] running install_lib
+[6.232s] creating /home/f1/f1tenth_ws/install/path_planner/lib/python3.8/site-packages/path_planner
+[6.233s] copying /home/f1/f1tenth_ws/build/path_planner/build/lib/path_planner/__init__.py -> /home/f1/f1tenth_ws/install/path_planner/lib/python3.8/site-packages/path_planner
+[6.233s] copying /home/f1/f1tenth_ws/build/path_planner/build/lib/path_planner/min_curvature_planner.py -> /home/f1/f1tenth_ws/install/path_planner/lib/python3.8/site-packages/path_planner
+[6.238s] byte-compiling /home/f1/f1tenth_ws/install/path_planner/lib/python3.8/site-packages/path_planner/__init__.py to __init__.cpython-38.pyc
+[6.243s] byte-compiling /home/f1/f1tenth_ws/install/path_planner/lib/python3.8/site-packages/path_planner/min_curvature_planner.py to min_curvature_planner.cpython-38.pyc
+[6.255s] running install_data
+[6.257s] creating /home/f1/f1tenth_ws/install/path_planner/share/ament_index
+[6.258s] creating /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index
+[6.258s] creating /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/packages
+[6.258s] copying resource/path_planner -> /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/packages
+[6.260s] copying package.xml -> /home/f1/f1tenth_ws/install/path_planner/share/path_planner
+[6.261s] creating /home/f1/f1tenth_ws/install/path_planner/share/path_planner/launch
+[6.261s] copying launch/planner_launch.py -> /home/f1/f1tenth_ws/install/path_planner/share/path_planner/launch
+[6.262s] running install_egg_info
+[6.269s] Copying ../../build/path_planner/path_planner.egg-info to /home/f1/f1tenth_ws/install/path_planner/lib/python3.8/site-packages/path_planner-0.0.0-py3.8.egg-info
+[6.283s] running install_scripts
+[6.379s] Installing min_curvature_planner script to /home/f1/f1tenth_ws/install/path_planner/lib/f1tenth_path_planner
+[6.381s] writing list of installed files to '/home/f1/f1tenth_ws/build/path_planner/install.log'
+[6.535s] Invoked command in '/home/f1/f1tenth_ws/src/path_planner' returned '0': PYTHONPATH=/home/f1/f1tenth_ws/build/path_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/path_planner/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_planner build --build-base /home/f1/f1tenth_ws/build/path_planner/build install --record /home/f1/f1tenth_ws/build/path_planner/install.log --install-scripts $base/lib/f1tenth_path_planner --single-version-externally-managed install_data

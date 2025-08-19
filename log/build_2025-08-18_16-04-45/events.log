@@ -1,0 +1,125 @@
+[0.000000] (-) TimerEvent: {}
+[0.000815] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.001683] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.002171] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.002323] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.003649] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.003903] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.004314] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.004541] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.004756] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.004923] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.005061] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.005163] (-) JobUnselected: {'identifier': 'vesc'}
+[0.005372] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.006417] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.006648] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.007001] (f1tenth_path_planner) JobQueued: {'identifier': 'f1tenth_path_planner', 'dependencies': OrderedDict()}
+[0.007231] (f1tenth_path_planner) JobStarted: {'identifier': 'f1tenth_path_planner'}
+[0.101061] (-) TimerEvent: {}
+[0.202723] (-) TimerEvent: {}
+[0.303248] (-) TimerEvent: {}
+[0.403786] (-) TimerEvent: {}
+[0.504980] (-) TimerEvent: {}
+[0.605633] (-) TimerEvent: {}
+[0.706285] (-) TimerEvent: {}
+[0.806852] (-) TimerEvent: {}
+[0.907368] (-) TimerEvent: {}
+[1.007986] (-) TimerEvent: {}
+[1.108622] (-) TimerEvent: {}
+[1.209200] (-) TimerEvent: {}
+[1.309860] (-) TimerEvent: {}
+[1.410402] (-) TimerEvent: {}
+[1.510999] (-) TimerEvent: {}
+[1.611612] (-) TimerEvent: {}
+[1.712245] (-) TimerEvent: {}
+[1.812911] (-) TimerEvent: {}
+[1.916336] (-) TimerEvent: {}
+[2.017405] (-) TimerEvent: {}
+[2.118111] (-) TimerEvent: {}
+[2.218801] (-) TimerEvent: {}
+[2.319834] (-) TimerEvent: {}
+[2.420352] (-) TimerEvent: {}
+[2.520941] (-) TimerEvent: {}
+[2.621453] (-) TimerEvent: {}
+[2.722620] (-) TimerEvent: {}
+[2.823137] (-) TimerEvent: {}
+[2.923666] (-) TimerEvent: {}
+[3.025154] (-) TimerEvent: {}
+[3.125852] (-) TimerEvent: {}
+[3.226387] (-) TimerEvent: {}
+[3.326916] (-) TimerEvent: {}
+[3.427422] (-) TimerEvent: {}
+[3.528035] (-) TimerEvent: {}
+[3.628555] (-) TimerEvent: {}
+[3.729117] (-) TimerEvent: {}
+[3.829883] (-) TimerEvent: {}
+[3.930464] (-) TimerEvent: {}
+[4.031042] (-) TimerEvent: {}
+[4.132693] (-) TimerEvent: {}
+[4.233326] (-) TimerEvent: {}
+[4.333948] (-) TimerEvent: {}
+[4.434471] (-) TimerEvent: {}
+[4.535079] (-) TimerEvent: {}
+[4.634417] (f1tenth_path_planner) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/f1tenth_path_planner', 'build', '--build-base', '/home/f1/f1tenth_ws/build/f1tenth_path_planner/build', 'install', '--record', '/home/f1/f1tenth_ws/build/f1tenth_path_planner/install.log', '--install-scripts', '$base/lib/f1tenth_path_planner', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/f1/f1tenth_ws/src/f1tenth_path_planner', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'USER': 'f1', 'LC_TIME': 'ko_KR.UTF-8', 'CLAUDE_CODE_ENTRYPOINT': 'cli', 'GIT_EDITOR': 'true', 'SSH_AGENT_PID': '4821', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/f1', 'QT4_IM_MODULE': 'fcitx', 'OLDPWD': '/home/f1/f1tenth_ws/src', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'ZSH': '/home/f1/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'MANAGERPID': '3939', 'LC_MONETARY': 'ko_KR.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', 'VISUAL': 'nvim', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/foxy/', 'NVM_DIR': '/home/f1/.nvm', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'f1', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '8:74067', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'USERNAME': 'f1', 'TERM': 'xterm-256color', 'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE': 'delta', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/4883,unix/ubuntu:/tmp/.ICE-unix/4883', 'PAPERSIZE': 'a4', 'INVOCATION_ID': '82ccf46ec6744cc080f90e1180b8b6b6', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1a424917_da8a_4cba_b05b_d56943809565', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1001', 'LC_ADDRESS': 'ko_KR.UTF-8', 'COREPACK_ENABLE_AUTO_PIN': '0', 'DISPLAY': ':1', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XDG_SESSION_DESKTOP': 'ubuntu', 'GNOME_TERMINAL_SERVICE': ':1.84', 'XMODIFIERS': '@im=fcitx', 'XAUTHORITY': '/run/user/1001/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1001/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'ROS_DOMAIN_ID': '73', 'SHELL': '/usr/bin/zsh', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'CLAUDECODE': '1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1001/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'fcitx', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/f1/f1tenth_ws/build/f1tenth_path_planner', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'CLUTTER_IM_MODULE': 'fcitx', 'LC_NUMERIC': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/f1/f1tenth_ws/build/f1tenth_path_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'EDITOR': 'nvim'}, 'shell': False}
+[4.661180] (-) TimerEvent: {}
+[4.761782] (-) TimerEvent: {}
+[4.862324] (-) TimerEvent: {}
+[4.962849] (-) TimerEvent: {}
+[5.063461] (-) TimerEvent: {}
+[5.164039] (-) TimerEvent: {}
+[5.264562] (-) TimerEvent: {}
+[5.365096] (-) TimerEvent: {}
+[5.465685] (-) TimerEvent: {}
+[5.566224] (-) TimerEvent: {}
+[5.666748] (-) TimerEvent: {}
+[5.769811] (-) TimerEvent: {}
+[5.870673] (-) TimerEvent: {}
+[5.971366] (-) TimerEvent: {}
+[6.071891] (-) TimerEvent: {}
+[6.080446] (f1tenth_path_planner) StdoutLine: {'line': b'running egg_info\n'}
+[6.087277] (f1tenth_path_planner) StdoutLine: {'line': b'creating ../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info\n'}
+[6.089268] (f1tenth_path_planner) StdoutLine: {'line': b'writing ../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/PKG-INFO\n'}
+[6.093924] (f1tenth_path_planner) StdoutLine: {'line': b'writing dependency_links to ../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/dependency_links.txt\n'}
+[6.096093] (f1tenth_path_planner) StdoutLine: {'line': b'writing entry points to ../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/entry_points.txt\n'}
+[6.098392] (f1tenth_path_planner) StdoutLine: {'line': b'writing requirements to ../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/requires.txt\n'}
+[6.099081] (f1tenth_path_planner) StdoutLine: {'line': b'writing top-level names to ../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/top_level.txt\n'}
+[6.112180] (f1tenth_path_planner) StdoutLine: {'line': b"writing manifest file '../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/SOURCES.txt'\n"}
+[6.172274] (-) TimerEvent: {}
+[6.272881] (-) TimerEvent: {}
+[6.310301] (f1tenth_path_planner) StdoutLine: {'line': b"reading manifest file '../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/SOURCES.txt'\n"}
+[6.315267] (f1tenth_path_planner) StdoutLine: {'line': b"writing manifest file '../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/SOURCES.txt'\n"}
+[6.319635] (f1tenth_path_planner) StdoutLine: {'line': b'running build\n'}
+[6.320343] (f1tenth_path_planner) StdoutLine: {'line': b'running build_py\n'}
+[6.320772] (f1tenth_path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/build/f1tenth_path_planner/build\n'}
+[6.321276] (f1tenth_path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/build/f1tenth_path_planner/build/lib\n'}
+[6.321854] (f1tenth_path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/build/f1tenth_path_planner/build/lib/f1tenth_path_planner\n'}
+[6.322342] (f1tenth_path_planner) StdoutLine: {'line': b'copying f1tenth_path_planner/__init__.py -> /home/f1/f1tenth_ws/build/f1tenth_path_planner/build/lib/f1tenth_path_planner\n'}
+[6.323366] (f1tenth_path_planner) StdoutLine: {'line': b'copying f1tenth_path_planner/min_curvature_planner.py -> /home/f1/f1tenth_ws/build/f1tenth_path_planner/build/lib/f1tenth_path_planner\n'}
+[6.323820] (f1tenth_path_planner) StdoutLine: {'line': b'running install\n'}
+[6.325827] (f1tenth_path_planner) StdoutLine: {'line': b'running install_lib\n'}
+[6.333827] (f1tenth_path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages/f1tenth_path_planner\n'}
+[6.334577] (f1tenth_path_planner) StdoutLine: {'line': b'copying /home/f1/f1tenth_ws/build/f1tenth_path_planner/build/lib/f1tenth_path_planner/__init__.py -> /home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages/f1tenth_path_planner\n'}
+[6.335556] (f1tenth_path_planner) StdoutLine: {'line': b'copying /home/f1/f1tenth_ws/build/f1tenth_path_planner/build/lib/f1tenth_path_planner/min_curvature_planner.py -> /home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages/f1tenth_path_planner\n'}
+[6.338689] (f1tenth_path_planner) StdoutLine: {'line': b'byte-compiling /home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages/f1tenth_path_planner/__init__.py to __init__.cpython-38.pyc\n'}
+[6.345455] (f1tenth_path_planner) StdoutLine: {'line': b'byte-compiling /home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages/f1tenth_path_planner/min_curvature_planner.py to min_curvature_planner.cpython-38.pyc\n'}
+[6.358814] (f1tenth_path_planner) StdoutLine: {'line': b'running install_data\n'}
+[6.359606] (f1tenth_path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/f1tenth_path_planner/share/ament_index\n'}
+[6.360035] (f1tenth_path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/f1tenth_path_planner/share/ament_index/resource_index\n'}
+[6.360490] (f1tenth_path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/f1tenth_path_planner/share/ament_index/resource_index/packages\n'}
+[6.360905] (f1tenth_path_planner) StdoutLine: {'line': b'copying resource/f1tenth_path_planner -> /home/f1/f1tenth_ws/install/f1tenth_path_planner/share/ament_index/resource_index/packages\n'}
+[6.361338] (f1tenth_path_planner) StdoutLine: {'line': b'copying package.xml -> /home/f1/f1tenth_ws/install/f1tenth_path_planner/share/f1tenth_path_planner\n'}
+[6.364743] (f1tenth_path_planner) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/f1tenth_path_planner/share/f1tenth_path_planner/launch\n'}
+[6.365457] (f1tenth_path_planner) StdoutLine: {'line': b'copying launch/planner_launch.py -> /home/f1/f1tenth_ws/install/f1tenth_path_planner/share/f1tenth_path_planner/launch\n'}
+[6.365978] (f1tenth_path_planner) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.369034] (f1tenth_path_planner) StdoutLine: {'line': b'Copying ../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info to /home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages/f1tenth_path_planner-0.0.0-py3.8.egg-info\n'}
+[6.373108] (-) TimerEvent: {}
+[6.374826] (f1tenth_path_planner) StdoutLine: {'line': b'running install_scripts\n'}
+[6.473588] (-) TimerEvent: {}
+[6.474584] (f1tenth_path_planner) StdoutLine: {'line': b'Installing min_curvature_planner script to /home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/f1tenth_path_planner\n'}
+[6.476507] (f1tenth_path_planner) StdoutLine: {'line': b"writing list of installed files to '/home/f1/f1tenth_ws/build/f1tenth_path_planner/install.log'\n"}
+[6.575520] (-) TimerEvent: {}
+[6.632909] (f1tenth_path_planner) CommandEnded: {'returncode': 0}
+[6.675824] (-) TimerEvent: {}
+[6.739284] (f1tenth_path_planner) JobEnded: {'identifier': 'f1tenth_path_planner', 'rc': 0}
+[6.744745] (-) EventReactorShutdown: {}

@@ -1,0 +1,7 @@
+[01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: No such file or directory
+    6 | #include [01;31m[K<opencv2/opencv.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/min_curvature_planner.dir/build.make:63: CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/min_curvature_planner.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

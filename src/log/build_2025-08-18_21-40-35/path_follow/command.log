@@ -1,0 +1,4 @@
+Invoking command in '/home/f1/f1tenth_ws/src/build/path_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/path_follow -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/src/install/path_follow
+Invoked command in '/home/f1/f1tenth_ws/src/build/path_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/path_follow -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/src/install/path_follow
+Invoking command in '/home/f1/f1tenth_ws/src/build/path_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/src/build/path_follow -- -j6 -l6
+Invoked command in '/home/f1/f1tenth_ws/src/build/path_follow' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/src/build/path_follow -- -j6 -l6

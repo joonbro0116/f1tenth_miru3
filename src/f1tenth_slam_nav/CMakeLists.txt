@@ -7,7 +7,11 @@ endif()
 
 # Find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(ament_cmake_python REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_srvs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(lifecycle_msgs REQUIRED)
 
 # Install launch files
 install(DIRECTORY launch/
@@ -19,20 +23,20 @@ install(DIRECTORY config/
   DESTINATION share/${PROJECT_NAME}/config/
 )
 
-# Install Python modules
-ament_python_install_package(${PROJECT_NAME})
-
-# Install Python executables (note: use the module path)
-install(PROGRAMS
-  src/slam_nav_manager.py
-  DESTINATION lib/${PROJECT_NAME}
+# Add C++ executable
+add_executable(slam_nav_manager src/slam_nav_manager.cpp)
+ament_target_dependencies(slam_nav_manager
+  rclcpp
+  std_srvs
+  geometry_msgs
+  nav_msgs
+  lifecycle_msgs
 )
 
-# Copy Python manager to package directory for proper module import
-install(FILES
-  src/slam_nav_manager.py
-  DESTINATION lib/python3.8/site-packages/${PROJECT_NAME}/
-  RENAME slam_nav_manager.py
+# Install C++ executable
+install(TARGETS
+  slam_nav_manager
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 if(BUILD_TESTING)

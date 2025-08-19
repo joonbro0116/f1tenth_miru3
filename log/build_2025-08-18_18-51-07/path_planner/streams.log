@@ -1,0 +1,59 @@
+[2.114s] Invoking command in '/home/f1/f1tenth_ws/build/path_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/path_planner -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/path_planner
+[2.365s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.804s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.532s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.629s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[5.027s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.072s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[6.297s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.879s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[6.898s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.243s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[8.464s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[8.850s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[10.870s] -- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[10.905s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[11.081s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[11.613s] -- Added test 'copyright' to check source files copyright and LICENSE
+[11.627s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[11.629s] -- Configured cppcheck include dirs: 
+[11.630s] -- Configured cppcheck exclude dirs and/or files: 
+[11.635s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[11.636s] -- Configured cpplint exclude dirs and/or files: 
+[11.639s] -- Added test 'flake8' to check Python code syntax and style conventions
+[11.643s] -- Added test 'lint_cmake' to check CMake code style
+[11.646s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[11.652s] -- Added test 'uncrustify' to check C / C++ code style
+[11.653s] -- Configured uncrustify additional arguments: 
+[11.654s] -- Added test 'xmllint' to check XML markup files
+[11.700s] -- Configuring done
+[11.864s] -- Generating done
+[11.900s] -- Build files have been written to: /home/f1/f1tenth_ws/build/path_planner
+[11.962s] Invoked command in '/home/f1/f1tenth_ws/build/path_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/path_planner -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/path_planner
+[11.983s] Invoking command in '/home/f1/f1tenth_ws/build/path_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_planner -- -j6 -l6
+[12.313s] [35m[1mScanning dependencies of target min_curvature_planner[0m
+[12.659s] [ 50%] [32mBuilding CXX object CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o[0m
+[84.239s] [100%] [32m[1mLinking CXX executable min_curvature_planner[0m
+[85.329s] [100%] Built target min_curvature_planner
+[85.399s] Invoked command in '/home/f1/f1tenth_ws/build/path_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_planner -- -j6 -l6
+[85.413s] Invoking command in '/home/f1/f1tenth_ws/build/path_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/path_planner
+[85.470s] -- Install configuration: "Release"
+[85.473s] -- Execute custom install script
+[85.476s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/lib/path_planner/min_curvature_planner
+[85.540s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/launch/planner_launch.py
+[85.601s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/package_run_dependencies/path_planner
+[85.662s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/parent_prefix_path/path_planner
+[85.726s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/ament_prefix_path.sh
+[85.785s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/ament_prefix_path.dsv
+[85.849s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/path.sh
+[85.906s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/environment/path.dsv
+[85.973s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.bash
+[86.032s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.sh
+[86.098s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.zsh
+[86.156s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/local_setup.dsv
+[86.216s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/package.dsv
+[86.277s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/packages/path_planner
+[86.332s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/cmake/path_plannerConfig.cmake
+[86.398s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/cmake/path_plannerConfig-version.cmake
+[86.453s] -- Symlinking: /home/f1/f1tenth_ws/install/path_planner/share/path_planner/package.xml
+[86.531s] Invoked command in '/home/f1/f1tenth_ws/build/path_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/path_planner

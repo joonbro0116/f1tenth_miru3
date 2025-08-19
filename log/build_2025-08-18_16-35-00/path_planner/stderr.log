@@ -1,0 +1,4 @@
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘void MinCurvaturePlanner::extractTrackCenterline()’:
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:98:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<signed char, std::allocator<signed char> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   98 |             if (index < map_data_->data.size() && map_data_->data[index] == 0) {
+      |                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~

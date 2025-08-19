@@ -68,18 +68,6 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -135,6 +123,18 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/f1/f1tenth_ws/build/f1tenth_slam_nav/CMakeFiles /home/f1/f1tenth_ws/build/f1tenth_slam_nav/CMakeFiles/progress.marks
@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named slam_nav_manager
+
+# Build rule for target.
+slam_nav_manager: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 slam_nav_manager
+.PHONY : slam_nav_manager
+
+# fast build rule for target.
+slam_nav_manager/fast:
+	$(MAKE) -f CMakeFiles/slam_nav_manager.dir/build.make CMakeFiles/slam_nav_manager.dir/build
+.PHONY : slam_nav_manager/fast
+
+#=============================================================================
 # Target rules for targets named f1tenth_slam_nav_uninstall
 
 # Build rule for target.
@@ -193,6 +206,33 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
+src/slam_nav_manager.o: src/slam_nav_manager.cpp.o
+
+.PHONY : src/slam_nav_manager.o
+
+# target to build an object file
+src/slam_nav_manager.cpp.o:
+	$(MAKE) -f CMakeFiles/slam_nav_manager.dir/build.make CMakeFiles/slam_nav_manager.dir/src/slam_nav_manager.cpp.o
+.PHONY : src/slam_nav_manager.cpp.o
+
+src/slam_nav_manager.i: src/slam_nav_manager.cpp.i
+
+.PHONY : src/slam_nav_manager.i
+
+# target to preprocess a source file
+src/slam_nav_manager.cpp.i:
+	$(MAKE) -f CMakeFiles/slam_nav_manager.dir/build.make CMakeFiles/slam_nav_manager.dir/src/slam_nav_manager.cpp.i
+.PHONY : src/slam_nav_manager.cpp.i
+
+src/slam_nav_manager.s: src/slam_nav_manager.cpp.s
+
+.PHONY : src/slam_nav_manager.s
+
+# target to generate assembly for a file
+src/slam_nav_manager.cpp.s:
+	$(MAKE) -f CMakeFiles/slam_nav_manager.dir/build.make CMakeFiles/slam_nav_manager.dir/src/slam_nav_manager.cpp.s
+.PHONY : src/slam_nav_manager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,14 +240,18 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... install/local"
+	@echo "... slam_nav_manager"
 	@echo "... f1tenth_slam_nav_uninstall"
 	@echo "... uninstall"
+	@echo "... src/slam_nav_manager.o"
+	@echo "... src/slam_nav_manager.i"
+	@echo "... src/slam_nav_manager.s"
 .PHONY : help
 
 

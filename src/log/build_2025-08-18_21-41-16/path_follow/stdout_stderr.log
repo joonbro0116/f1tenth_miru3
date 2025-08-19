@@ -1,0 +1,28 @@
+Scanning dependencies of target path_follow_node
+[ 50%] Building CXX object CMakeFiles/path_follow_node.dir/src/path_follow_node.cpp.o
+/home/f1/f1tenth_ws/src/path_follow/src/path_follow_node.cpp: In member function ‘void PathFollowNode::lidar_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::ConstSharedPtr)’:
+/home/f1/f1tenth_ws/src/path_follow/src/path_follow_node.cpp:369:18: warning: structured bindings only available with ‘-std=c++17’ or ‘-std=gnu++17’
+  369 |             auto [max_gap_start, max_gap_length] = findMaxGap(processed_ranges);
+      |                  ^
+[100%] Linking CXX executable path_follow_node
+[100%] Built target path_follow_node
+-- Install configuration: ""
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/lib/path_follow/path_follow_node
+-- Set runtime path of "/home/f1/f1tenth_ws/src/install/path_follow/lib/path_follow/path_follow_node" to ""
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/launch
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/launch/path_follow_launch.py
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/ament_index/resource_index/package_run_dependencies/path_follow
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/ament_index/resource_index/parent_prefix_path/path_follow
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/environment/ament_prefix_path.sh
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/environment/ament_prefix_path.dsv
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/environment/path.sh
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/environment/path.dsv
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/local_setup.bash
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/local_setup.sh
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/local_setup.zsh
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/local_setup.dsv
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/package.dsv
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/ament_index/resource_index/packages/path_follow
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/cmake/path_followConfig.cmake
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/cmake/path_followConfig-version.cmake
+-- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/package.xml

@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info
+writing ../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/PKG-INFO
+writing dependency_links to ../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/dependency_links.txt
+writing entry points to ../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/entry_points.txt
+writing requirements to ../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/requires.txt
+writing top-level names to ../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/top_level.txt
+writing manifest file '../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/SOURCES.txt'
+reading manifest file '../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/SOURCES.txt'
+writing manifest file '../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/f1/f1tenth_ws/build/f1tenth_path_planner/build
+creating /home/f1/f1tenth_ws/build/f1tenth_path_planner/build/lib
+creating /home/f1/f1tenth_ws/build/f1tenth_path_planner/build/lib/f1tenth_path_planner
+copying f1tenth_path_planner/__init__.py -> /home/f1/f1tenth_ws/build/f1tenth_path_planner/build/lib/f1tenth_path_planner
+copying f1tenth_path_planner/min_curvature_planner.py -> /home/f1/f1tenth_ws/build/f1tenth_path_planner/build/lib/f1tenth_path_planner
+running install
+running install_lib
+creating /home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages/f1tenth_path_planner
+copying /home/f1/f1tenth_ws/build/f1tenth_path_planner/build/lib/f1tenth_path_planner/__init__.py -> /home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages/f1tenth_path_planner
+copying /home/f1/f1tenth_ws/build/f1tenth_path_planner/build/lib/f1tenth_path_planner/min_curvature_planner.py -> /home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages/f1tenth_path_planner
+byte-compiling /home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages/f1tenth_path_planner/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages/f1tenth_path_planner/min_curvature_planner.py to min_curvature_planner.cpython-38.pyc
+running install_data
+creating /home/f1/f1tenth_ws/install/f1tenth_path_planner/share/ament_index
+creating /home/f1/f1tenth_ws/install/f1tenth_path_planner/share/ament_index/resource_index
+creating /home/f1/f1tenth_ws/install/f1tenth_path_planner/share/ament_index/resource_index/packages
+copying resource/f1tenth_path_planner -> /home/f1/f1tenth_ws/install/f1tenth_path_planner/share/ament_index/resource_index/packages
+copying package.xml -> /home/f1/f1tenth_ws/install/f1tenth_path_planner/share/f1tenth_path_planner
+creating /home/f1/f1tenth_ws/install/f1tenth_path_planner/share/f1tenth_path_planner/launch
+copying launch/planner_launch.py -> /home/f1/f1tenth_ws/install/f1tenth_path_planner/share/f1tenth_path_planner/launch
+running install_egg_info
+Copying ../../build/f1tenth_path_planner/f1tenth_path_planner.egg-info to /home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages/f1tenth_path_planner-0.0.0-py3.8.egg-info
+running install_scripts
+Installing min_curvature_planner script to /home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/f1tenth_path_planner
+writing list of installed files to '/home/f1/f1tenth_ws/build/f1tenth_path_planner/install.log'

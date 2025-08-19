@@ -1,0 +1,32 @@
+[0.106s] Invoking command in '/home/f1/f1tenth_ws/src/build/path_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/src/build/path_follow -- -j6 -l6
+[0.845s] Scanning dependencies of target path_follow_node
+[1.021s] [ 50%] Building CXX object CMakeFiles/path_follow_node.dir/src/path_follow_node.cpp.o
+[19.642s] /home/f1/f1tenth_ws/src/path_follow/src/path_follow_node.cpp: In member function ‘void PathFollowNode::lidar_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::ConstSharedPtr)’:
+[19.642s] /home/f1/f1tenth_ws/src/path_follow/src/path_follow_node.cpp:369:18: warning: structured bindings only available with ‘-std=c++17’ or ‘-std=gnu++17’
+[19.643s]   369 |             auto [max_gap_start, max_gap_length] = findMaxGap(processed_ranges);
+[19.644s]       |                  ^
+[64.252s] [100%] Linking CXX executable path_follow_node
+[66.964s] [100%] Built target path_follow_node
+[67.042s] Invoked command in '/home/f1/f1tenth_ws/src/build/path_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/src/build/path_follow -- -j6 -l6
+[67.133s] Invoking command in '/home/f1/f1tenth_ws/src/build/path_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/src/build/path_follow
+[67.210s] -- Install configuration: ""
+[67.212s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/lib/path_follow/path_follow_node
+[67.257s] -- Set runtime path of "/home/f1/f1tenth_ws/src/install/path_follow/lib/path_follow/path_follow_node" to ""
+[67.258s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/launch
+[67.262s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/launch/path_follow_launch.py
+[67.262s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/ament_index/resource_index/package_run_dependencies/path_follow
+[67.263s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/ament_index/resource_index/parent_prefix_path/path_follow
+[67.264s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/environment/ament_prefix_path.sh
+[67.264s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/environment/ament_prefix_path.dsv
+[67.269s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/environment/path.sh
+[67.270s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/environment/path.dsv
+[67.271s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/local_setup.bash
+[67.275s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/local_setup.sh
+[67.276s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/local_setup.zsh
+[67.277s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/local_setup.dsv
+[67.278s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/package.dsv
+[67.279s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/ament_index/resource_index/packages/path_follow
+[67.280s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/cmake/path_followConfig.cmake
+[67.281s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/cmake/path_followConfig-version.cmake
+[67.282s] -- Installing: /home/f1/f1tenth_ws/src/install/path_follow/share/path_follow/package.xml
+[67.302s] Invoked command in '/home/f1/f1tenth_ws/src/build/path_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/src/build/path_follow

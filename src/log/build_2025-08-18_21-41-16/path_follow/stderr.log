@@ -1,0 +1,4 @@
+/home/f1/f1tenth_ws/src/path_follow/src/path_follow_node.cpp: In member function ‘void PathFollowNode::lidar_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::ConstSharedPtr)’:
+/home/f1/f1tenth_ws/src/path_follow/src/path_follow_node.cpp:369:18: warning: structured bindings only available with ‘-std=c++17’ or ‘-std=gnu++17’
+  369 |             auto [max_gap_start, max_gap_length] = findMaxGap(processed_ranges);
+      |                  ^
