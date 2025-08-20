@@ -1,0 +1,66 @@
+[0.167s] Invoking command in '/home/ojg/sim_ws/build/scan_tools': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ojg/sim_ws/src/scan_tools -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ojg/sim_ws/install/scan_tools
+[0.232s] -- The C compiler identification is GNU 11.4.0
+[0.298s] -- The CXX compiler identification is GNU 11.4.0
+[0.305s] -- Detecting C compiler ABI info
+[0.352s] -- Detecting C compiler ABI info - done
+[0.357s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.357s] -- Detecting C compile features
+[0.357s] -- Detecting C compile features - done
+[0.359s] -- Detecting CXX compiler ABI info
+[0.415s] -- Detecting CXX compiler ABI info - done
+[0.420s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.420s] -- Detecting CXX compile features
+[0.421s] -- Detecting CXX compile features - done
+[0.422s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.534s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.580s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.601s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.632s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.635s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.641s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.650s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.660s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.692s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.694s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.756s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.770s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.800s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.805s] -- Looking for pthread.h
+[0.859s] -- Looking for pthread.h - found
+[0.859s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.907s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.907s] -- Found Threads: TRUE  
+[0.945s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.968s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.018s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.018s] -- Configured cppcheck include dirs: 
+[1.018s] -- Configured cppcheck exclude dirs and/or files: 
+[1.019s] -- Added test 'lint_cmake' to check CMake code style
+[1.019s] -- Added test 'uncrustify' to check C / C++ code style
+[1.019s] -- Configured uncrustify additional arguments: 
+[1.020s] -- Added test 'xmllint' to check XML markup files
+[1.021s] -- Configuring done
+[1.023s] -- Generating done
+[1.024s] -- Build files have been written to: /home/ojg/sim_ws/build/scan_tools
+[1.030s] Invoked command in '/home/ojg/sim_ws/build/scan_tools' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ojg/sim_ws/src/scan_tools -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ojg/sim_ws/install/scan_tools
+[1.032s] Invoking command in '/home/ojg/sim_ws/build/scan_tools': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/scan_tools -- -j18 -l18
+[1.058s] Invoked command in '/home/ojg/sim_ws/build/scan_tools' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/scan_tools -- -j18 -l18
+[1.060s] Invoking command in '/home/ojg/sim_ws/build/scan_tools': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/scan_tools
+[1.065s] -- Install configuration: "Release"
+[1.066s] -- Execute custom install script
+[1.066s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/ament_index/resource_index/package_run_dependencies/scan_tools
+[1.071s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/ament_index/resource_index/parent_prefix_path/scan_tools
+[1.075s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/environment/ament_prefix_path.sh
+[1.081s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/environment/ament_prefix_path.dsv
+[1.087s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/environment/path.sh
+[1.091s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/environment/path.dsv
+[1.096s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/local_setup.bash
+[1.101s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/local_setup.sh
+[1.105s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/local_setup.zsh
+[1.111s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/local_setup.dsv
+[1.116s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/package.dsv
+[1.122s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/ament_index/resource_index/packages/scan_tools
+[1.126s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/cmake/scan_toolsConfig.cmake
+[1.131s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/cmake/scan_toolsConfig-version.cmake
+[1.136s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/package.xml
+[1.142s] Invoked command in '/home/ojg/sim_ws/build/scan_tools' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/scan_tools

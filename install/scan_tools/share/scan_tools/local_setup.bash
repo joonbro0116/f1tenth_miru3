@@ -1,0 +1,1 @@
+/home/ojg/sim_ws/build/scan_tools/ament_cmake_environment_hooks/local_setup.bash

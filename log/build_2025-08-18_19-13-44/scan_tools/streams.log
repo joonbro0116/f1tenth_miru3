@@ -1,0 +1,21 @@
+[0.163s] Invoking command in '/home/ojg/sim_ws/build/scan_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/scan_tools -- -j18 -l18
+[0.192s] Invoked command in '/home/ojg/sim_ws/build/scan_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/scan_tools -- -j18 -l18
+[0.194s] Invoking command in '/home/ojg/sim_ws/build/scan_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/scan_tools
+[0.201s] -- Install configuration: "Release"
+[0.201s] -- Execute custom install script
+[0.201s] -- Up-to-date symlink: /home/ojg/sim_ws/install/scan_tools/share/ament_index/resource_index/package_run_dependencies/scan_tools
+[0.202s] -- Up-to-date symlink: /home/ojg/sim_ws/install/scan_tools/share/ament_index/resource_index/parent_prefix_path/scan_tools
+[0.202s] -- Up-to-date symlink: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/environment/ament_prefix_path.sh
+[0.202s] -- Up-to-date symlink: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/environment/ament_prefix_path.dsv
+[0.202s] -- Up-to-date symlink: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/environment/path.sh
+[0.202s] -- Up-to-date symlink: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/environment/path.dsv
+[0.202s] -- Up-to-date symlink: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/local_setup.bash
+[0.202s] -- Up-to-date symlink: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/local_setup.sh
+[0.202s] -- Up-to-date symlink: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/local_setup.zsh
+[0.203s] -- Up-to-date symlink: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/local_setup.dsv
+[0.203s] -- Symlinking: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/package.dsv
+[0.211s] -- Up-to-date symlink: /home/ojg/sim_ws/install/scan_tools/share/ament_index/resource_index/packages/scan_tools
+[0.211s] -- Up-to-date symlink: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/cmake/scan_toolsConfig.cmake
+[0.211s] -- Up-to-date symlink: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/cmake/scan_toolsConfig-version.cmake
+[0.211s] -- Up-to-date symlink: /home/ojg/sim_ws/install/scan_tools/share/scan_tools/package.xml
+[0.233s] Invoked command in '/home/ojg/sim_ws/build/scan_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/scan_tools

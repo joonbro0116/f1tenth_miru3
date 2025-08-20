@@ -1,0 +1,8 @@
+source;share/center_follow_cpp/hook/cmake_prefix_path.ps1
+source;share/center_follow_cpp/hook/cmake_prefix_path.dsv
+source;share/center_follow_cpp/hook/cmake_prefix_path.sh
+source;share/center_follow_cpp/local_setup.bash
+source;share/center_follow_cpp/local_setup.dsv
+source;share/center_follow_cpp/local_setup.ps1
+source;share/center_follow_cpp/local_setup.sh
+source;share/center_follow_cpp/local_setup.zsh

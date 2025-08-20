@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>f1_keyboard_teleop</name>
+  <version>0.0.1</version>
+  <description>WASD 키보드로 AckermannDriveStamped를 퍼블리시하는 텔레옵 노드</description>
+
+  <maintainer email="ojg@todo.todo">ojg</maintainer>
+  <author email="ojg@todo.todo">ojg</author>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- build/run 둘 다 커버하는 의존성 -->
+  <depend>rclcpp</depend>
+  <depend>ackermann_msgs</depend>
+
+  <!-- 선택: 린트 유지 -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target center_follower[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/center_follower.dir/src/center_follow_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable center_follower[0m
+[100%] Built target center_follower
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/lib/center_follow_cpp/center_follower
+-- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/ament_index/resource_index/package_run_dependencies/center_follow_cpp
+-- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/ament_index/resource_index/parent_prefix_path/center_follow_cpp
+-- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/environment/path.sh
+-- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/environment/path.dsv
+-- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.bash
+-- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.sh
+-- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.zsh
+-- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.dsv
+-- Symlinking: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/package.dsv
+-- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/ament_index/resource_index/packages/center_follow_cpp
+-- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/cmake/center_follow_cppConfig.cmake
+-- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/cmake/center_follow_cppConfig-version.cmake
+-- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/package.xml

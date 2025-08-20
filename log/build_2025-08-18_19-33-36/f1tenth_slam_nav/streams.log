@@ -1,0 +1,82 @@
+[0.007s] Invoking command in '/home/ojg/sim_ws/build/f1tenth_slam_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake /home/ojg/sim_ws/src/f1tenth_slam_nav -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ojg/sim_ws/install/f1tenth_slam_nav
+[0.071s] -- The C compiler identification is GNU 11.4.0
+[0.127s] -- The CXX compiler identification is GNU 11.4.0
+[0.134s] -- Detecting C compiler ABI info
+[0.185s] -- Detecting C compiler ABI info - done
+[0.191s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.191s] -- Detecting C compile features
+[0.191s] -- Detecting C compile features - done
+[0.193s] -- Detecting CXX compiler ABI info
+[0.253s] -- Detecting CXX compiler ABI info - done
+[0.258s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.258s] -- Detecting CXX compile features
+[0.258s] -- Detecting CXX compile features - done
+[0.260s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.366s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.413s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.490s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.543s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.544s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.544s] -- Added test 'lint_cmake' to check CMake code style
+[0.545s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.546s] -- Added test 'xmllint' to check XML markup files
+[0.547s] -- Configuring done
+[0.549s] -- Generating done
+[0.549s] -- Build files have been written to: /home/ojg/sim_ws/build/f1tenth_slam_nav
+[0.552s] Invoked command in '/home/ojg/sim_ws/build/f1tenth_slam_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake /home/ojg/sim_ws/src/f1tenth_slam_nav -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ojg/sim_ws/install/f1tenth_slam_nav
+[0.554s] Invoking command in '/home/ojg/sim_ws/build/f1tenth_slam_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/f1tenth_slam_nav -- -j18 -l18
+[0.595s] Built target ament_cmake_python_symlink_f1tenth_slam_nav
+[0.597s] Built target ament_cmake_python_symlink_f1tenth_slam_nav_setup
+[0.763s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.763s]   warnings.warn(
+[0.763s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[0.763s]   warnings.warn(
+[0.766s] running egg_info
+[0.767s] creating f1tenth_slam_nav.egg-info
+[0.767s] writing f1tenth_slam_nav.egg-info/PKG-INFO
+[0.767s] writing dependency_links to f1tenth_slam_nav.egg-info/dependency_links.txt
+[0.767s] writing top-level names to f1tenth_slam_nav.egg-info/top_level.txt
+[0.767s] writing manifest file 'f1tenth_slam_nav.egg-info/SOURCES.txt'
+[0.768s] reading manifest file 'f1tenth_slam_nav.egg-info/SOURCES.txt'
+[0.768s] writing manifest file 'f1tenth_slam_nav.egg-info/SOURCES.txt'
+[0.787s] Built target ament_cmake_python_build_f1tenth_slam_nav_egg
+[0.797s] Invoked command in '/home/ojg/sim_ws/build/f1tenth_slam_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/f1tenth_slam_nav -- -j18 -l18
+[0.800s] Invoking command in '/home/ojg/sim_ws/build/f1tenth_slam_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/f1tenth_slam_nav
+[0.805s] -- Install configuration: "Release"
+[0.805s] -- Execute custom install script
+[0.806s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/launch//localization_launch.py
+[0.811s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/launch//slam_launch.py
+[0.816s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/launch//slam_nav_launch.py
+[0.821s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/config//amcl_config.yaml
+[0.827s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/config//cartographer_config.lua
+[0.831s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/config//slam_toolbox_async_config.yaml
+[0.835s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/config//slam_toolbox_config.yaml
+[0.841s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/environment/pythonpath.sh
+[0.845s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/environment/pythonpath.dsv
+[0.851s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/local/lib/python3.10/dist-packages/f1tenth_slam_nav-1.0.0-py3.10.egg-info/PKG-INFO
+[0.856s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/local/lib/python3.10/dist-packages/f1tenth_slam_nav-1.0.0-py3.10.egg-info/SOURCES.txt
+[0.860s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/local/lib/python3.10/dist-packages/f1tenth_slam_nav-1.0.0-py3.10.egg-info/dependency_links.txt
+[0.865s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/local/lib/python3.10/dist-packages/f1tenth_slam_nav-1.0.0-py3.10.egg-info/top_level.txt
+[0.869s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/local/lib/python3.10/dist-packages/f1tenth_slam_nav/__init__.py
+[0.874s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/local/lib/python3.10/dist-packages/f1tenth_slam_nav/slam_nav_manager.py
+[0.880s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/lib/f1tenth_slam_nav/slam_nav_manager.py
+[0.886s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/lib/python3.8/site-packages/f1tenth_slam_nav//slam_nav_manager.py
+[0.891s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/ament_index/resource_index/package_run_dependencies/f1tenth_slam_nav
+[0.896s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/ament_index/resource_index/parent_prefix_path/f1tenth_slam_nav
+[0.901s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/environment/ament_prefix_path.sh
+[0.905s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/environment/ament_prefix_path.dsv
+[0.910s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/environment/path.sh
+[0.915s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/environment/path.dsv
+[0.920s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/local_setup.bash
+[0.924s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/local_setup.sh
+[0.929s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/local_setup.zsh
+[0.933s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/local_setup.dsv
+[0.938s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/package.dsv
+[0.943s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/ament_index/resource_index/packages/f1tenth_slam_nav
+[0.948s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/cmake/f1tenth_slam_navConfig.cmake
+[0.953s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/cmake/f1tenth_slam_navConfig-version.cmake
+[0.958s] -- Symlinking: /home/ojg/sim_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/package.xml
+[0.985s] Listing '/home/ojg/sim_ws/install/f1tenth_slam_nav/local/lib/python3.10/dist-packages/f1tenth_slam_nav'...
+[0.985s] Compiling '/home/ojg/sim_ws/install/f1tenth_slam_nav/local/lib/python3.10/dist-packages/f1tenth_slam_nav/__init__.py'...
+[0.985s] Compiling '/home/ojg/sim_ws/install/f1tenth_slam_nav/local/lib/python3.10/dist-packages/f1tenth_slam_nav/slam_nav_manager.py'...
+[0.991s] Invoked command in '/home/ojg/sim_ws/build/f1tenth_slam_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/f1tenth_slam_nav

@@ -1,0 +1,1 @@
+/home/ojg/sim_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.sh

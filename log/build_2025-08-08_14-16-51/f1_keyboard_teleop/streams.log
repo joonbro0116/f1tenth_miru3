@@ -1,0 +1,62 @@
+[0.010s] Invoking command in '/home/ojg/sim_ws/build/f1_keyboard_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake /home/ojg/sim_ws/src/f1_keyboard_teleop -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ojg/sim_ws/install/f1_keyboard_teleop
+[0.171s] -- The C compiler identification is GNU 11.4.0
+[0.172s] -- The CXX compiler identification is GNU 11.4.0
+[0.172s] -- Detecting C compiler ABI info
+[0.172s] -- Detecting C compiler ABI info - done
+[0.172s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.172s] -- Detecting C compile features
+[0.172s] -- Detecting C compile features - done
+[0.172s] -- Detecting CXX compiler ABI info
+[0.230s] -- Detecting CXX compiler ABI info - done
+[0.238s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.238s] -- Detecting CXX compile features
+[0.239s] -- Detecting CXX compile features - done
+[0.242s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.368s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.413s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.443s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.477s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.481s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.487s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.496s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.509s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.546s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.548s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.612s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.629s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.657s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.664s] -- Looking for pthread.h
+[0.711s] -- Looking for pthread.h - found
+[0.712s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.767s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.768s] -- Found Threads: TRUE  
+[0.807s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)
+[0.858s] -- Configuring done
+[0.863s] -- Generating done
+[0.865s] -- Build files have been written to: /home/ojg/sim_ws/build/f1_keyboard_teleop
+[0.872s] Invoked command in '/home/ojg/sim_ws/build/f1_keyboard_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake /home/ojg/sim_ws/src/f1_keyboard_teleop -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ojg/sim_ws/install/f1_keyboard_teleop
+[0.873s] Invoking command in '/home/ojg/sim_ws/build/f1_keyboard_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/f1_keyboard_teleop -- -j18 -l18
+[0.908s] [ 50%] [32mBuilding CXX object CMakeFiles/keyboard_teleop.dir/src/keyboard_teleop.cpp.o[0m
+[4.071s] [100%] [32m[1mLinking CXX executable keyboard_teleop[0m
+[4.143s] [100%] Built target keyboard_teleop
+[4.151s] Invoked command in '/home/ojg/sim_ws/build/f1_keyboard_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/f1_keyboard_teleop -- -j18 -l18
+[4.153s] Invoking command in '/home/ojg/sim_ws/build/f1_keyboard_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/f1_keyboard_teleop
+[4.157s] -- Install configuration: "Release"
+[4.157s] -- Execute custom install script
+[4.157s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/lib/f1_keyboard_teleop/keyboard_teleop
+[4.163s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/ament_index/resource_index/package_run_dependencies/f1_keyboard_teleop
+[4.170s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/ament_index/resource_index/parent_prefix_path/f1_keyboard_teleop
+[4.174s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/environment/ament_prefix_path.sh
+[4.179s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/environment/ament_prefix_path.dsv
+[4.185s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/environment/path.sh
+[4.189s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/environment/path.dsv
+[4.194s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/local_setup.bash
+[4.200s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/local_setup.sh
+[4.204s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/local_setup.zsh
+[4.209s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/local_setup.dsv
+[4.215s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/package.dsv
+[4.219s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/ament_index/resource_index/packages/f1_keyboard_teleop
+[4.224s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/cmake/f1_keyboard_teleopConfig.cmake
+[4.230s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/cmake/f1_keyboard_teleopConfig-version.cmake
+[4.236s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/package.xml
+[4.244s] Invoked command in '/home/ojg/sim_ws/build/f1_keyboard_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/f1_keyboard_teleop

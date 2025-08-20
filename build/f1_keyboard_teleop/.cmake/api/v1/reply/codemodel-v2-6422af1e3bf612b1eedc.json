@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-b1d92862b1b800fd2d17.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "f1_keyboard_teleop",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "f1_keyboard_teleop_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-f1_keyboard_teleop_uninstall-Release-73c45b2497b65c221d8e.json",
+					"name" : "f1_keyboard_teleop_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_teleop::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_teleop-Release-2a894f91f74fed2147a5.json",
+					"name" : "keyboard_teleop",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-a3ec5892084f410a6d1a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ojg/sim_ws/build/f1_keyboard_teleop",
+		"source" : "/home/ojg/sim_ws/src/f1_keyboard_teleop"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

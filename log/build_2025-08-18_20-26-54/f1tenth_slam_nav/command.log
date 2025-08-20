@@ -1,0 +1,4 @@
+Invoking command in '/home/ojg/sim_ws/build/f1tenth_slam_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/f1tenth_slam_nav -- -j18 -l18
+Invoked command in '/home/ojg/sim_ws/build/f1tenth_slam_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/f1tenth_slam_nav -- -j18 -l18
+Invoking command in '/home/ojg/sim_ws/build/f1tenth_slam_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/f1tenth_slam_nav
+Invoked command in '/home/ojg/sim_ws/build/f1tenth_slam_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/f1tenth_slam_nav

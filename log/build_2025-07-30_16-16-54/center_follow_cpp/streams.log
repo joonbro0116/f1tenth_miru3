@@ -1,0 +1,26 @@
+[0.014s] Invoking command in '/home/ojg/sim_ws/build/center_follow_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/center_follow_cpp -- -j18 -l18
+[0.233s] [35m[1mConsolidate compiler generated dependencies of target center_follower[0m
+[0.234s] [ 50%] [32mBuilding CXX object CMakeFiles/center_follower.dir/src/center_follow_node.cpp.o[0m
+[11.862s] [100%] [32m[1mLinking CXX executable center_follower[0m
+[11.998s] [100%] Built target center_follower
+[12.010s] Invoked command in '/home/ojg/sim_ws/build/center_follow_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/center_follow_cpp -- -j18 -l18
+[12.011s] Invoking command in '/home/ojg/sim_ws/build/center_follow_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/center_follow_cpp
+[12.017s] -- Install configuration: "Release"
+[12.017s] -- Execute custom install script
+[12.017s] -- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/lib/center_follow_cpp/center_follower
+[12.017s] -- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/ament_index/resource_index/package_run_dependencies/center_follow_cpp
+[12.017s] -- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/ament_index/resource_index/parent_prefix_path/center_follow_cpp
+[12.018s] -- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/environment/ament_prefix_path.sh
+[12.018s] -- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/environment/ament_prefix_path.dsv
+[12.018s] -- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/environment/path.sh
+[12.018s] -- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/environment/path.dsv
+[12.018s] -- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.bash
+[12.018s] -- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.sh
+[12.018s] -- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.zsh
+[12.018s] -- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.dsv
+[12.018s] -- Symlinking: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/package.dsv
+[12.029s] -- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/ament_index/resource_index/packages/center_follow_cpp
+[12.029s] -- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/cmake/center_follow_cppConfig.cmake
+[12.029s] -- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/cmake/center_follow_cppConfig-version.cmake
+[12.029s] -- Up-to-date symlink: /home/ojg/sim_ws/install/center_follow_cpp/share/center_follow_cpp/package.xml
+[12.032s] Invoked command in '/home/ojg/sim_ws/build/center_follow_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/center_follow_cpp

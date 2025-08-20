@@ -1,0 +1,23 @@
+[0.014s] Invoking command in '/home/ojg/sim_ws/build/f1_keyboard_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/f1_keyboard_teleop -- -j18 -l18
+[0.173s] [100%] Built target keyboard_teleop
+[0.177s] Invoked command in '/home/ojg/sim_ws/build/f1_keyboard_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/f1_keyboard_teleop -- -j18 -l18
+[0.185s] Invoking command in '/home/ojg/sim_ws/build/f1_keyboard_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/f1_keyboard_teleop
+[0.193s] -- Install configuration: "Release"
+[0.193s] -- Execute custom install script
+[0.194s] -- Up-to-date symlink: /home/ojg/sim_ws/install/f1_keyboard_teleop/lib/f1_keyboard_teleop/keyboard_teleop
+[0.194s] -- Up-to-date symlink: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/ament_index/resource_index/package_run_dependencies/f1_keyboard_teleop
+[0.194s] -- Up-to-date symlink: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/ament_index/resource_index/parent_prefix_path/f1_keyboard_teleop
+[0.195s] -- Up-to-date symlink: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/environment/ament_prefix_path.sh
+[0.195s] -- Up-to-date symlink: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/environment/ament_prefix_path.dsv
+[0.195s] -- Up-to-date symlink: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/environment/path.sh
+[0.195s] -- Up-to-date symlink: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/environment/path.dsv
+[0.195s] -- Up-to-date symlink: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/local_setup.bash
+[0.196s] -- Up-to-date symlink: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/local_setup.sh
+[0.196s] -- Up-to-date symlink: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/local_setup.zsh
+[0.196s] -- Up-to-date symlink: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/local_setup.dsv
+[0.196s] -- Symlinking: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/package.dsv
+[0.203s] -- Up-to-date symlink: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/ament_index/resource_index/packages/f1_keyboard_teleop
+[0.203s] -- Up-to-date symlink: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/cmake/f1_keyboard_teleopConfig.cmake
+[0.204s] -- Up-to-date symlink: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/cmake/f1_keyboard_teleopConfig-version.cmake
+[0.204s] -- Up-to-date symlink: /home/ojg/sim_ws/install/f1_keyboard_teleop/share/f1_keyboard_teleop/package.xml
+[0.218s] Invoked command in '/home/ojg/sim_ws/build/f1_keyboard_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ojg/sim_ws/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/f1_keyboard_teleop

@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-07ca0a2131f887a0c536.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "f1tenth_slam_nav",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_f1tenth_slam_nav_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_f1tenth_slam_nav_egg-Release-b2d6521f25c39d2e8c83.json",
+					"name" : "ament_cmake_python_build_f1tenth_slam_nav_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_f1tenth_slam_nav::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_f1tenth_slam_nav-Release-c6bd58d9a4db7211cb5d.json",
+					"name" : "ament_cmake_python_symlink_f1tenth_slam_nav",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_f1tenth_slam_nav_setup::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_f1tenth_slam_nav_setup-Release-5ad092717531857c6a8a.json",
+					"name" : "ament_cmake_python_symlink_f1tenth_slam_nav_setup",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "f1tenth_slam_nav_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-f1tenth_slam_nav_uninstall-Release-d3c708716317677f11cd.json",
+					"name" : "f1tenth_slam_nav_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-17b25b0e3dc9949e4a91.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ojg/sim_ws/build/f1tenth_slam_nav",
+		"source" : "/home/ojg/sim_ws/src/f1tenth_slam_nav"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

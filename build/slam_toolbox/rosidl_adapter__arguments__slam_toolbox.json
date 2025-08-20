@@ -1,0 +1,15 @@
+{
+  "package_name": "slam_toolbox",
+  "non_idl_tuples": [
+    "/home/ojg/sim_ws/src/slam_toolbox:srv/Pause.srv",
+    "/home/ojg/sim_ws/src/slam_toolbox:srv/ClearQueue.srv",
+    "/home/ojg/sim_ws/src/slam_toolbox:srv/ToggleInteractive.srv",
+    "/home/ojg/sim_ws/src/slam_toolbox:srv/Clear.srv",
+    "/home/ojg/sim_ws/src/slam_toolbox:srv/SaveMap.srv",
+    "/home/ojg/sim_ws/src/slam_toolbox:srv/LoopClosure.srv",
+    "/home/ojg/sim_ws/src/slam_toolbox:srv/MergeMaps.srv",
+    "/home/ojg/sim_ws/src/slam_toolbox:srv/AddSubmap.srv",
+    "/home/ojg/sim_ws/src/slam_toolbox:srv/DeserializePoseGraph.srv",
+    "/home/ojg/sim_ws/src/slam_toolbox:srv/SerializePoseGraph.srv"
+  ]
+}
