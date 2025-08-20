@@ -1,0 +1,4 @@
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘double ImprovedCenterlinePlanner::calculateRidgeStrength(const cv::Mat&, int, int)’:
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:599:15: warning: unused variable ‘lambda1’ [-Wunused-variable]
+  599 |         float lambda1 = (trace + sqrt_disc) / 2.0f;
+      |               ^~~~~~~

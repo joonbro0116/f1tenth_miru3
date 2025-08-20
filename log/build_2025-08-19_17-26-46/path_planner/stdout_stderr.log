@@ -1,0 +1,682 @@
+Scanning dependencies of target min_curvature_planner
+[ 50%] Building CXX object CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘double ImprovedCenterlinePlanner::calculateRidgeStrength(const cv::Mat&, int, int)’:
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:600:15: warning: unused variable ‘lambda1’ [-Wunused-variable]
+  600 |         float lambda1 = (trace + sqrt_disc) / 2.0f;
+      |               ^~~~~~~
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘std::vector<int> ImprovedCenterlinePlanner::connectNearbyComponents(const std::vector<ImprovedCenterlinePlanner::RidgePoint>&, const std::vector<std::vector<int> >&, int)’:
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1078:17: warning: variable ‘closest_main’ set but not used [-Wunused-but-set-variable]
+ 1078 |             int closest_main = -1, closest_other = -1;
+      |                 ^~~~~~~~~~~~
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1078:36: warning: variable ‘closest_other’ set but not used [-Wunused-but-set-variable]
+ 1078 |             int closest_main = -1, closest_other = -1;
+      |                                    ^~~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h: In instantiation of ‘constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&) [with _T1 = double; _T2 = ImprovedCenterlinePlanner::Point2D]’:
+/usr/include/c++/9/bits/predefined_ops.h:43:23:   required from ‘constexpr bool __gnu_cxx::__ops::_Iter_less_iter::operator()(_Iterator1, _Iterator2) const [with _Iterator1 = __gnu_cxx::__normal_iterator<std::pair<double, ImprovedCenterlinePlanner::Point2D>*, std::vector<std::pair<double, ImprovedCenterlinePlanner::Point2D> > >; _Iterator2 = __gnu_cxx::__normal_iterator<std::pair<double, ImprovedCenterlinePlanner::Point2D>*, std::vector<std::pair<double, ImprovedCenterlinePlanner::Point2D> > >]’
+/usr/include/c++/9/bits/stl_algo.h:81:17:   required from ‘void std::__move_median_to_first(_Iterator, _Iterator, _Iterator, _Iterator, _Compare) [with _Iterator = __gnu_cxx::__normal_iterator<std::pair<double, ImprovedCenterlinePlanner::Point2D>*, std::vector<std::pair<double, ImprovedCenterlinePlanner::Point2D> > >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:1926:34:   required from ‘_RandomAccessIterator std::__unguarded_partition_pivot(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<std::pair<double, ImprovedCenterlinePlanner::Point2D>*, std::vector<std::pair<double, ImprovedCenterlinePlanner::Point2D> > >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:1958:38:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<std::pair<double, ImprovedCenterlinePlanner::Point2D>*, std::vector<std::pair<double, ImprovedCenterlinePlanner::Point2D> > >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:1973:25:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<std::pair<double, ImprovedCenterlinePlanner::Point2D>*, std::vector<std::pair<double, ImprovedCenterlinePlanner::Point2D> > >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:4873:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<std::pair<double, ImprovedCenterlinePlanner::Point2D>*, std::vector<std::pair<double, ImprovedCenterlinePlanner::Point2D> > >]’
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1224:59:   required from here
+/usr/include/c++/9/bits/stl_pair.h:456:50: error: no match for ‘operator<’ (operand types are ‘const ImprovedCenterlinePlanner::Point2D’ and ‘const ImprovedCenterlinePlanner::Point2D’)
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+/usr/include/c++/9/bits/stl_pair.h:454:5: note: candidate: ‘template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)’
+  454 |     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_pair.h:454:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::pair<_T1, _T2>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_iterator.h:331:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)’
+  331 |     operator<(const reverse_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:331:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_iterator.h:369:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)’
+  369 |     operator<(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:369:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_iterator.h:1160:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’
+ 1160 |     operator<(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:1160:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_iterator.h:1166:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)’
+ 1166 |     operator<(const move_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:1166:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/basic_string.h:48,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/stdexcept:39,
+                 from /usr/include/c++/9/array:39,
+                 from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/string_view:507:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)’
+  507 |     operator< (basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/string_view:507:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘ImprovedCenterlinePlanner::Point2D’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/basic_string.h:48,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/stdexcept:39,
+                 from /usr/include/c++/9/array:39,
+                 from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/string_view:513:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::__detail::__idt<std::basic_string_view<_CharT, _Traits> >)’
+  513 |     operator< (basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/string_view:513:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘ImprovedCenterlinePlanner::Point2D’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/basic_string.h:48,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/stdexcept:39,
+                 from /usr/include/c++/9/array:39,
+                 from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/string_view:519:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator<(std::__detail::__idt<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)’
+  519 |     operator< (__detail::__idt<basic_string_view<_CharT, _Traits>> __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/string_view:519:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘ImprovedCenterlinePlanner::Point2D’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/stdexcept:39,
+                 from /usr/include/c++/9/array:39,
+                 from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/basic_string.h:6229:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6229 |     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6229:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/stdexcept:39,
+                 from /usr/include/c++/9/array:39,
+                 from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/basic_string.h:6242:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)’
+ 6242 |     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6242:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/stdexcept:39,
+                 from /usr/include/c++/9/array:39,
+                 from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/basic_string.h:6254:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6254 |     operator<(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6254:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   mismatched types ‘const _CharT*’ and ‘ImprovedCenterlinePlanner::Point2D’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/array:262:5: note: candidate: ‘template<class _Tp, long unsigned int _Nm> bool std::operator<(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)’
+  262 |     operator<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)
+      |     ^~~~~~~~
+/usr/include/c++/9/array:262:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::array<_Tp, _Nm>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/tuple:1432:5: note: candidate: ‘template<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)’
+ 1432 |     operator<(const tuple<_TElements...>& __t,
+      |     ^~~~~~~~
+/usr/include/c++/9/tuple:1432:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::tuple<_Tps ...>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:749:5: note: candidate: ‘template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)’
+  749 |     operator<(const unique_ptr<_Tp, _Dp>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/unique_ptr.h:749:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:760:5: note: candidate: ‘template<class _Tp, class _Dp> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)’
+  760 |     operator<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/unique_ptr.h:760:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:766:5: note: candidate: ‘template<class _Tp, class _Dp> bool std::operator<(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)’
+  766 |     operator<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/unique_ptr.h:766:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/shared_ptr.h:52,
+                 from /usr/include/c++/9/memory:81,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/shared_ptr_base.h:1444:5: note: candidate: ‘template<class _Tp, class _Up, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)’
+ 1444 |     operator<(const __shared_ptr<_Tp, _Lp>& __a,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr_base.h:1444:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::__shared_ptr<_Tp1, _Lp>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/shared_ptr.h:52,
+                 from /usr/include/c++/9/memory:81,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/shared_ptr_base.h:1455:5: note: candidate: ‘template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)’
+ 1455 |     operator<(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr_base.h:1455:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::__shared_ptr<_Tp, _Lp>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/shared_ptr.h:52,
+                 from /usr/include/c++/9/memory:81,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/shared_ptr_base.h:1463:5: note: candidate: ‘template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)’
+ 1463 |     operator<(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr_base.h:1463:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::__shared_ptr<_Tp, _Lp>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:413:5: note: candidate: ‘template<class _Tp, class _Up> bool std::operator<(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)’
+  413 |     operator<(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:413:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::shared_ptr<_Tp>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:423:5: note: candidate: ‘template<class _Tp> bool std::operator<(const std::shared_ptr<_Tp>&, std::nullptr_t)’
+  423 |     operator<(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:423:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::shared_ptr<_Tp>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:431:5: note: candidate: ‘template<class _Tp> bool std::operator<(std::nullptr_t, const std::shared_ptr<_Tp>&)’
+  431 |     operator<(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:431:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::shared_ptr<_Tp>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/mutex:42,
+                 from /usr/include/c++/9/future:38,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/system_error:208:3: note: candidate: ‘bool std::operator<(const std::error_code&, const std::error_code&)’
+  208 |   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+/usr/include/c++/9/system_error:208:31: note:   no known conversion for argument 1 from ‘const ImprovedCenterlinePlanner::Point2D’ to ‘const std::error_code&’
+  208 |   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+      |             ~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/9/system_error:282:3: note: candidate: ‘bool std::operator<(const std::error_condition&, const std::error_condition&)’
+  282 |   operator<(const error_condition& __lhs,
+      |   ^~~~~~~~
+/usr/include/c++/9/system_error:282:36: note:   no known conversion for argument 1 from ‘const ImprovedCenterlinePlanner::Point2D’ to ‘const std::error_condition&’
+  282 |   operator<(const error_condition& __lhs,
+      |             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /usr/include/c++/9/future:39,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/thread:290:3: note: candidate: ‘bool std::operator<(std::thread::id, std::thread::id)’
+  290 |   operator<(thread::id __x, thread::id __y) noexcept
+      |   ^~~~~~~~
+/usr/include/c++/9/thread:290:24: note:   no known conversion for argument 1 from ‘const ImprovedCenterlinePlanner::Point2D’ to ‘std::thread::id’
+  290 |   operator<(thread::id __x, thread::id __y) noexcept
+      |             ~~~~~~~~~~~^~~
+In file included from /usr/include/c++/9/bits/node_handle.h:39,
+                 from /usr/include/c++/9/bits/stl_tree.h:72,
+                 from /usr/include/c++/9/set:60,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/optional:1001:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_relop_t<decltype ((declval<_Tp>() < declval<_Up>()))> std::operator<(const std::optional<_Tp>&, const std::optional<_Up>&)’
+ 1001 |     operator<(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/9/optional:1001:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::optional<_Tp>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/node_handle.h:39,
+                 from /usr/include/c++/9/bits/stl_tree.h:72,
+                 from /usr/include/c++/9/set:60,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/optional:1054:5: note: candidate: ‘template<class _Tp> constexpr bool std::operator<(const std::optional<_Tp>&, std::nullopt_t)’
+ 1054 |     operator<(const optional<_Tp>& /* __lhs */, nullopt_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/optional:1054:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::optional<_Tp>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/node_handle.h:39,
+                 from /usr/include/c++/9/bits/stl_tree.h:72,
+                 from /usr/include/c++/9/set:60,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/optional:1059:5: note: candidate: ‘template<class _Tp> constexpr bool std::operator<(std::nullopt_t, const std::optional<_Tp>&)’
+ 1059 |     operator<(nullopt_t, const optional<_Tp>& __rhs) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/optional:1059:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::optional<_Tp>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/node_handle.h:39,
+                 from /usr/include/c++/9/bits/stl_tree.h:72,
+                 from /usr/include/c++/9/set:60,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/optional:1119:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_relop_t<decltype ((declval<_Tp>() < declval<_Up>()))> std::operator<(const std::optional<_Tp>&, const _Up&)’
+ 1119 |     operator<(const optional<_Tp>& __lhs, const _Up& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/9/optional:1119:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::optional<_Tp>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/node_handle.h:39,
+                 from /usr/include/c++/9/bits/stl_tree.h:72,
+                 from /usr/include/c++/9/set:60,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/optional:1125:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_relop_t<decltype ((declval<_Up>() < declval<_Tp>()))> std::operator<(const _Up&, const std::optional<_Tp>&)’
+ 1125 |     operator<(const _Up& __lhs, const optional<_Tp>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/9/optional:1125:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::optional<_Tp>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/set:61,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_set.h:996:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)’
+  996 |     operator<(const set<_Key, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_set.h:996:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::set<_Key, _Compare, _Allocator>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/set:62,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_multiset.h:981:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)’
+  981 |     operator<(const multiset<_Key, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_multiset.h:981:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::multiset<_Key, _Compare, _Allocator>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/vector:67,
+                 from /usr/include/c++/9/functional:62,
+                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,
+                 from /usr/include/c++/9/algorithm:71,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_vector.h:1905:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)’
+ 1905 |     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_vector.h:1905:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/list:63,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:23,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_list.h:2025:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator<(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)’
+ 2025 |     operator<(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_list.h:2025:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::__cxx11::list<_Tp, _Alloc>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/map:61,
+                 from /opt/ros/foxy/include/rclcpp/client.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_map.h:1472:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)’
+ 1472 |     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:1472:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Allocator>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/map:62,
+                 from /opt/ros/foxy/include/rclcpp/client.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_multimap.h:1136:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)’
+ 1136 |     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_multimap.h:1136:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Allocator>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/deque:67,
+                 from /usr/include/c++/9/queue:60,
+                 from /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46,
+                 from /usr/include/opencv4/opencv2/stitching/detail/util.hpp:119,
+                 from /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48,
+                 from /usr/include/opencv4/opencv2/stitching.hpp:50,
+                 from /usr/include/opencv4/opencv2/opencv.hpp:86,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:6:
+/usr/include/c++/9/bits/stl_deque.h:312:5: note: candidate: ‘template<class _Tp, class _Ref, class _Ptr> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)’
+  312 |     operator<(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_deque.h:312:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/deque:67,
+                 from /usr/include/c++/9/queue:60,
+                 from /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46,
+                 from /usr/include/opencv4/opencv2/stitching/detail/util.hpp:119,
+                 from /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48,
+                 from /usr/include/opencv4/opencv2/stitching.hpp:50,
+                 from /usr/include/opencv4/opencv2/opencv.hpp:86,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:6:
+/usr/include/c++/9/bits/stl_deque.h:320:5: note: candidate: ‘template<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)’
+  320 |     operator<(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_deque.h:320:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/deque:67,
+                 from /usr/include/c++/9/queue:60,
+                 from /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46,
+                 from /usr/include/opencv4/opencv2/stitching/detail/util.hpp:119,
+                 from /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48,
+                 from /usr/include/opencv4/opencv2/stitching.hpp:50,
+                 from /usr/include/opencv4/opencv2/opencv.hpp:86,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:6:
+/usr/include/c++/9/bits/stl_deque.h:2330:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator<(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)’
+ 2330 |     operator<(const deque<_Tp, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_deque.h:2330:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::deque<_Tp, _Alloc>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/9/queue:64,
+                 from /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46,
+                 from /usr/include/opencv4/opencv2/stitching/detail/util.hpp:119,
+                 from /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48,
+                 from /usr/include/opencv4/opencv2/stitching.hpp:50,
+                 from /usr/include/opencv4/opencv2/opencv.hpp:86,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:6:
+/usr/include/c++/9/bits/stl_queue.h:356:5: note: candidate: ‘template<class _Tp, class _Seq> bool std::operator<(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)’
+  356 |     operator<(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_queue.h:356:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:456:50: note:   ‘const ImprovedCenterlinePlanner::Point2D’ is not derived from ‘const std::queue<_Tp, _Seq>’
+  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~
+make[2]: *** [CMakeFiles/min_curvature_planner.dir/build.make:63: CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/min_curvature_planner.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

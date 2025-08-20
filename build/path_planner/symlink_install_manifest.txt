@@ -1,4 +1,4 @@
-/home/f1/f1tenth_ws/install/path_planner/lib/path_planner/min_curvature_planner
+/home/f1/f1tenth_ws/install/path_planner/lib/path_planner/path_planner_centerline_extractor
 /home/f1/f1tenth_ws/install/path_planner/share/path_planner/launch/planner_launch.py
 /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/package_run_dependencies/path_planner
 /home/f1/f1tenth_ws/install/path_planner/share/ament_index/resource_index/parent_prefix_path/path_planner

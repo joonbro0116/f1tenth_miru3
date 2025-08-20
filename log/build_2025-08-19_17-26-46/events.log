@@ -1,0 +1,967 @@
+[0.000000] (-) TimerEvent: {}
+[0.001189] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.001430] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.001599] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.001714] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.001826] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.001937] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.002153] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.002875] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.003028] (-) JobUnselected: {'identifier': 'path_follow'}
+[0.003146] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.003710] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.003829] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.003969] (-) JobUnselected: {'identifier': 'vesc'}
+[0.004130] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.004275] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.004389] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.004515] (path_planner) JobQueued: {'identifier': 'path_planner', 'dependencies': OrderedDict()}
+[0.005004] (path_planner) JobStarted: {'identifier': 'path_planner'}
+[0.054824] (path_planner) JobProgress: {'identifier': 'path_planner', 'progress': 'cmake'}
+[0.059782] (path_planner) JobProgress: {'identifier': 'path_planner', 'progress': 'build'}
+[0.064986] (path_planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/f1/f1tenth_ws/build/path_planner', '--', '-j6', '-l6'], 'cwd': '/home/f1/f1tenth_ws/build/path_planner', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('SSH_AGENT_PID', '3267'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/f1'), ('QT4_IM_MODULE', 'fcitx'), ('OLDPWD', '/home/f1/f1tenth_ws'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('MANAGERPID', '2818'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:60074'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'f1'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3328,unix/ubuntu:/tmp/.ICE-unix/3328'), ('PAPERSIZE', 'a4'), ('INVOCATION_ID', 'a3c148bd009945d0887604b6e6bba097'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7284c32c_8044_4213_91d9_501e01f214fd'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('XMODIFIERS', '@im=fcitx'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'fcitx'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/f1/f1tenth_ws/build/path_planner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLUTTER_IM_MODULE', 'fcitx'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.098049] (-) TimerEvent: {}
+[0.198686] (-) TimerEvent: {}
+[0.299305] (-) TimerEvent: {}
+[0.399829] (-) TimerEvent: {}
+[0.484721] (path_planner) StdoutLine: {'line': b'Scanning dependencies of target min_curvature_planner\n'}
+[0.500047] (-) TimerEvent: {}
+[0.580286] (path_planner) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o\n'}
+[0.600360] (-) TimerEvent: {}
+[0.700853] (-) TimerEvent: {}
+[0.801429] (-) TimerEvent: {}
+[0.901971] (-) TimerEvent: {}
+[1.002546] (-) TimerEvent: {}
+[1.103059] (-) TimerEvent: {}
+[1.203614] (-) TimerEvent: {}
+[1.304139] (-) TimerEvent: {}
+[1.404758] (-) TimerEvent: {}
+[1.505345] (-) TimerEvent: {}
+[1.605940] (-) TimerEvent: {}
+[1.706641] (-) TimerEvent: {}
+[1.807198] (-) TimerEvent: {}
+[1.907771] (-) TimerEvent: {}
+[2.008402] (-) TimerEvent: {}
+[2.108916] (-) TimerEvent: {}
+[2.209525] (-) TimerEvent: {}
+[2.310204] (-) TimerEvent: {}
+[2.410824] (-) TimerEvent: {}
+[2.511377] (-) TimerEvent: {}
+[2.612006] (-) TimerEvent: {}
+[2.712616] (-) TimerEvent: {}
+[2.813243] (-) TimerEvent: {}
+[2.913843] (-) TimerEvent: {}
+[3.014521] (-) TimerEvent: {}
+[3.115075] (-) TimerEvent: {}
+[3.215753] (-) TimerEvent: {}
+[3.316361] (-) TimerEvent: {}
+[3.416985] (-) TimerEvent: {}
+[3.517612] (-) TimerEvent: {}
+[3.618301] (-) TimerEvent: {}
+[3.718926] (-) TimerEvent: {}
+[3.819538] (-) TimerEvent: {}
+[3.920153] (-) TimerEvent: {}
+[4.020760] (-) TimerEvent: {}
+[4.121337] (-) TimerEvent: {}
+[4.222001] (-) TimerEvent: {}
+[4.323314] (-) TimerEvent: {}
+[4.423884] (-) TimerEvent: {}
+[4.524444] (-) TimerEvent: {}
+[4.625043] (-) TimerEvent: {}
+[4.725621] (-) TimerEvent: {}
+[4.826194] (-) TimerEvent: {}
+[4.926731] (-) TimerEvent: {}
+[5.027324] (-) TimerEvent: {}
+[5.127862] (-) TimerEvent: {}
+[5.228410] (-) TimerEvent: {}
+[5.328931] (-) TimerEvent: {}
+[5.429412] (-) TimerEvent: {}
+[5.529999] (-) TimerEvent: {}
+[5.630651] (-) TimerEvent: {}
+[5.731241] (-) TimerEvent: {}
+[5.831863] (-) TimerEvent: {}
+[5.932436] (-) TimerEvent: {}
+[6.033052] (-) TimerEvent: {}
+[6.133627] (-) TimerEvent: {}
+[6.234282] (-) TimerEvent: {}
+[6.334879] (-) TimerEvent: {}
+[6.435479] (-) TimerEvent: {}
+[6.536029] (-) TimerEvent: {}
+[6.636695] (-) TimerEvent: {}
+[6.737332] (-) TimerEvent: {}
+[6.837881] (-) TimerEvent: {}
+[6.938538] (-) TimerEvent: {}
+[7.039066] (-) TimerEvent: {}
+[7.139601] (-) TimerEvent: {}
+[7.240270] (-) TimerEvent: {}
+[7.340818] (-) TimerEvent: {}
+[7.441386] (-) TimerEvent: {}
+[7.541990] (-) TimerEvent: {}
+[7.642645] (-) TimerEvent: {}
+[7.743268] (-) TimerEvent: {}
+[7.843807] (-) TimerEvent: {}
+[7.944315] (-) TimerEvent: {}
+[8.044914] (-) TimerEvent: {}
+[8.145493] (-) TimerEvent: {}
+[8.245991] (-) TimerEvent: {}
+[8.346535] (-) TimerEvent: {}
+[8.447050] (-) TimerEvent: {}
+[8.547663] (-) TimerEvent: {}
+[8.648305] (-) TimerEvent: {}
+[8.748897] (-) TimerEvent: {}
+[8.849483] (-) TimerEvent: {}
+[8.950055] (-) TimerEvent: {}
+[9.050817] (-) TimerEvent: {}
+[9.151411] (-) TimerEvent: {}
+[9.251974] (-) TimerEvent: {}
+[9.352662] (-) TimerEvent: {}
+[9.453209] (-) TimerEvent: {}
+[9.553715] (-) TimerEvent: {}
+[9.654397] (-) TimerEvent: {}
+[9.754987] (-) TimerEvent: {}
+[9.855574] (-) TimerEvent: {}
+[9.956132] (-) TimerEvent: {}
+[10.056821] (-) TimerEvent: {}
+[10.157351] (-) TimerEvent: {}
+[10.257920] (-) TimerEvent: {}
+[10.358552] (-) TimerEvent: {}
+[10.459127] (-) TimerEvent: {}
+[10.559685] (-) TimerEvent: {}
+[10.660213] (-) TimerEvent: {}
+[10.760813] (-) TimerEvent: {}
+[10.861337] (-) TimerEvent: {}
+[10.961854] (-) TimerEvent: {}
+[11.062537] (-) TimerEvent: {}
+[11.163103] (-) TimerEvent: {}
+[11.263664] (-) TimerEvent: {}
+[11.364312] (-) TimerEvent: {}
+[11.464945] (-) TimerEvent: {}
+[11.565497] (-) TimerEvent: {}
+[11.666038] (-) TimerEvent: {}
+[11.766678] (-) TimerEvent: {}
+[11.867226] (-) TimerEvent: {}
+[11.967781] (-) TimerEvent: {}
+[12.068334] (-) TimerEvent: {}
+[12.168903] (-) TimerEvent: {}
+[12.269500] (-) TimerEvent: {}
+[12.370184] (-) TimerEvent: {}
+[12.470752] (-) TimerEvent: {}
+[12.571293] (-) TimerEvent: {}
+[12.671861] (-) TimerEvent: {}
+[12.772427] (-) TimerEvent: {}
+[12.873027] (-) TimerEvent: {}
+[12.973633] (-) TimerEvent: {}
+[13.074216] (-) TimerEvent: {}
+[13.174843] (-) TimerEvent: {}
+[13.275352] (-) TimerEvent: {}
+[13.375868] (-) TimerEvent: {}
+[13.476461] (-) TimerEvent: {}
+[13.577012] (-) TimerEvent: {}
+[13.677512] (-) TimerEvent: {}
+[13.778027] (-) TimerEvent: {}
+[13.878760] (-) TimerEvent: {}
+[13.979353] (-) TimerEvent: {}
+[14.079924] (-) TimerEvent: {}
+[14.180557] (-) TimerEvent: {}
+[14.281205] (-) TimerEvent: {}
+[14.381736] (-) TimerEvent: {}
+[14.482295] (-) TimerEvent: {}
+[14.582811] (-) TimerEvent: {}
+[14.683403] (-) TimerEvent: {}
+[14.783999] (-) TimerEvent: {}
+[14.854213] (path_planner) StderrLine: {'line': b'/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function \xe2\x80\x98double ImprovedCenterlinePlanner::calculateRidgeStrength(const cv::Mat&, int, int)\xe2\x80\x99:\n'}
+[14.855237] (path_planner) StderrLine: {'line': b'/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:600:15: warning: unused variable \xe2\x80\x98lambda1\xe2\x80\x99 [-Wunused-variable]\n'}
+[14.855692] (path_planner) StderrLine: {'line': b'  600 |         float lambda1 = (trace + sqrt_disc) / 2.0f;\n'}
+[14.856120] (path_planner) StderrLine: {'line': b'      |               ^~~~~~~\n'}
+[14.884253] (-) TimerEvent: {}
+[14.943366] (path_planner) StderrLine: {'line': b'/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function \xe2\x80\x98std::vector<int> ImprovedCenterlinePlanner::connectNearbyComponents(const std::vector<ImprovedCenterlinePlanner::RidgePoint>&, const std::vector<std::vector<int> >&, int)\xe2\x80\x99:\n'}
+[14.944186] (path_planner) StderrLine: {'line': b'/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1078:17: warning: variable \xe2\x80\x98closest_main\xe2\x80\x99 set but not used [-Wunused-but-set-variable]\n'}
+[14.945389] (path_planner) StderrLine: {'line': b' 1078 |             int closest_main = -1, closest_other = -1;\n'}
+[14.946743] (path_planner) StderrLine: {'line': b'      |                 ^~~~~~~~~~~~\n'}
+[14.947312] (path_planner) StderrLine: {'line': b'/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1078:36: warning: variable \xe2\x80\x98closest_other\xe2\x80\x99 set but not used [-Wunused-but-set-variable]\n'}
+[14.947839] (path_planner) StderrLine: {'line': b' 1078 |             int closest_main = -1, closest_other = -1;\n'}
+[14.948394] (path_planner) StderrLine: {'line': b'      |                                    ^~~~~~~~~~~~~\n'}
+[14.984494] (-) TimerEvent: {}
+[15.085143] (-) TimerEvent: {}
+[15.185672] (-) TimerEvent: {}
+[15.286342] (-) TimerEvent: {}
+[15.386909] (-) TimerEvent: {}
+[15.487500] (-) TimerEvent: {}
+[15.588072] (-) TimerEvent: {}
+[15.688669] (-) TimerEvent: {}
+[15.789241] (-) TimerEvent: {}
+[15.889772] (-) TimerEvent: {}
+[15.990280] (-) TimerEvent: {}
+[16.090830] (-) TimerEvent: {}
+[16.191393] (-) TimerEvent: {}
+[16.291944] (-) TimerEvent: {}
+[16.392440] (-) TimerEvent: {}
+[16.492939] (-) TimerEvent: {}
+[16.593452] (-) TimerEvent: {}
+[16.694010] (-) TimerEvent: {}
+[16.794593] (-) TimerEvent: {}
+[16.895142] (-) TimerEvent: {}
+[16.995650] (-) TimerEvent: {}
+[17.096188] (-) TimerEvent: {}
+[17.196748] (-) TimerEvent: {}
+[17.297274] (-) TimerEvent: {}
+[17.397856] (-) TimerEvent: {}
+[17.498467] (-) TimerEvent: {}
+[17.598963] (-) TimerEvent: {}
+[17.699519] (-) TimerEvent: {}
+[17.800071] (-) TimerEvent: {}
+[17.900626] (-) TimerEvent: {}
+[18.001168] (-) TimerEvent: {}
+[18.101719] (-) TimerEvent: {}
+[18.202232] (-) TimerEvent: {}
+[18.302786] (-) TimerEvent: {}
+[18.403329] (-) TimerEvent: {}
+[18.503868] (-) TimerEvent: {}
+[18.604408] (-) TimerEvent: {}
+[18.704988] (-) TimerEvent: {}
+[18.805526] (-) TimerEvent: {}
+[18.906392] (-) TimerEvent: {}
+[19.006980] (-) TimerEvent: {}
+[19.107551] (-) TimerEvent: {}
+[19.208079] (-) TimerEvent: {}
+[19.308626] (-) TimerEvent: {}
+[19.410370] (-) TimerEvent: {}
+[19.510891] (-) TimerEvent: {}
+[19.611505] (-) TimerEvent: {}
+[19.712041] (-) TimerEvent: {}
+[19.812562] (-) TimerEvent: {}
+[19.913077] (-) TimerEvent: {}
+[20.013630] (-) TimerEvent: {}
+[20.114277] (-) TimerEvent: {}
+[20.214822] (-) TimerEvent: {}
+[20.315426] (-) TimerEvent: {}
+[20.415981] (-) TimerEvent: {}
+[20.516587] (-) TimerEvent: {}
+[20.571320] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.588767] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.589425] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.589930] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.590632] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h: In instantiation of \xe2\x80\x98constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&) [with _T1 = double; _T2 = ImprovedCenterlinePlanner::Point2D]\xe2\x80\x99:\n'}
+[20.591199] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/predefined_ops.h:43:23:   required from \xe2\x80\x98constexpr bool __gnu_cxx::__ops::_Iter_less_iter::operator()(_Iterator1, _Iterator2) const [with _Iterator1 = __gnu_cxx::__normal_iterator<std::pair<double, ImprovedCenterlinePlanner::Point2D>*, std::vector<std::pair<double, ImprovedCenterlinePlanner::Point2D> > >; _Iterator2 = __gnu_cxx::__normal_iterator<std::pair<double, ImprovedCenterlinePlanner::Point2D>*, std::vector<std::pair<double, ImprovedCenterlinePlanner::Point2D> > >]\xe2\x80\x99\n'}
+[20.591736] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_algo.h:81:17:   required from \xe2\x80\x98void std::__move_median_to_first(_Iterator, _Iterator, _Iterator, _Iterator, _Compare) [with _Iterator = __gnu_cxx::__normal_iterator<std::pair<double, ImprovedCenterlinePlanner::Point2D>*, std::vector<std::pair<double, ImprovedCenterlinePlanner::Point2D> > >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]\xe2\x80\x99\n'}
+[20.592330] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_algo.h:1926:34:   required from \xe2\x80\x98_RandomAccessIterator std::__unguarded_partition_pivot(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<std::pair<double, ImprovedCenterlinePlanner::Point2D>*, std::vector<std::pair<double, ImprovedCenterlinePlanner::Point2D> > >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]\xe2\x80\x99\n'}
+[20.592839] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_algo.h:1958:38:   required from \xe2\x80\x98void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<std::pair<double, ImprovedCenterlinePlanner::Point2D>*, std::vector<std::pair<double, ImprovedCenterlinePlanner::Point2D> > >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]\xe2\x80\x99\n'}
+[20.593337] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_algo.h:1973:25:   required from \xe2\x80\x98void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<std::pair<double, ImprovedCenterlinePlanner::Point2D>*, std::vector<std::pair<double, ImprovedCenterlinePlanner::Point2D> > >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]\xe2\x80\x99\n'}
+[20.593872] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_algo.h:4873:18:   required from \xe2\x80\x98void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<std::pair<double, ImprovedCenterlinePlanner::Point2D>*, std::vector<std::pair<double, ImprovedCenterlinePlanner::Point2D> > >]\xe2\x80\x99\n'}
+[20.594500] (path_planner) StderrLine: {'line': b'/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1224:59:   required from here\n'}
+[20.594956] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: error: no match for \xe2\x80\x98operator<\xe2\x80\x99 (operand types are \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 and \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99)\n'}
+[20.595480] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.595926] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.596370] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:454:5: note: candidate: \xe2\x80\x98template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)\xe2\x80\x99\n'}
+[20.596783] (path_planner) StderrLine: {'line': b'  454 |     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)\n'}
+[20.597244] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.597629] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:454:5: note:   template argument deduction/substitution failed:\n'}
+[20.598138] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::pair<_T1, _T2>\xe2\x80\x99\n'}
+[20.598546] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.598916] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.599351] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n'}
+[20.599701] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.600123] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.600499] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.600856] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_iterator.h:331:5: note: candidate: \xe2\x80\x98template<class _Iterator> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)\xe2\x80\x99\n'}
+[20.601357] (path_planner) StderrLine: {'line': b'  331 |     operator<(const reverse_iterator<_Iterator>& __x,\n'}
+[20.601721] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.602197] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_iterator.h:331:5: note:   template argument deduction/substitution failed:\n'}
+[20.602627] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.602999] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.603432] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.603786] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.604147] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::reverse_iterator<_Iterator>\xe2\x80\x99\n'}
+[20.604590] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.604946] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.605320] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n'}
+[20.605713] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.606052] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.606506] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.606941] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_iterator.h:369:5: note: candidate: \xe2\x80\x98template<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)\xe2\x80\x99\n'}
+[20.607322] (path_planner) StderrLine: {'line': b'  369 |     operator<(const reverse_iterator<_IteratorL>& __x,\n'}
+[20.607696] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.608103] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_iterator.h:369:5: note:   template argument deduction/substitution failed:\n'}
+[20.608467] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.608805] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.609207] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.609660] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.610005] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::reverse_iterator<_Iterator>\xe2\x80\x99\n'}
+[20.610509] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.610898] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.611233] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n'}
+[20.611592] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.611981] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.612437] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.612836] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_iterator.h:1160:5: note: candidate: \xe2\x80\x98template<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)\xe2\x80\x99\n'}
+[20.613249] (path_planner) StderrLine: {'line': b' 1160 |     operator<(const move_iterator<_IteratorL>& __x,\n'}
+[20.613698] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.614055] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_iterator.h:1160:5: note:   template argument deduction/substitution failed:\n'}
+[20.614479] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.614855] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.615254] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.615591] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.615922] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::move_iterator<_IteratorL>\xe2\x80\x99\n'}
+[20.616333] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.616723] (-) TimerEvent: {}
+[20.616820] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.617152] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n'}
+[20.617507] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.617967] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.618383] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.618752] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_iterator.h:1166:5: note: candidate: \xe2\x80\x98template<class _Iterator> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)\xe2\x80\x99\n'}
+[20.619134] (path_planner) StderrLine: {'line': b' 1166 |     operator<(const move_iterator<_Iterator>& __x,\n'}
+[20.619535] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.619886] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_iterator.h:1166:5: note:   template argument deduction/substitution failed:\n'}
+[20.620230] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.620597] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.621026] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.621375] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.621718] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::move_iterator<_IteratorL>\xe2\x80\x99\n'}
+[20.622191] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.622638] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.624100] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/basic_string.h:48,\n'}
+[20.624557] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/string:55,\n'}
+[20.625006] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/stdexcept:39,\n'}
+[20.625450] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/array:39,\n'}
+[20.625804] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/tuple:39,\n'}
+[20.626244] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/bits/unique_ptr.h:37,\n'}
+[20.626646] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:80,\n'}
+[20.627053] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.627435] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.627791] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/string_view:507:5: note: candidate: \xe2\x80\x98template<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)\xe2\x80\x99\n'}
+[20.628239] (path_planner) StderrLine: {'line': b'  507 |     operator< (basic_string_view<_CharT, _Traits> __x,\n'}
+[20.628638] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.628980] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/string_view:507:5: note:   template argument deduction/substitution failed:\n'}
+[20.629340] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.629722] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.630224] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.630628] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.630975] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98std::basic_string_view<_CharT, _Traits>\xe2\x80\x99\n'}
+[20.631345] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.631755] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.632114] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/basic_string.h:48,\n'}
+[20.632479] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/string:55,\n'}
+[20.632825] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/stdexcept:39,\n'}
+[20.633245] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/array:39,\n'}
+[20.633592] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/tuple:39,\n'}
+[20.633929] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/bits/unique_ptr.h:37,\n'}
+[20.634380] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:80,\n'}
+[20.634757] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.635183] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.635528] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/string_view:513:5: note: candidate: \xe2\x80\x98template<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::__detail::__idt<std::basic_string_view<_CharT, _Traits> >)\xe2\x80\x99\n'}
+[20.635952] (path_planner) StderrLine: {'line': b'  513 |     operator< (basic_string_view<_CharT, _Traits> __x,\n'}
+[20.636334] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.636698] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/string_view:513:5: note:   template argument deduction/substitution failed:\n'}
+[20.637081] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.637438] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.637831] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.638235] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.638586] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98std::basic_string_view<_CharT, _Traits>\xe2\x80\x99\n'}
+[20.638981] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.639363] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.639697] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/basic_string.h:48,\n'}
+[20.640041] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/string:55,\n'}
+[20.640392] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/stdexcept:39,\n'}
+[20.640772] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/array:39,\n'}
+[20.641122] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/tuple:39,\n'}
+[20.641462] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/bits/unique_ptr.h:37,\n'}
+[20.641792] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:80,\n'}
+[20.642257] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.642603] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.642931] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/string_view:519:5: note: candidate: \xe2\x80\x98template<class _CharT, class _Traits> constexpr bool std::operator<(std::__detail::__idt<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)\xe2\x80\x99\n'}
+[20.643294] (path_planner) StderrLine: {'line': b'  519 |     operator< (__detail::__idt<basic_string_view<_CharT, _Traits>> __x,\n'}
+[20.643686] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.644026] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/string_view:519:5: note:   template argument deduction/substitution failed:\n'}
+[20.644359] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.644719] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.645091] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.645449] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.645797] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98std::basic_string_view<_CharT, _Traits>\xe2\x80\x99\n'}
+[20.646307] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.646770] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.647119] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/string:55,\n'}
+[20.647469] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/stdexcept:39,\n'}
+[20.647833] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/array:39,\n'}
+[20.648218] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/tuple:39,\n'}
+[20.648643] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/bits/unique_ptr.h:37,\n'}
+[20.648976] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:80,\n'}
+[20.649331] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.649726] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.650168] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/basic_string.h:6229:5: note: candidate: \xe2\x80\x98template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\xe2\x80\x99\n'}
+[20.650572] (path_planner) StderrLine: {'line': b' 6229 |     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[20.650915] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.651315] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/basic_string.h:6229:5: note:   template argument deduction/substitution failed:\n'}
+[20.651692] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.652025] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.652354] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.652770] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.653126] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\xe2\x80\x99\n'}
+[20.653467] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.653873] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.654355] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/string:55,\n'}
+[20.654823] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/stdexcept:39,\n'}
+[20.655172] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/array:39,\n'}
+[20.655517] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/tuple:39,\n'}
+[20.655917] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/bits/unique_ptr.h:37,\n'}
+[20.656282] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:80,\n'}
+[20.656615] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.656969] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.657344] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/basic_string.h:6242:5: note: candidate: \xe2\x80\x98template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)\xe2\x80\x99\n'}
+[20.657750] (path_planner) StderrLine: {'line': b' 6242 |     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[20.658167] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.658524] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/basic_string.h:6242:5: note:   template argument deduction/substitution failed:\n'}
+[20.658913] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.659305] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.659665] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.660074] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.660440] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\xe2\x80\x99\n'}
+[20.660816] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.661182] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.661514] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/string:55,\n'}
+[20.661863] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/stdexcept:39,\n'}
+[20.662354] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/array:39,\n'}
+[20.662719] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/tuple:39,\n'}
+[20.663062] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/bits/unique_ptr.h:37,\n'}
+[20.663394] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:80,\n'}
+[20.663788] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.664196] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.664533] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/basic_string.h:6254:5: note: candidate: \xe2\x80\x98template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\xe2\x80\x99\n'}
+[20.664873] (path_planner) StderrLine: {'line': b' 6254 |     operator<(const _CharT* __lhs,\n'}
+[20.665217] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.665608] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/basic_string.h:6254:5: note:   template argument deduction/substitution failed:\n'}
+[20.665970] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.666410] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.666755] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.667182] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.667546] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   mismatched types \xe2\x80\x98const _CharT*\xe2\x80\x99 and \xe2\x80\x98ImprovedCenterlinePlanner::Point2D\xe2\x80\x99\n'}
+[20.667882] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.668228] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.668605] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/tuple:39,\n'}
+[20.669004] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/bits/unique_ptr.h:37,\n'}
+[20.669351] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:80,\n'}
+[20.669684] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.670013] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.670468] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/array:262:5: note: candidate: \xe2\x80\x98template<class _Tp, long unsigned int _Nm> bool std::operator<(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)\xe2\x80\x99\n'}
+[20.670898] (path_planner) StderrLine: {'line': b'  262 |     operator<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)\n'}
+[20.671241] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.671582] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/array:262:5: note:   template argument deduction/substitution failed:\n'}
+[20.671976] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.672339] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.672688] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.673026] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.673389] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::array<_Tp, _Nm>\xe2\x80\x99\n'}
+[20.673818] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.674210] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.674599] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/unique_ptr.h:37,\n'}
+[20.674956] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:80,\n'}
+[20.675325] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.675709] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.676045] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/tuple:1432:5: note: candidate: \xe2\x80\x98template<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)\xe2\x80\x99\n'}
+[20.676384] (path_planner) StderrLine: {'line': b' 1432 |     operator<(const tuple<_TElements...>& __t,\n'}
+[20.676784] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.677147] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/tuple:1432:5: note:   template argument deduction/substitution failed:\n'}
+[20.677514] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.677870] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.678281] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.678681] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.679029] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::tuple<_Tps ...>\xe2\x80\x99\n'}
+[20.679371] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.679701] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.680104] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/memory:80,\n'}
+[20.680462] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.680831] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.681173] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/unique_ptr.h:749:5: note: candidate: \xe2\x80\x98template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)\xe2\x80\x99\n'}
+[20.681560] (path_planner) StderrLine: {'line': b'  749 |     operator<(const unique_ptr<_Tp, _Dp>& __x,\n'}
+[20.681967] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.682371] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/unique_ptr.h:749:5: note:   template argument deduction/substitution failed:\n'}
+[20.682710] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.683075] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.683454] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.683784] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.684124] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::unique_ptr<_Tp, _Dp>\xe2\x80\x99\n'}
+[20.684497] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.684851] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.685223] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/memory:80,\n'}
+[20.685557] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.685893] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.686341] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/unique_ptr.h:760:5: note: candidate: \xe2\x80\x98template<class _Tp, class _Dp> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)\xe2\x80\x99\n'}
+[20.686731] (path_planner) StderrLine: {'line': b'  760 |     operator<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)\n'}
+[20.687066] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.687415] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/unique_ptr.h:760:5: note:   template argument deduction/substitution failed:\n'}
+[20.687745] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.688126] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.688488] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.688831] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.689166] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::unique_ptr<_Tp, _Dp>\xe2\x80\x99\n'}
+[20.689572] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.689930] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.690332] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/memory:80,\n'}
+[20.690678] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.691055] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.691449] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/unique_ptr.h:766:5: note: candidate: \xe2\x80\x98template<class _Tp, class _Dp> bool std::operator<(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)\xe2\x80\x99\n'}
+[20.691833] (path_planner) StderrLine: {'line': b'  766 |     operator<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)\n'}
+[20.692168] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.692541] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/unique_ptr.h:766:5: note:   template argument deduction/substitution failed:\n'}
+[20.693015] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.693403] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.693758] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.694163] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.694575] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::unique_ptr<_Tp, _Dp>\xe2\x80\x99\n'}
+[20.694938] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.695347] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.695722] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/shared_ptr.h:52,\n'}
+[20.696068] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:81,\n'}
+[20.696441] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.696827] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.697244] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr_base.h:1444:5: note: candidate: \xe2\x80\x98template<class _Tp, class _Up, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)\xe2\x80\x99\n'}
+[20.697602] (path_planner) StderrLine: {'line': b' 1444 |     operator<(const __shared_ptr<_Tp, _Lp>& __a,\n'}
+[20.697986] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.698466] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr_base.h:1444:5: note:   template argument deduction/substitution failed:\n'}
+[20.698860] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.699204] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.699544] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.699933] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.700348] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::__shared_ptr<_Tp1, _Lp>\xe2\x80\x99\n'}
+[20.700699] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.701048] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.701386] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/shared_ptr.h:52,\n'}
+[20.701788] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:81,\n'}
+[20.702273] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.702650] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.703017] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr_base.h:1455:5: note: candidate: \xe2\x80\x98template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)\xe2\x80\x99\n'}
+[20.703435] (path_planner) StderrLine: {'line': b' 1455 |     operator<(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept\n'}
+[20.703887] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.704241] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr_base.h:1455:5: note:   template argument deduction/substitution failed:\n'}
+[20.704599] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.706020] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.706680] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.707098] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.707457] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::__shared_ptr<_Tp, _Lp>\xe2\x80\x99\n'}
+[20.707826] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.708247] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.708631] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/shared_ptr.h:52,\n'}
+[20.708988] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:81,\n'}
+[20.709364] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.709738] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.710222] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr_base.h:1463:5: note: candidate: \xe2\x80\x98template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)\xe2\x80\x99\n'}
+[20.710607] (path_planner) StderrLine: {'line': b' 1463 |     operator<(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept\n'}
+[20.710960] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.711362] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr_base.h:1463:5: note:   template argument deduction/substitution failed:\n'}
+[20.711749] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.712120] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.712488] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.712887] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.713292] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::__shared_ptr<_Tp, _Lp>\xe2\x80\x99\n'}
+[20.713732] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.714151] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.714562] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/memory:81,\n'}
+[20.714946] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.715342] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.715747] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:413:5: note: candidate: \xe2\x80\x98template<class _Tp, class _Up> bool std::operator<(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)\xe2\x80\x99\n'}
+[20.716114] (path_planner) StderrLine: {'line': b'  413 |     operator<(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept\n'}
+[20.716539] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.716932] (-) TimerEvent: {}
+[20.717035] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:413:5: note:   template argument deduction/substitution failed:\n'}
+[20.717387] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.717759] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.718229] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.718694] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.719048] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::shared_ptr<_Tp>\xe2\x80\x99\n'}
+[20.719398] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.719753] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.720150] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/memory:81,\n'}
+[20.720524] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.720894] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.721239] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:423:5: note: candidate: \xe2\x80\x98template<class _Tp> bool std::operator<(const std::shared_ptr<_Tp>&, std::nullptr_t)\xe2\x80\x99\n'}
+[20.721621] (path_planner) StderrLine: {'line': b'  423 |     operator<(const shared_ptr<_Tp>& __a, nullptr_t) noexcept\n'}
+[20.722038] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.722488] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:423:5: note:   template argument deduction/substitution failed:\n'}
+[20.722867] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.723249] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.723629] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.724020] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.724370] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::shared_ptr<_Tp>\xe2\x80\x99\n'}
+[20.724720] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.725145] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.725525] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/memory:81,\n'}
+[20.725866] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.726325] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.726711] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:431:5: note: candidate: \xe2\x80\x98template<class _Tp> bool std::operator<(std::nullptr_t, const std::shared_ptr<_Tp>&)\xe2\x80\x99\n'}
+[20.727121] (path_planner) StderrLine: {'line': b'  431 |     operator<(nullptr_t, const shared_ptr<_Tp>& __a) noexcept\n'}
+[20.727502] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.727850] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:431:5: note:   template argument deduction/substitution failed:\n'}
+[20.728441] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.728863] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.729234] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.729604] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.729963] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::shared_ptr<_Tp>\xe2\x80\x99\n'}
+[20.730435] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.730841] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.731179] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/mutex:42,\n'}
+[20.731511] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/future:38,\n'}
+[20.731851] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:18,\n'}
+[20.732262] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[20.732685] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.733021] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/system_error:208:3: note: candidate: \xe2\x80\x98bool std::operator<(const std::error_code&, const std::error_code&)\xe2\x80\x99\n'}
+[20.733417] (path_planner) StderrLine: {'line': b'  208 |   operator<(const error_code& __lhs, const error_code& __rhs) noexcept\n'}
+[20.733807] (path_planner) StderrLine: {'line': b'      |   ^~~~~~~~\n'}
+[20.734228] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/system_error:208:31: note:   no known conversion for argument 1 from \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 to \xe2\x80\x98const std::error_code&\xe2\x80\x99\n'}
+[20.734590] (path_planner) StderrLine: {'line': b'  208 |   operator<(const error_code& __lhs, const error_code& __rhs) noexcept\n'}
+[20.734943] (path_planner) StderrLine: {'line': b'      |             ~~~~~~~~~~~~~~~~~~^~~~~\n'}
+[20.735325] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/system_error:282:3: note: candidate: \xe2\x80\x98bool std::operator<(const std::error_condition&, const std::error_condition&)\xe2\x80\x99\n'}
+[20.735689] (path_planner) StderrLine: {'line': b'  282 |   operator<(const error_condition& __lhs,\n'}
+[20.736046] (path_planner) StderrLine: {'line': b'      |   ^~~~~~~~\n'}
+[20.736375] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/system_error:282:36: note:   no known conversion for argument 1 from \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 to \xe2\x80\x98const std::error_condition&\xe2\x80\x99\n'}
+[20.736759] (path_planner) StderrLine: {'line': b'  282 |   operator<(const error_condition& __lhs,\n'}
+[20.737147] (path_planner) StderrLine: {'line': b'      |             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~\n'}
+[20.737482] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/future:39,\n'}
+[20.737813] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:18,\n'}
+[20.738227] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[20.738627] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.739001] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/thread:290:3: note: candidate: \xe2\x80\x98bool std::operator<(std::thread::id, std::thread::id)\xe2\x80\x99\n'}
+[20.739379] (path_planner) StderrLine: {'line': b'  290 |   operator<(thread::id __x, thread::id __y) noexcept\n'}
+[20.739713] (path_planner) StderrLine: {'line': b'      |   ^~~~~~~~\n'}
+[20.740114] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/thread:290:24: note:   no known conversion for argument 1 from \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 to \xe2\x80\x98std::thread::id\xe2\x80\x99\n'}
+[20.740486] (path_planner) StderrLine: {'line': b'  290 |   operator<(thread::id __x, thread::id __y) noexcept\n'}
+[20.740820] (path_planner) StderrLine: {'line': b'      |             ~~~~~~~~~~~^~~\n'}
+[20.741179] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/node_handle.h:39,\n'}
+[20.741535] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/bits/stl_tree.h:72,\n'}
+[20.741910] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/set:60,\n'}
+[20.742313] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,\n'}
+[20.742654] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[20.743014] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[20.743409] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.743771] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/optional:1001:5: note: candidate: \xe2\x80\x98template<class _Tp, class _Up> constexpr std::__optional_relop_t<decltype ((declval<_Tp>() < declval<_Up>()))> std::operator<(const std::optional<_Tp>&, const std::optional<_Up>&)\xe2\x80\x99\n'}
+[20.744114] (path_planner) StderrLine: {'line': b' 1001 |     operator<(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)\n'}
+[20.744471] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.744842] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/optional:1001:5: note:   template argument deduction/substitution failed:\n'}
+[20.745238] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.745591] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.745926] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.746333] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.746727] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::optional<_Tp>\xe2\x80\x99\n'}
+[20.747093] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.747447] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.747786] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/node_handle.h:39,\n'}
+[20.748176] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/bits/stl_tree.h:72,\n'}
+[20.748552] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/set:60,\n'}
+[20.748888] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,\n'}
+[20.749220] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[20.749587] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[20.749968] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.750430] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/optional:1054:5: note: candidate: \xe2\x80\x98template<class _Tp> constexpr bool std::operator<(const std::optional<_Tp>&, std::nullopt_t)\xe2\x80\x99\n'}
+[20.750812] (path_planner) StderrLine: {'line': b' 1054 |     operator<(const optional<_Tp>& /* __lhs */, nullopt_t) noexcept\n'}
+[20.751180] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.751570] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/optional:1054:5: note:   template argument deduction/substitution failed:\n'}
+[20.751939] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.752276] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.752694] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.753055] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.753414] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::optional<_Tp>\xe2\x80\x99\n'}
+[20.753773] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.754158] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.754573] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/node_handle.h:39,\n'}
+[20.754962] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/bits/stl_tree.h:72,\n'}
+[20.755305] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/set:60,\n'}
+[20.755639] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,\n'}
+[20.756026] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[20.756414] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[20.756754] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.758368] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/optional:1059:5: note: candidate: \xe2\x80\x98template<class _Tp> constexpr bool std::operator<(std::nullopt_t, const std::optional<_Tp>&)\xe2\x80\x99\n'}
+[20.758789] (path_planner) StderrLine: {'line': b' 1059 |     operator<(nullopt_t, const optional<_Tp>& __rhs) noexcept\n'}
+[20.759225] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.759603] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/optional:1059:5: note:   template argument deduction/substitution failed:\n'}
+[20.759954] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.760307] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.760707] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.761084] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.761447] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::optional<_Tp>\xe2\x80\x99\n'}
+[20.761796] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.762270] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.762688] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/node_handle.h:39,\n'}
+[20.763035] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/bits/stl_tree.h:72,\n'}
+[20.763442] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/set:60,\n'}
+[20.763801] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,\n'}
+[20.764231] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[20.764600] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[20.764942] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.765295] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/optional:1119:5: note: candidate: \xe2\x80\x98template<class _Tp, class _Up> constexpr std::__optional_relop_t<decltype ((declval<_Tp>() < declval<_Up>()))> std::operator<(const std::optional<_Tp>&, const _Up&)\xe2\x80\x99\n'}
+[20.765698] (path_planner) StderrLine: {'line': b' 1119 |     operator<(const optional<_Tp>& __lhs, const _Up& __rhs)\n'}
+[20.766190] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.766578] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/optional:1119:5: note:   template argument deduction/substitution failed:\n'}
+[20.766922] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.767303] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.767707] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.768045] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.768421] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::optional<_Tp>\xe2\x80\x99\n'}
+[20.768854] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.769254] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.769604] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/node_handle.h:39,\n'}
+[20.769941] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/bits/stl_tree.h:72,\n'}
+[20.770366] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/set:60,\n'}
+[20.770809] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,\n'}
+[20.771174] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[20.771512] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[20.771859] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.772244] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/optional:1125:5: note: candidate: \xe2\x80\x98template<class _Tp, class _Up> constexpr std::__optional_relop_t<decltype ((declval<_Up>() < declval<_Tp>()))> std::operator<(const _Up&, const std::optional<_Tp>&)\xe2\x80\x99\n'}
+[20.772680] (path_planner) StderrLine: {'line': b' 1125 |     operator<(const _Up& __lhs, const optional<_Tp>& __rhs)\n'}
+[20.773066] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.773402] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/optional:1125:5: note:   template argument deduction/substitution failed:\n'}
+[20.773787] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.774285] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.774637] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.775038] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.775409] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::optional<_Tp>\xe2\x80\x99\n'}
+[20.775820] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.776153] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.776483] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/set:61,\n'}
+[20.776827] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,\n'}
+[20.777208] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[20.777580] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[20.777925] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.778337] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_set.h:996:5: note: candidate: \xe2\x80\x98template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)\xe2\x80\x99\n'}
+[20.778731] (path_planner) StderrLine: {'line': b'  996 |     operator<(const set<_Key, _Compare, _Alloc>& __x,\n'}
+[20.779094] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.779426] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_set.h:996:5: note:   template argument deduction/substitution failed:\n'}
+[20.779768] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.780144] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.780501] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.780863] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.781204] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::set<_Key, _Compare, _Allocator>\xe2\x80\x99\n'}
+[20.781542] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.781919] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.782379] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/set:62,\n'}
+[20.782712] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,\n'}
+[20.783041] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[20.783409] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[20.783786] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.784117] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_multiset.h:981:5: note: candidate: \xe2\x80\x98template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)\xe2\x80\x99\n'}
+[20.784491] (path_planner) StderrLine: {'line': b'  981 |     operator<(const multiset<_Key, _Compare, _Alloc>& __x,\n'}
+[20.784930] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.785317] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_multiset.h:981:5: note:   template argument deduction/substitution failed:\n'}
+[20.785649] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.785979] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.786387] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.786784] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.787146] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::multiset<_Key, _Compare, _Allocator>\xe2\x80\x99\n'}
+[20.787496] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.787824] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.788194] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/vector:67,\n'}
+[20.788553] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/functional:62,\n'}
+[20.788892] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n'}
+[20.789219] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/algorithm:71,\n'}
+[20.789586] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor.hpp:18,\n'}
+[20.789918] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,\n'}
+[20.790407] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[20.790772] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[20.791155] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.791552] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_vector.h:1905:5: note: candidate: \xe2\x80\x98template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)\xe2\x80\x99\n'}
+[20.791952] (path_planner) StderrLine: {'line': b' 1905 |     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)\n'}
+[20.792283] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.792630] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_vector.h:1905:5: note:   template argument deduction/substitution failed:\n'}
+[20.792983] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.793391] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.793777] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.794173] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.794542] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::vector<_Tp, _Alloc>\xe2\x80\x99\n'}
+[20.794928] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.795306] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.795644] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/list:63,\n'}
+[20.795992] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor.hpp:23,\n'}
+[20.796370] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,\n'}
+[20.796748] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[20.797126] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[20.797452] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.797781] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_list.h:2025:5: note: candidate: \xe2\x80\x98template<class _Tp, class _Alloc> bool std::operator<(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)\xe2\x80\x99\n'}
+[20.798204] (path_planner) StderrLine: {'line': b' 2025 |     operator<(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)\n'}
+[20.798601] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.798973] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_list.h:2025:5: note:   template argument deduction/substitution failed:\n'}
+[20.799305] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.799631] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.800044] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.800417] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.800749] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::__cxx11::list<_Tp, _Alloc>\xe2\x80\x99\n'}
+[20.801110] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.801509] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.801884] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/map:61,\n'}
+[20.802293] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/client.hpp:20,\n'}
+[20.802649] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,\n'}
+[20.802978] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,\n'}
+[20.803378] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,\n'}
+[20.803733] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,\n'}
+[20.804059] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,\n'}
+[20.804391] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,\n'}
+[20.804747] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,\n'}
+[20.805105] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[20.805475] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[20.805801] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.806174] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_map.h:1472:5: note: candidate: \xe2\x80\x98template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)\xe2\x80\x99\n'}
+[20.806634] (path_planner) StderrLine: {'line': b' 1472 |     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,\n'}
+[20.807002] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.807331] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_map.h:1472:5: note:   template argument deduction/substitution failed:\n'}
+[20.807686] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.808036] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.808413] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.808759] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.809125] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::map<_Key, _Tp, _Compare, _Allocator>\xe2\x80\x99\n'}
+[20.809528] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.809906] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.810324] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/map:62,\n'}
+[20.810679] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/client.hpp:20,\n'}
+[20.811008] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,\n'}
+[20.811354] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,\n'}
+[20.811739] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,\n'}
+[20.812102] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,\n'}
+[20.812427] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,\n'}
+[20.812774] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,\n'}
+[20.813163] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,\n'}
+[20.813515] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[20.813865] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[20.814250] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.814609] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_multimap.h:1136:5: note: candidate: \xe2\x80\x98template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)\xe2\x80\x99\n'}
+[20.814990] (path_planner) StderrLine: {'line': b' 1136 |     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,\n'}
+[20.815342] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.815663] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_multimap.h:1136:5: note:   template argument deduction/substitution failed:\n'}
+[20.816008] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.816383] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.816745] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.817063] (-) TimerEvent: {}
+[20.817158] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.817543] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::multimap<_Key, _Tp, _Compare, _Allocator>\xe2\x80\x99\n'}
+[20.817933] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.818393] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.818733] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/deque:67,\n'}
+[20.819106] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/queue:60,\n'}
+[20.819481] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46,\n'}
+[20.819903] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching/detail/util.hpp:119,\n'}
+[20.820291] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48,\n'}
+[20.820637] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching.hpp:50,\n'}
+[20.820970] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/opencv.hpp:86,\n'}
+[20.821559] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:6:\n'}
+[20.821988] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_deque.h:312:5: note: candidate: \xe2\x80\x98template<class _Tp, class _Ref, class _Ptr> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)\xe2\x80\x99\n'}
+[20.822412] (path_planner) StderrLine: {'line': b'  312 |     operator<(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,\n'}
+[20.822760] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.823093] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_deque.h:312:5: note:   template argument deduction/substitution failed:\n'}
+[20.823503] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.823866] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.824193] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.824526] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.824879] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::_Deque_iterator<_Tp, _Ref, _Ptr>\xe2\x80\x99\n'}
+[20.825247] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.825631] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.825958] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/deque:67,\n'}
+[20.826402] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/queue:60,\n'}
+[20.826766] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46,\n'}
+[20.827144] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching/detail/util.hpp:119,\n'}
+[20.827563] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48,\n'}
+[20.827907] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching.hpp:50,\n'}
+[20.828291] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/opencv.hpp:86,\n'}
+[20.828664] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:6:\n'}
+[20.829098] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_deque.h:320:5: note: candidate: \xe2\x80\x98template<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)\xe2\x80\x99\n'}
+[20.829451] (path_planner) StderrLine: {'line': b'  320 |     operator<(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,\n'}
+[20.829812] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.830219] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_deque.h:320:5: note:   template argument deduction/substitution failed:\n'}
+[20.830572] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.830993] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.831360] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.831696] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.832063] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::_Deque_iterator<_Tp, _Ref, _Ptr>\xe2\x80\x99\n'}
+[20.832399] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.832783] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.833167] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/deque:67,\n'}
+[20.833499] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/queue:60,\n'}
+[20.833827] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46,\n'}
+[20.834307] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching/detail/util.hpp:119,\n'}
+[20.834699] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48,\n'}
+[20.835046] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching.hpp:50,\n'}
+[20.835434] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/opencv.hpp:86,\n'}
+[20.835766] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:6:\n'}
+[20.836108] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_deque.h:2330:5: note: candidate: \xe2\x80\x98template<class _Tp, class _Alloc> bool std::operator<(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)\xe2\x80\x99\n'}
+[20.836463] (path_planner) StderrLine: {'line': b' 2330 |     operator<(const deque<_Tp, _Alloc>& __x,\n'}
+[20.836832] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.837229] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_deque.h:2330:5: note:   template argument deduction/substitution failed:\n'}
+[20.837565] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.837902] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.838324] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.838717] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.839137] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::deque<_Tp, _Alloc>\xe2\x80\x99\n'}
+[20.839542] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.839877] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.840234] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/queue:64,\n'}
+[20.840599] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46,\n'}
+[20.840992] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching/detail/util.hpp:119,\n'}
+[20.841334] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48,\n'}
+[20.841667] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/stitching.hpp:50,\n'}
+[20.842000] (path_planner) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/opencv.hpp:86,\n'}
+[20.842476] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:6:\n'}
+[20.842872] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_queue.h:356:5: note: candidate: \xe2\x80\x98template<class _Tp, class _Seq> bool std::operator<(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)\xe2\x80\x99\n'}
+[20.843221] (path_planner) StderrLine: {'line': b'  356 |     operator<(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)\n'}
+[20.843569] (path_planner) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[20.843902] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_queue.h:356:5: note:   template argument deduction/substitution failed:\n'}
+[20.844269] (path_planner) StderrLine: {'line': b'In file included from /usr/include/c++/9/bits/stl_algobase.h:64,\n'}
+[20.844671] (path_planner) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:62,\n'}
+[20.845021] (path_planner) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[20.845351] (path_planner) StderrLine: {'line': b'                 from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:\n'}
+[20.845793] (path_planner) StderrLine: {'line': b'/usr/include/c++/9/bits/stl_pair.h:456:50: note:   \xe2\x80\x98const ImprovedCenterlinePlanner::Point2D\xe2\x80\x99 is not derived from \xe2\x80\x98const std::queue<_Tp, _Seq>\xe2\x80\x99\n'}
+[20.846287] (path_planner) StderrLine: {'line': b'  456 |       || (!(__y.first < __x.first) && __x.second < __y.second); }\n'}
+[20.846708] (path_planner) StderrLine: {'line': b'      |                                       ~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[20.917331] (-) TimerEvent: {}
+[21.017963] (-) TimerEvent: {}
+[21.118618] (-) TimerEvent: {}
+[21.219227] (-) TimerEvent: {}
+[21.319959] (-) TimerEvent: {}
+[21.420525] (-) TimerEvent: {}
+[21.521128] (-) TimerEvent: {}
+[21.621738] (-) TimerEvent: {}
+[21.722329] (-) TimerEvent: {}
+[21.822917] (-) TimerEvent: {}
+[21.923489] (-) TimerEvent: {}
+[22.024004] (-) TimerEvent: {}
+[22.124592] (-) TimerEvent: {}
+[22.225148] (-) TimerEvent: {}
+[22.326307] (-) TimerEvent: {}
+[22.426833] (-) TimerEvent: {}
+[22.527316] (-) TimerEvent: {}
+[22.627807] (-) TimerEvent: {}
+[22.729580] (-) TimerEvent: {}
+[22.830160] (-) TimerEvent: {}
+[22.930698] (-) TimerEvent: {}
+[23.031168] (-) TimerEvent: {}
+[23.131672] (-) TimerEvent: {}
+[23.232118] (-) TimerEvent: {}
+[23.332610] (-) TimerEvent: {}
+[23.433142] (-) TimerEvent: {}
+[23.533657] (-) TimerEvent: {}
+[23.634253] (-) TimerEvent: {}
+[23.734777] (-) TimerEvent: {}
+[23.835300] (-) TimerEvent: {}
+[23.935806] (-) TimerEvent: {}
+[24.036357] (-) TimerEvent: {}
+[24.136889] (-) TimerEvent: {}
+[24.237379] (-) TimerEvent: {}
+[24.337951] (-) TimerEvent: {}
+[24.438625] (-) TimerEvent: {}
+[24.539173] (-) TimerEvent: {}
+[24.639735] (-) TimerEvent: {}
+[24.740305] (-) TimerEvent: {}
+[24.840966] (-) TimerEvent: {}
+[24.941496] (-) TimerEvent: {}
+[25.042203] (-) TimerEvent: {}
+[25.142747] (-) TimerEvent: {}
+[25.243295] (-) TimerEvent: {}
+[25.343817] (-) TimerEvent: {}
+[25.444396] (-) TimerEvent: {}
+[25.544914] (-) TimerEvent: {}
+[25.645523] (-) TimerEvent: {}
+[25.746163] (-) TimerEvent: {}
+[25.846811] (-) TimerEvent: {}
+[25.947365] (-) TimerEvent: {}
+[26.047896] (-) TimerEvent: {}
+[26.148430] (-) TimerEvent: {}
+[26.156285] (path_planner) StderrLine: {'line': b'make[2]: *** [CMakeFiles/min_curvature_planner.dir/build.make:63: CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o] Error 1\n'}
+[26.158025] (path_planner) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/min_curvature_planner.dir/all] Error 2\n'}
+[26.159152] (path_planner) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[26.170664] (path_planner) CommandEnded: {'returncode': 2}
+[26.236003] (path_planner) JobEnded: {'identifier': 'path_planner', 'rc': 2}
+[26.247877] (-) EventReactorShutdown: {}

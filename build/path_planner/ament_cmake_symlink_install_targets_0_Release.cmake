@@ -1,1 +1,1 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/f1/f1tenth_ws/build/path_planner/min_curvature_planner" "TARGETS" "min_curvature_planner" "DESTINATION" "lib/path_planner")
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/f1/f1tenth_ws/build/path_planner/path_planner_centerline_extractor" "TARGETS" "path_planner_centerline_extractor" "DESTINATION" "lib/path_planner")

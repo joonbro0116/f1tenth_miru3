@@ -1,0 +1,17 @@
+[01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1090:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid ImprovedCenterlinePlanner::createRacingLine()[m[K’ cannot be overloaded with ‘[01m[Kvoid ImprovedCenterlinePlanner::createRacingLine()[m[K’
+ 1090 |     void [01;31m[KcreateRacingLine[m[K()
+      |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:967:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid ImprovedCenterlinePlanner::createRacingLine()[m[K’
+  967 |     void [01;36m[KcreateRacingLine[m[K()
+      |          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:[m[K In member function ‘[01m[Kdouble ImprovedCenterlinePlanner::calculateRidgeStrength(const cv::Mat&, int, int)[m[K’:
+[01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:575:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klambda1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  575 |         float [01;35m[Klambda1[m[K = (trace + sqrt_disc) / 2.0f;
+      |               [01;35m[K^~~~~~~[m[K
+[01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:[m[K In member function ‘[01m[Kstd::vector<ImprovedCenterlinePlanner::RidgePoint> ImprovedCenterlinePlanner::detectRidgePoints(const cv::Mat&)[m[K’:
+[01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:859:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kridge_threshold[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  859 |         const float [01;35m[Kridge_threshold[m[K = 0.5; // Ridge strength threshold
+      |                     [01;35m[K^~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/min_curvature_planner.dir/build.make:63: CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/min_curvature_planner.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

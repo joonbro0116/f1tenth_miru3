@@ -1,0 +1,4 @@
+[01m[K/home/f1/f1tenth_ws/src/path_planner/src/centerline.cpp:[m[K In member function ‘[01m[Kcv::Point2d TrackCenterlineExtractor::getPerpendicularDirection(const std::vector<cv::Point_<int> >&, int)[m[K’:
+[01m[K/home/f1/f1tenth_ws/src/path_planner/src/centerline.cpp:139:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<int> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  139 |         } else if([01;35m[Kidx == centerline.size() - 1[m[K) {
+      |                   [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K

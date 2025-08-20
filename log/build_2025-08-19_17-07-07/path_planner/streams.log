@@ -1,0 +1,23 @@
+[0.347s] Invoking command in '/home/f1/f1tenth_ws/build/path_planner': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_planner -- -j6 -l6
+[1.264s] [35m[1mScanning dependencies of target min_curvature_planner[0m
+[2.406s] [ 50%] [32mBuilding CXX object CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o[0m
+[30.853s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:[m[K In member function ‘[01m[Kvoid ImprovedCenterlinePlanner::extractCenterlineWithRidgeDetection()[m[K’:
+[30.854s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:504:29:[m[K [01;31m[Kerror: [m[K‘[01m[KsmoothCenterlinePath[m[K’ was not declared in this scope; did you mean ‘[01m[KpublishCenterlineAsPath[m[K’?
+[30.855s]   504 |         track_centerline_ = [01;31m[KsmoothCenterlinePath[m[K(centerline_path);
+[30.855s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[30.856s]       |                             [32m[KpublishCenterlineAsPath[m[K
+[30.896s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:[m[K In member function ‘[01m[Kdouble ImprovedCenterlinePlanner::calculateRidgeStrength(const cv::Mat&, int, int)[m[K’:
+[30.897s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:586:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klambda1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[30.898s]   586 |         float [01;35m[Klambda1[m[K = (trace + sqrt_disc) / 2.0f;
+[30.898s]       |               [01;35m[K^~~~~~~[m[K
+[31.005s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:[m[K In member function ‘[01m[Kstd::vector<ImprovedCenterlinePlanner::Point2D> ImprovedCenterlinePlanner::findLongestRidgePathOptimized(const std::vector<ImprovedCenterlinePlanner::RidgePoint>&)[m[K’:
+[31.006s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:780:24:[m[K [01;31m[Kerror: [m[K‘[01m[KgetPathIndicesFromWorldPath[m[K’ was not declared in this scope
+[31.007s]   780 |         for (int idx : [01;31m[KgetPathIndicesFromWorldPath[m[K(longest_path, ridge_points)) {
+[31.007s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[31.050s] [01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:787:26:[m[K [01;31m[Kerror: [m[K‘[01m[KsortPathForClosedLoop[m[K’ was not declared in this scope
+[31.051s]   787 |             world_path = [01;31m[KsortPathForClosedLoop[m[K(world_path);
+[31.051s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[44.179s] make[2]: *** [CMakeFiles/min_curvature_planner.dir/build.make:63: CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o] Error 1
+[44.180s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/min_curvature_planner.dir/all] Error 2
+[44.189s] make: *** [Makefile:141: all] Error 2
+[44.217s] Invoked command in '/home/f1/f1tenth_ws/build/path_planner' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_planner -- -j6 -l6

@@ -310,7 +310,7 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "min_curvature_planner" "DESTINATION" "lib/path_planner")
+# install("TARGETS" "path_planner_centerline_extractor" "DESTINATION" "lib/path_planner")
 include("/home/f1/f1tenth_ws/build/path_planner/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/path_planner")

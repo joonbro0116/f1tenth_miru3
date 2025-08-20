@@ -1,0 +1,320 @@
+[0.076s] Invoking command in '/home/f1/f1tenth_ws/build/path_planner': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_planner -- -j6 -l6
+[0.470s] Scanning dependencies of target min_curvature_planner
+[0.568s] [ 50%] Building CXX object CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o
+[13.571s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:538:17: error: ‘RidgePoint’ was not declared in this scope
+[13.571s]   538 |     std::vector<RidgePoint> detectRidgePoints(const cv::Mat& distance_map)
+[13.572s]       |                 ^~~~~~~~~~
+[13.572s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:538:27: error: template argument 1 is invalid
+[13.573s]   538 |     std::vector<RidgePoint> detectRidgePoints(const cv::Mat& distance_map)
+[13.573s]       |                           ^
+[13.574s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:538:27: error: template argument 2 is invalid
+[13.596s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:629:38: error: ‘RidgePoint’ was not declared in this scope
+[13.596s]   629 |     void buildRidgeGraph(std::vector<RidgePoint>& ridge_points)
+[13.597s]       |                                      ^~~~~~~~~~
+[13.597s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:629:48: error: template argument 1 is invalid
+[13.598s]   629 |     void buildRidgeGraph(std::vector<RidgePoint>& ridge_points)
+[13.598s]       |                                                ^
+[13.599s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:629:48: error: template argument 2 is invalid
+[13.621s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:687:43: error: ‘RidgePoint’ was not declared in this scope
+[13.622s]   687 |     void dfsLongestPath(const std::vector<RidgePoint>& ridge_points,
+[13.622s]       |                                           ^~~~~~~~~~
+[13.623s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:687:53: error: template argument 1 is invalid
+[13.623s]   687 |     void dfsLongestPath(const std::vector<RidgePoint>& ridge_points,
+[13.623s]       |                                                     ^
+[13.624s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:687:53: error: template argument 2 is invalid
+[13.646s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:740:74: error: ‘RidgePoint’ was not declared in this scope
+[13.647s]   740 |     std::vector<Point2D> findLongestRidgePathOptimized(const std::vector<RidgePoint>& ridge_points)
+[13.647s]       |                                                                          ^~~~~~~~~~
+[13.648s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:740:84: error: template argument 1 is invalid
+[13.648s]   740 |     std::vector<Point2D> findLongestRidgePathOptimized(const std::vector<RidgePoint>& ridge_points)
+[13.648s]       |                                                                                    ^
+[13.649s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:740:84: error: template argument 2 is invalid
+[13.669s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:800:65: error: ‘RidgePoint’ was not declared in this scope
+[13.669s]   800 |     std::vector<Point2D> simplePathConnection(const std::vector<RidgePoint>& ridge_points)
+[13.669s]       |                                                                 ^~~~~~~~~~
+[13.670s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:800:75: error: template argument 1 is invalid
+[13.670s]   800 |     std::vector<Point2D> simplePathConnection(const std::vector<RidgePoint>& ridge_points)
+[13.671s]       |                                                                           ^
+[13.671s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:800:75: error: template argument 2 is invalid
+[13.690s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:907:49: error: ‘RidgePoint’ was not declared in this scope
+[13.690s]   907 |     int findClosestRidgePoint(const std::vector<RidgePoint>& ridge_points, const Point2D& start_pos)
+[13.691s]       |                                                 ^~~~~~~~~~
+[13.691s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:907:59: error: template argument 1 is invalid
+[13.692s]   907 |     int findClosestRidgePoint(const std::vector<RidgePoint>& ridge_points, const Point2D& start_pos)
+[13.692s]       |                                                           ^
+[13.692s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:907:59: error: template argument 2 is invalid
+[13.711s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:940:72: error: ‘RidgePoint’ was not declared in this scope
+[13.712s]   940 |     std::vector<Point2D> findCenterlinePathFromStart(const std::vector<RidgePoint>& ridge_points, int start_idx)
+[13.712s]       |                                                                        ^~~~~~~~~~
+[13.712s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:940:82: error: template argument 1 is invalid
+[13.713s]   940 |     std::vector<Point2D> findCenterlinePathFromStart(const std::vector<RidgePoint>& ridge_points, int start_idx)
+[13.713s]       |                                                                                  ^
+[13.713s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:940:82: error: template argument 2 is invalid
+[13.731s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1019:77: error: ‘RidgePoint’ was not declared in this scope
+[13.732s]  1019 |     std::vector<std::vector<int>> findConnectedComponents(const std::vector<RidgePoint>& ridge_points)
+[13.732s]       |                                                                             ^~~~~~~~~~
+[13.733s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1019:87: error: template argument 1 is invalid
+[13.733s]  1019 |     std::vector<std::vector<int>> findConnectedComponents(const std::vector<RidgePoint>& ridge_points)
+[13.733s]       |                                                                                       ^
+[13.734s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1019:87: error: template argument 2 is invalid
+[13.752s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1060:64: error: ‘RidgePoint’ was not declared in this scope
+[13.753s]  1060 |     std::vector<int> connectNearbyComponents(const std::vector<RidgePoint>& ridge_points,
+[13.753s]       |                                                                ^~~~~~~~~~
+[13.753s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1060:74: error: template argument 1 is invalid
+[13.754s]  1060 |     std::vector<int> connectNearbyComponents(const std::vector<RidgePoint>& ridge_points,
+[13.754s]       |                                                                          ^
+[13.755s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1060:74: error: template argument 2 is invalid
+[13.776s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1104:72: error: ‘RidgePoint’ was not declared in this scope
+[13.777s]  1104 |     std::vector<Point2D> findBidirectionalClosedPath(const std::vector<RidgePoint>& ridge_points,
+[13.777s]       |                                                                        ^~~~~~~~~~
+[13.777s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1104:82: error: template argument 1 is invalid
+[13.778s]  1104 |     std::vector<Point2D> findBidirectionalClosedPath(const std::vector<RidgePoint>& ridge_points,
+[13.778s]       |                                                                                  ^
+[13.778s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1104:82: error: template argument 2 is invalid
+[13.797s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1150:56: error: ‘RidgePoint’ was not declared in this scope
+[13.797s]  1150 |     std::vector<Point2D> explorePath(const std::vector<RidgePoint>& ridge_points,
+[13.798s]       |                                                        ^~~~~~~~~~
+[13.798s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1150:66: error: template argument 1 is invalid
+[13.799s]  1150 |     std::vector<Point2D> explorePath(const std::vector<RidgePoint>& ridge_points,
+[13.799s]       |                                                                  ^
+[13.799s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1150:66: error: template argument 2 is invalid
+[13.817s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1188:61: error: ‘RidgePoint’ was not declared in this scope
+[13.818s]  1188 |     std::vector<Point2D> createRadialPath(const std::vector<RidgePoint>& ridge_points,
+[13.818s]       |                                                             ^~~~~~~~~~
+[13.819s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1188:71: error: template argument 1 is invalid
+[13.819s]  1188 |     std::vector<Point2D> createRadialPath(const std::vector<RidgePoint>& ridge_points,
+[13.820s]       |                                                                       ^
+[13.820s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1188:71: error: template argument 2 is invalid
+[13.837s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1235:70: error: ‘RidgePoint’ was not declared in this scope
+[13.838s]  1235 |     std::vector<Point2D> createSimpleConnectedPath(const std::vector<RidgePoint>& ridge_points,
+[13.838s]       |                                                                      ^~~~~~~~~~
+[13.838s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1235:80: error: template argument 1 is invalid
+[13.839s]  1235 |     std::vector<Point2D> createSimpleConnectedPath(const std::vector<RidgePoint>& ridge_points,
+[13.839s]       |                                                                                ^
+[13.840s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1235:80: error: template argument 2 is invalid
+[14.079s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘void ImprovedCenterlinePlanner::extractCenterlineWithRidgeDetection()’:
+[14.080s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:491:21: error: ‘RidgePoint’ was not declared in this scope
+[14.080s]   491 |         std::vector<RidgePoint> ridge_points = detectRidgePoints(distance_map);
+[14.081s]       |                     ^~~~~~~~~~
+[14.081s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:491:31: error: template argument 1 is invalid
+[14.081s]   491 |         std::vector<RidgePoint> ridge_points = detectRidgePoints(distance_map);
+[14.082s]       |                               ^
+[14.083s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:491:31: error: template argument 2 is invalid
+[14.084s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:493:26: error: request for member ‘empty’ in ‘ridge_points’, which is of non-class type ‘int’
+[14.084s]   493 |         if (ridge_points.empty()) {
+[14.084s]       |                          ^~~~~
+[14.085s] In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,
+[14.085s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[14.086s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[14.086s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[14.086s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[14.087s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[14.087s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[14.088s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[14.088s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[14.088s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[14.089s]                  from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+[14.089s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:498:95: error: request for member ‘size’ in ‘ridge_points’, which is of non-class type ‘int’
+[14.090s]   498 |         RCLCPP_INFO(this->get_logger(), "Ridge 포인트 검출 완료: %zu개", ridge_points.size());
+[14.090s]       |                                                                                               ^~~~
+[14.115s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘int ImprovedCenterlinePlanner::detectRidgePoints(const cv::Mat&)’:
+[14.116s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:540:21: error: ‘RidgePoint’ was not declared in this scope
+[14.117s]   540 |         std::vector<RidgePoint> ridge_points;
+[14.117s]       |                     ^~~~~~~~~~
+[14.118s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:540:31: error: template argument 1 is invalid
+[14.118s]   540 |         std::vector<RidgePoint> ridge_points;
+[14.119s]       |                               ^
+[14.119s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:540:31: error: template argument 2 is invalid
+[14.120s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:561:38: error: request for member ‘emplace_back’ in ‘ridge_points’, which is of non-class type ‘int’
+[14.120s]   561 |                         ridge_points.emplace_back(x, y, world_x, world_y, ridge_strength);
+[14.120s]       |                                      ^~~~~~~~~~~~
+[14.122s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘double ImprovedCenterlinePlanner::calculateRidgeStrength(const cv::Mat&, int, int)’:
+[14.122s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:594:15: warning: unused variable ‘lambda1’ [-Wunused-variable]
+[14.123s]   594 |         float lambda1 = (trace + sqrt_disc) / 2.0f;
+[14.125s]       |               ^~~~~~~
+[14.126s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘void ImprovedCenterlinePlanner::buildRidgeGraph(int&)’:
+[14.126s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:633:45: error: request for member ‘size’ in ‘ridge_points’, which is of non-class type ‘int’
+[14.126s]   633 |         for (size_t i = 0; i < ridge_points.size(); ++i) {
+[14.127s]       |                                             ^~~~
+[14.128s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:634:53: error: request for member ‘size’ in ‘ridge_points’, which is of non-class type ‘int’
+[14.128s]   634 |             for (size_t j = i + 1; j < ridge_points.size(); ++j) {
+[14.128s]       |                                                     ^~~~
+[14.129s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:635:46: error: invalid types ‘int[size_t {aka long unsigned int}]’ for array subscript
+[14.129s]   635 |                 Point2D diff = ridge_points[i].world_pos - ridge_points[j].world_pos;
+[14.130s]       |                                              ^
+[14.130s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:635:74: error: invalid types ‘int[size_t {aka long unsigned int}]’ for array subscript
+[14.130s]   635 |                 Point2D diff = ridge_points[i].world_pos - ridge_points[j].world_pos;
+[14.131s]       |                                                                          ^
+[14.131s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:640:51: error: invalid types ‘int[size_t {aka long unsigned int}]’ for array subscript
+[14.132s]   640 |                     if (isPathClear(ridge_points[i].grid_pos, ridge_points[j].grid_pos)) {
+[14.132s]       |                                                   ^
+[14.134s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:640:77: error: invalid types ‘int[size_t {aka long unsigned int}]’ for array subscript
+[14.134s]   640 |                     if (isPathClear(ridge_points[i].grid_pos, ridge_points[j].grid_pos)) {
+[14.134s]       |                                                                             ^
+[14.135s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:641:39: error: invalid types ‘int[size_t {aka long unsigned int}]’ for array subscript
+[14.136s]   641 |                         ridge_points[i].neighbors.push_back(j);
+[14.137s]       |                                       ^
+[14.137s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:642:39: error: invalid types ‘int[size_t {aka long unsigned int}]’ for array subscript
+[14.138s]   642 |                         ridge_points[j].neighbors.push_back(i);
+[14.138s]       |                                       ^
+[14.138s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘void ImprovedCenterlinePlanner::dfsLongestPath(const int&, int, std::vector<bool, std::allocator<bool> >&, std::vector<int>&, std::vector<ImprovedCenterlinePlanner::Point2D>&, int&, int)’:
+[14.139s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:701:60: error: invalid types ‘const int[int]’ for array subscript
+[14.139s]   701 |                     longest_path.push_back(ridge_points[idx].world_pos);
+[14.140s]       |                                                            ^
+[14.140s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:712:57: error: invalid types ‘const int[int]’ for array subscript
+[14.141s]   712 |         for (int neighbor_idx : ridge_points[current_idx].neighbors) {
+[14.144s]       |                                                         ^
+[14.145s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:731:56: error: invalid types ‘const int[int]’ for array subscript
+[14.145s]   731 |                 longest_path.push_back(ridge_points[idx].world_pos);
+[14.145s]       |                                                        ^
+[14.146s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘std::vector<ImprovedCenterlinePlanner::Point2D> ImprovedCenterlinePlanner::findLongestRidgePathOptimized(const int&)’:
+[14.146s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:742:26: error: request for member ‘empty’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.148s]   742 |         if (ridge_points.empty()) return {};
+[14.149s]       |                          ^~~~~
+[14.149s] In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,
+[14.150s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[14.151s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[14.151s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[14.151s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[14.152s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[14.152s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[14.153s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[14.153s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[14.154s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[14.154s]                  from /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1:
+[14.155s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:744:117: error: request for member ‘size’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.155s]   744 |         RCLCPP_INFO(this->get_logger(), "최적화된 경로 탐색 시작 (Ridge 포인트: %zu개)", ridge_points.size());
+[14.156s]       |                                                                                                                     ^~~~
+[14.156s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:751:45: error: request for member ‘size’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.156s]   751 |         for (size_t i = 0; i < ridge_points.size(); ++i) {
+[14.157s]       |                                             ^~~~
+[14.157s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:752:31: error: invalid types ‘const int[size_t {aka long unsigned int}]’ for array subscript
+[14.158s]   752 |             if (ridge_points[i].neighbors.size() <= 2) { // 끝점이나 직선 구간
+[14.161s]       |                               ^
+[14.162s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:769:52: error: request for member ‘size’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.162s]   769 |             std::vector<bool> visited(ridge_points.size(), false);
+[14.163s]       |                                                    ^~~~
+[14.163s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:783:51: error: request for member ‘empty’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.164s]   783 |         if (longest_path.empty() && !ridge_points.empty()) {
+[14.164s]       |                                                   ^~~~~
+[14.164s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘std::vector<ImprovedCenterlinePlanner::Point2D> ImprovedCenterlinePlanner::simplePathConnection(const int&)’:
+[14.165s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:802:26: error: request for member ‘empty’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.165s]   802 |         if (ridge_points.empty()) return {};
+[14.166s]       |                          ^~~~~
+[14.166s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:805:45: error: request for member ‘size’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.166s]   805 |         std::vector<bool> used(ridge_points.size(), false);
+[14.167s]       |                                             ^~~~
+[14.167s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:809:45: error: request for member ‘size’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.168s]   809 |         for (size_t i = 1; i < ridge_points.size(); ++i) {
+[14.168s]       |                                             ^~~~
+[14.168s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:810:31: error: invalid types ‘const int[size_t {aka long unsigned int}]’ for array subscript
+[14.169s]   810 |             if (ridge_points[i].world_pos.x < ridge_points[current_idx].world_pos.x) {
+[14.169s]       |                               ^
+[14.169s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:810:71: error: invalid types ‘const int[int]’ for array subscript
+[14.170s]   810 |             if (ridge_points[i].world_pos.x < ridge_points[current_idx].world_pos.x) {
+[14.171s]       |                                                                       ^
+[14.172s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:815:55: error: invalid types ‘const int[int]’ for array subscript
+[14.172s]   815 |         simple_path.push_back(ridge_points[current_idx].world_pos);
+[14.172s]       |                                                       ^
+[14.173s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:819:50: error: request for member ‘size’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.173s]   819 |         while (simple_path.size() < ridge_points.size() && simple_path.size() < 200) {
+[14.174s]       |                                                  ^~~~
+[14.174s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:824:61: error: invalid types ‘const int[int]’ for array subscript
+[14.175s]   824 |             for (int neighbor_idx : ridge_points[current_idx].neighbors) {
+[14.176s]       |                                                             ^
+[14.176s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:826:61: error: invalid types ‘const int[int]’ for array subscript
+[14.176s]   826 |                     Point2D diff = ridge_points[neighbor_idx].world_pos - ridge_points[current_idx].world_pos;
+[14.177s]       |                                                             ^
+[14.177s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:826:99: error: invalid types ‘const int[int]’ for array subscript
+[14.177s]   826 |                     Point2D diff = ridge_points[neighbor_idx].world_pos - ridge_points[current_idx].world_pos;
+[14.178s]       |                                                                                                   ^
+[14.178s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:837:56: error: invalid types ‘const int[int]’ for array subscript
+[14.179s]   837 |             simple_path.push_back(ridge_points[next_idx].world_pos);
+[14.179s]       |                                                        ^
+[14.179s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘int ImprovedCenterlinePlanner::findClosestRidgePoint(const int&, const ImprovedCenterlinePlanner::Point2D&)’:
+[14.180s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:909:26: error: request for member ‘empty’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.180s]   909 |         if (ridge_points.empty()) return -1;
+[14.181s]       |                          ^~~~~
+[14.181s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:915:45: error: request for member ‘size’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.181s]   915 |         for (size_t i = 0; i < ridge_points.size(); ++i) {
+[14.182s]       |                                             ^~~~
+[14.182s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:916:42: error: invalid types ‘const int[size_t {aka long unsigned int}]’ for array subscript
+[14.182s]   916 |             Point2D diff = ridge_points[i].world_pos - start_pos;
+[14.183s]       |                                          ^
+[14.183s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘std::vector<ImprovedCenterlinePlanner::Point2D> ImprovedCenterlinePlanner::findCenterlinePathFromStart(const int&, int)’:
+[14.184s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:942:73: error: request for member ‘size’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.184s]   942 |         if (start_idx < 0 || start_idx >= static_cast<int>(ridge_points.size())) {
+[14.185s]       |                                                                         ^~~~
+[14.203s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘std::vector<std::vector<int> > ImprovedCenterlinePlanner::findConnectedComponents(const int&)’:
+[14.204s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1022:48: error: request for member ‘size’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.204s]  1022 |         std::vector<bool> visited(ridge_points.size(), false);
+[14.205s]       |                                                ^~~~
+[14.206s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1024:45: error: request for member ‘size’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.206s]  1024 |         for (size_t i = 0; i < ridge_points.size(); ++i) {
+[14.206s]       |                                             ^~~~
+[14.207s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1036:61: error: invalid types ‘const int[int]’ for array subscript
+[14.208s]  1036 |                     for (int neighbor : ridge_points[current].neighbors) {
+[14.208s]       |                                                             ^
+[14.214s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘std::vector<int> ImprovedCenterlinePlanner::connectNearbyComponents(const int&, const std::vector<std::vector<int> >&, int)’:
+[14.214s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1076:56: error: invalid types ‘const int[int]’ for array subscript
+[14.215s]  1076 |                     Point2D diff = ridge_points[main_pt].world_pos - ridge_points[other_pt].world_pos;
+[14.216s]       |                                                        ^
+[14.216s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1076:91: error: invalid types ‘const int[int]’ for array subscript
+[14.216s]  1076 |                     Point2D diff = ridge_points[main_pt].world_pos - ridge_points[other_pt].world_pos;
+[14.217s]       |                                                                                           ^
+[14.221s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘std::vector<ImprovedCenterlinePlanner::Point2D> ImprovedCenterlinePlanner::findBidirectionalClosedPath(const int&, const std::vector<int>&, int)’:
+[14.221s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1111:61: error: invalid types ‘const int[int]’ for array subscript
+[14.222s]  1111 |         const auto& start_neighbors = ridge_points[start_idx].neighbors;
+[14.222s]       |                                                             ^
+[14.225s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1131:51: error: invalid types ‘const int[int]’ for array subscript
+[14.226s]  1131 |         full_path.push_back(ridge_points[start_idx].world_pos);
+[14.226s]       |                                                   ^
+[14.228s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1140:55: error: invalid types ‘const int[int]’ for array subscript
+[14.229s]  1140 |             full_path.push_back(ridge_points[start_idx].world_pos);
+[14.230s]       |                                                       ^
+[14.250s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘std::vector<ImprovedCenterlinePlanner::Point2D> ImprovedCenterlinePlanner::explorePath(const int&, int, int, const std::vector<int>&)’:
+[14.251s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1156:48: error: request for member ‘size’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.251s]  1156 |         std::vector<bool> visited(ridge_points.size(), false);
+[14.251s]       |                                                ^~~~
+[14.252s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1158:46: error: invalid types ‘const int[int]’ for array subscript
+[14.253s]  1158 |         path.push_back(ridge_points[start_idx].world_pos);
+[14.254s]       |                                              ^
+[14.254s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1168:48: error: invalid types ‘const int[int]’ for array subscript
+[14.254s]  1168 |             path.push_back(ridge_points[current].world_pos);
+[14.255s]       |                                                ^
+[14.256s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1173:53: error: invalid types ‘const int[int]’ for array subscript
+[14.256s]  1173 |             for (int neighbor : ridge_points[current].neighbors) {
+[14.257s]       |                                                     ^
+[14.257s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘std::vector<ImprovedCenterlinePlanner::Point2D> ImprovedCenterlinePlanner::createRadialPath(const int&, const std::vector<int>&, int)’:
+[14.258s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1193:51: error: invalid types ‘const int[int]’ for array subscript
+[14.258s]  1193 |         Point2D start_pos = ridge_points[start_idx].world_pos;
+[14.258s]       |                                                   ^
+[14.271s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1199:48: error: invalid types ‘const int[int]’ for array subscript
+[14.272s]  1199 |                 double dist = (ridge_points[idx].world_pos - start_pos).norm();
+[14.272s]       |                                                ^
+[14.294s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1212:49: error: invalid types ‘const int[const int]’ for array subscript
+[14.294s]  1212 |             Point2D pos = ridge_points[dp.second].world_pos;
+[14.294s]       |                                                 ^
+[14.309s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘std::vector<ImprovedCenterlinePlanner::Point2D> ImprovedCenterlinePlanner::createSimpleConnectedPath(const int&, const std::vector<int>&, int)’:
+[14.311s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1243:45: error: request for member ‘size’ in ‘ridge_points’, which is of non-class type ‘const int’
+[14.312s]  1243 |         std::vector<bool> used(ridge_points.size(), false);
+[14.312s]       |                                             ^~~~
+[14.312s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1246:48: error: invalid types ‘const int[int]’ for array subscript
+[14.314s]  1246 |         path.push_back(ridge_points[current_idx].world_pos);
+[14.315s]       |                                                ^
+[14.315s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1254:59: error: invalid types ‘const int[int]’ for array subscript
+[14.316s]  1254 |             Point2D current_pos = ridge_points[current_idx].world_pos;
+[14.316s]       |                                                           ^
+[14.317s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1259:52: error: invalid types ‘const int[int]’ for array subscript
+[14.317s]  1259 |                     double dist = (ridge_points[idx].world_pos - current_pos).norm();
+[14.318s]       |                                                    ^
+[14.318s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1270:49: error: invalid types ‘const int[int]’ for array subscript
+[14.318s]  1270 |             path.push_back(ridge_points[next_idx].world_pos);
+[14.319s]       |                                                 ^
+[14.319s] /home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1276:50: error: invalid types ‘const int[int]’ for array subscript
+[14.320s]  1276 |             path.push_back(ridge_points[start_idx].world_pos);
+[14.320s]       |                                                  ^
+[24.657s] make[2]: *** [CMakeFiles/min_curvature_planner.dir/build.make:63: CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o] Error 1
+[24.658s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/min_curvature_planner.dir/all] Error 2
+[24.660s] make: *** [Makefile:141: all] Error 2
+[24.673s] Invoked command in '/home/f1/f1tenth_ws/build/path_planner' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_planner -- -j6 -l6

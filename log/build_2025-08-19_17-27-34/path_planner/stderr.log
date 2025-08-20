@@ -1,0 +1,11 @@
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘double ImprovedCenterlinePlanner::calculateRidgeStrength(const cv::Mat&, int, int)’:
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:603:15: warning: unused variable ‘lambda1’ [-Wunused-variable]
+  603 |         float lambda1 = (trace + sqrt_disc) / 2.0f;
+      |               ^~~~~~~
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp: In member function ‘std::vector<int> ImprovedCenterlinePlanner::connectNearbyComponents(const std::vector<ImprovedCenterlinePlanner::RidgePoint>&, const std::vector<std::vector<int> >&, int)’:
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1081:17: warning: variable ‘closest_main’ set but not used [-Wunused-but-set-variable]
+ 1081 |             int closest_main = -1, closest_other = -1;
+      |                 ^~~~~~~~~~~~
+/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1081:36: warning: variable ‘closest_other’ set but not used [-Wunused-but-set-variable]
+ 1081 |             int closest_main = -1, closest_other = -1;
+      |                                    ^~~~~~~~~~~~~

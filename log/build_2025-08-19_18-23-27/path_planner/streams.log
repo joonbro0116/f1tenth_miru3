@@ -1,0 +1,6 @@
+[0.053s] Invoking command in '/home/f1/f1tenth_ws/build/path_planner': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_planner -- -j6 -l6
+[0.425s] [35m[1mScanning dependencies of target min_curvature_planner[0m
+[0.463s] make[2]: *** No rule to make target '/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp', needed by 'CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o'.  Stop.
+[0.465s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/min_curvature_planner.dir/all] Error 2
+[0.465s] make: *** [Makefile:141: all] Error 2
+[0.491s] Invoked command in '/home/f1/f1tenth_ws/build/path_planner' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_planner -- -j6 -l6

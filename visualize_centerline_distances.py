@@ -11,12 +11,12 @@ def visualize_centerline_with_distances():
     """
     
     # CSV 파일 경로
-    csv_path = "/home/f1/f1tenth_ws/maps/centerline_with_distances.csv"
+    csv_path = "/home/f1/f1tenth_ws/maps/track_edges_revised.csv"
     
     # 파일 존재 확인
     if not os.path.exists(csv_path):
         print(f"파일을 찾을 수 없습니다: {csv_path}")
-        print("먼저 path planner를 실행해서 centerline_with_distances.csv 파일을 생성하세요.")
+        print("먼저 path planner를 실행해서 track_edges_revised.csv 파일을 생성하세요.")
         return
     
     # CSV 파일 읽기
@@ -34,7 +34,7 @@ def visualize_centerline_with_distances():
         return
     
     # 필요한 컬럼 확인
-    required_columns = ['x', 'y', 'left_distance', 'right_distance']
+    required_columns = ['center_x', 'center_y', 'left_distance', 'right_distance']
     missing_columns = [col for col in required_columns if col not in df.columns]
     if missing_columns:
         print(f"필수 컬럼이 없습니다: {missing_columns}")
@@ -42,8 +42,8 @@ def visualize_centerline_with_distances():
     
     # 데이터 통계 출력
     print(f"\n=== 데이터 통계 ===")
-    print(f"X 범위: {df['x'].min():.2f} ~ {df['x'].max():.2f}")
-    print(f"Y 범위: {df['y'].min():.2f} ~ {df['y'].max():.2f}")
+    print(f"X 범위: {df['center_x'].min():.2f} ~ {df['center_x'].max():.2f}")
+    print(f"Y 범위: {df['center_y'].min():.2f} ~ {df['center_y'].max():.2f}")
     print(f"왼쪽 거리 범위: {df['left_distance'].min():.2f} ~ {df['left_distance'].max():.2f}")
     print(f"오른쪽 거리 범위: {df['right_distance'].min():.2f} ~ {df['right_distance'].max():.2f}")
     print(f"평균 왼쪽 거리: {df['left_distance'].mean():.2f}m")
@@ -57,22 +57,22 @@ def visualize_centerline_with_distances():
     ax1 = axes[0, 0]
     
     # 중심선 그리기
-    ax1.plot(df['x'], df['y'], 'b-', linewidth=2, label='Centerline', alpha=0.8)
-    ax1.scatter(df['x'], df['y'], c='blue', s=10, alpha=0.6)
+    ax1.plot(df['center_x'], df['center_y'], 'b-', linewidth=2, label='Centerline', alpha=0.8)
+    ax1.scatter(df['center_x'], df['center_y'], c='blue', s=10, alpha=0.6)
     
     # 왼쪽과 오른쪽 경계 추정 포인트 계산 및 그리기
     for i in range(0, len(df), max(1, len(df)//170)):  # 샘플링해서 표시
-        x, y = df.iloc[i]['x'], df.iloc[i]['y']
+        x, y = df.iloc[i]['center_x'], df.iloc[i]['center_y']
         left_dist = df.iloc[i]['left_distance']
         right_dist = df.iloc[i]['right_distance']
         
         # 방향 벡터 계산 (간단하게 다음 점으로의 방향)
         if i < len(df) - 1:
-            dx = df.iloc[i+1]['x'] - x
-            dy = df.iloc[i+1]['y'] - y
+            dx = df.iloc[i+1]['center_x'] - x
+            dy = df.iloc[i+1]['center_y'] - y
         else:
-            dx = x - df.iloc[i-1]['x']
-            dy = y - df.iloc[i-1]['y']
+            dx = x - df.iloc[i-1]['center_x']
+            dy = y - df.iloc[i-1]['center_y']
         
         # 정규화
         norm = np.sqrt(dx*dx + dy*dy)
@@ -98,7 +98,7 @@ def visualize_centerline_with_distances():
     
     # 2. 거리 히트맵 (왼쪽 거리)
     ax2 = axes[0, 1]
-    scatter = ax2.scatter(df['x'], df['y'], c=df['left_distance'], 
+    scatter = ax2.scatter(df['center_x'], df['center_y'], c=df['left_distance'], 
                          cmap='viridis', s=20, alpha=0.8)
     plt.colorbar(scatter, ax=ax2, label='Left Distance (m)')
     ax2.set_xlabel('X (m)')
@@ -109,7 +109,7 @@ def visualize_centerline_with_distances():
     
     # 3. 거리 히트맵 (오른쪽 거리)
     ax3 = axes[1, 0]
-    scatter = ax3.scatter(df['x'], df['y'], c=df['right_distance'], 
+    scatter = ax3.scatter(df['center_x'], df['center_y'], c=df['right_distance'], 
                          cmap='plasma', s=20, alpha=0.8)
     plt.colorbar(scatter, ax=ax3, label='Right Distance (m)')
     ax3.set_xlabel('X (m)')
@@ -145,7 +145,7 @@ def create_simple_track_visualization():
     """
     간단한 트랙 레이아웃 시각화
     """
-    csv_path = "/home/f1/f1tenth_ws/maps/centerline_with_distances.csv"
+    csv_path = "/home/f1/f1tenth_ws/maps/track_edges_revised.csv"
     
     if not os.path.exists(csv_path):
         print(f"파일을 찾을 수 없습니다: {csv_path}")
@@ -156,25 +156,25 @@ def create_simple_track_visualization():
     plt.figure(figsize=(12, 8))
     
     # 중심선 그리기
-    plt.plot(df['x'], df['y'], 'b-', linewidth=3, label='Centerline')
+    plt.plot(df['center_x'], df['center_y'], 'b-', linewidth=3, label='Centerline')
     
     # 시작점 표시
-    plt.scatter(df.iloc[0]['x'], df.iloc[0]['y'], c='red', s=100, 
+    plt.scatter(df.iloc[0]['center_x'], df.iloc[0]['center_y'], c='red', s=100, 
                 marker='o', label='Start Point', zorder=5)
     
     # 몇 개 포인트에서 트랙 폭 표시
     for i in range(0, len(df), len(df)//20):
-        x, y = df.iloc[i]['x'], df.iloc[i]['y']
+        x, y = df.iloc[i]['center_x'], df.iloc[i]['center_y']
         left_dist = df.iloc[i]['left_distance']
         right_dist = df.iloc[i]['right_distance']
         
         # 방향 계산
         if i < len(df) - 1:
-            dx = df.iloc[i+1]['x'] - x
-            dy = df.iloc[i+1]['y'] - y
+            dx = df.iloc[i+1]['center_x'] - x
+            dy = df.iloc[i+1]['center_y'] - y
         else:
-            dx = x - df.iloc[i-1]['x']
-            dy = y - df.iloc[i-1]['y']
+            dx = x - df.iloc[i-1]['center_x']
+            dy = y - df.iloc[i-1]['center_y']
         
         norm = np.sqrt(dx*dx + dy*dy)
         if norm > 0:

@@ -1,0 +1,3 @@
+make[2]: *** No rule to make target '/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp', needed by 'CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o'.  Stop.
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/min_curvature_planner.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

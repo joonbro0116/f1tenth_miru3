@@ -1,0 +1,286 @@
+[0.000000] (-) TimerEvent: {}
+[0.000723] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.001336] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.001734] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.001874] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.002820] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.003494] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.004111] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.004645] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.004826] (-) JobUnselected: {'identifier': 'path_follow'}
+[0.004983] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.005107] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.005294] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.005416] (-) JobUnselected: {'identifier': 'vesc'}
+[0.005535] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.006823] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.006971] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.007164] (path_planner) JobQueued: {'identifier': 'path_planner', 'dependencies': OrderedDict()}
+[0.007362] (path_planner) JobStarted: {'identifier': 'path_planner'}
+[0.054017] (path_planner) JobProgress: {'identifier': 'path_planner', 'progress': 'cmake'}
+[0.058591] (path_planner) JobProgress: {'identifier': 'path_planner', 'progress': 'build'}
+[0.062968] (path_planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/f1/f1tenth_ws/build/path_planner', '--', '-j6', '-l6'], 'cwd': '/home/f1/f1tenth_ws/build/path_planner', 'env': OrderedDict([('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_CLIENT', '172.16.66.62 53384 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/f1/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/f1/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/bin/helpers/browser.sh'), ('HOME', '/home/f1'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/f1/f1tenth_ws'), ('LESS', '-R'), ('TERM_PROGRAM_VERSION', '1.103.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1001/vscode-ipc-bd0482c7-b036-4a97-bf8a-2e9efccb4afa.sock'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/f1/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_GIT_ASKPASS_NODE', '/home/f1/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/home/f1'), ('XDG_SESSION_ID', '6'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/f1/.npm-global/bin:/home/f1/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/bin/remote-cli:/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/f1/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('PAPERSIZE', 'a4'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-f84bb00c88.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/f1/f1tenth_ws/build/path_planner'), ('SSH_CONNECTION', '172.16.66.62 53384 172.16.73.76 22'), ('ZDOTDIR', '/home/f1'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.098527] (-) TimerEvent: {}
+[0.199911] (-) TimerEvent: {}
+[0.300958] (-) TimerEvent: {}
+[0.325443] (path_planner) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target min_curvature_planner\x1b[0m\n'}
+[0.401224] (-) TimerEvent: {}
+[0.502248] (-) TimerEvent: {}
+[0.603233] (-) TimerEvent: {}
+[0.629941] (path_planner) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o\x1b[0m\n'}
+[0.703514] (-) TimerEvent: {}
+[0.804553] (-) TimerEvent: {}
+[0.906093] (-) TimerEvent: {}
+[1.007506] (-) TimerEvent: {}
+[1.108901] (-) TimerEvent: {}
+[1.209946] (-) TimerEvent: {}
+[1.311093] (-) TimerEvent: {}
+[1.412048] (-) TimerEvent: {}
+[1.513163] (-) TimerEvent: {}
+[1.614231] (-) TimerEvent: {}
+[1.715306] (-) TimerEvent: {}
+[1.816451] (-) TimerEvent: {}
+[1.917582] (-) TimerEvent: {}
+[2.018740] (-) TimerEvent: {}
+[2.119878] (-) TimerEvent: {}
+[2.220976] (-) TimerEvent: {}
+[2.322072] (-) TimerEvent: {}
+[2.423265] (-) TimerEvent: {}
+[2.524368] (-) TimerEvent: {}
+[2.625446] (-) TimerEvent: {}
+[2.726559] (-) TimerEvent: {}
+[2.827691] (-) TimerEvent: {}
+[2.928791] (-) TimerEvent: {}
+[3.029950] (-) TimerEvent: {}
+[3.131206] (-) TimerEvent: {}
+[3.232309] (-) TimerEvent: {}
+[3.333402] (-) TimerEvent: {}
+[3.434541] (-) TimerEvent: {}
+[3.535686] (-) TimerEvent: {}
+[3.637352] (-) TimerEvent: {}
+[3.738461] (-) TimerEvent: {}
+[3.840549] (-) TimerEvent: {}
+[3.941666] (-) TimerEvent: {}
+[4.042763] (-) TimerEvent: {}
+[4.143804] (-) TimerEvent: {}
+[4.244839] (-) TimerEvent: {}
+[4.345901] (-) TimerEvent: {}
+[4.447027] (-) TimerEvent: {}
+[4.548082] (-) TimerEvent: {}
+[4.649115] (-) TimerEvent: {}
+[4.750171] (-) TimerEvent: {}
+[4.851278] (-) TimerEvent: {}
+[4.952783] (-) TimerEvent: {}
+[5.053899] (-) TimerEvent: {}
+[5.155105] (-) TimerEvent: {}
+[5.256229] (-) TimerEvent: {}
+[5.357346] (-) TimerEvent: {}
+[5.458497] (-) TimerEvent: {}
+[5.559603] (-) TimerEvent: {}
+[5.660711] (-) TimerEvent: {}
+[5.761837] (-) TimerEvent: {}
+[5.863015] (-) TimerEvent: {}
+[5.964126] (-) TimerEvent: {}
+[6.065207] (-) TimerEvent: {}
+[6.166460] (-) TimerEvent: {}
+[6.267605] (-) TimerEvent: {}
+[6.368718] (-) TimerEvent: {}
+[6.469810] (-) TimerEvent: {}
+[6.571048] (-) TimerEvent: {}
+[6.672192] (-) TimerEvent: {}
+[6.773856] (-) TimerEvent: {}
+[6.875042] (-) TimerEvent: {}
+[6.976240] (-) TimerEvent: {}
+[7.077355] (-) TimerEvent: {}
+[7.178515] (-) TimerEvent: {}
+[7.279577] (-) TimerEvent: {}
+[7.380764] (-) TimerEvent: {}
+[7.482029] (-) TimerEvent: {}
+[7.583233] (-) TimerEvent: {}
+[7.684384] (-) TimerEvent: {}
+[7.785526] (-) TimerEvent: {}
+[7.886723] (-) TimerEvent: {}
+[7.987870] (-) TimerEvent: {}
+[8.089026] (-) TimerEvent: {}
+[8.190865] (-) TimerEvent: {}
+[8.292501] (-) TimerEvent: {}
+[8.394090] (-) TimerEvent: {}
+[8.496405] (-) TimerEvent: {}
+[8.597924] (-) TimerEvent: {}
+[8.699594] (-) TimerEvent: {}
+[8.801170] (-) TimerEvent: {}
+[8.902742] (-) TimerEvent: {}
+[9.004360] (-) TimerEvent: {}
+[9.105485] (-) TimerEvent: {}
+[9.207387] (-) TimerEvent: {}
+[9.309091] (-) TimerEvent: {}
+[9.410898] (-) TimerEvent: {}
+[9.512688] (-) TimerEvent: {}
+[9.615197] (-) TimerEvent: {}
+[9.716213] (-) TimerEvent: {}
+[9.817232] (-) TimerEvent: {}
+[9.918268] (-) TimerEvent: {}
+[10.019347] (-) TimerEvent: {}
+[10.120388] (-) TimerEvent: {}
+[10.221496] (-) TimerEvent: {}
+[10.322648] (-) TimerEvent: {}
+[10.423718] (-) TimerEvent: {}
+[10.524781] (-) TimerEvent: {}
+[10.625723] (-) TimerEvent: {}
+[10.726815] (-) TimerEvent: {}
+[10.827883] (-) TimerEvent: {}
+[10.928945] (-) TimerEvent: {}
+[11.029991] (-) TimerEvent: {}
+[11.131102] (-) TimerEvent: {}
+[11.232211] (-) TimerEvent: {}
+[11.333256] (-) TimerEvent: {}
+[11.434321] (-) TimerEvent: {}
+[11.535349] (-) TimerEvent: {}
+[11.636402] (-) TimerEvent: {}
+[11.737966] (-) TimerEvent: {}
+[11.839091] (-) TimerEvent: {}
+[11.940134] (-) TimerEvent: {}
+[12.041151] (-) TimerEvent: {}
+[12.142247] (-) TimerEvent: {}
+[12.243375] (-) TimerEvent: {}
+[12.344386] (-) TimerEvent: {}
+[12.445440] (-) TimerEvent: {}
+[12.546515] (-) TimerEvent: {}
+[12.647572] (-) TimerEvent: {}
+[12.748572] (-) TimerEvent: {}
+[12.849578] (-) TimerEvent: {}
+[12.950635] (-) TimerEvent: {}
+[13.051689] (-) TimerEvent: {}
+[13.152732] (-) TimerEvent: {}
+[13.253759] (-) TimerEvent: {}
+[13.354761] (-) TimerEvent: {}
+[13.455811] (-) TimerEvent: {}
+[13.556781] (-) TimerEvent: {}
+[13.657904] (-) TimerEvent: {}
+[13.758957] (-) TimerEvent: {}
+[13.859974] (-) TimerEvent: {}
+[13.961013] (-) TimerEvent: {}
+[14.012007] (path_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:1090:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid ImprovedCenterlinePlanner::createRacingLine()\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid ImprovedCenterlinePlanner::createRacingLine()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.013085] (path_planner) StderrLine: {'line': b' 1090 |     void \x1b[01;31m\x1b[KcreateRacingLine\x1b[m\x1b[K()\n'}
+[14.013860] (path_planner) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.014412] (path_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:967:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid ImprovedCenterlinePlanner::createRacingLine()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.015039] (path_planner) StderrLine: {'line': b'  967 |     void \x1b[01;36m\x1b[KcreateRacingLine\x1b[m\x1b[K()\n'}
+[14.015464] (path_planner) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.061207] (-) TimerEvent: {}
+[14.162253] (-) TimerEvent: {}
+[14.263297] (-) TimerEvent: {}
+[14.271544] (path_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble ImprovedCenterlinePlanner::calculateRidgeStrength(const cv::Mat&, int, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.272693] (path_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:575:15:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Klambda1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[14.273454] (path_planner) StderrLine: {'line': b'  575 |         float \x1b[01;35m\x1b[Klambda1\x1b[m\x1b[K = (trace + sqrt_disc) / 2.0f;\n'}
+[14.273972] (path_planner) StderrLine: {'line': b'      |               \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[14.323505] (path_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ImprovedCenterlinePlanner::RidgePoint> ImprovedCenterlinePlanner::detectRidgePoints(const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.324388] (path_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:859:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kridge_threshold\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[14.324923] (path_planner) StderrLine: {'line': b'  859 |         const float \x1b[01;35m\x1b[Kridge_threshold\x1b[m\x1b[K = 0.5; // Ridge strength threshold\n'}
+[14.325471] (path_planner) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.363556] (-) TimerEvent: {}
+[14.464695] (-) TimerEvent: {}
+[14.565822] (-) TimerEvent: {}
+[14.667021] (-) TimerEvent: {}
+[14.768187] (-) TimerEvent: {}
+[14.869279] (-) TimerEvent: {}
+[14.970538] (-) TimerEvent: {}
+[15.071672] (-) TimerEvent: {}
+[15.172823] (-) TimerEvent: {}
+[15.273985] (-) TimerEvent: {}
+[15.375202] (-) TimerEvent: {}
+[15.476321] (-) TimerEvent: {}
+[15.577501] (-) TimerEvent: {}
+[15.678734] (-) TimerEvent: {}
+[15.780529] (-) TimerEvent: {}
+[15.881977] (-) TimerEvent: {}
+[15.983575] (-) TimerEvent: {}
+[16.084560] (-) TimerEvent: {}
+[16.185459] (-) TimerEvent: {}
+[16.286511] (-) TimerEvent: {}
+[16.387627] (-) TimerEvent: {}
+[16.488680] (-) TimerEvent: {}
+[16.589603] (-) TimerEvent: {}
+[16.690706] (-) TimerEvent: {}
+[16.791674] (-) TimerEvent: {}
+[16.892823] (-) TimerEvent: {}
+[16.993876] (-) TimerEvent: {}
+[17.095000] (-) TimerEvent: {}
+[17.196148] (-) TimerEvent: {}
+[17.297052] (-) TimerEvent: {}
+[17.398149] (-) TimerEvent: {}
+[17.499419] (-) TimerEvent: {}
+[17.600429] (-) TimerEvent: {}
+[17.701353] (-) TimerEvent: {}
+[17.802237] (-) TimerEvent: {}
+[17.903372] (-) TimerEvent: {}
+[18.004329] (-) TimerEvent: {}
+[18.105378] (-) TimerEvent: {}
+[18.206528] (-) TimerEvent: {}
+[18.307644] (-) TimerEvent: {}
+[18.408725] (-) TimerEvent: {}
+[18.509804] (-) TimerEvent: {}
+[18.610943] (-) TimerEvent: {}
+[18.712005] (-) TimerEvent: {}
+[18.813046] (-) TimerEvent: {}
+[18.914240] (-) TimerEvent: {}
+[19.015298] (-) TimerEvent: {}
+[19.116358] (-) TimerEvent: {}
+[19.217484] (-) TimerEvent: {}
+[19.318598] (-) TimerEvent: {}
+[19.419635] (-) TimerEvent: {}
+[19.520786] (-) TimerEvent: {}
+[19.623054] (-) TimerEvent: {}
+[19.724111] (-) TimerEvent: {}
+[19.825105] (-) TimerEvent: {}
+[19.926148] (-) TimerEvent: {}
+[20.027217] (-) TimerEvent: {}
+[20.128259] (-) TimerEvent: {}
+[20.229265] (-) TimerEvent: {}
+[20.330374] (-) TimerEvent: {}
+[20.431450] (-) TimerEvent: {}
+[20.532521] (-) TimerEvent: {}
+[20.633573] (-) TimerEvent: {}
+[20.734636] (-) TimerEvent: {}
+[20.835697] (-) TimerEvent: {}
+[20.936732] (-) TimerEvent: {}
+[21.037713] (-) TimerEvent: {}
+[21.138890] (-) TimerEvent: {}
+[21.239907] (-) TimerEvent: {}
+[21.340985] (-) TimerEvent: {}
+[21.442071] (-) TimerEvent: {}
+[21.543176] (-) TimerEvent: {}
+[21.644258] (-) TimerEvent: {}
+[21.745320] (-) TimerEvent: {}
+[21.846459] (-) TimerEvent: {}
+[21.947499] (-) TimerEvent: {}
+[22.048583] (-) TimerEvent: {}
+[22.149692] (-) TimerEvent: {}
+[22.250799] (-) TimerEvent: {}
+[22.351853] (-) TimerEvent: {}
+[22.452933] (-) TimerEvent: {}
+[22.553915] (-) TimerEvent: {}
+[22.654955] (-) TimerEvent: {}
+[22.756053] (-) TimerEvent: {}
+[22.857104] (-) TimerEvent: {}
+[22.958046] (-) TimerEvent: {}
+[23.059187] (-) TimerEvent: {}
+[23.160267] (-) TimerEvent: {}
+[23.261369] (-) TimerEvent: {}
+[23.362470] (-) TimerEvent: {}
+[23.463526] (-) TimerEvent: {}
+[23.564582] (-) TimerEvent: {}
+[23.665645] (-) TimerEvent: {}
+[23.766733] (-) TimerEvent: {}
+[23.867709] (-) TimerEvent: {}
+[23.968762] (-) TimerEvent: {}
+[24.069772] (-) TimerEvent: {}
+[24.170834] (-) TimerEvent: {}
+[24.271876] (-) TimerEvent: {}
+[24.372831] (-) TimerEvent: {}
+[24.396701] (path_planner) StderrLine: {'line': b'make[2]: *** [CMakeFiles/min_curvature_planner.dir/build.make:63: CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o] Error 1\n'}
+[24.398849] (path_planner) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/min_curvature_planner.dir/all] Error 2\n'}
+[24.400034] (path_planner) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[24.412911] (path_planner) CommandEnded: {'returncode': 2}
+[24.473099] (-) TimerEvent: {}
+[24.480799] (path_planner) JobEnded: {'identifier': 'path_planner', 'rc': 2}
+[24.493460] (-) EventReactorShutdown: {}

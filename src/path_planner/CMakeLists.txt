@@ -24,23 +24,35 @@ find_package(std_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
-include_directories(${OpenCV_INCLUDE_DIRS})
+find_package(yaml-cpp REQUIRED)
+find_package(Eigen3 REQUIRED)
+
+include_directories(
+  ${OpenCV_INCLUDE_DIRS}
+  ${YAML_CPP_INCLUDE_DIR}
+  ${EIGEN3_INCLUDE_DIR}
+  include
+)
 
 # Add executable
-add_executable(min_curvature_planner src/min_curvature_planner.cpp)
-ament_target_dependencies(min_curvature_planner 
-  rclcpp 
-  geometry_msgs 
-  nav_msgs 
-  std_msgs 
-  tf2_ros 
+add_executable(path_planner_centerline_extractor src/centerline.cpp)
+ament_target_dependencies(path_planner_centerline_extractor
+  rclcpp
+  geometry_msgs
+  nav_msgs
+  std_msgs
+  tf2_ros
   tf2_geometry_msgs
 )
-target_link_libraries(min_curvature_planner ${OpenCV_LIBS})
+target_link_libraries(path_planner_centerline_extractor
+  ${OpenCV_LIBS}
+  ${YAML_CPP_LIBRARIES}
+  Eigen3::Eigen
+)
 
 # Install executable
 install(TARGETS
-  min_curvature_planner
+  path_planner_centerline_extractor
   DESTINATION lib/${PROJECT_NAME}
 )
 

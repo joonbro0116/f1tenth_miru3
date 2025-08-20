@@ -1,0 +1,4 @@
+[01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:[m[K In member function ‘[01m[Kdouble ImprovedCenterlinePlanner::calculateRidgeStrength(const cv::Mat&, int, int)[m[K’:
+[01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:588:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klambda1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  588 |         float [01;35m[Klambda1[m[K = (trace + sqrt_disc) / 2.0f;
+      |               [01;35m[K^~~~~~~[m[K

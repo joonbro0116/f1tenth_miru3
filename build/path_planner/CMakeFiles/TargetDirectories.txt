@@ -5,6 +5,6 @@
 /home/f1/f1tenth_ws/build/path_planner/CMakeFiles/rebuild_cache.dir
 /home/f1/f1tenth_ws/build/path_planner/CMakeFiles/edit_cache.dir
 /home/f1/f1tenth_ws/build/path_planner/CMakeFiles/test.dir
-/home/f1/f1tenth_ws/build/path_planner/CMakeFiles/min_curvature_planner.dir
+/home/f1/f1tenth_ws/build/path_planner/CMakeFiles/path_planner_centerline_extractor.dir
 /home/f1/f1tenth_ws/build/path_planner/CMakeFiles/path_planner_uninstall.dir
 /home/f1/f1tenth_ws/build/path_planner/CMakeFiles/uninstall.dir

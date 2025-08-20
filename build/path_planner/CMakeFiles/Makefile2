@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/f1/f1tenth_ws/build/path_planner
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/min_curvature_planner.dir/all
+all: CMakeFiles/path_planner_centerline_extractor.dir/all
 
 .PHONY : all
 
@@ -63,38 +63,38 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/min_curvature_planner.dir/clean
+clean: CMakeFiles/path_planner_centerline_extractor.dir/clean
 clean: CMakeFiles/path_planner_uninstall.dir/clean
 clean: CMakeFiles/uninstall.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/min_curvature_planner.dir
+# Target rules for target CMakeFiles/path_planner_centerline_extractor.dir
 
 # All Build rule for target.
-CMakeFiles/min_curvature_planner.dir/all:
-	$(MAKE) -f CMakeFiles/min_curvature_planner.dir/build.make CMakeFiles/min_curvature_planner.dir/depend
-	$(MAKE) -f CMakeFiles/min_curvature_planner.dir/build.make CMakeFiles/min_curvature_planner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/f1/f1tenth_ws/build/path_planner/CMakeFiles --progress-num=1,2 "Built target min_curvature_planner"
-.PHONY : CMakeFiles/min_curvature_planner.dir/all
+CMakeFiles/path_planner_centerline_extractor.dir/all:
+	$(MAKE) -f CMakeFiles/path_planner_centerline_extractor.dir/build.make CMakeFiles/path_planner_centerline_extractor.dir/depend
+	$(MAKE) -f CMakeFiles/path_planner_centerline_extractor.dir/build.make CMakeFiles/path_planner_centerline_extractor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/f1/f1tenth_ws/build/path_planner/CMakeFiles --progress-num=1,2 "Built target path_planner_centerline_extractor"
+.PHONY : CMakeFiles/path_planner_centerline_extractor.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/min_curvature_planner.dir/rule: cmake_check_build_system
+CMakeFiles/path_planner_centerline_extractor.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/f1/f1tenth_ws/build/path_planner/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/min_curvature_planner.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/path_planner_centerline_extractor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/f1/f1tenth_ws/build/path_planner/CMakeFiles 0
-.PHONY : CMakeFiles/min_curvature_planner.dir/rule
+.PHONY : CMakeFiles/path_planner_centerline_extractor.dir/rule
 
 # Convenience name for target.
-min_curvature_planner: CMakeFiles/min_curvature_planner.dir/rule
+path_planner_centerline_extractor: CMakeFiles/path_planner_centerline_extractor.dir/rule
 
-.PHONY : min_curvature_planner
+.PHONY : path_planner_centerline_extractor
 
 # clean rule for target.
-CMakeFiles/min_curvature_planner.dir/clean:
-	$(MAKE) -f CMakeFiles/min_curvature_planner.dir/build.make CMakeFiles/min_curvature_planner.dir/clean
-.PHONY : CMakeFiles/min_curvature_planner.dir/clean
+CMakeFiles/path_planner_centerline_extractor.dir/clean:
+	$(MAKE) -f CMakeFiles/path_planner_centerline_extractor.dir/build.make CMakeFiles/path_planner_centerline_extractor.dir/clean
+.PHONY : CMakeFiles/path_planner_centerline_extractor.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/path_planner_uninstall.dir

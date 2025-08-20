@@ -1,0 +1,28 @@
+CMake Error at CMakeLists.txt:49 (add_executable):
+  Cannot find source file:
+
+    src/track_centerline_extractor.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:38 (add_executable):
+  Cannot find source file:
+
+    src/min_curvature_planner.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:49 (add_executable):
+  No SOURCES given to target: track_centerline_extractor
+
+
+CMake Error at CMakeLists.txt:38 (add_executable):
+  No SOURCES given to target: min_curvature_planner
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+make: *** [Makefile:266: cmake_check_build_system] Error 1

@@ -168,17 +168,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named min_curvature_planner
+# Target rules for targets named path_planner_centerline_extractor
 
 # Build rule for target.
-min_curvature_planner: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 min_curvature_planner
-.PHONY : min_curvature_planner
+path_planner_centerline_extractor: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 path_planner_centerline_extractor
+.PHONY : path_planner_centerline_extractor
 
 # fast build rule for target.
-min_curvature_planner/fast:
-	$(MAKE) -f CMakeFiles/min_curvature_planner.dir/build.make CMakeFiles/min_curvature_planner.dir/build
-.PHONY : min_curvature_planner/fast
+path_planner_centerline_extractor/fast:
+	$(MAKE) -f CMakeFiles/path_planner_centerline_extractor.dir/build.make CMakeFiles/path_planner_centerline_extractor.dir/build
+.PHONY : path_planner_centerline_extractor/fast
 
 #=============================================================================
 # Target rules for targets named path_planner_uninstall
@@ -206,32 +206,32 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
-src/min_curvature_planner.o: src/min_curvature_planner.cpp.o
+src/centerline.o: src/centerline.cpp.o
 
-.PHONY : src/min_curvature_planner.o
+.PHONY : src/centerline.o
 
 # target to build an object file
-src/min_curvature_planner.cpp.o:
-	$(MAKE) -f CMakeFiles/min_curvature_planner.dir/build.make CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.o
-.PHONY : src/min_curvature_planner.cpp.o
+src/centerline.cpp.o:
+	$(MAKE) -f CMakeFiles/path_planner_centerline_extractor.dir/build.make CMakeFiles/path_planner_centerline_extractor.dir/src/centerline.cpp.o
+.PHONY : src/centerline.cpp.o
 
-src/min_curvature_planner.i: src/min_curvature_planner.cpp.i
+src/centerline.i: src/centerline.cpp.i
 
-.PHONY : src/min_curvature_planner.i
+.PHONY : src/centerline.i
 
 # target to preprocess a source file
-src/min_curvature_planner.cpp.i:
-	$(MAKE) -f CMakeFiles/min_curvature_planner.dir/build.make CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.i
-.PHONY : src/min_curvature_planner.cpp.i
+src/centerline.cpp.i:
+	$(MAKE) -f CMakeFiles/path_planner_centerline_extractor.dir/build.make CMakeFiles/path_planner_centerline_extractor.dir/src/centerline.cpp.i
+.PHONY : src/centerline.cpp.i
 
-src/min_curvature_planner.s: src/min_curvature_planner.cpp.s
+src/centerline.s: src/centerline.cpp.s
 
-.PHONY : src/min_curvature_planner.s
+.PHONY : src/centerline.s
 
 # target to generate assembly for a file
-src/min_curvature_planner.cpp.s:
-	$(MAKE) -f CMakeFiles/min_curvature_planner.dir/build.make CMakeFiles/min_curvature_planner.dir/src/min_curvature_planner.cpp.s
-.PHONY : src/min_curvature_planner.cpp.s
+src/centerline.cpp.s:
+	$(MAKE) -f CMakeFiles/path_planner_centerline_extractor.dir/build.make CMakeFiles/path_planner_centerline_extractor.dir/src/centerline.cpp.s
+.PHONY : src/centerline.cpp.s
 
 # Help Target
 help:
@@ -246,12 +246,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... min_curvature_planner"
+	@echo "... path_planner_centerline_extractor"
 	@echo "... path_planner_uninstall"
 	@echo "... uninstall"
-	@echo "... src/min_curvature_planner.o"
-	@echo "... src/min_curvature_planner.i"
-	@echo "... src/min_curvature_planner.s"
+	@echo "... src/centerline.o"
+	@echo "... src/centerline.i"
+	@echo "... src/centerline.s"
 .PHONY : help
 
 
