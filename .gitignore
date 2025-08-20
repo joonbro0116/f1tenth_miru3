@@ -1,0 +1,23 @@
+# GitHub 토큰 보안 파일
+GITHUB_TOKEN.md
+
+# 빌드 파일들
+build/
+install/
+log/
+
+# IDE 설정
+.vscode/settings.json
+
+# 임시 파일들
+*.tmp
+*.log
+*~
+
+# ROS2 관련
+*.bag
+*.mcap
+
+# 시스템 파일
+.DS_Store
+Thumbs.db
