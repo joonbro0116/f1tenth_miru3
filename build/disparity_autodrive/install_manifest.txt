@@ -1,0 +1,16 @@
+/home/ojg/sim_ws/install/disparity_autodrive/lib/disparity_autodrive/disparity_autodrive_node
+/home/ojg/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/package_run_dependencies/disparity_autodrive
+/home/ojg/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/parent_prefix_path/disparity_autodrive
+/home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.sh
+/home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.dsv
+/home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.sh
+/home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.dsv
+/home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.bash
+/home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.sh
+/home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.zsh
+/home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.dsv
+/home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.dsv
+/home/ojg/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/packages/disparity_autodrive
+/home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig.cmake
+/home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig-version.cmake
+/home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.xml

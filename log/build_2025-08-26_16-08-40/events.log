@@ -1,0 +1,249 @@
+[0.000000] (-) TimerEvent: {}
+[0.000381] (-) JobUnselected: {'identifier': 'f1tenth_gym_ros'}
+[0.000463] (-) JobUnselected: {'identifier': 'my-test-package'}
+[0.000488] (disparity_autodrive) JobQueued: {'identifier': 'disparity_autodrive', 'dependencies': OrderedDict()}
+[0.000509] (key_teleop) JobQueued: {'identifier': 'key_teleop', 'dependencies': OrderedDict()}
+[0.000527] (disparity_autodrive) JobStarted: {'identifier': 'disparity_autodrive'}
+[0.003338] (key_teleop) JobStarted: {'identifier': 'key_teleop'}
+[0.005504] (disparity_autodrive) JobProgress: {'identifier': 'disparity_autodrive', 'progress': 'cmake'}
+[0.014392] (disparity_autodrive) Command: {'cmd': ['/usr/bin/cmake', '/home/ojg/sim_ws/src/disparity_autodrive', '-DCMAKE_INSTALL_PREFIX=/home/ojg/sim_ws/install/disparity_autodrive'], 'cwd': '/home/ojg/sim_ws/build/disparity_autodrive', 'env': OrderedDict([('LANGUAGE', 'en_US:en'), ('USER', 'ojg'), ('LC_TIME', 'ko_KR.UTF-8'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/ojg/sim_ws'), ('HOME', '/home/ojg'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/ojg/.nvm/versions/node/v22.18.0/bin'), ('ZSH', '/home/ojg/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/ojg/.nvm/versions/node/v22.18.0/include/node'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1370'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('NVM_DIR', '/home/ojg/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ojg'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ojg'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ojg/.nvm/versions/node/v22.18.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ojg:@/tmp/.ICE-unix/1330,unix/ojg:/tmp/.ICE-unix/1330'), ('PAPERSIZE', 'a4'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/582c5407_46c0_4f8f_b679_e25cca4ef8bc'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XOJUB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/ojg/sim_ws/build/disparity_autodrive'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.015756] (key_teleop) JobProgress: {'identifier': 'key_teleop', 'progress': 'cmake'}
+[0.015782] (key_teleop) Command: {'cmd': ['/usr/bin/cmake', '/home/ojg/sim_ws/src/key_teleop', '-DCMAKE_INSTALL_PREFIX=/home/ojg/sim_ws/install/key_teleop'], 'cwd': '/home/ojg/sim_ws/build/key_teleop', 'env': OrderedDict([('LANGUAGE', 'en_US:en'), ('USER', 'ojg'), ('LC_TIME', 'ko_KR.UTF-8'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/ojg/sim_ws'), ('HOME', '/home/ojg'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/ojg/.nvm/versions/node/v22.18.0/bin'), ('ZSH', '/home/ojg/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/ojg/.nvm/versions/node/v22.18.0/include/node'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1370'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('NVM_DIR', '/home/ojg/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ojg'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ojg'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ojg/.nvm/versions/node/v22.18.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ojg:@/tmp/.ICE-unix/1330,unix/ojg:/tmp/.ICE-unix/1330'), ('PAPERSIZE', 'a4'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/582c5407_46c0_4f8f_b679_e25cca4ef8bc'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XOJUB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/ojg/sim_ws/build/key_teleop'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.083036] (disparity_autodrive) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.087725] (key_teleop) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099831] (-) TimerEvent: {}
+[0.137825] (disparity_autodrive) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.138012] (key_teleop) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.143915] (key_teleop) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.143978] (disparity_autodrive) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.196522] (key_teleop) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.196887] (disparity_autodrive) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.199925] (-) TimerEvent: {}
+[0.200559] (key_teleop) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.200802] (key_teleop) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.201265] (key_teleop) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.201673] (disparity_autodrive) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.201836] (disparity_autodrive) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.202059] (disparity_autodrive) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.203848] (disparity_autodrive) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.203909] (key_teleop) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.262428] (key_teleop) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.262619] (disparity_autodrive) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.266724] (key_teleop) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.266872] (key_teleop) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.267091] (key_teleop) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.268539] (disparity_autodrive) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.268716] (disparity_autodrive) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.269010] (disparity_autodrive) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.270195] (disparity_autodrive) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.270263] (key_teleop) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300074] (-) TimerEvent: {}
+[0.381990] (disparity_autodrive) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.387305] (key_teleop) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400152] (-) TimerEvent: {}
+[0.451122] (key_teleop) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.451301] (disparity_autodrive) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.484043] (disparity_autodrive) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.484239] (key_teleop) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.487802] (disparity_autodrive) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.487888] (key_teleop) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.494287] (disparity_autodrive) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.494374] (key_teleop) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.500211] (-) TimerEvent: {}
+[0.503025] (disparity_autodrive) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.503100] (key_teleop) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.515221] (disparity_autodrive) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.515309] (key_teleop) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.549350] (disparity_autodrive) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.549499] (key_teleop) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.551558] (key_teleop) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.551690] (disparity_autodrive) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600314] (-) TimerEvent: {}
+[0.618009] (disparity_autodrive) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.618292] (key_teleop) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.634386] (key_teleop) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.639730] (disparity_autodrive) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.661534] (key_teleop) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.668186] (key_teleop) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.670939] (disparity_autodrive) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.677042] (disparity_autodrive) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700429] (-) TimerEvent: {}
+[0.730946] (key_teleop) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.731354] (key_teleop) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.731663] (disparity_autodrive) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.732167] (disparity_autodrive) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.784333] (disparity_autodrive) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.785957] (disparity_autodrive) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.786155] (key_teleop) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.786730] (key_teleop) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.800479] (-) TimerEvent: {}
+[0.824994] (key_teleop) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)\n'}
+[0.825120] (disparity_autodrive) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.847991] (disparity_autodrive) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)\n'}
+[0.855994] (disparity_autodrive) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.868986] (disparity_autodrive) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[0.878507] (key_teleop) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.883661] (key_teleop) StdoutLine: {'line': b'-- Generating done\n'}
+[0.885511] (key_teleop) StdoutLine: {'line': b'-- Build files have been written to: /home/ojg/sim_ws/build/key_teleop\n'}
+[0.886083] (disparity_autodrive) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.892190] (key_teleop) CommandEnded: {'returncode': 0}
+[0.892505] (key_teleop) JobProgress: {'identifier': 'key_teleop', 'progress': 'build'}
+[0.892525] (key_teleop) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ojg/sim_ws/build/key_teleop', '--', '-j18', '-l18'], 'cwd': '/home/ojg/sim_ws/build/key_teleop', 'env': OrderedDict([('LANGUAGE', 'en_US:en'), ('USER', 'ojg'), ('LC_TIME', 'ko_KR.UTF-8'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/ojg/sim_ws'), ('HOME', '/home/ojg'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/ojg/.nvm/versions/node/v22.18.0/bin'), ('ZSH', '/home/ojg/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/ojg/.nvm/versions/node/v22.18.0/include/node'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1370'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('NVM_DIR', '/home/ojg/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ojg'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ojg'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ojg/.nvm/versions/node/v22.18.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ojg:@/tmp/.ICE-unix/1330,unix/ojg:/tmp/.ICE-unix/1330'), ('PAPERSIZE', 'a4'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/582c5407_46c0_4f8f_b679_e25cca4ef8bc'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XOJUB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/ojg/sim_ws/build/key_teleop'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.900571] (-) TimerEvent: {}
+[0.928381] (key_teleop) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/keyboard_teleop.dir/src/keyboard_teleop.cpp.o\n'}
+[0.937526] (disparity_autodrive) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.937688] (disparity_autodrive) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.937739] (disparity_autodrive) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.938069] (disparity_autodrive) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.938836] (disparity_autodrive) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.938924] (disparity_autodrive) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.939177] (disparity_autodrive) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.939797] (disparity_autodrive) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.945564] (disparity_autodrive) StdoutLine: {'line': b'-- Generating done\n'}
+[0.947759] (disparity_autodrive) StdoutLine: {'line': b'-- Build files have been written to: /home/ojg/sim_ws/build/disparity_autodrive\n'}
+[0.954390] (disparity_autodrive) CommandEnded: {'returncode': 0}
+[0.955309] (disparity_autodrive) JobProgress: {'identifier': 'disparity_autodrive', 'progress': 'build'}
+[0.955520] (disparity_autodrive) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ojg/sim_ws/build/disparity_autodrive', '--', '-j18', '-l18'], 'cwd': '/home/ojg/sim_ws/build/disparity_autodrive', 'env': OrderedDict([('LANGUAGE', 'en_US:en'), ('USER', 'ojg'), ('LC_TIME', 'ko_KR.UTF-8'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/ojg/sim_ws'), ('HOME', '/home/ojg'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/ojg/.nvm/versions/node/v22.18.0/bin'), ('ZSH', '/home/ojg/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/ojg/.nvm/versions/node/v22.18.0/include/node'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1370'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('NVM_DIR', '/home/ojg/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ojg'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ojg'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ojg/.nvm/versions/node/v22.18.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ojg:@/tmp/.ICE-unix/1330,unix/ojg:/tmp/.ICE-unix/1330'), ('PAPERSIZE', 'a4'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/582c5407_46c0_4f8f_b679_e25cca4ef8bc'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XOJUB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/ojg/sim_ws/build/disparity_autodrive'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.994156] (disparity_autodrive) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/disparity_autodrive_node.dir/src/disparity_autodrive_node.cpp.o\n'}
+[1.000670] (-) TimerEvent: {}
+[1.100878] (-) TimerEvent: {}
+[1.201063] (-) TimerEvent: {}
+[1.301237] (-) TimerEvent: {}
+[1.401432] (-) TimerEvent: {}
+[1.501589] (-) TimerEvent: {}
+[1.601809] (-) TimerEvent: {}
+[1.702028] (-) TimerEvent: {}
+[1.802281] (-) TimerEvent: {}
+[1.902484] (-) TimerEvent: {}
+[2.002684] (-) TimerEvent: {}
+[2.102874] (-) TimerEvent: {}
+[2.203031] (-) TimerEvent: {}
+[2.303162] (-) TimerEvent: {}
+[2.403302] (-) TimerEvent: {}
+[2.503521] (-) TimerEvent: {}
+[2.603744] (-) TimerEvent: {}
+[2.703912] (-) TimerEvent: {}
+[2.804062] (-) TimerEvent: {}
+[2.904222] (-) TimerEvent: {}
+[3.004523] (-) TimerEvent: {}
+[3.104722] (-) TimerEvent: {}
+[3.204924] (-) TimerEvent: {}
+[3.305137] (-) TimerEvent: {}
+[3.405299] (-) TimerEvent: {}
+[3.505459] (-) TimerEvent: {}
+[3.605627] (-) TimerEvent: {}
+[3.705845] (-) TimerEvent: {}
+[3.806051] (-) TimerEvent: {}
+[3.823119] (key_teleop) StdoutLine: {'line': b'[100%] Linking CXX executable keyboard_teleop\n'}
+[3.906187] (-) TimerEvent: {}
+[3.958499] (key_teleop) StdoutLine: {'line': b'[100%] Built target keyboard_teleop\n'}
+[3.967247] (key_teleop) CommandEnded: {'returncode': 0}
+[3.967948] (key_teleop) JobProgress: {'identifier': 'key_teleop', 'progress': 'install'}
+[3.973973] (key_teleop) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ojg/sim_ws/build/key_teleop'], 'cwd': '/home/ojg/sim_ws/build/key_teleop', 'env': OrderedDict([('LANGUAGE', 'en_US:en'), ('USER', 'ojg'), ('LC_TIME', 'ko_KR.UTF-8'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/ojg/sim_ws'), ('HOME', '/home/ojg'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/ojg/.nvm/versions/node/v22.18.0/bin'), ('ZSH', '/home/ojg/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/ojg/.nvm/versions/node/v22.18.0/include/node'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1370'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('NVM_DIR', '/home/ojg/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ojg'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ojg'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ojg/.nvm/versions/node/v22.18.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ojg:@/tmp/.ICE-unix/1330,unix/ojg:/tmp/.ICE-unix/1330'), ('PAPERSIZE', 'a4'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/582c5407_46c0_4f8f_b679_e25cca4ef8bc'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XOJUB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/ojg/sim_ws/build/key_teleop'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.980700] (key_teleop) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.980813] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/lib/key_teleop/keyboard_teleop\n'}
+[3.981415] (key_teleop) StdoutLine: {'line': b'-- Set runtime path of "/home/ojg/sim_ws/install/key_teleop/lib/key_teleop/keyboard_teleop" to ""\n'}
+[3.981476] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/share/ament_index/resource_index/package_run_dependencies/key_teleop\n'}
+[3.981536] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/share/ament_index/resource_index/parent_prefix_path/key_teleop\n'}
+[3.981605] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/share/key_teleop/environment/ament_prefix_path.sh\n'}
+[3.981655] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/share/key_teleop/environment/ament_prefix_path.dsv\n'}
+[3.981707] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/share/key_teleop/environment/path.sh\n'}
+[3.981765] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/share/key_teleop/environment/path.dsv\n'}
+[3.981818] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/share/key_teleop/local_setup.bash\n'}
+[3.981869] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/share/key_teleop/local_setup.sh\n'}
+[3.981941] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/share/key_teleop/local_setup.zsh\n'}
+[3.981967] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/share/key_teleop/local_setup.dsv\n'}
+[3.982032] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/share/key_teleop/package.dsv\n'}
+[3.982058] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/share/ament_index/resource_index/packages/key_teleop\n'}
+[3.982106] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/share/key_teleop/cmake/key_teleopConfig.cmake\n'}
+[3.982174] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/share/key_teleop/cmake/key_teleopConfig-version.cmake\n'}
+[3.982200] (key_teleop) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/key_teleop/share/key_teleop/package.xml\n'}
+[3.983078] (key_teleop) CommandEnded: {'returncode': 0}
+[3.991921] (key_teleop) JobEnded: {'identifier': 'key_teleop', 'rc': 0}
+[4.006300] (-) TimerEvent: {}
+[4.106509] (-) TimerEvent: {}
+[4.206755] (-) TimerEvent: {}
+[4.306954] (-) TimerEvent: {}
+[4.407154] (-) TimerEvent: {}
+[4.507323] (-) TimerEvent: {}
+[4.607517] (-) TimerEvent: {}
+[4.707778] (-) TimerEvent: {}
+[4.808022] (-) TimerEvent: {}
+[4.908294] (-) TimerEvent: {}
+[5.008527] (-) TimerEvent: {}
+[5.108785] (-) TimerEvent: {}
+[5.209018] (-) TimerEvent: {}
+[5.309265] (-) TimerEvent: {}
+[5.409490] (-) TimerEvent: {}
+[5.509726] (-) TimerEvent: {}
+[5.609925] (-) TimerEvent: {}
+[5.710100] (-) TimerEvent: {}
+[5.810300] (-) TimerEvent: {}
+[5.910488] (-) TimerEvent: {}
+[6.010668] (-) TimerEvent: {}
+[6.110845] (-) TimerEvent: {}
+[6.211020] (-) TimerEvent: {}
+[6.311207] (-) TimerEvent: {}
+[6.411401] (-) TimerEvent: {}
+[6.511604] (-) TimerEvent: {}
+[6.611788] (-) TimerEvent: {}
+[6.712060] (-) TimerEvent: {}
+[6.812251] (-) TimerEvent: {}
+[6.912455] (-) TimerEvent: {}
+[7.012657] (-) TimerEvent: {}
+[7.112899] (-) TimerEvent: {}
+[7.213085] (-) TimerEvent: {}
+[7.313271] (-) TimerEvent: {}
+[7.413455] (-) TimerEvent: {}
+[7.513713] (-) TimerEvent: {}
+[7.613898] (-) TimerEvent: {}
+[7.714106] (-) TimerEvent: {}
+[7.814300] (-) TimerEvent: {}
+[7.914500] (-) TimerEvent: {}
+[8.014648] (-) TimerEvent: {}
+[8.114797] (-) TimerEvent: {}
+[8.214989] (-) TimerEvent: {}
+[8.315163] (-) TimerEvent: {}
+[8.415339] (-) TimerEvent: {}
+[8.515501] (-) TimerEvent: {}
+[8.615634] (-) TimerEvent: {}
+[8.715808] (-) TimerEvent: {}
+[8.815986] (-) TimerEvent: {}
+[8.916219] (-) TimerEvent: {}
+[9.016482] (-) TimerEvent: {}
+[9.116673] (-) TimerEvent: {}
+[9.216868] (-) TimerEvent: {}
+[9.317075] (-) TimerEvent: {}
+[9.417262] (-) TimerEvent: {}
+[9.517446] (-) TimerEvent: {}
+[9.560178] (disparity_autodrive) StdoutLine: {'line': b'[100%] Linking CXX executable disparity_autodrive_node\n'}
+[9.617544] (-) TimerEvent: {}
+[9.717726] (-) TimerEvent: {}
+[9.817904] (-) TimerEvent: {}
+[9.918074] (-) TimerEvent: {}
+[9.986335] (disparity_autodrive) StdoutLine: {'line': b'[100%] Built target disparity_autodrive_node\n'}
+[9.994022] (disparity_autodrive) CommandEnded: {'returncode': 0}
+[9.994605] (disparity_autodrive) JobProgress: {'identifier': 'disparity_autodrive', 'progress': 'install'}
+[9.994804] (disparity_autodrive) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ojg/sim_ws/build/disparity_autodrive'], 'cwd': '/home/ojg/sim_ws/build/disparity_autodrive', 'env': OrderedDict([('LANGUAGE', 'en_US:en'), ('USER', 'ojg'), ('LC_TIME', 'ko_KR.UTF-8'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/ojg/sim_ws'), ('HOME', '/home/ojg'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/ojg/.nvm/versions/node/v22.18.0/bin'), ('ZSH', '/home/ojg/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/ojg/.nvm/versions/node/v22.18.0/include/node'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1370'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('NVM_DIR', '/home/ojg/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ojg'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ojg'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ojg/.nvm/versions/node/v22.18.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ojg:@/tmp/.ICE-unix/1330,unix/ojg:/tmp/.ICE-unix/1330'), ('PAPERSIZE', 'a4'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/582c5407_46c0_4f8f_b679_e25cca4ef8bc'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XOJUB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/ojg/sim_ws/build/disparity_autodrive'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.002639] (disparity_autodrive) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.002794] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/lib/disparity_autodrive/disparity_autodrive_node\n'}
+[10.006157] (disparity_autodrive) StdoutLine: {'line': b'-- Set runtime path of "/home/ojg/sim_ws/install/disparity_autodrive/lib/disparity_autodrive/disparity_autodrive_node" to ""\n'}
+[10.006210] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/package_run_dependencies/disparity_autodrive\n'}
+[10.006275] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/parent_prefix_path/disparity_autodrive\n'}
+[10.006348] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.sh\n'}
+[10.006377] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.dsv\n'}
+[10.006448] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.sh\n'}
+[10.006476] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.dsv\n'}
+[10.006539] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.bash\n'}
+[10.006565] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.sh\n'}
+[10.006632] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.zsh\n'}
+[10.006687] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.dsv\n'}
+[10.006712] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.dsv\n'}
+[10.006765] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/packages/disparity_autodrive\n'}
+[10.006820] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig.cmake\n'}
+[10.006846] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig-version.cmake\n'}
+[10.006898] (disparity_autodrive) StdoutLine: {'line': b'-- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.xml\n'}
+[10.007930] (disparity_autodrive) CommandEnded: {'returncode': 0}
+[10.018201] (-) TimerEvent: {}
+[10.020380] (disparity_autodrive) JobEnded: {'identifier': 'disparity_autodrive', 'rc': 0}
+[10.020709] (-) EventReactorShutdown: {}

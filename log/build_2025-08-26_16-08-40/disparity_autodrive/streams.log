@@ -1,0 +1,72 @@
+[0.015s] Invoking command in '/home/ojg/sim_ws/build/disparity_autodrive': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ojg/sim_ws/src/disparity_autodrive -DCMAKE_INSTALL_PREFIX=/home/ojg/sim_ws/install/disparity_autodrive
+[0.083s] -- The C compiler identification is GNU 11.4.0
+[0.137s] -- The CXX compiler identification is GNU 11.4.0
+[0.143s] -- Detecting C compiler ABI info
+[0.196s] -- Detecting C compiler ABI info - done
+[0.201s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.201s] -- Detecting C compile features
+[0.202s] -- Detecting C compile features - done
+[0.203s] -- Detecting CXX compiler ABI info
+[0.262s] -- Detecting CXX compiler ABI info - done
+[0.268s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.268s] -- Detecting CXX compile features
+[0.269s] -- Detecting CXX compile features - done
+[0.270s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.382s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.451s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.484s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.487s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.494s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.503s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.515s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.549s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.551s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.618s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.639s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.670s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.677s] -- Looking for pthread.h
+[0.731s] -- Looking for pthread.h - found
+[0.732s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.784s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.786s] -- Found Threads: TRUE  
+[0.825s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.848s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)
+[0.856s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.869s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.886s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.937s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.937s] -- Configured cppcheck include dirs: 
+[0.937s] -- Configured cppcheck exclude dirs and/or files: 
+[0.938s] -- Added test 'lint_cmake' to check CMake code style
+[0.938s] -- Added test 'uncrustify' to check C / C++ code style
+[0.938s] -- Configured uncrustify additional arguments: 
+[0.939s] -- Added test 'xmllint' to check XML markup files
+[0.939s] -- Configuring done
+[0.945s] -- Generating done
+[0.947s] -- Build files have been written to: /home/ojg/sim_ws/build/disparity_autodrive
+[0.955s] Invoked command in '/home/ojg/sim_ws/build/disparity_autodrive' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ojg/sim_ws/src/disparity_autodrive -DCMAKE_INSTALL_PREFIX=/home/ojg/sim_ws/install/disparity_autodrive
+[0.955s] Invoking command in '/home/ojg/sim_ws/build/disparity_autodrive': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/disparity_autodrive -- -j18 -l18
+[0.994s] [ 50%] Building CXX object CMakeFiles/disparity_autodrive_node.dir/src/disparity_autodrive_node.cpp.o
+[9.560s] [100%] Linking CXX executable disparity_autodrive_node
+[9.986s] [100%] Built target disparity_autodrive_node
+[9.994s] Invoked command in '/home/ojg/sim_ws/build/disparity_autodrive' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/disparity_autodrive -- -j18 -l18
+[9.994s] Invoking command in '/home/ojg/sim_ws/build/disparity_autodrive': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/disparity_autodrive
+[10.002s] -- Install configuration: ""
+[10.002s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/lib/disparity_autodrive/disparity_autodrive_node
+[10.006s] -- Set runtime path of "/home/ojg/sim_ws/install/disparity_autodrive/lib/disparity_autodrive/disparity_autodrive_node" to ""
+[10.006s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/package_run_dependencies/disparity_autodrive
+[10.006s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/parent_prefix_path/disparity_autodrive
+[10.006s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.sh
+[10.006s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.dsv
+[10.006s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.sh
+[10.006s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.dsv
+[10.006s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.bash
+[10.006s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.sh
+[10.006s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.zsh
+[10.006s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.dsv
+[10.006s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.dsv
+[10.006s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/packages/disparity_autodrive
+[10.006s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig.cmake
+[10.006s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig-version.cmake
+[10.006s] -- Installing: /home/ojg/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.xml
+[10.008s] Invoked command in '/home/ojg/sim_ws/build/disparity_autodrive' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/disparity_autodrive

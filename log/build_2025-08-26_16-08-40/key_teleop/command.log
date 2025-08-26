@@ -1,0 +1,6 @@
+Invoking command in '/home/ojg/sim_ws/build/key_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ojg/sim_ws/src/key_teleop -DCMAKE_INSTALL_PREFIX=/home/ojg/sim_ws/install/key_teleop
+Invoked command in '/home/ojg/sim_ws/build/key_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ojg/sim_ws/src/key_teleop -DCMAKE_INSTALL_PREFIX=/home/ojg/sim_ws/install/key_teleop
+Invoking command in '/home/ojg/sim_ws/build/key_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/key_teleop -- -j18 -l18
+Invoked command in '/home/ojg/sim_ws/build/key_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ojg/sim_ws/build/key_teleop -- -j18 -l18
+Invoking command in '/home/ojg/sim_ws/build/key_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/key_teleop
+Invoked command in '/home/ojg/sim_ws/build/key_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ojg/sim_ws/build/key_teleop

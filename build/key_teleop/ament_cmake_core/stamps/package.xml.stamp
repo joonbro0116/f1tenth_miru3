@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>key_teleop</name>
+  <version>1.0.0</version>
+  <description>Keyboard teleoperation node for publishing AckermannDriveStamped messages</description>
+
+  <maintainer email="ojg@todo.todo">ojg</maintainer>
+  <author email="ojg@todo.todo">ojg</author>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Dependencies for build and runtime -->
+  <depend>rclcpp</depend>
+  <depend>ackermann_msgs</depend>
+
+  <!-- Optional: lint dependencies -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
