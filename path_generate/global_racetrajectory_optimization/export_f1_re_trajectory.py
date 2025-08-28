@@ -13,7 +13,7 @@ def export_f1_re_trajectory():
     
     print("=== F1 RE 최적화 궤적 저장 ===")
     
-    track_file = "inputs/tracks/f1_re"
+    track_file = "inputs/tracks/0826-2.csv"
     optimizer = AccurateF1REOptimizer(track_file)
     
     # 1. 트랙 처리

@@ -9,10 +9,11 @@
   "smoothing_method": "curvature",
   "curvature_threshold": 0.3,
   "gaussian_sigma": 2.0,
-  "spline_points_ratio": 2.0,
+  "spline_points_ratio": 4.0,
   "smoothing_window_size": 60,
   "smoothing_iterations": 5,
   "smoothing_blend_factor": 0.3,
   "subsample_period": 1,
-  "plot_mode": 1
+  "plot_mode": 1,
+  "calculate_track_widths": true
 }

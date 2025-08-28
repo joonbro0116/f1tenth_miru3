@@ -37,7 +37,8 @@ class ParameterGUI:
             
             # 기본 처리 파라미터
             'subsample_period': 1,
-            'plot_mode': 1
+            'plot_mode': 1,
+            'calculate_track_widths': False
         }
         
         self.create_widgets()
@@ -226,6 +227,11 @@ class ParameterGUI:
         for i, (text, value) in enumerate(plot_modes):
             ttk.Radiobutton(frame, text=text, variable=self.plot_mode_var, 
                            value=value).grid(row=1, column=i+1, padx=5)
+        
+        # 트랙 폭 계산 옵션
+        self.calculate_widths_var = tk.BooleanVar(value=self.params['calculate_track_widths'])
+        ttk.Checkbutton(frame, text="트랙 폭 계산 (좌우 거리 포함)", 
+                       variable=self.calculate_widths_var).grid(row=2, column=0, columnspan=4, sticky=tk.W, pady=5)
     
     def create_control_section(self, parent, row):
         frame = ttk.Frame(parent, padding="10")
@@ -288,7 +294,8 @@ class ParameterGUI:
             'smoothing_iterations': self.iterations_var.get(),
             'smoothing_blend_factor': self.blend_factor_var.get(),
             'subsample_period': self.subsample_var.get(),
-            'plot_mode': self.plot_mode_var.get()
+            'plot_mode': self.plot_mode_var.get(),
+            'calculate_track_widths': self.calculate_widths_var.get()
         }
     
     def save_config(self):
@@ -339,6 +346,7 @@ class ParameterGUI:
         self.blend_factor_var.set(params.get('smoothing_blend_factor', 0.3))
         self.subsample_var.set(params.get('subsample_period', 1))
         self.plot_mode_var.set(params.get('plot_mode', 1))
+        self.calculate_widths_var.set(params.get('calculate_track_widths', False))
     
     def load_default_params(self):
         """기본 파라미터 로드"""
@@ -446,8 +454,61 @@ class ParameterGUI:
             else:
                 resolution, origin = 0.05, [0, 0, 0]  # 기본값
             
-            # CSV 파일 로드
-            centerline_points = np.loadtxt(self.last_result_file, delimiter=',')
+            # CSV 파일 로드 (헤더 자동 감지 및 예외 처리 강화)
+            centerline_data = None
+            
+            # 1. 파일 존재 여부 확인
+            if not os.path.exists(self.last_result_file):
+                messagebox.showerror("파일 오류", f"결과 CSV 파일을 찾을 수 없습니다:\n{self.last_result_file}")
+                viz_window.destroy() # 오류 발생 시 시각화 창 닫기
+                return
+
+            try:
+                # 2. 헤더가 없다고 가정하고 우선 로드 시도
+                centerline_data = np.loadtxt(self.last_result_file, delimiter=',')
+                print("✅ CSV 파일 로드 성공 (헤더 없음).")
+            except ValueError:
+                # 3. ValueError 발생 시 -> 헤더가 있을 가능성이 높음
+                print("⚠️ CSV 헤더 감지됨, 첫 번째 행을 스킵하고 다시 로드합니다.")
+                try:
+                    # 헤더를 건너뛰고 다시 로드
+                    centerline_data = np.loadtxt(self.last_result_file, delimiter=',', skiprows=1)
+                    print("✅ CSV 파일 로드 성공 (헤더 스킵).")
+                except Exception as inner_e:
+                    # 헤더를 스킵해도 오류 발생 시
+                    messagebox.showerror("CSV 로드 오류", f"헤더 스킵 후에도 파일 로드에 실패했습니다: {inner_e}")
+                    viz_window.destroy()
+                    return
+            except Exception as e:
+                # 4. 그 외의 파일 로드 오류 (e.g., 접근 권한)
+                messagebox.showerror("파일 로드 오류", f"파일 로드 중 예상치 못한 오류가 발생했습니다: {e}")
+                viz_window.destroy()
+                return
+
+            # 데이터 로드에 최종 실패한 경우 함수 종료
+            if centerline_data is None:
+                messagebox.showerror("오류", "원인 미상의 이유로 CSV 데이터 로드에 실패했습니다.")
+                viz_window.destroy()
+                return
+            
+            # CSV 형식 확인
+            if centerline_data.ndim == 1:
+                centerline_data = centerline_data.reshape(1, -1)
+            
+            has_track_widths = centerline_data.shape[1] >= 4
+            
+            if has_track_widths:
+                # 확장된 형식 (x, y, left_dist, right_dist)
+                centerline_points = centerline_data[:, :2]
+                left_distances = centerline_data[:, 2]
+                right_distances = centerline_data[:, 3]
+                print(f"트랙 폭 정보 포함된 CSV 파일 감지: {len(centerline_points)}개 포인트")
+            else:
+                # 기본 형식 (x, y)
+                centerline_points = centerline_data[:, :2]
+                left_distances = None
+                right_distances = None
+                print(f"기본 CSV 파일 감지: {len(centerline_points)}개 포인트")
             
             # 픽셀 좌표로 변환
             pixel_points = self.world_to_pixel(centerline_points, resolution, origin, image.shape)
@@ -460,8 +521,12 @@ class ParameterGUI:
             # 두 번째 서브플롯: PGM + Centerline 오버레이
             ax2.imshow(image, cmap='gray', origin='upper', alpha=0.7)
             
-            # Centerline 그리기 (닫힌 루프)
+            # Centerline 그리기
             if len(pixel_points) > 0:
+                # 트랙 폭 정보가 있으면 트랙 경계도 그리기
+                if has_track_widths:
+                    self.draw_track_boundaries(ax2, centerline_points, left_distances, right_distances, resolution, origin, image.shape)
+                
                 # 닫힌 루프를 위해 첫 번째 점을 마지막에 추가
                 closed_points = np.vstack([pixel_points, pixel_points[0:1]])
                 ax2.plot(closed_points[:, 0], closed_points[:, 1], 'r-', linewidth=3, label='Centerline', alpha=0.8)
@@ -492,7 +557,10 @@ class ParameterGUI:
                         ax2.arrow(pixel_points[i, 0], pixel_points[i, 1], dx*0.3, dy*0.3,
                                  head_width=3, head_length=3, fc='blue', ec='blue', alpha=0.6)
             
-            ax2.set_title(f'PGM + Centerline Overlay\n({len(centerline_points)} points)')
+            if has_track_widths:
+                ax2.set_title(f'PGM + Centerline + Track Boundaries\n({len(centerline_points)} points with track widths)')
+            else:
+                ax2.set_title(f'PGM + Centerline Overlay\n({len(centerline_points)} points)')
             ax2.legend(loc='upper right')
             ax2.axis('off')
             
@@ -577,6 +645,86 @@ class ParameterGUI:
         # pixel_points[:, 1] = image_shape[0] - pixel_points[:, 1]
         
         return pixel_points
+    
+    def draw_track_boundaries(self, ax, centerline_points, left_distances, right_distances, resolution, origin, image_shape):
+        """트랙 경계선을 시각화 (Raceline-Optimization 호환 방식)"""
+        print("트랙 경계선 시각화 중... (Raceline-Optimization 호환 법선벡터 사용)")
+        
+        left_boundary_points = []
+        right_boundary_points = []
+        
+        for i, point in enumerate(centerline_points):
+            # Raceline-Optimization 방식: 인접점 기반 방향 벡터 계산 (트랙 폭 계산과 동일한 방법)
+            current_point = point
+            
+            if i == 0:
+                # 첫 번째 점: 다음 점 방향
+                if len(centerline_points) > 1:
+                    direction_vector = np.array([
+                        centerline_points[1][0] - centerline_points[0][0], 
+                        centerline_points[1][1] - centerline_points[0][1]
+                    ])
+                else:
+                    direction_vector = np.array([1, 0])
+            elif i == len(centerline_points) - 1:
+                # 마지막 점: 이전 점에서의 방향
+                direction_vector = np.array([
+                    centerline_points[i][0] - centerline_points[i-1][0], 
+                    centerline_points[i][1] - centerline_points[i-1][1]
+                ])
+            else:
+                # 중간 점: 이전과 다음 점 사이의 방향 (Raceline-Optimization 방식)
+                direction_vector = np.array([
+                    centerline_points[i+1][0] - centerline_points[i-1][0], 
+                    centerline_points[i+1][1] - centerline_points[i-1][1]
+                ])
+            
+            # 벡터 정규화
+            if np.linalg.norm(direction_vector) > 0:
+                direction_vector = direction_vector / np.linalg.norm(direction_vector)
+            else:
+                direction_vector = np.array([1, 0])
+            
+            # 법선 벡터 계산 (좌우 방향)
+            left_normal = np.array([-direction_vector[1], direction_vector[0]])
+            right_normal = np.array([direction_vector[1], -direction_vector[0]])
+            
+            # 좌우 경계 포인트 계산 (실제 좌표계에서)
+            left_point = current_point + left_normal * left_distances[i]
+            right_point = current_point + right_normal * right_distances[i]
+            
+            left_boundary_points.append(left_point)
+            right_boundary_points.append(right_point)
+        
+        # 실제 좌표를 픽셀 좌표로 변환
+        left_boundary_pixels = self.world_to_pixel(np.array(left_boundary_points), resolution, origin, image_shape)
+        right_boundary_pixels = self.world_to_pixel(np.array(right_boundary_points), resolution, origin, image_shape)
+        
+        # 닫힌 루프로 만들기
+        left_boundary_closed = np.vstack([left_boundary_pixels, left_boundary_pixels[0:1]])
+        right_boundary_closed = np.vstack([right_boundary_pixels, right_boundary_pixels[0:1]])
+        
+        # 경계선 그리기
+        ax.plot(left_boundary_closed[:, 0], left_boundary_closed[:, 1], 'g--', 
+               linewidth=2, label='Left Boundary', alpha=0.8)
+        ax.plot(right_boundary_closed[:, 0], right_boundary_closed[:, 1], 'b--', 
+               linewidth=2, label='Right Boundary', alpha=0.8)
+        
+        # 몇 개 포인트에서 centerline과 경계를 연결하는 선 그리기
+        step = max(1, len(centerline_points) // 20)  # 20개 정도만 표시
+        centerline_pixels = self.world_to_pixel(centerline_points, resolution, origin, image_shape)
+        
+        for i in range(0, len(centerline_points), step):
+            # centerline에서 좌측 경계로
+            ax.plot([centerline_pixels[i, 0], left_boundary_pixels[i, 0]], 
+                   [centerline_pixels[i, 1], left_boundary_pixels[i, 1]], 
+                   'g-', linewidth=0.5, alpha=0.4)
+            # centerline에서 우측 경계로
+            ax.plot([centerline_pixels[i, 0], right_boundary_pixels[i, 0]], 
+                   [centerline_pixels[i, 1], right_boundary_pixels[i, 1]], 
+                   'b-', linewidth=0.5, alpha=0.4)
+        
+        print(f"트랙 경계선 시각화 완료: 좌측 {len(left_boundary_points)}개, 우측 {len(right_boundary_points)}개 포인트")
     
     def save_visualization(self, fig):
         """Save visualization result as image file"""

@@ -323,6 +323,131 @@ def smooth_centerline(points, smoothing_method='curvature', spline_points=None, 
     
     return points
 
+def world_to_pixel_coords(world_points, resolution, origin):
+    """실제 좌표를 픽셀 좌표로 변환"""
+    pixel_points = []
+    for point in world_points:
+        # 실제 좌표를 픽셀 좌표로 변환
+        pixel_x = int((point[0] + origin[0]) / resolution)
+        pixel_y = int((point[1] + origin[1]) / resolution)
+        pixel_points.append([pixel_x, pixel_y])
+    return np.array(pixel_points)
+
+def bilinear_interpolation(image, x, y):
+    """bilinear 보간으로 서브픽셀 값 계산"""
+    height, width = image.shape
+    
+    x1 = int(np.floor(x))
+    x2 = min(x1 + 1, width - 1)
+    y1 = int(np.floor(y))
+    y2 = min(y1 + 1, height - 1)
+    
+    if x1 < 0 or y1 < 0 or x2 >= width or y2 >= height:
+        return 0
+    
+    # 가중치 계산
+    wx2 = x - x1
+    wx1 = 1 - wx2
+    wy2 = y - y1
+    wy1 = 1 - wy2
+    
+    # 보간
+    return (image[y1, x1] * wx1 * wy1 +
+            image[y1, x2] * wx2 * wy1 +
+            image[y2, x1] * wx1 * wy2 +
+            image[y2, x2] * wx2 * wy2)
+
+def ray_cast_to_boundary(start_point, direction, pgm_image):
+    """시작점에서 특정 방향으로 ray casting하여 트랙 경계까지의 거리 계산"""
+    height, width = pgm_image.shape
+    max_distance = min(width, height)
+    
+    current_x, current_y = start_point
+    step_size = 0.5  # 서브픽셀 정확도
+    
+    for distance in np.arange(step_size, max_distance, step_size):
+        # 현재 위치 계산
+        test_x = current_x + direction[0] * distance
+        test_y = current_y + direction[1] * distance
+        
+        # 이미지 경계 확인
+        if test_x < 0 or test_x >= width or test_y < 0 or test_y >= height:
+            return distance
+        
+        # 픽셀 값 확인 (보간 사용)
+        pixel_value = bilinear_interpolation(pgm_image, test_x, test_y)
+        
+        # 트랙 경계 감지 (벽 = 검은색, 자유공간 = 흰색)
+        if pixel_value < 127:  # 임계값 (트랙 경계)
+            return distance
+    
+    return max_distance
+
+def calculate_track_widths_integrated(centerline_points, pgm_image, resolution, origin):
+    """centerline 각 포인트에서 좌우 트랙 폭 계산 (Raceline-Optimization 호환 방식)"""
+    print("트랙 폭 계산 중... (Raceline-Optimization 호환 법선벡터 사용)")
+    
+    if len(centerline_points) < 3:
+        print("포인트가 너무 적어 트랙 폭을 계산할 수 없습니다.")
+        return None, None
+    
+    # 실제 좌표를 픽셀 좌표로 변환
+    pixel_points = world_to_pixel_coords(centerline_points, resolution, origin)
+    
+    left_distances = []
+    right_distances = []
+    
+    height, width = pgm_image.shape
+    
+    for i, pixel_point in enumerate(pixel_points):
+        # Raceline-Optimization 방식: 인접점 기반 방향 벡터 계산
+        current_point = pixel_point
+        
+        if i == 0:
+            # 첫 번째 점: 다음 점 방향
+            if len(pixel_points) > 1:
+                direction_vector = np.array([
+                    pixel_points[1][0] - pixel_points[0][0], 
+                    pixel_points[1][1] - pixel_points[0][1]
+                ])
+            else:
+                direction_vector = np.array([1, 0])
+        elif i == len(pixel_points) - 1:
+            # 마지막 점: 이전 점에서의 방향
+            direction_vector = np.array([
+                pixel_points[i][0] - pixel_points[i-1][0], 
+                pixel_points[i][1] - pixel_points[i-1][1]
+            ])
+        else:
+            # 중간 점: 이전과 다음 점 사이의 방향 (Raceline-Optimization 방식)
+            direction_vector = np.array([
+                pixel_points[i+1][0] - pixel_points[i-1][0], 
+                pixel_points[i+1][1] - pixel_points[i-1][1]
+            ])
+        
+        # 벡터 정규화
+        if np.linalg.norm(direction_vector) > 0:
+            direction_vector = direction_vector / np.linalg.norm(direction_vector)
+        else:
+            direction_vector = np.array([1, 0])  # 기본값
+        
+        # 수직 벡터 계산 (법선 방향)
+        # 좌측: 진행방향에서 시계방향 90도 회전
+        left_normal = np.array([-direction_vector[1], direction_vector[0]])
+        # 우측: 진행방향에서 반시계방향 90도 회전
+        right_normal = np.array([direction_vector[1], -direction_vector[0]])
+        
+        # 좌측 거리 측정
+        left_dist = ray_cast_to_boundary(current_point, left_normal, pgm_image)
+        left_distances.append(left_dist * resolution)  # 픽셀을 미터로 변환
+        
+        # 우측 거리 측정
+        right_dist = ray_cast_to_boundary(current_point, right_normal, pgm_image)
+        right_distances.append(right_dist * resolution)  # 픽셀을 미터로 변환
+    
+    print(f"트랙 폭 계산 완료: 평균 좌측 {np.mean(left_distances):.2f}m, 평균 우측 {np.mean(right_distances):.2f}m")
+    return np.array(left_distances), np.array(right_distances)
+
 if __name__=='__main__':
     parser = argparse.ArgumentParser(description='Fits a center-line to a closed track.')
     parser.add_argument('--pgm_path', help='file path to the pgm track image file', nargs='?', type=argparse.FileType('rb'), default=None)
@@ -333,6 +458,7 @@ if __name__=='__main__':
     parser.add_argument('--smooth_sigma', help='gaussian smoothing sigma value', nargs='?', type=float, default=2.0)
     parser.add_argument('--curvature_threshold', help='curvature threshold for selective smoothing (higher = only sharp corners)', nargs='?', type=float, default=0.3)
     parser.add_argument('--out_dir', help='directory path to write output to', nargs='?', type=argparse.FileType('w'), default=None)
+    parser.add_argument('--calculate_track_widths', help='calculate left and right track widths', action='store_true')
     args = parser.parse_args()
 
     plot_mode = args.plot_mode
@@ -340,6 +466,7 @@ if __name__=='__main__':
     smooth_method = args.smooth_method
     smooth_sigma = args.smooth_sigma
     curvature_threshold = args.curvature_threshold
+    calculate_track_widths = args.calculate_track_widths
     
     # Get track image and info from file
     Tk().withdraw()
@@ -447,13 +574,79 @@ if __name__=='__main__':
             plt.legend()
             plt.show()
 
+    # Calculate track widths if requested
+    if calculate_track_widths:
+        print("좌우 트랙 폭 계산 중...")
+        left_widths, right_widths = calculate_track_widths_integrated(track_cycle, depth, resolution, origin)
+        print(f"좌우 폭 계산 완료: 평균 좌측 폭 {np.mean(left_widths):.3f}m, 평균 우측 폭 {np.mean(right_widths):.3f}m")
+        
+        # Track width 시각화
+        if plot_mode > 0:
+            print("트랙 폭 시각화 중...")
+            plt.figure(figsize=(15, 10))
+            
+            # Centerline 그리기
+            plt.plot(track_cycle[:, 0], track_cycle[:, 1], 'b-', linewidth=3, label='Centerline')
+            
+            # 좌우 경계 포인트 계산 및 시각화 (일부만)
+            visualization_step = max(1, len(track_cycle) // 50)  # 50개 정도만 시각화
+            for i in range(0, len(track_cycle), visualization_step):
+                # 방향 벡터 계산 (Raceline-Optimization 방식)
+                if i == 0:
+                    direction = track_cycle[1] - track_cycle[0]
+                elif i == len(track_cycle) - 1:
+                    direction = track_cycle[i] - track_cycle[i-1]
+                else:
+                    direction = track_cycle[i+1] - track_cycle[i-1]
+                
+                # 방향 벡터 정규화
+                direction_length = np.linalg.norm(direction)
+                if direction_length > 0:
+                    direction = direction / direction_length
+                    
+                    # 좌우 수직 벡터 (오른쪽이 양수)
+                    normal_right = np.array([direction[1], -direction[0]])
+                    normal_left = -normal_right
+                    
+                    # 좌우 경계점 계산
+                    left_point = track_cycle[i] + normal_left * left_widths[i]
+                    right_point = track_cycle[i] + normal_right * right_widths[i]
+                    
+                    # 경계선 그리기
+                    plt.plot([left_point[0], track_cycle[i, 0]], [left_point[1], track_cycle[i, 1]], 
+                            'r-', alpha=0.3, linewidth=1)
+                    plt.plot([track_cycle[i, 0], right_point[0]], [track_cycle[i, 1], right_point[1]], 
+                            'g-', alpha=0.3, linewidth=1)
+            
+            plt.title(f'Centerline with Track Boundaries\n평균 좌측 폭: {np.mean(left_widths):.3f}m, 평균 우측 폭: {np.mean(right_widths):.3f}m', 
+                     fontsize=14, fontweight='bold')
+            plt.xlabel('X (m)', fontsize=12)
+            plt.ylabel('Y (m)', fontsize=12)
+            plt.legend(['Centerline', 'Left Boundaries', 'Right Boundaries'])
+            plt.grid(True, alpha=0.3)
+            plt.axis('equal')
+            plt.show()
+        
+        # 확장된 데이터 준비 (x, y, left_width, right_width)
+        extended_data = np.column_stack((track_cycle, left_widths, right_widths))
+        csv_header = "x,y,left_width,right_width"
+    else:
+        extended_data = track_cycle
+        csv_header = "x,y"
+
     print("Processing Time:", time.time() - start_time, "seconds")
 
     # Save to CSV File
     print("Writing Output CSV")
     output_dir = "/home/ojg/sim_ws/maps/"
-    output_path = os.path.join(output_dir, os.path.splitext(os.path.basename(name))[0] + '_centerline.csv')
-    np.savetxt(output_path, track_cycle, delimiter=",")
+    base_name = os.path.splitext(os.path.basename(name))[0]
+    if calculate_track_widths:
+        output_path = os.path.join(output_dir, base_name + '_centerline_with_widths.csv')
+    else:
+        output_path = os.path.join(output_dir, base_name + '_centerline.csv')
+    
+    # 헤더와 함께 저장
+    np.savetxt(output_path, extended_data, delimiter=",", header=csv_header, comments='')
 
     print("Finished. Output saved to", output_path)
 

@@ -387,7 +387,7 @@ class AccurateF1REOptimizer:
 def main():
     print("=== F1 RE 트랙 정확한 시각화 및 최적화 ===")
     
-    track_file = "inputs/tracks/f1_re"
+    track_file = "inputs/tracks/0826-2.csv"
     optimizer = AccurateF1REOptimizer(track_file)
     
     start_time = time.time()
