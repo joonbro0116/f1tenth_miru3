@@ -1,0 +1,19 @@
+{
+  "pgm_path": "/home/ojg/sim_ws/maps/f1tenth_korea_3rd.pgm",
+  "yaml_path": "/home/ojg/sim_ws/maps/f1tenth_korea_3rd.yaml",
+  "output_dir": "/home/ojg/sim_ws/maps/",
+  "denoise_radius": 2.0,
+  "denoise_min_samples_ratio": 8.0,
+  "denoise_min_cluster_ratio": 0.01,
+  "denoise_min_cluster_min": 10,
+  "smoothing_method": "curvature",
+  "curvature_threshold": 0.3,
+  "gaussian_sigma": 2.0,
+  "spline_points_ratio": 4.0,
+  "smoothing_window_size": 60,
+  "smoothing_iterations": 5,
+  "smoothing_blend_factor": 0.3,
+  "subsample_period": 1,
+  "plot_mode": 1,
+  "calculate_track_widths": true
+}

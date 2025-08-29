@@ -11,7 +11,7 @@ def visualize_centerline_with_distances():
     """
     
     # CSV 파일 경로
-    csv_path = "/home/f1/f1tenth_ws/maps/track_edges_revised.csv"
+    csv_path = "/home/f1/f1tenth_ws/path_generate/centerline_with_boundary/0826-2.csv"
     
     # 파일 존재 확인
     if not os.path.exists(csv_path):
