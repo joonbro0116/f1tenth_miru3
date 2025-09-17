@@ -8,6 +8,7 @@ A comprehensive reference for F1TENTH autonomous racing development with ROS 2.
 - [Quick Start Commands](#quick-start-commands)
 - [SLAM & Mapping](#slam--mapping)
 - [Localization](#localization)
+- [Performance Testing](#performance-testing)
 - [Path Planning](#path-planning)
 - [Network Setup](#network-setup)
 - [File Transfer](#file-transfer)
@@ -42,6 +43,8 @@ f1tenth_slam_nav/
 │   ├── slam_toolbox_config.yaml
 │   ├── cartographer_config.lua
 │   └── amcl_config.yaml
+├── scripts/
+│   └── localization_performance_test.py  # Performance evaluation
 └── src/slam_nav_manager.py
 ```
 
@@ -71,6 +74,10 @@ ros2 launch f1tenth_slam_nav slam_nav_launch.py mode:=localization map_yaml_file
 
 #### Manual Map Saving
 ```bash
+# Create directory first if needed
+mkdir -p ~/f1/f1tenth_ws/maps/
+
+# Save map
 ros2 run nav2_map_server map_saver_cli -f ~/f1/f1tenth_ws/maps/map_name
 ```
 
@@ -123,6 +130,65 @@ ros2 launch nav2_bringup localization_launch.py \
 
 ---
 
+## Performance Testing
+
+### Localization Performance Evaluation
+
+Our custom performance testing tool evaluates localization quality in real-time.
+
+#### Usage
+```bash
+# Start localization first
+ros2 launch f1tenth_slam_nav slam_nav_launch.py mode:=localization
+
+# Run performance test
+python3 /home/f1/f1tenth_ws/src/f1tenth_slam_nav/scripts/localization_performance_test.py
+```
+
+#### Measured Metrics
+
+| Metric | Good Range | Description |
+|--------|------------|-------------|
+| **Update Frequency** | `> 20 Hz` | Localization update rate |
+| **Position Variance** | `< 0.001 m²` | Position stability |
+| **Position Uncertainty** | `< 0.1 m` | AMCL covariance |
+| **Orientation Uncertainty** | `< 10°` | Angular uncertainty |
+
+#### Key Performance Indicators
+
+**✅ Good Performance:**
+- Update frequency ≥ 20 Hz
+- Low position variance (< 1mm²)
+- Position uncertainty < 10cm
+- Stable measurements during stationary periods
+
+**⚠️ Poor Performance:**
+- Update frequency < 20 Hz
+- High position variance
+- Large uncertainty ellipse
+- Jumping/drifting pose estimates
+
+#### Real-time Output Example
+```
+📊 업데이트 성능:
+   - 주파수: 25.3 Hz
+   - 평균 간격: 39.5 ms
+   - 간격 편차: ±2.1 ms
+
+📍 위치 안정성 (최근 50개 샘플):
+   - X축 분산: 0.000234 m²
+   - Y축 분산: 0.000187 m²
+   - 총 분산: 0.000421 m²
+
+🎯 추정 불확실성:
+   - X축 불확실성: ±0.045 m
+   - Y축 불확실성: ±0.038 m
+   - 방향 불확실성: ±3.2°
+   - 총 위치 불확실성: ±0.059 m
+```
+
+---
+
 ## Path Planning
 
 ### Global Path Planning
@@ -162,7 +228,7 @@ export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 # Terminal 1 (Publisher)
 ros2 run demo_nodes_cpp talker
 
-# Terminal 2 (Subscriber)  
+# Terminal 2 (Subscriber)
 ros2 run demo_nodes_cpp listener
 ```
 
@@ -200,7 +266,7 @@ Our MPC implementation uses **OSQP (Operator Splitting Quadratic Program)** solv
 #### MPC Process Flow
 ```
 1. State Estimation → Current vehicle state [x, y, θ, v]
-2. Reference Trajectory → Desired path with velocity profile  
+2. Reference Trajectory → Desired path with velocity profile
 3. Optimization Problem → Solve using OSQP
 4. Control Application → Apply first control input [a, δ]
 5. Repeat → Receding horizon control
@@ -210,7 +276,7 @@ Our MPC implementation uses **OSQP (Operator Splitting Quadratic Program)** solv
 **Kinematic Bicycle Model:**
 ```
 x_dot = v * cos(θ)           # Longitudinal dynamics
-y_dot = v * sin(θ)           # Lateral dynamics  
+y_dot = v * sin(θ)           # Lateral dynamics
 θ_dot = v * tan(δ) / L       # Yaw dynamics
 v_dot = a                    # Acceleration dynamics
 ```
@@ -250,14 +316,45 @@ ros2 launch mpc_controller mpc_launch.py \
 
 ---
 
+## Troubleshooting
+
+### Common Issues
+
+**Map saving fails:**
+```bash
+# Create directory first
+mkdir -p ~/f1/f1tenth_ws/maps/
+ros2 run nav2_map_server map_saver_cli -f ~/f1/f1tenth_ws/maps/your_map
+```
+
+**Localization fails to start:**
+- Check if map file exists and is valid
+- Verify map_yaml_file path is correct
+- Ensure AMCL parameters are properly configured
+
+**LiDAR connection issues:**
+```bash
+# Check LiDAR connection
+ros2 topic list | grep scan
+ros2 topic echo /scan --once
+```
+
+**Performance testing shows poor results:**
+- Check if robot is moving (static tests show high variance)
+- Verify sufficient features in environment for localization
+- Ensure proper initial pose estimation
+
+---
+
 ## Getting Started
 
 1. **Setup Environment**: Configure ROS 2 and network settings
-2. **Create Map**: Use SLAM to map your environment  
-3. **Localize**: Switch to localization mode with your map
-4. **Plan Path**: Generate optimal racing trajectory
-5. **Control**: Deploy MPC for high-performance tracking
-6. **Race**: Enjoy autonomous racing!
+2. **Create Map**: Use SLAM to map your environment
+3. **Test Performance**: Run localization performance evaluation
+4. **Localize**: Switch to localization mode with your map
+5. **Plan Path**: Generate optimal racing trajectory
+6. **Control**: Deploy MPC for high-performance tracking
+7. **Race**: Enjoy autonomous racing!
 
 ---
 
