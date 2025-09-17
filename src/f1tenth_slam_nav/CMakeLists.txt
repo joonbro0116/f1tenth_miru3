@@ -11,6 +11,9 @@ find_package(rclcpp REQUIRED)
 find_package(std_srvs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 find_package(lifecycle_msgs REQUIRED)
 
 # Install launch files
@@ -23,7 +26,10 @@ install(DIRECTORY config/
   DESTINATION share/${PROJECT_NAME}/config/
 )
 
-# Add C++ executable
+# Include directories
+include_directories(include)
+
+# Add C++ executables
 add_executable(slam_nav_manager src/slam_nav_manager.cpp)
 ament_target_dependencies(slam_nav_manager
   rclcpp
@@ -33,9 +39,27 @@ ament_target_dependencies(slam_nav_manager
   lifecycle_msgs
 )
 
-# Install C++ executable
+add_executable(high_frequency_localizer src/high_frequency_localizer.cpp)
+ament_target_dependencies(high_frequency_localizer
+  rclcpp
+  geometry_msgs
+  nav_msgs
+  sensor_msgs
+  tf2
+  tf2_geometry_msgs
+)
+
+# Install C++ executables
 install(TARGETS
   slam_nav_manager
+  high_frequency_localizer
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+# Install Python scripts
+install(PROGRAMS
+  scripts/localization_performance_test.py
+  scripts/high_frequency_localization.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

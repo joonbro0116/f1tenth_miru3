@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named high_frequency_localizer
+
+# Build rule for target.
+high_frequency_localizer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 high_frequency_localizer
+.PHONY : high_frequency_localizer
+
+# fast build rule for target.
+high_frequency_localizer/fast:
+	$(MAKE) -f CMakeFiles/high_frequency_localizer.dir/build.make CMakeFiles/high_frequency_localizer.dir/build
+.PHONY : high_frequency_localizer/fast
+
+#=============================================================================
 # Target rules for targets named slam_nav_manager
 
 # Build rule for target.
@@ -205,6 +218,33 @@ uninstall: cmake_check_build_system
 uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
+
+src/high_frequency_localizer.o: src/high_frequency_localizer.cpp.o
+
+.PHONY : src/high_frequency_localizer.o
+
+# target to build an object file
+src/high_frequency_localizer.cpp.o:
+	$(MAKE) -f CMakeFiles/high_frequency_localizer.dir/build.make CMakeFiles/high_frequency_localizer.dir/src/high_frequency_localizer.cpp.o
+.PHONY : src/high_frequency_localizer.cpp.o
+
+src/high_frequency_localizer.i: src/high_frequency_localizer.cpp.i
+
+.PHONY : src/high_frequency_localizer.i
+
+# target to preprocess a source file
+src/high_frequency_localizer.cpp.i:
+	$(MAKE) -f CMakeFiles/high_frequency_localizer.dir/build.make CMakeFiles/high_frequency_localizer.dir/src/high_frequency_localizer.cpp.i
+.PHONY : src/high_frequency_localizer.cpp.i
+
+src/high_frequency_localizer.s: src/high_frequency_localizer.cpp.s
+
+.PHONY : src/high_frequency_localizer.s
+
+# target to generate assembly for a file
+src/high_frequency_localizer.cpp.s:
+	$(MAKE) -f CMakeFiles/high_frequency_localizer.dir/build.make CMakeFiles/high_frequency_localizer.dir/src/high_frequency_localizer.cpp.s
+.PHONY : src/high_frequency_localizer.cpp.s
 
 src/slam_nav_manager.o: src/slam_nav_manager.cpp.o
 
@@ -245,10 +285,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... high_frequency_localizer"
 	@echo "... install/local"
 	@echo "... slam_nav_manager"
 	@echo "... f1tenth_slam_nav_uninstall"
 	@echo "... uninstall"
+	@echo "... src/high_frequency_localizer.o"
+	@echo "... src/high_frequency_localizer.i"
+	@echo "... src/high_frequency_localizer.s"
 	@echo "... src/slam_nav_manager.o"
 	@echo "... src/slam_nav_manager.i"
 	@echo "... src/slam_nav_manager.s"

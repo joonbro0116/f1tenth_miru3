@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG   -Wall -Wextra -Wpedantic
 
 CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB
 
-CXX_INCLUDES = -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = -I/home/f1/f1tenth_ws/src/f1tenth_slam_nav/include -isystem /opt/ros/foxy/include 
 

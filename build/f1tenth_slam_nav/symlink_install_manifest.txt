@@ -9,6 +9,9 @@
 /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/config//slam_toolbox_async_config.yaml
 /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/config//slam_toolbox_config.yaml
 /home/f1/f1tenth_ws/install/f1tenth_slam_nav/lib/f1tenth_slam_nav/slam_nav_manager
+/home/f1/f1tenth_ws/install/f1tenth_slam_nav/lib/f1tenth_slam_nav/high_frequency_localizer
+/home/f1/f1tenth_ws/install/f1tenth_slam_nav/lib/f1tenth_slam_nav/localization_performance_test.py
+/home/f1/f1tenth_ws/install/f1tenth_slam_nav/lib/f1tenth_slam_nav/high_frequency_localization.py
 /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/ament_index/resource_index/package_run_dependencies/f1tenth_slam_nav
 /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/ament_index/resource_index/parent_prefix_path/f1tenth_slam_nav
 /home/f1/f1tenth_ws/install/f1tenth_slam_nav/share/f1tenth_slam_nav/environment/ament_prefix_path.sh

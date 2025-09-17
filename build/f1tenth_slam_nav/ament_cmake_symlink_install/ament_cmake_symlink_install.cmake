@@ -316,8 +316,11 @@ ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_slam_nav"
 # install(DIRECTORY "config/" "DESTINATION" "share/f1tenth_slam_nav/config/")
 ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" DIRECTORY "config/" "DESTINATION" "share/f1tenth_slam_nav/config/")
 
-# install("TARGETS" "slam_nav_manager" "DESTINATION" "lib/f1tenth_slam_nav")
+# install("TARGETS" "slam_nav_manager" "high_frequency_localizer" "DESTINATION" "lib/f1tenth_slam_nav")
 include("/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(PROGRAMS "scripts/localization_performance_test.py" "scripts/high_frequency_localization.py" "DESTINATION" "lib/f1tenth_slam_nav")
+ament_cmake_symlink_install_programs("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" PROGRAMS "scripts/localization_performance_test.py" "scripts/high_frequency_localization.py" "DESTINATION" "lib/f1tenth_slam_nav")
 
 # install(FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/f1tenth_slam_nav" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/f1tenth_slam_nav" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

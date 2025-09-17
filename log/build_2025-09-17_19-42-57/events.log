@@ -1,0 +1,275 @@
+[0.000000] (-) TimerEvent: {}
+[0.000443] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.000700] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.000849] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.000978] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.001128] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.002665] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.003340] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.003525] (-) JobUnselected: {'identifier': 'path_follow'}
+[0.003640] (-) JobUnselected: {'identifier': 'path_planner'}
+[0.003778] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.003920] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.004248] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.004407] (-) JobUnselected: {'identifier': 'vesc'}
+[0.004519] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.004623] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.004728] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.004894] (f1tenth_slam_nav) JobQueued: {'identifier': 'f1tenth_slam_nav', 'dependencies': OrderedDict([('ackermann_mux', '/home/f1/f1tenth_ws/install/ackermann_mux'), ('teleop_tools_msgs', '/home/f1/f1tenth_ws/install/teleop_tools_msgs'), ('vesc_msgs', '/home/f1/f1tenth_ws/install/vesc_msgs'), ('joy_teleop', '/home/f1/f1tenth_ws/install/joy_teleop'), ('vesc_ackermann', '/home/f1/f1tenth_ws/install/vesc_ackermann'), ('vesc_driver', '/home/f1/f1tenth_ws/install/vesc_driver'), ('vesc', '/home/f1/f1tenth_ws/install/vesc'), ('f1tenth_stack', '/home/f1/f1tenth_ws/install/f1tenth_stack')])}
+[0.006062] (f1tenth_slam_nav) JobStarted: {'identifier': 'f1tenth_slam_nav'}
+[0.098035] (-) TimerEvent: {}
+[0.151778] (f1tenth_slam_nav) JobProgress: {'identifier': 'f1tenth_slam_nav', 'progress': 'cmake'}
+[0.156407] (f1tenth_slam_nav) JobProgress: {'identifier': 'f1tenth_slam_nav', 'progress': 'build'}
+[0.162125] (f1tenth_slam_nav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/f1/f1tenth_ws/build/f1tenth_slam_nav', '--', '-j6', '-l6'], 'cwd': '/home/f1/f1tenth_ws/build/f1tenth_slam_nav', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_CLIENT', '172.16.76.186 53946 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/f1/.vscode-server/cli/servers/Stable-f220831ea2d946c0dcb0f3eaa480eb435a2c1260/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/f1/.vscode-server/cli/servers/Stable-f220831ea2d946c0dcb0f3eaa480eb435a2c1260/server/bin/helpers/browser.sh'), ('HOME', '/home/f1'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/f1/f1tenth_ws'), ('LESS', '-R'), ('TERM_PROGRAM_VERSION', '1.104.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1001/vscode-ipc-17bf8b58-f96d-48b1-a5b9-348b1f609671.sock'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/f1/.vscode-server/cli/servers/Stable-f220831ea2d946c0dcb0f3eaa480eb435a2c1260/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_GIT_ASKPASS_NODE', '/home/f1/.vscode-server/cli/servers/Stable-f220831ea2d946c0dcb0f3eaa480eb435a2c1260/server/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/f1/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '37709'), ('USER_ZDOTDIR', '/home/f1'), ('XDG_SESSION_ID', '6'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/f1/.npm-global/bin:/home/f1/.vscode-server/cli/servers/Stable-f220831ea2d946c0dcb0f3eaa480eb435a2c1260/server/bin/remote-cli:/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/f1/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/scripts/noConfigScripts:/home/f1/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('PAPERSIZE', 'a4'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/f1/.vscode-server/extensions/ms-python.debugpy-2025.10.0/.noConfigDebugAdapterEndpoints/endpoint-45b40085090981a2.txt'), ('PYTHONSTARTUP', '/home/f1/.vscode-server/data/User/workspaceStorage/82a6a78a25a8631bf184d85605079995/ms-python.python/pythonrc.py'), ('VSCODE_INJECTION', '1'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-fdc5db966d.sock'), ('AMENT_PREFIX_PATH', '/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/f1/f1tenth_ws/build/f1tenth_slam_nav'), ('ENABLE_IDE_INTEGRATION', 'true'), ('SSH_CONNECTION', '172.16.76.186 53946 172.16.73.189 22'), ('ZDOTDIR', '/home/f1'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy')]), 'shell': False}
+[0.198278] (-) TimerEvent: {}
+[0.298974] (-) TimerEvent: {}
+[0.399611] (-) TimerEvent: {}
+[0.500227] (-) TimerEvent: {}
+[0.600768] (-) TimerEvent: {}
+[0.615778] (f1tenth_slam_nav) StdoutLine: {'line': b'[ 50%] Built target slam_nav_manager\n'}
+[0.685035] (f1tenth_slam_nav) StdoutLine: {'line': b'Scanning dependencies of target high_frequency_localizer\n'}
+[0.701031] (-) TimerEvent: {}
+[0.799839] (f1tenth_slam_nav) StdoutLine: {'line': b'[ 75%] Building CXX object CMakeFiles/high_frequency_localizer.dir/src/high_frequency_localizer.cpp.o\n'}
+[0.801237] (-) TimerEvent: {}
+[0.901837] (-) TimerEvent: {}
+[1.002469] (-) TimerEvent: {}
+[1.103032] (-) TimerEvent: {}
+[1.203586] (-) TimerEvent: {}
+[1.304213] (-) TimerEvent: {}
+[1.404752] (-) TimerEvent: {}
+[1.505468] (-) TimerEvent: {}
+[1.606063] (-) TimerEvent: {}
+[1.706666] (-) TimerEvent: {}
+[1.807320] (-) TimerEvent: {}
+[1.907970] (-) TimerEvent: {}
+[2.008571] (-) TimerEvent: {}
+[2.109249] (-) TimerEvent: {}
+[2.209974] (-) TimerEvent: {}
+[2.310595] (-) TimerEvent: {}
+[2.411223] (-) TimerEvent: {}
+[2.511849] (-) TimerEvent: {}
+[2.612424] (-) TimerEvent: {}
+[2.712993] (-) TimerEvent: {}
+[2.813632] (-) TimerEvent: {}
+[2.914183] (-) TimerEvent: {}
+[3.014743] (-) TimerEvent: {}
+[3.115321] (-) TimerEvent: {}
+[3.215879] (-) TimerEvent: {}
+[3.316546] (-) TimerEvent: {}
+[3.417157] (-) TimerEvent: {}
+[3.517833] (-) TimerEvent: {}
+[3.618474] (-) TimerEvent: {}
+[3.719145] (-) TimerEvent: {}
+[3.819768] (-) TimerEvent: {}
+[3.920450] (-) TimerEvent: {}
+[4.021036] (-) TimerEvent: {}
+[4.121682] (-) TimerEvent: {}
+[4.222358] (-) TimerEvent: {}
+[4.323032] (-) TimerEvent: {}
+[4.423657] (-) TimerEvent: {}
+[4.524323] (-) TimerEvent: {}
+[4.624999] (-) TimerEvent: {}
+[4.725672] (-) TimerEvent: {}
+[4.826384] (-) TimerEvent: {}
+[4.927048] (-) TimerEvent: {}
+[5.027660] (-) TimerEvent: {}
+[5.128257] (-) TimerEvent: {}
+[5.228797] (-) TimerEvent: {}
+[5.329430] (-) TimerEvent: {}
+[5.430051] (-) TimerEvent: {}
+[5.530751] (-) TimerEvent: {}
+[5.631469] (-) TimerEvent: {}
+[5.732331] (-) TimerEvent: {}
+[5.832895] (-) TimerEvent: {}
+[5.933600] (-) TimerEvent: {}
+[6.034224] (-) TimerEvent: {}
+[6.134759] (-) TimerEvent: {}
+[6.235441] (-) TimerEvent: {}
+[6.336019] (-) TimerEvent: {}
+[6.436565] (-) TimerEvent: {}
+[6.537116] (-) TimerEvent: {}
+[6.637802] (-) TimerEvent: {}
+[6.738337] (-) TimerEvent: {}
+[6.838889] (-) TimerEvent: {}
+[6.940942] (-) TimerEvent: {}
+[7.041569] (-) TimerEvent: {}
+[7.142131] (-) TimerEvent: {}
+[7.242851] (-) TimerEvent: {}
+[7.343460] (-) TimerEvent: {}
+[7.444057] (-) TimerEvent: {}
+[7.544670] (-) TimerEvent: {}
+[7.645237] (-) TimerEvent: {}
+[7.745924] (-) TimerEvent: {}
+[7.846658] (-) TimerEvent: {}
+[7.947262] (-) TimerEvent: {}
+[8.047850] (-) TimerEvent: {}
+[8.148410] (-) TimerEvent: {}
+[8.249010] (-) TimerEvent: {}
+[8.349640] (-) TimerEvent: {}
+[8.450230] (-) TimerEvent: {}
+[8.550901] (-) TimerEvent: {}
+[8.651514] (-) TimerEvent: {}
+[8.752105] (-) TimerEvent: {}
+[8.852802] (-) TimerEvent: {}
+[8.953547] (-) TimerEvent: {}
+[9.054216] (-) TimerEvent: {}
+[9.154789] (-) TimerEvent: {}
+[9.255372] (-) TimerEvent: {}
+[9.355940] (-) TimerEvent: {}
+[9.456538] (-) TimerEvent: {}
+[9.557150] (-) TimerEvent: {}
+[9.657888] (-) TimerEvent: {}
+[9.759029] (-) TimerEvent: {}
+[9.781250] (f1tenth_slam_nav) StderrLine: {'line': b'/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/high_frequency_localizer.cpp: In member function \xe2\x80\x98void f1tenth_slam_nav::HighFrequencyLocalizer::printPerformanceStats()\xe2\x80\x99:\n'}
+[9.782882] (f1tenth_slam_nav) StderrLine: {'line': b'/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/high_frequency_localizer.cpp:159:58: error: \xe2\x80\x98from_nanoseconds\xe2\x80\x99 is not a member of \xe2\x80\x98rclcpp::Duration\xe2\x80\x99\n'}
+[9.783583] (f1tenth_slam_nav) StderrLine: {'line': b'  159 |   auto one_second_ago = current_time - rclcpp::Duration::from_nanoseconds(1e9);\n'}
+[9.784119] (f1tenth_slam_nav) StderrLine: {'line': b'      |                                                          ^~~~~~~~~~~~~~~~\n'}
+[9.859293] (-) TimerEvent: {}
+[9.959971] (-) TimerEvent: {}
+[10.060595] (-) TimerEvent: {}
+[10.161208] (-) TimerEvent: {}
+[10.261958] (-) TimerEvent: {}
+[10.362570] (-) TimerEvent: {}
+[10.463333] (-) TimerEvent: {}
+[10.564039] (-) TimerEvent: {}
+[10.664680] (-) TimerEvent: {}
+[10.765402] (-) TimerEvent: {}
+[10.865990] (-) TimerEvent: {}
+[10.966634] (-) TimerEvent: {}
+[11.067352] (-) TimerEvent: {}
+[11.167993] (-) TimerEvent: {}
+[11.268644] (-) TimerEvent: {}
+[11.369331] (-) TimerEvent: {}
+[11.470049] (-) TimerEvent: {}
+[11.570735] (-) TimerEvent: {}
+[11.671454] (-) TimerEvent: {}
+[11.772114] (-) TimerEvent: {}
+[11.872777] (-) TimerEvent: {}
+[11.973505] (-) TimerEvent: {}
+[12.074152] (-) TimerEvent: {}
+[12.174783] (-) TimerEvent: {}
+[12.275555] (-) TimerEvent: {}
+[12.376203] (-) TimerEvent: {}
+[12.476839] (-) TimerEvent: {}
+[12.577633] (-) TimerEvent: {}
+[12.678271] (-) TimerEvent: {}
+[12.778931] (-) TimerEvent: {}
+[12.879614] (-) TimerEvent: {}
+[12.980248] (-) TimerEvent: {}
+[13.080909] (-) TimerEvent: {}
+[13.181566] (-) TimerEvent: {}
+[13.282283] (-) TimerEvent: {}
+[13.382956] (-) TimerEvent: {}
+[13.483590] (-) TimerEvent: {}
+[13.584324] (-) TimerEvent: {}
+[13.684969] (-) TimerEvent: {}
+[13.785546] (-) TimerEvent: {}
+[13.886438] (-) TimerEvent: {}
+[13.987264] (-) TimerEvent: {}
+[14.087905] (-) TimerEvent: {}
+[14.188540] (-) TimerEvent: {}
+[14.289194] (-) TimerEvent: {}
+[14.389936] (-) TimerEvent: {}
+[14.490606] (-) TimerEvent: {}
+[14.591247] (-) TimerEvent: {}
+[14.692098] (-) TimerEvent: {}
+[14.792720] (-) TimerEvent: {}
+[14.893438] (-) TimerEvent: {}
+[14.994080] (-) TimerEvent: {}
+[15.096008] (-) TimerEvent: {}
+[15.196696] (-) TimerEvent: {}
+[15.297405] (-) TimerEvent: {}
+[15.397998] (-) TimerEvent: {}
+[15.498555] (-) TimerEvent: {}
+[15.599134] (-) TimerEvent: {}
+[15.699772] (-) TimerEvent: {}
+[15.800442] (-) TimerEvent: {}
+[15.900985] (-) TimerEvent: {}
+[16.001643] (-) TimerEvent: {}
+[16.102206] (-) TimerEvent: {}
+[16.202796] (-) TimerEvent: {}
+[16.303430] (-) TimerEvent: {}
+[16.403945] (-) TimerEvent: {}
+[16.504549] (-) TimerEvent: {}
+[16.605158] (-) TimerEvent: {}
+[16.705816] (-) TimerEvent: {}
+[16.806477] (-) TimerEvent: {}
+[16.907076] (-) TimerEvent: {}
+[17.007659] (-) TimerEvent: {}
+[17.108292] (-) TimerEvent: {}
+[17.209070] (-) TimerEvent: {}
+[17.309773] (-) TimerEvent: {}
+[17.410458] (-) TimerEvent: {}
+[17.511177] (-) TimerEvent: {}
+[17.611824] (-) TimerEvent: {}
+[17.712493] (-) TimerEvent: {}
+[17.813175] (-) TimerEvent: {}
+[17.914118] (-) TimerEvent: {}
+[18.014925] (-) TimerEvent: {}
+[18.115653] (-) TimerEvent: {}
+[18.216506] (-) TimerEvent: {}
+[18.317338] (-) TimerEvent: {}
+[18.418173] (-) TimerEvent: {}
+[18.519152] (-) TimerEvent: {}
+[18.619905] (-) TimerEvent: {}
+[18.720541] (-) TimerEvent: {}
+[18.821199] (-) TimerEvent: {}
+[18.921909] (-) TimerEvent: {}
+[19.022643] (-) TimerEvent: {}
+[19.123305] (-) TimerEvent: {}
+[19.223992] (-) TimerEvent: {}
+[19.324695] (-) TimerEvent: {}
+[19.425448] (-) TimerEvent: {}
+[19.526128] (-) TimerEvent: {}
+[19.626780] (-) TimerEvent: {}
+[19.727453] (-) TimerEvent: {}
+[19.828170] (-) TimerEvent: {}
+[19.928802] (-) TimerEvent: {}
+[20.029499] (-) TimerEvent: {}
+[20.130149] (-) TimerEvent: {}
+[20.230840] (-) TimerEvent: {}
+[20.331448] (-) TimerEvent: {}
+[20.432029] (-) TimerEvent: {}
+[20.532637] (-) TimerEvent: {}
+[20.633209] (-) TimerEvent: {}
+[20.733868] (-) TimerEvent: {}
+[20.834518] (-) TimerEvent: {}
+[20.935174] (-) TimerEvent: {}
+[21.035798] (-) TimerEvent: {}
+[21.136531] (-) TimerEvent: {}
+[21.237165] (-) TimerEvent: {}
+[21.337891] (-) TimerEvent: {}
+[21.438574] (-) TimerEvent: {}
+[21.539247] (-) TimerEvent: {}
+[21.639948] (-) TimerEvent: {}
+[21.740622] (-) TimerEvent: {}
+[21.841453] (-) TimerEvent: {}
+[21.942163] (-) TimerEvent: {}
+[22.042883] (-) TimerEvent: {}
+[22.143565] (-) TimerEvent: {}
+[22.244210] (-) TimerEvent: {}
+[22.344925] (-) TimerEvent: {}
+[22.445721] (-) TimerEvent: {}
+[22.546415] (-) TimerEvent: {}
+[22.647161] (-) TimerEvent: {}
+[22.747836] (-) TimerEvent: {}
+[22.848894] (-) TimerEvent: {}
+[22.950481] (-) TimerEvent: {}
+[23.051569] (-) TimerEvent: {}
+[23.152618] (-) TimerEvent: {}
+[23.254284] (-) TimerEvent: {}
+[23.354921] (-) TimerEvent: {}
+[23.455486] (-) TimerEvent: {}
+[23.556068] (-) TimerEvent: {}
+[23.656760] (-) TimerEvent: {}
+[23.757452] (-) TimerEvent: {}
+[23.858061] (-) TimerEvent: {}
+[23.958653] (-) TimerEvent: {}
+[24.060052] (f1tenth_slam_nav) StderrLine: {'line': b'make[2]: *** [CMakeFiles/high_frequency_localizer.dir/build.make:63: CMakeFiles/high_frequency_localizer.dir/src/high_frequency_localizer.cpp.o] Error 1\n'}
+[24.061520] (-) TimerEvent: {}
+[24.064417] (f1tenth_slam_nav) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/high_frequency_localizer.dir/all] Error 2\n'}
+[24.068044] (f1tenth_slam_nav) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[24.078328] (f1tenth_slam_nav) CommandEnded: {'returncode': 2}
+[24.162868] (-) TimerEvent: {}
+[24.166700] (f1tenth_slam_nav) JobEnded: {'identifier': 'f1tenth_slam_nav', 'rc': 2}
+[24.179190] (-) EventReactorShutdown: {}

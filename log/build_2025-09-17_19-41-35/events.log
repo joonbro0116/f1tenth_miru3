@@ -1,0 +1,521 @@
+[0.000000] (-) TimerEvent: {}
+[0.008525] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.011701] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.012609] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.013460] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.014325] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.014858] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.015154] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.015353] (-) JobUnselected: {'identifier': 'path_follow'}
+[0.015513] (-) JobUnselected: {'identifier': 'path_planner'}
+[0.015705] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.016109] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.016317] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.016539] (-) JobUnselected: {'identifier': 'vesc'}
+[0.016727] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.016868] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.017015] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.017251] (f1tenth_slam_nav) JobQueued: {'identifier': 'f1tenth_slam_nav', 'dependencies': OrderedDict([('ackermann_mux', '/home/f1/f1tenth_ws/install/ackermann_mux'), ('teleop_tools_msgs', '/home/f1/f1tenth_ws/install/teleop_tools_msgs'), ('vesc_msgs', '/home/f1/f1tenth_ws/install/vesc_msgs'), ('joy_teleop', '/home/f1/f1tenth_ws/install/joy_teleop'), ('vesc_ackermann', '/home/f1/f1tenth_ws/install/vesc_ackermann'), ('vesc_driver', '/home/f1/f1tenth_ws/install/vesc_driver'), ('vesc', '/home/f1/f1tenth_ws/install/vesc'), ('f1tenth_stack', '/home/f1/f1tenth_ws/install/f1tenth_stack')])}
+[0.018039] (f1tenth_slam_nav) JobStarted: {'identifier': 'f1tenth_slam_nav'}
+[0.092394] (-) TimerEvent: {}
+[0.196119] (-) TimerEvent: {}
+[0.239276] (f1tenth_slam_nav) JobProgress: {'identifier': 'f1tenth_slam_nav', 'progress': 'cmake'}
+[0.250912] (f1tenth_slam_nav) Command: {'cmd': ['/usr/bin/cmake', '/home/f1/f1tenth_ws/src/f1tenth_slam_nav', '-DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/f1tenth_slam_nav'], 'cwd': '/home/f1/f1tenth_ws/build/f1tenth_slam_nav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '3222'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/f1'), ('QT4_IM_MODULE', 'fcitx'), ('OLDPWD', '/home/f1/f1tenth_ws/src'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('MANAGERPID', '3120'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:58318'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'f1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3286,unix/ubuntu:/tmp/.ICE-unix/3286'), ('PAPERSIZE', 'a4'), ('INVOCATION_ID', 'f2181c013e4b46888a0bf0dcc0045451'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a5dcf715_33ca_43ed_a4ea_0954a65952c4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('XMODIFIERS', '@im=fcitx'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'fcitx'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/f1/f1tenth_ws/build/f1tenth_slam_nav'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLUTTER_IM_MODULE', 'fcitx'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy')]), 'shell': False}
+[0.298501] (-) TimerEvent: {}
+[0.404900] (-) TimerEvent: {}
+[0.506672] (-) TimerEvent: {}
+[0.519057] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.606835] (-) TimerEvent: {}
+[0.708951] (-) TimerEvent: {}
+[0.799357] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.809196] (-) TimerEvent: {}
+[0.910853] (-) TimerEvent: {}
+[1.011897] (-) TimerEvent: {}
+[1.113407] (-) TimerEvent: {}
+[1.216079] (-) TimerEvent: {}
+[1.318177] (-) TimerEvent: {}
+[1.424269] (-) TimerEvent: {}
+[1.525807] (-) TimerEvent: {}
+[1.626722] (-) TimerEvent: {}
+[1.727646] (-) TimerEvent: {}
+[1.828922] (-) TimerEvent: {}
+[1.930218] (-) TimerEvent: {}
+[2.032238] (-) TimerEvent: {}
+[2.133348] (-) TimerEvent: {}
+[2.235333] (-) TimerEvent: {}
+[2.337252] (-) TimerEvent: {}
+[2.438324] (-) TimerEvent: {}
+[2.480571] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.538582] (-) TimerEvent: {}
+[2.604839] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[2.638818] (-) TimerEvent: {}
+[2.739897] (-) TimerEvent: {}
+[2.840980] (-) TimerEvent: {}
+[2.942139] (-) TimerEvent: {}
+[3.024294] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.042359] (-) TimerEvent: {}
+[3.071947] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[3.142571] (-) TimerEvent: {}
+[3.243508] (-) TimerEvent: {}
+[3.344771] (-) TimerEvent: {}
+[3.445974] (-) TimerEvent: {}
+[3.547664] (-) TimerEvent: {}
+[3.649483] (-) TimerEvent: {}
+[3.751104] (-) TimerEvent: {}
+[3.852234] (-) TimerEvent: {}
+[3.953321] (-) TimerEvent: {}
+[4.054426] (-) TimerEvent: {}
+[4.156449] (-) TimerEvent: {}
+[4.205694] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.256713] (-) TimerEvent: {}
+[4.357743] (-) TimerEvent: {}
+[4.458768] (-) TimerEvent: {}
+[4.559854] (-) TimerEvent: {}
+[4.660905] (-) TimerEvent: {}
+[4.675831] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[4.696104] (f1tenth_slam_nav) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.761121] (-) TimerEvent: {}
+[4.862183] (-) TimerEvent: {}
+[4.964099] (-) TimerEvent: {}
+[5.065239] (-) TimerEvent: {}
+[5.166353] (-) TimerEvent: {}
+[5.267336] (-) TimerEvent: {}
+[5.368275] (-) TimerEvent: {}
+[5.470294] (-) TimerEvent: {}
+[5.571311] (-) TimerEvent: {}
+[5.672460] (-) TimerEvent: {}
+[5.773513] (-) TimerEvent: {}
+[5.862377] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)\n'}
+[5.873763] (-) TimerEvent: {}
+[5.957400] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[5.974351] (-) TimerEvent: {}
+[6.075535] (-) TimerEvent: {}
+[6.176618] (-) TimerEvent: {}
+[6.251296] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[6.276838] (-) TimerEvent: {}
+[6.378555] (-) TimerEvent: {}
+[6.480620] (-) TimerEvent: {}
+[6.581615] (-) TimerEvent: {}
+[6.682857] (-) TimerEvent: {}
+[6.729335] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[6.783338] (-) TimerEvent: {}
+[6.884971] (-) TimerEvent: {}
+[6.987084] (-) TimerEvent: {}
+[7.088104] (-) TimerEvent: {}
+[7.189075] (-) TimerEvent: {}
+[7.199906] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[7.289365] (-) TimerEvent: {}
+[7.334238] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)\n'}
+[7.389610] (-) TimerEvent: {}
+[7.404072] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[7.458062] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[7.490911] (-) TimerEvent: {}
+[7.596444] (-) TimerEvent: {}
+[7.698874] (-) TimerEvent: {}
+[7.799966] (-) TimerEvent: {}
+[7.901080] (-) TimerEvent: {}
+[8.002201] (-) TimerEvent: {}
+[8.103203] (-) TimerEvent: {}
+[8.204287] (-) TimerEvent: {}
+[8.305767] (-) TimerEvent: {}
+[8.406906] (-) TimerEvent: {}
+[8.507988] (-) TimerEvent: {}
+[8.609532] (-) TimerEvent: {}
+[8.711391] (-) TimerEvent: {}
+[8.812442] (-) TimerEvent: {}
+[8.914175] (-) TimerEvent: {}
+[9.019533] (-) TimerEvent: {}
+[9.127268] (-) TimerEvent: {}
+[9.228225] (-) TimerEvent: {}
+[9.330181] (-) TimerEvent: {}
+[9.431168] (-) TimerEvent: {}
+[9.532290] (-) TimerEvent: {}
+[9.634343] (-) TimerEvent: {}
+[9.740411] (-) TimerEvent: {}
+[9.843881] (-) TimerEvent: {}
+[9.945727] (-) TimerEvent: {}
+[10.047001] (-) TimerEvent: {}
+[10.106573] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found lifecycle_msgs: 1.0.0 (/opt/ros/foxy/share/lifecycle_msgs/cmake)\n'}
+[10.147138] (-) TimerEvent: {}
+[10.248138] (-) TimerEvent: {}
+[10.294648] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[10.348343] (-) TimerEvent: {}
+[10.449300] (-) TimerEvent: {}
+[10.550694] (-) TimerEvent: {}
+[10.660138] (-) TimerEvent: {}
+[10.763162] (-) TimerEvent: {}
+[10.864921] (-) TimerEvent: {}
+[10.873170] (f1tenth_slam_nav) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[10.900344] (f1tenth_slam_nav) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[10.902227] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/f1/f1tenth_ws/src/f1tenth_slam_nav/include\n'}
+[10.902970] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[10.928469] (f1tenth_slam_nav) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[10.929452] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[10.934418] (f1tenth_slam_nav) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[10.942348] (f1tenth_slam_nav) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.947347] (f1tenth_slam_nav) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[10.965134] (-) TimerEvent: {}
+[10.972523] (f1tenth_slam_nav) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[10.973487] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[10.978149] (f1tenth_slam_nav) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[11.009658] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Configuring done\n'}
+[11.065750] (-) TimerEvent: {}
+[11.165707] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Generating done\n'}
+[11.166658] (-) TimerEvent: {}
+[11.232170] (f1tenth_slam_nav) StdoutLine: {'line': b'-- Build files have been written to: /home/f1/f1tenth_ws/build/f1tenth_slam_nav\n'}
+[11.266952] (-) TimerEvent: {}
+[11.273562] (f1tenth_slam_nav) CommandEnded: {'returncode': 0}
+[11.292605] (f1tenth_slam_nav) JobProgress: {'identifier': 'f1tenth_slam_nav', 'progress': 'build'}
+[11.293235] (f1tenth_slam_nav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/f1/f1tenth_ws/build/f1tenth_slam_nav', '--', '-j6', '-l6'], 'cwd': '/home/f1/f1tenth_ws/build/f1tenth_slam_nav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '3222'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/f1'), ('QT4_IM_MODULE', 'fcitx'), ('OLDPWD', '/home/f1/f1tenth_ws/src'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('MANAGERPID', '3120'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:58318'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'f1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3286,unix/ubuntu:/tmp/.ICE-unix/3286'), ('PAPERSIZE', 'a4'), ('INVOCATION_ID', 'f2181c013e4b46888a0bf0dcc0045451'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a5dcf715_33ca_43ed_a4ea_0954a65952c4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('XMODIFIERS', '@im=fcitx'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'fcitx'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/f1/f1tenth_ws/build/f1tenth_slam_nav'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLUTTER_IM_MODULE', 'fcitx'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy')]), 'shell': False}
+[11.367278] (-) TimerEvent: {}
+[11.468727] (-) TimerEvent: {}
+[11.569903] (-) TimerEvent: {}
+[11.599670] (f1tenth_slam_nav) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target high_frequency_localizer\x1b[0m\n'}
+[11.653770] (f1tenth_slam_nav) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target slam_nav_manager\x1b[0m\n'}
+[11.670118] (-) TimerEvent: {}
+[11.771188] (-) TimerEvent: {}
+[11.850389] (f1tenth_slam_nav) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/slam_nav_manager.dir/src/slam_nav_manager.cpp.o\x1b[0m\n'}
+[11.871445] (-) TimerEvent: {}
+[11.972504] (-) TimerEvent: {}
+[12.074520] (-) TimerEvent: {}
+[12.175562] (-) TimerEvent: {}
+[12.208126] (f1tenth_slam_nav) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/high_frequency_localizer.dir/src/high_frequency_localizer.cpp.o\x1b[0m\n'}
+[12.276872] (-) TimerEvent: {}
+[12.378006] (-) TimerEvent: {}
+[12.479058] (-) TimerEvent: {}
+[12.582065] (-) TimerEvent: {}
+[12.683082] (-) TimerEvent: {}
+[12.784215] (-) TimerEvent: {}
+[12.885177] (-) TimerEvent: {}
+[12.986307] (-) TimerEvent: {}
+[13.030261] (f1tenth_slam_nav) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/high_frequency_localizer.cpp:1\x1b[m\x1b[K:\n'}
+[13.031369] (f1tenth_slam_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1/f1tenth_ws/src/f1tenth_slam_nav/include/f1tenth_slam_nav/high_frequency_localizer.hpp:10:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: No such file or directory\n'}
+[13.031878] (f1tenth_slam_nav) StderrLine: {'line': b'   10 | #include \x1b[01;31m\x1b[K<tf2_geometry_msgs/tf2_geometry_msgs.hpp>\x1b[m\x1b[K\n'}
+[13.032353] (f1tenth_slam_nav) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.032800] (f1tenth_slam_nav) StderrLine: {'line': b'compilation terminated.\n'}
+[13.043669] (f1tenth_slam_nav) StderrLine: {'line': b'make[2]: *** [CMakeFiles/high_frequency_localizer.dir/build.make:63: CMakeFiles/high_frequency_localizer.dir/src/high_frequency_localizer.cpp.o] Error 1\n'}
+[13.045189] (f1tenth_slam_nav) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/high_frequency_localizer.dir/all] Error 2\n'}
+[13.045928] (f1tenth_slam_nav) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[13.087468] (-) TimerEvent: {}
+[13.188518] (-) TimerEvent: {}
+[13.289559] (-) TimerEvent: {}
+[13.390584] (-) TimerEvent: {}
+[13.491575] (-) TimerEvent: {}
+[13.592527] (-) TimerEvent: {}
+[13.693618] (-) TimerEvent: {}
+[13.794899] (-) TimerEvent: {}
+[13.897010] (-) TimerEvent: {}
+[13.998213] (-) TimerEvent: {}
+[14.099419] (-) TimerEvent: {}
+[14.200540] (-) TimerEvent: {}
+[14.301636] (-) TimerEvent: {}
+[14.403209] (-) TimerEvent: {}
+[14.504278] (-) TimerEvent: {}
+[14.606054] (-) TimerEvent: {}
+[14.707175] (-) TimerEvent: {}
+[14.808787] (-) TimerEvent: {}
+[14.910560] (-) TimerEvent: {}
+[15.014030] (-) TimerEvent: {}
+[15.115052] (-) TimerEvent: {}
+[15.216067] (-) TimerEvent: {}
+[15.317959] (-) TimerEvent: {}
+[15.420206] (-) TimerEvent: {}
+[15.521364] (-) TimerEvent: {}
+[15.622618] (-) TimerEvent: {}
+[15.723749] (-) TimerEvent: {}
+[15.824919] (-) TimerEvent: {}
+[15.926153] (-) TimerEvent: {}
+[16.027379] (-) TimerEvent: {}
+[16.128414] (-) TimerEvent: {}
+[16.229444] (-) TimerEvent: {}
+[16.330517] (-) TimerEvent: {}
+[16.431549] (-) TimerEvent: {}
+[16.532598] (-) TimerEvent: {}
+[16.633613] (-) TimerEvent: {}
+[16.734788] (-) TimerEvent: {}
+[16.835777] (-) TimerEvent: {}
+[16.936868] (-) TimerEvent: {}
+[17.037969] (-) TimerEvent: {}
+[17.139017] (-) TimerEvent: {}
+[17.240086] (-) TimerEvent: {}
+[17.341467] (-) TimerEvent: {}
+[17.442673] (-) TimerEvent: {}
+[17.543851] (-) TimerEvent: {}
+[17.644971] (-) TimerEvent: {}
+[17.746080] (-) TimerEvent: {}
+[17.847172] (-) TimerEvent: {}
+[17.948115] (-) TimerEvent: {}
+[18.049136] (-) TimerEvent: {}
+[18.150247] (-) TimerEvent: {}
+[18.251296] (-) TimerEvent: {}
+[18.352411] (-) TimerEvent: {}
+[18.453734] (-) TimerEvent: {}
+[18.554984] (-) TimerEvent: {}
+[18.656254] (-) TimerEvent: {}
+[18.757788] (-) TimerEvent: {}
+[18.859071] (-) TimerEvent: {}
+[18.961045] (-) TimerEvent: {}
+[19.062262] (-) TimerEvent: {}
+[19.163325] (-) TimerEvent: {}
+[19.264366] (-) TimerEvent: {}
+[19.365471] (-) TimerEvent: {}
+[19.466847] (-) TimerEvent: {}
+[19.567881] (-) TimerEvent: {}
+[19.668877] (-) TimerEvent: {}
+[19.770508] (-) TimerEvent: {}
+[19.871463] (-) TimerEvent: {}
+[19.972422] (-) TimerEvent: {}
+[20.073510] (-) TimerEvent: {}
+[20.174655] (-) TimerEvent: {}
+[20.275767] (-) TimerEvent: {}
+[20.376796] (-) TimerEvent: {}
+[20.479363] (-) TimerEvent: {}
+[20.582150] (-) TimerEvent: {}
+[20.683211] (-) TimerEvent: {}
+[20.784268] (-) TimerEvent: {}
+[20.885281] (-) TimerEvent: {}
+[20.986282] (-) TimerEvent: {}
+[21.087317] (-) TimerEvent: {}
+[21.188316] (-) TimerEvent: {}
+[21.290904] (-) TimerEvent: {}
+[21.392038] (-) TimerEvent: {}
+[21.494092] (-) TimerEvent: {}
+[21.595136] (-) TimerEvent: {}
+[21.696237] (-) TimerEvent: {}
+[21.797371] (-) TimerEvent: {}
+[21.898842] (-) TimerEvent: {}
+[21.999829] (-) TimerEvent: {}
+[22.100943] (-) TimerEvent: {}
+[22.202067] (-) TimerEvent: {}
+[22.303210] (-) TimerEvent: {}
+[22.404301] (-) TimerEvent: {}
+[22.505313] (-) TimerEvent: {}
+[22.606517] (-) TimerEvent: {}
+[22.707588] (-) TimerEvent: {}
+[22.808670] (-) TimerEvent: {}
+[22.909748] (-) TimerEvent: {}
+[23.010948] (-) TimerEvent: {}
+[23.111968] (-) TimerEvent: {}
+[23.213059] (-) TimerEvent: {}
+[23.314236] (-) TimerEvent: {}
+[23.415271] (-) TimerEvent: {}
+[23.516345] (-) TimerEvent: {}
+[23.617345] (-) TimerEvent: {}
+[23.718489] (-) TimerEvent: {}
+[23.819608] (-) TimerEvent: {}
+[23.920579] (-) TimerEvent: {}
+[24.021686] (-) TimerEvent: {}
+[24.122869] (-) TimerEvent: {}
+[24.224005] (-) TimerEvent: {}
+[24.325234] (-) TimerEvent: {}
+[24.426550] (-) TimerEvent: {}
+[24.527742] (-) TimerEvent: {}
+[24.628869] (-) TimerEvent: {}
+[24.730038] (-) TimerEvent: {}
+[24.831172] (-) TimerEvent: {}
+[24.932385] (-) TimerEvent: {}
+[25.035207] (-) TimerEvent: {}
+[25.136468] (-) TimerEvent: {}
+[25.237560] (-) TimerEvent: {}
+[25.338718] (-) TimerEvent: {}
+[25.439795] (-) TimerEvent: {}
+[25.540871] (-) TimerEvent: {}
+[25.642002] (-) TimerEvent: {}
+[25.743166] (-) TimerEvent: {}
+[25.844092] (-) TimerEvent: {}
+[25.945233] (-) TimerEvent: {}
+[26.046364] (-) TimerEvent: {}
+[26.147523] (-) TimerEvent: {}
+[26.248623] (-) TimerEvent: {}
+[26.349599] (-) TimerEvent: {}
+[26.451078] (-) TimerEvent: {}
+[26.552962] (-) TimerEvent: {}
+[26.621060] (f1tenth_slam_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/slam_nav_manager.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SlamNavManager::stopCurrentProcesses()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[26.622200] (f1tenth_slam_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/slam_nav_manager.cpp:175:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kignoring return value of \xe2\x80\x98\x1b[01m\x1b[Kint system(const char*)\x1b[m\x1b[K\xe2\x80\x99, declared with attribute warn_unused_result [\x1b[01;35m\x1b[K-Wunused-result\x1b[m\x1b[K]\n'}
+[26.622886] (f1tenth_slam_nav) StderrLine: {'line': b'  175 |                 \x1b[01;35m\x1b[Kstd::system(kill_cmd.c_str())\x1b[m\x1b[K;\n'}
+[26.623411] (f1tenth_slam_nav) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.653232] (-) TimerEvent: {}
+[26.761097] (-) TimerEvent: {}
+[26.864481] (-) TimerEvent: {}
+[26.893231] (f1tenth_slam_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/slam_nav_manager.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SlamNavManager::saveMapCallback(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[26.894244] (f1tenth_slam_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/slam_nav_manager.cpp:133:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kignoring return value of \xe2\x80\x98\x1b[01m\x1b[Kint system(const char*)\x1b[m\x1b[K\xe2\x80\x99, declared with attribute warn_unused_result [\x1b[01;35m\x1b[K-Wunused-result\x1b[m\x1b[K]\n'}
+[26.894814] (f1tenth_slam_nav) StderrLine: {'line': b'  133 |             \x1b[01;35m\x1b[Kstd::system(mkdir_cmd.c_str())\x1b[m\x1b[K;\n'}
+[26.895299] (f1tenth_slam_nav) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.964757] (-) TimerEvent: {}
+[27.065969] (-) TimerEvent: {}
+[27.167188] (-) TimerEvent: {}
+[27.268340] (-) TimerEvent: {}
+[27.369455] (-) TimerEvent: {}
+[27.470656] (-) TimerEvent: {}
+[27.573027] (-) TimerEvent: {}
+[27.674104] (-) TimerEvent: {}
+[27.775075] (-) TimerEvent: {}
+[27.876229] (-) TimerEvent: {}
+[27.977316] (-) TimerEvent: {}
+[28.078468] (-) TimerEvent: {}
+[28.179674] (-) TimerEvent: {}
+[28.280892] (-) TimerEvent: {}
+[28.381905] (-) TimerEvent: {}
+[28.482838] (-) TimerEvent: {}
+[28.583787] (-) TimerEvent: {}
+[28.684905] (-) TimerEvent: {}
+[28.786131] (-) TimerEvent: {}
+[28.887163] (-) TimerEvent: {}
+[28.988173] (-) TimerEvent: {}
+[29.092612] (-) TimerEvent: {}
+[29.194056] (-) TimerEvent: {}
+[29.295253] (-) TimerEvent: {}
+[29.396372] (-) TimerEvent: {}
+[29.497524] (-) TimerEvent: {}
+[29.598745] (-) TimerEvent: {}
+[29.699908] (-) TimerEvent: {}
+[29.800981] (-) TimerEvent: {}
+[29.902056] (-) TimerEvent: {}
+[30.003119] (-) TimerEvent: {}
+[30.104224] (-) TimerEvent: {}
+[30.205306] (-) TimerEvent: {}
+[30.306502] (-) TimerEvent: {}
+[30.407579] (-) TimerEvent: {}
+[30.508704] (-) TimerEvent: {}
+[30.609946] (-) TimerEvent: {}
+[30.711189] (-) TimerEvent: {}
+[30.812327] (-) TimerEvent: {}
+[30.913464] (-) TimerEvent: {}
+[31.014667] (-) TimerEvent: {}
+[31.115779] (-) TimerEvent: {}
+[31.216762] (-) TimerEvent: {}
+[31.317799] (-) TimerEvent: {}
+[31.418777] (-) TimerEvent: {}
+[31.520609] (-) TimerEvent: {}
+[31.623749] (-) TimerEvent: {}
+[31.725315] (-) TimerEvent: {}
+[31.827074] (-) TimerEvent: {}
+[31.928146] (-) TimerEvent: {}
+[32.029211] (-) TimerEvent: {}
+[32.130251] (-) TimerEvent: {}
+[32.231295] (-) TimerEvent: {}
+[32.332398] (-) TimerEvent: {}
+[32.433506] (-) TimerEvent: {}
+[32.534722] (-) TimerEvent: {}
+[32.635781] (-) TimerEvent: {}
+[32.736781] (-) TimerEvent: {}
+[32.837967] (-) TimerEvent: {}
+[32.939114] (-) TimerEvent: {}
+[33.040495] (-) TimerEvent: {}
+[33.142069] (-) TimerEvent: {}
+[33.243162] (-) TimerEvent: {}
+[33.344340] (-) TimerEvent: {}
+[33.445409] (-) TimerEvent: {}
+[33.546548] (-) TimerEvent: {}
+[33.647667] (-) TimerEvent: {}
+[33.750465] (-) TimerEvent: {}
+[33.858584] (-) TimerEvent: {}
+[33.960795] (-) TimerEvent: {}
+[34.061963] (-) TimerEvent: {}
+[34.163108] (-) TimerEvent: {}
+[34.264801] (-) TimerEvent: {}
+[34.365970] (-) TimerEvent: {}
+[34.466969] (-) TimerEvent: {}
+[34.568001] (-) TimerEvent: {}
+[34.669042] (-) TimerEvent: {}
+[34.770189] (-) TimerEvent: {}
+[34.871383] (-) TimerEvent: {}
+[34.972777] (-) TimerEvent: {}
+[35.073929] (-) TimerEvent: {}
+[35.175070] (-) TimerEvent: {}
+[35.276299] (-) TimerEvent: {}
+[35.377400] (-) TimerEvent: {}
+[35.478474] (-) TimerEvent: {}
+[35.579560] (-) TimerEvent: {}
+[35.680678] (-) TimerEvent: {}
+[35.781888] (-) TimerEvent: {}
+[35.882892] (-) TimerEvent: {}
+[35.984039] (-) TimerEvent: {}
+[36.084985] (-) TimerEvent: {}
+[36.186068] (-) TimerEvent: {}
+[36.287425] (-) TimerEvent: {}
+[36.388939] (-) TimerEvent: {}
+[36.490175] (-) TimerEvent: {}
+[36.591280] (-) TimerEvent: {}
+[36.693052] (-) TimerEvent: {}
+[36.794265] (-) TimerEvent: {}
+[36.896049] (-) TimerEvent: {}
+[36.997190] (-) TimerEvent: {}
+[37.098267] (-) TimerEvent: {}
+[37.199207] (-) TimerEvent: {}
+[37.300306] (-) TimerEvent: {}
+[37.401629] (-) TimerEvent: {}
+[37.503715] (-) TimerEvent: {}
+[37.606459] (-) TimerEvent: {}
+[37.707546] (-) TimerEvent: {}
+[37.808669] (-) TimerEvent: {}
+[37.909898] (-) TimerEvent: {}
+[38.010912] (-) TimerEvent: {}
+[38.112017] (-) TimerEvent: {}
+[38.213099] (-) TimerEvent: {}
+[38.314465] (-) TimerEvent: {}
+[38.415522] (-) TimerEvent: {}
+[38.516493] (-) TimerEvent: {}
+[38.617532] (-) TimerEvent: {}
+[38.718693] (-) TimerEvent: {}
+[38.819754] (-) TimerEvent: {}
+[38.920936] (-) TimerEvent: {}
+[39.021954] (-) TimerEvent: {}
+[39.122932] (-) TimerEvent: {}
+[39.224050] (-) TimerEvent: {}
+[39.325150] (-) TimerEvent: {}
+[39.426306] (-) TimerEvent: {}
+[39.528493] (-) TimerEvent: {}
+[39.629759] (-) TimerEvent: {}
+[39.730889] (-) TimerEvent: {}
+[39.831962] (-) TimerEvent: {}
+[39.933090] (-) TimerEvent: {}
+[40.034113] (-) TimerEvent: {}
+[40.135582] (-) TimerEvent: {}
+[40.236733] (-) TimerEvent: {}
+[40.340748] (-) TimerEvent: {}
+[40.443038] (-) TimerEvent: {}
+[40.546202] (-) TimerEvent: {}
+[40.647367] (-) TimerEvent: {}
+[40.748474] (-) TimerEvent: {}
+[40.849507] (-) TimerEvent: {}
+[40.950733] (-) TimerEvent: {}
+[41.057303] (-) TimerEvent: {}
+[41.159200] (-) TimerEvent: {}
+[41.264081] (-) TimerEvent: {}
+[41.365965] (-) TimerEvent: {}
+[41.467022] (-) TimerEvent: {}
+[41.568110] (-) TimerEvent: {}
+[41.669159] (-) TimerEvent: {}
+[41.770349] (-) TimerEvent: {}
+[41.871458] (-) TimerEvent: {}
+[41.972693] (-) TimerEvent: {}
+[42.073700] (-) TimerEvent: {}
+[42.174768] (-) TimerEvent: {}
+[42.275873] (-) TimerEvent: {}
+[42.376881] (-) TimerEvent: {}
+[42.478781] (-) TimerEvent: {}
+[42.580799] (-) TimerEvent: {}
+[42.685576] (-) TimerEvent: {}
+[42.787847] (-) TimerEvent: {}
+[42.888952] (-) TimerEvent: {}
+[42.990071] (-) TimerEvent: {}
+[43.091105] (-) TimerEvent: {}
+[43.192196] (-) TimerEvent: {}
+[43.293177] (-) TimerEvent: {}
+[43.394363] (-) TimerEvent: {}
+[43.400326] (f1tenth_slam_nav) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable slam_nav_manager\x1b[0m\n'}
+[43.494619] (-) TimerEvent: {}
+[43.595568] (-) TimerEvent: {}
+[43.696627] (-) TimerEvent: {}
+[43.797771] (-) TimerEvent: {}
+[43.898885] (-) TimerEvent: {}
+[43.999964] (-) TimerEvent: {}
+[44.100980] (-) TimerEvent: {}
+[44.202018] (-) TimerEvent: {}
+[44.212991] (f1tenth_slam_nav) StdoutLine: {'line': b'[ 75%] Built target slam_nav_manager\n'}
+[44.218883] (f1tenth_slam_nav) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[44.236823] (f1tenth_slam_nav) CommandEnded: {'returncode': 2}
+[44.303361] (-) TimerEvent: {}
+[44.349008] (f1tenth_slam_nav) JobEnded: {'identifier': 'f1tenth_slam_nav', 'rc': 2}
+[44.363393] (-) EventReactorShutdown: {}

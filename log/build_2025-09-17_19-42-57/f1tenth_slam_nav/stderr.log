@@ -1,0 +1,7 @@
+/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/high_frequency_localizer.cpp: In member function ‘void f1tenth_slam_nav::HighFrequencyLocalizer::printPerformanceStats()’:
+/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/high_frequency_localizer.cpp:159:58: error: ‘from_nanoseconds’ is not a member of ‘rclcpp::Duration’
+  159 |   auto one_second_ago = current_time - rclcpp::Duration::from_nanoseconds(1e9);
+      |                                                          ^~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/high_frequency_localizer.dir/build.make:63: CMakeFiles/high_frequency_localizer.dir/src/high_frequency_localizer.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/high_frequency_localizer.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

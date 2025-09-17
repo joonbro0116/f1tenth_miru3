@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/f1/f1tenth_ws/build/f1tenth_slam_nav
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/high_frequency_localizer.dir/all
 all: CMakeFiles/slam_nav_manager.dir/all
 
 .PHONY : all
@@ -63,11 +64,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/high_frequency_localizer.dir/clean
 clean: CMakeFiles/slam_nav_manager.dir/clean
 clean: CMakeFiles/f1tenth_slam_nav_uninstall.dir/clean
 clean: CMakeFiles/uninstall.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/high_frequency_localizer.dir
+
+# All Build rule for target.
+CMakeFiles/high_frequency_localizer.dir/all:
+	$(MAKE) -f CMakeFiles/high_frequency_localizer.dir/build.make CMakeFiles/high_frequency_localizer.dir/depend
+	$(MAKE) -f CMakeFiles/high_frequency_localizer.dir/build.make CMakeFiles/high_frequency_localizer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/f1/f1tenth_ws/build/f1tenth_slam_nav/CMakeFiles --progress-num=1,2 "Built target high_frequency_localizer"
+.PHONY : CMakeFiles/high_frequency_localizer.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/high_frequency_localizer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/f1/f1tenth_ws/build/f1tenth_slam_nav/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/high_frequency_localizer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/f1/f1tenth_ws/build/f1tenth_slam_nav/CMakeFiles 0
+.PHONY : CMakeFiles/high_frequency_localizer.dir/rule
+
+# Convenience name for target.
+high_frequency_localizer: CMakeFiles/high_frequency_localizer.dir/rule
+
+.PHONY : high_frequency_localizer
+
+# clean rule for target.
+CMakeFiles/high_frequency_localizer.dir/clean:
+	$(MAKE) -f CMakeFiles/high_frequency_localizer.dir/build.make CMakeFiles/high_frequency_localizer.dir/clean
+.PHONY : CMakeFiles/high_frequency_localizer.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/slam_nav_manager.dir
@@ -76,7 +105,7 @@ clean: CMakeFiles/uninstall.dir/clean
 CMakeFiles/slam_nav_manager.dir/all:
 	$(MAKE) -f CMakeFiles/slam_nav_manager.dir/build.make CMakeFiles/slam_nav_manager.dir/depend
 	$(MAKE) -f CMakeFiles/slam_nav_manager.dir/build.make CMakeFiles/slam_nav_manager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/f1/f1tenth_ws/build/f1tenth_slam_nav/CMakeFiles --progress-num=1,2 "Built target slam_nav_manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/f1/f1tenth_ws/build/f1tenth_slam_nav/CMakeFiles --progress-num=3,4 "Built target slam_nav_manager"
 .PHONY : CMakeFiles/slam_nav_manager.dir/all
 
 # Build rule for subdir invocation for target.

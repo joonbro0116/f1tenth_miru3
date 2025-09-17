@@ -1,0 +1,61 @@
+[0.237s] Invoking command in '/home/f1/f1tenth_ws/build/f1tenth_slam_nav': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/f1/f1tenth_ws/src/f1tenth_slam_nav -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/f1tenth_slam_nav
+[0.505s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.782s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.463s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.587s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[3.007s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.054s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[4.188s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.658s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[4.679s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.845s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[5.940s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[6.234s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[6.712s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[7.182s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[7.317s] -- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[7.400s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[7.441s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[10.090s] -- Found lifecycle_msgs: 1.0.0 (/opt/ros/foxy/share/lifecycle_msgs/cmake)
+[10.277s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[10.856s] -- Added test 'copyright' to check source files copyright and LICENSE
+[10.883s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[10.885s] -- Configured cppcheck include dirs: /home/f1/f1tenth_ws/src/f1tenth_slam_nav/include
+[10.885s] -- Configured cppcheck exclude dirs and/or files: 
+[10.911s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[10.912s] -- Configured cpplint exclude dirs and/or files: 
+[10.917s] -- Added test 'flake8' to check Python code syntax and style conventions
+[10.925s] -- Added test 'lint_cmake' to check CMake code style
+[10.930s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[10.955s] -- Added test 'uncrustify' to check C / C++ code style
+[10.956s] -- Configured uncrustify additional arguments: 
+[10.960s] -- Added test 'xmllint' to check XML markup files
+[10.992s] -- Configuring done
+[11.148s] -- Generating done
+[11.215s] -- Build files have been written to: /home/f1/f1tenth_ws/build/f1tenth_slam_nav
+[11.258s] Invoked command in '/home/f1/f1tenth_ws/build/f1tenth_slam_nav' returned '0': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/f1/f1tenth_ws/src/f1tenth_slam_nav -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/f1tenth_slam_nav
+[11.282s] Invoking command in '/home/f1/f1tenth_ws/build/f1tenth_slam_nav': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/f1/f1tenth_ws/build/f1tenth_slam_nav -- -j6 -l6
+[11.582s] [35m[1mScanning dependencies of target high_frequency_localizer[0m
+[11.636s] [35m[1mScanning dependencies of target slam_nav_manager[0m
+[11.833s] [ 25%] [32mBuilding CXX object CMakeFiles/slam_nav_manager.dir/src/slam_nav_manager.cpp.o[0m
+[12.191s] [ 50%] [32mBuilding CXX object CMakeFiles/high_frequency_localizer.dir/src/high_frequency_localizer.cpp.o[0m
+[13.013s] In file included from [01m[K/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/high_frequency_localizer.cpp:1[m[K:
+[13.014s] [01m[K/home/f1/f1tenth_ws/src/f1tenth_slam_nav/include/f1tenth_slam_nav/high_frequency_localizer.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: No such file or directory
+[13.014s]    10 | #include [01;31m[K<tf2_geometry_msgs/tf2_geometry_msgs.hpp>[m[K
+[13.015s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.015s] compilation terminated.
+[13.026s] make[2]: *** [CMakeFiles/high_frequency_localizer.dir/build.make:63: CMakeFiles/high_frequency_localizer.dir/src/high_frequency_localizer.cpp.o] Error 1
+[13.027s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/high_frequency_localizer.dir/all] Error 2
+[13.028s] make[1]: *** Waiting for unfinished jobs....
+[26.604s] [01m[K/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/slam_nav_manager.cpp:[m[K In member function ‘[01m[Kvoid SlamNavManager::stopCurrentProcesses()[m[K’:
+[26.605s] [01m[K/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/slam_nav_manager.cpp:175:28:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kint system(const char*)[m[K’, declared with attribute warn_unused_result [[01;35m[K-Wunused-result[m[K]
+[26.605s]   175 |                 [01;35m[Kstd::system(kill_cmd.c_str())[m[K;
+[26.606s]       |                 [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[26.876s] [01m[K/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/slam_nav_manager.cpp:[m[K In member function ‘[01m[Kvoid SlamNavManager::saveMapCallback(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)[m[K’:
+[26.877s] [01m[K/home/f1/f1tenth_ws/src/f1tenth_slam_nav/src/slam_nav_manager.cpp:133:24:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kint system(const char*)[m[K’, declared with attribute warn_unused_result [[01;35m[K-Wunused-result[m[K]
+[26.877s]   133 |             [01;35m[Kstd::system(mkdir_cmd.c_str())[m[K;
+[26.878s]       |             [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[43.383s] [ 75%] [32m[1mLinking CXX executable slam_nav_manager[0m
+[44.196s] [ 75%] Built target slam_nav_manager
+[44.201s] make: *** [Makefile:141: all] Error 2
+[44.223s] Invoked command in '/home/f1/f1tenth_ws/build/f1tenth_slam_nav' returned '2': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/f1/f1tenth_ws/build/f1tenth_slam_nav -- -j6 -l6

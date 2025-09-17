@@ -269,7 +269,7 @@ PYTHON_VERSION:STRING=
 SITE:STRING=ubuntu
 
 //The directory containing a CMake configuration file for TinyXML2.
-TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
+TinyXML2_DIR:PATH=/home/f1/miniconda3/lib/cmake/tinyxml2
 
 //Path to a library.
 _lib:FILEPATH=/home/f1/f1tenth_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_fastrtps_cpp.so
