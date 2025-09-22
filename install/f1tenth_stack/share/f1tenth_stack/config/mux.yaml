@@ -1,1 +1,11 @@
-/home/f1/f1tenth_ws/build/f1tenth_stack/config/mux.yaml
+ackermann_mux:
+  ros__parameters:
+    topics:
+      navigation:
+        topic   : drive
+        timeout : 0.2
+        priority: 10
+      joystick:
+        topic   : teleop
+        timeout : 0.2
+        priority: 5

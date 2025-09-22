@@ -26,7 +26,7 @@ public:
     {
         // Publishers
         path_pub_ = this->create_publisher<nav_msgs::msg::Path>("/planned_path", 10);
-        racing_line_pub_ = this->create_publisher<nav_msgs::msg::Path>("/racing_line", 10);
+        racing_line_pub_ = this->create_publisher<nav_msgs::msg::Path>("/global_path", 10);
         drive_pub_ = this->create_publisher<ackermann_msgs::msg::AckermannDriveStamped>("/drive", 10);
 
         // Subscribers
@@ -37,6 +37,7 @@ public:
 
         // Parameters for centerline extraction
         this->declare_parameter("map_pgm_file", "");
+        this->declare_parameter("csv_file", "/home/f1/f1tenth_ws/joon_path_generate/raceline/traj_race_cl-2025-09-18 18_12_56.397291.csv");
         this->declare_parameter("map_resolution", 0.05);
         this->declare_parameter("map_origin_x", 0.0);
         this->declare_parameter("map_origin_y", 0.0);
@@ -53,6 +54,7 @@ public:
 
         // Load parameters
         std::string pgm_file = this->get_parameter("map_pgm_file").as_string();
+        std::string csv_file = this->get_parameter("csv_file").as_string();
         map_resolution_ = this->get_parameter("map_resolution").as_double();
         map_origin_x_ = this->get_parameter("map_origin_x").as_double();
         map_origin_y_ = this->get_parameter("map_origin_y").as_double();
@@ -66,18 +68,23 @@ public:
         wheelbase_ = this->get_parameter("wheelbase").as_double();
         obstacle_detection_distance_ = this->get_parameter("obstacle_detection_distance").as_double();
 
-        // Load centerline from CSV if available, otherwise extract from PGM
-        if (loadCenterlineFromCSV("/home/f1/f1tenth_ws/maps/centerline.csv")) {
-            RCLCPP_INFO(this->get_logger(), "중심선 CSV 로드 완료: %zu개 포인트", centerline_waypoints_.size());
-            publishCenterlineAsPath();
+        // Load global path from CSV if available, otherwise extract from PGM
+        if (!csv_file.empty() && loadGlobalPathFromCSV(csv_file)) {
+            RCLCPP_INFO(this->get_logger(), "글로벌 경로 CSV 로드 완료: %zu개 포인트 (파일: %s)", global_path_waypoints_.size(), csv_file.c_str());
+            publishGlobalPathAsPath();
         } else if (!pgm_file.empty()) {
-            RCLCPP_INFO(this->get_logger(), "CSV 파일이 없어 PGM에서 중심선 추출 시작...");
-            extractCenterlineFromPGM(pgm_file);
+            RCLCPP_INFO(this->get_logger(), "CSV 파일이 없어 PGM에서 글로벌 경로 추출 시작...");
+            extractGlobalPathFromPGM(pgm_file);
         } else {
-            RCLCPP_ERROR(this->get_logger(), "PGM 파일 경로가 설정되지 않았습니다.");
+            RCLCPP_ERROR(this->get_logger(), "CSV 파일 또는 PGM 파일 경로가 설정되지 않았습니다.");
         }
 
         current_waypoint_index_ = 0;
+
+        // Timer to periodically publish the global path for visualization
+        path_timer_ = this->create_wall_timer(
+            std::chrono::milliseconds(1000),
+            std::bind(&PathFollowNode::publishGlobalPathAsPath, this));
     }
 
 private:
@@ -103,6 +110,7 @@ private:
     rclcpp::Publisher<ackermann_msgs::msg::AckermannDriveStamped>::SharedPtr drive_pub_;
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub_;
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
+    rclcpp::TimerBase::SharedPtr path_timer_;
 
     // Map parameters
     double map_resolution_;
@@ -127,7 +135,7 @@ private:
     double current_x_, current_y_, current_yaw_, current_speed_;
 
     // Waypoints
-    std::vector<Point2D> centerline_waypoints_;
+    std::vector<Point2D> global_path_waypoints_;
     size_t current_waypoint_index_;
 
     // Gap follow parameters
@@ -148,13 +156,13 @@ private:
                              pow(odom_msg->twist.twist.linear.y, 2));
     }
 
-    bool loadCenterlineFromCSV(const std::string& csv_path) {
+    bool loadGlobalPathFromCSV(const std::string& csv_path) {
         std::ifstream csv_file(csv_path);
         if (!csv_file.is_open()) {
             return false;
         }
 
-        centerline_waypoints_.clear();
+        global_path_waypoints_.clear();
         std::string line;
         bool first_line = true;
 
@@ -170,17 +178,17 @@ private:
             try {
                 double x = std::stod(line.substr(0, comma_pos));
                 double y = std::stod(line.substr(comma_pos + 1));
-                centerline_waypoints_.emplace_back(x, y);
+                global_path_waypoints_.emplace_back(x, y);
             } catch (const std::exception&) {
                 continue;
             }
         }
 
         csv_file.close();
-        return !centerline_waypoints_.empty();
+        return !global_path_waypoints_.empty();
     }
 
-    void extractCenterlineFromPGM(const std::string& pgm_path) {
+    void extractGlobalPathFromPGM(const std::string& pgm_path) {
         // Load PGM file (simplified version of the original code)
         cv::Mat img = cv::imread(pgm_path, cv::IMREAD_UNCHANGED);
         if (img.empty()) {
@@ -200,16 +208,16 @@ private:
 
         RCLCPP_INFO(this->get_logger(), "PGM 맵 로드 완료: %dx%d", map_width_, map_height_);
 
-        // Extract centerline (simplified implementation)
+        // Extract global path (simplified implementation)
         if (detectTrackBoundary()) {
             createTrackInteriorMask();
-            extractTrackCenterline();
-            saveCenterlineToCSV();
+            extractTrackGlobalPath();
+            saveGlobalPathToCSV();
         }
     }
 
     Point2D findLookaheadPoint() {
-        if (centerline_waypoints_.empty()) {
+        if (global_path_waypoints_.empty()) {
             return Point2D(current_x_ + lookahead_distance_ * cos(current_yaw_),
                           current_y_ + lookahead_distance_ * sin(current_yaw_));
         }
@@ -218,9 +226,9 @@ private:
         double min_distance = std::numeric_limits<double>::max();
         size_t closest_idx = current_waypoint_index_;
 
-        for (size_t i = 0; i < centerline_waypoints_.size(); ++i) {
-            double dx = centerline_waypoints_[i].x - current_x_;
-            double dy = centerline_waypoints_[i].y - current_y_;
+        for (size_t i = 0; i < global_path_waypoints_.size(); ++i) {
+            double dx = global_path_waypoints_[i].x - current_x_;
+            double dy = global_path_waypoints_[i].y - current_y_;
             double distance = sqrt(dx * dx + dy * dy);
 
             if (distance < min_distance) {
@@ -231,9 +239,9 @@ private:
 
         // Find lookahead point
         size_t lookahead_idx = closest_idx;
-        for (size_t i = closest_idx; i < centerline_waypoints_.size(); ++i) {
-            double dx = centerline_waypoints_[i].x - current_x_;
-            double dy = centerline_waypoints_[i].y - current_y_;
+        for (size_t i = closest_idx; i < global_path_waypoints_.size(); ++i) {
+            double dx = global_path_waypoints_[i].x - current_x_;
+            double dy = global_path_waypoints_[i].y - current_y_;
             double distance = sqrt(dx * dx + dy * dy);
 
             if (distance >= lookahead_distance_) {
@@ -243,7 +251,7 @@ private:
         }
 
         current_waypoint_index_ = lookahead_idx;
-        return centerline_waypoints_[lookahead_idx];
+        return global_path_waypoints_[lookahead_idx];
     }
 
     double calculateSteeringAngle(const Point2D& target_point) {
@@ -350,8 +358,8 @@ private:
     }
 
     void lidar_callback(const sensor_msgs::msg::LaserScan::ConstSharedPtr scan_msg) {
-        if (centerline_waypoints_.empty()) {
-            RCLCPP_WARN(this->get_logger(), "중심선 웨이포인트가 없습니다.");
+        if (global_path_waypoints_.empty()) {
+            RCLCPP_WARN(this->get_logger(), "글로벌 경로 웨이포인트가 없습니다.");
             return;
         }
 
@@ -385,7 +393,7 @@ private:
                 mode = "EMERGENCY_STOP";
             }
         } else {
-            // Pure pursuit mode - follow centerline
+            // Pure pursuit mode - follow global path
             Point2D lookahead_point = findLookaheadPoint();
             steering_angle = calculateSteeringAngle(lookahead_point);
             speed = max_speed_;
@@ -412,32 +420,35 @@ private:
             mode.c_str(), steering_angle, speed);
     }
 
-    void publishCenterlineAsPath() {
-        if (centerline_waypoints_.empty()) return;
+    void publishGlobalPathAsPath() {
+        if (global_path_waypoints_.empty()) return;
 
-        nav_msgs::msg::Path centerline_msg;
-        centerline_msg.header.stamp = this->get_clock()->now();
-        centerline_msg.header.frame_id = "map";
+        nav_msgs::msg::Path global_path_msg;
+        global_path_msg.header.stamp = this->get_clock()->now();
+        global_path_msg.header.frame_id = "map";
 
-        for (const auto& point : centerline_waypoints_) {
+        for (const auto& point : global_path_waypoints_) {
             geometry_msgs::msg::PoseStamped pose_stamped;
-            pose_stamped.header = centerline_msg.header;
+            pose_stamped.header = global_path_msg.header;
             pose_stamped.pose.position.x = point.x;
             pose_stamped.pose.position.y = point.y;
             pose_stamped.pose.position.z = 0.0;
             pose_stamped.pose.orientation.w = 1.0;
-            centerline_msg.poses.push_back(pose_stamped);
+            global_path_msg.poses.push_back(pose_stamped);
         }
 
-        racing_line_pub_->publish(centerline_msg);
-        RCLCPP_INFO(this->get_logger(), "중심선 퍼블리시 완료: %zu개 포인트", centerline_waypoints_.size());
+        racing_line_pub_->publish(global_path_msg);
+        static int log_count = 0;
+        if (log_count++ % 10 == 0) {  // 10초마다 한 번씩만 로그 출력
+            RCLCPP_INFO(this->get_logger(), "글로벌 경로 퍼블리시 완료: %zu개 포인트", global_path_waypoints_.size());
+        }
     }
 
-    // Simplified centerline extraction methods (placeholder implementations)
+    // Simplified global path extraction methods (placeholder implementations)
     bool detectTrackBoundary() { return false; }
     void createTrackInteriorMask() {}
-    void extractTrackCenterline() {}
-    void saveCenterlineToCSV() {}
+    void extractTrackGlobalPath() {}
+    void saveGlobalPathToCSV() {}
 };
 
 int main(int argc, char** argv)

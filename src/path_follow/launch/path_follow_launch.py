@@ -12,6 +12,12 @@ def generate_launch_description():
         default_value='/home/f1/f1tenth_ws/maps/gap_map_final_processed.pgm',
         description='Path to PGM map file'
     )
+
+    csv_file_arg = DeclareLaunchArgument(
+        'csv_file',
+        default_value='/home/f1/f1tenth_ws/joon_path_generate/raceline/traj_race_cl-2025-09-18 18_12_56.397291.csv',
+        description='Path to CSV raceline file'
+    )
     
     map_resolution_arg = DeclareLaunchArgument(
         'map_resolution',
@@ -45,7 +51,7 @@ def generate_launch_description():
     
     min_speed_arg = DeclareLaunchArgument(
         'min_speed',
-        default_value='0.8',
+        default_value='2.0',
         description='Minimum driving speed (gap follow mode)'
     )
     
@@ -56,6 +62,7 @@ def generate_launch_description():
         name='path_follow_node',
         parameters=[{
             'map_pgm_file': LaunchConfiguration('map_pgm_file'),
+            'csv_file': LaunchConfiguration('csv_file'),
             'map_resolution': LaunchConfiguration('map_resolution'),
             'map_origin_x': LaunchConfiguration('map_origin_x'),
             'map_origin_y': LaunchConfiguration('map_origin_y'),
@@ -66,7 +73,7 @@ def generate_launch_description():
             'max_speed': LaunchConfiguration('max_speed'),
             'min_speed': LaunchConfiguration('min_speed'),
             'wheelbase': 0.3302,
-            'obstacle_detection_distance': 2.0
+            'obstacle_detection_distance': 0.8
         }],
         output='screen',
         emulate_tty=True
@@ -74,6 +81,7 @@ def generate_launch_description():
     
     return LaunchDescription([
         map_pgm_file_arg,
+        csv_file_arg,
         map_resolution_arg,
         map_origin_x_arg,
         map_origin_y_arg,

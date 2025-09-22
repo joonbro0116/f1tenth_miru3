@@ -81,7 +81,7 @@ def outputDirFromFile(output_dir):
 def plot(image, title, plot_mode):
     if plot_mode > 0:
         fig = plt.figure()
-        fig.canvas.set_window_title(title)
+        fig.suptitle(title)
         plt.imshow(image, interpolation='nearest', cmap='Greys')
 
 def plotExtra(image, title, plot_mode):

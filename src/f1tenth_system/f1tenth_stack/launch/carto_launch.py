@@ -61,7 +61,7 @@ def generate_launch_description():
             "-configuration_directory", LaunchConfiguration("config_dir"),
             "-configuration_basename", LaunchConfiguration("config_basename"),
         ],
-        remappings=[("/scan", "scan")],
+        remappings=[("/scan", "scan"), ("/imu", "/sensors/imu")],
     )
 
     # ───────────────────── OccupancyGrid publisher (/map) ───────────────────────

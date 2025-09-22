@@ -159,7 +159,7 @@ private:
         // ---------- 속도 제어 ----------
         float angle_error = fabs(steering_angle);
         float max_speed = 4.0;
-        float min_speed = 1.0; // 더 낮춰서 코너에서 멈추지 않도록 함
+        float min_speed = 2.0; // 더 낮춰서 코너에서 멈추지 않도록 함
         float speed = max_speed - (angle_error / 0.34) * (max_speed - min_speed);
         if (speed < min_speed) speed = min_speed;
         if (speed > max_speed) speed = max_speed;

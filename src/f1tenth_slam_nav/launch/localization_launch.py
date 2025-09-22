@@ -35,12 +35,18 @@ class MapSelectorGUI:
         """Find all yaml map files in the workspace"""
         map_patterns = [
             f"{self.workspace_root}/**/maps/*.yaml",
-            f"{self.workspace_root}/maps/*.yaml"
+            f"{self.workspace_root}/maps/*.yaml",
+            f"{self.workspace_root}/joon_path_generate/maps/*.yaml",
+            f"{self.workspace_root}/path_generate/**/maps/*.yaml"
         ]
 
         all_maps = []
         for pattern in map_patterns:
             all_maps.extend(glob.glob(pattern, recursive=True))
+
+        print(f"🔍 검색된 맵 파일들: {len(all_maps)}개")
+        for map_file in all_maps:
+            print(f"   - {map_file}")
 
         # Remove duplicates and sort
         unique_maps = sorted(list(set(all_maps)))
@@ -315,7 +321,9 @@ def _terminal_map_selection():
     workspace_root = "/home/f1/f1tenth_ws"
     map_patterns = [
         f"{workspace_root}/**/maps/*.yaml",
-        f"{workspace_root}/maps/*.yaml"
+        f"{workspace_root}/maps/*.yaml",
+        f"{workspace_root}/joon_path_generate/maps/*.yaml",
+        f"{workspace_root}/path_generate/**/maps/*.yaml"
     ]
 
     all_maps = []

@@ -1,0 +1,109 @@
+[0.000000] (-) TimerEvent: {}
+[0.000952] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.001196] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.001349] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.001455] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.001556] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.001657] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.001755] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.001852] (-) JobUnselected: {'identifier': 'path_follow'}
+[0.001990] (-) JobUnselected: {'identifier': 'path_planner'}
+[0.002140] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.002292] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.002436] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.002551] (-) JobUnselected: {'identifier': 'vesc'}
+[0.002669] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.003002] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.003692] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.003823] (f1tenth_stack) JobQueued: {'identifier': 'f1tenth_stack', 'dependencies': OrderedDict([('ackermann_mux', '/home/f1/f1tenth_ws/install/ackermann_mux'), ('teleop_tools_msgs', '/home/f1/f1tenth_ws/install/teleop_tools_msgs'), ('vesc_msgs', '/home/f1/f1tenth_ws/install/vesc_msgs'), ('joy_teleop', '/home/f1/f1tenth_ws/install/joy_teleop'), ('vesc_ackermann', '/home/f1/f1tenth_ws/install/vesc_ackermann'), ('vesc_driver', '/home/f1/f1tenth_ws/install/vesc_driver'), ('vesc', '/home/f1/f1tenth_ws/install/vesc')])}
+[0.005305] (f1tenth_stack) JobStarted: {'identifier': 'f1tenth_stack'}
+[0.098857] (-) TimerEvent: {}
+[0.201998] (-) TimerEvent: {}
+[0.309245] (-) TimerEvent: {}
+[0.410273] (-) TimerEvent: {}
+[0.511279] (-) TimerEvent: {}
+[0.612231] (-) TimerEvent: {}
+[0.714360] (-) TimerEvent: {}
+[0.815222] (-) TimerEvent: {}
+[0.916289] (-) TimerEvent: {}
+[1.017378] (-) TimerEvent: {}
+[1.118332] (-) TimerEvent: {}
+[1.219248] (-) TimerEvent: {}
+[1.320137] (-) TimerEvent: {}
+[1.422049] (-) TimerEvent: {}
+[1.523048] (-) TimerEvent: {}
+[1.623962] (-) TimerEvent: {}
+[1.724995] (-) TimerEvent: {}
+[1.826048] (-) TimerEvent: {}
+[1.930599] (-) TimerEvent: {}
+[2.032288] (-) TimerEvent: {}
+[2.134535] (-) TimerEvent: {}
+[2.239819] (-) TimerEvent: {}
+[2.342258] (-) TimerEvent: {}
+[2.443134] (-) TimerEvent: {}
+[2.544003] (-) TimerEvent: {}
+[2.646575] (-) TimerEvent: {}
+[2.747524] (-) TimerEvent: {}
+[2.848420] (-) TimerEvent: {}
+[2.949367] (-) TimerEvent: {}
+[3.050358] (-) TimerEvent: {}
+[3.151308] (-) TimerEvent: {}
+[3.252223] (-) TimerEvent: {}
+[3.353229] (-) TimerEvent: {}
+[3.454194] (-) TimerEvent: {}
+[3.555097] (-) TimerEvent: {}
+[3.656005] (-) TimerEvent: {}
+[3.756916] (-) TimerEvent: {}
+[3.857923] (-) TimerEvent: {}
+[3.958825] (-) TimerEvent: {}
+[4.059825] (-) TimerEvent: {}
+[4.160865] (-) TimerEvent: {}
+[4.261757] (-) TimerEvent: {}
+[4.362734] (-) TimerEvent: {}
+[4.463706] (-) TimerEvent: {}
+[4.512597] (f1tenth_stack) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/f1tenth_stack', 'build', '--build-base', '/home/f1/f1tenth_ws/build/f1tenth_stack/build', 'install', '--record', '/home/f1/f1tenth_ws/build/f1tenth_stack/install.log', '--install-scripts', '$base/lib/f1tenth_stack', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/f1/f1tenth_ws/src/f1tenth_system/f1tenth_stack', 'env': {'LC_TIME': 'ko_KR.UTF-8', 'USER': 'f1', 'SSH_CLIENT': '172.16.224.95 35112 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/f1', 'MOTD_SHOWN': 'pam', 'OLDPWD': '/home/f1', 'LESS': '-R', 'SSH_TTY': '/dev/pts/4', 'ZSH': '/home/f1/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ko_KR.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', 'VISUAL': 'nvim', '_colcon_cd_root': '/opt/ros/foxy/', 'NVM_DIR': '/home/f1/.nvm', 'ROS_DISTRO': 'foxy', 'COLCON_PREFIX_PATH': '/home/f1/f1tenth_ws/install', 'LOGNAME': 'f1', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '9', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'a4', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1001', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/f1tenth_slam_nav:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/path_planner:/home/f1/f1tenth_ws/install/path_follow:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/lidar_processing:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/home/f1/f1tenth_ws/install/center_follow_cpp:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy', 'ROS_DOMAIN_ID': '73', 'LC_NAME': 'ko_KR.UTF-8', 'SHELL': '/usr/bin/zsh', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/f1/f1tenth_ws/build/f1tenth_stack', 'SSH_CONNECTION': '172.16.224.95 35112 172.16.64.17 22', 'LC_NUMERIC': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/f1/f1tenth_ws/build/f1tenth_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/f1tenth_slam_nav/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/pygame_key_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/mouse_teleop:/home/f1/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/key_teleop:/home/f1/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'EDITOR': 'nvim', 'CMAKE_PREFIX_PATH': '/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/ackermann_mux:/home/f1/f1tenth_ws/install/f1tenth_slam_nav:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/path_planner:/home/f1/f1tenth_ws/install/path_follow:/home/f1/f1tenth_ws/install/lidar_processing:/home/f1/f1tenth_ws/install/center_follow_cpp'}, 'shell': False}
+[4.564275] (-) TimerEvent: {}
+[4.666071] (-) TimerEvent: {}
+[4.767000] (-) TimerEvent: {}
+[4.867948] (-) TimerEvent: {}
+[4.968886] (-) TimerEvent: {}
+[5.069848] (-) TimerEvent: {}
+[5.170773] (-) TimerEvent: {}
+[5.271701] (-) TimerEvent: {}
+[5.372753] (-) TimerEvent: {}
+[5.473711] (-) TimerEvent: {}
+[5.574700] (-) TimerEvent: {}
+[5.675649] (-) TimerEvent: {}
+[5.776564] (-) TimerEvent: {}
+[5.877568] (-) TimerEvent: {}
+[5.978465] (-) TimerEvent: {}
+[6.002364] (f1tenth_stack) StdoutLine: {'line': b'running egg_info\n'}
+[6.006267] (f1tenth_stack) StdoutLine: {'line': b'writing ../../../build/f1tenth_stack/f1tenth_stack.egg-info/PKG-INFO\n'}
+[6.007858] (f1tenth_stack) StdoutLine: {'line': b'writing dependency_links to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/dependency_links.txt\n'}
+[6.008667] (f1tenth_stack) StdoutLine: {'line': b'writing entry points to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/entry_points.txt\n'}
+[6.009596] (f1tenth_stack) StdoutLine: {'line': b'writing requirements to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/requires.txt\n'}
+[6.011075] (f1tenth_stack) StdoutLine: {'line': b'writing top-level names to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/top_level.txt\n'}
+[6.078706] (-) TimerEvent: {}
+[6.179675] (-) TimerEvent: {}
+[6.207895] (f1tenth_stack) StdoutLine: {'line': b"reading manifest file '../../../build/f1tenth_stack/f1tenth_stack.egg-info/SOURCES.txt'\n"}
+[6.213686] (f1tenth_stack) StdoutLine: {'line': b"writing manifest file '../../../build/f1tenth_stack/f1tenth_stack.egg-info/SOURCES.txt'\n"}
+[6.214678] (f1tenth_stack) StdoutLine: {'line': b'running build\n'}
+[6.215177] (f1tenth_stack) StdoutLine: {'line': b'running build_py\n'}
+[6.216794] (f1tenth_stack) StdoutLine: {'line': b'running install\n'}
+[6.221160] (f1tenth_stack) StdoutLine: {'line': b'running install_lib\n'}
+[6.230564] (f1tenth_stack) StdoutLine: {'line': b'running install_data\n'}
+[6.236209] (f1tenth_stack) StdoutLine: {'line': b'copying config/f110_2d.lua -> /home/f1/f1tenth_ws/install/f1tenth_stack/share/f1tenth_stack/config\n'}
+[6.237421] (f1tenth_stack) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.246586] (f1tenth_stack) StdoutLine: {'line': b"removing '/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages/f1tenth_stack-0.0.1-py3.8.egg-info' (and everything under it)\n"}
+[6.248909] (f1tenth_stack) StdoutLine: {'line': b'Copying ../../../build/f1tenth_stack/f1tenth_stack.egg-info to /home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages/f1tenth_stack-0.0.1-py3.8.egg-info\n'}
+[6.256358] (f1tenth_stack) StdoutLine: {'line': b'running install_scripts\n'}
+[6.279891] (-) TimerEvent: {}
+[6.348071] (f1tenth_stack) StdoutLine: {'line': b'Installing car_visualizer.py script to /home/f1/f1tenth_ws/install/f1tenth_stack/lib/f1tenth_stack\n'}
+[6.350546] (f1tenth_stack) StdoutLine: {'line': b'Installing tf_publisher script to /home/f1/f1tenth_ws/install/f1tenth_stack/lib/f1tenth_stack\n'}
+[6.352148] (f1tenth_stack) StdoutLine: {'line': b'Installing throttle_interpolator script to /home/f1/f1tenth_ws/install/f1tenth_stack/lib/f1tenth_stack\n'}
+[6.354840] (f1tenth_stack) StdoutLine: {'line': b"writing list of installed files to '/home/f1/f1tenth_ws/build/f1tenth_stack/install.log'\n"}
+[6.380072] (-) TimerEvent: {}
+[6.458494] (f1tenth_stack) CommandEnded: {'returncode': 0}
+[6.480598] (-) TimerEvent: {}
+[6.541066] (f1tenth_stack) JobEnded: {'identifier': 'f1tenth_stack', 'rc': 0}
+[6.544686] (-) EventReactorShutdown: {}
