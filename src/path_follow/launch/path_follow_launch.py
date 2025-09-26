@@ -39,7 +39,7 @@ def generate_launch_description():
     
     lookahead_distance_arg = DeclareLaunchArgument(
         'lookahead_distance',
-        default_value='1.5',
+        default_value='2.0',
         description='Pure pursuit lookahead distance'
     )
     
@@ -51,7 +51,7 @@ def generate_launch_description():
     
     min_speed_arg = DeclareLaunchArgument(
         'min_speed',
-        default_value='2.0',
+        default_value='1.5',
         description='Minimum driving speed (gap follow mode)'
     )
     
@@ -73,7 +73,7 @@ def generate_launch_description():
             'max_speed': LaunchConfiguration('max_speed'),
             'min_speed': LaunchConfiguration('min_speed'),
             'wheelbase': 0.3302,
-            'obstacle_detection_distance': 0.8
+            'obstacle_detection_distance': 0.1
         }],
         output='screen',
         emulate_tty=True

@@ -1,0 +1,21 @@
+[0.077s] Invoking command in '/home/f1/f1tenth_ws/build/real_pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/real_pure_pursuit -- -j6 -l6
+[0.569s] Scanning dependencies of target real_pure_pursuit_node
+[0.674s] [ 50%] Building CXX object CMakeFiles/real_pure_pursuit_node.dir/src/real_pure_pursuit_node.cpp.o
+[11.475s] /home/f1/f1tenth_ws/src/real_pure_pursuit/src/real_pure_pursuit_node.cpp: In member function ‘void RealPurePursuitNode::control_timer()’:
+[11.476s] /home/f1/f1tenth_ws/src/real_pure_pursuit/src/real_pure_pursuit_node.cpp:278:37: error: ‘clamp’ is not a member of ‘std’
+[11.477s]   278 |         double steer_clamped = std::clamp(steer, -M_PI/6.0, M_PI/6.0);
+[11.477s]       |                                     ^~~~~
+[11.581s] /home/f1/f1tenth_ws/src/real_pure_pursuit/src/real_pure_pursuit_node.cpp: In member function ‘double RealPurePursuitNode::calculate_pid_speed(double, double)’:
+[11.582s] /home/f1/f1tenth_ws/src/real_pure_pursuit/src/real_pure_pursuit_node.cpp:364:38: error: ‘clamp’ is not a member of ‘std’
+[11.582s]   364 |         speed_error_integral_ = std::clamp(speed_error_integral_, -10.0, 10.0);
+[11.583s]       |                                      ^~~~~
+[11.586s] /home/f1/f1tenth_ws/src/real_pure_pursuit/src/real_pure_pursuit_node.cpp:381:31: error: ‘clamp’ is not a member of ‘std’
+[11.586s]   381 |             speed_diff = std::clamp(speed_diff, -max_speed_change, max_speed_change);
+[11.587s]       |                               ^~~~~
+[11.591s] /home/f1/f1tenth_ws/src/real_pure_pursuit/src/real_pure_pursuit_node.cpp:386:32: error: ‘clamp’ is not a member of ‘std’
+[11.591s]   386 |         commanded_speed = std::clamp(commanded_speed, min_speed_, max_speed_);
+[11.592s]       |                                ^~~~~
+[22.325s] make[2]: *** [CMakeFiles/real_pure_pursuit_node.dir/build.make:63: CMakeFiles/real_pure_pursuit_node.dir/src/real_pure_pursuit_node.cpp.o] Error 1
+[22.327s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/real_pure_pursuit_node.dir/all] Error 2
+[22.328s] make: *** [Makefile:141: all] Error 2
+[22.341s] Invoked command in '/home/f1/f1tenth_ws/build/real_pure_pursuit' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/real_pure_pursuit -- -j6 -l6

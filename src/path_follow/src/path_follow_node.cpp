@@ -48,9 +48,9 @@ public:
         // Parameters for pure pursuit
         this->declare_parameter("lookahead_distance", 1.5);
         this->declare_parameter("max_speed", 3.0);
-        this->declare_parameter("min_speed", 0.5);
+        this->declare_parameter("min_speed", 1.5);
         this->declare_parameter("wheelbase", 0.3302);
-        this->declare_parameter("obstacle_detection_distance", 2.0);
+        this->declare_parameter("obstacle_detection_distance", 0.1);
 
         // Load parameters
         std::string pgm_file = this->get_parameter("map_pgm_file").as_string();
@@ -254,6 +254,47 @@ private:
         return global_path_waypoints_[lookahead_idx];
     }
 
+    double calculateCurvature(const Point2D& p1, const Point2D& p2, const Point2D& p3) {
+        // 벡터 계산
+        Point2D v1 = p2 - p1;  // P1 → P2
+        Point2D v2 = p3 - p2;  // P2 → P3
+
+        // 외적 (cross product)
+        double cross = v1.x * v2.y - v1.y * v2.x;
+
+        // 벡터 크기
+        double v1_norm = v1.norm();
+        double v2_norm = v2.norm();
+
+        if (v1_norm < 1e-6 || v2_norm < 1e-6) {
+            return 0.0;  // 직선
+        }
+
+        // 곡률 = |외적| / (|v1| * |v2|)
+        double curvature = std::abs(cross) / (v1_norm * v2_norm);
+        return curvature;
+    }
+
+    double calculateSpeedFromCurvature(size_t waypoint_idx) {
+        if (global_path_waypoints_.size() < 3 || waypoint_idx >= global_path_waypoints_.size() - 2) {
+            return max_speed_;
+        }
+
+        // 현재 웨이포인트 주변의 곡률 계산
+        double curvature = calculateCurvature(
+            global_path_waypoints_[waypoint_idx],
+            global_path_waypoints_[waypoint_idx + 1],
+            global_path_waypoints_[waypoint_idx + 2]
+        );
+
+        // 곡률에 따른 속도 조정 (곡률이 클수록 속도 감소)
+        double curvature_speed_factor = 1.0 / (1.0 + curvature * 15.0);
+        double target_speed = max_speed_ * curvature_speed_factor;
+
+        // 최소/최대 속도 제한
+        return std::max(min_speed_, std::min(max_speed_, target_speed));
+    }
+
     double calculateSteeringAngle(const Point2D& target_point) {
         double dx = target_point.x - current_x_;
         double dy = target_point.y - current_y_;
@@ -396,12 +437,22 @@ private:
             // Pure pursuit mode - follow global path
             Point2D lookahead_point = findLookaheadPoint();
             steering_angle = calculateSteeringAngle(lookahead_point);
-            speed = max_speed_;
+            speed = calculateSpeedFromCurvature(current_waypoint_index_);
             mode = "PURE_PURSUIT";
             
+            // 곡률 정보도 로그에 추가
+            double current_curvature = 0.0;
+            if (global_path_waypoints_.size() >= 3 && current_waypoint_index_ < global_path_waypoints_.size() - 2) {
+                current_curvature = calculateCurvature(
+                    global_path_waypoints_[current_waypoint_index_],
+                    global_path_waypoints_[current_waypoint_index_ + 1],
+                    global_path_waypoints_[current_waypoint_index_ + 2]
+                );
+            }
+
             RCLCPP_INFO(this->get_logger(),
-                "PURE_PURSUIT: target=(%.2f, %.2f), current=(%.2f, %.2f), waypoint_idx=%zu",
-                lookahead_point.x, lookahead_point.y, current_x_, current_y_, current_waypoint_index_);
+                "PURE_PURSUIT: target=(%.2f, %.2f), current=(%.2f, %.2f), waypoint_idx=%zu, curvature=%.4f",
+                lookahead_point.x, lookahead_point.y, current_x_, current_y_, current_waypoint_index_, current_curvature);
         }
 
         // Limit steering angle
