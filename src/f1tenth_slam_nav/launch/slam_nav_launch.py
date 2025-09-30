@@ -19,40 +19,114 @@ Usage:
 
 import os
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, OpaqueFunction
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, OpaqueFunction, GroupAction
 from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, PythonExpression
+from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
 
 def launch_setup(context, *args, **kwargs):
     pkg_share = get_package_share_directory("f1tenth_slam_nav")
-    
+    f1tenth_stack_share = get_package_share_directory("f1tenth_stack")
+
     # Get launch configurations
     mode = LaunchConfiguration("mode").perform(context)
     slam_backend = LaunchConfiguration("slam_backend").perform(context)
     use_sim_time = LaunchConfiguration("use_sim_time")
     map_yaml_file = LaunchConfiguration("map_yaml_file")
-    
+    slam_mode = LaunchConfiguration("slam_mode")
+    slam_config_file = LaunchConfiguration("slam_config_file")
+
     launch_actions = []
-    
+
     if mode == "slam":
-        # SLAM mode - include slam launch
-        slam_launch = IncludeLaunchDescription(
+        # Include F1TENTH bringup
+        bringup_launch = IncludeLaunchDescription(
             PythonLaunchDescriptionSource([
-                PathJoinSubstitution([pkg_share, "launch", "slam_launch.py"])
+                PathJoinSubstitution([f1tenth_stack_share, "launch", "bringup_launch.py"])
             ]),
             launch_arguments={
-                "use_sim_time": use_sim_time,
-                "slam_backend": slam_backend,
-                "mode": LaunchConfiguration("slam_mode")
+                "use_sim_time": use_sim_time
             }.items()
         )
-        launch_actions.append(slam_launch)
-        
+        launch_actions.append(bringup_launch)
+
+        # SLAM Toolbox nodes (sync / async)
+        slam_toolbox_group = GroupAction([
+            Node(
+                package="slam_toolbox",
+                executable="sync_slam_toolbox_node",
+                name="slam_toolbox",
+                output="screen",
+                parameters=[
+                    slam_config_file,
+                    {"use_sim_time": use_sim_time}
+                ],
+                condition=IfCondition(
+                    PythonExpression([
+                        "'", LaunchConfiguration("slam_backend"), "' == 'slam_toolbox' and '", slam_mode, "' == 'sync'"
+                    ])
+                )
+            ),
+            Node(
+                package="slam_toolbox",
+                executable="async_slam_toolbox_node",
+                name="slam_toolbox",
+                output="screen",
+                parameters=[
+                    slam_config_file,
+                    {"use_sim_time": use_sim_time}
+                ],
+                condition=IfCondition(
+                    PythonExpression([
+                        "'", LaunchConfiguration("slam_backend"), "' == 'slam_toolbox' and '", slam_mode, "' == 'async'"
+                    ])
+                )
+            )
+        ])
+        launch_actions.append(slam_toolbox_group)
+
+        # Cartographer nodes
+        cartographer_group = GroupAction([
+            Node(
+                package="cartographer_ros",
+                executable="cartographer_node",
+                name="cartographer_node",
+                output="screen",
+                parameters=[{"use_sim_time": use_sim_time}],
+                arguments=[
+                    "-configuration_directory", PathJoinSubstitution([pkg_share, "config"]),
+                    "-configuration_basename", "cartographer_config.lua"
+                ],
+                remappings=[
+                    ("/scan", "scan"),
+                    ("/odom", "odom")
+                ],
+                condition=IfCondition(
+                    PythonExpression(["'", LaunchConfiguration("slam_backend"), "' == 'cartographer'"])
+                )
+            ),
+            Node(
+                package="cartographer_ros",
+                executable="occupancy_grid_node",
+                name="occupancy_grid_node",
+                output="screen",
+                parameters=[{
+                    "use_sim_time": use_sim_time,
+                    "resolution": 0.05,
+                    "publish_period_sec": 1.0
+                }],
+                condition=IfCondition(
+                    PythonExpression(["'", LaunchConfiguration("slam_backend"), "' == 'cartographer'"])
+                )
+            )
+        ])
+        launch_actions.append(cartographer_group)
+
     elif mode == "localization":
-        # Localization mode - include localization launch  
+        # Localization mode - include localization launch
         localization_launch = IncludeLaunchDescription(
             PythonLaunchDescriptionSource([
                 PathJoinSubstitution([pkg_share, "launch", "localization_launch.py"])
@@ -64,7 +138,7 @@ def launch_setup(context, *args, **kwargs):
             }.items()
         )
         launch_actions.append(localization_launch)
-    
+
     return launch_actions
 
 
@@ -109,6 +183,12 @@ def generate_launch_description():
         description="Automatically start lifecycle nodes"
     )
 
+    slam_config_arg = DeclareLaunchArgument(
+        "slam_config_file",
+        default_value=PathJoinSubstitution([get_package_share_directory("f1tenth_slam_nav"), "config", "slam_toolbox_config.yaml"]),
+        description="Path to SLAM config file"
+    )
+
     return LaunchDescription([
         mode_arg,
         slam_backend_arg,
@@ -116,5 +196,6 @@ def generate_launch_description():
         use_sim_time_arg,
         map_yaml_file_arg,
         autostart_arg,
+        slam_config_arg,
         OpaqueFunction(function=launch_setup)
     ])

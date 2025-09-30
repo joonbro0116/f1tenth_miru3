@@ -1,0 +1,63 @@
+[0.080s] Invoking command in '/home/f1/f1tenth_ws/build/real_pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/f1/f1tenth_ws/src/real_pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/real_pure_pursuit
+[0.178s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.327s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.428s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.479s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.706s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.727s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.250s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.521s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.529s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.219s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[3.371s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[3.686s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[4.013s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[4.167s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[4.462s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[4.506s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[5.826s] -- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[5.854s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[5.985s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[6.384s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.391s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.391s] -- Configured cppcheck include dirs: 
+[6.392s] -- Configured cppcheck exclude dirs and/or files: 
+[6.396s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.397s] -- Configured cpplint exclude dirs and/or files: 
+[6.399s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.401s] -- Added test 'lint_cmake' to check CMake code style
+[6.403s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[6.410s] -- Added test 'uncrustify' to check C / C++ code style
+[6.411s] -- Configured uncrustify additional arguments: 
+[6.412s] -- Added test 'xmllint' to check XML markup files
+[6.449s] -- Configuring done
+[6.552s] -- Generating done
+[6.599s] -- Build files have been written to: /home/f1/f1tenth_ws/build/real_pure_pursuit
+[6.645s] Invoked command in '/home/f1/f1tenth_ws/build/real_pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/f1/f1tenth_ws/src/real_pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/real_pure_pursuit
+[6.664s] Invoking command in '/home/f1/f1tenth_ws/build/real_pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/f1/f1tenth_ws/build/real_pure_pursuit -- -j6 -l6
+[7.116s] Scanning dependencies of target real_pure_pursuit_node
+[7.222s] [ 50%] Building CXX object CMakeFiles/real_pure_pursuit_node.dir/src/real_pure_pursuit_node.cpp.o
+[75.732s] [100%] Linking CXX executable real_pure_pursuit_node
+[76.688s] [100%] Built target real_pure_pursuit_node
+[76.750s] Invoked command in '/home/f1/f1tenth_ws/build/real_pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/f1/f1tenth_ws/build/real_pure_pursuit -- -j6 -l6
+[76.822s] Invoking command in '/home/f1/f1tenth_ws/build/real_pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/f1/f1tenth_ws/build/real_pure_pursuit
+[76.861s] -- Install configuration: "Release"
+[76.864s] -- Execute custom install script
+[76.868s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/lib/real_pure_pursuit/real_pure_pursuit_node
+[76.874s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit//launch/real_autonomous_driving.launch.py
+[76.876s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/ament_index/resource_index/package_run_dependencies/real_pure_pursuit
+[76.878s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/ament_index/resource_index/parent_prefix_path/real_pure_pursuit
+[76.880s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/environment/ament_prefix_path.sh
+[76.882s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/environment/ament_prefix_path.dsv
+[76.884s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/environment/path.sh
+[76.886s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/environment/path.dsv
+[76.888s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/local_setup.bash
+[76.890s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/local_setup.sh
+[76.892s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/local_setup.zsh
+[76.894s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/local_setup.dsv
+[76.896s] -- Symlinking: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/package.dsv
+[76.945s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/ament_index/resource_index/packages/real_pure_pursuit
+[76.947s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/cmake/real_pure_pursuitConfig.cmake
+[76.948s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/cmake/real_pure_pursuitConfig-version.cmake
+[76.950s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/package.xml
+[76.962s] Invoked command in '/home/f1/f1tenth_ws/build/real_pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/f1/f1tenth_ws/build/real_pure_pursuit

@@ -1,0 +1,17 @@
+[4.356s] Invoking command in '/home/f1/f1tenth_ws/build/pygame_key_teleop': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/f1/f1tenth_ws/build/pygame_key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/pygame_key_teleop/build --no-deps symlink_data
+[5.785s] running develop
+[6.602s] running egg_info
+[6.603s] writing pygame_key_teleop.egg-info/PKG-INFO
+[6.605s] writing dependency_links to pygame_key_teleop.egg-info/dependency_links.txt
+[6.606s] writing entry points to pygame_key_teleop.egg-info/entry_points.txt
+[6.607s] writing requirements to pygame_key_teleop.egg-info/requires.txt
+[6.607s] writing top-level names to pygame_key_teleop.egg-info/top_level.txt
+[6.780s] reading manifest file 'pygame_key_teleop.egg-info/SOURCES.txt'
+[6.784s] writing manifest file 'pygame_key_teleop.egg-info/SOURCES.txt'
+[6.997s] running build_ext
+[6.997s] Creating /home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages/pygame-key-teleop.egg-link (link to .)
+[7.001s] Installing pygame_key_teleop script to /home/f1/f1tenth_ws/install/pygame_key_teleop/lib/pygame_key_teleop
+[7.003s] 
+[7.003s] Installed /home/f1/f1tenth_ws/build/pygame_key_teleop
+[7.004s] running symlink_data
+[7.266s] Invoked command in '/home/f1/f1tenth_ws/build/pygame_key_teleop' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/f1/f1tenth_ws/build/pygame_key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/pygame_key_teleop/build --no-deps symlink_data

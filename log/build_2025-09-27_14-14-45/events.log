@@ -1,0 +1,275 @@
+[0.000000] (-) TimerEvent: {}
+[0.000369] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.001143] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.002335] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.003186] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.005044] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.006275] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.007004] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.008159] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.008378] (-) JobUnselected: {'identifier': 'path_follow'}
+[0.008548] (-) JobUnselected: {'identifier': 'path_planner'}
+[0.008696] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.008838] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.010405] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.011040] (-) JobUnselected: {'identifier': 'vesc'}
+[0.011221] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.011567] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.011799] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.012425] (pure_pursuit) JobQueued: {'identifier': 'pure_pursuit', 'dependencies': OrderedDict()}
+[0.012607] (pure_pursuit) JobStarted: {'identifier': 'pure_pursuit'}
+[0.057397] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'cmake'}
+[0.062396] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'build'}
+[0.068652] (pure_pursuit) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/f1/f1tenth_ws/build/pure_pursuit', '--', '-j6', '-l6'], 'cwd': '/home/f1/f1tenth_ws/build/pure_pursuit', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_CLIENT', '172.16.88.59 51836 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/f1/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/f1/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/bin/helpers/browser.sh'), ('HOME', '/home/f1'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/f1/f1tenth_ws'), ('LESS', '-R'), ('CONDA_SHLVL', '1'), ('TERM_PROGRAM_VERSION', '1.104.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1001/vscode-ipc-4f1f3c67-958f-4188-89ff-bca5591d5ce0.sock'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/f1/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_GIT_ASKPASS_NODE', '/home/f1/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/f1/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/f1/miniconda3'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '13999'), ('USER_ZDOTDIR', '/home/f1'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('ROS_LOCALHOST_ONLY', '0'), ('_CE_CONDA', ''), ('PATH', '/home/f1/.npm-global/bin:/home/f1/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/bin/remote-cli:/home/f1/miniconda3/bin:/home/f1/miniconda3/condabin:/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/f1/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/scripts/noConfigScripts:/home/f1/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('PAPERSIZE', 'a4'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/f1/.vscode-server/extensions/ms-python.debugpy-2025.10.0/.noConfigDebugAdapterEndpoints/endpoint-45b40085090981a2.txt'), ('PYTHONSTARTUP', '/home/f1/.vscode-server/data/User/workspaceStorage/82a6a78a25a8631bf184d85605079995/ms-python.python/pythonrc.py'), ('VSCODE_INJECTION', '1'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-fdc5db966d.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('CONDA_PYTHON_EXE', '/home/f1/miniconda3/bin/python'), ('GSETTINGS_SCHEMA_DIR', '/home/f1/miniconda3/share/glib-2.0/schemas'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('_CONDA_EXE', '/home/f1/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/f1/f1tenth_ws/build/pure_pursuit'), ('ENABLE_IDE_INTEGRATION', 'true'), ('SSH_CONNECTION', '172.16.88.59 51836 172.16.66.15 22'), ('CONDA_EXE', '/home/f1/miniconda3/bin/conda'), ('ZDOTDIR', '/home/f1'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('CONDA_PREFIX', '/home/f1/miniconda3'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('COLCON', '1'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.098688] (-) TimerEvent: {}
+[0.199386] (-) TimerEvent: {}
+[0.299981] (-) TimerEvent: {}
+[0.400583] (-) TimerEvent: {}
+[0.501158] (-) TimerEvent: {}
+[0.547111] (pure_pursuit) StdoutLine: {'line': b'Scanning dependencies of target pure_pursuit_node\n'}
+[0.601410] (-) TimerEvent: {}
+[0.670059] (pure_pursuit) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o\n'}
+[0.701689] (-) TimerEvent: {}
+[0.802295] (-) TimerEvent: {}
+[0.903020] (-) TimerEvent: {}
+[1.003617] (-) TimerEvent: {}
+[1.104232] (-) TimerEvent: {}
+[1.204845] (-) TimerEvent: {}
+[1.305438] (-) TimerEvent: {}
+[1.406034] (-) TimerEvent: {}
+[1.506602] (-) TimerEvent: {}
+[1.607292] (-) TimerEvent: {}
+[1.707910] (-) TimerEvent: {}
+[1.808504] (-) TimerEvent: {}
+[1.909167] (-) TimerEvent: {}
+[2.009753] (-) TimerEvent: {}
+[2.110462] (-) TimerEvent: {}
+[2.211200] (-) TimerEvent: {}
+[2.311789] (-) TimerEvent: {}
+[2.412413] (-) TimerEvent: {}
+[2.513047] (-) TimerEvent: {}
+[2.613702] (-) TimerEvent: {}
+[2.714334] (-) TimerEvent: {}
+[2.815225] (-) TimerEvent: {}
+[2.915795] (-) TimerEvent: {}
+[3.016444] (-) TimerEvent: {}
+[3.117086] (-) TimerEvent: {}
+[3.217648] (-) TimerEvent: {}
+[3.318223] (-) TimerEvent: {}
+[3.418896] (-) TimerEvent: {}
+[3.519587] (-) TimerEvent: {}
+[3.620215] (-) TimerEvent: {}
+[3.720791] (-) TimerEvent: {}
+[3.821372] (-) TimerEvent: {}
+[3.922035] (-) TimerEvent: {}
+[4.022752] (-) TimerEvent: {}
+[4.123345] (-) TimerEvent: {}
+[4.223957] (-) TimerEvent: {}
+[4.324575] (-) TimerEvent: {}
+[4.425285] (-) TimerEvent: {}
+[4.525964] (-) TimerEvent: {}
+[4.626752] (-) TimerEvent: {}
+[4.727351] (-) TimerEvent: {}
+[4.827928] (-) TimerEvent: {}
+[4.928908] (-) TimerEvent: {}
+[5.029624] (-) TimerEvent: {}
+[5.130269] (-) TimerEvent: {}
+[5.231238] (-) TimerEvent: {}
+[5.331850] (-) TimerEvent: {}
+[5.432454] (-) TimerEvent: {}
+[5.533070] (-) TimerEvent: {}
+[5.633686] (-) TimerEvent: {}
+[5.734358] (-) TimerEvent: {}
+[5.835009] (-) TimerEvent: {}
+[5.935684] (-) TimerEvent: {}
+[6.036357] (-) TimerEvent: {}
+[6.136977] (-) TimerEvent: {}
+[6.237560] (-) TimerEvent: {}
+[6.338745] (-) TimerEvent: {}
+[6.442926] (-) TimerEvent: {}
+[6.543602] (-) TimerEvent: {}
+[6.644312] (-) TimerEvent: {}
+[6.744922] (-) TimerEvent: {}
+[6.845566] (-) TimerEvent: {}
+[6.946320] (-) TimerEvent: {}
+[7.046996] (-) TimerEvent: {}
+[7.147611] (-) TimerEvent: {}
+[7.248217] (-) TimerEvent: {}
+[7.348866] (-) TimerEvent: {}
+[7.449542] (-) TimerEvent: {}
+[7.550130] (-) TimerEvent: {}
+[7.650809] (-) TimerEvent: {}
+[7.751367] (-) TimerEvent: {}
+[7.851962] (-) TimerEvent: {}
+[7.952668] (-) TimerEvent: {}
+[8.053247] (-) TimerEvent: {}
+[8.153839] (-) TimerEvent: {}
+[8.254486] (-) TimerEvent: {}
+[8.355078] (-) TimerEvent: {}
+[8.455963] (-) TimerEvent: {}
+[8.556574] (-) TimerEvent: {}
+[8.657198] (-) TimerEvent: {}
+[8.757768] (-) TimerEvent: {}
+[8.858357] (-) TimerEvent: {}
+[8.959000] (-) TimerEvent: {}
+[9.059569] (-) TimerEvent: {}
+[9.160086] (-) TimerEvent: {}
+[9.260768] (-) TimerEvent: {}
+[9.361366] (-) TimerEvent: {}
+[9.461915] (-) TimerEvent: {}
+[9.562521] (-) TimerEvent: {}
+[9.663471] (-) TimerEvent: {}
+[9.764074] (-) TimerEvent: {}
+[9.864596] (-) TimerEvent: {}
+[9.965175] (-) TimerEvent: {}
+[10.065777] (-) TimerEvent: {}
+[10.166380] (-) TimerEvent: {}
+[10.266990] (-) TimerEvent: {}
+[10.367589] (-) TimerEvent: {}
+[10.468167] (-) TimerEvent: {}
+[10.517813] (pure_pursuit) StderrLine: {'line': b'/home/f1/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp: In member function \xe2\x80\x98double PurePursuitNode::calculateSteeringAngle(double, double, double, const Waypoint&)\xe2\x80\x99:\n'}
+[10.519252] (pure_pursuit) StderrLine: {'line': b'/home/f1/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:229:31: error: \xe2\x80\x98clamp\xe2\x80\x99 is not a member of \xe2\x80\x98std\xe2\x80\x99\n'}
+[10.519876] (pure_pursuit) StderrLine: {'line': b'  229 |         steering_angle = std::clamp(steering_angle, -max_steering_angle_, max_steering_angle_);\n'}
+[10.520416] (pure_pursuit) StderrLine: {'line': b'      |                               ^~~~~\n'}
+[10.521999] (pure_pursuit) StderrLine: {'line': b'/home/f1/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp: In member function \xe2\x80\x98double PurePursuitNode::calculateSpeed(double)\xe2\x80\x99:\n'}
+[10.523472] (pure_pursuit) StderrLine: {'line': b'/home/f1/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:239:21: error: \xe2\x80\x98clamp\xe2\x80\x99 is not a member of \xe2\x80\x98std\xe2\x80\x99\n'}
+[10.523962] (pure_pursuit) StderrLine: {'line': b'  239 |         return std::clamp(speed, min_speed_, max_speed_);\n'}
+[10.524369] (pure_pursuit) StderrLine: {'line': b'      |                     ^~~~~\n'}
+[10.568464] (-) TimerEvent: {}
+[10.669326] (-) TimerEvent: {}
+[10.769959] (-) TimerEvent: {}
+[10.870494] (-) TimerEvent: {}
+[10.971244] (-) TimerEvent: {}
+[11.071841] (-) TimerEvent: {}
+[11.172503] (-) TimerEvent: {}
+[11.273127] (-) TimerEvent: {}
+[11.373809] (-) TimerEvent: {}
+[11.474418] (-) TimerEvent: {}
+[11.575801] (-) TimerEvent: {}
+[11.676371] (-) TimerEvent: {}
+[11.777064] (-) TimerEvent: {}
+[11.877738] (-) TimerEvent: {}
+[11.978322] (-) TimerEvent: {}
+[12.078954] (-) TimerEvent: {}
+[12.179560] (-) TimerEvent: {}
+[12.280210] (-) TimerEvent: {}
+[12.380851] (-) TimerEvent: {}
+[12.481564] (-) TimerEvent: {}
+[12.582252] (-) TimerEvent: {}
+[12.683000] (-) TimerEvent: {}
+[12.783573] (-) TimerEvent: {}
+[12.884182] (-) TimerEvent: {}
+[12.984757] (-) TimerEvent: {}
+[13.085293] (-) TimerEvent: {}
+[13.185851] (-) TimerEvent: {}
+[13.286403] (-) TimerEvent: {}
+[13.387014] (-) TimerEvent: {}
+[13.488339] (-) TimerEvent: {}
+[13.588930] (-) TimerEvent: {}
+[13.689518] (-) TimerEvent: {}
+[13.790147] (-) TimerEvent: {}
+[13.890843] (-) TimerEvent: {}
+[13.991499] (-) TimerEvent: {}
+[14.092066] (-) TimerEvent: {}
+[14.192675] (-) TimerEvent: {}
+[14.293263] (-) TimerEvent: {}
+[14.393836] (-) TimerEvent: {}
+[14.494484] (-) TimerEvent: {}
+[14.595199] (-) TimerEvent: {}
+[14.695886] (-) TimerEvent: {}
+[14.796526] (-) TimerEvent: {}
+[14.897267] (-) TimerEvent: {}
+[14.997935] (-) TimerEvent: {}
+[15.098542] (-) TimerEvent: {}
+[15.199304] (-) TimerEvent: {}
+[15.299923] (-) TimerEvent: {}
+[15.400533] (-) TimerEvent: {}
+[15.501142] (-) TimerEvent: {}
+[15.601787] (-) TimerEvent: {}
+[15.702487] (-) TimerEvent: {}
+[15.803126] (-) TimerEvent: {}
+[15.903887] (-) TimerEvent: {}
+[16.004509] (-) TimerEvent: {}
+[16.106326] (-) TimerEvent: {}
+[16.206907] (-) TimerEvent: {}
+[16.307769] (-) TimerEvent: {}
+[16.408380] (-) TimerEvent: {}
+[16.508975] (-) TimerEvent: {}
+[16.609549] (-) TimerEvent: {}
+[16.710168] (-) TimerEvent: {}
+[16.810849] (-) TimerEvent: {}
+[16.911425] (-) TimerEvent: {}
+[17.012024] (-) TimerEvent: {}
+[17.112664] (-) TimerEvent: {}
+[17.213297] (-) TimerEvent: {}
+[17.313940] (-) TimerEvent: {}
+[17.414569] (-) TimerEvent: {}
+[17.515229] (-) TimerEvent: {}
+[17.615879] (-) TimerEvent: {}
+[17.716531] (-) TimerEvent: {}
+[17.817163] (-) TimerEvent: {}
+[17.917797] (-) TimerEvent: {}
+[18.018396] (-) TimerEvent: {}
+[18.119024] (-) TimerEvent: {}
+[18.219610] (-) TimerEvent: {}
+[18.320202] (-) TimerEvent: {}
+[18.420747] (-) TimerEvent: {}
+[18.521383] (-) TimerEvent: {}
+[18.621950] (-) TimerEvent: {}
+[18.722592] (-) TimerEvent: {}
+[18.823251] (-) TimerEvent: {}
+[18.923849] (-) TimerEvent: {}
+[19.024582] (-) TimerEvent: {}
+[19.125394] (-) TimerEvent: {}
+[19.225958] (-) TimerEvent: {}
+[19.326535] (-) TimerEvent: {}
+[19.427201] (-) TimerEvent: {}
+[19.527741] (-) TimerEvent: {}
+[19.628322] (-) TimerEvent: {}
+[19.728932] (-) TimerEvent: {}
+[19.829543] (-) TimerEvent: {}
+[19.930156] (-) TimerEvent: {}
+[20.030873] (-) TimerEvent: {}
+[20.131463] (-) TimerEvent: {}
+[20.232020] (-) TimerEvent: {}
+[20.332598] (-) TimerEvent: {}
+[20.433153] (-) TimerEvent: {}
+[20.533706] (-) TimerEvent: {}
+[20.634251] (-) TimerEvent: {}
+[20.734874] (-) TimerEvent: {}
+[20.835446] (-) TimerEvent: {}
+[20.936081] (-) TimerEvent: {}
+[21.036705] (-) TimerEvent: {}
+[21.137325] (-) TimerEvent: {}
+[21.237888] (-) TimerEvent: {}
+[21.338480] (-) TimerEvent: {}
+[21.439129] (-) TimerEvent: {}
+[21.539675] (-) TimerEvent: {}
+[21.640216] (-) TimerEvent: {}
+[21.740829] (-) TimerEvent: {}
+[21.841447] (-) TimerEvent: {}
+[21.942091] (-) TimerEvent: {}
+[22.042707] (-) TimerEvent: {}
+[22.143271] (-) TimerEvent: {}
+[22.243834] (-) TimerEvent: {}
+[22.344480] (-) TimerEvent: {}
+[22.445099] (-) TimerEvent: {}
+[22.546205] (-) TimerEvent: {}
+[22.646849] (-) TimerEvent: {}
+[22.747502] (-) TimerEvent: {}
+[22.848209] (-) TimerEvent: {}
+[22.948755] (-) TimerEvent: {}
+[23.049404] (-) TimerEvent: {}
+[23.150050] (-) TimerEvent: {}
+[23.250826] (-) TimerEvent: {}
+[23.351511] (-) TimerEvent: {}
+[23.452134] (-) TimerEvent: {}
+[23.552790] (-) TimerEvent: {}
+[23.653358] (-) TimerEvent: {}
+[23.669376] (pure_pursuit) StderrLine: {'line': b'make[2]: *** [CMakeFiles/pure_pursuit_node.dir/build.make:63: CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o] Error 1\n'}
+[23.671029] (pure_pursuit) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/pure_pursuit_node.dir/all] Error 2\n'}
+[23.672686] (pure_pursuit) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[23.684932] (pure_pursuit) CommandEnded: {'returncode': 2}
+[23.746574] (pure_pursuit) JobEnded: {'identifier': 'pure_pursuit', 'rc': 2}
+[23.753467] (-) TimerEvent: {}
+[23.758825] (-) EventReactorShutdown: {}

@@ -168,17 +168,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named high_frequency_localizer
+# Target rules for targets named high_frequency_localizer_node
 
 # Build rule for target.
-high_frequency_localizer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 high_frequency_localizer
-.PHONY : high_frequency_localizer
+high_frequency_localizer_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 high_frequency_localizer_node
+.PHONY : high_frequency_localizer_node
 
 # fast build rule for target.
-high_frequency_localizer/fast:
-	$(MAKE) -f CMakeFiles/high_frequency_localizer.dir/build.make CMakeFiles/high_frequency_localizer.dir/build
-.PHONY : high_frequency_localizer/fast
+high_frequency_localizer_node/fast:
+	$(MAKE) -f CMakeFiles/high_frequency_localizer_node.dir/build.make CMakeFiles/high_frequency_localizer_node.dir/build
+.PHONY : high_frequency_localizer_node/fast
 
 #=============================================================================
 # Target rules for targets named slam_nav_manager
@@ -225,7 +225,7 @@ src/high_frequency_localizer.o: src/high_frequency_localizer.cpp.o
 
 # target to build an object file
 src/high_frequency_localizer.cpp.o:
-	$(MAKE) -f CMakeFiles/high_frequency_localizer.dir/build.make CMakeFiles/high_frequency_localizer.dir/src/high_frequency_localizer.cpp.o
+	$(MAKE) -f CMakeFiles/high_frequency_localizer_node.dir/build.make CMakeFiles/high_frequency_localizer_node.dir/src/high_frequency_localizer.cpp.o
 .PHONY : src/high_frequency_localizer.cpp.o
 
 src/high_frequency_localizer.i: src/high_frequency_localizer.cpp.i
@@ -234,7 +234,7 @@ src/high_frequency_localizer.i: src/high_frequency_localizer.cpp.i
 
 # target to preprocess a source file
 src/high_frequency_localizer.cpp.i:
-	$(MAKE) -f CMakeFiles/high_frequency_localizer.dir/build.make CMakeFiles/high_frequency_localizer.dir/src/high_frequency_localizer.cpp.i
+	$(MAKE) -f CMakeFiles/high_frequency_localizer_node.dir/build.make CMakeFiles/high_frequency_localizer_node.dir/src/high_frequency_localizer.cpp.i
 .PHONY : src/high_frequency_localizer.cpp.i
 
 src/high_frequency_localizer.s: src/high_frequency_localizer.cpp.s
@@ -243,7 +243,7 @@ src/high_frequency_localizer.s: src/high_frequency_localizer.cpp.s
 
 # target to generate assembly for a file
 src/high_frequency_localizer.cpp.s:
-	$(MAKE) -f CMakeFiles/high_frequency_localizer.dir/build.make CMakeFiles/high_frequency_localizer.dir/src/high_frequency_localizer.cpp.s
+	$(MAKE) -f CMakeFiles/high_frequency_localizer_node.dir/build.make CMakeFiles/high_frequency_localizer_node.dir/src/high_frequency_localizer.cpp.s
 .PHONY : src/high_frequency_localizer.cpp.s
 
 src/slam_nav_manager.o: src/slam_nav_manager.cpp.o
@@ -285,7 +285,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... high_frequency_localizer"
+	@echo "... high_frequency_localizer_node"
 	@echo "... install/local"
 	@echo "... slam_nav_manager"
 	@echo "... f1tenth_slam_nav_uninstall"

@@ -1,0 +1,25 @@
+[0.063s] Invoking command in '/home/f1/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/f1/f1tenth_ws/build/pure_pursuit -- -j6 -l6
+[0.598s] [100%] Built target pure_pursuit_node
+[0.673s] Invoked command in '/home/f1/f1tenth_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/f1/f1tenth_ws/build/pure_pursuit -- -j6 -l6
+[0.685s] Invoking command in '/home/f1/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/f1/f1tenth_ws/build/pure_pursuit
+[0.764s] -- Install configuration: "Release"
+[0.767s] -- Execute custom install script
+[0.771s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node
+[0.784s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/config//pure_pursuit_config.yaml
+[0.788s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/launch//pure_pursuit_launch.py
+[0.790s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/package_run_dependencies/pure_pursuit
+[0.793s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/parent_prefix_path/pure_pursuit
+[0.795s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.sh
+[0.797s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.dsv
+[0.800s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.sh
+[0.802s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.dsv
+[0.804s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.bash
+[0.806s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.sh
+[0.808s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.zsh
+[0.810s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.dsv
+[0.811s] -- Symlinking: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.dsv
+[0.885s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/packages/pure_pursuit
+[0.888s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig.cmake
+[0.889s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig-version.cmake
+[0.891s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.xml
+[0.957s] Invoked command in '/home/f1/f1tenth_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/f1/f1tenth_ws/build/pure_pursuit

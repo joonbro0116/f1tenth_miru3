@@ -1,0 +1,27 @@
+[0.079s] Invoking command in '/home/f1/f1tenth_ws/build/real_pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/f1/f1tenth_ws/build/real_pure_pursuit -- -j6 -l6
+[0.654s] Scanning dependencies of target real_pure_pursuit_node
+[0.757s] [ 50%] Building CXX object CMakeFiles/real_pure_pursuit_node.dir/src/real_pure_pursuit_node.cpp.o
+[60.866s] [100%] Linking CXX executable real_pure_pursuit_node
+[61.875s] [100%] Built target real_pure_pursuit_node
+[61.937s] Invoked command in '/home/f1/f1tenth_ws/build/real_pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/f1/f1tenth_ws/build/real_pure_pursuit -- -j6 -l6
+[62.010s] Invoking command in '/home/f1/f1tenth_ws/build/real_pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/f1/f1tenth_ws/build/real_pure_pursuit
+[62.068s] -- Install configuration: "Release"
+[62.072s] -- Execute custom install script
+[62.076s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/lib/real_pure_pursuit/real_pure_pursuit_node
+[62.081s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit//launch/real_autonomous_driving.launch.py
+[62.085s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/ament_index/resource_index/package_run_dependencies/real_pure_pursuit
+[62.087s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/ament_index/resource_index/parent_prefix_path/real_pure_pursuit
+[62.091s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/environment/ament_prefix_path.sh
+[62.095s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/environment/ament_prefix_path.dsv
+[62.098s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/environment/path.sh
+[62.098s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/environment/path.dsv
+[62.099s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/local_setup.bash
+[62.101s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/local_setup.sh
+[62.103s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/local_setup.zsh
+[62.105s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/local_setup.dsv
+[62.106s] -- Symlinking: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/package.dsv
+[62.158s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/ament_index/resource_index/packages/real_pure_pursuit
+[62.159s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/cmake/real_pure_pursuitConfig.cmake
+[62.161s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/cmake/real_pure_pursuitConfig-version.cmake
+[62.163s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/package.xml
+[62.179s] Invoked command in '/home/f1/f1tenth_ws/build/real_pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/f1/f1tenth_ws/build/real_pure_pursuit

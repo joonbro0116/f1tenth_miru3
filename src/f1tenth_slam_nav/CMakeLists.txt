@@ -39,8 +39,8 @@ ament_target_dependencies(slam_nav_manager
   lifecycle_msgs
 )
 
-add_executable(high_frequency_localizer src/high_frequency_localizer.cpp)
-ament_target_dependencies(high_frequency_localizer
+add_executable(high_frequency_localizer_node src/high_frequency_localizer.cpp)
+ament_target_dependencies(high_frequency_localizer_node
   rclcpp
   geometry_msgs
   nav_msgs
@@ -52,7 +52,7 @@ ament_target_dependencies(high_frequency_localizer
 # Install C++ executables
 install(TARGETS
   slam_nav_manager
-  high_frequency_localizer
+  high_frequency_localizer_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

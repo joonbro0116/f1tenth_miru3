@@ -1,0 +1,6 @@
+[0.253s] Invoking command in '/home/f1/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/f1/f1tenth_ws/build/pure_pursuit -- -j6 -l6
+[1.032s] [35m[1mScanning dependencies of target pure_pursuit_node[0m
+[1.463s] [ 50%] [32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o[0m
+[5.122s] make[2]: *** [CMakeFiles/pure_pursuit_node.dir/build.make:63: CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o] Interrupt
+[5.129s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/pure_pursuit_node.dir/all] Interrupt
+[5.137s] make: *** [Makefile:141: all] Interrupt

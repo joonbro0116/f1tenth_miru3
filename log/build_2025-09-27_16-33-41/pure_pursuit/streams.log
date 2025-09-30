@@ -1,0 +1,58 @@
+[0.108s] Invoking command in '/home/f1/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/f1/f1tenth_ws/src/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/pure_pursuit
+[0.256s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.389s] -- Using PYTHON_EXECUTABLE: /home/f1/miniconda3/bin/python3
+[1.441s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.530s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.836s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.866s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.473s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.806s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.818s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.642s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[3.818s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[4.166s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[4.340s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[4.390s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[5.912s] -- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[5.944s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[6.096s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[6.792s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.798s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.804s] -- Configured cppcheck include dirs: /home/f1/f1tenth_ws/src/pure_pursuit/include
+[6.805s] -- Configured cppcheck exclude dirs and/or files: 
+[6.811s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.812s] -- Configured cpplint exclude dirs and/or files: 
+[6.818s] -- Added test 'lint_cmake' to check CMake code style
+[6.826s] -- Added test 'uncrustify' to check C / C++ code style
+[6.827s] -- Configured uncrustify additional arguments: 
+[6.831s] -- Added test 'xmllint' to check XML markup files
+[6.866s] -- Configuring done
+[6.990s] -- Generating done
+[7.041s] -- Build files have been written to: /home/f1/f1tenth_ws/build/pure_pursuit
+[7.093s] Invoked command in '/home/f1/f1tenth_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/f1/f1tenth_ws/src/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/pure_pursuit
+[7.121s] Invoking command in '/home/f1/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/f1/f1tenth_ws/build/pure_pursuit -- -j6 -l6
+[7.492s] [35m[1mScanning dependencies of target pure_pursuit_node[0m
+[7.864s] [ 50%] [32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o[0m
+[93.987s] [100%] [32m[1mLinking CXX executable pure_pursuit_node[0m
+[95.204s] [100%] Built target pure_pursuit_node
+[95.301s] Invoked command in '/home/f1/f1tenth_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/f1/f1tenth_ws/build/pure_pursuit -- -j6 -l6
+[95.389s] Invoking command in '/home/f1/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/f1/f1tenth_ws/build/pure_pursuit
+[95.445s] -- Install configuration: "Release"
+[95.449s] -- Execute custom install script
+[95.453s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node
+[95.457s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/package_run_dependencies/pure_pursuit
+[95.461s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/parent_prefix_path/pure_pursuit
+[95.463s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.sh
+[95.466s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.dsv
+[95.468s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.sh
+[95.471s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.dsv
+[95.473s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.bash
+[95.475s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.sh
+[95.477s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.zsh
+[95.479s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.dsv
+[95.481s] -- Symlinking: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.dsv
+[95.543s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/packages/pure_pursuit
+[95.546s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig.cmake
+[95.548s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig-version.cmake
+[95.555s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.xml
+[95.570s] Invoked command in '/home/f1/f1tenth_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/f1/f1tenth_ws/build/pure_pursuit

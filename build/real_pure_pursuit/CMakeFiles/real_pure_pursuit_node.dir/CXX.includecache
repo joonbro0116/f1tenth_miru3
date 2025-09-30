@@ -11,6 +11,8 @@ rclcpp/rclcpp.hpp
 -
 nav_msgs/msg/path.hpp
 -
+geometry_msgs/msg/pose_with_covariance_stamped.hpp
+-
 nav_msgs/msg/odometry.hpp
 -
 ackermann_msgs/msg/ackermann_drive_stamped.hpp

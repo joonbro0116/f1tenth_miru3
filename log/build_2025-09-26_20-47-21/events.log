@@ -1,0 +1,725 @@
+[0.000000] (-) TimerEvent: {}
+[0.000923] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.002047] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.002724] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.003301] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.003442] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.003709] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.004115] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.004440] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.004612] (-) JobUnselected: {'identifier': 'path_follow'}
+[0.004809] (-) JobUnselected: {'identifier': 'path_planner'}
+[0.005020] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.005161] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.006026] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.006266] (-) JobUnselected: {'identifier': 'vesc'}
+[0.006665] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.006807] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.006956] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.007137] (real_pure_pursuit) JobQueued: {'identifier': 'real_pure_pursuit', 'dependencies': OrderedDict()}
+[0.007366] (real_pure_pursuit) JobStarted: {'identifier': 'real_pure_pursuit'}
+[0.057634] (real_pure_pursuit) JobProgress: {'identifier': 'real_pure_pursuit', 'progress': 'cmake'}
+[0.065027] (real_pure_pursuit) Command: {'cmd': ['/usr/bin/cmake', '/home/f1/f1tenth_ws/src/real_pure_pursuit', '-DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/real_pure_pursuit'], 'cwd': '/home/f1/f1tenth_ws/build/real_pure_pursuit', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('CONDA_PROMPT_MODIFIER', ''), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_CLIENT', '172.16.88.59 56964 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/f1/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/f1/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/helpers/browser.sh'), ('HOME', '/home/f1'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/f1/f1tenth_ws'), ('LESS', '-R'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.104.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1001/vscode-ipc-6e2d740d-7b67-4873-bd03-ec9d6df335e3.sock'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/f1/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_GIT_ASKPASS_NODE', '/home/f1/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/f1/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/f1/miniconda3'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '29788'), ('USER_ZDOTDIR', '/home/f1'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('ROS_LOCALHOST_ONLY', '0'), ('_CE_CONDA', ''), ('PATH', '/home/f1/.npm-global/bin:/home/f1/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/remote-cli:/home/f1/miniconda3/condabin:/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/f1/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/scripts/noConfigScripts:/home/f1/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('PAPERSIZE', 'a4'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/f1/.vscode-server/extensions/ms-python.debugpy-2025.10.0/.noConfigDebugAdapterEndpoints/endpoint-45b40085090981a2.txt'), ('PYTHONSTARTUP', '/home/f1/.vscode-server/data/User/workspaceStorage/82a6a78a25a8631bf184d85605079995/ms-python.python/pythonrc.py'), ('VSCODE_INJECTION', '1'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-fdc5db966d.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('CONDA_PYTHON_EXE', '/home/f1/miniconda3/bin/python'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('CONDA_DEFAULT_ENV', ''), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('_CONDA_EXE', '/home/f1/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/f1/f1tenth_ws/build/real_pure_pursuit'), ('ENABLE_IDE_INTEGRATION', 'true'), ('SSH_CONNECTION', '172.16.88.59 56964 172.16.64.50 22'), ('CONDA_EXE', '/home/f1/miniconda3/bin/conda'), ('ZDOTDIR', '/home/f1'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('CONDA_PREFIX', ''), ('COLCON', '1'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.098730] (-) TimerEvent: {}
+[0.168679] (real_pure_pursuit) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.198852] (-) TimerEvent: {}
+[0.294262] (real_pure_pursuit) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.299110] (-) TimerEvent: {}
+[0.399939] (-) TimerEvent: {}
+[0.500547] (-) TimerEvent: {}
+[0.601069] (-) TimerEvent: {}
+[0.701629] (-) TimerEvent: {}
+[0.802147] (-) TimerEvent: {}
+[0.902671] (-) TimerEvent: {}
+[1.003155] (-) TimerEvent: {}
+[1.103641] (-) TimerEvent: {}
+[1.204155] (-) TimerEvent: {}
+[1.304733] (-) TimerEvent: {}
+[1.370980] (real_pure_pursuit) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.405020] (-) TimerEvent: {}
+[1.425141] (real_pure_pursuit) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.505326] (-) TimerEvent: {}
+[1.605864] (-) TimerEvent: {}
+[1.612634] (real_pure_pursuit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.631550] (real_pure_pursuit) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.706165] (-) TimerEvent: {}
+[1.806763] (-) TimerEvent: {}
+[1.907357] (-) TimerEvent: {}
+[2.007928] (-) TimerEvent: {}
+[2.066021] (real_pure_pursuit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.108201] (-) TimerEvent: {}
+[2.208810] (-) TimerEvent: {}
+[2.309327] (-) TimerEvent: {}
+[2.326149] (real_pure_pursuit) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.333400] (real_pure_pursuit) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.409856] (-) TimerEvent: {}
+[2.510420] (-) TimerEvent: {}
+[2.611044] (-) TimerEvent: {}
+[2.711636] (-) TimerEvent: {}
+[2.812260] (-) TimerEvent: {}
+[2.912951] (-) TimerEvent: {}
+[3.013546] (-) TimerEvent: {}
+[3.026182] (real_pure_pursuit) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[3.113784] (-) TimerEvent: {}
+[3.175973] (real_pure_pursuit) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[3.213994] (-) TimerEvent: {}
+[3.314594] (-) TimerEvent: {}
+[3.415237] (-) TimerEvent: {}
+[3.494223] (real_pure_pursuit) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[3.515512] (-) TimerEvent: {}
+[3.616120] (-) TimerEvent: {}
+[3.716774] (-) TimerEvent: {}
+[3.805201] (real_pure_pursuit) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)\n'}
+[3.816968] (-) TimerEvent: {}
+[3.917507] (-) TimerEvent: {}
+[3.957735] (real_pure_pursuit) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[4.017761] (-) TimerEvent: {}
+[4.118342] (-) TimerEvent: {}
+[4.218945] (-) TimerEvent: {}
+[4.264438] (real_pure_pursuit) StdoutLine: {'line': b'-- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[4.309444] (real_pure_pursuit) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[4.319186] (-) TimerEvent: {}
+[4.419815] (-) TimerEvent: {}
+[4.520422] (-) TimerEvent: {}
+[4.620976] (-) TimerEvent: {}
+[4.721537] (-) TimerEvent: {}
+[4.822038] (-) TimerEvent: {}
+[4.922521] (-) TimerEvent: {}
+[5.023067] (-) TimerEvent: {}
+[5.123627] (-) TimerEvent: {}
+[5.224170] (-) TimerEvent: {}
+[5.324731] (-) TimerEvent: {}
+[5.425249] (-) TimerEvent: {}
+[5.526124] (-) TimerEvent: {}
+[5.626621] (-) TimerEvent: {}
+[5.718372] (real_pure_pursuit) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)\n'}
+[5.726888] (-) TimerEvent: {}
+[5.752562] (real_pure_pursuit) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[5.827154] (-) TimerEvent: {}
+[5.887702] (real_pure_pursuit) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[5.927387] (-) TimerEvent: {}
+[6.028423] (-) TimerEvent: {}
+[6.129542] (-) TimerEvent: {}
+[6.230638] (-) TimerEvent: {}
+[6.248770] (real_pure_pursuit) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[6.254971] (real_pure_pursuit) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[6.256731] (real_pure_pursuit) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[6.257344] (real_pure_pursuit) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[6.261027] (real_pure_pursuit) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[6.261486] (real_pure_pursuit) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[6.262939] (real_pure_pursuit) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[6.265166] (real_pure_pursuit) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.266848] (real_pure_pursuit) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[6.271916] (real_pure_pursuit) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[6.272505] (real_pure_pursuit) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[6.273871] (real_pure_pursuit) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.302610] (real_pure_pursuit) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.330949] (-) TimerEvent: {}
+[6.406184] (real_pure_pursuit) StdoutLine: {'line': b'-- Generating done\n'}
+[6.431212] (-) TimerEvent: {}
+[6.448451] (real_pure_pursuit) StdoutLine: {'line': b'-- Build files have been written to: /home/f1/f1tenth_ws/build/real_pure_pursuit\n'}
+[6.486520] (real_pure_pursuit) CommandEnded: {'returncode': 0}
+[6.491181] (real_pure_pursuit) JobProgress: {'identifier': 'real_pure_pursuit', 'progress': 'build'}
+[6.498216] (real_pure_pursuit) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/f1/f1tenth_ws/build/real_pure_pursuit', '--', '-j6', '-l6'], 'cwd': '/home/f1/f1tenth_ws/build/real_pure_pursuit', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('CONDA_PROMPT_MODIFIER', ''), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_CLIENT', '172.16.88.59 56964 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/f1/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/f1/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/helpers/browser.sh'), ('HOME', '/home/f1'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/f1/f1tenth_ws'), ('LESS', '-R'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.104.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1001/vscode-ipc-6e2d740d-7b67-4873-bd03-ec9d6df335e3.sock'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/f1/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_GIT_ASKPASS_NODE', '/home/f1/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/f1/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/f1/miniconda3'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '29788'), ('USER_ZDOTDIR', '/home/f1'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('ROS_LOCALHOST_ONLY', '0'), ('_CE_CONDA', ''), ('PATH', '/home/f1/.npm-global/bin:/home/f1/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/remote-cli:/home/f1/miniconda3/condabin:/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/f1/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/scripts/noConfigScripts:/home/f1/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('PAPERSIZE', 'a4'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/f1/.vscode-server/extensions/ms-python.debugpy-2025.10.0/.noConfigDebugAdapterEndpoints/endpoint-45b40085090981a2.txt'), ('PYTHONSTARTUP', '/home/f1/.vscode-server/data/User/workspaceStorage/82a6a78a25a8631bf184d85605079995/ms-python.python/pythonrc.py'), ('VSCODE_INJECTION', '1'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-fdc5db966d.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('CONDA_PYTHON_EXE', '/home/f1/miniconda3/bin/python'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('CONDA_DEFAULT_ENV', ''), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('_CONDA_EXE', '/home/f1/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/f1/f1tenth_ws/build/real_pure_pursuit'), ('ENABLE_IDE_INTEGRATION', 'true'), ('SSH_CONNECTION', '172.16.88.59 56964 172.16.64.50 22'), ('CONDA_EXE', '/home/f1/miniconda3/bin/conda'), ('ZDOTDIR', '/home/f1'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('CONDA_PREFIX', ''), ('COLCON', '1'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[6.531570] (-) TimerEvent: {}
+[6.632198] (-) TimerEvent: {}
+[6.732886] (-) TimerEvent: {}
+[6.834812] (-) TimerEvent: {}
+[6.935317] (-) TimerEvent: {}
+[6.957143] (real_pure_pursuit) StdoutLine: {'line': b'Scanning dependencies of target real_pure_pursuit_node\n'}
+[7.035552] (-) TimerEvent: {}
+[7.063586] (real_pure_pursuit) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/real_pure_pursuit_node.dir/src/real_pure_pursuit_node.cpp.o\n'}
+[7.135839] (-) TimerEvent: {}
+[7.236454] (-) TimerEvent: {}
+[7.337019] (-) TimerEvent: {}
+[7.437614] (-) TimerEvent: {}
+[7.538160] (-) TimerEvent: {}
+[7.638779] (-) TimerEvent: {}
+[7.739396] (-) TimerEvent: {}
+[7.840097] (-) TimerEvent: {}
+[7.940849] (-) TimerEvent: {}
+[8.041507] (-) TimerEvent: {}
+[8.142144] (-) TimerEvent: {}
+[8.242773] (-) TimerEvent: {}
+[8.343452] (-) TimerEvent: {}
+[8.444733] (-) TimerEvent: {}
+[8.545352] (-) TimerEvent: {}
+[8.645933] (-) TimerEvent: {}
+[8.747484] (-) TimerEvent: {}
+[8.848043] (-) TimerEvent: {}
+[8.948680] (-) TimerEvent: {}
+[9.049194] (-) TimerEvent: {}
+[9.149715] (-) TimerEvent: {}
+[9.250276] (-) TimerEvent: {}
+[9.350840] (-) TimerEvent: {}
+[9.451401] (-) TimerEvent: {}
+[9.551969] (-) TimerEvent: {}
+[9.652625] (-) TimerEvent: {}
+[9.753229] (-) TimerEvent: {}
+[9.853795] (-) TimerEvent: {}
+[9.954344] (-) TimerEvent: {}
+[10.054964] (-) TimerEvent: {}
+[10.155572] (-) TimerEvent: {}
+[10.256187] (-) TimerEvent: {}
+[10.356906] (-) TimerEvent: {}
+[10.457491] (-) TimerEvent: {}
+[10.558097] (-) TimerEvent: {}
+[10.658666] (-) TimerEvent: {}
+[10.759303] (-) TimerEvent: {}
+[10.859893] (-) TimerEvent: {}
+[10.960504] (-) TimerEvent: {}
+[11.061050] (-) TimerEvent: {}
+[11.161634] (-) TimerEvent: {}
+[11.262243] (-) TimerEvent: {}
+[11.362835] (-) TimerEvent: {}
+[11.463377] (-) TimerEvent: {}
+[11.563956] (-) TimerEvent: {}
+[11.664486] (-) TimerEvent: {}
+[11.765093] (-) TimerEvent: {}
+[11.865658] (-) TimerEvent: {}
+[11.966207] (-) TimerEvent: {}
+[12.066721] (-) TimerEvent: {}
+[12.167302] (-) TimerEvent: {}
+[12.267859] (-) TimerEvent: {}
+[12.368492] (-) TimerEvent: {}
+[12.469035] (-) TimerEvent: {}
+[12.569616] (-) TimerEvent: {}
+[12.670177] (-) TimerEvent: {}
+[12.770796] (-) TimerEvent: {}
+[12.871405] (-) TimerEvent: {}
+[12.972001] (-) TimerEvent: {}
+[13.072703] (-) TimerEvent: {}
+[13.173283] (-) TimerEvent: {}
+[13.273899] (-) TimerEvent: {}
+[13.374543] (-) TimerEvent: {}
+[13.475159] (-) TimerEvent: {}
+[13.575789] (-) TimerEvent: {}
+[13.676456] (-) TimerEvent: {}
+[13.777094] (-) TimerEvent: {}
+[13.877707] (-) TimerEvent: {}
+[13.978342] (-) TimerEvent: {}
+[14.078965] (-) TimerEvent: {}
+[14.179605] (-) TimerEvent: {}
+[14.280286] (-) TimerEvent: {}
+[14.380911] (-) TimerEvent: {}
+[14.481493] (-) TimerEvent: {}
+[14.582039] (-) TimerEvent: {}
+[14.682612] (-) TimerEvent: {}
+[14.783204] (-) TimerEvent: {}
+[14.883751] (-) TimerEvent: {}
+[14.984404] (-) TimerEvent: {}
+[15.084971] (-) TimerEvent: {}
+[15.185497] (-) TimerEvent: {}
+[15.286073] (-) TimerEvent: {}
+[15.386697] (-) TimerEvent: {}
+[15.487288] (-) TimerEvent: {}
+[15.587827] (-) TimerEvent: {}
+[15.688473] (-) TimerEvent: {}
+[15.789063] (-) TimerEvent: {}
+[15.889655] (-) TimerEvent: {}
+[15.990243] (-) TimerEvent: {}
+[16.090897] (-) TimerEvent: {}
+[16.191560] (-) TimerEvent: {}
+[16.292188] (-) TimerEvent: {}
+[16.392871] (-) TimerEvent: {}
+[16.493459] (-) TimerEvent: {}
+[16.594117] (-) TimerEvent: {}
+[16.694707] (-) TimerEvent: {}
+[16.795270] (-) TimerEvent: {}
+[16.895841] (-) TimerEvent: {}
+[16.996521] (-) TimerEvent: {}
+[17.097096] (-) TimerEvent: {}
+[17.197664] (-) TimerEvent: {}
+[17.298284] (-) TimerEvent: {}
+[17.398845] (-) TimerEvent: {}
+[17.499471] (-) TimerEvent: {}
+[17.600038] (-) TimerEvent: {}
+[17.700663] (-) TimerEvent: {}
+[17.801249] (-) TimerEvent: {}
+[17.901840] (-) TimerEvent: {}
+[18.002483] (-) TimerEvent: {}
+[18.103108] (-) TimerEvent: {}
+[18.203635] (-) TimerEvent: {}
+[18.304261] (-) TimerEvent: {}
+[18.405124] (-) TimerEvent: {}
+[18.505820] (-) TimerEvent: {}
+[18.606497] (-) TimerEvent: {}
+[18.707264] (-) TimerEvent: {}
+[18.807936] (-) TimerEvent: {}
+[18.908707] (-) TimerEvent: {}
+[19.009333] (-) TimerEvent: {}
+[19.109987] (-) TimerEvent: {}
+[19.210661] (-) TimerEvent: {}
+[19.311298] (-) TimerEvent: {}
+[19.411989] (-) TimerEvent: {}
+[19.512770] (-) TimerEvent: {}
+[19.613467] (-) TimerEvent: {}
+[19.714183] (-) TimerEvent: {}
+[19.815171] (-) TimerEvent: {}
+[19.915911] (-) TimerEvent: {}
+[20.016573] (-) TimerEvent: {}
+[20.117186] (-) TimerEvent: {}
+[20.217776] (-) TimerEvent: {}
+[20.318330] (-) TimerEvent: {}
+[20.418912] (-) TimerEvent: {}
+[20.519475] (-) TimerEvent: {}
+[20.620050] (-) TimerEvent: {}
+[20.720675] (-) TimerEvent: {}
+[20.821239] (-) TimerEvent: {}
+[20.921869] (-) TimerEvent: {}
+[21.022457] (-) TimerEvent: {}
+[21.123145] (-) TimerEvent: {}
+[21.223800] (-) TimerEvent: {}
+[21.324435] (-) TimerEvent: {}
+[21.424947] (-) TimerEvent: {}
+[21.525508] (-) TimerEvent: {}
+[21.626148] (-) TimerEvent: {}
+[21.726715] (-) TimerEvent: {}
+[21.827303] (-) TimerEvent: {}
+[21.927894] (-) TimerEvent: {}
+[22.028538] (-) TimerEvent: {}
+[22.129173] (-) TimerEvent: {}
+[22.229762] (-) TimerEvent: {}
+[22.330322] (-) TimerEvent: {}
+[22.430982] (-) TimerEvent: {}
+[22.531560] (-) TimerEvent: {}
+[22.632217] (-) TimerEvent: {}
+[22.732896] (-) TimerEvent: {}
+[22.833448] (-) TimerEvent: {}
+[22.934041] (-) TimerEvent: {}
+[23.034690] (-) TimerEvent: {}
+[23.135269] (-) TimerEvent: {}
+[23.235808] (-) TimerEvent: {}
+[23.336460] (-) TimerEvent: {}
+[23.437013] (-) TimerEvent: {}
+[23.537584] (-) TimerEvent: {}
+[23.638158] (-) TimerEvent: {}
+[23.738689] (-) TimerEvent: {}
+[23.839276] (-) TimerEvent: {}
+[23.939870] (-) TimerEvent: {}
+[24.040507] (-) TimerEvent: {}
+[24.141047] (-) TimerEvent: {}
+[24.241674] (-) TimerEvent: {}
+[24.342260] (-) TimerEvent: {}
+[24.442800] (-) TimerEvent: {}
+[24.543367] (-) TimerEvent: {}
+[24.643931] (-) TimerEvent: {}
+[24.744527] (-) TimerEvent: {}
+[24.845088] (-) TimerEvent: {}
+[24.945610] (-) TimerEvent: {}
+[25.046135] (-) TimerEvent: {}
+[25.146650] (-) TimerEvent: {}
+[25.247168] (-) TimerEvent: {}
+[25.347775] (-) TimerEvent: {}
+[25.448548] (-) TimerEvent: {}
+[25.549177] (-) TimerEvent: {}
+[25.649759] (-) TimerEvent: {}
+[25.750399] (-) TimerEvent: {}
+[25.851028] (-) TimerEvent: {}
+[25.951627] (-) TimerEvent: {}
+[26.052246] (-) TimerEvent: {}
+[26.152947] (-) TimerEvent: {}
+[26.253581] (-) TimerEvent: {}
+[26.354194] (-) TimerEvent: {}
+[26.454884] (-) TimerEvent: {}
+[26.555522] (-) TimerEvent: {}
+[26.656286] (-) TimerEvent: {}
+[26.757085] (-) TimerEvent: {}
+[26.857761] (-) TimerEvent: {}
+[26.958372] (-) TimerEvent: {}
+[27.059011] (-) TimerEvent: {}
+[27.159660] (-) TimerEvent: {}
+[27.260479] (-) TimerEvent: {}
+[27.361122] (-) TimerEvent: {}
+[27.461765] (-) TimerEvent: {}
+[27.562449] (-) TimerEvent: {}
+[27.664416] (-) TimerEvent: {}
+[27.765112] (-) TimerEvent: {}
+[27.865885] (-) TimerEvent: {}
+[27.966548] (-) TimerEvent: {}
+[28.067241] (-) TimerEvent: {}
+[28.167902] (-) TimerEvent: {}
+[28.268693] (-) TimerEvent: {}
+[28.369404] (-) TimerEvent: {}
+[28.470125] (-) TimerEvent: {}
+[28.570808] (-) TimerEvent: {}
+[28.671462] (-) TimerEvent: {}
+[28.772084] (-) TimerEvent: {}
+[28.872799] (-) TimerEvent: {}
+[28.973542] (-) TimerEvent: {}
+[29.074123] (-) TimerEvent: {}
+[29.174861] (-) TimerEvent: {}
+[29.275510] (-) TimerEvent: {}
+[29.376122] (-) TimerEvent: {}
+[29.476757] (-) TimerEvent: {}
+[29.577394] (-) TimerEvent: {}
+[29.677944] (-) TimerEvent: {}
+[29.778603] (-) TimerEvent: {}
+[29.879300] (-) TimerEvent: {}
+[29.979880] (-) TimerEvent: {}
+[30.080546] (-) TimerEvent: {}
+[30.181118] (-) TimerEvent: {}
+[30.281687] (-) TimerEvent: {}
+[30.382255] (-) TimerEvent: {}
+[30.482879] (-) TimerEvent: {}
+[30.583467] (-) TimerEvent: {}
+[30.684047] (-) TimerEvent: {}
+[30.784752] (-) TimerEvent: {}
+[30.885301] (-) TimerEvent: {}
+[30.985986] (-) TimerEvent: {}
+[31.086544] (-) TimerEvent: {}
+[31.187096] (-) TimerEvent: {}
+[31.287730] (-) TimerEvent: {}
+[31.388662] (-) TimerEvent: {}
+[31.489218] (-) TimerEvent: {}
+[31.589912] (-) TimerEvent: {}
+[31.690452] (-) TimerEvent: {}
+[31.791043] (-) TimerEvent: {}
+[31.891658] (-) TimerEvent: {}
+[31.992266] (-) TimerEvent: {}
+[32.092907] (-) TimerEvent: {}
+[32.193567] (-) TimerEvent: {}
+[32.294181] (-) TimerEvent: {}
+[32.394761] (-) TimerEvent: {}
+[32.495342] (-) TimerEvent: {}
+[32.595920] (-) TimerEvent: {}
+[32.696539] (-) TimerEvent: {}
+[32.797128] (-) TimerEvent: {}
+[32.897640] (-) TimerEvent: {}
+[32.998178] (-) TimerEvent: {}
+[33.098682] (-) TimerEvent: {}
+[33.199361] (-) TimerEvent: {}
+[33.300047] (-) TimerEvent: {}
+[33.400677] (-) TimerEvent: {}
+[33.501301] (-) TimerEvent: {}
+[33.601910] (-) TimerEvent: {}
+[33.702501] (-) TimerEvent: {}
+[33.803150] (-) TimerEvent: {}
+[33.903831] (-) TimerEvent: {}
+[34.004453] (-) TimerEvent: {}
+[34.105038] (-) TimerEvent: {}
+[34.205647] (-) TimerEvent: {}
+[34.306276] (-) TimerEvent: {}
+[34.406854] (-) TimerEvent: {}
+[34.507469] (-) TimerEvent: {}
+[34.608070] (-) TimerEvent: {}
+[34.708746] (-) TimerEvent: {}
+[34.809344] (-) TimerEvent: {}
+[34.909937] (-) TimerEvent: {}
+[35.010518] (-) TimerEvent: {}
+[35.111112] (-) TimerEvent: {}
+[35.211784] (-) TimerEvent: {}
+[35.312559] (-) TimerEvent: {}
+[35.413173] (-) TimerEvent: {}
+[35.513843] (-) TimerEvent: {}
+[35.614423] (-) TimerEvent: {}
+[35.715033] (-) TimerEvent: {}
+[35.815580] (-) TimerEvent: {}
+[35.916133] (-) TimerEvent: {}
+[36.016770] (-) TimerEvent: {}
+[36.117364] (-) TimerEvent: {}
+[36.217954] (-) TimerEvent: {}
+[36.318508] (-) TimerEvent: {}
+[36.419058] (-) TimerEvent: {}
+[36.519631] (-) TimerEvent: {}
+[36.620180] (-) TimerEvent: {}
+[36.720760] (-) TimerEvent: {}
+[36.821278] (-) TimerEvent: {}
+[36.921824] (-) TimerEvent: {}
+[37.022407] (-) TimerEvent: {}
+[37.123010] (-) TimerEvent: {}
+[37.223612] (-) TimerEvent: {}
+[37.324191] (-) TimerEvent: {}
+[37.424887] (-) TimerEvent: {}
+[37.525502] (-) TimerEvent: {}
+[37.626088] (-) TimerEvent: {}
+[37.726667] (-) TimerEvent: {}
+[37.827379] (-) TimerEvent: {}
+[37.928007] (-) TimerEvent: {}
+[38.028721] (-) TimerEvent: {}
+[38.129481] (-) TimerEvent: {}
+[38.230089] (-) TimerEvent: {}
+[38.330690] (-) TimerEvent: {}
+[38.431299] (-) TimerEvent: {}
+[38.531892] (-) TimerEvent: {}
+[38.632550] (-) TimerEvent: {}
+[38.733140] (-) TimerEvent: {}
+[38.833988] (-) TimerEvent: {}
+[38.934583] (-) TimerEvent: {}
+[39.035244] (-) TimerEvent: {}
+[39.135821] (-) TimerEvent: {}
+[39.236510] (-) TimerEvent: {}
+[39.337111] (-) TimerEvent: {}
+[39.437726] (-) TimerEvent: {}
+[39.538276] (-) TimerEvent: {}
+[39.638827] (-) TimerEvent: {}
+[39.739384] (-) TimerEvent: {}
+[39.839980] (-) TimerEvent: {}
+[39.940672] (-) TimerEvent: {}
+[40.041493] (-) TimerEvent: {}
+[40.142021] (-) TimerEvent: {}
+[40.242619] (-) TimerEvent: {}
+[40.343171] (-) TimerEvent: {}
+[40.443729] (-) TimerEvent: {}
+[40.544406] (-) TimerEvent: {}
+[40.645010] (-) TimerEvent: {}
+[40.745577] (-) TimerEvent: {}
+[40.846181] (-) TimerEvent: {}
+[40.946833] (-) TimerEvent: {}
+[41.047615] (-) TimerEvent: {}
+[41.148271] (-) TimerEvent: {}
+[41.248910] (-) TimerEvent: {}
+[41.349516] (-) TimerEvent: {}
+[41.450073] (-) TimerEvent: {}
+[41.550683] (-) TimerEvent: {}
+[41.651285] (-) TimerEvent: {}
+[41.751881] (-) TimerEvent: {}
+[41.852513] (-) TimerEvent: {}
+[41.953178] (-) TimerEvent: {}
+[42.053877] (-) TimerEvent: {}
+[42.154562] (-) TimerEvent: {}
+[42.255219] (-) TimerEvent: {}
+[42.355781] (-) TimerEvent: {}
+[42.456398] (-) TimerEvent: {}
+[42.556989] (-) TimerEvent: {}
+[42.657592] (-) TimerEvent: {}
+[42.758249] (-) TimerEvent: {}
+[42.858820] (-) TimerEvent: {}
+[42.959397] (-) TimerEvent: {}
+[43.059950] (-) TimerEvent: {}
+[43.160534] (-) TimerEvent: {}
+[43.261159] (-) TimerEvent: {}
+[43.361749] (-) TimerEvent: {}
+[43.462295] (-) TimerEvent: {}
+[43.562823] (-) TimerEvent: {}
+[43.663330] (-) TimerEvent: {}
+[43.763888] (-) TimerEvent: {}
+[43.864509] (-) TimerEvent: {}
+[43.965132] (-) TimerEvent: {}
+[44.065800] (-) TimerEvent: {}
+[44.166440] (-) TimerEvent: {}
+[44.267087] (-) TimerEvent: {}
+[44.367668] (-) TimerEvent: {}
+[44.468221] (-) TimerEvent: {}
+[44.568895] (-) TimerEvent: {}
+[44.669532] (-) TimerEvent: {}
+[44.770150] (-) TimerEvent: {}
+[44.870763] (-) TimerEvent: {}
+[44.971380] (-) TimerEvent: {}
+[45.072605] (-) TimerEvent: {}
+[45.173179] (-) TimerEvent: {}
+[45.273716] (-) TimerEvent: {}
+[45.374315] (-) TimerEvent: {}
+[45.475391] (-) TimerEvent: {}
+[45.575919] (-) TimerEvent: {}
+[45.676515] (-) TimerEvent: {}
+[45.777086] (-) TimerEvent: {}
+[45.877654] (-) TimerEvent: {}
+[45.978195] (-) TimerEvent: {}
+[46.078729] (-) TimerEvent: {}
+[46.179333] (-) TimerEvent: {}
+[46.279902] (-) TimerEvent: {}
+[46.380538] (-) TimerEvent: {}
+[46.481154] (-) TimerEvent: {}
+[46.581716] (-) TimerEvent: {}
+[46.682339] (-) TimerEvent: {}
+[46.782985] (-) TimerEvent: {}
+[46.883586] (-) TimerEvent: {}
+[46.984171] (-) TimerEvent: {}
+[47.084805] (-) TimerEvent: {}
+[47.185376] (-) TimerEvent: {}
+[47.285971] (-) TimerEvent: {}
+[47.386574] (-) TimerEvent: {}
+[47.487263] (-) TimerEvent: {}
+[47.587786] (-) TimerEvent: {}
+[47.688448] (-) TimerEvent: {}
+[47.789061] (-) TimerEvent: {}
+[47.889696] (-) TimerEvent: {}
+[47.990268] (-) TimerEvent: {}
+[48.090871] (-) TimerEvent: {}
+[48.191492] (-) TimerEvent: {}
+[48.292057] (-) TimerEvent: {}
+[48.392689] (-) TimerEvent: {}
+[48.493260] (-) TimerEvent: {}
+[48.593878] (-) TimerEvent: {}
+[48.694507] (-) TimerEvent: {}
+[48.795124] (-) TimerEvent: {}
+[48.895745] (-) TimerEvent: {}
+[48.996427] (-) TimerEvent: {}
+[49.096985] (-) TimerEvent: {}
+[49.197631] (-) TimerEvent: {}
+[49.298232] (-) TimerEvent: {}
+[49.398931] (-) TimerEvent: {}
+[49.499591] (-) TimerEvent: {}
+[49.600217] (-) TimerEvent: {}
+[49.700943] (-) TimerEvent: {}
+[49.801562] (-) TimerEvent: {}
+[49.902150] (-) TimerEvent: {}
+[50.002686] (-) TimerEvent: {}
+[50.103252] (-) TimerEvent: {}
+[50.203769] (-) TimerEvent: {}
+[50.304394] (-) TimerEvent: {}
+[50.404950] (-) TimerEvent: {}
+[50.505511] (-) TimerEvent: {}
+[50.606158] (-) TimerEvent: {}
+[50.706765] (-) TimerEvent: {}
+[50.807301] (-) TimerEvent: {}
+[50.907924] (-) TimerEvent: {}
+[51.008625] (-) TimerEvent: {}
+[51.109336] (-) TimerEvent: {}
+[51.209947] (-) TimerEvent: {}
+[51.310553] (-) TimerEvent: {}
+[51.411196] (-) TimerEvent: {}
+[51.512435] (-) TimerEvent: {}
+[51.613069] (-) TimerEvent: {}
+[51.713653] (-) TimerEvent: {}
+[51.814308] (-) TimerEvent: {}
+[51.914899] (-) TimerEvent: {}
+[52.015596] (-) TimerEvent: {}
+[52.116139] (-) TimerEvent: {}
+[52.216722] (-) TimerEvent: {}
+[52.317283] (-) TimerEvent: {}
+[52.417899] (-) TimerEvent: {}
+[52.518459] (-) TimerEvent: {}
+[52.619121] (-) TimerEvent: {}
+[52.719673] (-) TimerEvent: {}
+[52.820276] (-) TimerEvent: {}
+[52.920884] (-) TimerEvent: {}
+[53.021424] (-) TimerEvent: {}
+[53.121949] (-) TimerEvent: {}
+[53.222522] (-) TimerEvent: {}
+[53.323097] (-) TimerEvent: {}
+[53.423693] (-) TimerEvent: {}
+[53.524371] (-) TimerEvent: {}
+[53.624942] (-) TimerEvent: {}
+[53.725558] (-) TimerEvent: {}
+[53.826107] (-) TimerEvent: {}
+[53.926646] (-) TimerEvent: {}
+[54.027126] (-) TimerEvent: {}
+[54.127633] (-) TimerEvent: {}
+[54.228156] (-) TimerEvent: {}
+[54.329053] (-) TimerEvent: {}
+[54.429659] (-) TimerEvent: {}
+[54.530471] (-) TimerEvent: {}
+[54.631019] (-) TimerEvent: {}
+[54.731621] (-) TimerEvent: {}
+[54.832216] (-) TimerEvent: {}
+[54.932881] (-) TimerEvent: {}
+[55.033472] (-) TimerEvent: {}
+[55.134047] (-) TimerEvent: {}
+[55.234638] (-) TimerEvent: {}
+[55.335258] (-) TimerEvent: {}
+[55.435908] (-) TimerEvent: {}
+[55.536552] (-) TimerEvent: {}
+[55.637139] (-) TimerEvent: {}
+[55.737695] (-) TimerEvent: {}
+[55.838270] (-) TimerEvent: {}
+[55.938856] (-) TimerEvent: {}
+[56.039493] (-) TimerEvent: {}
+[56.140104] (-) TimerEvent: {}
+[56.240742] (-) TimerEvent: {}
+[56.341354] (-) TimerEvent: {}
+[56.441893] (-) TimerEvent: {}
+[56.542497] (-) TimerEvent: {}
+[56.643117] (-) TimerEvent: {}
+[56.743743] (-) TimerEvent: {}
+[56.844518] (-) TimerEvent: {}
+[56.945100] (-) TimerEvent: {}
+[57.045602] (-) TimerEvent: {}
+[57.146155] (-) TimerEvent: {}
+[57.246632] (-) TimerEvent: {}
+[57.347187] (-) TimerEvent: {}
+[57.447746] (-) TimerEvent: {}
+[57.548449] (-) TimerEvent: {}
+[57.649033] (-) TimerEvent: {}
+[57.749630] (-) TimerEvent: {}
+[57.850246] (-) TimerEvent: {}
+[57.950863] (-) TimerEvent: {}
+[58.051412] (-) TimerEvent: {}
+[58.151969] (-) TimerEvent: {}
+[58.252586] (-) TimerEvent: {}
+[58.353152] (-) TimerEvent: {}
+[58.453755] (-) TimerEvent: {}
+[58.554322] (-) TimerEvent: {}
+[58.654948] (-) TimerEvent: {}
+[58.755571] (-) TimerEvent: {}
+[58.856125] (-) TimerEvent: {}
+[58.956811] (-) TimerEvent: {}
+[59.057372] (-) TimerEvent: {}
+[59.157900] (-) TimerEvent: {}
+[59.258443] (-) TimerEvent: {}
+[59.359065] (-) TimerEvent: {}
+[59.459675] (-) TimerEvent: {}
+[59.560247] (-) TimerEvent: {}
+[59.660962] (-) TimerEvent: {}
+[59.761602] (-) TimerEvent: {}
+[59.862234] (-) TimerEvent: {}
+[59.962888] (-) TimerEvent: {}
+[60.063479] (-) TimerEvent: {}
+[60.164093] (-) TimerEvent: {}
+[60.264744] (-) TimerEvent: {}
+[60.365419] (-) TimerEvent: {}
+[60.466046] (-) TimerEvent: {}
+[60.566712] (-) TimerEvent: {}
+[60.667273] (-) TimerEvent: {}
+[60.767852] (-) TimerEvent: {}
+[60.868438] (-) TimerEvent: {}
+[60.969014] (-) TimerEvent: {}
+[61.069640] (-) TimerEvent: {}
+[61.170187] (-) TimerEvent: {}
+[61.270784] (-) TimerEvent: {}
+[61.371360] (-) TimerEvent: {}
+[61.471918] (-) TimerEvent: {}
+[61.572521] (-) TimerEvent: {}
+[61.673055] (-) TimerEvent: {}
+[61.773647] (-) TimerEvent: {}
+[61.874218] (-) TimerEvent: {}
+[61.974832] (-) TimerEvent: {}
+[62.075479] (-) TimerEvent: {}
+[62.176024] (-) TimerEvent: {}
+[62.276685] (-) TimerEvent: {}
+[62.377278] (-) TimerEvent: {}
+[62.477858] (-) TimerEvent: {}
+[62.578510] (-) TimerEvent: {}
+[62.679119] (-) TimerEvent: {}
+[62.772404] (real_pure_pursuit) StdoutLine: {'line': b'[100%] Linking CXX executable real_pure_pursuit_node\n'}
+[62.779335] (-) TimerEvent: {}
+[62.879927] (-) TimerEvent: {}
+[62.980513] (-) TimerEvent: {}
+[63.081055] (-) TimerEvent: {}
+[63.181649] (-) TimerEvent: {}
+[63.282245] (-) TimerEvent: {}
+[63.382825] (-) TimerEvent: {}
+[63.483437] (-) TimerEvent: {}
+[63.584033] (-) TimerEvent: {}
+[63.685094] (real_pure_pursuit) StdoutLine: {'line': b'[100%] Built target real_pure_pursuit_node\n'}
+[63.685896] (-) TimerEvent: {}
+[63.748992] (real_pure_pursuit) CommandEnded: {'returncode': 0}
+[63.756248] (real_pure_pursuit) JobProgress: {'identifier': 'real_pure_pursuit', 'progress': 'install'}
+[63.787136] (-) TimerEvent: {}
+[63.832124] (real_pure_pursuit) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/f1/f1tenth_ws/build/real_pure_pursuit'], 'cwd': '/home/f1/f1tenth_ws/build/real_pure_pursuit', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('CONDA_PROMPT_MODIFIER', ''), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_CLIENT', '172.16.88.59 56964 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/f1/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/f1/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/helpers/browser.sh'), ('HOME', '/home/f1'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/f1/f1tenth_ws'), ('LESS', '-R'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.104.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1001/vscode-ipc-6e2d740d-7b67-4873-bd03-ec9d6df335e3.sock'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/f1/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_GIT_ASKPASS_NODE', '/home/f1/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/f1/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/f1/miniconda3'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '29788'), ('USER_ZDOTDIR', '/home/f1'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('ROS_LOCALHOST_ONLY', '0'), ('_CE_CONDA', ''), ('PATH', '/home/f1/.npm-global/bin:/home/f1/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/remote-cli:/home/f1/miniconda3/condabin:/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/f1/.vscode-server/extensions/ms-python.debugpy-2025.10.0/bundled/scripts/noConfigScripts:/home/f1/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('PAPERSIZE', 'a4'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/f1/.vscode-server/extensions/ms-python.debugpy-2025.10.0/.noConfigDebugAdapterEndpoints/endpoint-45b40085090981a2.txt'), ('PYTHONSTARTUP', '/home/f1/.vscode-server/data/User/workspaceStorage/82a6a78a25a8631bf184d85605079995/ms-python.python/pythonrc.py'), ('VSCODE_INJECTION', '1'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-fdc5db966d.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('CONDA_PYTHON_EXE', '/home/f1/miniconda3/bin/python'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('CONDA_DEFAULT_ENV', ''), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('_CONDA_EXE', '/home/f1/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/f1/f1tenth_ws/build/real_pure_pursuit'), ('ENABLE_IDE_INTEGRATION', 'true'), ('SSH_CONNECTION', '172.16.88.59 56964 172.16.64.50 22'), ('CONDA_EXE', '/home/f1/miniconda3/bin/conda'), ('ZDOTDIR', '/home/f1'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('CONDA_PREFIX', ''), ('COLCON', '1'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[63.887237] (-) TimerEvent: {}
+[63.890251] (real_pure_pursuit) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[63.893410] (real_pure_pursuit) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[63.897641] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/lib/real_pure_pursuit/real_pure_pursuit_node\n'}
+[63.902384] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit//launch/real_autonomous_driving.launch.py\n'}
+[63.904579] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/ament_index/resource_index/package_run_dependencies/real_pure_pursuit\n'}
+[63.905876] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/ament_index/resource_index/parent_prefix_path/real_pure_pursuit\n'}
+[63.908443] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/environment/ament_prefix_path.sh\n'}
+[63.910657] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/environment/ament_prefix_path.dsv\n'}
+[63.912939] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/environment/path.sh\n'}
+[63.913509] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/environment/path.dsv\n'}
+[63.914692] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/local_setup.bash\n'}
+[63.916626] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/local_setup.sh\n'}
+[63.918539] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/local_setup.zsh\n'}
+[63.920378] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/local_setup.dsv\n'}
+[63.921979] (real_pure_pursuit) StdoutLine: {'line': b'-- Symlinking: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/package.dsv\n'}
+[63.974572] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/ament_index/resource_index/packages/real_pure_pursuit\n'}
+[63.977445] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/cmake/real_pure_pursuitConfig.cmake\n'}
+[63.978332] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/cmake/real_pure_pursuitConfig-version.cmake\n'}
+[63.980735] (real_pure_pursuit) StdoutLine: {'line': b'-- Up-to-date symlink: /home/f1/f1tenth_ws/install/real_pure_pursuit/share/real_pure_pursuit/package.xml\n'}
+[63.987413] (-) TimerEvent: {}
+[63.991964] (real_pure_pursuit) CommandEnded: {'returncode': 0}
+[64.087883] (-) TimerEvent: {}
+[64.120129] (real_pure_pursuit) JobEnded: {'identifier': 'real_pure_pursuit', 'rc': 0}
+[64.123994] (-) EventReactorShutdown: {}

@@ -21,7 +21,7 @@ import time
 
 class HighFrequencyLocalizer(Node):
     def __init__(self):
-        super().__init__('high_frequency_localizer')
+        super().__init__('high_frequency_localizer_node')
 
         # 구독자
         self.amcl_sub = self.create_subscription(
@@ -49,6 +49,12 @@ class HighFrequencyLocalizer(Node):
         self.fused_pose_pub = self.create_publisher(
             PoseStamped,
             '/fused_pose',
+            10
+        )
+
+        self.fused_pose_cov_pub = self.create_publisher(
+            PoseWithCovarianceStamped,
+            '/fused_pose_cov',
             10
         )
 
@@ -145,6 +151,18 @@ class HighFrequencyLocalizer(Node):
 
         # 발행
         self.fused_pose_pub.publish(fused_pose)
+
+        # PoseWithCovarianceStamped 버전도 발행 (Pure Pursuit 호환성)
+        fused_pose_cov = PoseWithCovarianceStamped()
+        fused_pose_cov.header = fused_pose.header
+        fused_pose_cov.pose.pose = fused_pose.pose
+
+        # 간단한 covariance 설정 (실제로는 더 정교하게 계산 가능)
+        fused_pose_cov.pose.covariance[0] = 0.1   # x variance
+        fused_pose_cov.pose.covariance[7] = 0.1   # y variance
+        fused_pose_cov.pose.covariance[35] = 0.05 # yaw variance
+
+        self.fused_pose_cov_pub.publish(fused_pose_cov)
 
         # 성능 모니터링
         self.pose_timestamps.append(time.time())

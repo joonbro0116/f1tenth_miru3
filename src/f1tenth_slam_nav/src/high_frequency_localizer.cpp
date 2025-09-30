@@ -7,7 +7,7 @@ namespace f1tenth_slam_nav
 {
 
 HighFrequencyLocalizer::HighFrequencyLocalizer(const rclcpp::NodeOptions & options)
-: Node("high_frequency_localizer", options),
+: Node("high_frequency_localizer_node", options),
   amcl_received_(false),
   odom_received_(false),
   drift_x_(0.0),

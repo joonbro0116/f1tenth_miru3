@@ -27,7 +27,8 @@ setup(
         'console_scripts': [
             'throttle_interpolator = f1tenth_stack.throttle_interpolator:main',
             'tf_publisher = f1tenth_stack.tf_publisher:main',
-            'car_visualizer.py = f1tenth_stack.car_visualizer:main'
+            'car_visualizer.py = f1tenth_stack.car_visualizer:main',
+            'vesc_imu_bridge = f1tenth_stack.vesc_imu_bridge:main',
         ],
     },
 )

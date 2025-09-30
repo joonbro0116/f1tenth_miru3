@@ -1,0 +1,23 @@
+[3.524s] Invoking command in '/home/f1/f1tenth_ws/build/center_follow_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/f1/f1tenth_ws/build/center_follow_cpp -- -j6 -l6
+[4.182s] [100%] Built target center_follower
+[6.257s] Invoked command in '/home/f1/f1tenth_ws/build/center_follow_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/f1/f1tenth_ws/build/center_follow_cpp -- -j6 -l6
+[6.328s] Invoking command in '/home/f1/f1tenth_ws/build/center_follow_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/f1/f1tenth_ws/build/center_follow_cpp
+[6.712s] -- Install configuration: "Release"
+[6.724s] -- Execute custom install script
+[6.726s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/lib/center_follow_cpp/center_follower
+[6.734s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/ament_index/resource_index/package_run_dependencies/center_follow_cpp
+[6.736s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/ament_index/resource_index/parent_prefix_path/center_follow_cpp
+[6.755s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/environment/ament_prefix_path.sh
+[6.755s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/environment/ament_prefix_path.dsv
+[6.756s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/environment/path.sh
+[6.756s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/environment/path.dsv
+[6.757s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.bash
+[6.757s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.sh
+[6.758s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.zsh
+[6.758s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/local_setup.dsv
+[6.758s] -- Symlinking: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/package.dsv
+[6.827s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/ament_index/resource_index/packages/center_follow_cpp
+[6.828s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/cmake/center_follow_cppConfig.cmake
+[6.829s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/cmake/center_follow_cppConfig-version.cmake
+[6.829s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/center_follow_cpp/share/center_follow_cpp/package.xml
+[6.853s] Invoked command in '/home/f1/f1tenth_ws/build/center_follow_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/f1/f1tenth_ws/build/center_follow_cpp

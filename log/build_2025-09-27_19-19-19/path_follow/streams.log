@@ -1,0 +1,24 @@
+[1.399s] Invoking command in '/home/f1/f1tenth_ws/build/path_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_follow -- -j6 -l6
+[2.206s] [100%] Built target path_follow_node
+[3.742s] Invoked command in '/home/f1/f1tenth_ws/build/path_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_follow -- -j6 -l6
+[3.755s] Invoking command in '/home/f1/f1tenth_ws/build/path_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/f1/f1tenth_ws/build/path_follow
+[3.933s] -- Install configuration: "Release"
+[3.942s] -- Execute custom install script
+[3.955s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/lib/path_follow/path_follow_node
+[3.956s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/launch/path_follow_launch.py
+[3.957s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/ament_index/resource_index/package_run_dependencies/path_follow
+[3.957s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/ament_index/resource_index/parent_prefix_path/path_follow
+[3.958s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/environment/ament_prefix_path.sh
+[3.958s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/environment/ament_prefix_path.dsv
+[3.959s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/environment/path.sh
+[3.959s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/environment/path.dsv
+[3.960s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/local_setup.bash
+[3.960s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/local_setup.sh
+[3.962s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/local_setup.zsh
+[3.962s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/local_setup.dsv
+[3.963s] -- Symlinking: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/package.dsv
+[4.117s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/ament_index/resource_index/packages/path_follow
+[4.120s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/cmake/path_followConfig.cmake
+[4.123s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/cmake/path_followConfig-version.cmake
+[4.123s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/package.xml
+[4.173s] Invoked command in '/home/f1/f1tenth_ws/build/path_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/f1/f1tenth_ws/build/path_follow

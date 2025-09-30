@@ -1,2 +1,1 @@
-source;share/real_pure_pursuit/environment/ament_prefix_path.sh
-source;share/real_pure_pursuit/environment/path.sh
+/home/f1/f1tenth_ws/build/real_pure_pursuit/ament_cmake_environment_hooks/local_setup.dsv

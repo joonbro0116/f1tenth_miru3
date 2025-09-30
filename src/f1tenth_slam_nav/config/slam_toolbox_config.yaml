@@ -12,81 +12,75 @@ slam_toolbox:
 
     # SLAM parameters
     resolution: 0.05
-    map_update_interval: 1.0
-    minimum_travel_distance: 0.15
-    minimum_travel_heading: 0.15
+    map_update_interval: 0.5  # 더 자주 업데이트
+    minimum_travel_distance: 0.2  # 더 민감하게
+    minimum_travel_heading: 0.2   # 더 민감하게
 
-    # === 강화된 루프 클로저 설정 ===
-    do_loop_closing: true
-
-    # 루프 클로저 검색 거리 (F1TENTH 실내 트랙 환경에 적합)
-    loop_search_maximum_distance: 5.0
-    loop_search_space_dimension: 10.0
-
-    # 루프 매칭 파라미터 (F1TENTH 고속 주행 고려)
-    loop_match_minimum_chain_size: 8
-    loop_match_minimum_response_coarse: 0.3
-    loop_match_minimum_response_fine: 0.4
-    loop_match_maximum_variance_coarse: 3.0
-
-    # 최적화 빈도 (트랙에서 빠른 루프 완주 고려)
-    optimize_every_n_nodes: 10
-
-    # 상관관계 검색 설정 (정밀한 매칭을 위해)
-    correlation_search_space_dimension: 0.8
-    correlation_search_space_resolution: 0.01
-    correlation_search_space_smear_deviation: 0.1
-
-    # 스캔 매칭 향상
-    use_scan_matching: true
-    use_scan_barycenter: true
-    scan_buffer_size: 15
-    scan_buffer_maximum_scan_distance: 8.0
-
-    # F1TENTH 레이싱카에 적합한 링크 매칭
-    link_match_minimum_response_fine: 0.1
-    link_scan_maximum_distance: 2.0
-
-    # 각도/거리 페널티 (소형 레이싱카에 맞게 조정)
-    minimum_angle_penalty: 0.85
-    minimum_distance_penalty: 0.4
-    use_response_expansion: true
-
-    # === 추가 성능 최적화 설정 ===
-    # 라이다 설정 - 자유공간 생성 최적화
-    max_laser_range: 10.0
-    minimum_laser_range: 0.1
+    # === 자유공간 생성 핵심 설정 ===
+    # 라이다 범위 설정 (자유공간 생성에 중요)
+    max_laser_range: 12.0  # 증가
+    minimum_laser_range: 0.05  # 감소
     
-    # 자유공간 마킹 향상
+    # 자유공간 마킹 강화
     mark_threshold: 0.0
-    update_factor_free: 0.4
-    update_factor_occupied: 0.9
-
+    update_factor_free: 0.6     # 증가 - 자유공간을 더 적극적으로 마킹
+    update_factor_occupied: 0.7  # 감소 - 장애물 마킹을 덜 적극적으로
+    
+    # 맵 임계값 조정
+    occupied_threshold: 0.70    # 증가 - 장애물로 판단하는 기준 상향
+    free_threshold: 0.20        # 감소 - 자유공간으로 판단하는 기준 하향
+    
     # 스캔 품질 향상
     use_scan_barycenter: true
+    use_scan_matching: true
+    
+    # 최소 빔 개수 감소 (더 많은 스캔 포인트 활용)
+    minimum_beam_count: 3
+    
+    # 스캔 버퍼 설정
+    scan_buffer_size: 20 
+    scan_buffer_maximum_scan_distance: 12.0
 
-    # 메모리 관리
-    scan_buffer_maximum_scan_distance: 10.0
+    # === 루프 클로저 설정 ===
+    do_loop_closing: true
+    loop_search_maximum_distance: 5.0  # F1TENTH 트랙 크기에 맞게 조정 맵이 작으면 5로 설정
+    loop_search_space_dimension: 5.0  # 이것도 맵이 작으면 5로 설정
+    
+    # 루프 매칭 파라미터
+    loop_match_minimum_chain_size: 5    # 감소 - 더 빠른 루프 감지
+    loop_match_minimum_response_coarse: 0.25  # 감소 - 더 관대한 매칭
+    loop_match_minimum_response_fine: 0.3     # 감소
+    loop_match_maximum_variance_coarse: 4.0   # 증가 - 더 유연한 매칭
+    
+    # 최적화 빈도
+    optimize_every_n_nodes: 8  # 더 자주 최적화
 
-    # 매칭 품질 향상
+    # === 스캔 매칭 향상 ===
+    correlation_search_space_dimension: 0.6   # 감소 - 더 빠른 처리
+    correlation_search_space_resolution: 0.01
+    correlation_search_space_smear_deviation: 0.08  # 감소
+    
+    # 링크 매칭
+    link_match_minimum_response_fine: 0.08  # 감소 - 더 관대한 매칭
+    link_scan_maximum_distance: 1.5         # 감소
+    
+    # 각도/거리 페널티
+    minimum_angle_penalty: 0.8   # 감소
+    minimum_distance_penalty: 0.3  # 감소
+    use_response_expansion: true
+
+    # === 성능 최적화 ===
+    # 변환 타임아웃
+    transform_timeout: 0.15  # 감소 - 더 빠른 반응
+    
+    # 매칭 품질
     coarse_search_angle_offset: 0.349
     fine_search_angle_offset: 0.00349
-
-    # 맵 품질 설정 - 자유공간 생성 향상
-    occupied_threshold: 0.65
-    free_threshold: 0.25
     
-    # 맵 업데이트 설정
-    map_update_interval: 0.5
-    
-    # 자유공간 생성을 위한 추가 설정
-    minimum_beam_count: 5
-    transform_timeout: 0.2
-
-    # Other settings
+    # 디버깅
     debug_logging: false
     enable_interactive_mode: true
 
-    # 차량 크기 설정 (0.5m x 0.3m 직사각형)
+    # 차량 크기 설정
     footprint: "[[0.25, 0.15], [0.25, -0.15], [-0.25, -0.15], [-0.25, 0.15]]"
-    robot_radius: 0.3 
+    robot_radius: 0.3
