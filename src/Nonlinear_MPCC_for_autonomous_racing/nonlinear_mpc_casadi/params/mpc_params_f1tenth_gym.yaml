@@ -1,0 +1,63 @@
+/**:
+  ros__parameters:
+    # Parameter for MPC solver
+    dT: 0.1 # unit: s (F1TENTH Gym uses 0.01, but MPC needs larger timestep)
+    mpc_steps_N: 20
+    vehicle_L: 0.33020 # wheelbase: lf + lr = 0.15875 + 0.17145
+
+    max_speed: 5.0 # unit: m/s (F1TENTH can go up to 20 m/s, but start conservative)
+    mpc_ref_cte: 0.0
+    mpc_ref_epsi: 0.0
+    mpc_ref_vel: 3.0 # Increased from 2.5 for faster racing
+
+    mpc_w_cte: 10.0 # Increased from 30 for better tracking
+    mpc_w_s: 0.0
+    mpc_w_lag: 1000.0 # Increased from 800 for more aggressive forward progress
+    mpc_w_vel: 10.0 # Increased from 4 for better speed tracking
+    mpc_w_p: 10.0 # Increased from 40 for faster lap times
+    mpc_w_delta: 100.0 # Slightly decreased from 20 to allow more aggressive steering
+    mpc_w_accel: 1.0 # Decreased from 10 to allow more aggressive acceleration
+    mpc_w_delta_d: 1500.0 # Slightly decreased from 900 for quicker steering response
+    mpc_w_delta_p: 0.0
+
+    mpc_max_steering: 0.4189 # F1TENTH Gym max steering angle (s_max)
+    mpc_max_throttle: 9.51 # F1TENTH Gym max acceleration (a_max)
+    mpc_bound_value: 1000.0 # Bound value for other variables
+
+    p_min: 0.0
+    p_max: 8.0 # Increased from 6.0 to match higher speed
+    x_min: -200.0
+    x_max: 200.0
+    y_min: -200.0
+    y_max: 200.0
+    psi_min: -1000.0
+    psi_max: 1000.0
+    s_min: 0.0
+    s_max: 200.0
+    d_v_bound: 5.0 # Increased from 2.0 to allow faster speed changes
+    d_theta_bound: 0.5
+    d_p_bound: 5.0 # Increased from 2.0 to match speed changes
+
+    # Parameters for control loop
+    debug_mode: true
+    delay_mode: true
+    throttle_mode: false
+    car_width: 0.31 # F1TENTH Gym actual width
+    spline_poly_order: 3
+    goal_threshold: 0.6 # unit: m
+    controller_freq: 15.0
+    path_folder_name: porto
+    inflation_factor: 0.8
+    lag_time: 0.05
+    arc_length_min_dist_tol: 0.05
+    integration_mode: 'Euler'
+    ipopt_verbose: true
+
+    # Frame names
+    car_frame: ego_racecar/base_link
+
+    # Topic names for F1TENTH Gym
+    odom_topic_name: /ego_racecar/odom
+    goal_topic_name: /goal_pose
+    cmd_vel_topic_name: /drive
+    localized_pose_topic_name: /ego_racecar/odom
