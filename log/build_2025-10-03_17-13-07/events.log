@@ -1,0 +1,241 @@
+[0.000000] (-) TimerEvent: {}
+[0.000236] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.000272] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.000294] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.000314] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.000345] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.000371] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.000420] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.000446] (-) JobUnselected: {'identifier': 'path_follow'}
+[0.000490] (-) JobUnselected: {'identifier': 'pure_pursuit'}
+[0.000519] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.000538] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.000557] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.000577] (-) JobUnselected: {'identifier': 'vesc'}
+[0.000595] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.000645] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.000665] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.000691] (map_controller) JobQueued: {'identifier': 'map_controller', 'dependencies': OrderedDict()}
+[0.000847] (map_controller) JobStarted: {'identifier': 'map_controller'}
+[0.006048] (map_controller) JobProgress: {'identifier': 'map_controller', 'progress': 'cmake'}
+[0.006514] (map_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/sh/projects/f1tenth_miru3/src/map_controller', '-DCMAKE_INSTALL_PREFIX=/home/sh/projects/f1tenth_miru3/install/map_controller'], 'cwd': '/home/sh/projects/f1tenth_miru3/build/map_controller', 'env': OrderedDict([('ENV_RUN', 'true'), ('PYTHON_BASIC_REPL', '1'), ('LANGUAGE', 'ko:en'), ('USER', 'sh'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('HPIPM_MAIN_FOLDER', '/home/sh/../..'), ('OCTAVE_PATH', ':/home/sh/../../interfaces/matlab_octave/:/home/sh/../../interfaces/matlab_octave/'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/sh/projects/f1tenth_miru3/install/map_controller/lib:/home/sh/projects/f1tenth_miru3/install/vesc_driver/lib:/home/sh/projects/f1tenth_miru3/install/vesc_ackermann/lib:/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib:/home/sh/projects/f1tenth_miru3/install/teleop_tools_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/sh/../../lib:/home/sh/../../../blasfeo/lib:/home/sh/../../lib:/home/sh/../../../blasfeo/lib'), ('OLDPWD', '/home/sh/projects/f1tenth_miru3'), ('HOME', '/home/sh'), ('LESS', '-R'), ('CHROME_DESKTOP', 'code.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/sh/.nvm/versions/node/v22.19.0/bin'), ('TERM_PROGRAM_VERSION', '1.104.2'), ('ZSH', '/home/sh/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/sh/.nvm/versions/node/v22.19.0/include/node'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1806'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('VISUAL', 'nvim'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/sh/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('NVM_DIR', '/home/sh/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/sh/projects/f1tenth_miru3/install'), ('LOGNAME', 'sh'), ('_', '/usr/bin/colcon'), ('MATLABPATH', ':/home/sh/../../interfaces/matlab_octave/:/home/sh/../../interfaces/matlab_octave/'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '62339'), ('USER_ZDOTDIR', '/home/sh'), ('USERNAME', 'sh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sh/projects/f1tenth_miru3/install/map_controller/bin:/home/sh/.cargo/bin:/home/sh/.cargo/bin:/home/sh/.nvm/versions/node/v22.19.0/bin:/opt/ros/humble/bin:/home/sh/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sh/.fzf/bin:/home/sh/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/sh/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/sh:@/tmp/.ICE-unix/1776,unix/sh:/tmp/.ICE-unix/1776'), ('PAPERSIZE', 'a4'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6f74dcb1_ea95_4c86_9684_5049b31ed166'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/sh/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-fb26c46cbdd98742.txt'), ('PYTHONSTARTUP', '/home/sh/.config/Code/User/workspaceStorage/0936521b55b9e85902e9f83e1588d1ff/ms-python.python/pythonrc.py'), ('VSCODE_INJECTION', '1'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LCGCD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-1309214019.sock'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/sh/projects/f1tenth_miru3/install/map_controller:/home/sh/projects/f1tenth_miru3/install/f1tenth_stack:/home/sh/projects/f1tenth_miru3/install/joy_teleop:/home/sh/projects/f1tenth_miru3/install/pygame_key_teleop:/home/sh/projects/f1tenth_miru3/install/mouse_teleop:/home/sh/projects/f1tenth_miru3/install/key_teleop:/home/sh/projects/f1tenth_miru3/install/f1tenth_path_planner:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/sh/projects/f1tenth_miru3/build/map_controller'), ('ENABLE_IDE_INTEGRATION', 'true'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('BLASFEO_MAIN_FOLDER', '/home/sh/../../../blasfeo'), ('ZDOTDIR', '/home/sh'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/sh/projects/f1tenth_miru3/install/f1tenth_slam_nav/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/f1tenth_stack:/home/sh/projects/f1tenth_miru3/install/f1tenth_stack/lib/python3.8/site-packages:/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/sh/projects/f1tenth_miru3/install/joy_teleop/lib/python3.8/site-packages:/home/sh/projects/f1tenth_miru3/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/pygame_key_teleop:/home/sh/projects/f1tenth_miru3/install/pygame_key_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/mouse_teleop:/home/sh/projects/f1tenth_miru3/install/mouse_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/key_teleop:/home/sh/projects/f1tenth_miru3/install/key_teleop/lib/python3.8/site-packages:/home/sh/projects/f1tenth_miru3/install/f1tenth_path_planner/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/home/sh/projects/f1tenth_miru3/install/map_controller:/home/sh/projects/f1tenth_miru3/install/f1tenth_slam_nav:/home/sh/projects/f1tenth_miru3/install/vesc:/home/sh/projects/f1tenth_miru3/install/vesc_driver:/home/sh/projects/f1tenth_miru3/install/vesc_ackermann:/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/home/sh/projects/f1tenth_miru3/install/teleop_tools:/home/sh/projects/f1tenth_miru3/install/teleop_tools_msgs:/home/sh/projects/f1tenth_miru3/install/real_pure_pursuit:/home/sh/projects/f1tenth_miru3/install/pure_pursuit:/home/sh/projects/f1tenth_miru3/install/path_planner:/home/sh/projects/f1tenth_miru3/install/path_follow:/home/sh/projects/f1tenth_miru3/install/lidar_processing:/home/sh/projects/f1tenth_miru3/install/center_follow_cpp:/home/sh/projects/f1tenth_miru3/install/ackermann_mux:/home/sh/projects/f1tenth_miru3/install/f1tenth_stack:/home/sh/projects/f1tenth_miru3/install/joy_teleop:/home/sh/projects/f1tenth_miru3/install/pygame_key_teleop:/home/sh/projects/f1tenth_miru3/install/mouse_teleop:/home/sh/projects/f1tenth_miru3/install/key_teleop:/home/sh/projects/f1tenth_miru3/install/f1tenth_path_planner:/opt/ros/humble')]), 'shell': False}
+[0.055953] (map_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.093934] (map_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.098498] (map_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099243] (-) TimerEvent: {}
+[0.157045] (map_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.161613] (map_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.161861] (map_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.162050] (map_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.164018] (map_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199355] (-) TimerEvent: {}
+[0.231078] (map_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.235703] (map_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.235873] (map_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.235995] (map_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.238280] (map_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299478] (-) TimerEvent: {}
+[0.365058] (map_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.399599] (-) TimerEvent: {}
+[0.434532] (map_controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.466524] (map_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.470645] (map_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.476712] (map_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.485161] (map_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.496550] (map_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.499719] (-) TimerEvent: {}
+[0.529307] (map_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.531567] (map_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.599918] (-) TimerEvent: {}
+[0.610200] (map_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.631616] (map_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.656630] (map_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.662947] (map_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700047] (-) TimerEvent: {}
+[0.721410] (map_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.721643] (map_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.781659] (map_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.782464] (map_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.800207] (-) TimerEvent: {}
+[0.814831] (map_controller) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[0.833227] (map_controller) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.841862] (map_controller) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)\n'}
+[0.850440] (map_controller) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.861544] (map_controller) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.872700] (map_controller) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.875898] (map_controller) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.900277] (-) TimerEvent: {}
+[0.920351] (map_controller) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.930870] (map_controller) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.931587] (map_controller) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[0.931765] (map_controller) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.936749] (map_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.992103] (map_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.992269] (map_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/sh/projects/f1tenth_miru3/src/map_controller/include>\n'}
+[0.992339] (map_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.992602] (map_controller) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.993166] (map_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.993413] (map_controller) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.994366] (map_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.994512] (map_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.994756] (map_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.995595] (map_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.000451] (-) TimerEvent: {}
+[1.005125] (map_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[1.008940] (map_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/sh/projects/f1tenth_miru3/build/map_controller\n'}
+[1.017583] (map_controller) CommandEnded: {'returncode': 0}
+[1.017926] (map_controller) JobProgress: {'identifier': 'map_controller', 'progress': 'build'}
+[1.017943] (map_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sh/projects/f1tenth_miru3/build/map_controller', '--', '-j16', '-l16'], 'cwd': '/home/sh/projects/f1tenth_miru3/build/map_controller', 'env': OrderedDict([('ENV_RUN', 'true'), ('PYTHON_BASIC_REPL', '1'), ('LANGUAGE', 'ko:en'), ('USER', 'sh'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('HPIPM_MAIN_FOLDER', '/home/sh/../..'), ('OCTAVE_PATH', ':/home/sh/../../interfaces/matlab_octave/:/home/sh/../../interfaces/matlab_octave/'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/sh/projects/f1tenth_miru3/install/map_controller/lib:/home/sh/projects/f1tenth_miru3/install/vesc_driver/lib:/home/sh/projects/f1tenth_miru3/install/vesc_ackermann/lib:/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib:/home/sh/projects/f1tenth_miru3/install/teleop_tools_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/sh/../../lib:/home/sh/../../../blasfeo/lib:/home/sh/../../lib:/home/sh/../../../blasfeo/lib'), ('OLDPWD', '/home/sh/projects/f1tenth_miru3'), ('HOME', '/home/sh'), ('LESS', '-R'), ('CHROME_DESKTOP', 'code.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/sh/.nvm/versions/node/v22.19.0/bin'), ('TERM_PROGRAM_VERSION', '1.104.2'), ('ZSH', '/home/sh/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/sh/.nvm/versions/node/v22.19.0/include/node'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1806'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('VISUAL', 'nvim'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/sh/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('NVM_DIR', '/home/sh/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/sh/projects/f1tenth_miru3/install'), ('LOGNAME', 'sh'), ('_', '/usr/bin/colcon'), ('MATLABPATH', ':/home/sh/../../interfaces/matlab_octave/:/home/sh/../../interfaces/matlab_octave/'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '62339'), ('USER_ZDOTDIR', '/home/sh'), ('USERNAME', 'sh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sh/projects/f1tenth_miru3/install/map_controller/bin:/home/sh/.cargo/bin:/home/sh/.cargo/bin:/home/sh/.nvm/versions/node/v22.19.0/bin:/opt/ros/humble/bin:/home/sh/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sh/.fzf/bin:/home/sh/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/sh/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/sh:@/tmp/.ICE-unix/1776,unix/sh:/tmp/.ICE-unix/1776'), ('PAPERSIZE', 'a4'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6f74dcb1_ea95_4c86_9684_5049b31ed166'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/sh/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-fb26c46cbdd98742.txt'), ('PYTHONSTARTUP', '/home/sh/.config/Code/User/workspaceStorage/0936521b55b9e85902e9f83e1588d1ff/ms-python.python/pythonrc.py'), ('VSCODE_INJECTION', '1'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LCGCD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-1309214019.sock'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/sh/projects/f1tenth_miru3/install/map_controller:/home/sh/projects/f1tenth_miru3/install/f1tenth_stack:/home/sh/projects/f1tenth_miru3/install/joy_teleop:/home/sh/projects/f1tenth_miru3/install/pygame_key_teleop:/home/sh/projects/f1tenth_miru3/install/mouse_teleop:/home/sh/projects/f1tenth_miru3/install/key_teleop:/home/sh/projects/f1tenth_miru3/install/f1tenth_path_planner:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/sh/projects/f1tenth_miru3/build/map_controller'), ('ENABLE_IDE_INTEGRATION', 'true'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('BLASFEO_MAIN_FOLDER', '/home/sh/../../../blasfeo'), ('ZDOTDIR', '/home/sh'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/sh/projects/f1tenth_miru3/install/f1tenth_slam_nav/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/f1tenth_stack:/home/sh/projects/f1tenth_miru3/install/f1tenth_stack/lib/python3.8/site-packages:/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/sh/projects/f1tenth_miru3/install/joy_teleop/lib/python3.8/site-packages:/home/sh/projects/f1tenth_miru3/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/pygame_key_teleop:/home/sh/projects/f1tenth_miru3/install/pygame_key_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/mouse_teleop:/home/sh/projects/f1tenth_miru3/install/mouse_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/key_teleop:/home/sh/projects/f1tenth_miru3/install/key_teleop/lib/python3.8/site-packages:/home/sh/projects/f1tenth_miru3/install/f1tenth_path_planner/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/home/sh/projects/f1tenth_miru3/install/map_controller:/home/sh/projects/f1tenth_miru3/install/f1tenth_slam_nav:/home/sh/projects/f1tenth_miru3/install/vesc:/home/sh/projects/f1tenth_miru3/install/vesc_driver:/home/sh/projects/f1tenth_miru3/install/vesc_ackermann:/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/home/sh/projects/f1tenth_miru3/install/teleop_tools:/home/sh/projects/f1tenth_miru3/install/teleop_tools_msgs:/home/sh/projects/f1tenth_miru3/install/real_pure_pursuit:/home/sh/projects/f1tenth_miru3/install/pure_pursuit:/home/sh/projects/f1tenth_miru3/install/path_planner:/home/sh/projects/f1tenth_miru3/install/path_follow:/home/sh/projects/f1tenth_miru3/install/lidar_processing:/home/sh/projects/f1tenth_miru3/install/center_follow_cpp:/home/sh/projects/f1tenth_miru3/install/ackermann_mux:/home/sh/projects/f1tenth_miru3/install/f1tenth_stack:/home/sh/projects/f1tenth_miru3/install/joy_teleop:/home/sh/projects/f1tenth_miru3/install/pygame_key_teleop:/home/sh/projects/f1tenth_miru3/install/mouse_teleop:/home/sh/projects/f1tenth_miru3/install/key_teleop:/home/sh/projects/f1tenth_miru3/install/f1tenth_path_planner:/opt/ros/humble')]), 'shell': False}
+[1.055461] (map_controller) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/map_controller_core.dir/src/map_controller.cpp.o\x1b[0m\n'}
+[1.056294] (map_controller) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/map_controller_core.dir/src/steering_lookup.cpp.o\x1b[0m\n'}
+[1.100657] (-) TimerEvent: {}
+[1.200911] (-) TimerEvent: {}
+[1.301363] (-) TimerEvent: {}
+[1.401775] (-) TimerEvent: {}
+[1.502209] (-) TimerEvent: {}
+[1.588775] (map_controller) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX static library libmap_controller_core.a\x1b[0m\n'}
+[1.602453] (-) TimerEvent: {}
+[1.618773] (map_controller) StdoutLine: {'line': b'[ 42%] Built target map_controller_core\n'}
+[1.636961] (map_controller) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/map_controller_component.dir/src/controller_manager_node.cpp.o\x1b[0m\n'}
+[1.702625] (-) TimerEvent: {}
+[1.803338] (-) TimerEvent: {}
+[1.904030] (-) TimerEvent: {}
+[2.004337] (-) TimerEvent: {}
+[2.104638] (-) TimerEvent: {}
+[2.204942] (-) TimerEvent: {}
+[2.305274] (-) TimerEvent: {}
+[2.405596] (-) TimerEvent: {}
+[2.505887] (-) TimerEvent: {}
+[2.606265] (-) TimerEvent: {}
+[2.706552] (-) TimerEvent: {}
+[2.806933] (-) TimerEvent: {}
+[2.907323] (-) TimerEvent: {}
+[3.007591] (-) TimerEvent: {}
+[3.107977] (-) TimerEvent: {}
+[3.208286] (-) TimerEvent: {}
+[3.308658] (-) TimerEvent: {}
+[3.408969] (-) TimerEvent: {}
+[3.509277] (-) TimerEvent: {}
+[3.609659] (-) TimerEvent: {}
+[3.709992] (-) TimerEvent: {}
+[3.810432] (-) TimerEvent: {}
+[3.910780] (-) TimerEvent: {}
+[4.011224] (-) TimerEvent: {}
+[4.111600] (-) TimerEvent: {}
+[4.211926] (-) TimerEvent: {}
+[4.312185] (-) TimerEvent: {}
+[4.412560] (-) TimerEvent: {}
+[4.512991] (-) TimerEvent: {}
+[4.613490] (-) TimerEvent: {}
+[4.713839] (-) TimerEvent: {}
+[4.814197] (-) TimerEvent: {}
+[4.914577] (-) TimerEvent: {}
+[5.014975] (-) TimerEvent: {}
+[5.115345] (-) TimerEvent: {}
+[5.215692] (-) TimerEvent: {}
+[5.316084] (-) TimerEvent: {}
+[5.416518] (-) TimerEvent: {}
+[5.516910] (-) TimerEvent: {}
+[5.617209] (-) TimerEvent: {}
+[5.717543] (-) TimerEvent: {}
+[5.817811] (-) TimerEvent: {}
+[5.918168] (-) TimerEvent: {}
+[6.018519] (-) TimerEvent: {}
+[6.118801] (-) TimerEvent: {}
+[6.219164] (-) TimerEvent: {}
+[6.319488] (-) TimerEvent: {}
+[6.419895] (-) TimerEvent: {}
+[6.520256] (-) TimerEvent: {}
+[6.620608] (-) TimerEvent: {}
+[6.720973] (-) TimerEvent: {}
+[6.821348] (-) TimerEvent: {}
+[6.921735] (-) TimerEvent: {}
+[7.022013] (-) TimerEvent: {}
+[7.122396] (-) TimerEvent: {}
+[7.222743] (-) TimerEvent: {}
+[7.323112] (-) TimerEvent: {}
+[7.423445] (-) TimerEvent: {}
+[7.523822] (-) TimerEvent: {}
+[7.624182] (-) TimerEvent: {}
+[7.724547] (-) TimerEvent: {}
+[7.824914] (-) TimerEvent: {}
+[7.925278] (-) TimerEvent: {}
+[8.025632] (-) TimerEvent: {}
+[8.126017] (-) TimerEvent: {}
+[8.226333] (-) TimerEvent: {}
+[8.326696] (-) TimerEvent: {}
+[8.426972] (-) TimerEvent: {}
+[8.527353] (-) TimerEvent: {}
+[8.627740] (-) TimerEvent: {}
+[8.728110] (-) TimerEvent: {}
+[8.828462] (-) TimerEvent: {}
+[8.928814] (-) TimerEvent: {}
+[9.029078] (-) TimerEvent: {}
+[9.042476] (map_controller) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libmap_controller_component.so\x1b[0m\n'}
+[9.129270] (-) TimerEvent: {}
+[9.229627] (-) TimerEvent: {}
+[9.330014] (-) TimerEvent: {}
+[9.430473] (-) TimerEvent: {}
+[9.471508] (map_controller) StdoutLine: {'line': b'[ 71%] Built target map_controller_component\n'}
+[9.486799] (map_controller) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/map_controller_main.dir/src/map_controller_main.cpp.o\x1b[0m\n'}
+[9.530690] (-) TimerEvent: {}
+[9.631057] (-) TimerEvent: {}
+[9.731511] (-) TimerEvent: {}
+[9.831871] (-) TimerEvent: {}
+[9.932225] (-) TimerEvent: {}
+[10.032576] (-) TimerEvent: {}
+[10.132962] (-) TimerEvent: {}
+[10.233301] (-) TimerEvent: {}
+[10.333661] (-) TimerEvent: {}
+[10.433981] (-) TimerEvent: {}
+[10.534256] (-) TimerEvent: {}
+[10.634617] (-) TimerEvent: {}
+[10.734978] (-) TimerEvent: {}
+[10.835235] (-) TimerEvent: {}
+[10.935570] (-) TimerEvent: {}
+[11.035925] (-) TimerEvent: {}
+[11.136184] (-) TimerEvent: {}
+[11.185930] (map_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable map_controller_main\x1b[0m\n'}
+[11.236373] (-) TimerEvent: {}
+[11.336731] (-) TimerEvent: {}
+[11.381214] (map_controller) StdoutLine: {'line': b'[100%] Built target map_controller_main\n'}
+[11.392829] (map_controller) CommandEnded: {'returncode': 0}
+[11.393389] (map_controller) JobProgress: {'identifier': 'map_controller', 'progress': 'install'}
+[11.401431] (map_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sh/projects/f1tenth_miru3/build/map_controller'], 'cwd': '/home/sh/projects/f1tenth_miru3/build/map_controller', 'env': OrderedDict([('ENV_RUN', 'true'), ('PYTHON_BASIC_REPL', '1'), ('LANGUAGE', 'ko:en'), ('USER', 'sh'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('HPIPM_MAIN_FOLDER', '/home/sh/../..'), ('OCTAVE_PATH', ':/home/sh/../../interfaces/matlab_octave/:/home/sh/../../interfaces/matlab_octave/'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/sh/projects/f1tenth_miru3/install/map_controller/lib:/home/sh/projects/f1tenth_miru3/install/vesc_driver/lib:/home/sh/projects/f1tenth_miru3/install/vesc_ackermann/lib:/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib:/home/sh/projects/f1tenth_miru3/install/teleop_tools_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/sh/../../lib:/home/sh/../../../blasfeo/lib:/home/sh/../../lib:/home/sh/../../../blasfeo/lib'), ('OLDPWD', '/home/sh/projects/f1tenth_miru3'), ('HOME', '/home/sh'), ('LESS', '-R'), ('CHROME_DESKTOP', 'code.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/sh/.nvm/versions/node/v22.19.0/bin'), ('TERM_PROGRAM_VERSION', '1.104.2'), ('ZSH', '/home/sh/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/sh/.nvm/versions/node/v22.19.0/include/node'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1806'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('VISUAL', 'nvim'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/sh/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('NVM_DIR', '/home/sh/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/sh/projects/f1tenth_miru3/install'), ('LOGNAME', 'sh'), ('_', '/usr/bin/colcon'), ('MATLABPATH', ':/home/sh/../../interfaces/matlab_octave/:/home/sh/../../interfaces/matlab_octave/'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '62339'), ('USER_ZDOTDIR', '/home/sh'), ('USERNAME', 'sh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sh/projects/f1tenth_miru3/install/map_controller/bin:/home/sh/.cargo/bin:/home/sh/.cargo/bin:/home/sh/.nvm/versions/node/v22.19.0/bin:/opt/ros/humble/bin:/home/sh/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sh/.fzf/bin:/home/sh/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/sh/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/sh:@/tmp/.ICE-unix/1776,unix/sh:/tmp/.ICE-unix/1776'), ('PAPERSIZE', 'a4'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6f74dcb1_ea95_4c86_9684_5049b31ed166'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/sh/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-fb26c46cbdd98742.txt'), ('PYTHONSTARTUP', '/home/sh/.config/Code/User/workspaceStorage/0936521b55b9e85902e9f83e1588d1ff/ms-python.python/pythonrc.py'), ('VSCODE_INJECTION', '1'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LCGCD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-1309214019.sock'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/sh/projects/f1tenth_miru3/install/map_controller:/home/sh/projects/f1tenth_miru3/install/f1tenth_stack:/home/sh/projects/f1tenth_miru3/install/joy_teleop:/home/sh/projects/f1tenth_miru3/install/pygame_key_teleop:/home/sh/projects/f1tenth_miru3/install/mouse_teleop:/home/sh/projects/f1tenth_miru3/install/key_teleop:/home/sh/projects/f1tenth_miru3/install/f1tenth_path_planner:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/sh/projects/f1tenth_miru3/build/map_controller'), ('ENABLE_IDE_INTEGRATION', 'true'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('BLASFEO_MAIN_FOLDER', '/home/sh/../../../blasfeo'), ('ZDOTDIR', '/home/sh'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/sh/projects/f1tenth_miru3/install/f1tenth_slam_nav/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/f1tenth_stack:/home/sh/projects/f1tenth_miru3/install/f1tenth_stack/lib/python3.8/site-packages:/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/sh/projects/f1tenth_miru3/install/joy_teleop/lib/python3.8/site-packages:/home/sh/projects/f1tenth_miru3/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/pygame_key_teleop:/home/sh/projects/f1tenth_miru3/install/pygame_key_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/mouse_teleop:/home/sh/projects/f1tenth_miru3/install/mouse_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/key_teleop:/home/sh/projects/f1tenth_miru3/install/key_teleop/lib/python3.8/site-packages:/home/sh/projects/f1tenth_miru3/install/f1tenth_path_planner/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/home/sh/projects/f1tenth_miru3/install/map_controller:/home/sh/projects/f1tenth_miru3/install/f1tenth_slam_nav:/home/sh/projects/f1tenth_miru3/install/vesc:/home/sh/projects/f1tenth_miru3/install/vesc_driver:/home/sh/projects/f1tenth_miru3/install/vesc_ackermann:/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/home/sh/projects/f1tenth_miru3/install/teleop_tools:/home/sh/projects/f1tenth_miru3/install/teleop_tools_msgs:/home/sh/projects/f1tenth_miru3/install/real_pure_pursuit:/home/sh/projects/f1tenth_miru3/install/pure_pursuit:/home/sh/projects/f1tenth_miru3/install/path_planner:/home/sh/projects/f1tenth_miru3/install/path_follow:/home/sh/projects/f1tenth_miru3/install/lidar_processing:/home/sh/projects/f1tenth_miru3/install/center_follow_cpp:/home/sh/projects/f1tenth_miru3/install/ackermann_mux:/home/sh/projects/f1tenth_miru3/install/f1tenth_stack:/home/sh/projects/f1tenth_miru3/install/joy_teleop:/home/sh/projects/f1tenth_miru3/install/pygame_key_teleop:/home/sh/projects/f1tenth_miru3/install/mouse_teleop:/home/sh/projects/f1tenth_miru3/install/key_teleop:/home/sh/projects/f1tenth_miru3/install/f1tenth_path_planner:/opt/ros/humble')]), 'shell': False}
+[11.408368] (map_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.408509] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/lib/libmap_controller_core.a\n'}
+[11.408635] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/lib/libmap_controller_component.so\n'}
+[11.415047] (map_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/sh/projects/f1tenth_miru3/install/map_controller/lib/libmap_controller_component.so" to ""\n'}
+[11.415198] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/bin/map_controller_main\n'}
+[11.415273] (map_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/sh/projects/f1tenth_miru3/install/map_controller/bin/map_controller_main" to ""\n'}
+[11.415348] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/include\n'}
+[11.415414] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/include/map_controller\n'}
+[11.415480] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/include/map_controller/map_controller.hpp\n'}
+[11.415573] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/include/map_controller/steering_lookup.hpp\n'}
+[11.415688] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/include/map_controller/controller_manager_node.hpp\n'}
+[11.415751] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/config\n'}
+[11.415813] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/config/map_controller_params.yaml\n'}
+[11.415898] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/launch\n'}
+[11.415974] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/launch/map_controller_launch.py\n'}
+[11.416034] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/resources\n'}
+[11.416125] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/resources/lut\n'}
+[11.416183] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/resources/lut/default_lookup_table.csv\n'}
+[11.416242] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/ament_index/resource_index/package_run_dependencies/map_controller\n'}
+[11.416299] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/ament_index/resource_index/parent_prefix_path/map_controller\n'}
+[11.416356] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/environment/ament_prefix_path.sh\n'}
+[11.416413] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/environment/ament_prefix_path.dsv\n'}
+[11.416469] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/environment/path.sh\n'}
+[11.416527] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/environment/path.dsv\n'}
+[11.416587] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/local_setup.bash\n'}
+[11.416645] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/local_setup.sh\n'}
+[11.416705] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/local_setup.zsh\n'}
+[11.416798] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/local_setup.dsv\n'}
+[11.416865] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/package.dsv\n'}
+[11.416929] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/ament_index/resource_index/packages/map_controller\n'}
+[11.416990] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/ament_index/resource_index/rclcpp_components/map_controller\n'}
+[11.417051] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/cmake/map_controllerConfig.cmake\n'}
+[11.417252] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/cmake/map_controllerConfig-version.cmake\n'}
+[11.417322] (map_controller) StdoutLine: {'line': b'-- Installing: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/package.xml\n'}
+[11.417802] (map_controller) CommandEnded: {'returncode': 0}
+[11.431976] (map_controller) JobEnded: {'identifier': 'map_controller', 'rc': 0}
+[11.432260] (-) EventReactorShutdown: {}

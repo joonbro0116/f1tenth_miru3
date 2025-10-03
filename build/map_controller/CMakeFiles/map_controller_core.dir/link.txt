@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmap_controller_core.a CMakeFiles/map_controller_core.dir/src/map_controller.cpp.o CMakeFiles/map_controller_core.dir/src/steering_lookup.cpp.o
+/usr/bin/ranlib libmap_controller_core.a

@@ -14,6 +14,8 @@ find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+find_package(ament_index_cpp REQUIRED)
 
 add_library(map_controller_core
   src/map_controller.cpp
@@ -26,6 +28,12 @@ target_include_directories(map_controller_core PUBLIC
 )
 
 target_compile_features(map_controller_core PUBLIC cxx_std_17)
+
+ament_target_dependencies(map_controller_core
+  ament_index_cpp
+)
+
+set_target_properties(map_controller_core PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
 add_library(map_controller_component SHARED
   src/controller_manager_node.cpp
@@ -44,6 +52,11 @@ ament_target_dependencies(map_controller_component
   rclcpp
   rclcpp_components
   ackermann_msgs
+  nav_msgs
+  geometry_msgs
+  tf2
+  tf2_ros
+  tf2_geometry_msgs
 )
 
 rclcpp_components_register_nodes(map_controller_component "map_controller::ControllerManagerNode")
