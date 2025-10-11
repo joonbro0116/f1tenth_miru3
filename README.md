@@ -107,5 +107,5 @@ ros2 launch bound_obstacle_detector bound_detector.launch.py
 | Bound Generator | Map → Inner/Outer Bound 생성 | ✅ | 완료 |
 | Centerline Planner | Global Path 주행 | ✅ | 완료 |
 | Obstacle Detector | LiDAR 감지 및 경계 내 물체 판정 | ✅ | 완료 |
-
+| 실제 주행 세팅 | 실제로 주행하는 차량에 탑제 후 세팅 | x | 미완료 |
 ---
