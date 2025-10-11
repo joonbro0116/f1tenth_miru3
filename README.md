@@ -12,6 +12,7 @@
 - [Configuration](#-configuration)
 
 ---
+
 ![Simulation Result][./assets/2d_lidar_od.png]
 ---
 ## 🧠 Overview
