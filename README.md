@@ -9,7 +9,7 @@
 - [Features](#-features)
 - [Project Structure](#-project-structure)
 - [Usage](#-usage)
-- [Configuration](#-configuration)
+- [result](#-result)
 
 ---
 
