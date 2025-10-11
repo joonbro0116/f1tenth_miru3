@@ -1,0 +1,4 @@
+Consolidate compiler generated dependencies of target vesc_driver_node
+Consolidate compiler generated dependencies of target vesc_driver
+[ 20%] Built target vesc_driver_node
+[ 30%] Building CXX object CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o

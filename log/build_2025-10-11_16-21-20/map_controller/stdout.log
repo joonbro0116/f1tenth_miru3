@@ -1,0 +1,34 @@
+Consolidate compiler generated dependencies of target map_controller_core
+[ 60%] Built target map_controller_core
+Consolidate compiler generated dependencies of target map_controller_node
+[100%] Built target map_controller_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/lib/map_controller/libmap_controller_core.a
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/lib/map_controller/map_controller_node
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/include/map_controller/map_controller.hpp
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/include/map_controller/steering_lookup.hpp
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/config/map_controller_params.yaml
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/config/steering_lookup/NUC2_pacejka_lookup_table.csv
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/launch/map_controller_launch.py
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/launch/map_controller_sim_launch.py
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/launch/map_controller_sim_with_odom_bridge.launch.py
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/launch/map_controller_with_bringup.launch.py
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/lib/map_controller/odom_to_amcl_bridge.py
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/lib/map_controller/record_waypoints.py
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/lib/map_controller/ackermann_teleop.py
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/ament_index/resource_index/package_run_dependencies/map_controller
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/ament_index/resource_index/parent_prefix_path/map_controller
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/environment/ament_prefix_path.sh
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/environment/ament_prefix_path.dsv
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/environment/path.sh
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/environment/path.dsv
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/local_setup.bash
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/local_setup.sh
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/local_setup.zsh
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/local_setup.dsv
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/package.dsv
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/ament_index/resource_index/packages/map_controller
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/cmake/map_controllerConfig.cmake
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/cmake/map_controllerConfig-version.cmake
+-- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/package.xml

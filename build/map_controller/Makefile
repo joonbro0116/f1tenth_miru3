@@ -211,37 +211,24 @@ map_controller_core/fast:
 .PHONY : map_controller_core/fast
 
 #=============================================================================
-# Target rules for targets named map_controller_component
+# Target rules for targets named map_controller_node
 
 # Build rule for target.
-map_controller_component: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 map_controller_component
-.PHONY : map_controller_component
+map_controller_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 map_controller_node
+.PHONY : map_controller_node
 
 # fast build rule for target.
-map_controller_component/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_controller_component.dir/build.make CMakeFiles/map_controller_component.dir/build
-.PHONY : map_controller_component/fast
-
-#=============================================================================
-# Target rules for targets named map_controller_main
-
-# Build rule for target.
-map_controller_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 map_controller_main
-.PHONY : map_controller_main
-
-# fast build rule for target.
-map_controller_main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_controller_main.dir/build.make CMakeFiles/map_controller_main.dir/build
-.PHONY : map_controller_main/fast
+map_controller_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_controller_node.dir/build.make CMakeFiles/map_controller_node.dir/build
+.PHONY : map_controller_node/fast
 
 src/controller_manager_node.o: src/controller_manager_node.cpp.o
 .PHONY : src/controller_manager_node.o
 
 # target to build an object file
 src/controller_manager_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_controller_component.dir/build.make CMakeFiles/map_controller_component.dir/src/controller_manager_node.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_controller_node.dir/build.make CMakeFiles/map_controller_node.dir/src/controller_manager_node.cpp.o
 .PHONY : src/controller_manager_node.cpp.o
 
 src/controller_manager_node.i: src/controller_manager_node.cpp.i
@@ -249,7 +236,7 @@ src/controller_manager_node.i: src/controller_manager_node.cpp.i
 
 # target to preprocess a source file
 src/controller_manager_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_controller_component.dir/build.make CMakeFiles/map_controller_component.dir/src/controller_manager_node.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_controller_node.dir/build.make CMakeFiles/map_controller_node.dir/src/controller_manager_node.cpp.i
 .PHONY : src/controller_manager_node.cpp.i
 
 src/controller_manager_node.s: src/controller_manager_node.cpp.s
@@ -257,7 +244,7 @@ src/controller_manager_node.s: src/controller_manager_node.cpp.s
 
 # target to generate assembly for a file
 src/controller_manager_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_controller_component.dir/build.make CMakeFiles/map_controller_component.dir/src/controller_manager_node.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_controller_node.dir/build.make CMakeFiles/map_controller_node.dir/src/controller_manager_node.cpp.s
 .PHONY : src/controller_manager_node.cpp.s
 
 src/map_controller.o: src/map_controller.cpp.o
@@ -283,30 +270,6 @@ src/map_controller.s: src/map_controller.cpp.s
 src/map_controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_controller_core.dir/build.make CMakeFiles/map_controller_core.dir/src/map_controller.cpp.s
 .PHONY : src/map_controller.cpp.s
-
-src/map_controller_main.o: src/map_controller_main.cpp.o
-.PHONY : src/map_controller_main.o
-
-# target to build an object file
-src/map_controller_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_controller_main.dir/build.make CMakeFiles/map_controller_main.dir/src/map_controller_main.cpp.o
-.PHONY : src/map_controller_main.cpp.o
-
-src/map_controller_main.i: src/map_controller_main.cpp.i
-.PHONY : src/map_controller_main.i
-
-# target to preprocess a source file
-src/map_controller_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_controller_main.dir/build.make CMakeFiles/map_controller_main.dir/src/map_controller_main.cpp.i
-.PHONY : src/map_controller_main.cpp.i
-
-src/map_controller_main.s: src/map_controller_main.cpp.s
-.PHONY : src/map_controller_main.s
-
-# target to generate assembly for a file
-src/map_controller_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_controller_main.dir/build.make CMakeFiles/map_controller_main.dir/src/map_controller_main.cpp.s
-.PHONY : src/map_controller_main.cpp.s
 
 src/steering_lookup.o: src/steering_lookup.cpp.o
 .PHONY : src/steering_lookup.o
@@ -347,18 +310,14 @@ help:
 	@echo "... test"
 	@echo "... map_controller_uninstall"
 	@echo "... uninstall"
-	@echo "... map_controller_component"
 	@echo "... map_controller_core"
-	@echo "... map_controller_main"
+	@echo "... map_controller_node"
 	@echo "... src/controller_manager_node.o"
 	@echo "... src/controller_manager_node.i"
 	@echo "... src/controller_manager_node.s"
 	@echo "... src/map_controller.o"
 	@echo "... src/map_controller.i"
 	@echo "... src/map_controller.s"
-	@echo "... src/map_controller_main.o"
-	@echo "... src/map_controller_main.i"
-	@echo "... src/map_controller_main.s"
 	@echo "... src/steering_lookup.o"
 	@echo "... src/steering_lookup.i"
 	@echo "... src/steering_lookup.s"

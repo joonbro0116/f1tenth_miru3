@@ -1,5 +1,0 @@
-[0.441s] Invoking command in '/home/f1/f1tenth_ws/build/vesc_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/f1/f1tenth_ws/build/vesc_msgs -- -j6 -l6
-[2.849s] make[1]: *** [CMakeFiles/Makefile2:390: CMakeFiles/vesc_msgs__cpp.dir/all] Interrupt
-[2.858s] make[2]: *** [CMakeFiles/vesc_msgs__rosidl_generator_c.dir/build.make:320: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend] Interrupt
-[2.861s] make[1]: *** [CMakeFiles/Makefile2:471: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/all] Interrupt
-[2.863s] make: *** [Makefile:141: all] Interrupt

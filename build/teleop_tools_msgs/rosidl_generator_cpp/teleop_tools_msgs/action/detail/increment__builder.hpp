@@ -5,10 +5,11 @@
 #ifndef TELEOP_TOOLS_MSGS__ACTION__DETAIL__INCREMENT__BUILDER_HPP_
 #define TELEOP_TOOLS_MSGS__ACTION__DETAIL__INCREMENT__BUILDER_HPP_
 
-#include "teleop_tools_msgs/action/detail/increment__struct.hpp"
-#include <rosidl_runtime_cpp/message_initialization.hpp>
 #include <algorithm>
 #include <utility>
+
+#include "teleop_tools_msgs/action/detail/increment__struct.hpp"
+#include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
 namespace teleop_tools_msgs

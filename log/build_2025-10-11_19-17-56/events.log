@@ -1,0 +1,347 @@
+[0.000000] (-) TimerEvent: {}
+[0.000215] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.000251] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.000264] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.000273] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.000282] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.000291] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.000299] (-) JobUnselected: {'identifier': 'map_controller'}
+[0.000307] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.000315] (-) JobUnselected: {'identifier': 'path_follow'}
+[0.000322] (-) JobUnselected: {'identifier': 'pure_pursuit'}
+[0.000330] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.000339] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.000349] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.000357] (-) JobUnselected: {'identifier': 'vesc'}
+[0.000366] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.000373] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.000381] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.000391] (forza_map_controller) JobQueued: {'identifier': 'forza_map_controller', 'dependencies': OrderedDict()}
+[0.000629] (forza_map_controller) JobStarted: {'identifier': 'forza_map_controller'}
+[0.099746] (-) TimerEvent: {}
+[0.200025] (-) TimerEvent: {}
+[0.300302] (-) TimerEvent: {}
+[0.400460] (-) TimerEvent: {}
+[0.500623] (-) TimerEvent: {}
+[0.600834] (-) TimerEvent: {}
+[0.701026] (-) TimerEvent: {}
+[0.801184] (-) TimerEvent: {}
+[0.901385] (-) TimerEvent: {}
+[1.001544] (-) TimerEvent: {}
+[1.101823] (-) TimerEvent: {}
+[1.202186] (-) TimerEvent: {}
+[1.302393] (-) TimerEvent: {}
+[1.402553] (-) TimerEvent: {}
+[1.502845] (-) TimerEvent: {}
+[1.603054] (-) TimerEvent: {}
+[1.703210] (-) TimerEvent: {}
+[1.803392] (-) TimerEvent: {}
+[1.903586] (-) TimerEvent: {}
+[2.003742] (-) TimerEvent: {}
+[2.103844] (-) TimerEvent: {}
+[2.203996] (-) TimerEvent: {}
+[2.304167] (-) TimerEvent: {}
+[2.404347] (-) TimerEvent: {}
+[2.504494] (-) TimerEvent: {}
+[2.604739] (-) TimerEvent: {}
+[2.704996] (-) TimerEvent: {}
+[2.805393] (-) TimerEvent: {}
+[2.905550] (-) TimerEvent: {}
+[3.005746] (-) TimerEvent: {}
+[3.106023] (-) TimerEvent: {}
+[3.206204] (-) TimerEvent: {}
+[3.306378] (-) TimerEvent: {}
+[3.406558] (-) TimerEvent: {}
+[3.506850] (-) TimerEvent: {}
+[3.607050] (-) TimerEvent: {}
+[3.707231] (-) TimerEvent: {}
+[3.807406] (-) TimerEvent: {}
+[3.907598] (-) TimerEvent: {}
+[4.007875] (-) TimerEvent: {}
+[4.108062] (-) TimerEvent: {}
+[4.208380] (-) TimerEvent: {}
+[4.308714] (-) TimerEvent: {}
+[4.409065] (-) TimerEvent: {}
+[4.509256] (-) TimerEvent: {}
+[4.609405] (-) TimerEvent: {}
+[4.709792] (-) TimerEvent: {}
+[4.809979] (-) TimerEvent: {}
+[4.910164] (-) TimerEvent: {}
+[5.010323] (-) TimerEvent: {}
+[5.110589] (-) TimerEvent: {}
+[5.210771] (-) TimerEvent: {}
+[5.311065] (-) TimerEvent: {}
+[5.411240] (-) TimerEvent: {}
+[5.511571] (-) TimerEvent: {}
+[5.611755] (-) TimerEvent: {}
+[5.711961] (-) TimerEvent: {}
+[5.812178] (-) TimerEvent: {}
+[5.912346] (-) TimerEvent: {}
+[6.012590] (-) TimerEvent: {}
+[6.112767] (-) TimerEvent: {}
+[6.213046] (-) TimerEvent: {}
+[6.313254] (-) TimerEvent: {}
+[6.413412] (-) TimerEvent: {}
+[6.513702] (-) TimerEvent: {}
+[6.613885] (-) TimerEvent: {}
+[6.714156] (-) TimerEvent: {}
+[6.814375] (-) TimerEvent: {}
+[6.914535] (-) TimerEvent: {}
+[7.014701] (-) TimerEvent: {}
+[7.114868] (-) TimerEvent: {}
+[7.215037] (-) TimerEvent: {}
+[7.315204] (-) TimerEvent: {}
+[7.415366] (-) TimerEvent: {}
+[7.515506] (-) TimerEvent: {}
+[7.615669] (-) TimerEvent: {}
+[7.715829] (-) TimerEvent: {}
+[7.816035] (-) TimerEvent: {}
+[7.916305] (-) TimerEvent: {}
+[8.016494] (-) TimerEvent: {}
+[8.116764] (-) TimerEvent: {}
+[8.216960] (-) TimerEvent: {}
+[8.317324] (-) TimerEvent: {}
+[8.417493] (-) TimerEvent: {}
+[8.517672] (-) TimerEvent: {}
+[8.617942] (-) TimerEvent: {}
+[8.718314] (-) TimerEvent: {}
+[8.818485] (-) TimerEvent: {}
+[8.918645] (-) TimerEvent: {}
+[9.018832] (-) TimerEvent: {}
+[9.119022] (-) TimerEvent: {}
+[9.219208] (-) TimerEvent: {}
+[9.319386] (-) TimerEvent: {}
+[9.419551] (-) TimerEvent: {}
+[9.519813] (-) TimerEvent: {}
+[9.620094] (-) TimerEvent: {}
+[9.720278] (-) TimerEvent: {}
+[9.820431] (-) TimerEvent: {}
+[9.920697] (-) TimerEvent: {}
+[10.020868] (-) TimerEvent: {}
+[10.121095] (-) TimerEvent: {}
+[10.221284] (-) TimerEvent: {}
+[10.321437] (-) TimerEvent: {}
+[10.421627] (-) TimerEvent: {}
+[10.521892] (-) TimerEvent: {}
+[10.622078] (-) TimerEvent: {}
+[10.722290] (-) TimerEvent: {}
+[10.822468] (-) TimerEvent: {}
+[10.922684] (-) TimerEvent: {}
+[11.022880] (-) TimerEvent: {}
+[11.123082] (-) TimerEvent: {}
+[11.223281] (-) TimerEvent: {}
+[11.323480] (-) TimerEvent: {}
+[11.423675] (-) TimerEvent: {}
+[11.523910] (-) TimerEvent: {}
+[11.624106] (-) TimerEvent: {}
+[11.724332] (-) TimerEvent: {}
+[11.824530] (-) TimerEvent: {}
+[11.924717] (-) TimerEvent: {}
+[12.024915] (-) TimerEvent: {}
+[12.125139] (-) TimerEvent: {}
+[12.225356] (-) TimerEvent: {}
+[12.325531] (-) TimerEvent: {}
+[12.425746] (-) TimerEvent: {}
+[12.525963] (-) TimerEvent: {}
+[12.626137] (-) TimerEvent: {}
+[12.726458] (-) TimerEvent: {}
+[12.826691] (-) TimerEvent: {}
+[12.926872] (-) TimerEvent: {}
+[13.027127] (-) TimerEvent: {}
+[13.127345] (-) TimerEvent: {}
+[13.227521] (-) TimerEvent: {}
+[13.327800] (-) TimerEvent: {}
+[13.428013] (-) TimerEvent: {}
+[13.528305] (-) TimerEvent: {}
+[13.628602] (-) TimerEvent: {}
+[13.728788] (-) TimerEvent: {}
+[13.829035] (-) TimerEvent: {}
+[13.929242] (-) TimerEvent: {}
+[14.029394] (-) TimerEvent: {}
+[14.129557] (-) TimerEvent: {}
+[14.229795] (-) TimerEvent: {}
+[14.329982] (-) TimerEvent: {}
+[14.430181] (-) TimerEvent: {}
+[14.530451] (-) TimerEvent: {}
+[14.630728] (-) TimerEvent: {}
+[14.730921] (-) TimerEvent: {}
+[14.831255] (-) TimerEvent: {}
+[14.931437] (-) TimerEvent: {}
+[15.031619] (-) TimerEvent: {}
+[15.131803] (-) TimerEvent: {}
+[15.232002] (-) TimerEvent: {}
+[15.332309] (-) TimerEvent: {}
+[15.432519] (-) TimerEvent: {}
+[15.532690] (-) TimerEvent: {}
+[15.632870] (-) TimerEvent: {}
+[15.733073] (-) TimerEvent: {}
+[15.833258] (-) TimerEvent: {}
+[15.933475] (-) TimerEvent: {}
+[16.033793] (-) TimerEvent: {}
+[16.134030] (-) TimerEvent: {}
+[16.234230] (-) TimerEvent: {}
+[16.334421] (-) TimerEvent: {}
+[16.434602] (-) TimerEvent: {}
+[16.534835] (-) TimerEvent: {}
+[16.635098] (-) TimerEvent: {}
+[16.735382] (-) TimerEvent: {}
+[16.835593] (-) TimerEvent: {}
+[16.935784] (-) TimerEvent: {}
+[17.036039] (-) TimerEvent: {}
+[17.136253] (-) TimerEvent: {}
+[17.236445] (-) TimerEvent: {}
+[17.336648] (-) TimerEvent: {}
+[17.436840] (-) TimerEvent: {}
+[17.537115] (-) TimerEvent: {}
+[17.637242] (-) TimerEvent: {}
+[17.737396] (-) TimerEvent: {}
+[17.837678] (-) TimerEvent: {}
+[17.937856] (-) TimerEvent: {}
+[18.038150] (-) TimerEvent: {}
+[18.138327] (-) TimerEvent: {}
+[18.238511] (-) TimerEvent: {}
+[18.338706] (-) TimerEvent: {}
+[18.438869] (-) TimerEvent: {}
+[18.539123] (-) TimerEvent: {}
+[18.639410] (-) TimerEvent: {}
+[18.739577] (-) TimerEvent: {}
+[18.839784] (-) TimerEvent: {}
+[18.940097] (-) TimerEvent: {}
+[19.040407] (-) TimerEvent: {}
+[19.140684] (-) TimerEvent: {}
+[19.241029] (-) TimerEvent: {}
+[19.341383] (-) TimerEvent: {}
+[19.441564] (-) TimerEvent: {}
+[19.541855] (-) TimerEvent: {}
+[19.642041] (-) TimerEvent: {}
+[19.742223] (-) TimerEvent: {}
+[19.842375] (-) TimerEvent: {}
+[19.942541] (-) TimerEvent: {}
+[20.042739] (-) TimerEvent: {}
+[20.143009] (-) TimerEvent: {}
+[20.243276] (-) TimerEvent: {}
+[20.343440] (-) TimerEvent: {}
+[20.443607] (-) TimerEvent: {}
+[20.543854] (-) TimerEvent: {}
+[20.644125] (-) TimerEvent: {}
+[20.744438] (-) TimerEvent: {}
+[20.844709] (-) TimerEvent: {}
+[20.944946] (-) TimerEvent: {}
+[21.045275] (-) TimerEvent: {}
+[21.145546] (-) TimerEvent: {}
+[21.245829] (-) TimerEvent: {}
+[21.346042] (-) TimerEvent: {}
+[21.446338] (-) TimerEvent: {}
+[21.546540] (-) TimerEvent: {}
+[21.646758] (-) TimerEvent: {}
+[21.746942] (-) TimerEvent: {}
+[21.847168] (-) TimerEvent: {}
+[21.947394] (-) TimerEvent: {}
+[22.047647] (-) TimerEvent: {}
+[22.147866] (-) TimerEvent: {}
+[22.248079] (-) TimerEvent: {}
+[22.348249] (-) TimerEvent: {}
+[22.448427] (-) TimerEvent: {}
+[22.548610] (-) TimerEvent: {}
+[22.648828] (-) TimerEvent: {}
+[22.749064] (-) TimerEvent: {}
+[22.849312] (-) TimerEvent: {}
+[22.949531] (-) TimerEvent: {}
+[23.049854] (-) TimerEvent: {}
+[23.150023] (-) TimerEvent: {}
+[23.250215] (-) TimerEvent: {}
+[23.350394] (-) TimerEvent: {}
+[23.450596] (-) TimerEvent: {}
+[23.550771] (-) TimerEvent: {}
+[23.650979] (-) TimerEvent: {}
+[23.751181] (-) TimerEvent: {}
+[23.851434] (-) TimerEvent: {}
+[23.951647] (-) TimerEvent: {}
+[24.051834] (-) TimerEvent: {}
+[24.152042] (-) TimerEvent: {}
+[24.252240] (-) TimerEvent: {}
+[24.352631] (-) TimerEvent: {}
+[24.452801] (-) TimerEvent: {}
+[24.553049] (-) TimerEvent: {}
+[24.653348] (-) TimerEvent: {}
+[24.753525] (-) TimerEvent: {}
+[24.853742] (-) TimerEvent: {}
+[24.954015] (-) TimerEvent: {}
+[25.054237] (-) TimerEvent: {}
+[25.154427] (-) TimerEvent: {}
+[25.254618] (-) TimerEvent: {}
+[25.354809] (-) TimerEvent: {}
+[25.454983] (-) TimerEvent: {}
+[25.555181] (-) TimerEvent: {}
+[25.655381] (-) TimerEvent: {}
+[25.755560] (-) TimerEvent: {}
+[25.855731] (-) TimerEvent: {}
+[25.956008] (-) TimerEvent: {}
+[26.056292] (-) TimerEvent: {}
+[26.156458] (-) TimerEvent: {}
+[26.256609] (-) TimerEvent: {}
+[26.356773] (-) TimerEvent: {}
+[26.456968] (-) TimerEvent: {}
+[26.557164] (-) TimerEvent: {}
+[26.657341] (-) TimerEvent: {}
+[26.757504] (-) TimerEvent: {}
+[26.857698] (-) TimerEvent: {}
+[26.957899] (-) TimerEvent: {}
+[27.058109] (-) TimerEvent: {}
+[27.158243] (-) TimerEvent: {}
+[27.258457] (-) TimerEvent: {}
+[27.358712] (-) TimerEvent: {}
+[27.458976] (-) TimerEvent: {}
+[27.559241] (-) TimerEvent: {}
+[27.659406] (-) TimerEvent: {}
+[27.759678] (-) TimerEvent: {}
+[27.859842] (-) TimerEvent: {}
+[27.960027] (-) TimerEvent: {}
+[28.060181] (-) TimerEvent: {}
+[28.160345] (-) TimerEvent: {}
+[28.260566] (-) TimerEvent: {}
+[28.360885] (-) TimerEvent: {}
+[28.461086] (-) TimerEvent: {}
+[28.561358] (-) TimerEvent: {}
+[28.661534] (-) TimerEvent: {}
+[28.761717] (-) TimerEvent: {}
+[28.861893] (-) TimerEvent: {}
+[28.962067] (-) TimerEvent: {}
+[29.062295] (-) TimerEvent: {}
+[29.162471] (-) TimerEvent: {}
+[29.262653] (-) TimerEvent: {}
+[29.362866] (-) TimerEvent: {}
+[29.463048] (-) TimerEvent: {}
+[29.563314] (-) TimerEvent: {}
+[29.663534] (-) TimerEvent: {}
+[29.763743] (-) TimerEvent: {}
+[29.863932] (-) TimerEvent: {}
+[29.964115] (-) TimerEvent: {}
+[30.064256] (-) TimerEvent: {}
+[30.164439] (-) TimerEvent: {}
+[30.264632] (-) TimerEvent: {}
+[30.364816] (-) TimerEvent: {}
+[30.465045] (-) TimerEvent: {}
+[30.484630] (forza_map_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/sh/projects/f1tenth_miru3/build/forza_map_controller/build', '--no-deps', 'symlink_data'], 'cwd': '/home/sh/projects/f1tenth_miru3/build/forza_map_controller', 'env': {'ENV_RUN': 'true', 'VSCODE_CWD': '/home/sh', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'LANGUAGE': 'ko:en', 'USER': 'sh', 'LC_TIME': 'ko_KR.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"ko","osLocale":"ko","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"ko","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'HPIPM_MAIN_FOLDER': '/home/sh/../..', 'OCTAVE_PATH': ':/home/sh/../../interfaces/matlab_octave/', 'SHLVL': '1', 'LESS': '-R', 'HOME': '/home/sh', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/sh', 'DESKTOP_SESSION': 'ubuntu-xorg', 'NVM_BIN': '/home/sh/.nvm/versions/node/v22.19.0/bin', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'NVM_INC': '/home/sh/.nvm/versions/node/v22.19.0/include/node', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-d2ec76d4-1.10-main.sock', 'ZSH': '/home/sh/.oh-my-zsh', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'less', 'LC_MONETARY': 'ko_KR.UTF-8', 'SYSTEMD_EXEC_PID': '2546', 'VISUAL': 'nvim', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'NVM_DIR': '/home/sh/.nvm', '_colcon_cd_root': '/opt/ros/humble/', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'sh', 'MATLABPATH': ':/home/sh/../../interfaces/matlab_octave/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'sh', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/sh/.cargo/bin:/tmp/.tmpmqsxZ2:/home/sh/.cargo/bin:/home/sh/.nvm/versions/node/v22.19.0/bin:/opt/ros/humble/bin:/home/sh/.cargo/bin:/home/sh/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sh/.fzf/bin:/home/sh/.vscode/extensions/openai.chatgpt-0.4.19-linux-x64/bin/linux-x86_64', 'SESSION_MANAGER': 'local/sh:@/tmp/.ICE-unix/2519,unix/sh:/tmp/.ICE-unix/2519', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/7cd9fc1b_632d_4a78_a70b_2329e953976f', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'ko_KR.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.108', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/usr/bin/zsh', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu-xorg', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sh/projects/f1tenth_miru3/build/forza_map_controller', 'VSCODE_CLI': '1', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/sh/.config/Code/CachedData/e3a5acfb517a443235981655413d566533107e92', 'NVM_CD_FLAGS': '-q', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'BLASFEO_MAIN_FOLDER': '/home/sh/../../../blasfeo', 'PYTHONPATH': '/home/sh/projects/f1tenth_miru3/build/forza_map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'ELECTRON_NO_ATTACH_CONSOLE': '1', 'EDITOR': 'nvim', 'VSCODE_PID': '25095'}, 'shell': False}
+[30.565147] (-) TimerEvent: {}
+[30.665464] (-) TimerEvent: {}
+[30.697025] (forza_map_controller) StdoutLine: {'line': b'running develop\n'}
+[30.765598] (-) TimerEvent: {}
+[30.829752] (forza_map_controller) StdoutLine: {'line': b'running egg_info\n'}
+[30.830221] (forza_map_controller) StdoutLine: {'line': b'writing forza_map_controller.egg-info/PKG-INFO\n'}
+[30.830379] (forza_map_controller) StdoutLine: {'line': b'writing dependency_links to forza_map_controller.egg-info/dependency_links.txt\n'}
+[30.830480] (forza_map_controller) StdoutLine: {'line': b'writing entry points to forza_map_controller.egg-info/entry_points.txt\n'}
+[30.830571] (forza_map_controller) StdoutLine: {'line': b'writing requirements to forza_map_controller.egg-info/requires.txt\n'}
+[30.830661] (forza_map_controller) StdoutLine: {'line': b'writing top-level names to forza_map_controller.egg-info/top_level.txt\n'}
+[30.831945] (forza_map_controller) StdoutLine: {'line': b"reading manifest file 'forza_map_controller.egg-info/SOURCES.txt'\n"}
+[30.832666] (forza_map_controller) StdoutLine: {'line': b"writing manifest file 'forza_map_controller.egg-info/SOURCES.txt'\n"}
+[30.833971] (forza_map_controller) StdoutLine: {'line': b'running build_ext\n'}
+[30.834082] (forza_map_controller) StdoutLine: {'line': b'Creating /home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/python3.10/site-packages/forza-map-controller.egg-link (link to .)\n'}
+[30.834786] (forza_map_controller) StdoutLine: {'line': b'Installing controller_manager script to /home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/forza_map_controller\n'}
+[30.835070] (forza_map_controller) StdoutLine: {'line': b'\n'}
+[30.835177] (forza_map_controller) StdoutLine: {'line': b'Installed /home/sh/projects/f1tenth_miru3/build/forza_map_controller\n'}
+[30.835284] (forza_map_controller) StdoutLine: {'line': b'running symlink_data\n'}
+[30.863381] (forza_map_controller) CommandEnded: {'returncode': 0}
+[30.865789] (-) TimerEvent: {}
+[30.873813] (forza_map_controller) JobEnded: {'identifier': 'forza_map_controller', 'rc': 0}
+[30.874466] (-) EventReactorShutdown: {}

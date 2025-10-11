@@ -26,7 +26,7 @@ extern "C"
 // Member 'orientation'
 #include "geometry_msgs/msg/detail/quaternion__struct.h"
 
-// Struct defined in msg/VescImu in the package vesc_msgs.
+/// Struct defined in msg/VescImu in the package vesc_msgs.
 typedef struct vesc_msgs__msg__VescImu
 {
   geometry_msgs__msg__Vector3 ypr;

@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/teleop_tools_msgs/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/teleop_tools_msgs/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/teleop_tools_msgs/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/teleop_tools_msgs/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/teleop_tools_msgs/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/teleop_tools_msgs/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/f1/f1tenth_ws/install/teleop_tools_msgs/${destination}")
+      set(destination "/home/sh/projects/f1tenth_miru3/install/teleop_tools_msgs/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,128 +310,119 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
-# install(DIRECTORY "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_generator_c/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" DIRECTORY "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_generator_c/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs" "PATTERN" "*.h")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_generator_c/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs/teleop_tools_msgs" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_generator_c/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs/teleop_tools_msgs" "PATTERN" "*.h")
 
-# install(FILES "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
+# install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
 
-# install(DIRECTORY "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_typesupport_fastrtps_c/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" DIRECTORY "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_typesupport_fastrtps_c/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_typesupport_fastrtps_c/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs/teleop_tools_msgs" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_typesupport_fastrtps_c/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs/teleop_tools_msgs" "PATTERN_EXCLUDE" "*.cpp")
 
-# install("TARGETS" "teleop_tools_msgs__rosidl_typesupport_fastrtps_c" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
-include("/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_typesupport_introspection_c/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs/teleop_tools_msgs" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_typesupport_introspection_c/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs/teleop_tools_msgs" "PATTERN" "*.h")
 
-# install(DIRECTORY "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_typesupport_fastrtps_cpp/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" DIRECTORY "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_typesupport_fastrtps_cpp/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_generator_cpp/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs/teleop_tools_msgs" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_generator_cpp/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs/teleop_tools_msgs" "PATTERN" "*.hpp")
 
-# install("TARGETS" "teleop_tools_msgs__rosidl_typesupport_fastrtps_cpp" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
-include("/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_typesupport_fastrtps_cpp/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs/teleop_tools_msgs" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_typesupport_fastrtps_cpp/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs/teleop_tools_msgs" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_typesupport_introspection_c/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" DIRECTORY "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_typesupport_introspection_c/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs" "PATTERN" "*.h")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_typesupport_introspection_cpp/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs/teleop_tools_msgs" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_typesupport_introspection_cpp/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs/teleop_tools_msgs" "PATTERN" "*.hpp")
 
-# install(DIRECTORY "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_generator_cpp/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" DIRECTORY "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_generator_cpp/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs" "PATTERN" "*.hpp")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
 
-# install(DIRECTORY "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_typesupport_introspection_cpp/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" DIRECTORY "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_typesupport_introspection_cpp/teleop_tools_msgs/" "DESTINATION" "include/teleop_tools_msgs" "PATTERN" "*.hpp")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_python/teleop_tools_msgs/teleop_tools_msgs.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/teleop_tools_msgs-1.2.1-py3.10.egg-info")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_python/teleop_tools_msgs/teleop_tools_msgs.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/teleop_tools_msgs-1.2.1-py3.10.egg-info")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_generator_py/teleop_tools_msgs/" "DESTINATION" "local/lib/python3.10/dist-packages/teleop_tools_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_generator_py/teleop_tools_msgs/" "DESTINATION" "local/lib/python3.10/dist-packages/teleop_tools_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_generator_py/teleop_tools_msgs/__init__.py" "DESTINATION" "lib/python3.8/site-packages/teleop_tools_msgs")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_generator_py/teleop_tools_msgs/__init__.py" "DESTINATION" "lib/python3.8/site-packages/teleop_tools_msgs")
+# install("TARGETS" "teleop_tools_msgs__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/teleop_tools_msgs")
+include("/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(DIRECTORY "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_generator_py/teleop_tools_msgs/action/" "DESTINATION" "lib/python3.8/site-packages/teleop_tools_msgs/action" "PATTERN" "*.py")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" DIRECTORY "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_generator_py/teleop_tools_msgs/action/" "DESTINATION" "lib/python3.8/site-packages/teleop_tools_msgs/action" "PATTERN" "*.py")
+# install("TARGETS" "teleop_tools_msgs__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/teleop_tools_msgs")
+include("/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "teleop_tools_msgs__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "lib/python3.8/site-packages/teleop_tools_msgs")
-include("/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install("TARGETS" "teleop_tools_msgs__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/teleop_tools_msgs")
+include("/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "teleop_tools_msgs__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "lib/python3.8/site-packages/teleop_tools_msgs")
-include("/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_adapter/teleop_tools_msgs/action/Increment.idl" "DESTINATION" "share/teleop_tools_msgs/action")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_adapter/teleop_tools_msgs/action/Increment.idl" "DESTINATION" "share/teleop_tools_msgs/action")
 
-# install("TARGETS" "teleop_tools_msgs__rosidl_typesupport_c__pyext" "DESTINATION" "lib/python3.8/site-packages/teleop_tools_msgs")
-include("/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_symlink_install_targets_4_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs/action/Increment.action" "DESTINATION" "share/teleop_tools_msgs/action")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs/action/Increment.action" "DESTINATION" "share/teleop_tools_msgs/action")
 
-# install("TARGETS" "teleop_tools_msgs__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
-include("/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_symlink_install_targets_5_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_adapter/teleop_tools_msgs/action/Increment.idl" "DESTINATION" "share/teleop_tools_msgs/action")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_adapter/teleop_tools_msgs/action/Increment.idl" "DESTINATION" "share/teleop_tools_msgs/action")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs/action/Increment.action" "DESTINATION" "share/teleop_tools_msgs/action")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs/action/Increment.action" "DESTINATION" "share/teleop_tools_msgs/action")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
 
-# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/teleop_tools_msgs")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/teleop_tools_msgs")
 
-# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/teleop_tools_msgs/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/teleop_tools_msgs")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/teleop_tools_msgs")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/teleop_tools_msgs/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/teleop_tools_msgs")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/teleop_tools_msgs")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/teleop_tools_msgs")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/teleop_tools_msgs")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/teleop_tools_msgs")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/teleop_tools_msgs")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/teleop_tools_msgs")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/teleop_tools_msgs")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/teleop_tools_msgs")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/teleop_tools_msgs")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/teleop_tools_msgs")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/teleop_tools_msgs")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/packages/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/packages/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/teleop_tools_msgs")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/teleop_tools_msgs")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/teleop_tools_msgs")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/teleop_tools_msgs")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/packages/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_index/share/ament_index/resource_index/packages/teleop_tools_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_core/teleop_tools_msgsConfig.cmake" "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_core/teleop_tools_msgsConfig-version.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_core/teleop_tools_msgsConfig.cmake" "/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_core/teleop_tools_msgsConfig-version.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
-
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
-
-# install(FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_core/teleop_tools_msgsConfig.cmake" "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_core/teleop_tools_msgsConfig-version.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_core/teleop_tools_msgsConfig.cmake" "/home/f1/f1tenth_ws/build/teleop_tools_msgs/ament_cmake_core/teleop_tools_msgsConfig-version.cmake" "DESTINATION" "share/teleop_tools_msgs/cmake")
-
-# install(FILES "/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs/package.xml" "DESTINATION" "share/teleop_tools_msgs")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs/package.xml" "DESTINATION" "share/teleop_tools_msgs")
+# install(FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs/package.xml" "DESTINATION" "share/teleop_tools_msgs")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs" FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools_msgs/package.xml" "DESTINATION" "share/teleop_tools_msgs")

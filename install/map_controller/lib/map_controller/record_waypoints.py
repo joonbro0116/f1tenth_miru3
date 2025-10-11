@@ -1,0 +1,1 @@
+/home/sh/projects/f1tenth_miru3/src/map_controller/scripts/record_waypoints.py

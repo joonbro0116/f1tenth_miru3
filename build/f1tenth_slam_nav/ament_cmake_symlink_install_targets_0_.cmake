@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/slam_nav_manager" "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/high_frequency_localizer_node" "TARGETS" "slam_nav_manager" "high_frequency_localizer_node" "DESTINATION" "lib/f1tenth_slam_nav")

@@ -5,13 +5,14 @@
 #ifndef VESC_MSGS__MSG__DETAIL__VESC_STATE__STRUCT_HPP_
 #define VESC_MSGS__MSG__DETAIL__VESC_STATE__STRUCT_HPP_
 
-#include <rosidl_runtime_cpp/bounded_vector.hpp>
-#include <rosidl_runtime_cpp/message_initialization.hpp>
 #include <algorithm>
 #include <array>
 #include <memory>
 #include <string>
 #include <vector>
+
+#include "rosidl_runtime_cpp/bounded_vector.hpp"
+#include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
 #ifndef _WIN32
@@ -444,20 +445,41 @@ using VescState =
   vesc_msgs::msg::VescState_<std::allocator<void>>;
 
 // constant definitions
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
 constexpr int32_t VescState_<ContainerAllocator>::FAULT_CODE_NONE;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
 constexpr int32_t VescState_<ContainerAllocator>::FAULT_CODE_OVER_VOLTAGE;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
 constexpr int32_t VescState_<ContainerAllocator>::FAULT_CODE_UNDER_VOLTAGE;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
 constexpr int32_t VescState_<ContainerAllocator>::FAULT_CODE_DRV8302;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
 constexpr int32_t VescState_<ContainerAllocator>::FAULT_CODE_ABS_OVER_CURRENT;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
 constexpr int32_t VescState_<ContainerAllocator>::FAULT_CODE_OVER_TEMP_FET;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
 constexpr int32_t VescState_<ContainerAllocator>::FAULT_CODE_OVER_TEMP_MOTOR;
+#endif  // __cplusplus < 201703L
 
 }  // namespace msg
 

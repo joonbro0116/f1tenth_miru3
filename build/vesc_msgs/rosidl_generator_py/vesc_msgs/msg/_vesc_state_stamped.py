@@ -5,6 +5,8 @@
 
 # Import statements for member types
 
+import builtins  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -124,7 +126,7 @@ class VescStateStamped(metaclass=Metaclass_VescStateStamped):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @property
+    @builtins.property
     def header(self):
         """Message field 'header'."""
         return self._header
@@ -138,7 +140,7 @@ class VescStateStamped(metaclass=Metaclass_VescStateStamped):
                 "The 'header' field must be a sub message of type 'Header'"
         self._header = value
 
-    @property
+    @builtins.property
     def state(self):
         """Message field 'state'."""
         return self._state

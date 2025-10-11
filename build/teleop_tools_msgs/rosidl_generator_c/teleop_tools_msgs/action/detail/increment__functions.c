@@ -216,22 +216,27 @@ teleop_tools_msgs__action__Increment_Goal__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(teleop_tools_msgs__action__Increment_Goal);
+    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     teleop_tools_msgs__action__Increment_Goal * data =
-      (teleop_tools_msgs__action__Increment_Goal *)realloc(output->data, allocation_size);
+      (teleop_tools_msgs__action__Increment_Goal *)allocator.reallocate(
+      output->data, allocation_size, allocator.state);
     if (!data) {
       return false;
     }
+    // If reallocation succeeded, memory may or may not have been moved
+    // to fulfill the allocation request, invalidating output->data.
+    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!teleop_tools_msgs__action__Increment_Goal__init(&data[i])) {
-        /* free currently allocated and return false */
+      if (!teleop_tools_msgs__action__Increment_Goal__init(&output->data[i])) {
+        // If initialization of any new item fails, roll back
+        // all previously initialized items. Existing items
+        // in output are to be left unmodified.
         for (; i-- > output->capacity; ) {
-          teleop_tools_msgs__action__Increment_Goal__fini(&data[i]);
+          teleop_tools_msgs__action__Increment_Goal__fini(&output->data[i]);
         }
-        free(data);
         return false;
       }
     }
-    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;
@@ -436,22 +441,27 @@ teleop_tools_msgs__action__Increment_Result__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(teleop_tools_msgs__action__Increment_Result);
+    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     teleop_tools_msgs__action__Increment_Result * data =
-      (teleop_tools_msgs__action__Increment_Result *)realloc(output->data, allocation_size);
+      (teleop_tools_msgs__action__Increment_Result *)allocator.reallocate(
+      output->data, allocation_size, allocator.state);
     if (!data) {
       return false;
     }
+    // If reallocation succeeded, memory may or may not have been moved
+    // to fulfill the allocation request, invalidating output->data.
+    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!teleop_tools_msgs__action__Increment_Result__init(&data[i])) {
-        /* free currently allocated and return false */
+      if (!teleop_tools_msgs__action__Increment_Result__init(&output->data[i])) {
+        // If initialization of any new item fails, roll back
+        // all previously initialized items. Existing items
+        // in output are to be left unmodified.
         for (; i-- > output->capacity; ) {
-          teleop_tools_msgs__action__Increment_Result__fini(&data[i]);
+          teleop_tools_msgs__action__Increment_Result__fini(&output->data[i]);
         }
-        free(data);
         return false;
       }
     }
-    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;
@@ -656,22 +666,27 @@ teleop_tools_msgs__action__Increment_Feedback__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(teleop_tools_msgs__action__Increment_Feedback);
+    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     teleop_tools_msgs__action__Increment_Feedback * data =
-      (teleop_tools_msgs__action__Increment_Feedback *)realloc(output->data, allocation_size);
+      (teleop_tools_msgs__action__Increment_Feedback *)allocator.reallocate(
+      output->data, allocation_size, allocator.state);
     if (!data) {
       return false;
     }
+    // If reallocation succeeded, memory may or may not have been moved
+    // to fulfill the allocation request, invalidating output->data.
+    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!teleop_tools_msgs__action__Increment_Feedback__init(&data[i])) {
-        /* free currently allocated and return false */
+      if (!teleop_tools_msgs__action__Increment_Feedback__init(&output->data[i])) {
+        // If initialization of any new item fails, roll back
+        // all previously initialized items. Existing items
+        // in output are to be left unmodified.
         for (; i-- > output->capacity; ) {
-          teleop_tools_msgs__action__Increment_Feedback__fini(&data[i]);
+          teleop_tools_msgs__action__Increment_Feedback__fini(&output->data[i]);
         }
-        free(data);
         return false;
       }
     }
-    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;
@@ -913,22 +928,27 @@ teleop_tools_msgs__action__Increment_SendGoal_Request__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(teleop_tools_msgs__action__Increment_SendGoal_Request);
+    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     teleop_tools_msgs__action__Increment_SendGoal_Request * data =
-      (teleop_tools_msgs__action__Increment_SendGoal_Request *)realloc(output->data, allocation_size);
+      (teleop_tools_msgs__action__Increment_SendGoal_Request *)allocator.reallocate(
+      output->data, allocation_size, allocator.state);
     if (!data) {
       return false;
     }
+    // If reallocation succeeded, memory may or may not have been moved
+    // to fulfill the allocation request, invalidating output->data.
+    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!teleop_tools_msgs__action__Increment_SendGoal_Request__init(&data[i])) {
-        /* free currently allocated and return false */
+      if (!teleop_tools_msgs__action__Increment_SendGoal_Request__init(&output->data[i])) {
+        // If initialization of any new item fails, roll back
+        // all previously initialized items. Existing items
+        // in output are to be left unmodified.
         for (; i-- > output->capacity; ) {
-          teleop_tools_msgs__action__Increment_SendGoal_Request__fini(&data[i]);
+          teleop_tools_msgs__action__Increment_SendGoal_Request__fini(&output->data[i]);
         }
-        free(data);
         return false;
       }
     }
-    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;
@@ -1156,22 +1176,27 @@ teleop_tools_msgs__action__Increment_SendGoal_Response__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(teleop_tools_msgs__action__Increment_SendGoal_Response);
+    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     teleop_tools_msgs__action__Increment_SendGoal_Response * data =
-      (teleop_tools_msgs__action__Increment_SendGoal_Response *)realloc(output->data, allocation_size);
+      (teleop_tools_msgs__action__Increment_SendGoal_Response *)allocator.reallocate(
+      output->data, allocation_size, allocator.state);
     if (!data) {
       return false;
     }
+    // If reallocation succeeded, memory may or may not have been moved
+    // to fulfill the allocation request, invalidating output->data.
+    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!teleop_tools_msgs__action__Increment_SendGoal_Response__init(&data[i])) {
-        /* free currently allocated and return false */
+      if (!teleop_tools_msgs__action__Increment_SendGoal_Response__init(&output->data[i])) {
+        // If initialization of any new item fails, roll back
+        // all previously initialized items. Existing items
+        // in output are to be left unmodified.
         for (; i-- > output->capacity; ) {
-          teleop_tools_msgs__action__Increment_SendGoal_Response__fini(&data[i]);
+          teleop_tools_msgs__action__Increment_SendGoal_Response__fini(&output->data[i]);
         }
-        free(data);
         return false;
       }
     }
-    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;
@@ -1392,22 +1417,27 @@ teleop_tools_msgs__action__Increment_GetResult_Request__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(teleop_tools_msgs__action__Increment_GetResult_Request);
+    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     teleop_tools_msgs__action__Increment_GetResult_Request * data =
-      (teleop_tools_msgs__action__Increment_GetResult_Request *)realloc(output->data, allocation_size);
+      (teleop_tools_msgs__action__Increment_GetResult_Request *)allocator.reallocate(
+      output->data, allocation_size, allocator.state);
     if (!data) {
       return false;
     }
+    // If reallocation succeeded, memory may or may not have been moved
+    // to fulfill the allocation request, invalidating output->data.
+    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!teleop_tools_msgs__action__Increment_GetResult_Request__init(&data[i])) {
-        /* free currently allocated and return false */
+      if (!teleop_tools_msgs__action__Increment_GetResult_Request__init(&output->data[i])) {
+        // If initialization of any new item fails, roll back
+        // all previously initialized items. Existing items
+        // in output are to be left unmodified.
         for (; i-- > output->capacity; ) {
-          teleop_tools_msgs__action__Increment_GetResult_Request__fini(&data[i]);
+          teleop_tools_msgs__action__Increment_GetResult_Request__fini(&output->data[i]);
         }
-        free(data);
         return false;
       }
     }
-    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;
@@ -1636,22 +1666,27 @@ teleop_tools_msgs__action__Increment_GetResult_Response__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(teleop_tools_msgs__action__Increment_GetResult_Response);
+    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     teleop_tools_msgs__action__Increment_GetResult_Response * data =
-      (teleop_tools_msgs__action__Increment_GetResult_Response *)realloc(output->data, allocation_size);
+      (teleop_tools_msgs__action__Increment_GetResult_Response *)allocator.reallocate(
+      output->data, allocation_size, allocator.state);
     if (!data) {
       return false;
     }
+    // If reallocation succeeded, memory may or may not have been moved
+    // to fulfill the allocation request, invalidating output->data.
+    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!teleop_tools_msgs__action__Increment_GetResult_Response__init(&data[i])) {
-        /* free currently allocated and return false */
+      if (!teleop_tools_msgs__action__Increment_GetResult_Response__init(&output->data[i])) {
+        // If initialization of any new item fails, roll back
+        // all previously initialized items. Existing items
+        // in output are to be left unmodified.
         for (; i-- > output->capacity; ) {
-          teleop_tools_msgs__action__Increment_GetResult_Response__fini(&data[i]);
+          teleop_tools_msgs__action__Increment_GetResult_Response__fini(&output->data[i]);
         }
-        free(data);
         return false;
       }
     }
-    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;
@@ -1894,22 +1929,27 @@ teleop_tools_msgs__action__Increment_FeedbackMessage__Sequence__copy(
   if (output->capacity < input->size) {
     const size_t allocation_size =
       input->size * sizeof(teleop_tools_msgs__action__Increment_FeedbackMessage);
+    rcutils_allocator_t allocator = rcutils_get_default_allocator();
     teleop_tools_msgs__action__Increment_FeedbackMessage * data =
-      (teleop_tools_msgs__action__Increment_FeedbackMessage *)realloc(output->data, allocation_size);
+      (teleop_tools_msgs__action__Increment_FeedbackMessage *)allocator.reallocate(
+      output->data, allocation_size, allocator.state);
     if (!data) {
       return false;
     }
+    // If reallocation succeeded, memory may or may not have been moved
+    // to fulfill the allocation request, invalidating output->data.
+    output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!teleop_tools_msgs__action__Increment_FeedbackMessage__init(&data[i])) {
-        /* free currently allocated and return false */
+      if (!teleop_tools_msgs__action__Increment_FeedbackMessage__init(&output->data[i])) {
+        // If initialization of any new item fails, roll back
+        // all previously initialized items. Existing items
+        // in output are to be left unmodified.
         for (; i-- > output->capacity; ) {
-          teleop_tools_msgs__action__Increment_FeedbackMessage__fini(&data[i]);
+          teleop_tools_msgs__action__Increment_FeedbackMessage__fini(&output->data[i]);
         }
-        free(data);
         return false;
       }
     }
-    output->data = data;
     output->capacity = input->size;
   }
   output->size = input->size;

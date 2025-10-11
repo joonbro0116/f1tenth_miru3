@@ -1,8 +1,8 @@
-# Install script for directory: /home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools
+# Install script for directory: /home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/teleop_tools
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/f1/f1tenth_ws/install/teleop_tools")
+  set(CMAKE_INSTALL_PREFIX "/home/sh/projects/f1tenth_miru3/install/teleop_tools")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/f1/f1tenth_ws/build/teleop_tools/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/sh/projects/f1tenth_miru3/build/teleop_tools/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -49,5 +49,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/f1/f1tenth_ws/build/teleop_tools/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sh/projects/f1tenth_miru3/build/teleop_tools/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

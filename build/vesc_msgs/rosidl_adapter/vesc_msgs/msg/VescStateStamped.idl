@@ -8,7 +8,7 @@
 module vesc_msgs {
   module msg {
     @verbatim (language="comment", text=
-      " Timestamped VESC open source motor controller state (telemetry)")
+      "Timestamped VESC open source motor controller state (telemetry)")
     struct VescStateStamped {
       std_msgs::msg::Header header;
 

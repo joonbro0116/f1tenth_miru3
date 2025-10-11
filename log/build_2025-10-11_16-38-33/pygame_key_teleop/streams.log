@@ -1,0 +1,19 @@
+[1.185s] Invoking command in '/home/sh/projects/f1tenth_miru3/build/pygame_key_teleop': PYTHONPATH=/home/sh/projects/f1tenth_miru3/build/pygame_key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sh/projects/f1tenth_miru3/install/pygame_key_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sh/projects/f1tenth_miru3/build/pygame_key_teleop/build --no-deps symlink_data
+[1.499s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.499s]   warnings.warn(
+[1.535s] running develop
+[1.670s] running egg_info
+[1.670s] writing pygame_key_teleop.egg-info/PKG-INFO
+[1.670s] writing dependency_links to pygame_key_teleop.egg-info/dependency_links.txt
+[1.670s] writing entry points to pygame_key_teleop.egg-info/entry_points.txt
+[1.670s] writing requirements to pygame_key_teleop.egg-info/requires.txt
+[1.670s] writing top-level names to pygame_key_teleop.egg-info/top_level.txt
+[1.671s] reading manifest file 'pygame_key_teleop.egg-info/SOURCES.txt'
+[1.672s] writing manifest file 'pygame_key_teleop.egg-info/SOURCES.txt'
+[1.673s] running build_ext
+[1.673s] Creating /home/sh/projects/f1tenth_miru3/install/pygame_key_teleop/lib/python3.10/site-packages/pygame-key-teleop.egg-link (link to .)
+[1.674s] Installing pygame_key_teleop script to /home/sh/projects/f1tenth_miru3/install/pygame_key_teleop/lib/pygame_key_teleop
+[1.674s] 
+[1.674s] Installed /home/sh/projects/f1tenth_miru3/build/pygame_key_teleop
+[1.674s] running symlink_data
+[1.696s] Invoked command in '/home/sh/projects/f1tenth_miru3/build/pygame_key_teleop' returned '0': PYTHONPATH=/home/sh/projects/f1tenth_miru3/build/pygame_key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sh/projects/f1tenth_miru3/install/pygame_key_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sh/projects/f1tenth_miru3/build/pygame_key_teleop/build --no-deps symlink_data

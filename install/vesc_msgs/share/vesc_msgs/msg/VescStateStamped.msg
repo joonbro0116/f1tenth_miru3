@@ -1,1 +1,1 @@
-/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs/msg/VescStateStamped.msg
+/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs/msg/VescStateStamped.msg

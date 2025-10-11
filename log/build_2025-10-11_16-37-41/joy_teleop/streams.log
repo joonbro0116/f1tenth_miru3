@@ -1,0 +1,19 @@
+[0.526s] Invoking command in '/home/sh/projects/f1tenth_miru3/build/joy_teleop': CMAKE_PREFIX_PATH=/home/sh/projects/f1tenth_miru3/install/teleop_tools_msgs:/home/sh/projects/f1tenth_miru3/install/vesc_ackermann:/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/home/sh/projects/f1tenth_miru3/install/teleop_tools:/home/sh/projects/f1tenth_miru3/install/pure_pursuit:/home/sh/projects/f1tenth_miru3/install/path_follow:/home/sh/projects/f1tenth_miru3/install/map_controller:/home/sh/projects/f1tenth_miru3/install/center_follow_cpp:/home/sh/projects/f1tenth_miru3/install/ackermann_mux LD_LIBRARY_PATH=/home/sh/projects/f1tenth_miru3/install/teleop_tools_msgs/lib:/home/sh/projects/f1tenth_miru3/install/vesc_driver/lib:/home/sh/projects/f1tenth_miru3/install/vesc_ackermann/lib:/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib:/home/sh/projects/f1tenth_miru3/install/map_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/sh/../../lib:/home/sh/../../../blasfeo/lib PYTHONPATH=/home/sh/projects/f1tenth_miru3/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sh/projects/f1tenth_miru3/install/joy_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sh/projects/f1tenth_miru3/build/joy_teleop/build --no-deps symlink_data
+[0.745s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.745s]   warnings.warn(
+[0.768s] running develop
+[0.879s] running egg_info
+[0.879s] writing joy_teleop.egg-info/PKG-INFO
+[0.879s] writing dependency_links to joy_teleop.egg-info/dependency_links.txt
+[0.879s] writing entry points to joy_teleop.egg-info/entry_points.txt
+[0.879s] writing requirements to joy_teleop.egg-info/requires.txt
+[0.879s] writing top-level names to joy_teleop.egg-info/top_level.txt
+[0.881s] reading manifest file 'joy_teleop.egg-info/SOURCES.txt'
+[0.881s] writing manifest file 'joy_teleop.egg-info/SOURCES.txt'
+[0.882s] running build_ext
+[0.882s] Creating /home/sh/projects/f1tenth_miru3/install/joy_teleop/lib/python3.10/site-packages/joy-teleop.egg-link (link to .)
+[0.883s] Installing incrementer_server script to /home/sh/projects/f1tenth_miru3/install/joy_teleop/lib/joy_teleop
+[0.883s] Installing joy_teleop script to /home/sh/projects/f1tenth_miru3/install/joy_teleop/lib/joy_teleop
+[0.883s] 
+[0.883s] Installed /home/sh/projects/f1tenth_miru3/build/joy_teleop
+[0.883s] running symlink_data

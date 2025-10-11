@@ -1,0 +1,18 @@
+[1.814s] Invoking command in '/home/sh/projects/f1tenth_miru3/build/key_teleop': PYTHONPATH=/home/sh/projects/f1tenth_miru3/build/key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sh/projects/f1tenth_miru3/install/key_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sh/projects/f1tenth_miru3/build/key_teleop/build --no-deps symlink_data
+[2.220s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.220s]   warnings.warn(
+[2.270s] running develop
+[2.491s] running egg_info
+[2.491s] writing key_teleop.egg-info/PKG-INFO
+[2.492s] writing dependency_links to key_teleop.egg-info/dependency_links.txt
+[2.492s] writing entry points to key_teleop.egg-info/entry_points.txt
+[2.492s] writing requirements to key_teleop.egg-info/requires.txt
+[2.492s] writing top-level names to key_teleop.egg-info/top_level.txt
+[2.494s] reading manifest file 'key_teleop.egg-info/SOURCES.txt'
+[2.495s] writing manifest file 'key_teleop.egg-info/SOURCES.txt'
+[2.497s] running build_ext
+[2.498s] Creating /home/sh/projects/f1tenth_miru3/install/key_teleop/lib/python3.10/site-packages/key-teleop.egg-link (link to .)
+[2.499s] Installing key_teleop script to /home/sh/projects/f1tenth_miru3/install/key_teleop/lib/key_teleop
+[2.499s] 
+[2.499s] Installed /home/sh/projects/f1tenth_miru3/build/key_teleop
+[2.499s] running symlink_data

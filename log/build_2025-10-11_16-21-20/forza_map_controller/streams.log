@@ -1,0 +1,16 @@
+[3.677s] Invoking command in '/home/sh/projects/f1tenth_miru3/build/forza_map_controller': PYTHONPATH=/home/sh/projects/f1tenth_miru3/build/forza_map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sh/projects/f1tenth_miru3/build/forza_map_controller/build --no-deps symlink_data
+[4.409s] running develop
+[4.795s] running egg_info
+[4.795s] writing forza_map_controller.egg-info/PKG-INFO
+[4.796s] writing dependency_links to forza_map_controller.egg-info/dependency_links.txt
+[4.796s] writing entry points to forza_map_controller.egg-info/entry_points.txt
+[4.796s] writing requirements to forza_map_controller.egg-info/requires.txt
+[4.797s] writing top-level names to forza_map_controller.egg-info/top_level.txt
+[4.800s] reading manifest file 'forza_map_controller.egg-info/SOURCES.txt'
+[4.802s] writing manifest file 'forza_map_controller.egg-info/SOURCES.txt'
+[4.807s] running build_ext
+[4.807s] Creating /home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/python3.10/site-packages/forza-map-controller.egg-link (link to .)
+[4.809s] Installing controller_manager script to /home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/forza_map_controller
+[4.810s] 
+[4.810s] Installed /home/sh/projects/f1tenth_miru3/build/forza_map_controller
+[4.810s] running symlink_data

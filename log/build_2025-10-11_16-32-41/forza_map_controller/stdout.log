@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing forza_map_controller.egg-info/PKG-INFO
+writing dependency_links to forza_map_controller.egg-info/dependency_links.txt
+writing entry points to forza_map_controller.egg-info/entry_points.txt
+writing requirements to forza_map_controller.egg-info/requires.txt
+writing top-level names to forza_map_controller.egg-info/top_level.txt
+reading manifest file 'forza_map_controller.egg-info/SOURCES.txt'
+writing manifest file 'forza_map_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/python3.10/site-packages/forza-map-controller.egg-link (link to .)
+Installing controller_manager script to /home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/forza_map_controller
+
+Installed /home/sh/projects/f1tenth_miru3/build/forza_map_controller
+running symlink_data
+symbolically linking /home/sh/projects/f1tenth_miru3/build/forza_map_controller/config/steering_lut/NUC2_pacejka_lookup_table.csv -> /home/sh/projects/f1tenth_miru3/install/forza_map_controller/share/forza_map_controller/config/steering_lut

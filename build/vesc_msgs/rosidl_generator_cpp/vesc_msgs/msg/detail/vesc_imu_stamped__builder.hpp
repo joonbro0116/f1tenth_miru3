@@ -5,10 +5,11 @@
 #ifndef VESC_MSGS__MSG__DETAIL__VESC_IMU_STAMPED__BUILDER_HPP_
 #define VESC_MSGS__MSG__DETAIL__VESC_IMU_STAMPED__BUILDER_HPP_
 
-#include "vesc_msgs/msg/detail/vesc_imu_stamped__struct.hpp"
-#include <rosidl_runtime_cpp/message_initialization.hpp>
 #include <algorithm>
 #include <utility>
+
+#include "vesc_msgs/msg/detail/vesc_imu_stamped__struct.hpp"
+#include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
 namespace vesc_msgs

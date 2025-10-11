@@ -1,0 +1,4 @@
+Invoking command in '/home/sh/projects/f1tenth_miru3/build/center_follow_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sh/projects/f1tenth_miru3/build/center_follow_cpp -- -j16 -l16
+Invoked command in '/home/sh/projects/f1tenth_miru3/build/center_follow_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sh/projects/f1tenth_miru3/build/center_follow_cpp -- -j16 -l16
+Invoking command in '/home/sh/projects/f1tenth_miru3/build/center_follow_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sh/projects/f1tenth_miru3/build/center_follow_cpp
+Invoked command in '/home/sh/projects/f1tenth_miru3/build/center_follow_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sh/projects/f1tenth_miru3/build/center_follow_cpp

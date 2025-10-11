@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/sh/projects/f1tenth_miru3/build/map_controller/libmap_controller_core.a" "/home/sh/projects/f1tenth_miru3/build/map_controller/map_controller_node" "TARGETS" "map_controller_core" "map_controller_node" "DESTINATION" "lib/map_controller")

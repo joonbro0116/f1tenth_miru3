@@ -1,0 +1,8 @@
+[0.027s] Invoking command in '/home/sh/projects/f1tenth_miru3/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib PYTHONPATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sh/projects/f1tenth_miru3/build/vesc_ackermann -- -j16 -l16
+[0.133s] Consolidate compiler generated dependencies of target ackermann_to_vesc_node
+[0.134s] Consolidate compiler generated dependencies of target vesc_to_odom_node
+[0.139s] Consolidate compiler generated dependencies of target vesc_ackermann
+[0.163s] [ 28%] Built target ackermann_to_vesc_node
+[0.165s] [ 57%] Built target vesc_to_odom_node
+[0.174s] [ 85%] Building CXX object CMakeFiles/vesc_ackermann.dir/src/ackermann_to_vesc.cpp.o
+[0.175s] [ 85%] Building CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o

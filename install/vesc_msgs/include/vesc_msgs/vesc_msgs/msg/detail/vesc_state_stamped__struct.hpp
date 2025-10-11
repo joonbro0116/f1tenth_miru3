@@ -1,0 +1,1 @@
+/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_generator_cpp/vesc_msgs/msg/detail/vesc_state_stamped__struct.hpp

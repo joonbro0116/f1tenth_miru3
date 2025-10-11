@@ -1,0 +1,36 @@
+/**:
+  ros__parameters:
+    # Waypoint file path
+    csv_file_path: "/home/sh/projects/f1tenth_miru3/maps_racelines_/raceline/0927_speed_5.csv"
+
+    # L1 Controller Parameters (from race_stack defaults)
+    # Lookahead distance clipping
+    t_clip_min: 0.8      # Minimum lookahead time [s]
+    t_clip_max: 1.5      # Maximum lookahead time [s]
+
+    # L1 lookahead calculation: L1 = q_l1 + m_l1 * speed
+    m_l1: 0.6            # Lookahead slope (adaptive to speed)
+    q_l1: -0.18          # Lookahead offset
+
+    # Speed lookahead for delay compensation
+    speed_lookahead: 0.25              # Time lookahead for speed selection [s]
+    speed_lookahead_for_steer: 0.0     # Time lookahead for steering calculation [s]
+
+    # Lateral error speed reduction
+    lat_err_coeff: 1.0   # Coefficient for speed reduction based on lateral error [0-1]
+
+    # Steering scaling based on acceleration
+    acc_scaler_for_steer: 1.2   # Increase steering when accelerating
+    dec_scaler_for_steer: 0.9   # Decrease steering when braking
+
+    # Steering scaling based on speed
+    start_scale_speed: 7.0     # Speed where steering starts to scale down [m/s]
+    end_scale_speed: 8.0       # Speed where steering is fully scaled [m/s]
+    downscale_factor: 0.2      # Maximum steering reduction factor at high speed
+
+    # Steering lookup table
+    # Options: 'NUC1_pacejka', 'NUC2_pacejka', '' (empty for kinematic fallback)
+    steering_lut: "NUC2_pacejka"
+
+    # Control loop rate
+    loop_rate_hz: 40.0

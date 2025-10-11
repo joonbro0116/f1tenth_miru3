@@ -1,4 +1,4 @@
 import sys
 if sys.prefix == '/usr':
     sys.real_prefix = sys.prefix
-    sys.prefix = sys.exec_prefix = '/home/f1/f1tenth_ws/install/joy_teleop'
+    sys.prefix = sys.exec_prefix = '/home/sh/projects/f1tenth_miru3/install/joy_teleop'

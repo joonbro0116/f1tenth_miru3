@@ -79,9 +79,6 @@ _colcon_package_sh_source_script() {
 
 # source sh hooks
 _colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/map_controller/hook/cmake_prefix_path.sh"
-_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/map_controller/hook/ld_library_path_lib.sh"
-_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/map_controller/hook/path.sh"
-_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/map_controller/hook/pythonscriptspath.sh"
 _colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/map_controller/local_setup.sh"
 
 unset _colcon_package_sh_source_script

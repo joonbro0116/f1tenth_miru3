@@ -1,1 +1,1 @@
-/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/mouse_teleop/launch/mouse_teleop.launch.py
+/home/sh/projects/f1tenth_miru3/src/f1tenth_system/teleop_tools/mouse_teleop/launch/mouse_teleop.launch.py

@@ -1,1 +1,1 @@
-/home/f1/f1tenth_ws/build/teleop_tools/ament_cmake_environment_hooks/local_setup.sh
+/home/sh/projects/f1tenth_miru3/build/teleop_tools/ament_cmake_environment_hooks/local_setup.sh

@@ -7,58 +7,37 @@
 #include <optional>
 #include <string>
 #include <vector>
-#include <cstdint>
+
+#include "map_controller/steering_lookup.hpp"
 
 namespace map_controller
 {
-class SteeringLookup;
 
 struct Waypoint
 {
-  double x_m{};
-  double y_m{};
-  double target_speed_mps{};
-  double frenet_d{};
-  double frenet_s{};
-  double curvature_radpm{};
-  double heading_rad{};
-  double longitudinal_accel_mps2{};
+  double x_m{0.0};
+  double y_m{0.0};
+  double target_speed_mps{0.0};
+  double heading_rad{0.0};
+  double curvature{0.0};
 };
 
 struct VehicleState
 {
-  double x_m{};
-  double y_m{};
-  double yaw_rad{};
-  double speed_mps{};
-  double acceleration_mps2{};
-  double frenet_s_m{};
-  double frenet_d_m{};
-  double frenet_speed_mps{};
+  double x_m{0.0};
+  double y_m{0.0};
+  double yaw_rad{0.0};
+  double speed_mps{0.0};
+  double acceleration_mps2{0.0};
 };
 
 struct ControllerOutput
 {
-  double target_speed_mps{};
-  double target_accel_mps2{};
-  double steering_angle_rad{};
-  double l1_distance_m{};
-  std::array<double, 2> lookahead_point{{0.0, 0.0}};
-};
-
-struct OpponentState
-{
-  double frenet_s_m{};
-  double frenet_d_m{};
-  double speed_mps{};
-  double acceleration_mps2{};
-  bool is_visible{false};
-};
-
-enum class DrivingMode
-{
-  Racing,
-  Trailing
+  double target_speed_mps{0.0};
+  double target_accel_mps2{0.0};
+  double steering_angle_rad{0.0};
+  double l1_distance_m{0.0};
+  std::array<double, 2> lookahead_point{0.0, 0.0};
 };
 
 struct MapControllerParams
@@ -75,94 +54,55 @@ struct MapControllerParams
   double end_scale_speed_mps{8.0};
   double downscale_factor{0.2};
   double speed_lookahead_for_steer_s{0.0};
-  bool prioritize_dyn{false};
-  double trailing_gap_m{2.0};
-  double trailing_p_gain{0.0};
-  double trailing_i_gain{0.0};
-  double trailing_d_gain{0.0};
-  double blind_trailing_speed_mps{0.0};
-  double loop_rate_hz{20.0};
-  std::string steering_lut_name{"default"};
-  double state_machine_rate_hz{20.0};
   double steering_change_threshold_rad{0.4};
+  std::string steering_lut_name{"NUC2_pacejka"};
 };
 
 class MapController
 {
 public:
   explicit MapController(const MapControllerParams & params);
-  ~MapController();
 
   ControllerOutput computeCommand(const VehicleState & state,
-                                  const std::vector<Waypoint> & local_path);
-
-  void setDrivingMode(DrivingMode mode);
-  void setOpponentState(const OpponentState & opponent);
-  void clearOpponent();
-  void setTrackLength(double track_length_m);
+                                  const std::vector<Waypoint> & path);
 
 private:
-  struct LateralErrorResult
+  struct LateralError
   {
-    double normalized{};
-    double absolute{};
+    double absolute{0.0};
+    double normalized{0.0};
+    int sign{1};
   };
 
   struct L1Result
   {
-    std::array<double, 2> point_{0.0, 0.0};
-    double distance_m{0.0};
+    std::array<double, 2> point{0.0, 0.0};
+    double distance{0.0};
   };
 
   std::size_t findNearestWaypointIndex(const VehicleState & state,
-                                       const std::vector<Waypoint> & local_path) const;
-  double computeAverageCurvatureAhead(const std::vector<Waypoint> & local_path,
-                                      std::size_t start_index,
-                                      std::size_t sample_count) const;
-  LateralErrorResult computeLateralError(const VehicleState & state) const;
-  double adjustSpeedForLateralError(double target_speed_mps,
-                                    double lat_error_norm,
-                                    double curvature_metric) const;
-  double adjustSpeedForHeading(double target_speed_mps,
-                               const VehicleState & state,
-                               const std::vector<Waypoint> & local_path) const;
-  double computeSpeedCommand(const VehicleState & state,
-                             const std::vector<Waypoint> & local_path,
-                             double lat_error_norm);
-  double computeTrailingCommand(const VehicleState & state,
-                                double global_speed_mps);
-  std::size_t findNearestWaypointIndex(const std::array<double, 2> & position,
-                                       const std::vector<Waypoint> & local_path) const;
+                                       const std::vector<Waypoint> & path) const;
+  LateralError computeLateralError(const VehicleState & state,
+                                   const std::vector<Waypoint> & path,
+                                   std::size_t nearest_idx) const;
   L1Result computeL1Point(const VehicleState & state,
-                          const std::vector<Waypoint> & local_path,
+                          const std::vector<Waypoint> & path,
+                          std::size_t nearest_idx,
                           double lateral_error_abs) const;
+  double computeSpeedCommand(const VehicleState & state,
+                             const std::vector<Waypoint> & path,
+                             std::size_t nearest_idx,
+                             double lat_error_norm) const;
   double computeSteeringAngle(const VehicleState & state,
-                              const std::vector<Waypoint> & local_path,
                               const L1Result & l1,
-                              double lat_error_norm,
-                              double desired_speed_mps);
-  std::array<double, 2> propagatePosition(const VehicleState & state,
-                                          double lookahead_time_s) const;
-  double speedAdjustLatErr(double global_speed_mps,
-                           double lat_error_norm,
-                           double curvature_metric) const;
-  double scaleSteeringForAcceleration(double steering_angle_rad,
-                                      double acceleration_mps2) const;
-  double scaleSteeringForSpeed(double steering_angle_rad,
-                               double speed_mps) const;
+                              double desired_speed_mps,
+                              double lat_error_norm);
   double clamp(double value, double min_value, double max_value) const;
+  static double wrapAngle(double angle);
 
   MapControllerParams params_;
-  DrivingMode driving_mode_{DrivingMode::Racing};
-  std::optional<OpponentState> opponent_state_;
-  double track_length_m_{0.0};
-
-  std::deque<double> lateral_error_history_;
-  std::size_t nearest_waypoint_index_{0};
-  double average_curvature_ahead_{0.0};
-  double current_steering_angle_rad_{0.0};
-  double trailing_integral_{0.0};
-  double trailing_command_mps_{0.0};
   std::unique_ptr<SteeringLookup> steering_lookup_;
+  mutable double previous_steering_{0.0};
 };
+
 }  // namespace map_controller

@@ -23,6 +23,7 @@ size_t get_serialized_size_teleop_tools_msgs__action__Increment_Goal(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs
 size_t max_serialized_size_teleop_tools_msgs__action__Increment_Goal(
   bool & full_bounded,
+  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs
@@ -55,6 +56,7 @@ size_t get_serialized_size_teleop_tools_msgs__action__Increment_Result(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs
 size_t max_serialized_size_teleop_tools_msgs__action__Increment_Result(
   bool & full_bounded,
+  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs
@@ -87,6 +89,7 @@ size_t get_serialized_size_teleop_tools_msgs__action__Increment_Feedback(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs
 size_t max_serialized_size_teleop_tools_msgs__action__Increment_Feedback(
   bool & full_bounded,
+  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs
@@ -119,6 +122,7 @@ size_t get_serialized_size_teleop_tools_msgs__action__Increment_SendGoal_Request
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs
 size_t max_serialized_size_teleop_tools_msgs__action__Increment_SendGoal_Request(
   bool & full_bounded,
+  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs
@@ -151,6 +155,7 @@ size_t get_serialized_size_teleop_tools_msgs__action__Increment_SendGoal_Respons
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs
 size_t max_serialized_size_teleop_tools_msgs__action__Increment_SendGoal_Response(
   bool & full_bounded,
+  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs
@@ -202,6 +207,7 @@ size_t get_serialized_size_teleop_tools_msgs__action__Increment_GetResult_Reques
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs
 size_t max_serialized_size_teleop_tools_msgs__action__Increment_GetResult_Request(
   bool & full_bounded,
+  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs
@@ -234,6 +240,7 @@ size_t get_serialized_size_teleop_tools_msgs__action__Increment_GetResult_Respon
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs
 size_t max_serialized_size_teleop_tools_msgs__action__Increment_GetResult_Response(
   bool & full_bounded,
+  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs
@@ -286,6 +293,7 @@ size_t get_serialized_size_teleop_tools_msgs__action__Increment_FeedbackMessage(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs
 size_t max_serialized_size_teleop_tools_msgs__action__Increment_FeedbackMessage(
   bool & full_bounded,
+  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_tools_msgs

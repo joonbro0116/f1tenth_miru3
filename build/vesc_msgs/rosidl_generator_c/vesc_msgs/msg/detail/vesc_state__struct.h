@@ -18,6 +18,9 @@ extern "C"
 // Constants defined in the message
 
 /// Constant 'FAULT_CODE_NONE'.
+/**
+  * fault codes
+ */
 enum
 {
   vesc_msgs__msg__VescState__FAULT_CODE_NONE = 0l
@@ -59,23 +62,40 @@ enum
   vesc_msgs__msg__VescState__FAULT_CODE_OVER_TEMP_MOTOR = 6l
 };
 
-// Struct defined in msg/VescState in the package vesc_msgs.
+/// Struct defined in msg/VescState in the package vesc_msgs.
+/**
+  * Vedder VESC open source motor controller state (telemetry)
+ */
 typedef struct vesc_msgs__msg__VescState
 {
+  /// follow the bledc firwmare: commands.c
+  /// fet temperature
   double temp_fet;
+  /// motor temperature
   double temp_motor;
+  /// motor current (ampere) avg_motor_current
   double current_motor;
+  /// input current (ampere) avg_input_current
   double current_input;
   double avg_id;
   double avg_iq;
+  /// duty cycle (0 to 1) duty_cycle_now
   double duty_cycle;
+  /// motor electrical speed (revolutions per minute) rpm
   double speed;
+  /// input voltage (volt)
   double voltage_input;
+  /// electric charge drawn from input (ampere-hours)
   double charge_drawn;
+  /// electric charge regenerated to input (ampere-hour) amp_hours_charged
   double charge_regen;
+  /// energy drawn from input (watt-hour)
   double energy_drawn;
+  /// energy regenerated to input (watt_hours_charged)
   double energy_regen;
+  /// net tachometer (counts) tachometer
   int32_t displacement;
+  /// total tachnometer (counts) tachometer_abs
   int32_t distance_traveled;
   int32_t fault_code;
   double pid_pos_now;

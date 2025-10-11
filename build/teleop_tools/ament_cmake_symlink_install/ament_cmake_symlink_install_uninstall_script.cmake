@@ -1,7 +1,7 @@
 # generated from
 # ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_uninstall_script.cmake.in
 
-set(install_manifest "/home/f1/f1tenth_ws/build/teleop_tools/symlink_install_manifest.txt")
+set(install_manifest "/home/sh/projects/f1tenth_miru3/build/teleop_tools/symlink_install_manifest.txt")
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find symlink install manifest: ${install_manifest}")
 endif()

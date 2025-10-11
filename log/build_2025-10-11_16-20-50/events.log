@@ -1,0 +1,322 @@
+[0.000000] (-) TimerEvent: {}
+[0.000361] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.000430] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.000466] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.000496] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.000557] (-) JobUnselected: {'identifier': 'forza_map_controller'}
+[0.000588] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.000613] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.000638] (-) JobUnselected: {'identifier': 'map_controller'}
+[0.000664] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.000689] (-) JobUnselected: {'identifier': 'path_follow'}
+[0.000715] (-) JobUnselected: {'identifier': 'pure_pursuit'}
+[0.000738] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.000763] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.000794] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.000830] (-) JobUnselected: {'identifier': 'vesc'}
+[0.000857] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.000883] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.000915] (vesc_ackermann) JobQueued: {'identifier': 'vesc_ackermann', 'dependencies': OrderedDict([('vesc_msgs', '/home/sh/projects/f1tenth_miru3/install/vesc_msgs')])}
+[0.001675] (vesc_ackermann) JobStarted: {'identifier': 'vesc_ackermann'}
+[0.027428] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'cmake'}
+[0.029455] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'build'}
+[0.031699] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sh/projects/f1tenth_miru3/build/vesc_ackermann', '--', '-j16', '-l16'], 'cwd': '/home/sh/projects/f1tenth_miru3/build/vesc_ackermann', 'env': OrderedDict([('ENV_RUN', 'true'), ('VSCODE_CWD', '/home/sh'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('LANGUAGE', 'ko:en'), ('USER', 'sh'), ('LC_TIME', 'ko_KR.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"ko","osLocale":"ko","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"ko","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('HPIPM_MAIN_FOLDER', '/home/sh/../..'), ('OCTAVE_PATH', ':/home/sh/../../interfaces/matlab_octave/'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib'), ('LESS', '-R'), ('HOME', '/home/sh'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/sh'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NVM_BIN', '/home/sh/.nvm/versions/node/v22.19.0/bin'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/sh/.nvm/versions/node/v22.19.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-d2ec76d4-1.10-main.sock'), ('ZSH', '/home/sh/.oh-my-zsh'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', '1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '2546'), ('VISUAL', 'nvim'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/sh/.nvm'), ('_colcon_cd_root', '/opt/ros/humble/'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'sh'), ('MATLABPATH', ':/home/sh/../../interfaces/matlab_octave/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'sh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/sh/.cargo/bin:/tmp/.tmprv0jl0:/home/sh/.cargo/bin:/home/sh/.nvm/versions/node/v22.19.0/bin:/opt/ros/humble/bin:/home/sh/.cargo/bin:/home/sh/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sh/.fzf/bin:/home/sh/.vscode/extensions/openai.chatgpt-0.4.19-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/sh:@/tmp/.ICE-unix/2519,unix/sh:/tmp/.ICE-unix/2519'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/575268a7_70a2_4005_928d_bd3eab9a9538'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sh/projects/f1tenth_miru3/build/vesc_ackermann'), ('VSCODE_CLI', '1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/sh/.config/Code/CachedData/e3a5acfb517a443235981655413d566533107e92'), ('NVM_CD_FLAGS', '-q'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('BLASFEO_MAIN_FOLDER', '/home/sh/../../../blasfeo'), ('PYTHONPATH', '/home/sh/projects/f1tenth_miru3/install/vesc_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('EDITOR', 'nvim'), ('VSCODE_PID', '7686'), ('CMAKE_PREFIX_PATH', '/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/opt/ros/humble')]), 'shell': False}
+[0.099331] (-) TimerEvent: {}
+[0.158384] (vesc_ackermann) StdoutLine: {'line': b'[ 28%] Built target ackermann_to_vesc_node\n'}
+[0.161652] (vesc_ackermann) StdoutLine: {'line': b'[ 57%] Built target vesc_to_odom_node\n'}
+[0.162807] (vesc_ackermann) StdoutLine: {'line': b'[ 71%] Building CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o\n'}
+[0.168051] (vesc_ackermann) StdoutLine: {'line': b'[ 85%] Building CXX object CMakeFiles/vesc_ackermann.dir/src/ackermann_to_vesc.cpp.o\n'}
+[0.199558] (-) TimerEvent: {}
+[0.300016] (-) TimerEvent: {}
+[0.400367] (-) TimerEvent: {}
+[0.500702] (-) TimerEvent: {}
+[0.601017] (-) TimerEvent: {}
+[0.701298] (-) TimerEvent: {}
+[0.801647] (-) TimerEvent: {}
+[0.902033] (-) TimerEvent: {}
+[1.002391] (-) TimerEvent: {}
+[1.102902] (-) TimerEvent: {}
+[1.203278] (-) TimerEvent: {}
+[1.303660] (-) TimerEvent: {}
+[1.404024] (-) TimerEvent: {}
+[1.504331] (-) TimerEvent: {}
+[1.604645] (-) TimerEvent: {}
+[1.704977] (-) TimerEvent: {}
+[1.805345] (-) TimerEvent: {}
+[1.905689] (-) TimerEvent: {}
+[2.006003] (-) TimerEvent: {}
+[2.106318] (-) TimerEvent: {}
+[2.206652] (-) TimerEvent: {}
+[2.306950] (-) TimerEvent: {}
+[2.407284] (-) TimerEvent: {}
+[2.507620] (-) TimerEvent: {}
+[2.607922] (-) TimerEvent: {}
+[2.708230] (-) TimerEvent: {}
+[2.808566] (-) TimerEvent: {}
+[2.908855] (-) TimerEvent: {}
+[3.009270] (-) TimerEvent: {}
+[3.109641] (-) TimerEvent: {}
+[3.209939] (-) TimerEvent: {}
+[3.310245] (-) TimerEvent: {}
+[3.410595] (-) TimerEvent: {}
+[3.510960] (-) TimerEvent: {}
+[3.611260] (-) TimerEvent: {}
+[3.711688] (-) TimerEvent: {}
+[3.812040] (-) TimerEvent: {}
+[3.912376] (-) TimerEvent: {}
+[4.012744] (-) TimerEvent: {}
+[4.113056] (-) TimerEvent: {}
+[4.213424] (-) TimerEvent: {}
+[4.313740] (-) TimerEvent: {}
+[4.414057] (-) TimerEvent: {}
+[4.514368] (-) TimerEvent: {}
+[4.614736] (-) TimerEvent: {}
+[4.715180] (-) TimerEvent: {}
+[4.815557] (-) TimerEvent: {}
+[4.915931] (-) TimerEvent: {}
+[5.016249] (-) TimerEvent: {}
+[5.116627] (-) TimerEvent: {}
+[5.216946] (-) TimerEvent: {}
+[5.317287] (-) TimerEvent: {}
+[5.417671] (-) TimerEvent: {}
+[5.518062] (-) TimerEvent: {}
+[5.618390] (-) TimerEvent: {}
+[5.718832] (-) TimerEvent: {}
+[5.819179] (-) TimerEvent: {}
+[5.919513] (-) TimerEvent: {}
+[6.019920] (-) TimerEvent: {}
+[6.120266] (-) TimerEvent: {}
+[6.220631] (-) TimerEvent: {}
+[6.320961] (-) TimerEvent: {}
+[6.421350] (-) TimerEvent: {}
+[6.521679] (-) TimerEvent: {}
+[6.622028] (-) TimerEvent: {}
+[6.722416] (-) TimerEvent: {}
+[6.822802] (-) TimerEvent: {}
+[6.923162] (-) TimerEvent: {}
+[7.023547] (-) TimerEvent: {}
+[7.123971] (-) TimerEvent: {}
+[7.224272] (-) TimerEvent: {}
+[7.324613] (-) TimerEvent: {}
+[7.424912] (-) TimerEvent: {}
+[7.525271] (-) TimerEvent: {}
+[7.625643] (-) TimerEvent: {}
+[7.725983] (-) TimerEvent: {}
+[7.826367] (-) TimerEvent: {}
+[7.926658] (-) TimerEvent: {}
+[8.026967] (-) TimerEvent: {}
+[8.127324] (-) TimerEvent: {}
+[8.227655] (-) TimerEvent: {}
+[8.328140] (-) TimerEvent: {}
+[8.428638] (-) TimerEvent: {}
+[8.529045] (-) TimerEvent: {}
+[8.629404] (-) TimerEvent: {}
+[8.729769] (-) TimerEvent: {}
+[8.830227] (-) TimerEvent: {}
+[8.930627] (-) TimerEvent: {}
+[9.031035] (-) TimerEvent: {}
+[9.131416] (-) TimerEvent: {}
+[9.231775] (-) TimerEvent: {}
+[9.332064] (-) TimerEvent: {}
+[9.432404] (-) TimerEvent: {}
+[9.532741] (-) TimerEvent: {}
+[9.633055] (-) TimerEvent: {}
+[9.733415] (-) TimerEvent: {}
+[9.833813] (-) TimerEvent: {}
+[9.934154] (-) TimerEvent: {}
+[10.034489] (-) TimerEvent: {}
+[10.134896] (-) TimerEvent: {}
+[10.235209] (-) TimerEvent: {}
+[10.335577] (-) TimerEvent: {}
+[10.435929] (-) TimerEvent: {}
+[10.536297] (-) TimerEvent: {}
+[10.636681] (-) TimerEvent: {}
+[10.737058] (-) TimerEvent: {}
+[10.837565] (-) TimerEvent: {}
+[10.937871] (-) TimerEvent: {}
+[11.038201] (-) TimerEvent: {}
+[11.138609] (-) TimerEvent: {}
+[11.238900] (-) TimerEvent: {}
+[11.339226] (-) TimerEvent: {}
+[11.439632] (-) TimerEvent: {}
+[11.540053] (-) TimerEvent: {}
+[11.640437] (-) TimerEvent: {}
+[11.740783] (-) TimerEvent: {}
+[11.841158] (-) TimerEvent: {}
+[11.941493] (-) TimerEvent: {}
+[12.041820] (-) TimerEvent: {}
+[12.142166] (-) TimerEvent: {}
+[12.242562] (-) TimerEvent: {}
+[12.342947] (-) TimerEvent: {}
+[12.443251] (-) TimerEvent: {}
+[12.543620] (-) TimerEvent: {}
+[12.644012] (-) TimerEvent: {}
+[12.744391] (-) TimerEvent: {}
+[12.844720] (-) TimerEvent: {}
+[12.945015] (-) TimerEvent: {}
+[13.045295] (-) TimerEvent: {}
+[13.145669] (-) TimerEvent: {}
+[13.245926] (-) TimerEvent: {}
+[13.346222] (-) TimerEvent: {}
+[13.446516] (-) TimerEvent: {}
+[13.546808] (-) TimerEvent: {}
+[13.647116] (-) TimerEvent: {}
+[13.747421] (-) TimerEvent: {}
+[13.847848] (-) TimerEvent: {}
+[13.948131] (-) TimerEvent: {}
+[14.048412] (-) TimerEvent: {}
+[14.148680] (-) TimerEvent: {}
+[14.248958] (-) TimerEvent: {}
+[14.349262] (-) TimerEvent: {}
+[14.449583] (-) TimerEvent: {}
+[14.549932] (-) TimerEvent: {}
+[14.650296] (-) TimerEvent: {}
+[14.750643] (-) TimerEvent: {}
+[14.850986] (-) TimerEvent: {}
+[14.951321] (-) TimerEvent: {}
+[15.051689] (-) TimerEvent: {}
+[15.151984] (-) TimerEvent: {}
+[15.252288] (-) TimerEvent: {}
+[15.352634] (-) TimerEvent: {}
+[15.452939] (-) TimerEvent: {}
+[15.553236] (-) TimerEvent: {}
+[15.653569] (-) TimerEvent: {}
+[15.753886] (-) TimerEvent: {}
+[15.854176] (-) TimerEvent: {}
+[15.954473] (-) TimerEvent: {}
+[16.054790] (-) TimerEvent: {}
+[16.155082] (-) TimerEvent: {}
+[16.255393] (-) TimerEvent: {}
+[16.355722] (-) TimerEvent: {}
+[16.456032] (-) TimerEvent: {}
+[16.556365] (-) TimerEvent: {}
+[16.656648] (-) TimerEvent: {}
+[16.756919] (-) TimerEvent: {}
+[16.857219] (-) TimerEvent: {}
+[16.957552] (-) TimerEvent: {}
+[17.057852] (-) TimerEvent: {}
+[17.158139] (-) TimerEvent: {}
+[17.258423] (-) TimerEvent: {}
+[17.358830] (-) TimerEvent: {}
+[17.459206] (-) TimerEvent: {}
+[17.559496] (-) TimerEvent: {}
+[17.659781] (-) TimerEvent: {}
+[17.760071] (-) TimerEvent: {}
+[17.860355] (-) TimerEvent: {}
+[17.960684] (-) TimerEvent: {}
+[18.061036] (-) TimerEvent: {}
+[18.161387] (-) TimerEvent: {}
+[18.261742] (-) TimerEvent: {}
+[18.362021] (-) TimerEvent: {}
+[18.462288] (-) TimerEvent: {}
+[18.562567] (-) TimerEvent: {}
+[18.662877] (-) TimerEvent: {}
+[18.763248] (-) TimerEvent: {}
+[18.863545] (-) TimerEvent: {}
+[18.963971] (-) TimerEvent: {}
+[19.064356] (-) TimerEvent: {}
+[19.164715] (-) TimerEvent: {}
+[19.265077] (-) TimerEvent: {}
+[19.365450] (-) TimerEvent: {}
+[19.465737] (-) TimerEvent: {}
+[19.566052] (-) TimerEvent: {}
+[19.666417] (-) TimerEvent: {}
+[19.766763] (-) TimerEvent: {}
+[19.867093] (-) TimerEvent: {}
+[19.967431] (-) TimerEvent: {}
+[20.067772] (-) TimerEvent: {}
+[20.168171] (-) TimerEvent: {}
+[20.268570] (-) TimerEvent: {}
+[20.368901] (-) TimerEvent: {}
+[20.469205] (-) TimerEvent: {}
+[20.569500] (-) TimerEvent: {}
+[20.669856] (-) TimerEvent: {}
+[20.770200] (-) TimerEvent: {}
+[20.870563] (-) TimerEvent: {}
+[20.970880] (-) TimerEvent: {}
+[21.071194] (-) TimerEvent: {}
+[21.171561] (-) TimerEvent: {}
+[21.271861] (-) TimerEvent: {}
+[21.372162] (-) TimerEvent: {}
+[21.472468] (-) TimerEvent: {}
+[21.572758] (-) TimerEvent: {}
+[21.673049] (-) TimerEvent: {}
+[21.773477] (-) TimerEvent: {}
+[21.873910] (-) TimerEvent: {}
+[21.974254] (-) TimerEvent: {}
+[22.074690] (-) TimerEvent: {}
+[22.175025] (-) TimerEvent: {}
+[22.275468] (-) TimerEvent: {}
+[22.375824] (-) TimerEvent: {}
+[22.476143] (-) TimerEvent: {}
+[22.576513] (-) TimerEvent: {}
+[22.676926] (-) TimerEvent: {}
+[22.777325] (-) TimerEvent: {}
+[22.877726] (-) TimerEvent: {}
+[22.978096] (-) TimerEvent: {}
+[23.078418] (-) TimerEvent: {}
+[23.178741] (-) TimerEvent: {}
+[23.279128] (-) TimerEvent: {}
+[23.379558] (-) TimerEvent: {}
+[23.413055] (vesc_ackermann) StdoutLine: {'line': b'[100%] Linking CXX shared library libvesc_ackermann.so\n'}
+[23.479678] (-) TimerEvent: {}
+[23.579976] (-) TimerEvent: {}
+[23.680270] (-) TimerEvent: {}
+[23.780595] (-) TimerEvent: {}
+[23.880901] (-) TimerEvent: {}
+[23.981285] (-) TimerEvent: {}
+[24.081655] (-) TimerEvent: {}
+[24.181980] (-) TimerEvent: {}
+[24.282282] (-) TimerEvent: {}
+[24.382606] (-) TimerEvent: {}
+[24.482902] (-) TimerEvent: {}
+[24.583206] (-) TimerEvent: {}
+[24.683554] (-) TimerEvent: {}
+[24.784028] (-) TimerEvent: {}
+[24.884324] (-) TimerEvent: {}
+[24.984639] (-) TimerEvent: {}
+[25.084937] (-) TimerEvent: {}
+[25.185265] (-) TimerEvent: {}
+[25.266736] (vesc_ackermann) StdoutLine: {'line': b'[100%] Built target vesc_ackermann\n'}
+[25.285756] (vesc_ackermann) CommandEnded: {'returncode': 0}
+[25.287014] (-) TimerEvent: {}
+[25.287498] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'install'}
+[25.303655] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sh/projects/f1tenth_miru3/build/vesc_ackermann'], 'cwd': '/home/sh/projects/f1tenth_miru3/build/vesc_ackermann', 'env': OrderedDict([('ENV_RUN', 'true'), ('VSCODE_CWD', '/home/sh'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('LANGUAGE', 'ko:en'), ('USER', 'sh'), ('LC_TIME', 'ko_KR.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"ko","osLocale":"ko","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"ko","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('HPIPM_MAIN_FOLDER', '/home/sh/../..'), ('OCTAVE_PATH', ':/home/sh/../../interfaces/matlab_octave/'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib'), ('LESS', '-R'), ('HOME', '/home/sh'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/sh'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NVM_BIN', '/home/sh/.nvm/versions/node/v22.19.0/bin'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/sh/.nvm/versions/node/v22.19.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-d2ec76d4-1.10-main.sock'), ('ZSH', '/home/sh/.oh-my-zsh'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', '1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '2546'), ('VISUAL', 'nvim'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/sh/.nvm'), ('_colcon_cd_root', '/opt/ros/humble/'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'sh'), ('MATLABPATH', ':/home/sh/../../interfaces/matlab_octave/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'sh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/sh/.cargo/bin:/tmp/.tmprv0jl0:/home/sh/.cargo/bin:/home/sh/.nvm/versions/node/v22.19.0/bin:/opt/ros/humble/bin:/home/sh/.cargo/bin:/home/sh/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sh/.fzf/bin:/home/sh/.vscode/extensions/openai.chatgpt-0.4.19-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/sh:@/tmp/.ICE-unix/2519,unix/sh:/tmp/.ICE-unix/2519'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/575268a7_70a2_4005_928d_bd3eab9a9538'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sh/projects/f1tenth_miru3/build/vesc_ackermann'), ('VSCODE_CLI', '1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/sh/.config/Code/CachedData/e3a5acfb517a443235981655413d566533107e92'), ('NVM_CD_FLAGS', '-q'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('BLASFEO_MAIN_FOLDER', '/home/sh/../../../blasfeo'), ('PYTHONPATH', '/home/sh/projects/f1tenth_miru3/install/vesc_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('EDITOR', 'nvim'), ('VSCODE_PID', '7686'), ('CMAKE_PREFIX_PATH', '/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/opt/ros/humble')]), 'shell': False}
+[25.321204] (vesc_ackermann) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[25.322749] (vesc_ackermann) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[25.323868] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node\n'}
+[25.340897] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node\n'}
+[25.357585] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp\n'}
+[25.373518] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp\n'}
+[25.387205] (-) TimerEvent: {}
+[25.391574] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh\n'}
+[25.410495] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv\n'}
+[25.426923] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/lib/libvesc_ackermann.so\n'}
+[25.443982] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml\n'}
+[25.461330] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml\n'}
+[25.478115] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann\n'}
+[25.487339] (-) TimerEvent: {}
+[25.496501] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann\n'}
+[25.513170] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh\n'}
+[25.529619] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv\n'}
+[25.548650] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh\n'}
+[25.563057] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv\n'}
+[25.579781] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash\n'}
+[25.587496] (-) TimerEvent: {}
+[25.596434] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh\n'}
+[25.612986] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh\n'}
+[25.629795] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv\n'}
+[25.646961] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/package.dsv\n'}
+[25.663501] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann\n'}
+[25.682073] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann\n'}
+[25.687667] (-) TimerEvent: {}
+[25.696415] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[25.712725] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[25.728610] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[25.744831] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake\n'}
+[25.761255] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake\n'}
+[25.777146] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/package.xml\n'}
+[25.787814] (-) TimerEvent: {}
+[25.796584] (vesc_ackermann) CommandEnded: {'returncode': 0}
+[25.833572] (vesc_ackermann) JobEnded: {'identifier': 'vesc_ackermann', 'rc': 0}
+[25.834751] (-) EventReactorShutdown: {}

@@ -1,0 +1,11 @@
+Consolidate compiler generated dependencies of target vesc_driver_node
+Consolidate compiler generated dependencies of target vesc_driver
+[ 20%] Built target vesc_driver_node
+[ 30%] Building CXX object CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o
+/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_driver/src/vesc_interface.cpp:45:10: fatal error: serial_driver/serial_driver.hpp: No such file or directory
+   45 | #include "serial_driver/serial_driver.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vesc_driver.dir/build.make:90: CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/vesc_driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

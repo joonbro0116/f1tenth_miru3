@@ -23,7 +23,7 @@ extern "C"
 // Member 'imu'
 #include "vesc_msgs/msg/detail/vesc_imu__struct.h"
 
-// Struct defined in msg/VescImuStamped in the package vesc_msgs.
+/// Struct defined in msg/VescImuStamped in the package vesc_msgs.
 typedef struct vesc_msgs__msg__VescImuStamped
 {
   std_msgs__msg__Header header;

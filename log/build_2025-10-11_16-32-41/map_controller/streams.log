@@ -1,0 +1,36 @@
+[0.646s] Invoking command in '/home/sh/projects/f1tenth_miru3/build/map_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sh/projects/f1tenth_miru3/build/map_controller -- -j16 -l16
+[0.928s] [ 60%] Built target map_controller_core
+[0.928s] [100%] Built target map_controller_node
+[1.186s] Invoked command in '/home/sh/projects/f1tenth_miru3/build/map_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sh/projects/f1tenth_miru3/build/map_controller -- -j16 -l16
+[1.188s] Invoking command in '/home/sh/projects/f1tenth_miru3/build/map_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sh/projects/f1tenth_miru3/build/map_controller
+[1.215s] -- Install configuration: ""
+[1.217s] -- Execute custom install script
+[1.218s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/lib/map_controller/libmap_controller_core.a
+[1.220s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/lib/map_controller/map_controller_node
+[1.220s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/include/map_controller/map_controller.hpp
+[1.220s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/include/map_controller/steering_lookup.hpp
+[1.221s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/config/map_controller_params.yaml
+[1.221s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/config/steering_lookup/NUC2_pacejka_lookup_table.csv
+[1.221s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/launch/map_controller_launch.py
+[1.221s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/launch/map_controller_sim_launch.py
+[1.221s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/launch/map_controller_sim_with_odom_bridge.launch.py
+[1.221s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/launch/map_controller_with_bringup.launch.py
+[1.222s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/lib/map_controller/odom_to_amcl_bridge.py
+[1.225s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/lib/map_controller/record_waypoints.py
+[1.226s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/lib/map_controller/ackermann_teleop.py
+[1.226s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/ament_index/resource_index/package_run_dependencies/map_controller
+[1.226s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/ament_index/resource_index/parent_prefix_path/map_controller
+[1.226s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/environment/ament_prefix_path.sh
+[1.226s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/environment/ament_prefix_path.dsv
+[1.226s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/environment/path.sh
+[1.227s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/environment/path.dsv
+[1.227s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/local_setup.bash
+[1.227s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/local_setup.sh
+[1.227s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/local_setup.zsh
+[1.227s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/local_setup.dsv
+[1.227s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/package.dsv
+[1.242s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/ament_index/resource_index/packages/map_controller
+[1.242s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/cmake/map_controllerConfig.cmake
+[1.242s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/cmake/map_controllerConfig-version.cmake
+[1.242s] -- Up-to-date symlink: /home/sh/projects/f1tenth_miru3/install/map_controller/share/map_controller/package.xml
+[1.275s] Invoked command in '/home/sh/projects/f1tenth_miru3/build/map_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sh/projects/f1tenth_miru3/build/map_controller

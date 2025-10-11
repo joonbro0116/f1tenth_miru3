@@ -1,0 +1,18 @@
+[3.647s] Invoking command in '/home/sh/projects/f1tenth_miru3/build/pygame_key_teleop': PYTHONPATH=/home/sh/projects/f1tenth_miru3/build/pygame_key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sh/projects/f1tenth_miru3/install/pygame_key_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sh/projects/f1tenth_miru3/build/pygame_key_teleop/build --no-deps symlink_data
+[4.249s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[4.249s]   warnings.warn(
+[4.327s] running develop
+[4.769s] running egg_info
+[4.769s] writing pygame_key_teleop.egg-info/PKG-INFO
+[4.770s] writing dependency_links to pygame_key_teleop.egg-info/dependency_links.txt
+[4.771s] writing entry points to pygame_key_teleop.egg-info/entry_points.txt
+[4.771s] writing requirements to pygame_key_teleop.egg-info/requires.txt
+[4.771s] writing top-level names to pygame_key_teleop.egg-info/top_level.txt
+[4.774s] reading manifest file 'pygame_key_teleop.egg-info/SOURCES.txt'
+[4.776s] writing manifest file 'pygame_key_teleop.egg-info/SOURCES.txt'
+[4.779s] running build_ext
+[4.779s] Creating /home/sh/projects/f1tenth_miru3/install/pygame_key_teleop/lib/python3.10/site-packages/pygame-key-teleop.egg-link (link to .)
+[4.781s] Installing pygame_key_teleop script to /home/sh/projects/f1tenth_miru3/install/pygame_key_teleop/lib/pygame_key_teleop
+[4.782s] 
+[4.782s] Installed /home/sh/projects/f1tenth_miru3/build/pygame_key_teleop
+[4.782s] running symlink_data

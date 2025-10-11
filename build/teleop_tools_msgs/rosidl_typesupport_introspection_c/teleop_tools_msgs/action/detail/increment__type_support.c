@@ -21,7 +21,7 @@ extern "C"
 {
 #endif
 
-void Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_init_function(
+void teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -30,12 +30,67 @@ void Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_init_fun
   teleop_tools_msgs__action__Increment_Goal__init(message_memory);
 }
 
-void Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_fini_function(void * message_memory)
+void teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_fini_function(void * message_memory)
 {
   teleop_tools_msgs__action__Increment_Goal__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_member_array[1] = {
+size_t teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__size_function__Increment_Goal__increment_by(
+  const void * untyped_member)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__get_const_function__Increment_Goal__increment_by(
+  const void * untyped_member, size_t index)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__get_function__Increment_Goal__increment_by(
+  void * untyped_member, size_t index)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__fetch_function__Increment_Goal__increment_by(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const float * item =
+    ((const float *)
+    teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__get_const_function__Increment_Goal__increment_by(untyped_member, index));
+  float * value =
+    (float *)(untyped_value);
+  *value = *item;
+}
+
+void teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__assign_function__Increment_Goal__increment_by(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  float * item =
+    ((float *)
+    teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__get_function__Increment_Goal__increment_by(untyped_member, index));
+  const float * value =
+    (const float *)(untyped_value);
+  *item = *value;
+}
+
+bool teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__resize_function__Increment_Goal__increment_by(
+  void * untyped_member, size_t size)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  rosidl_runtime_c__float__Sequence__fini(member);
+  return rosidl_runtime_c__float__Sequence__init(member, size);
+}
+
+static rosidl_typesupport_introspection_c__MessageMember teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_member_array[1] = {
   {
     "increment_by",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
@@ -46,39 +101,41 @@ static rosidl_typesupport_introspection_c__MessageMember Increment_Goal__rosidl_
     false,  // is upper bound
     offsetof(teleop_tools_msgs__action__Increment_Goal, increment_by),  // bytes offset in struct
     NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL  // resize(index) function pointer
+    teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__size_function__Increment_Goal__increment_by,  // size() function pointer
+    teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__get_const_function__Increment_Goal__increment_by,  // get_const(index) function pointer
+    teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__get_function__Increment_Goal__increment_by,  // get(index) function pointer
+    teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__fetch_function__Increment_Goal__increment_by,  // fetch(index, &value) function pointer
+    teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__assign_function__Increment_Goal__increment_by,  // assign(index, value) function pointer
+    teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__resize_function__Increment_Goal__increment_by  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_members = {
   "teleop_tools_msgs__action",  // message namespace
   "Increment_Goal",  // message name
   1,  // number of fields
   sizeof(teleop_tools_msgs__action__Increment_Goal),
-  Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_member_array,  // message members
-  Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_init_function,  // function to initialize message memory (memory has to be allocated)
-  Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_fini_function  // function to terminate message instance (will not free memory)
+  teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_member_array,  // message members
+  teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_init_function,  // function to initialize message memory (memory has to be allocated)
+  teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_type_support_handle = {
+static rosidl_message_type_support_t teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_type_support_handle = {
   0,
-  &Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_members,
+  &teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_teleop_tools_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, teleop_tools_msgs, action, Increment_Goal)() {
-  if (!Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_type_support_handle.typesupport_identifier) {
-    Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_type_support_handle.typesupport_identifier =
+  if (!teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_type_support_handle.typesupport_identifier) {
+    teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_type_support_handle;
+  return &teleop_tools_msgs__action__Increment_Goal__rosidl_typesupport_introspection_c__Increment_Goal_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -107,7 +164,7 @@ extern "C"
 {
 #endif
 
-void Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_init_function(
+void teleop_tools_msgs__action__Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -116,12 +173,12 @@ void Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_init
   teleop_tools_msgs__action__Increment_Result__init(message_memory);
 }
 
-void Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_fini_function(void * message_memory)
+void teleop_tools_msgs__action__Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_fini_function(void * message_memory)
 {
   teleop_tools_msgs__action__Increment_Result__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember teleop_tools_msgs__action__Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_member_array[1] = {
   {
     "structure_needs_at_least_one_member",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
@@ -135,36 +192,38 @@ static rosidl_typesupport_introspection_c__MessageMember Increment_Result__rosid
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers teleop_tools_msgs__action__Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_members = {
   "teleop_tools_msgs__action",  // message namespace
   "Increment_Result",  // message name
   1,  // number of fields
   sizeof(teleop_tools_msgs__action__Increment_Result),
-  Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_member_array,  // message members
-  Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_init_function,  // function to initialize message memory (memory has to be allocated)
-  Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_fini_function  // function to terminate message instance (will not free memory)
+  teleop_tools_msgs__action__Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_member_array,  // message members
+  teleop_tools_msgs__action__Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_init_function,  // function to initialize message memory (memory has to be allocated)
+  teleop_tools_msgs__action__Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_type_support_handle = {
+static rosidl_message_type_support_t teleop_tools_msgs__action__Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_type_support_handle = {
   0,
-  &Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_members,
+  &teleop_tools_msgs__action__Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_teleop_tools_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, teleop_tools_msgs, action, Increment_Result)() {
-  if (!Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_type_support_handle.typesupport_identifier) {
-    Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_type_support_handle.typesupport_identifier =
+  if (!teleop_tools_msgs__action__Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_type_support_handle.typesupport_identifier) {
+    teleop_tools_msgs__action__Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_type_support_handle;
+  return &teleop_tools_msgs__action__Increment_Result__rosidl_typesupport_introspection_c__Increment_Result_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -193,7 +252,7 @@ extern "C"
 {
 #endif
 
-void Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_init_function(
+void teleop_tools_msgs__action__Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -202,12 +261,12 @@ void Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_
   teleop_tools_msgs__action__Increment_Feedback__init(message_memory);
 }
 
-void Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_fini_function(void * message_memory)
+void teleop_tools_msgs__action__Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_fini_function(void * message_memory)
 {
   teleop_tools_msgs__action__Increment_Feedback__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember teleop_tools_msgs__action__Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_member_array[1] = {
   {
     "structure_needs_at_least_one_member",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
@@ -221,36 +280,38 @@ static rosidl_typesupport_introspection_c__MessageMember Increment_Feedback__ros
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers teleop_tools_msgs__action__Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_members = {
   "teleop_tools_msgs__action",  // message namespace
   "Increment_Feedback",  // message name
   1,  // number of fields
   sizeof(teleop_tools_msgs__action__Increment_Feedback),
-  Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_member_array,  // message members
-  Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_init_function,  // function to initialize message memory (memory has to be allocated)
-  Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_fini_function  // function to terminate message instance (will not free memory)
+  teleop_tools_msgs__action__Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_member_array,  // message members
+  teleop_tools_msgs__action__Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_init_function,  // function to initialize message memory (memory has to be allocated)
+  teleop_tools_msgs__action__Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_type_support_handle = {
+static rosidl_message_type_support_t teleop_tools_msgs__action__Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_type_support_handle = {
   0,
-  &Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_members,
+  &teleop_tools_msgs__action__Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_teleop_tools_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, teleop_tools_msgs, action, Increment_Feedback)() {
-  if (!Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_type_support_handle.typesupport_identifier) {
-    Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_type_support_handle.typesupport_identifier =
+  if (!teleop_tools_msgs__action__Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_type_support_handle.typesupport_identifier) {
+    teleop_tools_msgs__action__Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_type_support_handle;
+  return &teleop_tools_msgs__action__Increment_Feedback__rosidl_typesupport_introspection_c__Increment_Feedback_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -290,7 +351,7 @@ extern "C"
 {
 #endif
 
-void Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_init_function(
+void teleop_tools_msgs__action__Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -299,12 +360,12 @@ void Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_S
   teleop_tools_msgs__action__Increment_SendGoal_Request__init(message_memory);
 }
 
-void Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_fini_function(void * message_memory)
+void teleop_tools_msgs__action__Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_fini_function(void * message_memory)
 {
   teleop_tools_msgs__action__Increment_SendGoal_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember teleop_tools_msgs__action__Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_member_array[2] = {
   {
     "goal_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -318,6 +379,8 @@ static rosidl_typesupport_introspection_c__MessageMember Increment_SendGoal_Requ
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -333,40 +396,42 @@ static rosidl_typesupport_introspection_c__MessageMember Increment_SendGoal_Requ
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers teleop_tools_msgs__action__Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_members = {
   "teleop_tools_msgs__action",  // message namespace
   "Increment_SendGoal_Request",  // message name
   2,  // number of fields
   sizeof(teleop_tools_msgs__action__Increment_SendGoal_Request),
-  Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_member_array,  // message members
-  Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_init_function,  // function to initialize message memory (memory has to be allocated)
-  Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_fini_function  // function to terminate message instance (will not free memory)
+  teleop_tools_msgs__action__Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_member_array,  // message members
+  teleop_tools_msgs__action__Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_init_function,  // function to initialize message memory (memory has to be allocated)
+  teleop_tools_msgs__action__Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_type_support_handle = {
+static rosidl_message_type_support_t teleop_tools_msgs__action__Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_type_support_handle = {
   0,
-  &Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_members,
+  &teleop_tools_msgs__action__Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_teleop_tools_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, teleop_tools_msgs, action, Increment_SendGoal_Request)() {
-  Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_member_array[0].members_ =
+  teleop_tools_msgs__action__Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, unique_identifier_msgs, msg, UUID)();
-  Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_member_array[1].members_ =
+  teleop_tools_msgs__action__Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_member_array[1].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, teleop_tools_msgs, action, Increment_Goal)();
-  if (!Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_type_support_handle.typesupport_identifier) {
-    Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_type_support_handle.typesupport_identifier =
+  if (!teleop_tools_msgs__action__Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_type_support_handle.typesupport_identifier) {
+    teleop_tools_msgs__action__Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_type_support_handle;
+  return &teleop_tools_msgs__action__Increment_SendGoal_Request__rosidl_typesupport_introspection_c__Increment_SendGoal_Request_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -401,7 +466,7 @@ extern "C"
 {
 #endif
 
-void Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_init_function(
+void teleop_tools_msgs__action__Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -410,12 +475,12 @@ void Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_
   teleop_tools_msgs__action__Increment_SendGoal_Response__init(message_memory);
 }
 
-void Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_fini_function(void * message_memory)
+void teleop_tools_msgs__action__Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_fini_function(void * message_memory)
 {
   teleop_tools_msgs__action__Increment_SendGoal_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember teleop_tools_msgs__action__Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_member_array[2] = {
   {
     "accepted",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
@@ -429,6 +494,8 @@ static rosidl_typesupport_introspection_c__MessageMember Increment_SendGoal_Resp
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -444,38 +511,40 @@ static rosidl_typesupport_introspection_c__MessageMember Increment_SendGoal_Resp
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers teleop_tools_msgs__action__Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_members = {
   "teleop_tools_msgs__action",  // message namespace
   "Increment_SendGoal_Response",  // message name
   2,  // number of fields
   sizeof(teleop_tools_msgs__action__Increment_SendGoal_Response),
-  Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_member_array,  // message members
-  Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_init_function,  // function to initialize message memory (memory has to be allocated)
-  Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_fini_function  // function to terminate message instance (will not free memory)
+  teleop_tools_msgs__action__Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_member_array,  // message members
+  teleop_tools_msgs__action__Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_init_function,  // function to initialize message memory (memory has to be allocated)
+  teleop_tools_msgs__action__Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_type_support_handle = {
+static rosidl_message_type_support_t teleop_tools_msgs__action__Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_type_support_handle = {
   0,
-  &Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_members,
+  &teleop_tools_msgs__action__Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_teleop_tools_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, teleop_tools_msgs, action, Increment_SendGoal_Response)() {
-  Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_member_array[1].members_ =
+  teleop_tools_msgs__action__Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_member_array[1].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, builtin_interfaces, msg, Time)();
-  if (!Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_type_support_handle.typesupport_identifier) {
-    Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_type_support_handle.typesupport_identifier =
+  if (!teleop_tools_msgs__action__Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_type_support_handle.typesupport_identifier) {
+    teleop_tools_msgs__action__Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_type_support_handle;
+  return &teleop_tools_msgs__action__Increment_SendGoal_Response__rosidl_typesupport_introspection_c__Increment_SendGoal_Response_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -569,7 +638,7 @@ extern "C"
 {
 #endif
 
-void Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_init_function(
+void teleop_tools_msgs__action__Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -578,12 +647,12 @@ void Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_
   teleop_tools_msgs__action__Increment_GetResult_Request__init(message_memory);
 }
 
-void Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_fini_function(void * message_memory)
+void teleop_tools_msgs__action__Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_fini_function(void * message_memory)
 {
   teleop_tools_msgs__action__Increment_GetResult_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember teleop_tools_msgs__action__Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_member_array[1] = {
   {
     "goal_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -597,38 +666,40 @@ static rosidl_typesupport_introspection_c__MessageMember Increment_GetResult_Req
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers teleop_tools_msgs__action__Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_members = {
   "teleop_tools_msgs__action",  // message namespace
   "Increment_GetResult_Request",  // message name
   1,  // number of fields
   sizeof(teleop_tools_msgs__action__Increment_GetResult_Request),
-  Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_member_array,  // message members
-  Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_init_function,  // function to initialize message memory (memory has to be allocated)
-  Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_fini_function  // function to terminate message instance (will not free memory)
+  teleop_tools_msgs__action__Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_member_array,  // message members
+  teleop_tools_msgs__action__Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_init_function,  // function to initialize message memory (memory has to be allocated)
+  teleop_tools_msgs__action__Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_type_support_handle = {
+static rosidl_message_type_support_t teleop_tools_msgs__action__Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_type_support_handle = {
   0,
-  &Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_members,
+  &teleop_tools_msgs__action__Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_teleop_tools_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, teleop_tools_msgs, action, Increment_GetResult_Request)() {
-  Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_member_array[0].members_ =
+  teleop_tools_msgs__action__Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, unique_identifier_msgs, msg, UUID)();
-  if (!Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_type_support_handle.typesupport_identifier) {
-    Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_type_support_handle.typesupport_identifier =
+  if (!teleop_tools_msgs__action__Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_type_support_handle.typesupport_identifier) {
+    teleop_tools_msgs__action__Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_type_support_handle;
+  return &teleop_tools_msgs__action__Increment_GetResult_Request__rosidl_typesupport_introspection_c__Increment_GetResult_Request_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -665,7 +736,7 @@ extern "C"
 {
 #endif
 
-void Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_init_function(
+void teleop_tools_msgs__action__Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -674,12 +745,12 @@ void Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment
   teleop_tools_msgs__action__Increment_GetResult_Response__init(message_memory);
 }
 
-void Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_fini_function(void * message_memory)
+void teleop_tools_msgs__action__Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_fini_function(void * message_memory)
 {
   teleop_tools_msgs__action__Increment_GetResult_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember teleop_tools_msgs__action__Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_member_array[2] = {
   {
     "status",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT8,  // type
@@ -693,6 +764,8 @@ static rosidl_typesupport_introspection_c__MessageMember Increment_GetResult_Res
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -708,38 +781,40 @@ static rosidl_typesupport_introspection_c__MessageMember Increment_GetResult_Res
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers teleop_tools_msgs__action__Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_members = {
   "teleop_tools_msgs__action",  // message namespace
   "Increment_GetResult_Response",  // message name
   2,  // number of fields
   sizeof(teleop_tools_msgs__action__Increment_GetResult_Response),
-  Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_member_array,  // message members
-  Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_init_function,  // function to initialize message memory (memory has to be allocated)
-  Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_fini_function  // function to terminate message instance (will not free memory)
+  teleop_tools_msgs__action__Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_member_array,  // message members
+  teleop_tools_msgs__action__Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_init_function,  // function to initialize message memory (memory has to be allocated)
+  teleop_tools_msgs__action__Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_type_support_handle = {
+static rosidl_message_type_support_t teleop_tools_msgs__action__Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_type_support_handle = {
   0,
-  &Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_members,
+  &teleop_tools_msgs__action__Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_teleop_tools_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, teleop_tools_msgs, action, Increment_GetResult_Response)() {
-  Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_member_array[1].members_ =
+  teleop_tools_msgs__action__Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_member_array[1].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, teleop_tools_msgs, action, Increment_Result)();
-  if (!Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_type_support_handle.typesupport_identifier) {
-    Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_type_support_handle.typesupport_identifier =
+  if (!teleop_tools_msgs__action__Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_type_support_handle.typesupport_identifier) {
+    teleop_tools_msgs__action__Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_type_support_handle;
+  return &teleop_tools_msgs__action__Increment_GetResult_Response__rosidl_typesupport_introspection_c__Increment_GetResult_Response_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -841,7 +916,7 @@ extern "C"
 {
 #endif
 
-void Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_init_function(
+void teleop_tools_msgs__action__Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -850,12 +925,12 @@ void Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_Fe
   teleop_tools_msgs__action__Increment_FeedbackMessage__init(message_memory);
 }
 
-void Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_fini_function(void * message_memory)
+void teleop_tools_msgs__action__Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_fini_function(void * message_memory)
 {
   teleop_tools_msgs__action__Increment_FeedbackMessage__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember teleop_tools_msgs__action__Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_member_array[2] = {
   {
     "goal_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -869,6 +944,8 @@ static rosidl_typesupport_introspection_c__MessageMember Increment_FeedbackMessa
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   },
   {
@@ -884,40 +961,42 @@ static rosidl_typesupport_introspection_c__MessageMember Increment_FeedbackMessa
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers teleop_tools_msgs__action__Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_members = {
   "teleop_tools_msgs__action",  // message namespace
   "Increment_FeedbackMessage",  // message name
   2,  // number of fields
   sizeof(teleop_tools_msgs__action__Increment_FeedbackMessage),
-  Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_member_array,  // message members
-  Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_init_function,  // function to initialize message memory (memory has to be allocated)
-  Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_fini_function  // function to terminate message instance (will not free memory)
+  teleop_tools_msgs__action__Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_member_array,  // message members
+  teleop_tools_msgs__action__Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_init_function,  // function to initialize message memory (memory has to be allocated)
+  teleop_tools_msgs__action__Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_type_support_handle = {
+static rosidl_message_type_support_t teleop_tools_msgs__action__Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_type_support_handle = {
   0,
-  &Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_members,
+  &teleop_tools_msgs__action__Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_teleop_tools_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, teleop_tools_msgs, action, Increment_FeedbackMessage)() {
-  Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_member_array[0].members_ =
+  teleop_tools_msgs__action__Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, unique_identifier_msgs, msg, UUID)();
-  Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_member_array[1].members_ =
+  teleop_tools_msgs__action__Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_member_array[1].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, teleop_tools_msgs, action, Increment_Feedback)();
-  if (!Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_type_support_handle.typesupport_identifier) {
-    Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_type_support_handle.typesupport_identifier =
+  if (!teleop_tools_msgs__action__Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_type_support_handle.typesupport_identifier) {
+    teleop_tools_msgs__action__Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_type_support_handle;
+  return &teleop_tools_msgs__action__Increment_FeedbackMessage__rosidl_typesupport_introspection_c__Increment_FeedbackMessage_message_type_support_handle;
 }
 #ifdef __cplusplus
 }

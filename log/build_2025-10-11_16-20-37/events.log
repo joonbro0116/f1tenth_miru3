@@ -1,0 +1,120 @@
+[0.000000] (-) TimerEvent: {}
+[0.000291] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.000369] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.000450] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.000506] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.000552] (-) JobUnselected: {'identifier': 'forza_map_controller'}
+[0.000601] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.000650] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.000695] (-) JobUnselected: {'identifier': 'map_controller'}
+[0.000741] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.000786] (-) JobUnselected: {'identifier': 'path_follow'}
+[0.000830] (-) JobUnselected: {'identifier': 'pure_pursuit'}
+[0.000875] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.000920] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.000965] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.001011] (-) JobUnselected: {'identifier': 'vesc'}
+[0.001057] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.001122] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.001345] (vesc_ackermann) JobQueued: {'identifier': 'vesc_ackermann', 'dependencies': OrderedDict([('vesc_msgs', '/home/sh/projects/f1tenth_miru3/install/vesc_msgs')])}
+[0.001418] (vesc_ackermann) JobStarted: {'identifier': 'vesc_ackermann'}
+[0.020363] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'cmake'}
+[0.022306] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'build'}
+[0.024413] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sh/projects/f1tenth_miru3/build/vesc_ackermann', '--', '-j16', '-l16'], 'cwd': '/home/sh/projects/f1tenth_miru3/build/vesc_ackermann', 'env': OrderedDict([('ENV_RUN', 'true'), ('VSCODE_CWD', '/home/sh'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('LANGUAGE', 'ko:en'), ('USER', 'sh'), ('LC_TIME', 'ko_KR.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"ko","osLocale":"ko","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"ko","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('HPIPM_MAIN_FOLDER', '/home/sh/../..'), ('OCTAVE_PATH', ':/home/sh/../../interfaces/matlab_octave/'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib'), ('LESS', '-R'), ('HOME', '/home/sh'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/sh'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NVM_BIN', '/home/sh/.nvm/versions/node/v22.19.0/bin'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/sh/.nvm/versions/node/v22.19.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-d2ec76d4-1.10-main.sock'), ('ZSH', '/home/sh/.oh-my-zsh'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', '1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '2546'), ('VISUAL', 'nvim'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/sh/.nvm'), ('_colcon_cd_root', '/opt/ros/humble/'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'sh'), ('MATLABPATH', ':/home/sh/../../interfaces/matlab_octave/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'sh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/sh/.cargo/bin:/tmp/.tmprv0jl0:/home/sh/.cargo/bin:/home/sh/.nvm/versions/node/v22.19.0/bin:/opt/ros/humble/bin:/home/sh/.cargo/bin:/home/sh/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sh/.fzf/bin:/home/sh/.vscode/extensions/openai.chatgpt-0.4.19-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/sh:@/tmp/.ICE-unix/2519,unix/sh:/tmp/.ICE-unix/2519'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/575268a7_70a2_4005_928d_bd3eab9a9538'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sh/projects/f1tenth_miru3/build/vesc_ackermann'), ('VSCODE_CLI', '1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/sh/.config/Code/CachedData/e3a5acfb517a443235981655413d566533107e92'), ('NVM_CD_FLAGS', '-q'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('BLASFEO_MAIN_FOLDER', '/home/sh/../../../blasfeo'), ('PYTHONPATH', '/home/sh/projects/f1tenth_miru3/install/vesc_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('EDITOR', 'nvim'), ('VSCODE_PID', '7686'), ('CMAKE_PREFIX_PATH', '/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/opt/ros/humble')]), 'shell': False}
+[0.098044] (-) TimerEvent: {}
+[0.134355] (vesc_ackermann) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target ackermann_to_vesc_node\n'}
+[0.134852] (vesc_ackermann) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target vesc_to_odom_node\n'}
+[0.140231] (vesc_ackermann) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target vesc_ackermann\n'}
+[0.163887] (vesc_ackermann) StdoutLine: {'line': b'[ 28%] Built target ackermann_to_vesc_node\n'}
+[0.166240] (vesc_ackermann) StdoutLine: {'line': b'[ 57%] Built target vesc_to_odom_node\n'}
+[0.175572] (vesc_ackermann) StdoutLine: {'line': b'[ 85%] Building CXX object CMakeFiles/vesc_ackermann.dir/src/ackermann_to_vesc.cpp.o\n'}
+[0.176013] (vesc_ackermann) StdoutLine: {'line': b'[ 85%] Building CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o\n'}
+[0.198273] (-) TimerEvent: {}
+[0.298621] (-) TimerEvent: {}
+[0.399122] (-) TimerEvent: {}
+[0.499480] (-) TimerEvent: {}
+[0.599835] (-) TimerEvent: {}
+[0.700187] (-) TimerEvent: {}
+[0.800550] (-) TimerEvent: {}
+[0.901016] (-) TimerEvent: {}
+[1.001493] (-) TimerEvent: {}
+[1.101846] (-) TimerEvent: {}
+[1.202311] (-) TimerEvent: {}
+[1.302755] (-) TimerEvent: {}
+[1.403215] (-) TimerEvent: {}
+[1.503617] (-) TimerEvent: {}
+[1.604010] (-) TimerEvent: {}
+[1.704422] (-) TimerEvent: {}
+[1.804735] (-) TimerEvent: {}
+[1.905068] (-) TimerEvent: {}
+[2.005380] (-) TimerEvent: {}
+[2.105700] (-) TimerEvent: {}
+[2.206112] (-) TimerEvent: {}
+[2.306511] (-) TimerEvent: {}
+[2.406819] (-) TimerEvent: {}
+[2.507169] (-) TimerEvent: {}
+[2.607552] (-) TimerEvent: {}
+[2.707905] (-) TimerEvent: {}
+[2.808215] (-) TimerEvent: {}
+[2.908539] (-) TimerEvent: {}
+[3.008942] (-) TimerEvent: {}
+[3.109404] (-) TimerEvent: {}
+[3.209727] (-) TimerEvent: {}
+[3.310117] (-) TimerEvent: {}
+[3.410485] (-) TimerEvent: {}
+[3.510876] (-) TimerEvent: {}
+[3.611329] (-) TimerEvent: {}
+[3.711823] (-) TimerEvent: {}
+[3.812274] (-) TimerEvent: {}
+[3.912671] (-) TimerEvent: {}
+[4.013053] (-) TimerEvent: {}
+[4.113542] (-) TimerEvent: {}
+[4.214007] (-) TimerEvent: {}
+[4.314400] (-) TimerEvent: {}
+[4.414864] (-) TimerEvent: {}
+[4.515310] (-) TimerEvent: {}
+[4.615653] (-) TimerEvent: {}
+[4.716055] (-) TimerEvent: {}
+[4.816430] (-) TimerEvent: {}
+[4.916789] (-) TimerEvent: {}
+[5.017258] (-) TimerEvent: {}
+[5.117612] (-) TimerEvent: {}
+[5.217974] (-) TimerEvent: {}
+[5.318300] (-) TimerEvent: {}
+[5.418625] (-) TimerEvent: {}
+[5.518970] (-) TimerEvent: {}
+[5.619430] (-) TimerEvent: {}
+[5.719802] (-) TimerEvent: {}
+[5.820239] (-) TimerEvent: {}
+[5.920696] (-) TimerEvent: {}
+[6.021072] (-) TimerEvent: {}
+[6.121631] (-) TimerEvent: {}
+[6.222161] (-) TimerEvent: {}
+[6.322562] (-) TimerEvent: {}
+[6.422898] (-) TimerEvent: {}
+[6.523401] (-) TimerEvent: {}
+[6.623796] (-) TimerEvent: {}
+[6.724189] (-) TimerEvent: {}
+[6.824510] (-) TimerEvent: {}
+[6.924829] (-) TimerEvent: {}
+[7.025188] (-) TimerEvent: {}
+[7.125558] (-) TimerEvent: {}
+[7.225935] (-) TimerEvent: {}
+[7.326239] (-) TimerEvent: {}
+[7.426604] (-) TimerEvent: {}
+[7.526963] (-) TimerEvent: {}
+[7.627335] (-) TimerEvent: {}
+[7.727691] (-) TimerEvent: {}
+[7.828056] (-) TimerEvent: {}
+[7.928397] (-) TimerEvent: {}
+[8.028725] (-) TimerEvent: {}
+[8.129065] (-) TimerEvent: {}
+[8.229440] (-) TimerEvent: {}
+[8.329744] (-) TimerEvent: {}
+[8.430148] (-) TimerEvent: {}
+[8.530475] (-) TimerEvent: {}
+[8.630797] (-) TimerEvent: {}
+[8.731166] (-) TimerEvent: {}
+[8.831506] (-) TimerEvent: {}
+[8.931874] (-) TimerEvent: {}
+[9.032243] (-) TimerEvent: {}

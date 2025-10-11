@@ -17,13 +17,13 @@ def generate_launch_description():
             'config',
             'map_controller_params.yaml',
         ]),
-        description='Full path to parameter file.',
+        description='Full path to the MAP controller parameter file.'
     )
 
     use_sim_time_arg = DeclareLaunchArgument(
         'use_sim_time',
         default_value='false',
-        description='Use simulation clock if true.',
+        description='Use simulation time if true.'
     )
 
     params_file = LaunchConfiguration('params_file')
@@ -31,7 +31,7 @@ def generate_launch_description():
 
     controller_node = Node(
         package='map_controller',
-        executable='map_controller_main',
+        executable='map_controller_node',
         name='map_controller_manager',
         output='screen',
         parameters=[params_file, {'use_sim_time': use_sim_time}],

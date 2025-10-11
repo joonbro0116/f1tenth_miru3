@@ -1,0 +1,1 @@
+/home/sh/projects/f1tenth_miru3/build/teleop_tools_msgs/ament_cmake_python/teleop_tools_msgs/teleop_tools_msgs.egg-info/top_level.txt

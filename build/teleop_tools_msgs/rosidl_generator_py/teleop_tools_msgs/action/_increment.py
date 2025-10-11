@@ -8,6 +8,10 @@
 # Member 'increment_by'
 import array  # noqa: E402, I100
 
+import builtins  # noqa: E402, I100
+
+import math  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -111,7 +115,7 @@ class Increment_Goal(metaclass=Metaclass_Increment_Goal):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @property
+    @builtins.property
     def increment_by(self):
         """Message field 'increment_by'."""
         return self._increment_by
@@ -135,8 +139,8 @@ class Increment_Goal(metaclass=Metaclass_Increment_Goal):
                  not isinstance(value, str) and
                  not isinstance(value, UserString) and
                  all(isinstance(v, float) for v in value) and
-                 True), \
-                "The 'increment_by' field must be a set or sequence and each value of type 'float'"
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'increment_by' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
         self._increment_by = array.array('f', value)
 
 
@@ -345,6 +349,9 @@ class Increment_Feedback(metaclass=Metaclass_Increment_Feedback):
 # Import statements for member types
 
 # already imported above
+# import builtins
+
+# already imported above
 # import rosidl_parser.definition
 
 
@@ -464,7 +471,7 @@ class Increment_SendGoal_Request(metaclass=Metaclass_Increment_SendGoal_Request)
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @property
+    @builtins.property
     def goal_id(self):
         """Message field 'goal_id'."""
         return self._goal_id
@@ -478,7 +485,7 @@ class Increment_SendGoal_Request(metaclass=Metaclass_Increment_SendGoal_Request)
                 "The 'goal_id' field must be a sub message of type 'UUID'"
         self._goal_id = value
 
-    @property
+    @builtins.property
     def goal(self):
         """Message field 'goal'."""
         return self._goal
@@ -494,6 +501,9 @@ class Increment_SendGoal_Request(metaclass=Metaclass_Increment_SendGoal_Request)
 
 
 # Import statements for member types
+
+# already imported above
+# import builtins
 
 # already imported above
 # import rosidl_parser.definition
@@ -610,7 +620,7 @@ class Increment_SendGoal_Response(metaclass=Metaclass_Increment_SendGoal_Respons
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @property
+    @builtins.property
     def accepted(self):
         """Message field 'accepted'."""
         return self._accepted
@@ -623,7 +633,7 @@ class Increment_SendGoal_Response(metaclass=Metaclass_Increment_SendGoal_Respons
                 "The 'accepted' field must be of type 'bool'"
         self._accepted = value
 
-    @property
+    @builtins.property
     def stamp(self):
         """Message field 'stamp'."""
         return self._stamp
@@ -675,6 +685,9 @@ class Increment_SendGoal(metaclass=Metaclass_Increment_SendGoal):
 
 
 # Import statements for member types
+
+# already imported above
+# import builtins
 
 # already imported above
 # import rosidl_parser.definition
@@ -785,7 +798,7 @@ class Increment_GetResult_Request(metaclass=Metaclass_Increment_GetResult_Reques
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @property
+    @builtins.property
     def goal_id(self):
         """Message field 'goal_id'."""
         return self._goal_id
@@ -801,6 +814,9 @@ class Increment_GetResult_Request(metaclass=Metaclass_Increment_GetResult_Reques
 
 
 # Import statements for member types
+
+# already imported above
+# import builtins
 
 # already imported above
 # import rosidl_parser.definition
@@ -917,7 +933,7 @@ class Increment_GetResult_Response(metaclass=Metaclass_Increment_GetResult_Respo
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @property
+    @builtins.property
     def status(self):
         """Message field 'status'."""
         return self._status
@@ -932,7 +948,7 @@ class Increment_GetResult_Response(metaclass=Metaclass_Increment_GetResult_Respo
                 "The 'status' field must be an integer in [-128, 127]"
         self._status = value
 
-    @property
+    @builtins.property
     def result(self):
         """Message field 'result'."""
         return self._result
@@ -984,6 +1000,9 @@ class Increment_GetResult(metaclass=Metaclass_Increment_GetResult):
 
 
 # Import statements for member types
+
+# already imported above
+# import builtins
 
 # already imported above
 # import rosidl_parser.definition
@@ -1105,7 +1124,7 @@ class Increment_FeedbackMessage(metaclass=Metaclass_Increment_FeedbackMessage):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @property
+    @builtins.property
     def goal_id(self):
         """Message field 'goal_id'."""
         return self._goal_id
@@ -1119,7 +1138,7 @@ class Increment_FeedbackMessage(metaclass=Metaclass_Increment_FeedbackMessage):
                 "The 'goal_id' field must be a sub message of type 'UUID'"
         self._goal_id = value
 
-    @property
+    @builtins.property
     def feedback(self):
         """Message field 'feedback'."""
         return self._feedback

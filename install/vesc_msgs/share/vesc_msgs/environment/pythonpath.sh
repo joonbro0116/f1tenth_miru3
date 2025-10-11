@@ -1,1 +1,1 @@
-/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/pythonpath.sh
+/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/pythonpath.sh

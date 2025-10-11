@@ -5,6 +5,10 @@
 
 # Import statements for member types
 
+import builtins  # noqa: E402, I100
+
+import math  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -300,7 +304,7 @@ class VescState(metaclass=Metaclass_VescState):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @property
+    @builtins.property
     def temp_fet(self):
         """Message field 'temp_fet'."""
         return self._temp_fet
@@ -311,9 +315,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'temp_fet' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'temp_fet' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._temp_fet = value
 
-    @property
+    @builtins.property
     def temp_motor(self):
         """Message field 'temp_motor'."""
         return self._temp_motor
@@ -324,9 +330,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'temp_motor' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'temp_motor' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._temp_motor = value
 
-    @property
+    @builtins.property
     def current_motor(self):
         """Message field 'current_motor'."""
         return self._current_motor
@@ -337,9 +345,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'current_motor' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'current_motor' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._current_motor = value
 
-    @property
+    @builtins.property
     def current_input(self):
         """Message field 'current_input'."""
         return self._current_input
@@ -350,9 +360,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'current_input' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'current_input' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._current_input = value
 
-    @property
+    @builtins.property
     def avg_id(self):
         """Message field 'avg_id'."""
         return self._avg_id
@@ -363,9 +375,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'avg_id' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'avg_id' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._avg_id = value
 
-    @property
+    @builtins.property
     def avg_iq(self):
         """Message field 'avg_iq'."""
         return self._avg_iq
@@ -376,9 +390,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'avg_iq' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'avg_iq' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._avg_iq = value
 
-    @property
+    @builtins.property
     def duty_cycle(self):
         """Message field 'duty_cycle'."""
         return self._duty_cycle
@@ -389,9 +405,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'duty_cycle' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'duty_cycle' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._duty_cycle = value
 
-    @property
+    @builtins.property
     def speed(self):
         """Message field 'speed'."""
         return self._speed
@@ -402,9 +420,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'speed' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'speed' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._speed = value
 
-    @property
+    @builtins.property
     def voltage_input(self):
         """Message field 'voltage_input'."""
         return self._voltage_input
@@ -415,9 +435,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'voltage_input' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'voltage_input' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._voltage_input = value
 
-    @property
+    @builtins.property
     def charge_drawn(self):
         """Message field 'charge_drawn'."""
         return self._charge_drawn
@@ -428,9 +450,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'charge_drawn' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'charge_drawn' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._charge_drawn = value
 
-    @property
+    @builtins.property
     def charge_regen(self):
         """Message field 'charge_regen'."""
         return self._charge_regen
@@ -441,9 +465,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'charge_regen' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'charge_regen' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._charge_regen = value
 
-    @property
+    @builtins.property
     def energy_drawn(self):
         """Message field 'energy_drawn'."""
         return self._energy_drawn
@@ -454,9 +480,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'energy_drawn' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'energy_drawn' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._energy_drawn = value
 
-    @property
+    @builtins.property
     def energy_regen(self):
         """Message field 'energy_regen'."""
         return self._energy_regen
@@ -467,9 +495,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'energy_regen' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'energy_regen' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._energy_regen = value
 
-    @property
+    @builtins.property
     def displacement(self):
         """Message field 'displacement'."""
         return self._displacement
@@ -484,7 +514,7 @@ class VescState(metaclass=Metaclass_VescState):
                 "The 'displacement' field must be an integer in [-2147483648, 2147483647]"
         self._displacement = value
 
-    @property
+    @builtins.property
     def distance_traveled(self):
         """Message field 'distance_traveled'."""
         return self._distance_traveled
@@ -499,7 +529,7 @@ class VescState(metaclass=Metaclass_VescState):
                 "The 'distance_traveled' field must be an integer in [-2147483648, 2147483647]"
         self._distance_traveled = value
 
-    @property
+    @builtins.property
     def fault_code(self):
         """Message field 'fault_code'."""
         return self._fault_code
@@ -514,7 +544,7 @@ class VescState(metaclass=Metaclass_VescState):
                 "The 'fault_code' field must be an integer in [-2147483648, 2147483647]"
         self._fault_code = value
 
-    @property
+    @builtins.property
     def pid_pos_now(self):
         """Message field 'pid_pos_now'."""
         return self._pid_pos_now
@@ -525,9 +555,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'pid_pos_now' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'pid_pos_now' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._pid_pos_now = value
 
-    @property
+    @builtins.property
     def controller_id(self):
         """Message field 'controller_id'."""
         return self._controller_id
@@ -542,7 +574,7 @@ class VescState(metaclass=Metaclass_VescState):
                 "The 'controller_id' field must be an integer in [-2147483648, 2147483647]"
         self._controller_id = value
 
-    @property
+    @builtins.property
     def ntc_temp_mos1(self):
         """Message field 'ntc_temp_mos1'."""
         return self._ntc_temp_mos1
@@ -553,9 +585,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'ntc_temp_mos1' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'ntc_temp_mos1' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._ntc_temp_mos1 = value
 
-    @property
+    @builtins.property
     def ntc_temp_mos2(self):
         """Message field 'ntc_temp_mos2'."""
         return self._ntc_temp_mos2
@@ -566,9 +600,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'ntc_temp_mos2' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'ntc_temp_mos2' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._ntc_temp_mos2 = value
 
-    @property
+    @builtins.property
     def ntc_temp_mos3(self):
         """Message field 'ntc_temp_mos3'."""
         return self._ntc_temp_mos3
@@ -579,9 +615,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'ntc_temp_mos3' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'ntc_temp_mos3' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._ntc_temp_mos3 = value
 
-    @property
+    @builtins.property
     def avg_vd(self):
         """Message field 'avg_vd'."""
         return self._avg_vd
@@ -592,9 +630,11 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'avg_vd' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'avg_vd' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._avg_vd = value
 
-    @property
+    @builtins.property
     def avg_vq(self):
         """Message field 'avg_vq'."""
         return self._avg_vq
@@ -605,4 +645,6 @@ class VescState(metaclass=Metaclass_VescState):
             assert \
                 isinstance(value, float), \
                 "The 'avg_vq' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'avg_vq' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._avg_vq = value

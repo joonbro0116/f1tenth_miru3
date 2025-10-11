@@ -1,0 +1,1 @@
+/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__struct.h

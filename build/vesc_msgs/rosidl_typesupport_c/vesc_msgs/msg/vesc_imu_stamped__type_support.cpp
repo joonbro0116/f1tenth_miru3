@@ -4,8 +4,8 @@
 
 #include "cstddef"
 #include "rosidl_runtime_c/message_type_support_struct.h"
-#include "vesc_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 #include "vesc_msgs/msg/detail/vesc_imu_stamped__struct.h"
+#include "vesc_msgs/msg/detail/vesc_imu_stamped__type_support.h"
 #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/message_type_support_dispatch.h"
 #include "rosidl_typesupport_c/type_support_map.h"
@@ -85,7 +85,6 @@ extern "C"
 {
 #endif
 
-ROSIDL_TYPESUPPORT_C_EXPORT_vesc_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, vesc_msgs, msg, VescImuStamped)() {
   return &::vesc_msgs::msg::rosidl_typesupport_c::VescImuStamped_message_type_support_handle;

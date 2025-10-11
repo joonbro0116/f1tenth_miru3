@@ -1,0 +1,30 @@
+[3.801s] Invoking command in '/home/sh/projects/f1tenth_miru3/build/forza_map_controller': PYTHONPATH=/home/sh/projects/f1tenth_miru3/build/forza_map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sh/projects/f1tenth_miru3/build/forza_map_controller/build --no-deps symlink_data
+[4.688s] running develop
+[5.464s] running egg_info
+[5.464s] creating forza_map_controller.egg-info
+[5.468s] writing forza_map_controller.egg-info/PKG-INFO
+[5.468s] writing dependency_links to forza_map_controller.egg-info/dependency_links.txt
+[5.468s] writing entry points to forza_map_controller.egg-info/entry_points.txt
+[5.469s] writing requirements to forza_map_controller.egg-info/requires.txt
+[5.469s] writing top-level names to forza_map_controller.egg-info/top_level.txt
+[5.469s] writing manifest file 'forza_map_controller.egg-info/SOURCES.txt'
+[5.473s] reading manifest file 'forza_map_controller.egg-info/SOURCES.txt'
+[5.477s] writing manifest file 'forza_map_controller.egg-info/SOURCES.txt'
+[5.482s] running build_ext
+[5.485s] Creating /home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/python3.10/site-packages/forza-map-controller.egg-link (link to .)
+[5.486s] Installing controller_manager script to /home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/forza_map_controller
+[5.487s] 
+[5.487s] Installed /home/sh/projects/f1tenth_miru3/build/forza_map_controller
+[5.488s] running symlink_data
+[5.488s] creating /home/sh/projects/f1tenth_miru3/install/forza_map_controller/share/ament_index
+[5.488s] creating /home/sh/projects/f1tenth_miru3/install/forza_map_controller/share/ament_index/resource_index
+[5.489s] creating /home/sh/projects/f1tenth_miru3/install/forza_map_controller/share/ament_index/resource_index/packages
+[5.489s] symbolically linking /home/sh/projects/f1tenth_miru3/build/forza_map_controller/resource/forza_map_controller -> /home/sh/projects/f1tenth_miru3/install/forza_map_controller/share/ament_index/resource_index/packages
+[5.489s] symbolically linking /home/sh/projects/f1tenth_miru3/build/forza_map_controller/package.xml -> /home/sh/projects/f1tenth_miru3/install/forza_map_controller/share/forza_map_controller
+[5.489s] creating /home/sh/projects/f1tenth_miru3/install/forza_map_controller/share/forza_map_controller/config
+[5.489s] symbolically linking /home/sh/projects/f1tenth_miru3/build/forza_map_controller/config/forza_map_params.yaml -> /home/sh/projects/f1tenth_miru3/install/forza_map_controller/share/forza_map_controller/config
+[5.490s] creating /home/sh/projects/f1tenth_miru3/install/forza_map_controller/share/forza_map_controller/config/steering_lut
+[5.490s] creating /home/sh/projects/f1tenth_miru3/install/forza_map_controller/share/forza_map_controller/launch
+[5.490s] symbolically linking /home/sh/projects/f1tenth_miru3/build/forza_map_controller/launch/forza_map_real.launch.py -> /home/sh/projects/f1tenth_miru3/install/forza_map_controller/share/forza_map_controller/launch
+[5.490s] symbolically linking /home/sh/projects/f1tenth_miru3/build/forza_map_controller/launch/forza_map_sim.launch.py -> /home/sh/projects/f1tenth_miru3/install/forza_map_controller/share/forza_map_controller/launch
+[5.634s] Invoked command in '/home/sh/projects/f1tenth_miru3/build/forza_map_controller' returned '0': PYTHONPATH=/home/sh/projects/f1tenth_miru3/build/forza_map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sh/projects/f1tenth_miru3/build/forza_map_controller/build --no-deps symlink_data

@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/vesc/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/vesc/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/vesc/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/vesc/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/vesc/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/vesc/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/f1/f1tenth_ws/install/vesc/${destination}")
+      set(destination "/home/sh/projects/f1tenth_miru3/install/vesc/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,49 +311,49 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
-include("/home/f1/f1tenth_ws/build/vesc/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "DESTINATION" "lib/vesc")
-include("/home/f1/f1tenth_ws/build/vesc/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vesc" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc" FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vesc" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vesc" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc" FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vesc" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vesc" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc" FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vesc" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vesc" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc" FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vesc" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vesc/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vesc/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vesc/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vesc/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vesc/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc" FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vesc/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vesc/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc" FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vesc/environment")
 
-# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vesc/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vesc/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vesc/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vesc/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vesc/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc" FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vesc/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vesc/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc" FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vesc/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vesc")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc" FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vesc")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vesc")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc" FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vesc")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vesc")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc" FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vesc")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vesc")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc" FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vesc")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vesc")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc" FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vesc")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vesc")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc" FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vesc")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vesc")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc" FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vesc")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vesc")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc" FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vesc")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vesc")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc" FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vesc")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vesc")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc" FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vesc")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_index/share/ament_index/resource_index/packages/vesc" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc" FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_index/share/ament_index/resource_index/packages/vesc" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_index/share/ament_index/resource_index/packages/vesc" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc" FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_index/share/ament_index/resource_index/packages/vesc" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_core/vescConfig.cmake" "/home/f1/f1tenth_ws/build/vesc/ament_cmake_core/vescConfig-version.cmake" "DESTINATION" "share/vesc/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc" FILES "/home/f1/f1tenth_ws/build/vesc/ament_cmake_core/vescConfig.cmake" "/home/f1/f1tenth_ws/build/vesc/ament_cmake_core/vescConfig-version.cmake" "DESTINATION" "share/vesc/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_core/vescConfig.cmake" "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_core/vescConfig-version.cmake" "DESTINATION" "share/vesc/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc" FILES "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_core/vescConfig.cmake" "/home/sh/projects/f1tenth_miru3/build/vesc/ament_cmake_core/vescConfig-version.cmake" "DESTINATION" "share/vesc/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc/package.xml" "DESTINATION" "share/vesc")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc" FILES "/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc/package.xml" "DESTINATION" "share/vesc")
+# install(FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc/package.xml" "DESTINATION" "share/vesc")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc" FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc/package.xml" "DESTINATION" "share/vesc")

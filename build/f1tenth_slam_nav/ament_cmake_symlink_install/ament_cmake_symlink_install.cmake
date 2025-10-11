@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/f1tenth_slam_nav/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/f1tenth_slam_nav/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/f1tenth_slam_nav/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/f1tenth_slam_nav/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/f1tenth_slam_nav/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/f1tenth_slam_nav/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/f1/f1tenth_ws/install/f1tenth_slam_nav/${destination}")
+      set(destination "/home/sh/projects/f1tenth_miru3/install/f1tenth_slam_nav/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,55 +311,55 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(DIRECTORY "launch/" "DESTINATION" "share/f1tenth_slam_nav/launch/")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" DIRECTORY "launch/" "DESTINATION" "share/f1tenth_slam_nav/launch/")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" DIRECTORY "launch/" "DESTINATION" "share/f1tenth_slam_nav/launch/")
 
 # install(DIRECTORY "config/" "DESTINATION" "share/f1tenth_slam_nav/config/")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" DIRECTORY "config/" "DESTINATION" "share/f1tenth_slam_nav/config/")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" DIRECTORY "config/" "DESTINATION" "share/f1tenth_slam_nav/config/")
 
 # install("TARGETS" "slam_nav_manager" "high_frequency_localizer_node" "DESTINATION" "lib/f1tenth_slam_nav")
-include("/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(PROGRAMS "scripts/localization_performance_test.py" "scripts/high_frequency_localization.py" "DESTINATION" "lib/f1tenth_slam_nav")
-ament_cmake_symlink_install_programs("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" PROGRAMS "scripts/localization_performance_test.py" "scripts/high_frequency_localization.py" "DESTINATION" "lib/f1tenth_slam_nav")
+ament_cmake_symlink_install_programs("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" PROGRAMS "scripts/localization_performance_test.py" "scripts/high_frequency_localization.py" "DESTINATION" "lib/f1tenth_slam_nav")
 
-# install(FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/f1tenth_slam_nav" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/f1tenth_slam_nav" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/f1tenth_slam_nav" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/f1tenth_slam_nav" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/f1tenth_slam_nav" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/f1tenth_slam_nav" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/f1tenth_slam_nav" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/f1tenth_slam_nav" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/f1tenth_slam_nav/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/f1tenth_slam_nav/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/f1tenth_slam_nav/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/f1tenth_slam_nav/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/f1tenth_slam_nav/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/f1tenth_slam_nav/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/f1tenth_slam_nav/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/f1tenth_slam_nav/environment")
 
-# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/f1tenth_slam_nav/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/f1tenth_slam_nav/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/f1tenth_slam_nav/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/f1tenth_slam_nav/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/f1tenth_slam_nav/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/f1tenth_slam_nav/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/f1tenth_slam_nav/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/f1tenth_slam_nav/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/f1tenth_slam_nav")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/f1tenth_slam_nav")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/f1tenth_slam_nav")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/f1tenth_slam_nav")
 
-# install(FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/f1tenth_slam_nav")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/f1tenth_slam_nav")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/f1tenth_slam_nav")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/f1tenth_slam_nav")
 
-# install(FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/f1tenth_slam_nav")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/f1tenth_slam_nav")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/f1tenth_slam_nav")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/f1tenth_slam_nav")
 
-# install(FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/f1tenth_slam_nav")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/f1tenth_slam_nav")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/f1tenth_slam_nav")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/f1tenth_slam_nav")
 
-# install(FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/f1tenth_slam_nav")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/f1tenth_slam_nav")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/f1tenth_slam_nav")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/f1tenth_slam_nav")
 
-# install(FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_index/share/ament_index/resource_index/packages/f1tenth_slam_nav" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_index/share/ament_index/resource_index/packages/f1tenth_slam_nav" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_index/share/ament_index/resource_index/packages/f1tenth_slam_nav" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_index/share/ament_index/resource_index/packages/f1tenth_slam_nav" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_core/f1tenth_slam_navConfig.cmake" "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_core/f1tenth_slam_navConfig-version.cmake" "DESTINATION" "share/f1tenth_slam_nav/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" FILES "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_core/f1tenth_slam_navConfig.cmake" "/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_core/f1tenth_slam_navConfig-version.cmake" "DESTINATION" "share/f1tenth_slam_nav/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_core/f1tenth_slam_navConfig.cmake" "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_core/f1tenth_slam_navConfig-version.cmake" "DESTINATION" "share/f1tenth_slam_nav/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" FILES "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_core/f1tenth_slam_navConfig.cmake" "/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_core/f1tenth_slam_navConfig-version.cmake" "DESTINATION" "share/f1tenth_slam_nav/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/src/f1tenth_slam_nav/package.xml" "DESTINATION" "share/f1tenth_slam_nav")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_slam_nav" FILES "/home/f1/f1tenth_ws/src/f1tenth_slam_nav/package.xml" "DESTINATION" "share/f1tenth_slam_nav")
+# install(FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav/package.xml" "DESTINATION" "share/f1tenth_slam_nav")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav" FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_slam_nav/package.xml" "DESTINATION" "share/f1tenth_slam_nav")

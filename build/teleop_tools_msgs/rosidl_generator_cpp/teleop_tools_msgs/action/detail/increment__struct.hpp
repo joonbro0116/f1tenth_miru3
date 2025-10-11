@@ -5,13 +5,14 @@
 #ifndef TELEOP_TOOLS_MSGS__ACTION__DETAIL__INCREMENT__STRUCT_HPP_
 #define TELEOP_TOOLS_MSGS__ACTION__DETAIL__INCREMENT__STRUCT_HPP_
 
-#include <rosidl_runtime_cpp/bounded_vector.hpp>
-#include <rosidl_runtime_cpp/message_initialization.hpp>
 #include <algorithm>
 #include <array>
 #include <memory>
 #include <string>
 #include <vector>
+
+#include "rosidl_runtime_cpp/bounded_vector.hpp"
+#include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
 #ifndef _WIN32
@@ -45,12 +46,12 @@ struct Increment_Goal_
 
   // field types and members
   using _increment_by_type =
-    std::vector<float, typename ContainerAllocator::template rebind<float>::other>;
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
   _increment_by_type increment_by;
 
   // setters for named parameter idiom
   Type & set__increment_by(
-    const std::vector<float, typename ContainerAllocator::template rebind<float>::other> & _arg)
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
   {
     this->increment_by = _arg;
     return *this;

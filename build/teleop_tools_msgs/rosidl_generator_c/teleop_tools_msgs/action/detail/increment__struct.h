@@ -21,7 +21,7 @@ extern "C"
 // Member 'increment_by'
 #include "rosidl_runtime_c/primitives_sequence.h"
 
-// Struct defined in action/Increment in the package teleop_tools_msgs.
+/// Struct defined in action/Increment in the package teleop_tools_msgs.
 typedef struct teleop_tools_msgs__action__Increment_Goal
 {
   rosidl_runtime_c__float__Sequence increment_by;
@@ -40,7 +40,7 @@ typedef struct teleop_tools_msgs__action__Increment_Goal__Sequence
 
 // Constants defined in the message
 
-// Struct defined in action/Increment in the package teleop_tools_msgs.
+/// Struct defined in action/Increment in the package teleop_tools_msgs.
 typedef struct teleop_tools_msgs__action__Increment_Result
 {
   uint8_t structure_needs_at_least_one_member;
@@ -59,7 +59,7 @@ typedef struct teleop_tools_msgs__action__Increment_Result__Sequence
 
 // Constants defined in the message
 
-// Struct defined in action/Increment in the package teleop_tools_msgs.
+/// Struct defined in action/Increment in the package teleop_tools_msgs.
 typedef struct teleop_tools_msgs__action__Increment_Feedback
 {
   uint8_t structure_needs_at_least_one_member;
@@ -84,7 +84,7 @@ typedef struct teleop_tools_msgs__action__Increment_Feedback__Sequence
 // Member 'goal'
 #include "teleop_tools_msgs/action/detail/increment__struct.h"
 
-// Struct defined in action/Increment in the package teleop_tools_msgs.
+/// Struct defined in action/Increment in the package teleop_tools_msgs.
 typedef struct teleop_tools_msgs__action__Increment_SendGoal_Request
 {
   unique_identifier_msgs__msg__UUID goal_id;
@@ -108,7 +108,7 @@ typedef struct teleop_tools_msgs__action__Increment_SendGoal_Request__Sequence
 // Member 'stamp'
 #include "builtin_interfaces/msg/detail/time__struct.h"
 
-// Struct defined in action/Increment in the package teleop_tools_msgs.
+/// Struct defined in action/Increment in the package teleop_tools_msgs.
 typedef struct teleop_tools_msgs__action__Increment_SendGoal_Response
 {
   bool accepted;
@@ -133,7 +133,7 @@ typedef struct teleop_tools_msgs__action__Increment_SendGoal_Response__Sequence
 // already included above
 // #include "unique_identifier_msgs/msg/detail/uuid__struct.h"
 
-// Struct defined in action/Increment in the package teleop_tools_msgs.
+/// Struct defined in action/Increment in the package teleop_tools_msgs.
 typedef struct teleop_tools_msgs__action__Increment_GetResult_Request
 {
   unique_identifier_msgs__msg__UUID goal_id;
@@ -157,7 +157,7 @@ typedef struct teleop_tools_msgs__action__Increment_GetResult_Request__Sequence
 // already included above
 // #include "teleop_tools_msgs/action/detail/increment__struct.h"
 
-// Struct defined in action/Increment in the package teleop_tools_msgs.
+/// Struct defined in action/Increment in the package teleop_tools_msgs.
 typedef struct teleop_tools_msgs__action__Increment_GetResult_Response
 {
   int8_t status;
@@ -185,7 +185,7 @@ typedef struct teleop_tools_msgs__action__Increment_GetResult_Response__Sequence
 // already included above
 // #include "teleop_tools_msgs/action/detail/increment__struct.h"
 
-// Struct defined in action/Increment in the package teleop_tools_msgs.
+/// Struct defined in action/Increment in the package teleop_tools_msgs.
 typedef struct teleop_tools_msgs__action__Increment_FeedbackMessage
 {
   unique_identifier_msgs__msg__UUID goal_id;

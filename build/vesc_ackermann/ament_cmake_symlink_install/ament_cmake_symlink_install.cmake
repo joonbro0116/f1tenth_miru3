@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/vesc_ackermann/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/vesc_ackermann/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/vesc_ackermann/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/vesc_ackermann/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/vesc_ackermann/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/vesc_ackermann/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/f1/f1tenth_ws/install/vesc_ackermann/${destination}")
+      set(destination "/home/sh/projects/f1tenth_miru3/install/vesc_ackermann/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,79 +311,79 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "ackermann_to_vesc_node" "DESTINATION" "lib/vesc_ackermann")
-include("/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "vesc_to_odom_node" "DESTINATION" "lib/vesc_ackermann")
-include("/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "include/" "DESTINATION" "include")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" DIRECTORY "include/" "DESTINATION" "include")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" DIRECTORY "include/" "DESTINATION" "include")
 
-# install(FILES "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/vesc_ackermann/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/vesc_ackermann/environment")
+# install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/vesc_ackermann/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/vesc_ackermann/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/vesc_ackermann/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/vesc_ackermann/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/vesc_ackermann/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/vesc_ackermann/environment")
 
 # install("TARGETS" "vesc_ackermann" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
-include("/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "DESTINATION" "lib/vesc_ackermann")
-include("/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/vesc_ackermann")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" DIRECTORY "launch" "DESTINATION" "share/vesc_ackermann")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" DIRECTORY "launch" "DESTINATION" "share/vesc_ackermann")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vesc_ackermann/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vesc_ackermann/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vesc_ackermann/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vesc_ackermann/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vesc_ackermann/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vesc_ackermann/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vesc_ackermann/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vesc_ackermann/environment")
 
-# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vesc_ackermann/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vesc_ackermann/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vesc_ackermann/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vesc_ackermann/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vesc_ackermann/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vesc_ackermann/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vesc_ackermann/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vesc_ackermann/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vesc_ackermann")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vesc_ackermann")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vesc_ackermann")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vesc_ackermann")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vesc_ackermann")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vesc_ackermann")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vesc_ackermann")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vesc_ackermann")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vesc_ackermann")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vesc_ackermann")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vesc_ackermann")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vesc_ackermann")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vesc_ackermann")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vesc_ackermann")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vesc_ackermann")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vesc_ackermann")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vesc_ackermann")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vesc_ackermann")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vesc_ackermann")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vesc_ackermann")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/packages/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/packages/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/packages/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/packages/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/rclcpp_components")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/rclcpp_components")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/rclcpp_components")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/vesc_ackermann" "DESTINATION" "share/ament_index/resource_index/rclcpp_components")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_core/vesc_ackermannConfig.cmake" "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_core/vesc_ackermannConfig-version.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_core/vesc_ackermannConfig.cmake" "/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_core/vesc_ackermannConfig-version.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_core/vesc_ackermannConfig.cmake" "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_core/vesc_ackermannConfig-version.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_core/vesc_ackermannConfig.cmake" "/home/sh/projects/f1tenth_miru3/build/vesc_ackermann/ament_cmake_core/vesc_ackermannConfig-version.cmake" "DESTINATION" "share/vesc_ackermann/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/package.xml" "DESTINATION" "share/vesc_ackermann")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/package.xml" "DESTINATION" "share/vesc_ackermann")
+# install(FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann/package.xml" "DESTINATION" "share/vesc_ackermann")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann" FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_ackermann/package.xml" "DESTINATION" "share/vesc_ackermann")

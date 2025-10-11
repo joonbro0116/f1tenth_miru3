@@ -1,1 +1,1 @@
-rclcpp;rclcpp_components;geometry_msgs;ackermann_msgs;nav_msgs;sensor_msgs;tf2;tf2_ros;ament_lint_auto;ament_lint_common
+rclcpp;rclcpp_components;ackermann_msgs;nav_msgs;geometry_msgs;sensor_msgs;std_msgs;tf2;tf2_ros;tf2_geometry_msgs;ament_index_cpp;ament_cmake_python

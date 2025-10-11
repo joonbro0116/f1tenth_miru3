@@ -1,0 +1,4 @@
+Invoking command in '/home/sh/projects/f1tenth_miru3/build/vesc_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sh/projects/f1tenth_miru3/build/vesc_msgs -- -j16 -l16
+Invoked command in '/home/sh/projects/f1tenth_miru3/build/vesc_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sh/projects/f1tenth_miru3/build/vesc_msgs -- -j16 -l16
+Invoking command in '/home/sh/projects/f1tenth_miru3/build/vesc_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sh/projects/f1tenth_miru3/build/vesc_msgs
+Invoked command in '/home/sh/projects/f1tenth_miru3/build/vesc_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sh/projects/f1tenth_miru3/build/vesc_msgs

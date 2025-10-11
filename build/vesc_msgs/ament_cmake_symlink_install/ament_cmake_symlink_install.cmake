@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/vesc_msgs/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/vesc_msgs/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/vesc_msgs/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/vesc_msgs/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/vesc_msgs/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/vesc_msgs/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/f1/f1tenth_ws/install/vesc_msgs/${destination}")
+      set(destination "/home/sh/projects/f1tenth_miru3/install/vesc_msgs/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,152 +310,143 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
-# install(DIRECTORY "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_generator_c/vesc_msgs/" "DESTINATION" "include/vesc_msgs" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" DIRECTORY "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_generator_c/vesc_msgs/" "DESTINATION" "include/vesc_msgs" "PATTERN" "*.h")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_generator_c/vesc_msgs/" "DESTINATION" "include/vesc_msgs/vesc_msgs" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_generator_c/vesc_msgs/" "DESTINATION" "include/vesc_msgs/vesc_msgs" "PATTERN" "*.h")
 
-# install(FILES "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/vesc_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/vesc_msgs/environment")
+# install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/vesc_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/vesc_msgs/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/vesc_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/vesc_msgs/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/vesc_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/vesc_msgs/environment")
 
-# install(DIRECTORY "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_typesupport_fastrtps_c/vesc_msgs/" "DESTINATION" "include/vesc_msgs" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" DIRECTORY "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_typesupport_fastrtps_c/vesc_msgs/" "DESTINATION" "include/vesc_msgs" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_typesupport_fastrtps_c/vesc_msgs/" "DESTINATION" "include/vesc_msgs/vesc_msgs" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_typesupport_fastrtps_c/vesc_msgs/" "DESTINATION" "include/vesc_msgs/vesc_msgs" "PATTERN_EXCLUDE" "*.cpp")
 
-# install("TARGETS" "vesc_msgs__rosidl_typesupport_fastrtps_c" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
-include("/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_typesupport_introspection_c/vesc_msgs/" "DESTINATION" "include/vesc_msgs/vesc_msgs" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_typesupport_introspection_c/vesc_msgs/" "DESTINATION" "include/vesc_msgs/vesc_msgs" "PATTERN" "*.h")
 
-# install(DIRECTORY "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_typesupport_fastrtps_cpp/vesc_msgs/" "DESTINATION" "include/vesc_msgs" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" DIRECTORY "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_typesupport_fastrtps_cpp/vesc_msgs/" "DESTINATION" "include/vesc_msgs" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_generator_cpp/vesc_msgs/" "DESTINATION" "include/vesc_msgs/vesc_msgs" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_generator_cpp/vesc_msgs/" "DESTINATION" "include/vesc_msgs/vesc_msgs" "PATTERN" "*.hpp")
 
-# install("TARGETS" "vesc_msgs__rosidl_typesupport_fastrtps_cpp" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
-include("/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_typesupport_fastrtps_cpp/vesc_msgs/" "DESTINATION" "include/vesc_msgs/vesc_msgs" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_typesupport_fastrtps_cpp/vesc_msgs/" "DESTINATION" "include/vesc_msgs/vesc_msgs" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_typesupport_introspection_c/vesc_msgs/" "DESTINATION" "include/vesc_msgs" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" DIRECTORY "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_typesupport_introspection_c/vesc_msgs/" "DESTINATION" "include/vesc_msgs" "PATTERN" "*.h")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_typesupport_introspection_cpp/vesc_msgs/" "DESTINATION" "include/vesc_msgs/vesc_msgs" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_typesupport_introspection_cpp/vesc_msgs/" "DESTINATION" "include/vesc_msgs/vesc_msgs" "PATTERN" "*.hpp")
 
-# install(DIRECTORY "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_generator_cpp/vesc_msgs/" "DESTINATION" "include/vesc_msgs" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" DIRECTORY "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_generator_cpp/vesc_msgs/" "DESTINATION" "include/vesc_msgs" "PATTERN" "*.hpp")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/vesc_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/vesc_msgs/environment")
 
-# install(DIRECTORY "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_typesupport_introspection_cpp/vesc_msgs/" "DESTINATION" "include/vesc_msgs" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" DIRECTORY "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_typesupport_introspection_cpp/vesc_msgs/" "DESTINATION" "include/vesc_msgs" "PATTERN" "*.hpp")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/vesc_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/vesc_msgs/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/vesc_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/vesc_msgs/environment")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_python/vesc_msgs/vesc_msgs.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/vesc_msgs-1.2.0-py3.10.egg-info")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_python/vesc_msgs/vesc_msgs.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/vesc_msgs-1.2.0-py3.10.egg-info")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/vesc_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/vesc_msgs/environment")
+# install(DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_generator_py/vesc_msgs/" "DESTINATION" "local/lib/python3.10/dist-packages/vesc_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" DIRECTORY "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_generator_py/vesc_msgs/" "DESTINATION" "local/lib/python3.10/dist-packages/vesc_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_generator_py/vesc_msgs/__init__.py" "DESTINATION" "lib/python3.8/site-packages/vesc_msgs")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_generator_py/vesc_msgs/__init__.py" "DESTINATION" "lib/python3.8/site-packages/vesc_msgs")
+# install("TARGETS" "vesc_msgs__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/vesc_msgs")
+include("/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(DIRECTORY "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_generator_py/vesc_msgs/msg/" "DESTINATION" "lib/python3.8/site-packages/vesc_msgs/msg" "PATTERN" "*.py")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" DIRECTORY "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_generator_py/vesc_msgs/msg/" "DESTINATION" "lib/python3.8/site-packages/vesc_msgs/msg" "PATTERN" "*.py")
+# install("TARGETS" "vesc_msgs__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/vesc_msgs")
+include("/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "vesc_msgs__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "lib/python3.8/site-packages/vesc_msgs")
-include("/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install("TARGETS" "vesc_msgs__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/vesc_msgs")
+include("/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "vesc_msgs__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "lib/python3.8/site-packages/vesc_msgs")
-include("/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescState.idl" "DESTINATION" "share/vesc_msgs/msg")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescState.idl" "DESTINATION" "share/vesc_msgs/msg")
 
-# install("TARGETS" "vesc_msgs__rosidl_typesupport_c__pyext" "DESTINATION" "lib/python3.8/site-packages/vesc_msgs")
-include("/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_symlink_install_targets_4_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescStateStamped.idl" "DESTINATION" "share/vesc_msgs/msg")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescStateStamped.idl" "DESTINATION" "share/vesc_msgs/msg")
 
-# install("TARGETS" "vesc_msgs__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
-include("/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_symlink_install_targets_5_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImu.idl" "DESTINATION" "share/vesc_msgs/msg")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImu.idl" "DESTINATION" "share/vesc_msgs/msg")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescState.idl" "DESTINATION" "share/vesc_msgs/msg")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescState.idl" "DESTINATION" "share/vesc_msgs/msg")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImuStamped.idl" "DESTINATION" "share/vesc_msgs/msg")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImuStamped.idl" "DESTINATION" "share/vesc_msgs/msg")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescStateStamped.idl" "DESTINATION" "share/vesc_msgs/msg")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescStateStamped.idl" "DESTINATION" "share/vesc_msgs/msg")
+# install(FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs/msg/VescState.msg" "DESTINATION" "share/vesc_msgs/msg")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs/msg/VescState.msg" "DESTINATION" "share/vesc_msgs/msg")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImu.idl" "DESTINATION" "share/vesc_msgs/msg")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImu.idl" "DESTINATION" "share/vesc_msgs/msg")
+# install(FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs/msg/VescStateStamped.msg" "DESTINATION" "share/vesc_msgs/msg")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs/msg/VescStateStamped.msg" "DESTINATION" "share/vesc_msgs/msg")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImuStamped.idl" "DESTINATION" "share/vesc_msgs/msg")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImuStamped.idl" "DESTINATION" "share/vesc_msgs/msg")
+# install(FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs/msg/VescImu.msg" "DESTINATION" "share/vesc_msgs/msg")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs/msg/VescImu.msg" "DESTINATION" "share/vesc_msgs/msg")
 
-# install(FILES "/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs/msg/VescState.msg" "DESTINATION" "share/vesc_msgs/msg")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs/msg/VescState.msg" "DESTINATION" "share/vesc_msgs/msg")
-
-# install(FILES "/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs/msg/VescStateStamped.msg" "DESTINATION" "share/vesc_msgs/msg")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs/msg/VescStateStamped.msg" "DESTINATION" "share/vesc_msgs/msg")
-
-# install(FILES "/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs/msg/VescImu.msg" "DESTINATION" "share/vesc_msgs/msg")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs/msg/VescImu.msg" "DESTINATION" "share/vesc_msgs/msg")
-
-# install(FILES "/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs/msg/VescImuStamped.msg" "DESTINATION" "share/vesc_msgs/msg")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs/msg/VescImuStamped.msg" "DESTINATION" "share/vesc_msgs/msg")
+# install(FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs/msg/VescImuStamped.msg" "DESTINATION" "share/vesc_msgs/msg")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs/msg/VescImuStamped.msg" "DESTINATION" "share/vesc_msgs/msg")
 
 # install("TARGETS" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
-include("/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_symlink_install_targets_6_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "DESTINATION" "lib/vesc_msgs")
-include("/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_symlink_install_targets_7_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_symlink_install_targets_4_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vesc_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vesc_msgs/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vesc_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vesc_msgs/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vesc_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vesc_msgs/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vesc_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vesc_msgs/environment")
 
-# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vesc_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vesc_msgs/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vesc_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vesc_msgs/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vesc_msgs/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vesc_msgs/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vesc_msgs/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vesc_msgs/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vesc_msgs")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vesc_msgs")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vesc_msgs")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vesc_msgs")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vesc_msgs")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vesc_msgs")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vesc_msgs")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vesc_msgs")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vesc_msgs")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vesc_msgs")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vesc_msgs")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vesc_msgs")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vesc_msgs")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vesc_msgs")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vesc_msgs")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vesc_msgs")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vesc_msgs")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vesc_msgs")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vesc_msgs")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vesc_msgs")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/packages/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/packages/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/packages/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/packages/vesc_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/vesc_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_core/vesc_msgsConfig.cmake" "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_core/vesc_msgsConfig-version.cmake" "DESTINATION" "share/vesc_msgs/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_core/vesc_msgsConfig.cmake" "/home/f1/f1tenth_ws/build/vesc_msgs/ament_cmake_core/vesc_msgsConfig-version.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_core/vesc_msgsConfig.cmake" "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_core/vesc_msgsConfig-version.cmake" "DESTINATION" "share/vesc_msgs/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_core/vesc_msgsConfig.cmake" "/home/sh/projects/f1tenth_miru3/build/vesc_msgs/ament_cmake_core/vesc_msgsConfig-version.cmake" "DESTINATION" "share/vesc_msgs/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs/package.xml" "DESTINATION" "share/vesc_msgs")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs/package.xml" "DESTINATION" "share/vesc_msgs")
+# install(FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs/package.xml" "DESTINATION" "share/vesc_msgs")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_msgs/package.xml" "DESTINATION" "share/vesc_msgs")

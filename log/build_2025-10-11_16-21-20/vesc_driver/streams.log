@@ -1,0 +1,13 @@
+[0.846s] Invoking command in '/home/sh/projects/f1tenth_miru3/build/vesc_driver': AMENT_PREFIX_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib PYTHONPATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sh/projects/f1tenth_miru3/build/vesc_driver -- -j16 -l16
+[0.939s] Consolidate compiler generated dependencies of target vesc_driver_node
+[0.943s] Consolidate compiler generated dependencies of target vesc_driver
+[0.983s] [ 20%] Built target vesc_driver_node
+[0.994s] [ 30%] Building CXX object CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o
+[1.295s] /home/sh/projects/f1tenth_miru3/src/f1tenth_system/vesc/vesc_driver/src/vesc_interface.cpp:45:10: fatal error: serial_driver/serial_driver.hpp: No such file or directory
+[1.296s]    45 | #include "serial_driver/serial_driver.hpp"
+[1.296s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1.296s] compilation terminated.
+[1.308s] gmake[2]: *** [CMakeFiles/vesc_driver.dir/build.make:90: CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o] Error 1
+[1.309s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/vesc_driver.dir/all] Error 2
+[1.310s] gmake: *** [Makefile:146: all] Error 2
+[1.469s] Invoked command in '/home/sh/projects/f1tenth_miru3/build/vesc_driver' returned '2': AMENT_PREFIX_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib PYTHONPATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sh/projects/f1tenth_miru3/build/vesc_driver -- -j16 -l16

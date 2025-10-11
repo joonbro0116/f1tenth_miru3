@@ -1,1 +1,1 @@
-/home/f1/f1tenth_ws/build/f1tenth_stack/launch/bringup_launch.py
+/home/sh/projects/f1tenth_miru3/build/f1tenth_stack/launch/bringup_launch.py

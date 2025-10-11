@@ -1,0 +1,17 @@
+[0.440s] Invoking command in '/home/sh/projects/f1tenth_miru3/build/forza_map_controller': PYTHONPATH=/home/sh/projects/f1tenth_miru3/build/forza_map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sh/projects/f1tenth_miru3/build/forza_map_controller/build --no-deps symlink_data
+[0.611s] running develop
+[0.718s] running egg_info
+[0.718s] writing forza_map_controller.egg-info/PKG-INFO
+[0.718s] writing dependency_links to forza_map_controller.egg-info/dependency_links.txt
+[0.718s] writing entry points to forza_map_controller.egg-info/entry_points.txt
+[0.718s] writing requirements to forza_map_controller.egg-info/requires.txt
+[0.718s] writing top-level names to forza_map_controller.egg-info/top_level.txt
+[0.720s] reading manifest file 'forza_map_controller.egg-info/SOURCES.txt'
+[0.720s] writing manifest file 'forza_map_controller.egg-info/SOURCES.txt'
+[0.721s] running build_ext
+[0.721s] Creating /home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/python3.10/site-packages/forza-map-controller.egg-link (link to .)
+[0.722s] Installing controller_manager script to /home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/forza_map_controller
+[0.722s] 
+[0.722s] Installed /home/sh/projects/f1tenth_miru3/build/forza_map_controller
+[0.722s] running symlink_data
+[30.029s] Invoked command in '/home/sh/projects/f1tenth_miru3/build/forza_map_controller' returned '0': PYTHONPATH=/home/sh/projects/f1tenth_miru3/build/forza_map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sh/projects/f1tenth_miru3/install/forza_map_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sh/projects/f1tenth_miru3/build/forza_map_controller/build --no-deps symlink_data

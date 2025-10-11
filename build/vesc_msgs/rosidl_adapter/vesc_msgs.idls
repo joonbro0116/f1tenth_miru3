@@ -1,4 +1,4 @@
-/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescState.idl
-/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescStateStamped.idl
-/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescImu.idl
-/home/f1/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescImuStamped.idl
+/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescState.idl
+/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescStateStamped.idl
+/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescImu.idl
+/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescImuStamped.idl

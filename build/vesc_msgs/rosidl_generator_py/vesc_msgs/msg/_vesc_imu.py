@@ -5,6 +5,8 @@
 
 # Import statements for member types
 
+import builtins  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -145,7 +147,7 @@ class VescImu(metaclass=Metaclass_VescImu):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @property
+    @builtins.property
     def ypr(self):
         """Message field 'ypr'."""
         return self._ypr
@@ -159,7 +161,7 @@ class VescImu(metaclass=Metaclass_VescImu):
                 "The 'ypr' field must be a sub message of type 'Vector3'"
         self._ypr = value
 
-    @property
+    @builtins.property
     def linear_acceleration(self):
         """Message field 'linear_acceleration'."""
         return self._linear_acceleration
@@ -173,7 +175,7 @@ class VescImu(metaclass=Metaclass_VescImu):
                 "The 'linear_acceleration' field must be a sub message of type 'Vector3'"
         self._linear_acceleration = value
 
-    @property
+    @builtins.property
     def angular_velocity(self):
         """Message field 'angular_velocity'."""
         return self._angular_velocity
@@ -187,7 +189,7 @@ class VescImu(metaclass=Metaclass_VescImu):
                 "The 'angular_velocity' field must be a sub message of type 'Vector3'"
         self._angular_velocity = value
 
-    @property
+    @builtins.property
     def compass(self):
         """Message field 'compass'."""
         return self._compass
@@ -201,7 +203,7 @@ class VescImu(metaclass=Metaclass_VescImu):
                 "The 'compass' field must be a sub message of type 'Vector3'"
         self._compass = value
 
-    @property
+    @builtins.property
     def orientation(self):
         """Message field 'orientation'."""
         return self._orientation

@@ -1,0 +1,40 @@
+[0.034s] Invoking command in '/home/sh/projects/f1tenth_miru3/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib PYTHONPATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sh/projects/f1tenth_miru3/build/vesc_ackermann -- -j16 -l16
+[0.156s] [ 28%] Built target ackermann_to_vesc_node
+[0.160s] [ 57%] Built target vesc_to_odom_node
+[0.161s] [ 71%] Building CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o
+[0.166s] [ 85%] Building CXX object CMakeFiles/vesc_ackermann.dir/src/ackermann_to_vesc.cpp.o
+[23.411s] [100%] Linking CXX shared library libvesc_ackermann.so
+[25.265s] [100%] Built target vesc_ackermann
+[25.284s] Invoked command in '/home/sh/projects/f1tenth_miru3/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib PYTHONPATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sh/projects/f1tenth_miru3/build/vesc_ackermann -- -j16 -l16
+[25.303s] Invoking command in '/home/sh/projects/f1tenth_miru3/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib PYTHONPATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sh/projects/f1tenth_miru3/build/vesc_ackermann
+[25.319s] -- Install configuration: ""
+[25.321s] -- Execute custom install script
+[25.322s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node
+[25.339s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node
+[25.355s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp
+[25.372s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp
+[25.390s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh
+[25.408s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv
+[25.425s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/lib/libvesc_ackermann.so
+[25.442s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml
+[25.459s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml
+[25.476s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann
+[25.494s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann
+[25.511s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh
+[25.528s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv
+[25.547s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh
+[25.561s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv
+[25.578s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash
+[25.594s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh
+[25.611s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh
+[25.628s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv
+[25.645s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/package.dsv
+[25.661s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann
+[25.680s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann
+[25.694s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake
+[25.711s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake
+[25.727s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake
+[25.743s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake
+[25.759s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake
+[25.775s] -- Symlinking: /home/sh/projects/f1tenth_miru3/install/vesc_ackermann/share/vesc_ackermann/package.xml
+[25.795s] Invoked command in '/home/sh/projects/f1tenth_miru3/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs/lib PYTHONPATH=/home/sh/projects/f1tenth_miru3/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sh/projects/f1tenth_miru3/build/vesc_ackermann

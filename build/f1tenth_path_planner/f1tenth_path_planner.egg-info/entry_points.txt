@@ -1,3 +1,0 @@
-[console_scripts]
-min_curvature_planner = f1tenth_path_planner.min_curvature_planner:main
-

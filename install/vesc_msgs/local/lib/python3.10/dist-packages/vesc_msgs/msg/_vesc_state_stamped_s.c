@@ -1,0 +1,1 @@
+/home/sh/projects/f1tenth_miru3/build/vesc_msgs/rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped_s.c

@@ -1,17 +1,1 @@
-map_controller_manager:
-  ros__parameters:
-    t_clip_min: 0.8
-    t_clip_max: 5.0
-    m_l1: 0.6
-    q_l1: -0.18
-    speed_lookahead: 0.25
-    lat_err_coeff: 1.0
-    acc_scaler_for_steer: 1.2
-    dec_scaler_for_steer: 0.9
-    start_scale_speed: 7.0
-    end_scale_speed: 8.0
-    downscale_factor: 0.2
-    speed_lookahead_for_steer: 0.0
-    timer_period_ms: 25
-    lookup_table: "NUC1_pacejka"
-    use_sim_time: false
+/home/sh/projects/f1tenth_miru3/src/map_controller/config/map_controller_params.yaml

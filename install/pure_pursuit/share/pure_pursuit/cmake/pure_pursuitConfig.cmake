@@ -1,1 +1,1 @@
-/home/f1/f1tenth_ws/build/pure_pursuit/ament_cmake_core/pure_pursuitConfig.cmake
+/home/sh/projects/f1tenth_miru3/build/pure_pursuit/ament_cmake_core/pure_pursuitConfig.cmake

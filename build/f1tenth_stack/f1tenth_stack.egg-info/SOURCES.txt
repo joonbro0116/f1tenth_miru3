@@ -1,13 +1,6 @@
 package.xml
 setup.cfg
 setup.py
-../../../build/f1tenth_stack/f1tenth_stack.egg-info/PKG-INFO
-../../../build/f1tenth_stack/f1tenth_stack.egg-info/SOURCES.txt
-../../../build/f1tenth_stack/f1tenth_stack.egg-info/dependency_links.txt
-../../../build/f1tenth_stack/f1tenth_stack.egg-info/entry_points.txt
-../../../build/f1tenth_stack/f1tenth_stack.egg-info/requires.txt
-../../../build/f1tenth_stack/f1tenth_stack.egg-info/top_level.txt
-../../../build/f1tenth_stack/f1tenth_stack.egg-info/zip-safe
 config/f110_2d.lua
 config/f1tenth_online_async.yaml
 config/joy_teleop.yaml

@@ -23,6 +23,7 @@ size_t get_serialized_size_vesc_msgs__msg__VescImuStamped(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_vesc_msgs
 size_t max_serialized_size_vesc_msgs__msg__VescImuStamped(
   bool & full_bounded,
+  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_vesc_msgs

@@ -1,1 +1,1 @@
-/home/f1/f1tenth_ws/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.zsh
+/home/sh/projects/f1tenth_miru3/build/f1tenth_slam_nav/ament_cmake_environment_hooks/local_setup.zsh

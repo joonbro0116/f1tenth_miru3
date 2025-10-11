@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/ackermann_mux/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/ackermann_mux/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/ackermann_mux/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/ackermann_mux/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/f1/f1tenth_ws/install/ackermann_mux/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/sh/projects/f1tenth_miru3/install/ackermann_mux/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/f1/f1tenth_ws/install/ackermann_mux/${destination}")
+      set(destination "/home/sh/projects/f1tenth_miru3/install/ackermann_mux/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,61 +311,61 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "ackermann_mux" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "lib/ackermann_mux")
-include("/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "launch/" "DESTINATION" "share/ackermann_mux/launch")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" DIRECTORY "launch/" "DESTINATION" "share/ackermann_mux/launch")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" DIRECTORY "launch/" "DESTINATION" "share/ackermann_mux/launch")
 
 # install(DIRECTORY "config/" "DESTINATION" "share/ackermann_mux/config")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" DIRECTORY "config/" "DESTINATION" "share/ackermann_mux/config")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" DIRECTORY "config/" "DESTINATION" "share/ackermann_mux/config")
 
 # install(DIRECTORY "include/" "DESTINATION" "include")
-ament_cmake_symlink_install_directory("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" DIRECTORY "include/" "DESTINATION" "include")
+ament_cmake_symlink_install_directory("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" DIRECTORY "include/" "DESTINATION" "include")
 
-# install(FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ackermann_mux" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ackermann_mux" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ackermann_mux" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ackermann_mux" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ackermann_mux" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ackermann_mux" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ackermann_mux" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ackermann_mux" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ackermann_mux/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ackermann_mux/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ackermann_mux/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ackermann_mux/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ackermann_mux/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ackermann_mux/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ackermann_mux/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ackermann_mux/environment")
 
-# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ackermann_mux/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ackermann_mux/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ackermann_mux/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ackermann_mux/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ackermann_mux/environment")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ackermann_mux/environment")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ackermann_mux/environment")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ackermann_mux/environment")
 
-# install(FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ackermann_mux")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ackermann_mux")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ackermann_mux")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ackermann_mux")
 
-# install(FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ackermann_mux")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ackermann_mux")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ackermann_mux")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ackermann_mux")
 
-# install(FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ackermann_mux")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ackermann_mux")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ackermann_mux")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ackermann_mux")
 
-# install(FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ackermann_mux")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ackermann_mux")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ackermann_mux")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ackermann_mux")
 
-# install(FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ackermann_mux")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ackermann_mux")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ackermann_mux")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ackermann_mux")
 
-# install(FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_index/share/ament_index/resource_index/packages/ackermann_mux" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_index/share/ament_index/resource_index/packages/ackermann_mux" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_index/share/ament_index/resource_index/packages/ackermann_mux" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_index/share/ament_index/resource_index/packages/ackermann_mux" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/ackermann_mux/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/ackermann_mux/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/ackermann_mux/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/ackermann_mux/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/ackermann_mux/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/ackermann_mux/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/ackermann_mux/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/ackermann_mux/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_core/ackermann_muxConfig.cmake" "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_core/ackermann_muxConfig-version.cmake" "DESTINATION" "share/ackermann_mux/cmake")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_core/ackermann_muxConfig.cmake" "/home/f1/f1tenth_ws/build/ackermann_mux/ament_cmake_core/ackermann_muxConfig-version.cmake" "DESTINATION" "share/ackermann_mux/cmake")
+# install(FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_core/ackermann_muxConfig.cmake" "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_core/ackermann_muxConfig-version.cmake" "DESTINATION" "share/ackermann_mux/cmake")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_core/ackermann_muxConfig.cmake" "/home/sh/projects/f1tenth_miru3/build/ackermann_mux/ament_cmake_core/ackermann_muxConfig-version.cmake" "DESTINATION" "share/ackermann_mux/cmake")
 
-# install(FILES "/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux/package.xml" "DESTINATION" "share/ackermann_mux")
-ament_cmake_symlink_install_files("/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux" FILES "/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux/package.xml" "DESTINATION" "share/ackermann_mux")
+# install(FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux/package.xml" "DESTINATION" "share/ackermann_mux")
+ament_cmake_symlink_install_files("/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux" FILES "/home/sh/projects/f1tenth_miru3/src/f1tenth_system/ackermann_mux/package.xml" "DESTINATION" "share/ackermann_mux")
