@@ -1,6 +1,5 @@
 # 🚗 F1TENTH-MIRU3-Object_Detection
 
-> **Developed and maintained by [@shdragron](https://github.com/shdragron)**  
 > F1TENTH-MIRU3 플랫폼에서 **주행 중 장애물을 인지**하기 위한 ROS2 기반 오브젝트 감지 프로젝트입니다.
 
 ---
@@ -13,11 +12,10 @@
 - [Configuration](#-configuration)
 
 ---
-![Simulation Result][./assets/2d lidar od.png]
+![Simulation Result][./assets/2d_lidar_od.png]
 ---
 ## 🧠 Overview
 이 프로젝트는 **F1TENTH-MIRU3 자율주행 차량**의 센서 데이터를 이용해 **도로 경계(Inner/Outer Bound)와 장애물을 탐지**하는 시스템입니다.  
-ROS2, Python, OpenCV를 기반으로 작성되었으며, 시뮬레이션 환경(f1tenth_gym)에서도 동일한 알고리즘을 실행할 수 있습니다.
 
 > **Keywords:** ROS2, 2D LiDAR, Pure Pursuit, Obstacle Detection
 
@@ -108,5 +106,5 @@ ros2 launch bound_obstacle_detector bound_detector.launch.py
 | Bound Generator | Map → Inner/Outer Bound 생성 | ✅ | 완료 |
 | Centerline Planner | Global Path 주행 | ✅ | 완료 |
 | Obstacle Detector | LiDAR 감지 및 경계 내 물체 판정 | ✅ | 완료 |
-
+| 실제 주행 세팅 | 실제로 주행하는 차량에 탑제 후 세팅 | x | 미완료 |
 ---
