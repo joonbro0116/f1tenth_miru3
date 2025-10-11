@@ -32,9 +32,12 @@
 
 #include <geometry_msgs/msg/transform_stamped.hpp>
 #include <vesc_msgs/msg/vesc_state_stamped.hpp>
+#include <sensor_msgs/msg/imu.hpp>
 
 #include <cmath>
 #include <string>
+#include <tf2/LinearMath/Quaternion.h>
+#include <tf2/LinearMath/Matrix3x3.h>
 
 namespace vesc_ackermann
 {
@@ -44,6 +47,7 @@ using nav_msgs::msg::Odometry;
 using std::placeholders::_1;
 using std_msgs::msg::Float64;
 using vesc_msgs::msg::VescStateStamped;
+using sensor_msgs::msg::Imu;
 
 VescToOdom::VescToOdom(const rclcpp::NodeOptions & options)
 : Node("vesc_to_odom_node", options),
@@ -53,7 +57,8 @@ VescToOdom::VescToOdom(const rclcpp::NodeOptions & options)
   publish_tf_(false),
   x_(0.0),
   y_(0.0),
-  yaw_(0.0)
+  yaw_(0.0),
+  yaw_initialized_(false)
 {
   // get ROS parameters
   odom_frame_ = declare_parameter("odom_frame", odom_frame_);
@@ -87,6 +92,10 @@ VescToOdom::VescToOdom(const rclcpp::NodeOptions & options)
     servo_sub_ = create_subscription<Float64>(
       "sensors/servo_position_command", 10, std::bind(&VescToOdom::servoCmdCallback, this, _1));
   }
+
+  // subscribe to IMU for initial yaw
+  imu_sub_ = create_subscription<Imu>(
+    "sensors/imu/raw", 10, std::bind(&VescToOdom::imuCallback, this, _1));
 }
 
 void VescToOdom::vescStateCallback(const VescStateStamped::SharedPtr state)
@@ -181,6 +190,26 @@ void VescToOdom::vescStateCallback(const VescStateStamped::SharedPtr state)
 void VescToOdom::servoCmdCallback(const Float64::SharedPtr servo)
 {
   last_servo_cmd_ = servo;
+}
+
+void VescToOdom::imuCallback(const Imu::SharedPtr imu)
+{
+  if (!yaw_initialized_) {
+    // Convert quaternion to yaw
+    tf2::Quaternion q(
+      imu->orientation.x,
+      imu->orientation.y,
+      imu->orientation.z,
+      imu->orientation.w
+    );
+
+    tf2::Matrix3x3 m(q);
+    double roll, pitch;
+    m.getRPY(roll, pitch, yaw_);
+
+    yaw_initialized_ = true;
+    RCLCPP_INFO(this->get_logger(), "Initial yaw set to: %f rad (%f deg)", yaw_, yaw_ * 180.0 / M_PI);
+  }
 }
 
 }  // namespace vesc_ackermann
