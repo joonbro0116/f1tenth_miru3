@@ -1,0 +1,995 @@
+[0.108s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.108s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f4c9b161df0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f4c9b161df0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f4c9b00df70>)
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.186s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/moon/sim_ws'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(bounds_out) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(bounds_out) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(bounds_out) by extension 'ignore_ament_install'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(bounds_out) by extensions ['colcon_pkg']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(bounds_out) by extension 'colcon_pkg'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(bounds_out) by extensions ['colcon_meta']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(bounds_out) by extension 'colcon_meta'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(bounds_out) by extensions ['ros']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(bounds_out) by extension 'ros'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(bounds_out) by extensions ['cmake', 'python']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(bounds_out) by extension 'cmake'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(bounds_out) by extension 'python'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(bounds_out) by extensions ['python_setup_py']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(bounds_out) by extension 'python_setup_py'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ros'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['cmake', 'python']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'cmake'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['python_setup_py']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python_setup_py'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ros'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['cmake', 'python']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'cmake'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'python'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['python_setup_py']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'python_setup_py'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate) by extensions ['colcon_pkg']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate) by extension 'colcon_pkg'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate) by extensions ['colcon_meta']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate) by extension 'colcon_meta'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate) by extension 'ros'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate) by extensions ['cmake', 'python']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate) by extension 'cmake'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate) by extension 'python'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate) by extensions ['python_setup_py']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate) by extension 'python_setup_py'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting) by extensions ['colcon_pkg']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting) by extension 'colcon_pkg'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting) by extensions ['colcon_meta']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting) by extension 'colcon_meta'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting) by extension 'ros'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting) by extensions ['cmake', 'python']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting) by extension 'cmake'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting) by extension 'python'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting) by extensions ['python_setup_py']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting) by extension 'python_setup_py'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting/src) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting/src) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting/src) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting/src) by extensions ['colcon_pkg']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting/src) by extension 'colcon_pkg'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting/src) by extensions ['colcon_meta']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting/src) by extension 'colcon_meta'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting/src) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting/src) by extension 'ros'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting/src) by extensions ['cmake', 'python']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting/src) by extension 'cmake'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting/src) by extension 'python'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting/src) by extensions ['python_setup_py']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/center-line-fitting/src) by extension 'python_setup_py'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization) by extension 'ignore_ament_install'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization) by extension 'ros'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization) by extensions ['cmake', 'python']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization) by extension 'cmake'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization) by extension 'python'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization) by extensions ['python_setup_py']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization) by extension 'python_setup_py'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap) by extension 'ignore_ament_install'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap) by extension 'ros'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap) by extensions ['cmake', 'python']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap) by extension 'cmake'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap) by extension 'python'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap) by extensions ['python_setup_py']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap) by extension 'python_setup_py'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap/src) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap/src) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap/src) by extension 'ignore_ament_install'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap/src) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap/src) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap/src) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap/src) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap/src) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap/src) by extension 'ros'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap/src) by extensions ['cmake', 'python']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap/src) by extension 'cmake'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap/src) by extension 'python'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap/src) by extensions ['python_setup_py']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/frictionmap/src) by extension 'python_setup_py'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob) by extensions ['ignore', 'ignore_ament_install']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob) by extension 'ignore'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob) by extension 'ignore_ament_install'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob) by extensions ['colcon_pkg']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob) by extension 'colcon_pkg'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob) by extensions ['colcon_meta']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob) by extension 'colcon_meta'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob) by extensions ['ros']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob) by extension 'ros'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob) by extensions ['cmake', 'python']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob) by extension 'cmake'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob) by extension 'python'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob) by extensions ['python_setup_py']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob) by extension 'python_setup_py'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob/src) by extensions ['ignore', 'ignore_ament_install']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob/src) by extension 'ignore'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob/src) by extension 'ignore_ament_install'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob/src) by extensions ['colcon_pkg']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob/src) by extension 'colcon_pkg'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob/src) by extensions ['colcon_meta']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob/src) by extension 'colcon_meta'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob/src) by extensions ['ros']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob/src) by extension 'ros'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob/src) by extensions ['cmake', 'python']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob/src) by extension 'cmake'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob/src) by extension 'python'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob/src) by extensions ['python_setup_py']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/helper_funcs_glob/src) by extension 'python_setup_py'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs) by extensions ['ignore', 'ignore_ament_install']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs) by extension 'ignore'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs) by extension 'ignore_ament_install'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs) by extensions ['colcon_pkg']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs) by extension 'colcon_pkg'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs) by extensions ['colcon_meta']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs) by extension 'colcon_meta'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs) by extensions ['ros']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs) by extension 'ros'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs) by extensions ['cmake', 'python']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs) by extension 'cmake'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs) by extension 'python'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs) by extensions ['python_setup_py']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs) by extension 'python_setup_py'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/frictionmaps) by extensions ['ignore', 'ignore_ament_install']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/frictionmaps) by extension 'ignore'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/frictionmaps) by extension 'ignore_ament_install'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/frictionmaps) by extensions ['colcon_pkg']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/frictionmaps) by extension 'colcon_pkg'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/frictionmaps) by extensions ['colcon_meta']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/frictionmaps) by extension 'colcon_meta'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/frictionmaps) by extensions ['ros']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/frictionmaps) by extension 'ros'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/frictionmaps) by extensions ['cmake', 'python']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/frictionmaps) by extension 'cmake'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/frictionmaps) by extension 'python'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/frictionmaps) by extensions ['python_setup_py']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/frictionmaps) by extension 'python_setup_py'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/tracks) by extensions ['ignore', 'ignore_ament_install']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/tracks) by extension 'ignore'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/tracks) by extension 'ignore_ament_install'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/tracks) by extensions ['colcon_pkg']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/tracks) by extension 'colcon_pkg'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/tracks) by extensions ['colcon_meta']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/tracks) by extension 'colcon_meta'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/tracks) by extensions ['ros']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/tracks) by extension 'ros'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/tracks) by extensions ['cmake', 'python']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/tracks) by extension 'cmake'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/tracks) by extension 'python'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/tracks) by extensions ['python_setup_py']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/tracks) by extension 'python_setup_py'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/veh_dyn_info) by extensions ['ignore', 'ignore_ament_install']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/veh_dyn_info) by extension 'ignore'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/veh_dyn_info) by extension 'ignore_ament_install'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/veh_dyn_info) by extensions ['colcon_pkg']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/veh_dyn_info) by extension 'colcon_pkg'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/veh_dyn_info) by extensions ['colcon_meta']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/veh_dyn_info) by extension 'colcon_meta'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/veh_dyn_info) by extensions ['ros']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/veh_dyn_info) by extension 'ros'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/veh_dyn_info) by extensions ['cmake', 'python']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/veh_dyn_info) by extension 'cmake'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/veh_dyn_info) by extension 'python'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/veh_dyn_info) by extensions ['python_setup_py']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/inputs/veh_dyn_info) by extension 'python_setup_py'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj) by extensions ['ignore', 'ignore_ament_install']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj) by extension 'ignore'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj) by extension 'ignore_ament_install'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj) by extensions ['colcon_pkg']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj) by extension 'colcon_pkg'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj) by extensions ['colcon_meta']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj) by extension 'colcon_meta'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj) by extensions ['ros']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj) by extension 'ros'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj) by extensions ['cmake', 'python']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj) by extension 'cmake'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj) by extension 'python'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj) by extensions ['python_setup_py']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj) by extension 'python_setup_py'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src) by extensions ['ignore', 'ignore_ament_install']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src) by extension 'ignore'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src) by extension 'ignore_ament_install'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src) by extensions ['colcon_pkg']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src) by extension 'colcon_pkg'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src) by extensions ['colcon_meta']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src) by extension 'colcon_meta'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src) by extensions ['ros']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src) by extension 'ros'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src) by extensions ['cmake', 'python']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src) by extension 'cmake'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src) by extension 'python'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src) by extensions ['python_setup_py']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src) by extension 'python_setup_py'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src/src) by extensions ['ignore', 'ignore_ament_install']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src/src) by extension 'ignore'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src/src) by extension 'ignore_ament_install'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src/src) by extensions ['colcon_pkg']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src/src) by extension 'colcon_pkg'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src/src) by extensions ['colcon_meta']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src/src) by extension 'colcon_meta'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src/src) by extensions ['ros']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src/src) by extension 'ros'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src/src) by extensions ['cmake', 'python']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src/src) by extension 'cmake'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src/src) by extension 'python'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src/src) by extensions ['python_setup_py']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/powertrain_src/src) by extension 'python_setup_py'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/src) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/src) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/src) by extension 'ignore_ament_install'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/src) by extensions ['colcon_pkg']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/src) by extension 'colcon_pkg'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/src) by extensions ['colcon_meta']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/src) by extension 'colcon_meta'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/src) by extensions ['ros']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/src) by extension 'ros'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/src) by extensions ['cmake', 'python']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/src) by extension 'cmake'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/src) by extension 'python'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/src) by extensions ['python_setup_py']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/opt_mintime_traj/src) by extension 'python_setup_py'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/params) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/params) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/params) by extension 'ignore_ament_install'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/params) by extensions ['colcon_pkg']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/params) by extension 'colcon_pkg'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/params) by extensions ['colcon_meta']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/params) by extension 'colcon_meta'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/params) by extensions ['ros']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/params) by extension 'ros'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/params) by extensions ['cmake', 'python']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/params) by extension 'cmake'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/params) by extension 'python'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/params) by extensions ['python_setup_py']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/global_racetrajectory_optimization/params) by extension 'python_setup_py'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong) by extension 'ignore_ament_install'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong) by extension 'ros'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong) by extensions ['cmake', 'python']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong) by extension 'cmake'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong) by extension 'python'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong) by extensions ['python_setup_py']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong) by extension 'python_setup_py'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization) by extension 'ros'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization) by extensions ['cmake', 'python']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization) by extension 'cmake'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization) by extension 'python'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization) by extensions ['python_setup_py']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization) by extension 'python_setup_py'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap) by extension 'ros'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap) by extensions ['cmake', 'python']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap) by extension 'cmake'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap) by extension 'python'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap) by extensions ['python_setup_py']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap) by extension 'python_setup_py'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap/src) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap/src) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap/src) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap/src) by extensions ['colcon_pkg']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap/src) by extension 'colcon_pkg'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap/src) by extensions ['colcon_meta']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap/src) by extension 'colcon_meta'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap/src) by extensions ['ros']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap/src) by extension 'ros'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap/src) by extensions ['cmake', 'python']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap/src) by extension 'cmake'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap/src) by extension 'python'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap/src) by extensions ['python_setup_py']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/frictionmap/src) by extension 'python_setup_py'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob) by extensions ['colcon_pkg']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob) by extension 'colcon_pkg'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob) by extensions ['colcon_meta']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob) by extension 'colcon_meta'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob) by extensions ['ros']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob) by extension 'ros'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob) by extensions ['cmake', 'python']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob) by extension 'cmake'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob) by extension 'python'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob) by extensions ['python_setup_py']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob) by extension 'python_setup_py'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob/src) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob/src) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob/src) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob/src) by extensions ['colcon_pkg']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob/src) by extension 'colcon_pkg'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob/src) by extensions ['colcon_meta']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob/src) by extension 'colcon_meta'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob/src) by extensions ['ros']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob/src) by extension 'ros'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob/src) by extensions ['cmake', 'python']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob/src) by extension 'cmake'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob/src) by extension 'python'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob/src) by extensions ['python_setup_py']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/helper_funcs_glob/src) by extension 'python_setup_py'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs) by extension 'ignore_ament_install'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs) by extensions ['colcon_meta']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs) by extension 'ros'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs) by extensions ['cmake', 'python']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs) by extension 'cmake'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs) by extension 'python'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs) by extensions ['python_setup_py']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs) by extension 'python_setup_py'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/frictionmaps) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/frictionmaps) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/frictionmaps) by extension 'ignore_ament_install'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/frictionmaps) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/frictionmaps) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/frictionmaps) by extensions ['colcon_meta']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/frictionmaps) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/frictionmaps) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/frictionmaps) by extension 'ros'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/frictionmaps) by extensions ['cmake', 'python']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/frictionmaps) by extension 'cmake'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/frictionmaps) by extension 'python'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/frictionmaps) by extensions ['python_setup_py']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/frictionmaps) by extension 'python_setup_py'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/tracks) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/tracks) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/tracks) by extension 'ignore_ament_install'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/tracks) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/tracks) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/tracks) by extensions ['colcon_meta']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/tracks) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/tracks) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/tracks) by extension 'ros'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/tracks) by extensions ['cmake', 'python']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/tracks) by extension 'cmake'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/tracks) by extension 'python'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/tracks) by extensions ['python_setup_py']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/tracks) by extension 'python_setup_py'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/veh_dyn_info) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/veh_dyn_info) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/veh_dyn_info) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/veh_dyn_info) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/veh_dyn_info) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/veh_dyn_info) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/veh_dyn_info) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/veh_dyn_info) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/veh_dyn_info) by extension 'ros'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/veh_dyn_info) by extensions ['cmake', 'python']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/veh_dyn_info) by extension 'cmake'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/veh_dyn_info) by extension 'python'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/veh_dyn_info) by extensions ['python_setup_py']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/inputs/veh_dyn_info) by extension 'python_setup_py'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/maps) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/maps) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/maps) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/maps) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/maps) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/maps) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/maps) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/maps) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/maps) by extension 'ros'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/maps) by extensions ['cmake', 'python']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/maps) by extension 'cmake'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/maps) by extension 'python'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/maps) by extensions ['python_setup_py']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/maps) by extension 'python_setup_py'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src/src) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src/src) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src/src) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src/src) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src/src) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src/src) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src/src) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src/src) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src/src) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src/src) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src/src) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src/src) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src/src) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/powertrain_src/src) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/src) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/src) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/src) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/src) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/src) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/src) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/src) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/src) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/src) by extension 'ros'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/src) by extensions ['cmake', 'python']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/src) by extension 'cmake'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/src) by extension 'python'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/src) by extensions ['python_setup_py']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/opt_mintime_traj/src) by extension 'python_setup_py'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/params) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/params) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/params) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/params) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/params) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/params) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/params) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/params) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/params) by extension 'ros'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/params) by extensions ['cmake', 'python']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/params) by extension 'cmake'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/params) by extension 'python'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/params) by extensions ['python_setup_py']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(path_generate/steven_gong/Raceline-Optimization/params) by extension 'python_setup_py'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing) by extension 'ros'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing) by extensions ['cmake', 'python']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing) by extension 'cmake'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing) by extension 'python'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing) by extensions ['python_setup_py']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing) by extension 'python_setup_py'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing/nonlinear_mpc_casadi) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing/nonlinear_mpc_casadi) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing/nonlinear_mpc_casadi) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing/nonlinear_mpc_casadi) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing/nonlinear_mpc_casadi) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing/nonlinear_mpc_casadi) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing/nonlinear_mpc_casadi) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing/nonlinear_mpc_casadi) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/Nonlinear_MPCC_for_autonomous_racing/nonlinear_mpc_casadi) by extension 'ros'
+[0.209s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Nonlinear_MPCC_for_autonomous_racing/nonlinear_mpc_casadi' with type 'ros.ament_cmake' and name 'nonlinear_mpc_casadi'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/bubble_memory) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/bubble_memory) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/bubble_memory) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/bubble_memory) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/bubble_memory) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/bubble_memory) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/bubble_memory) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/bubble_memory) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/bubble_memory) by extension 'ros'
+[0.210s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bubble_memory' with type 'ros.ament_python' and name 'bubble_memory'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/centerline_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/centerline_planner) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/centerline_planner) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/centerline_planner) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/centerline_planner) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/centerline_planner) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/centerline_planner) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/centerline_planner) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/centerline_planner) by extension 'ros'
+[0.210s] DEBUG:colcon.colcon_core.package_identification:Package 'src/centerline_planner' with type 'ros.ament_python' and name 'centerline_planner'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/csv_obstacle) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/csv_obstacle) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/csv_obstacle) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/csv_obstacle) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/csv_obstacle) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/csv_obstacle) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/csv_obstacle) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/csv_obstacle) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/csv_obstacle) by extension 'ros'
+[0.211s] DEBUG:colcon.colcon_core.package_identification:Package 'src/csv_obstacle' with type 'ros.ament_python' and name 'csv_obstacle'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/disparity_autodrive) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/disparity_autodrive) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/disparity_autodrive) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/disparity_autodrive) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/disparity_autodrive) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/disparity_autodrive) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/disparity_autodrive) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/disparity_autodrive) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/disparity_autodrive) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package 'src/disparity_autodrive' with type 'ros.ament_cmake' and name 'disparity_autodrive'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_gym_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_gym_ros) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_gym_ros) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_gym_ros) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_gym_ros) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_gym_ros) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_gym_ros) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_gym_ros) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_gym_ros) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package 'src/f1tenth_gym_ros' with type 'ros.ament_python' and name 'f1tenth_gym_ros'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/key_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/key_teleop) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/key_teleop) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/key_teleop) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/key_teleop) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/key_teleop) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/key_teleop) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/key_teleop) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/key_teleop) by extension 'ros'
+[0.213s] DEBUG:colcon.colcon_core.package_identification:Package 'src/key_teleop' with type 'ros.ament_cmake' and name 'key_teleop'
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.225s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/moon/sim_ws/install
+[0.226s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 293 installed packages in /opt/ros/foxy
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.264s] Level 5:colcon.colcon_core.verb:set package 'bubble_memory' build argument 'cmake_args' from command line to 'None'
+[0.264s] Level 5:colcon.colcon_core.verb:set package 'bubble_memory' build argument 'cmake_target' from command line to 'None'
+[0.264s] Level 5:colcon.colcon_core.verb:set package 'bubble_memory' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.264s] Level 5:colcon.colcon_core.verb:set package 'bubble_memory' build argument 'cmake_clean_cache' from command line to 'False'
+[0.264s] Level 5:colcon.colcon_core.verb:set package 'bubble_memory' build argument 'cmake_clean_first' from command line to 'False'
+[0.264s] Level 5:colcon.colcon_core.verb:set package 'bubble_memory' build argument 'cmake_force_configure' from command line to 'False'
+[0.264s] Level 5:colcon.colcon_core.verb:set package 'bubble_memory' build argument 'ament_cmake_args' from command line to 'None'
+[0.264s] Level 5:colcon.colcon_core.verb:set package 'bubble_memory' build argument 'catkin_cmake_args' from command line to 'None'
+[0.264s] Level 5:colcon.colcon_core.verb:set package 'bubble_memory' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.264s] DEBUG:colcon.colcon_core.verb:Building package 'bubble_memory' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/moon/sim_ws/build/bubble_memory', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/moon/sim_ws/install/bubble_memory', 'merge_install': False, 'path': '/home/moon/sim_ws/src/bubble_memory', 'symlink_install': False, 'test_result_base': None}
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'centerline_planner' build argument 'cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'centerline_planner' build argument 'cmake_target' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'centerline_planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'centerline_planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'centerline_planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'centerline_planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'centerline_planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'centerline_planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'centerline_planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.265s] DEBUG:colcon.colcon_core.verb:Building package 'centerline_planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/moon/sim_ws/build/centerline_planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/moon/sim_ws/install/centerline_planner', 'merge_install': False, 'path': '/home/moon/sim_ws/src/centerline_planner', 'symlink_install': False, 'test_result_base': None}
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'csv_obstacle' build argument 'cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'csv_obstacle' build argument 'cmake_target' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'csv_obstacle' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'csv_obstacle' build argument 'cmake_clean_cache' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'csv_obstacle' build argument 'cmake_clean_first' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'csv_obstacle' build argument 'cmake_force_configure' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'csv_obstacle' build argument 'ament_cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'csv_obstacle' build argument 'catkin_cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'csv_obstacle' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.265s] DEBUG:colcon.colcon_core.verb:Building package 'csv_obstacle' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/moon/sim_ws/build/csv_obstacle', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/moon/sim_ws/install/csv_obstacle', 'merge_install': False, 'path': '/home/moon/sim_ws/src/csv_obstacle', 'symlink_install': False, 'test_result_base': None}
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'disparity_autodrive' build argument 'cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'disparity_autodrive' build argument 'cmake_target' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'disparity_autodrive' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'disparity_autodrive' build argument 'cmake_clean_cache' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'disparity_autodrive' build argument 'cmake_clean_first' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'disparity_autodrive' build argument 'cmake_force_configure' from command line to 'False'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'disparity_autodrive' build argument 'ament_cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'disparity_autodrive' build argument 'catkin_cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'disparity_autodrive' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.265s] DEBUG:colcon.colcon_core.verb:Building package 'disparity_autodrive' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/moon/sim_ws/build/disparity_autodrive', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/moon/sim_ws/install/disparity_autodrive', 'merge_install': False, 'path': '/home/moon/sim_ws/src/disparity_autodrive', 'symlink_install': False, 'test_result_base': None}
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_target' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.266s] DEBUG:colcon.colcon_core.verb:Building package 'f1tenth_gym_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/moon/sim_ws/build/f1tenth_gym_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/moon/sim_ws/install/f1tenth_gym_ros', 'merge_install': False, 'path': '/home/moon/sim_ws/src/f1tenth_gym_ros', 'symlink_install': False, 'test_result_base': None}
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'cmake_target' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.266s] DEBUG:colcon.colcon_core.verb:Building package 'key_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/moon/sim_ws/build/key_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/moon/sim_ws/install/key_teleop', 'merge_install': False, 'path': '/home/moon/sim_ws/src/key_teleop', 'symlink_install': False, 'test_result_base': None}
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'nonlinear_mpc_casadi' build argument 'cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'nonlinear_mpc_casadi' build argument 'cmake_target' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'nonlinear_mpc_casadi' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'nonlinear_mpc_casadi' build argument 'cmake_clean_cache' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'nonlinear_mpc_casadi' build argument 'cmake_clean_first' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'nonlinear_mpc_casadi' build argument 'cmake_force_configure' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'nonlinear_mpc_casadi' build argument 'ament_cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'nonlinear_mpc_casadi' build argument 'catkin_cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'nonlinear_mpc_casadi' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.266s] DEBUG:colcon.colcon_core.verb:Building package 'nonlinear_mpc_casadi' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/moon/sim_ws/build/nonlinear_mpc_casadi', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/moon/sim_ws/install/nonlinear_mpc_casadi', 'merge_install': False, 'path': '/home/moon/sim_ws/src/Nonlinear_MPCC_for_autonomous_racing/nonlinear_mpc_casadi', 'symlink_install': False, 'test_result_base': None}
+[0.266s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.267s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.267s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/moon/sim_ws/src/bubble_memory' with build type 'ament_python'
+[0.267s] Level 1:colcon.colcon_core.shell:create_environment_hook('bubble_memory', 'ament_prefix_path')
+[0.268s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/bubble_memory/share/bubble_memory/hook/ament_prefix_path.ps1'
+[0.269s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/bubble_memory/share/bubble_memory/hook/ament_prefix_path.dsv'
+[0.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/bubble_memory/share/bubble_memory/hook/ament_prefix_path.sh'
+[0.270s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.270s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.273s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/moon/sim_ws/src/centerline_planner' with build type 'ament_python'
+[0.273s] Level 1:colcon.colcon_core.shell:create_environment_hook('centerline_planner', 'ament_prefix_path')
+[0.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/centerline_planner/share/centerline_planner/hook/ament_prefix_path.ps1'
+[0.273s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/centerline_planner/share/centerline_planner/hook/ament_prefix_path.dsv'
+[0.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/centerline_planner/share/centerline_planner/hook/ament_prefix_path.sh'
+[0.274s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.274s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.276s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/moon/sim_ws/src/csv_obstacle' with build type 'ament_python'
+[0.277s] Level 1:colcon.colcon_core.shell:create_environment_hook('csv_obstacle', 'ament_prefix_path')
+[0.277s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle/hook/ament_prefix_path.ps1'
+[0.277s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle/hook/ament_prefix_path.dsv'
+[0.277s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle/hook/ament_prefix_path.sh'
+[0.278s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.278s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.281s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/moon/sim_ws/src/disparity_autodrive' with build type 'ament_cmake'
+[0.281s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/moon/sim_ws/src/disparity_autodrive'
+[0.281s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.281s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.284s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/moon/sim_ws/src/f1tenth_gym_ros' with build type 'ament_python'
+[0.285s] Level 1:colcon.colcon_core.shell:create_environment_hook('f1tenth_gym_ros', 'ament_prefix_path')
+[0.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/ament_prefix_path.ps1'
+[0.285s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/ament_prefix_path.dsv'
+[0.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/ament_prefix_path.sh'
+[0.286s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.286s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.288s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/moon/sim_ws/src/key_teleop' with build type 'ament_cmake'
+[0.288s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/moon/sim_ws/src/key_teleop'
+[0.289s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.289s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.291s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/moon/sim_ws/src/Nonlinear_MPCC_for_autonomous_racing/nonlinear_mpc_casadi' with build type 'ament_cmake'
+[0.291s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/moon/sim_ws/src/Nonlinear_MPCC_for_autonomous_racing/nonlinear_mpc_casadi'
+[0.292s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.292s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.425s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/moon/sim_ws/src/bubble_memory'
+[0.426s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.426s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.557s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/moon/sim_ws/src/centerline_planner'
+[0.558s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.558s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.681s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/moon/sim_ws/src/csv_obstacle'
+[0.682s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.682s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.687s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/moon/sim_ws/build/disparity_autodrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --build /home/moon/sim_ws/build/disparity_autodrive -- -j16 -l16
+[0.820s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/moon/sim_ws/src/f1tenth_gym_ros'
+[0.821s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.821s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.827s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/moon/sim_ws/build/key_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --build /home/moon/sim_ws/build/key_teleop -- -j16 -l16
+[0.830s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/moon/sim_ws/build/nonlinear_mpc_casadi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --build /home/moon/sim_ws/build/nonlinear_mpc_casadi -- -j16 -l16
+[0.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/moon/sim_ws/build/disparity_autodrive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --build /home/moon/sim_ws/build/disparity_autodrive -- -j16 -l16
+[0.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/moon/sim_ws/build/disparity_autodrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --install /home/moon/sim_ws/build/disparity_autodrive
+[0.860s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(disparity_autodrive)
+[0.862s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/moon/sim_ws/build/disparity_autodrive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --install /home/moon/sim_ws/build/disparity_autodrive
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/disparity_autodrive' for CMake module files
+[0.866s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/disparity_autodrive' for CMake config files
+[0.866s] Level 1:colcon.colcon_core.shell:create_environment_hook('disparity_autodrive', 'cmake_prefix_path')
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/hook/cmake_prefix_path.ps1'
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/hook/cmake_prefix_path.dsv'
+[0.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/hook/cmake_prefix_path.sh'
+[0.869s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/disparity_autodrive/lib'
+[0.869s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/disparity_autodrive/bin'
+[0.869s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/disparity_autodrive/lib/pkgconfig/disparity_autodrive.pc'
+[0.870s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/disparity_autodrive/lib/python3.8/site-packages'
+[0.870s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/disparity_autodrive/bin'
+[0.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.ps1'
+[0.871s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.dsv'
+[0.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.sh'
+[0.873s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.bash'
+[0.874s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.zsh'
+[0.874s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/moon/sim_ws/install/disparity_autodrive/share/colcon-core/packages/disparity_autodrive)
+[0.875s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(disparity_autodrive)
+[0.875s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/disparity_autodrive' for CMake module files
+[0.876s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/disparity_autodrive' for CMake config files
+[0.876s] Level 1:colcon.colcon_core.shell:create_environment_hook('disparity_autodrive', 'cmake_prefix_path')
+[0.876s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/hook/cmake_prefix_path.ps1'
+[0.877s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/hook/cmake_prefix_path.dsv'
+[0.877s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/hook/cmake_prefix_path.sh'
+[0.877s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/disparity_autodrive/lib'
+[0.878s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/disparity_autodrive/bin'
+[0.878s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/disparity_autodrive/lib/pkgconfig/disparity_autodrive.pc'
+[0.878s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/disparity_autodrive/lib/python3.8/site-packages'
+[0.878s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/disparity_autodrive/bin'
+[0.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.ps1'
+[0.879s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.dsv'
+[0.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.sh'
+[0.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.bash'
+[0.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.zsh'
+[0.880s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/moon/sim_ws/install/disparity_autodrive/share/colcon-core/packages/disparity_autodrive)
+[0.882s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/moon/sim_ws/build/nonlinear_mpc_casadi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --build /home/moon/sim_ws/build/nonlinear_mpc_casadi -- -j16 -l16
+[0.885s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/moon/sim_ws/build/nonlinear_mpc_casadi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --install /home/moon/sim_ws/build/nonlinear_mpc_casadi
+[0.885s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/moon/sim_ws/build/key_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --build /home/moon/sim_ws/build/key_teleop -- -j16 -l16
+[0.887s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/moon/sim_ws/build/key_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --install /home/moon/sim_ws/build/key_teleop
+[0.895s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(key_teleop)
+[0.895s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/key_teleop' for CMake module files
+[0.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/moon/sim_ws/build/key_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --install /home/moon/sim_ws/build/key_teleop
+[0.896s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/key_teleop' for CMake config files
+[0.896s] Level 1:colcon.colcon_core.shell:create_environment_hook('key_teleop', 'cmake_prefix_path')
+[0.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/key_teleop/share/key_teleop/hook/cmake_prefix_path.ps1'
+[0.897s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/key_teleop/share/key_teleop/hook/cmake_prefix_path.dsv'
+[0.898s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/key_teleop/share/key_teleop/hook/cmake_prefix_path.sh'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/key_teleop/lib'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/key_teleop/bin'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/key_teleop/lib/pkgconfig/key_teleop.pc'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/key_teleop/lib/python3.8/site-packages'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/key_teleop/bin'
+[0.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/key_teleop/share/key_teleop/package.ps1'
+[0.900s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/moon/sim_ws/install/key_teleop/share/key_teleop/package.dsv'
+[0.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/key_teleop/share/key_teleop/package.sh'
+[0.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/key_teleop/share/key_teleop/package.bash'
+[0.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/key_teleop/share/key_teleop/package.zsh'
+[0.901s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/moon/sim_ws/install/key_teleop/share/colcon-core/packages/key_teleop)
+[0.902s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(key_teleop)
+[0.902s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/key_teleop' for CMake module files
+[0.902s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/key_teleop' for CMake config files
+[0.902s] Level 1:colcon.colcon_core.shell:create_environment_hook('key_teleop', 'cmake_prefix_path')
+[0.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/key_teleop/share/key_teleop/hook/cmake_prefix_path.ps1'
+[0.903s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/key_teleop/share/key_teleop/hook/cmake_prefix_path.dsv'
+[0.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/key_teleop/share/key_teleop/hook/cmake_prefix_path.sh'
+[0.904s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/key_teleop/lib'
+[0.904s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/key_teleop/bin'
+[0.904s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/key_teleop/lib/pkgconfig/key_teleop.pc'
+[0.904s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/key_teleop/lib/python3.8/site-packages'
+[0.904s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/key_teleop/bin'
+[0.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/key_teleop/share/key_teleop/package.ps1'
+[0.905s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/moon/sim_ws/install/key_teleop/share/key_teleop/package.dsv'
+[0.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/key_teleop/share/key_teleop/package.sh'
+[0.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/key_teleop/share/key_teleop/package.bash'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/key_teleop/share/key_teleop/package.zsh'
+[0.906s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/moon/sim_ws/install/key_teleop/share/colcon-core/packages/key_teleop)
+[0.917s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nonlinear_mpc_casadi)
+[0.918s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/nonlinear_mpc_casadi' for CMake module files
+[0.920s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/moon/sim_ws/build/nonlinear_mpc_casadi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --install /home/moon/sim_ws/build/nonlinear_mpc_casadi
+[0.920s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/nonlinear_mpc_casadi' for CMake config files
+[0.920s] Level 1:colcon.colcon_core.shell:create_environment_hook('nonlinear_mpc_casadi', 'cmake_prefix_path')
+[0.921s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/hook/cmake_prefix_path.ps1'
+[0.921s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/hook/cmake_prefix_path.dsv'
+[0.921s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/hook/cmake_prefix_path.sh'
+[0.922s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/nonlinear_mpc_casadi/lib'
+[0.922s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/nonlinear_mpc_casadi/bin'
+[0.922s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/pkgconfig/nonlinear_mpc_casadi.pc'
+[0.922s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/python3.8/site-packages'
+[0.922s] Level 1:colcon.colcon_core.shell:create_environment_hook('nonlinear_mpc_casadi', 'pythonpath')
+[0.922s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/hook/pythonpath.ps1'
+[0.923s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/hook/pythonpath.dsv'
+[0.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/hook/pythonpath.sh'
+[0.924s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/nonlinear_mpc_casadi/bin'
+[0.924s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/package.ps1'
+[0.925s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/package.dsv'
+[0.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/package.sh'
+[0.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/package.bash'
+[0.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/package.zsh'
+[0.926s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/colcon-core/packages/nonlinear_mpc_casadi)
+[0.927s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nonlinear_mpc_casadi)
+[0.927s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/nonlinear_mpc_casadi' for CMake module files
+[0.928s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/nonlinear_mpc_casadi' for CMake config files
+[0.928s] Level 1:colcon.colcon_core.shell:create_environment_hook('nonlinear_mpc_casadi', 'cmake_prefix_path')
+[0.928s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/hook/cmake_prefix_path.ps1'
+[0.929s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/hook/cmake_prefix_path.dsv'
+[0.929s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/hook/cmake_prefix_path.sh'
+[0.929s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/nonlinear_mpc_casadi/lib'
+[0.930s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/nonlinear_mpc_casadi/bin'
+[0.930s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/pkgconfig/nonlinear_mpc_casadi.pc'
+[0.930s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/python3.8/site-packages'
+[0.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('nonlinear_mpc_casadi', 'pythonpath')
+[0.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/hook/pythonpath.ps1'
+[0.931s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/hook/pythonpath.dsv'
+[0.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/hook/pythonpath.sh'
+[0.931s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/nonlinear_mpc_casadi/bin'
+[0.932s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/package.ps1'
+[0.932s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/package.dsv'
+[0.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/package.sh'
+[0.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/package.bash'
+[0.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/package.zsh'
+[0.934s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/moon/sim_ws/install/nonlinear_mpc_casadi/share/colcon-core/packages/nonlinear_mpc_casadi)
+[1.103s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/moon/sim_ws/src/bubble_memory': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/bubble_memory/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/bubble_memory/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bubble_memory build --build-base /home/moon/sim_ws/build/bubble_memory/build install --record /home/moon/sim_ws/build/bubble_memory/install.log --install-scripts $base/lib/bubble_memory --single-version-externally-managed install_data
+[1.121s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/moon/sim_ws/src/csv_obstacle': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/csv_obstacle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/csv_obstacle build --build-base /home/moon/sim_ws/build/csv_obstacle/build install --record /home/moon/sim_ws/build/csv_obstacle/install.log --single-version-externally-managed install_data
+[1.124s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/moon/sim_ws/src/centerline_planner': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/centerline_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/centerline_planner build --build-base /home/moon/sim_ws/build/centerline_planner/build install --record /home/moon/sim_ws/build/centerline_planner/install.log --install-scripts $base/lib/centerline_planner --single-version-externally-managed install_data
+[1.126s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/moon/sim_ws/src/f1tenth_gym_ros': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/f1tenth_gym_ros build --build-base /home/moon/sim_ws/build/f1tenth_gym_ros/build install --record /home/moon/sim_ws/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data
+[1.276s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/bubble_memory' for CMake module files
+[1.277s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/moon/sim_ws/src/bubble_memory' returned '0': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/bubble_memory/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/bubble_memory/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bubble_memory build --build-base /home/moon/sim_ws/build/bubble_memory/build install --record /home/moon/sim_ws/build/bubble_memory/install.log --install-scripts $base/lib/bubble_memory --single-version-externally-managed install_data
+[1.277s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/bubble_memory' for CMake config files
+[1.278s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/bubble_memory/lib'
+[1.278s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/bubble_memory/bin'
+[1.278s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/bubble_memory/lib/pkgconfig/bubble_memory.pc'
+[1.278s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/bubble_memory/lib/python3.8/site-packages'
+[1.278s] Level 1:colcon.colcon_core.shell:create_environment_hook('bubble_memory', 'pythonpath')
+[1.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/bubble_memory/share/bubble_memory/hook/pythonpath.ps1'
+[1.278s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/bubble_memory/share/bubble_memory/hook/pythonpath.dsv'
+[1.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/bubble_memory/share/bubble_memory/hook/pythonpath.sh'
+[1.279s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/bubble_memory/bin'
+[1.279s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bubble_memory)
+[1.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/bubble_memory/share/bubble_memory/package.ps1'
+[1.280s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/moon/sim_ws/install/bubble_memory/share/bubble_memory/package.dsv'
+[1.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/bubble_memory/share/bubble_memory/package.sh'
+[1.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/bubble_memory/share/bubble_memory/package.bash'
+[1.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/bubble_memory/share/bubble_memory/package.zsh'
+[1.281s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/moon/sim_ws/install/bubble_memory/share/colcon-core/packages/bubble_memory)
+[1.292s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/csv_obstacle' for CMake module files
+[1.293s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/moon/sim_ws/src/csv_obstacle' returned '0': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/csv_obstacle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/csv_obstacle build --build-base /home/moon/sim_ws/build/csv_obstacle/build install --record /home/moon/sim_ws/build/csv_obstacle/install.log --single-version-externally-managed install_data
+[1.293s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/csv_obstacle' for CMake config files
+[1.293s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/csv_obstacle/lib'
+[1.293s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/csv_obstacle/bin'
+[1.293s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/csv_obstacle/lib/pkgconfig/csv_obstacle.pc'
+[1.294s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages'
+[1.294s] Level 1:colcon.colcon_core.shell:create_environment_hook('csv_obstacle', 'pythonpath')
+[1.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle/hook/pythonpath.ps1'
+[1.294s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle/hook/pythonpath.dsv'
+[1.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle/hook/pythonpath.sh'
+[1.295s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/csv_obstacle/bin'
+[1.295s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(csv_obstacle)
+[1.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle/package.ps1'
+[1.295s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle/package.dsv'
+[1.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle/package.sh'
+[1.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle/package.bash'
+[1.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle/package.zsh'
+[1.296s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/moon/sim_ws/install/csv_obstacle/share/colcon-core/packages/csv_obstacle)
+[1.297s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/centerline_planner' for CMake module files
+[1.297s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/moon/sim_ws/src/centerline_planner' returned '0': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/centerline_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/centerline_planner build --build-base /home/moon/sim_ws/build/centerline_planner/build install --record /home/moon/sim_ws/build/centerline_planner/install.log --install-scripts $base/lib/centerline_planner --single-version-externally-managed install_data
+[1.298s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/centerline_planner' for CMake config files
+[1.298s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/centerline_planner/lib'
+[1.298s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/centerline_planner/bin'
+[1.298s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/centerline_planner/lib/pkgconfig/centerline_planner.pc'
+[1.298s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages'
+[1.298s] Level 1:colcon.colcon_core.shell:create_environment_hook('centerline_planner', 'pythonpath')
+[1.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/centerline_planner/share/centerline_planner/hook/pythonpath.ps1'
+[1.299s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/centerline_planner/share/centerline_planner/hook/pythonpath.dsv'
+[1.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/centerline_planner/share/centerline_planner/hook/pythonpath.sh'
+[1.299s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/centerline_planner/bin'
+[1.299s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(centerline_planner)
+[1.299s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/centerline_planner/share/centerline_planner/package.ps1'
+[1.300s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/moon/sim_ws/install/centerline_planner/share/centerline_planner/package.dsv'
+[1.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/centerline_planner/share/centerline_planner/package.sh'
+[1.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/centerline_planner/share/centerline_planner/package.bash'
+[1.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/centerline_planner/share/centerline_planner/package.zsh'
+[1.300s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/moon/sim_ws/install/centerline_planner/share/colcon-core/packages/centerline_planner)
+[1.302s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/f1tenth_gym_ros' for CMake module files
+[1.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/moon/sim_ws/src/f1tenth_gym_ros' returned '0': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/f1tenth_gym_ros build --build-base /home/moon/sim_ws/build/f1tenth_gym_ros/build install --record /home/moon/sim_ws/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data
+[1.303s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/f1tenth_gym_ros' for CMake config files
+[1.303s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/f1tenth_gym_ros/lib'
+[1.303s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/f1tenth_gym_ros/bin'
+[1.303s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/f1tenth_gym_ros/lib/pkgconfig/f1tenth_gym_ros.pc'
+[1.303s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages'
+[1.303s] Level 1:colcon.colcon_core.shell:create_environment_hook('f1tenth_gym_ros', 'pythonpath')
+[1.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/pythonpath.ps1'
+[1.304s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/pythonpath.dsv'
+[1.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/pythonpath.sh'
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/moon/sim_ws/install/f1tenth_gym_ros/bin'
+[1.304s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(f1tenth_gym_ros)
+[1.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/package.ps1'
+[1.305s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/package.dsv'
+[1.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/package.sh'
+[1.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/package.bash'
+[1.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/package.zsh'
+[1.306s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/moon/sim_ws/install/f1tenth_gym_ros/share/colcon-core/packages/f1tenth_gym_ros)
+[1.306s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.306s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.306s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.306s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.309s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.309s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.310s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.324s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.324s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/moon/sim_ws/install/local_setup.ps1'
+[1.325s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/moon/sim_ws/install/_local_setup_util_ps1.py'
+[1.325s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/moon/sim_ws/install/setup.ps1'
+[1.326s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/moon/sim_ws/install/local_setup.sh'
+[1.326s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/moon/sim_ws/install/_local_setup_util_sh.py'
+[1.327s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/moon/sim_ws/install/setup.sh'
+[1.328s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/moon/sim_ws/install/local_setup.bash'
+[1.328s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/moon/sim_ws/install/setup.bash'
+[1.328s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/moon/sim_ws/install/local_setup.zsh'
+[1.329s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/moon/sim_ws/install/setup.zsh'

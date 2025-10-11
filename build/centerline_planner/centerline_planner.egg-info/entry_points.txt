@@ -1,0 +1,4 @@
+[console_scripts]
+centerline_pub = centerline_planner.centerline_pub:main
+path_pure_pursuit = centerline_planner.path_pure_pursuit:main
+

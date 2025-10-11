@@ -1,0 +1,20 @@
+[0.923s] Invoking command in '/home/moon/sim_ws/build/bubble_memory': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/bubble_memory/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/bubble_memory/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/moon/sim_ws/build/bubble_memory/build --no-deps symlink_data --force
+[1.077s] running develop
+[1.164s] running egg_info
+[1.164s] writing bubble_memory.egg-info/PKG-INFO
+[1.164s] writing dependency_links to bubble_memory.egg-info/dependency_links.txt
+[1.164s] writing entry points to bubble_memory.egg-info/entry_points.txt
+[1.164s] writing requirements to bubble_memory.egg-info/requires.txt
+[1.164s] writing top-level names to bubble_memory.egg-info/top_level.txt
+[1.183s] reading manifest file 'bubble_memory.egg-info/SOURCES.txt'
+[1.183s] writing manifest file 'bubble_memory.egg-info/SOURCES.txt'
+[1.203s] running build_ext
+[1.203s] Creating /home/moon/sim_ws/install/bubble_memory/lib/python3.8/site-packages/bubble-memory.egg-link (link to .)
+[1.204s] Installing bubble_memory script to /home/moon/sim_ws/install/bubble_memory/lib/bubble_memory
+[1.204s] 
+[1.204s] Installed /home/moon/sim_ws/build/bubble_memory
+[1.204s] running symlink_data
+[1.204s] symbolically linking /home/moon/sim_ws/build/bubble_memory/resource/bubble_memory -> /home/moon/sim_ws/install/bubble_memory/share/ament_index/resource_index/packages
+[1.204s] symbolically linking /home/moon/sim_ws/build/bubble_memory/package.xml -> /home/moon/sim_ws/install/bubble_memory/share/bubble_memory
+[1.204s] symbolically linking /home/moon/sim_ws/build/bubble_memory/launch/bubble_memory.launch.py -> /home/moon/sim_ws/install/bubble_memory/share/bubble_memory/launch
+[1.226s] Invoked command in '/home/moon/sim_ws/build/bubble_memory' returned '0': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/bubble_memory/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/bubble_memory/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/moon/sim_ws/build/bubble_memory/build --no-deps symlink_data --force

@@ -1,0 +1,3 @@
+[console_scripts]
+csv_obstacle = csv_obstacle.node:main
+

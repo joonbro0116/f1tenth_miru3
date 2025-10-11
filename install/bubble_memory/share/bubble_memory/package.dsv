@@ -1,0 +1,6 @@
+source;share/bubble_memory/hook/pythonpath.ps1
+source;share/bubble_memory/hook/pythonpath.dsv
+source;share/bubble_memory/hook/pythonpath.sh
+source;share/bubble_memory/hook/ament_prefix_path.ps1
+source;share/bubble_memory/hook/ament_prefix_path.dsv
+source;share/bubble_memory/hook/ament_prefix_path.sh

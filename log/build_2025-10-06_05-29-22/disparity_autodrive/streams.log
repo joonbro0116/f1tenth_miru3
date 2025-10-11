@@ -1,0 +1,22 @@
+[0.492s] Invoking command in '/home/moon/sim_ws/build/disparity_autodrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/moon/sim_ws/build/disparity_autodrive -- -j16 -l16
+[0.619s] [100%] Built target disparity_autodrive_node
+[0.620s] Invoked command in '/home/moon/sim_ws/build/disparity_autodrive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/moon/sim_ws/build/disparity_autodrive -- -j16 -l16
+[0.628s] Invoking command in '/home/moon/sim_ws/build/disparity_autodrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/moon/sim_ws/build/disparity_autodrive
+[0.633s] -- Install configuration: ""
+[0.633s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/lib/disparity_autodrive/disparity_autodrive_node
+[0.634s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/package_run_dependencies/disparity_autodrive
+[0.634s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/parent_prefix_path/disparity_autodrive
+[0.634s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.sh
+[0.635s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.dsv
+[0.636s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.sh
+[0.636s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.dsv
+[0.636s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.bash
+[0.637s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.sh
+[0.637s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.zsh
+[0.638s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.dsv
+[0.639s] -- Installing: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.dsv
+[0.639s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/packages/disparity_autodrive
+[0.639s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig.cmake
+[0.640s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig-version.cmake
+[0.641s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.xml
+[0.644s] Invoked command in '/home/moon/sim_ws/build/disparity_autodrive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/moon/sim_ws/build/disparity_autodrive

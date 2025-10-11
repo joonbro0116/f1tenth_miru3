@@ -1,0 +1,37 @@
+[0.771s] Invoking command in '/home/moon/sim_ws/build/csv_obstacle': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/csv_obstacle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/moon/sim_ws/build/csv_obstacle/build
+[0.902s] running develop
+[0.980s] Removing /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv-obstacle.egg-link (link to .)
+[0.996s] Invoked command in '/home/moon/sim_ws/build/csv_obstacle' returned '0': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/csv_obstacle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/moon/sim_ws/build/csv_obstacle/build
+[0.998s] Invoking command in '/home/moon/sim_ws/src/csv_obstacle': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/csv_obstacle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/csv_obstacle build --build-base /home/moon/sim_ws/build/csv_obstacle/build install --record /home/moon/sim_ws/build/csv_obstacle/install.log --single-version-externally-managed install_data --force
+[1.108s] running egg_info
+[1.108s] writing ../../build/csv_obstacle/csv_obstacle.egg-info/PKG-INFO
+[1.108s] writing dependency_links to ../../build/csv_obstacle/csv_obstacle.egg-info/dependency_links.txt
+[1.108s] writing entry points to ../../build/csv_obstacle/csv_obstacle.egg-info/entry_points.txt
+[1.108s] writing requirements to ../../build/csv_obstacle/csv_obstacle.egg-info/requires.txt
+[1.108s] writing top-level names to ../../build/csv_obstacle/csv_obstacle.egg-info/top_level.txt
+[1.126s] reading manifest file '../../build/csv_obstacle/csv_obstacle.egg-info/SOURCES.txt'
+[1.126s] writing manifest file '../../build/csv_obstacle/csv_obstacle.egg-info/SOURCES.txt'
+[1.126s] running build
+[1.126s] running build_py
+[1.126s] creating /home/moon/sim_ws/build/csv_obstacle/build
+[1.126s] creating /home/moon/sim_ws/build/csv_obstacle/build/lib
+[1.126s] creating /home/moon/sim_ws/build/csv_obstacle/build/lib/csv_obstacle
+[1.126s] copying csv_obstacle/node.py -> /home/moon/sim_ws/build/csv_obstacle/build/lib/csv_obstacle
+[1.127s] copying csv_obstacle/__init__.py -> /home/moon/sim_ws/build/csv_obstacle/build/lib/csv_obstacle
+[1.127s] running install
+[1.127s] running install_lib
+[1.127s] creating /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv_obstacle
+[1.127s] copying /home/moon/sim_ws/build/csv_obstacle/build/lib/csv_obstacle/node.py -> /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv_obstacle
+[1.127s] copying /home/moon/sim_ws/build/csv_obstacle/build/lib/csv_obstacle/__init__.py -> /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv_obstacle
+[1.128s] byte-compiling /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv_obstacle/node.py to node.cpython-38.pyc
+[1.129s] byte-compiling /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv_obstacle/__init__.py to __init__.cpython-38.pyc
+[1.129s] running install_data
+[1.129s] copying resource/csv_obstacle -> /home/moon/sim_ws/install/csv_obstacle/share/ament_index/resource_index/packages
+[1.129s] copying package.xml -> /home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle
+[1.129s] copying launch/csv_obstacle.launch.py -> /home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle/launch
+[1.129s] running install_egg_info
+[1.131s] Copying ../../build/csv_obstacle/csv_obstacle.egg-info to /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv_obstacle-0.0.1-py3.8.egg-info
+[1.131s] running install_scripts
+[1.141s] Installing csv_obstacle script to /home/moon/sim_ws/install/csv_obstacle/lib/csv_obstacle
+[1.141s] writing list of installed files to '/home/moon/sim_ws/build/csv_obstacle/install.log'
+[1.155s] Invoked command in '/home/moon/sim_ws/src/csv_obstacle' returned '0': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/csv_obstacle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/csv_obstacle build --build-base /home/moon/sim_ws/build/csv_obstacle/build install --record /home/moon/sim_ws/build/csv_obstacle/install.log --single-version-externally-managed install_data --force

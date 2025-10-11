@@ -1,0 +1,6 @@
+source;share/centerline_planner/hook/pythonpath.ps1
+source;share/centerline_planner/hook/pythonpath.dsv
+source;share/centerline_planner/hook/pythonpath.sh
+source;share/centerline_planner/hook/ament_prefix_path.ps1
+source;share/centerline_planner/hook/ament_prefix_path.dsv
+source;share/centerline_planner/hook/ament_prefix_path.sh

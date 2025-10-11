@@ -1,0 +1,22 @@
+[0.515s] Invoking command in '/home/moon/sim_ws/build/disparity_autodrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/csv_obstacle:/home/moon/sim_ws/install/bound_obstacle_detector:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --build /home/moon/sim_ws/build/disparity_autodrive -- -j16 -l16
+[0.647s] [100%] Built target disparity_autodrive_node
+[0.648s] Invoked command in '/home/moon/sim_ws/build/disparity_autodrive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/csv_obstacle:/home/moon/sim_ws/install/bound_obstacle_detector:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --build /home/moon/sim_ws/build/disparity_autodrive -- -j16 -l16
+[0.657s] Invoking command in '/home/moon/sim_ws/build/disparity_autodrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/csv_obstacle:/home/moon/sim_ws/install/bound_obstacle_detector:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --install /home/moon/sim_ws/build/disparity_autodrive
+[0.662s] -- Install configuration: ""
+[0.662s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/lib/disparity_autodrive/disparity_autodrive_node
+[0.663s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/package_run_dependencies/disparity_autodrive
+[0.664s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/parent_prefix_path/disparity_autodrive
+[0.664s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.sh
+[0.665s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.dsv
+[0.666s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.sh
+[0.667s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.dsv
+[0.668s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.bash
+[0.668s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.sh
+[0.669s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.zsh
+[0.669s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.dsv
+[0.669s] -- Installing: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.dsv
+[0.669s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/packages/disparity_autodrive
+[0.669s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig.cmake
+[0.669s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig-version.cmake
+[0.669s] -- Up-to-date: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.xml
+[0.676s] Invoked command in '/home/moon/sim_ws/build/disparity_autodrive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/csv_obstacle:/home/moon/sim_ws/install/bound_obstacle_detector:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/dyn_obstacle_detector:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --install /home/moon/sim_ws/build/disparity_autodrive

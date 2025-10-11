@@ -1,1 +1,0 @@
-/home/f1/f1tenth_ws/build/teleop_tools/ament_cmake_core/teleop_toolsConfig-version.cmake

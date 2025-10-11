@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>centerline_planner</name>
+  <version>0.0.1</version>
+  <description>Simple centerline global planner + pure pursuit follower</description>
+  <maintainer email="moon@example.com">moon</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>ackermann_msgs</depend>
+
+  <!-- python tf transformations (pip로 설치되어 있어도 선언해 두면 좋음) -->
+  <exec_depend>python3-tf-transformations</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

@@ -1,0 +1,2 @@
+CMake Error: The source directory "/home/moon/sim_ws/src/bound_obstacle_detector" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.

@@ -1,0 +1,22 @@
+[1.042s] Invoking command in '/home/moon/sim_ws/src/centerline_planner': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/centerline_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/centerline_planner build --build-base /home/moon/sim_ws/build/centerline_planner/build install --record /home/moon/sim_ws/build/centerline_planner/install.log --install-scripts $base/lib/centerline_planner --single-version-externally-managed install_data
+[1.177s] running egg_info
+[1.177s] writing ../../build/centerline_planner/centerline_planner.egg-info/PKG-INFO
+[1.177s] writing dependency_links to ../../build/centerline_planner/centerline_planner.egg-info/dependency_links.txt
+[1.177s] writing entry points to ../../build/centerline_planner/centerline_planner.egg-info/entry_points.txt
+[1.177s] writing requirements to ../../build/centerline_planner/centerline_planner.egg-info/requires.txt
+[1.177s] writing top-level names to ../../build/centerline_planner/centerline_planner.egg-info/top_level.txt
+[1.198s] reading manifest file '../../build/centerline_planner/centerline_planner.egg-info/SOURCES.txt'
+[1.198s] writing manifest file '../../build/centerline_planner/centerline_planner.egg-info/SOURCES.txt'
+[1.199s] running build
+[1.199s] running build_py
+[1.199s] running install
+[1.199s] running install_lib
+[1.200s] running install_data
+[1.200s] running install_egg_info
+[1.202s] removing '/home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages/centerline_planner-0.0.1-py3.8.egg-info' (and everything under it)
+[1.202s] Copying ../../build/centerline_planner/centerline_planner.egg-info to /home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages/centerline_planner-0.0.1-py3.8.egg-info
+[1.202s] running install_scripts
+[1.215s] Installing centerline_pub script to /home/moon/sim_ws/install/centerline_planner/lib/centerline_planner
+[1.215s] Installing path_pure_pursuit script to /home/moon/sim_ws/install/centerline_planner/lib/centerline_planner
+[1.215s] writing list of installed files to '/home/moon/sim_ws/build/centerline_planner/install.log'
+[1.230s] Invoked command in '/home/moon/sim_ws/src/centerline_planner' returned '0': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/centerline_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/centerline_planner build --build-base /home/moon/sim_ws/build/centerline_planner/build install --record /home/moon/sim_ws/build/centerline_planner/install.log --install-scripts $base/lib/centerline_planner --single-version-externally-managed install_data

@@ -1,0 +1,25 @@
+running develop
+running egg_info
+creating bound_obstacle_detector.egg-info
+writing bound_obstacle_detector.egg-info/PKG-INFO
+writing dependency_links to bound_obstacle_detector.egg-info/dependency_links.txt
+writing entry points to bound_obstacle_detector.egg-info/entry_points.txt
+writing requirements to bound_obstacle_detector.egg-info/requires.txt
+writing top-level names to bound_obstacle_detector.egg-info/top_level.txt
+writing manifest file 'bound_obstacle_detector.egg-info/SOURCES.txt'
+reading manifest file 'bound_obstacle_detector.egg-info/SOURCES.txt'
+writing manifest file 'bound_obstacle_detector.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages/site.py
+Creating /home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages/bound-obstacle-detector.egg-link (link to .)
+Installing bound_detector script to /home/moon/sim_ws/install/bound_obstacle_detector/lib/bound_obstacle_detector
+
+Installed /home/moon/sim_ws/build/bound_obstacle_detector
+running symlink_data
+creating /home/moon/sim_ws/install/bound_obstacle_detector/share/ament_index
+creating /home/moon/sim_ws/install/bound_obstacle_detector/share/ament_index/resource_index
+creating /home/moon/sim_ws/install/bound_obstacle_detector/share/ament_index/resource_index/packages
+symbolically linking /home/moon/sim_ws/build/bound_obstacle_detector/resource/bound_obstacle_detector -> /home/moon/sim_ws/install/bound_obstacle_detector/share/ament_index/resource_index/packages
+symbolically linking /home/moon/sim_ws/build/bound_obstacle_detector/package.xml -> /home/moon/sim_ws/install/bound_obstacle_detector/share/bound_obstacle_detector
+creating /home/moon/sim_ws/install/bound_obstacle_detector/share/bound_obstacle_detector/launch
+symbolically linking /home/moon/sim_ws/build/bound_obstacle_detector/launch/bound_detector.launch.py -> /home/moon/sim_ws/install/bound_obstacle_detector/share/bound_obstacle_detector/launch

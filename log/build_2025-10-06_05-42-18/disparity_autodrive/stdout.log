@@ -1,0 +1,36 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/moon/sim_ws/build/disparity_autodrive
+[ 50%] [32m[1mLinking CXX executable disparity_autodrive_node[0m
+[100%] Built target disparity_autodrive_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/lib/disparity_autodrive/disparity_autodrive_node
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/package_run_dependencies/disparity_autodrive
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/parent_prefix_path/disparity_autodrive
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.sh
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.dsv
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.sh
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.dsv
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.bash
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.sh
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.zsh
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.dsv
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.dsv
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/packages/disparity_autodrive
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig.cmake
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig-version.cmake
+-- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.xml

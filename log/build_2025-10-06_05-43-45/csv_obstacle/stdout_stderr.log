@@ -1,0 +1,28 @@
+running develop
+Removing /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv-obstacle.egg-link (link to .)
+running egg_info
+writing ../../build/csv_obstacle/csv_obstacle.egg-info/PKG-INFO
+writing dependency_links to ../../build/csv_obstacle/csv_obstacle.egg-info/dependency_links.txt
+writing entry points to ../../build/csv_obstacle/csv_obstacle.egg-info/entry_points.txt
+writing requirements to ../../build/csv_obstacle/csv_obstacle.egg-info/requires.txt
+writing top-level names to ../../build/csv_obstacle/csv_obstacle.egg-info/top_level.txt
+reading manifest file '../../build/csv_obstacle/csv_obstacle.egg-info/SOURCES.txt'
+writing manifest file '../../build/csv_obstacle/csv_obstacle.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv_obstacle
+copying /home/moon/sim_ws/build/csv_obstacle/build/lib/csv_obstacle/node.py -> /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv_obstacle
+copying /home/moon/sim_ws/build/csv_obstacle/build/lib/csv_obstacle/__init__.py -> /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv_obstacle
+byte-compiling /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv_obstacle/node.py to node.cpython-38.pyc
+byte-compiling /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv_obstacle/__init__.py to __init__.cpython-38.pyc
+running install_data
+copying resource/csv_obstacle -> /home/moon/sim_ws/install/csv_obstacle/share/ament_index/resource_index/packages
+copying package.xml -> /home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle
+copying launch/csv_obstacle.launch.py -> /home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle/launch
+running install_egg_info
+Copying ../../build/csv_obstacle/csv_obstacle.egg-info to /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv_obstacle-0.0.1-py3.8.egg-info
+running install_scripts
+Installing csv_obstacle script to /home/moon/sim_ws/install/csv_obstacle/lib/csv_obstacle
+writing list of installed files to '/home/moon/sim_ws/build/csv_obstacle/install.log'

@@ -1,0 +1,42 @@
+[0.510s] Invoking command in '/home/moon/sim_ws/build/disparity_autodrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/csv_obstacle:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake /home/moon/sim_ws/src/disparity_autodrive -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moon/sim_ws/install/disparity_autodrive
+[0.641s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.641s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.641s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.646s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.668s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.670s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.804s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.852s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.853s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.991s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.105s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[1.134s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[1.203s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[1.294s] -- Configuring done
+[1.301s] -- Generating done
+[1.304s] -- Build files have been written to: /home/moon/sim_ws/build/disparity_autodrive
+[1.308s] Invoked command in '/home/moon/sim_ws/build/disparity_autodrive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/csv_obstacle:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake /home/moon/sim_ws/src/disparity_autodrive -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moon/sim_ws/install/disparity_autodrive
+[1.310s] Invoking command in '/home/moon/sim_ws/build/disparity_autodrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/csv_obstacle:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --build /home/moon/sim_ws/build/disparity_autodrive -- -j16 -l16
+[1.350s] [ 50%] [32m[1mLinking CXX executable disparity_autodrive_node[0m
+[1.589s] [100%] Built target disparity_autodrive_node
+[1.597s] Invoked command in '/home/moon/sim_ws/build/disparity_autodrive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/csv_obstacle:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --build /home/moon/sim_ws/build/disparity_autodrive -- -j16 -l16
+[1.599s] Invoking command in '/home/moon/sim_ws/build/disparity_autodrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/csv_obstacle:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --install /home/moon/sim_ws/build/disparity_autodrive
+[1.605s] -- Install configuration: ""
+[1.605s] -- Execute custom install script
+[1.606s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/lib/disparity_autodrive/disparity_autodrive_node
+[1.612s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/package_run_dependencies/disparity_autodrive
+[1.618s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/parent_prefix_path/disparity_autodrive
+[1.624s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.sh
+[1.630s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.dsv
+[1.636s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.sh
+[1.643s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.dsv
+[1.648s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.bash
+[1.654s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.sh
+[1.659s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.zsh
+[1.664s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.dsv
+[1.670s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.dsv
+[1.676s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/packages/disparity_autodrive
+[1.681s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig.cmake
+[1.686s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig-version.cmake
+[1.693s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.xml
+[1.700s] Invoked command in '/home/moon/sim_ws/build/disparity_autodrive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/csv_obstacle:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --install /home/moon/sim_ws/build/disparity_autodrive

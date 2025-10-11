@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: centerline-planner
+Version: 0.0.1
+Summary: Simple global centerline publisher and pure pursuit follower
+Home-page: UNKNOWN
+Maintainer: moon
+Maintainer-email: moon@example.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

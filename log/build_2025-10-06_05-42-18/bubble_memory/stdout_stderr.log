@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing bubble_memory.egg-info/PKG-INFO
+writing dependency_links to bubble_memory.egg-info/dependency_links.txt
+writing entry points to bubble_memory.egg-info/entry_points.txt
+writing requirements to bubble_memory.egg-info/requires.txt
+writing top-level names to bubble_memory.egg-info/top_level.txt
+reading manifest file 'bubble_memory.egg-info/SOURCES.txt'
+writing manifest file 'bubble_memory.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/moon/sim_ws/install/bubble_memory/lib/python3.8/site-packages/bubble-memory.egg-link (link to .)
+Installing bubble_memory script to /home/moon/sim_ws/install/bubble_memory/lib/bubble_memory
+
+Installed /home/moon/sim_ws/build/bubble_memory
+running symlink_data
+symbolically linking /home/moon/sim_ws/build/bubble_memory/resource/bubble_memory -> /home/moon/sim_ws/install/bubble_memory/share/ament_index/resource_index/packages
+symbolically linking /home/moon/sim_ws/build/bubble_memory/package.xml -> /home/moon/sim_ws/install/bubble_memory/share/bubble_memory
+symbolically linking /home/moon/sim_ws/build/bubble_memory/launch/bubble_memory.launch.py -> /home/moon/sim_ws/install/bubble_memory/share/bubble_memory/launch

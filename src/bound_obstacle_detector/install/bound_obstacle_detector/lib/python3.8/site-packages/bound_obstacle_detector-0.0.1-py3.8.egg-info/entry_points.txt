@@ -1,0 +1,3 @@
+[console_scripts]
+bound_detector = bound_obstacle_detector.bound_detector_node:main
+

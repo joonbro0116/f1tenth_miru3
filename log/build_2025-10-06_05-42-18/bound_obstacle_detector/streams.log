@@ -1,0 +1,20 @@
+[0.920s] Invoking command in '/home/moon/sim_ws/build/bound_obstacle_detector': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/bound_obstacle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/moon/sim_ws/build/bound_obstacle_detector/build --no-deps symlink_data --force
+[1.059s] running develop
+[1.141s] running egg_info
+[1.141s] writing bound_obstacle_detector.egg-info/PKG-INFO
+[1.141s] writing dependency_links to bound_obstacle_detector.egg-info/dependency_links.txt
+[1.141s] writing entry points to bound_obstacle_detector.egg-info/entry_points.txt
+[1.141s] writing requirements to bound_obstacle_detector.egg-info/requires.txt
+[1.141s] writing top-level names to bound_obstacle_detector.egg-info/top_level.txt
+[1.162s] reading manifest file 'bound_obstacle_detector.egg-info/SOURCES.txt'
+[1.163s] writing manifest file 'bound_obstacle_detector.egg-info/SOURCES.txt'
+[1.182s] running build_ext
+[1.182s] Creating /home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages/bound-obstacle-detector.egg-link (link to .)
+[1.183s] Installing bound_detector script to /home/moon/sim_ws/install/bound_obstacle_detector/lib/bound_obstacle_detector
+[1.183s] 
+[1.183s] Installed /home/moon/sim_ws/build/bound_obstacle_detector
+[1.183s] running symlink_data
+[1.183s] symbolically linking /home/moon/sim_ws/build/bound_obstacle_detector/resource/bound_obstacle_detector -> /home/moon/sim_ws/install/bound_obstacle_detector/share/ament_index/resource_index/packages
+[1.183s] symbolically linking /home/moon/sim_ws/build/bound_obstacle_detector/package.xml -> /home/moon/sim_ws/install/bound_obstacle_detector/share/bound_obstacle_detector
+[1.183s] symbolically linking /home/moon/sim_ws/build/bound_obstacle_detector/launch/bound_detector.launch.py -> /home/moon/sim_ws/install/bound_obstacle_detector/share/bound_obstacle_detector/launch
+[1.203s] Invoked command in '/home/moon/sim_ws/build/bound_obstacle_detector' returned '0': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/bound_obstacle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/moon/sim_ws/build/bound_obstacle_detector/build --no-deps symlink_data --force

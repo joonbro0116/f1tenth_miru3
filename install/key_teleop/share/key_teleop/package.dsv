@@ -1,9 +1,8 @@
-source;share/key_teleop/hook/pythonpath.ps1
-source;share/key_teleop/hook/pythonpath.dsv
-source;share/key_teleop/hook/pythonpath.sh
-source;share/key_teleop/hook/ament_prefix_path.ps1
-source;share/key_teleop/hook/ament_prefix_path.dsv
-source;share/key_teleop/hook/ament_prefix_path.sh
-source;../../build/key_teleop/share/key_teleop/hook/pythonpath_develop.ps1
-source;../../build/key_teleop/share/key_teleop/hook/pythonpath_develop.dsv
-source;../../build/key_teleop/share/key_teleop/hook/pythonpath_develop.sh
+source;share/key_teleop/hook/cmake_prefix_path.ps1
+source;share/key_teleop/hook/cmake_prefix_path.dsv
+source;share/key_teleop/hook/cmake_prefix_path.sh
+source;share/key_teleop/local_setup.bash
+source;share/key_teleop/local_setup.dsv
+source;share/key_teleop/local_setup.ps1
+source;share/key_teleop/local_setup.sh
+source;share/key_teleop/local_setup.zsh

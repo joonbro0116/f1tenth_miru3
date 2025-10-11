@@ -1,0 +1,31 @@
+running develop
+Removing /home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages/centerline-planner.egg-link (link to .)
+running egg_info
+writing ../../build/centerline_planner/centerline_planner.egg-info/PKG-INFO
+writing dependency_links to ../../build/centerline_planner/centerline_planner.egg-info/dependency_links.txt
+writing entry points to ../../build/centerline_planner/centerline_planner.egg-info/entry_points.txt
+writing requirements to ../../build/centerline_planner/centerline_planner.egg-info/requires.txt
+writing top-level names to ../../build/centerline_planner/centerline_planner.egg-info/top_level.txt
+reading manifest file '../../build/centerline_planner/centerline_planner.egg-info/SOURCES.txt'
+writing manifest file '../../build/centerline_planner/centerline_planner.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages/centerline_planner
+copying /home/moon/sim_ws/build/centerline_planner/build/lib/centerline_planner/centerline_pub.py -> /home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages/centerline_planner
+copying /home/moon/sim_ws/build/centerline_planner/build/lib/centerline_planner/path_pure_pursuit.py -> /home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages/centerline_planner
+copying /home/moon/sim_ws/build/centerline_planner/build/lib/centerline_planner/__init__.py -> /home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages/centerline_planner
+byte-compiling /home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages/centerline_planner/centerline_pub.py to centerline_pub.cpython-38.pyc
+byte-compiling /home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages/centerline_planner/path_pure_pursuit.py to path_pure_pursuit.cpython-38.pyc
+byte-compiling /home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages/centerline_planner/__init__.py to __init__.cpython-38.pyc
+running install_data
+copying resource/centerline_planner -> /home/moon/sim_ws/install/centerline_planner/share/ament_index/resource_index/packages
+copying package.xml -> /home/moon/sim_ws/install/centerline_planner/share/centerline_planner
+copying launch/centerline_follow.launch.py -> /home/moon/sim_ws/install/centerline_planner/share/centerline_planner/launch
+running install_egg_info
+Copying ../../build/centerline_planner/centerline_planner.egg-info to /home/moon/sim_ws/install/centerline_planner/lib/python3.8/site-packages/centerline_planner-0.0.1-py3.8.egg-info
+running install_scripts
+Installing centerline_pub script to /home/moon/sim_ws/install/centerline_planner/lib/centerline_planner
+Installing path_pure_pursuit script to /home/moon/sim_ws/install/centerline_planner/lib/centerline_planner
+writing list of installed files to '/home/moon/sim_ws/build/centerline_planner/install.log'

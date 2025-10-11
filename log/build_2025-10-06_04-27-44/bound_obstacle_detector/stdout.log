@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/PKG-INFO
+writing dependency_links to ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/dependency_links.txt
+writing entry points to ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/entry_points.txt
+writing requirements to ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/requires.txt
+writing top-level names to ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/top_level.txt
+reading manifest file '../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/SOURCES.txt'
+writing manifest file '../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/SOURCES.txt'
+running build
+running build_py
+copying bound_obstacle_detector/bound_detector_node.py -> /home/moon/sim_ws/build/bound_obstacle_detector/build/lib/bound_obstacle_detector
+running install
+running install_lib
+copying /home/moon/sim_ws/build/bound_obstacle_detector/build/lib/bound_obstacle_detector/bound_detector_node.py -> /home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages/bound_obstacle_detector
+byte-compiling /home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages/bound_obstacle_detector/bound_detector_node.py to bound_detector_node.cpython-38.pyc
+running install_data
+copying launch/bound_detector.launch.py -> /home/moon/sim_ws/install/bound_obstacle_detector/share/bound_obstacle_detector/launch
+running install_egg_info
+removing '/home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages/bound_obstacle_detector-0.0.1-py3.8.egg-info' (and everything under it)
+Copying ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info to /home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages/bound_obstacle_detector-0.0.1-py3.8.egg-info
+running install_scripts
+Installing bound_detector script to /home/moon/sim_ws/install/bound_obstacle_detector/lib/bound_obstacle_detector
+writing list of installed files to '/home/moon/sim_ws/build/bound_obstacle_detector/install.log'

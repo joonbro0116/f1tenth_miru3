@@ -1,0 +1,39 @@
+[0.384s] Invoking command in '/home/moon/sim_ws/src/bound_obstacle_detector': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/src/bound_obstacle_detector/build/bound_obstacle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/bound_obstacle_detector build --build-base /home/moon/sim_ws/src/bound_obstacle_detector/build/bound_obstacle_detector/build install --record /home/moon/sim_ws/src/bound_obstacle_detector/build/bound_obstacle_detector/install.log --single-version-externally-managed install_data
+[0.504s] running egg_info
+[0.504s] creating build/bound_obstacle_detector/bound_obstacle_detector.egg-info
+[0.505s] writing build/bound_obstacle_detector/bound_obstacle_detector.egg-info/PKG-INFO
+[0.505s] writing dependency_links to build/bound_obstacle_detector/bound_obstacle_detector.egg-info/dependency_links.txt
+[0.505s] writing entry points to build/bound_obstacle_detector/bound_obstacle_detector.egg-info/entry_points.txt
+[0.505s] writing requirements to build/bound_obstacle_detector/bound_obstacle_detector.egg-info/requires.txt
+[0.505s] writing top-level names to build/bound_obstacle_detector/bound_obstacle_detector.egg-info/top_level.txt
+[0.505s] writing manifest file 'build/bound_obstacle_detector/bound_obstacle_detector.egg-info/SOURCES.txt'
+[0.523s] reading manifest file 'build/bound_obstacle_detector/bound_obstacle_detector.egg-info/SOURCES.txt'
+[0.524s] writing manifest file 'build/bound_obstacle_detector/bound_obstacle_detector.egg-info/SOURCES.txt'
+[0.524s] running build
+[0.524s] running build_py
+[0.524s] creating /home/moon/sim_ws/src/bound_obstacle_detector/build/bound_obstacle_detector/build
+[0.524s] creating /home/moon/sim_ws/src/bound_obstacle_detector/build/bound_obstacle_detector/build/lib
+[0.524s] creating /home/moon/sim_ws/src/bound_obstacle_detector/build/bound_obstacle_detector/build/lib/bound_obstacle_detector
+[0.524s] copying bound_obstacle_detector/bound_detector_node.py -> /home/moon/sim_ws/src/bound_obstacle_detector/build/bound_obstacle_detector/build/lib/bound_obstacle_detector
+[0.524s] copying bound_obstacle_detector/__init__.py -> /home/moon/sim_ws/src/bound_obstacle_detector/build/bound_obstacle_detector/build/lib/bound_obstacle_detector
+[0.524s] running install
+[0.525s] running install_lib
+[0.525s] creating /home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/lib/python3.8/site-packages/bound_obstacle_detector
+[0.525s] copying /home/moon/sim_ws/src/bound_obstacle_detector/build/bound_obstacle_detector/build/lib/bound_obstacle_detector/bound_detector_node.py -> /home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/lib/python3.8/site-packages/bound_obstacle_detector
+[0.525s] copying /home/moon/sim_ws/src/bound_obstacle_detector/build/bound_obstacle_detector/build/lib/bound_obstacle_detector/__init__.py -> /home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/lib/python3.8/site-packages/bound_obstacle_detector
+[0.525s] byte-compiling /home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/lib/python3.8/site-packages/bound_obstacle_detector/bound_detector_node.py to bound_detector_node.cpython-38.pyc
+[0.528s] byte-compiling /home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/lib/python3.8/site-packages/bound_obstacle_detector/__init__.py to __init__.cpython-38.pyc
+[0.528s] running install_data
+[0.528s] creating /home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/share/ament_index
+[0.528s] creating /home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/share/ament_index/resource_index
+[0.528s] creating /home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/share/ament_index/resource_index/packages
+[0.529s] copying resource/bound_obstacle_detector -> /home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/share/ament_index/resource_index/packages
+[0.529s] copying package.xml -> /home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/share/bound_obstacle_detector
+[0.529s] creating /home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/share/bound_obstacle_detector/launch
+[0.529s] copying launch/bound_detector.launch.py -> /home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/share/bound_obstacle_detector/launch
+[0.529s] running install_egg_info
+[0.530s] Copying build/bound_obstacle_detector/bound_obstacle_detector.egg-info to /home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/lib/python3.8/site-packages/bound_obstacle_detector-0.0.1-py3.8.egg-info
+[0.530s] running install_scripts
+[0.541s] Installing bound_detector script to /home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/lib/bound_obstacle_detector
+[0.541s] writing list of installed files to '/home/moon/sim_ws/src/bound_obstacle_detector/build/bound_obstacle_detector/install.log'
+[0.553s] Invoked command in '/home/moon/sim_ws/src/bound_obstacle_detector' returned '0': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/src/bound_obstacle_detector/build/bound_obstacle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/src/bound_obstacle_detector/install/bound_obstacle_detector/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/bound_obstacle_detector build --build-base /home/moon/sim_ws/src/bound_obstacle_detector/build/bound_obstacle_detector/build install --record /home/moon/sim_ws/src/bound_obstacle_detector/build/bound_obstacle_detector/install.log --single-version-externally-managed install_data

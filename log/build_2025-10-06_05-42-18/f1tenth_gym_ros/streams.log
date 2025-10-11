@@ -1,0 +1,25 @@
+[1.006s] Invoking command in '/home/moon/sim_ws/build/f1tenth_gym_ros': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/moon/sim_ws/build/f1tenth_gym_ros/build --no-deps symlink_data --force
+[1.156s] running develop
+[1.237s] running egg_info
+[1.237s] writing f1tenth_gym_ros.egg-info/PKG-INFO
+[1.237s] writing dependency_links to f1tenth_gym_ros.egg-info/dependency_links.txt
+[1.238s] writing entry points to f1tenth_gym_ros.egg-info/entry_points.txt
+[1.238s] writing requirements to f1tenth_gym_ros.egg-info/requires.txt
+[1.238s] writing top-level names to f1tenth_gym_ros.egg-info/top_level.txt
+[1.255s] reading manifest file 'f1tenth_gym_ros.egg-info/SOURCES.txt'
+[1.255s] writing manifest file 'f1tenth_gym_ros.egg-info/SOURCES.txt'
+[1.275s] running build_ext
+[1.275s] Creating /home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages/site.py
+[1.277s] Creating /home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages/f1tenth-gym-ros.egg-link (link to .)
+[1.277s] Installing gym_bridge script to /home/moon/sim_ws/install/f1tenth_gym_ros/lib/f1tenth_gym_ros
+[1.277s] 
+[1.278s] Installed /home/moon/sim_ws/build/f1tenth_gym_ros
+[1.278s] running symlink_data
+[1.278s] symbolically linking /home/moon/sim_ws/build/f1tenth_gym_ros/resource/f1tenth_gym_ros -> /home/moon/sim_ws/install/f1tenth_gym_ros/share/ament_index/resource_index/packages
+[1.278s] symbolically linking /home/moon/sim_ws/build/f1tenth_gym_ros/package.xml -> /home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros
+[1.280s] symbolically linking /home/moon/sim_ws/build/f1tenth_gym_ros/launch/gym_bridge_launch.py -> /home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[1.280s] symbolically linking /home/moon/sim_ws/build/f1tenth_gym_ros/launch/opp_racecar.xacro -> /home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[1.280s] symbolically linking /home/moon/sim_ws/build/f1tenth_gym_ros/launch/ego_racecar.xacro -> /home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[1.281s] symbolically linking /home/moon/sim_ws/build/f1tenth_gym_ros/launch/gym_bridge.rviz -> /home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[1.281s] symbolically linking /home/moon/sim_ws/build/f1tenth_gym_ros/config/sim.yaml -> /home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/config
+[1.297s] Invoked command in '/home/moon/sim_ws/build/f1tenth_gym_ros' returned '0': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/moon/sim_ws/build/f1tenth_gym_ros/build --no-deps symlink_data --force

@@ -1,0 +1,66 @@
+[0.543s] Invoking command in '/home/moon/sim_ws/build/nonlinear_mpc_casadi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/csv_obstacle:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --build /home/moon/sim_ws/build/nonlinear_mpc_casadi -- -j16 -l16
+[0.586s] Invoked command in '/home/moon/sim_ws/build/nonlinear_mpc_casadi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/csv_obstacle:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --build /home/moon/sim_ws/build/nonlinear_mpc_casadi -- -j16 -l16
+[0.587s] Invoking command in '/home/moon/sim_ws/build/nonlinear_mpc_casadi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/csv_obstacle:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --install /home/moon/sim_ws/build/nonlinear_mpc_casadi
+[0.591s] -- Install configuration: ""
+[0.591s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/environment/pythonpath.sh
+[0.591s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/environment/pythonpath.dsv
+[0.592s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/python3.8/site-packages/nonlinear_mpc_casadi
+[0.592s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/python3.8/site-packages/nonlinear_mpc_casadi/__init__.py
+[0.613s] Listing '/home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/python3.8/site-packages/nonlinear_mpc_casadi'...
+[0.616s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/Nonlinear_MPC_node.py
+[0.616s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/Nonlinear_MPC.py
+[0.616s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/dead_mans_switch.py
+[0.616s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/fssim_cmd_interface.py
+[0.616s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/fssim_track_extractor.py
+[0.616s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/remap_gazebo_pose.py
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/remap_light_simulator_pose.py
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/sim_connector.py
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/porto
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/porto/centerline_waypoints.csv
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/porto/right_waypoints.csv
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/porto/center_spline_derivatives.csv
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/porto/track_widths.csv
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/porto/left_waypoints.csv
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/fssim
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/fssim/centerline_waypoints.csv
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/fssim/right_waypoints.csv
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/fssim/center_spline_derivatives.csv
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/fssim/track_widths.csv
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/lib/nonlinear_mpc_casadi/fssim/left_waypoints.csv
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//launch
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//launch/mpcc_f110_simulator.launch
+[0.617s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//launch/mpcc_f110_car.launch
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//launch/mpcc_fssim.launch
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//params
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//params/mpc_params_light_simul.yaml
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//params/mpc_params_f1tenth_gym.yaml
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//params/mpc_params_fssim.yaml
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//params/mpc_params.yaml
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//maps
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//maps/map_trackporto.pgm
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//maps/kelley_third_floor.yaml
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//maps/dearborne211.pgm
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//maps/kelley_third_floor2.pgm
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//maps/map_trackporto.yaml
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//maps/dearborn211_demo_track.yaml
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//maps/dearborne211.yaml
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//maps/kelley_third_floor.pgm
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//maps/dearborn211_demo_track.pgm
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//rviz
+[0.618s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi//rviz/racetrack_rviz.rviz
+[0.619s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/ament_index/resource_index/package_run_dependencies/nonlinear_mpc_casadi
+[0.619s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/ament_index/resource_index/parent_prefix_path/nonlinear_mpc_casadi
+[0.619s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/environment/ament_prefix_path.sh
+[0.619s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/environment/ament_prefix_path.dsv
+[0.619s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/environment/path.sh
+[0.619s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/environment/path.dsv
+[0.619s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/local_setup.bash
+[0.619s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/local_setup.sh
+[0.619s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/local_setup.zsh
+[0.620s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/local_setup.dsv
+[0.620s] -- Installing: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/package.dsv
+[0.621s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/ament_index/resource_index/packages/nonlinear_mpc_casadi
+[0.621s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/cmake/nonlinear_mpc_casadiConfig.cmake
+[0.621s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/cmake/nonlinear_mpc_casadiConfig-version.cmake
+[0.621s] -- Up-to-date: /home/moon/sim_ws/install/nonlinear_mpc_casadi/share/nonlinear_mpc_casadi/package.xml
+[0.621s] Invoked command in '/home/moon/sim_ws/build/nonlinear_mpc_casadi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/sim_ws/install/csv_obstacle:/home/moon/sim_ws/install/centerline_planner:/home/moon/sim_ws/install/bubble_memory:/home/moon/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(f110) /usr/bin/cmake --install /home/moon/sim_ws/build/nonlinear_mpc_casadi

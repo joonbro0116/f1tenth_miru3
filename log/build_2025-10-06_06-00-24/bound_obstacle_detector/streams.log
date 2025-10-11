@@ -1,0 +1,22 @@
+[0.799s] Invoking command in '/home/moon/sim_ws/src/bound_obstacle_detector': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/moon/sim_ws/build/bound_obstacle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bound_obstacle_detector build --build-base /home/moon/sim_ws/build/bound_obstacle_detector/build install --record /home/moon/sim_ws/build/bound_obstacle_detector/install.log --single-version-externally-managed install_data
+[0.918s] running egg_info
+[0.918s] writing ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/PKG-INFO
+[0.918s] writing dependency_links to ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/dependency_links.txt
+[0.918s] writing entry points to ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/entry_points.txt
+[0.918s] writing requirements to ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/requires.txt
+[0.918s] writing top-level names to ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/top_level.txt
+[0.937s] reading manifest file '../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/SOURCES.txt'
+[0.938s] writing manifest file '../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/SOURCES.txt'
+[0.938s] running build
+[0.938s] running build_py
+[0.938s] running install
+[0.938s] running install_lib
+[0.939s] running install_data
+[0.939s] copying package.xml -> /home/moon/sim_ws/install/bound_obstacle_detector/share/bound_obstacle_detector
+[0.939s] running install_egg_info
+[0.940s] removing '/home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages/bound_obstacle_detector-0.0.1-py3.8.egg-info' (and everything under it)
+[0.941s] Copying ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info to /home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages/bound_obstacle_detector-0.0.1-py3.8.egg-info
+[0.941s] running install_scripts
+[0.951s] Installing bound_detector script to /home/moon/sim_ws/install/bound_obstacle_detector/lib/bound_obstacle_detector
+[0.952s] writing list of installed files to '/home/moon/sim_ws/build/bound_obstacle_detector/install.log'
+[0.965s] Invoked command in '/home/moon/sim_ws/src/bound_obstacle_detector' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/moon/sim_ws/build/bound_obstacle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bound_obstacle_detector build --build-base /home/moon/sim_ws/build/bound_obstacle_detector/build install --record /home/moon/sim_ws/build/bound_obstacle_detector/install.log --single-version-externally-managed install_data

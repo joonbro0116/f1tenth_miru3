@@ -1,0 +1,36 @@
+[0.893s] Invoking command in '/home/moon/sim_ws/build/f1tenth_gym_ros': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/moon/sim_ws/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/moon/sim_ws/build/f1tenth_gym_ros/build
+[1.029s] running develop
+[1.107s] Removing /home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages/f1tenth-gym-ros.egg-link (link to .)
+[1.137s] Invoked command in '/home/moon/sim_ws/build/f1tenth_gym_ros' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/moon/sim_ws/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/moon/sim_ws/build/f1tenth_gym_ros/build
+[1.140s] Invoking command in '/home/moon/sim_ws/src/f1tenth_gym_ros': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/moon/sim_ws/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/f1tenth_gym_ros build --build-base /home/moon/sim_ws/build/f1tenth_gym_ros/build install --record /home/moon/sim_ws/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data --force
+[1.279s] running egg_info
+[1.279s] writing ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/PKG-INFO
+[1.280s] writing dependency_links to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/dependency_links.txt
+[1.280s] writing entry points to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/entry_points.txt
+[1.280s] writing requirements to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/requires.txt
+[1.280s] writing top-level names to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/top_level.txt
+[1.303s] reading manifest file '../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/SOURCES.txt'
+[1.303s] writing manifest file '../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/SOURCES.txt'
+[1.303s] running build
+[1.303s] running build_py
+[1.303s] running install
+[1.304s] running install_lib
+[1.305s] creating /home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages/f1tenth_gym_ros
+[1.305s] copying /home/moon/sim_ws/build/f1tenth_gym_ros/build/lib/f1tenth_gym_ros/gym_bridge.py -> /home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages/f1tenth_gym_ros
+[1.305s] copying /home/moon/sim_ws/build/f1tenth_gym_ros/build/lib/f1tenth_gym_ros/__init__.py -> /home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages/f1tenth_gym_ros
+[1.305s] byte-compiling /home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages/f1tenth_gym_ros/gym_bridge.py to gym_bridge.cpython-38.pyc
+[1.307s] byte-compiling /home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages/f1tenth_gym_ros/__init__.py to __init__.cpython-38.pyc
+[1.307s] running install_data
+[1.307s] copying resource/f1tenth_gym_ros -> /home/moon/sim_ws/install/f1tenth_gym_ros/share/ament_index/resource_index/packages
+[1.307s] copying package.xml -> /home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros
+[1.308s] copying launch/gym_bridge_launch.py -> /home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[1.308s] copying launch/opp_racecar.xacro -> /home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[1.308s] copying launch/ego_racecar.xacro -> /home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[1.308s] copying launch/gym_bridge.rviz -> /home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[1.308s] copying config/sim.yaml -> /home/moon/sim_ws/install/f1tenth_gym_ros/share/f1tenth_gym_ros/config
+[1.308s] running install_egg_info
+[1.309s] Copying ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info to /home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages/f1tenth_gym_ros-0.0.0-py3.8.egg-info
+[1.309s] running install_scripts
+[1.320s] Installing gym_bridge script to /home/moon/sim_ws/install/f1tenth_gym_ros/lib/f1tenth_gym_ros
+[1.324s] writing list of installed files to '/home/moon/sim_ws/build/f1tenth_gym_ros/install.log'
+[1.339s] Invoked command in '/home/moon/sim_ws/src/f1tenth_gym_ros' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/moon/sim_ws/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/f1tenth_gym_ros build --build-base /home/moon/sim_ws/build/f1tenth_gym_ros/build install --record /home/moon/sim_ws/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data --force

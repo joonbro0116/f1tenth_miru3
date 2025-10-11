@@ -1,0 +1,21 @@
+[0.911s] Invoking command in '/home/moon/sim_ws/src/bound_obstacle_detector': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/bound_obstacle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bound_obstacle_detector build --build-base /home/moon/sim_ws/build/bound_obstacle_detector/build install --record /home/moon/sim_ws/build/bound_obstacle_detector/install.log --single-version-externally-managed install_data
+[1.035s] running egg_info
+[1.035s] writing ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/PKG-INFO
+[1.035s] writing dependency_links to ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/dependency_links.txt
+[1.035s] writing entry points to ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/entry_points.txt
+[1.036s] writing requirements to ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/requires.txt
+[1.036s] writing top-level names to ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/top_level.txt
+[1.055s] reading manifest file '../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/SOURCES.txt'
+[1.056s] writing manifest file '../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info/SOURCES.txt'
+[1.056s] running build
+[1.056s] running build_py
+[1.056s] running install
+[1.057s] running install_lib
+[1.057s] running install_data
+[1.057s] running install_egg_info
+[1.058s] removing '/home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages/bound_obstacle_detector-0.0.1-py3.8.egg-info' (and everything under it)
+[1.058s] Copying ../../build/bound_obstacle_detector/bound_obstacle_detector.egg-info to /home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages/bound_obstacle_detector-0.0.1-py3.8.egg-info
+[1.059s] running install_scripts
+[1.070s] Installing bound_detector script to /home/moon/sim_ws/install/bound_obstacle_detector/lib/bound_obstacle_detector
+[1.070s] writing list of installed files to '/home/moon/sim_ws/build/bound_obstacle_detector/install.log'
+[1.084s] Invoked command in '/home/moon/sim_ws/src/bound_obstacle_detector' returned '0': CONDA_PROMPT_MODIFIER=(f110) PYTHONPATH=/home/moon/sim_ws/build/bound_obstacle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/bound_obstacle_detector/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bound_obstacle_detector build --build-base /home/moon/sim_ws/build/bound_obstacle_detector/build install --record /home/moon/sim_ws/build/bound_obstacle_detector/install.log --single-version-externally-managed install_data

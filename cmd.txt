@@ -1,0 +1,15 @@
+python3 pgm_to_bounds.py \
+  --pgm /home/moon/sim_ws/maps/0927_1.pgm \
+  --yaml /home/moon/sim_ws/maps/0927_1.yaml \
+  --step_px 5 \
+  --min_perimeter 200 \
+  --outdir ./
+
+python3 pgm_to_bounds.py \
+  --pgm /home/moon/sim_ws/maps/0927_1.pgm \
+  --yaml /home/moon/sim_ws/maps/0927_1.yaml \
+  --step_px 5 \
+  --min_perimeter 200 \
+  --clearance_m 0.3 \
+  --outdir ./bounds_out \
+  --save_world

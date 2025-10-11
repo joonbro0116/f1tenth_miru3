@@ -1,0 +1,23 @@
+[0.353s] Invoking command in '/home/moon/sim_ws/build/disparity_autodrive': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/moon/sim_ws/build/disparity_autodrive -- -j16 -l16
+[0.479s] [100%] Built target disparity_autodrive_node
+[0.480s] Invoked command in '/home/moon/sim_ws/build/disparity_autodrive' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/moon/sim_ws/build/disparity_autodrive -- -j16 -l16
+[0.487s] Invoking command in '/home/moon/sim_ws/build/disparity_autodrive': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/moon/sim_ws/build/disparity_autodrive
+[0.495s] -- Install configuration: ""
+[0.495s] -- Execute custom install script
+[0.495s] -- Up-to-date symlink: /home/moon/sim_ws/install/disparity_autodrive/lib/disparity_autodrive/disparity_autodrive_node
+[0.497s] -- Up-to-date symlink: /home/moon/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/package_run_dependencies/disparity_autodrive
+[0.498s] -- Up-to-date symlink: /home/moon/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/parent_prefix_path/disparity_autodrive
+[0.498s] -- Up-to-date symlink: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.sh
+[0.498s] -- Up-to-date symlink: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/ament_prefix_path.dsv
+[0.499s] -- Up-to-date symlink: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.sh
+[0.500s] -- Up-to-date symlink: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/environment/path.dsv
+[0.501s] -- Up-to-date symlink: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.bash
+[0.501s] -- Up-to-date symlink: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.sh
+[0.502s] -- Up-to-date symlink: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.zsh
+[0.502s] -- Up-to-date symlink: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/local_setup.dsv
+[0.503s] -- Symlinking: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.dsv
+[0.505s] -- Up-to-date symlink: /home/moon/sim_ws/install/disparity_autodrive/share/ament_index/resource_index/packages/disparity_autodrive
+[0.506s] -- Up-to-date symlink: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig.cmake
+[0.507s] -- Up-to-date symlink: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/cmake/disparity_autodriveConfig-version.cmake
+[0.507s] -- Up-to-date symlink: /home/moon/sim_ws/install/disparity_autodrive/share/disparity_autodrive/package.xml
+[0.508s] Invoked command in '/home/moon/sim_ws/build/disparity_autodrive' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/moon/sim_ws/build/disparity_autodrive

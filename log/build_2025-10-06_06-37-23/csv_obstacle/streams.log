@@ -1,0 +1,21 @@
+[0.749s] Invoking command in '/home/moon/sim_ws/src/csv_obstacle': PYTHONPATH=/home/moon/sim_ws/build/csv_obstacle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/csv_obstacle build --build-base /home/moon/sim_ws/build/csv_obstacle/build install --record /home/moon/sim_ws/build/csv_obstacle/install.log --single-version-externally-managed install_data
+[0.857s] running egg_info
+[0.857s] writing ../../build/csv_obstacle/csv_obstacle.egg-info/PKG-INFO
+[0.857s] writing dependency_links to ../../build/csv_obstacle/csv_obstacle.egg-info/dependency_links.txt
+[0.857s] writing entry points to ../../build/csv_obstacle/csv_obstacle.egg-info/entry_points.txt
+[0.858s] writing requirements to ../../build/csv_obstacle/csv_obstacle.egg-info/requires.txt
+[0.858s] writing top-level names to ../../build/csv_obstacle/csv_obstacle.egg-info/top_level.txt
+[0.877s] reading manifest file '../../build/csv_obstacle/csv_obstacle.egg-info/SOURCES.txt'
+[0.877s] writing manifest file '../../build/csv_obstacle/csv_obstacle.egg-info/SOURCES.txt'
+[0.877s] running build
+[0.877s] running build_py
+[0.878s] running install
+[0.878s] running install_lib
+[0.879s] running install_data
+[0.879s] running install_egg_info
+[0.880s] removing '/home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv_obstacle-0.0.1-py3.8.egg-info' (and everything under it)
+[0.880s] Copying ../../build/csv_obstacle/csv_obstacle.egg-info to /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv_obstacle-0.0.1-py3.8.egg-info
+[0.880s] running install_scripts
+[0.890s] Installing csv_obstacle script to /home/moon/sim_ws/install/csv_obstacle/lib/csv_obstacle
+[0.890s] writing list of installed files to '/home/moon/sim_ws/build/csv_obstacle/install.log'
+[0.907s] Invoked command in '/home/moon/sim_ws/src/csv_obstacle' returned '0': PYTHONPATH=/home/moon/sim_ws/build/csv_obstacle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/csv_obstacle build --build-base /home/moon/sim_ws/build/csv_obstacle/build install --record /home/moon/sim_ws/build/csv_obstacle/install.log --single-version-externally-managed install_data

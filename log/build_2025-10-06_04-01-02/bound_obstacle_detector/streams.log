@@ -1,0 +1,4 @@
+[0.032s] Invoking command in '/home/moon/sim_ws/build/bound_obstacle_detector': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/moon/sim_ws/src/bound_obstacle_detector -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/moon/sim_ws/install/bound_obstacle_detector
+[0.522s] CMake Error: The source directory "/home/moon/sim_ws/src/bound_obstacle_detector" does not appear to contain CMakeLists.txt.
+[0.522s] Specify --help for usage, or press the help button on the CMake GUI.
+[0.524s] Invoked command in '/home/moon/sim_ws/build/bound_obstacle_detector' returned '1': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/moon/sim_ws/src/bound_obstacle_detector -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/moon/sim_ws/install/bound_obstacle_detector

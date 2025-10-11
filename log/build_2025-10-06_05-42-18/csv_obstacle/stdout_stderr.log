@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing csv_obstacle.egg-info/PKG-INFO
+writing dependency_links to csv_obstacle.egg-info/dependency_links.txt
+writing entry points to csv_obstacle.egg-info/entry_points.txt
+writing requirements to csv_obstacle.egg-info/requires.txt
+writing top-level names to csv_obstacle.egg-info/top_level.txt
+reading manifest file 'csv_obstacle.egg-info/SOURCES.txt'
+writing manifest file 'csv_obstacle.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/moon/sim_ws/install/csv_obstacle/lib/python3.8/site-packages/csv-obstacle.egg-link (link to .)
+Installing csv_obstacle script to /home/moon/sim_ws/install/csv_obstacle/lib/csv_obstacle
+
+Installed /home/moon/sim_ws/build/csv_obstacle
+running symlink_data
+symbolically linking /home/moon/sim_ws/build/csv_obstacle/resource/csv_obstacle -> /home/moon/sim_ws/install/csv_obstacle/share/ament_index/resource_index/packages
+symbolically linking /home/moon/sim_ws/build/csv_obstacle/package.xml -> /home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle
+symbolically linking /home/moon/sim_ws/build/csv_obstacle/launch/csv_obstacle.launch.py -> /home/moon/sim_ws/install/csv_obstacle/share/csv_obstacle/launch

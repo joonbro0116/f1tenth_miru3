@@ -1,1 +1,0 @@
-/home/f1/f1tenth_ws/build/lidar_processing/ament_cmake_environment_hooks/local_setup.zsh

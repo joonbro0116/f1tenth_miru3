@@ -1,0 +1,4 @@
+source;share/nonlinear_mpc_casadi/local_setup.bash
+source;share/nonlinear_mpc_casadi/local_setup.dsv
+source;share/nonlinear_mpc_casadi/local_setup.sh
+source;share/nonlinear_mpc_casadi/local_setup.zsh
