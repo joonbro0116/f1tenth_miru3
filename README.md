@@ -13,7 +13,8 @@
 - [Configuration](#-configuration)
 
 ---
-![Simulation Result][./assets/2d lidar od.png]
+![Simulation Result]("./assets/2d lidar od.png")
+
 ---
 ## 🧠 Overview
 이 프로젝트는 **F1TENTH-MIRU3 자율주행 차량**의 센서 데이터를 이용해 **도로 경계(Inner/Outer Bound)와 장애물을 탐지**하는 시스템입니다.  
