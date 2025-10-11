@@ -1,19 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-BoundObstacleDetector (CORE/RING 파이프라인 완성본)
-
-핵심 아이디어
-- outer/inner 폴리곤을 맵 해상도에 맞춰 '내부마스크'로 래스터화
-- 내부마스크를 침식(erode)해 CORE(핵심 내부) 생성, RING=내부-CORE
-- 스캔 포인트가 CORE면 마진 없이 채택, RING이면 소(小)마진/보수 클러스터 기준으로 채택
-- 최종 군집 중심만 차로 차단 여부에 사용, RViz 마커로 디버깅
-
-필수 파라미터(런치에서 지정 권장)
-- outer_csv, inner_csvs(여러 파일/글롭/콤마 세퍼레이터 지원)
-- mask_width/height, mask_resolution, mask_origin([x,y,yaw])  ← 맵 제작 시 값과 동일!
-"""
-
 import math, csv, os, re, glob
 from typing import List, Tuple, Optional
 
@@ -182,8 +168,8 @@ class BoundObstacleDetector(Node):
         self.declare_parameter('mask_origin', [0.0, 0.0, 0.0]) # [x,y,yaw]
 
         # CORE/RING 로직 파라미터
-        self.declare_parameter('core_shrink_m', 0.20)      # CORE 만들기 위한 침식 량
-        self.declare_parameter('ring_small_margin', 0.03)  # RING 전용 소(小)마진
+        self.declare_parameter('core_shrink_m', 0.20)  
+        self.declare_parameter('ring_small_margin', 0.03) 
 
         # 파라미터 fetch
         self.scan_topic  = self.get_parameter('scan_topic').value
