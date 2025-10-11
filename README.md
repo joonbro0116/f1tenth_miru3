@@ -13,7 +13,8 @@
 - [Configuration](#-configuration)
 
 ---
-
+![Simulation Result][./assets/2d lidar od.png]
+---
 ## 🧠 Overview
 이 프로젝트는 **F1TENTH-MIRU3 자율주행 차량**의 센서 데이터를 이용해 **도로 경계(Inner/Outer Bound)와 장애물을 탐지**하는 시스템입니다.  
 ROS2, Python, OpenCV를 기반으로 작성되었으며, 시뮬레이션 환경(f1tenth_gym)에서도 동일한 알고리즘을 실행할 수 있습니다.
