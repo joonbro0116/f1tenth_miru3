@@ -316,7 +316,7 @@ private:
                 tf2::durationFromSec(tf_timeout_)  // 타임아웃
             );
 
-            // 위치 추출
+            // 위치 추출 ###
             x = transform.transform.translation.x;
             y = transform.transform.translation.y;
 
