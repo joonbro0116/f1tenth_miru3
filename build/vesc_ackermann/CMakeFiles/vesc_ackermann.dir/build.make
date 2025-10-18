@@ -102,6 +102,10 @@ libvesc_ackermann.so: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspe
 libvesc_ackermann.so: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_c.so
 libvesc_ackermann.so: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
 libvesc_ackermann.so: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_cpp.so
+libvesc_ackermann.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+libvesc_ackermann.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
+libvesc_ackermann.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
+libvesc_ackermann.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 libvesc_ackermann.so: /opt/ros/foxy/lib/libstatic_transform_broadcaster_node.so
 libvesc_ackermann.so: /home/f1/f1tenth_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_introspection_c.so
 libvesc_ackermann.so: /home/f1/f1tenth_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_c.so
@@ -109,6 +113,7 @@ libvesc_ackermann.so: /home/f1/f1tenth_ws/install/vesc_msgs/lib/libvesc_msgs__ro
 libvesc_ackermann.so: /home/f1/f1tenth_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_cpp.so
 libvesc_ackermann.so: /opt/ros/foxy/lib/libackermann_msgs__rosidl_generator_c.so
 libvesc_ackermann.so: /opt/ros/foxy/lib/libnav_msgs__rosidl_generator_c.so
+libvesc_ackermann.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_generator_c.so
 libvesc_ackermann.so: /opt/ros/foxy/lib/libcomponent_manager.so
 libvesc_ackermann.so: /opt/ros/foxy/lib/libament_index_cpp.so
 libvesc_ackermann.so: /opt/ros/foxy/lib/libclass_loader.so
@@ -118,6 +123,8 @@ libvesc_ackermann.so: /opt/ros/foxy/lib/libcomposition_interfaces__rosidl_typesu
 libvesc_ackermann.so: /opt/ros/foxy/lib/libcomposition_interfaces__rosidl_typesupport_introspection_cpp.so
 libvesc_ackermann.so: /opt/ros/foxy/lib/libcomposition_interfaces__rosidl_typesupport_cpp.so
 libvesc_ackermann.so: /opt/ros/foxy/lib/libtf2_ros.so
+libvesc_ackermann.so: /opt/ros/foxy/lib/libtf2.so
+libvesc_ackermann.so: /opt/ros/foxy/lib/aarch64-linux-gnu/libconsole_bridge.so.1.0
 libvesc_ackermann.so: /opt/ros/foxy/lib/libmessage_filters.so
 libvesc_ackermann.so: /opt/ros/foxy/lib/librclcpp_action.so
 libvesc_ackermann.so: /opt/ros/foxy/lib/librclcpp.so
@@ -151,8 +158,6 @@ libvesc_ackermann.so: /opt/ros/foxy/lib/librmw_implementation.so
 libvesc_ackermann.so: /opt/ros/foxy/lib/librcl_logging_spdlog.so
 libvesc_ackermann.so: /usr/lib/aarch64-linux-gnu/libspdlog.so.1.5.0
 libvesc_ackermann.so: /opt/ros/foxy/lib/librmw.so
-libvesc_ackermann.so: /opt/ros/foxy/lib/libtf2.so
-libvesc_ackermann.so: /opt/ros/foxy/lib/aarch64-linux-gnu/libconsole_bridge.so.1.0
 libvesc_ackermann.so: /opt/ros/foxy/lib/libtf2_msgs__rosidl_typesupport_introspection_c.so
 libvesc_ackermann.so: /opt/ros/foxy/lib/libtf2_msgs__rosidl_generator_c.so
 libvesc_ackermann.so: /opt/ros/foxy/lib/libtf2_msgs__rosidl_typesupport_c.so

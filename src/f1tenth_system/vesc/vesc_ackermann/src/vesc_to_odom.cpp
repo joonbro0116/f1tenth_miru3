@@ -58,7 +58,10 @@ VescToOdom::VescToOdom(const rclcpp::NodeOptions & options)
   x_(0.0),
   y_(0.0),
   yaw_(0.0),
-  yaw_initialized_(false)
+  yaw_initialized_(false),
+  use_imu_yaw_(true),
+  imu_yaw_(0.0),
+  last_imu_time_(0, 0, RCL_ROS_TIME)
 {
   // get ROS parameters
   odom_frame_ = declare_parameter("odom_frame", odom_frame_);
@@ -75,6 +78,7 @@ VescToOdom::VescToOdom(const rclcpp::NodeOptions & options)
   }
 
   publish_tf_ = declare_parameter("publish_tf", publish_tf_);
+  use_imu_yaw_ = declare_parameter("use_imu_yaw", use_imu_yaw_);
 
   // create odom publisher
   odom_pub_ = create_publisher<Odometry>("odom", 10);
@@ -128,13 +132,21 @@ void VescToOdom::vescStateCallback(const VescStateStamped::SharedPtr state)
   /** @todo could probably do better propigating odometry, e.g. trapezoidal integration */
 
   // propigate odometry
-  double x_dot = current_speed * cos(yaw_);
-  double y_dot = current_speed * sin(yaw_);
+  // Use IMU yaw if available and enabled, otherwise use wheel odometry yaw
+  double current_yaw = yaw_;
+  if (use_imu_yaw_ && yaw_initialized_) {
+    current_yaw = imu_yaw_;
+    yaw_ = imu_yaw_;  // Sync yaw with IMU
+  } else if (use_servo_cmd_) {
+    // Update yaw from wheel odometry only if not using IMU
+    yaw_ += current_angular_velocity * dt.seconds();
+    current_yaw = yaw_;
+  }
+
+  double x_dot = current_speed * cos(current_yaw);
+  double y_dot = current_speed * sin(current_yaw);
   x_ += x_dot * dt.seconds();
   y_ += y_dot * dt.seconds();
-  if (use_servo_cmd_) {
-    yaw_ += current_angular_velocity * dt.seconds();
-  }
 
   // save state for next time
   last_state_ = state;
@@ -194,21 +206,31 @@ void VescToOdom::servoCmdCallback(const Float64::SharedPtr servo)
 
 void VescToOdom::imuCallback(const Imu::SharedPtr imu)
 {
+  // Convert quaternion to yaw
+  tf2::Quaternion q(
+    imu->orientation.x,
+    imu->orientation.y,
+    imu->orientation.z,
+    imu->orientation.w
+  );
+
+  tf2::Matrix3x3 m(q);
+  double roll, pitch;
+  m.getRPY(roll, pitch, imu_yaw_);
+
+  last_imu_time_ = imu->header.stamp;
+
   if (!yaw_initialized_) {
-    // Convert quaternion to yaw
-    tf2::Quaternion q(
-      imu->orientation.x,
-      imu->orientation.y,
-      imu->orientation.z,
-      imu->orientation.w
-    );
-
-    tf2::Matrix3x3 m(q);
-    double roll, pitch;
-    m.getRPY(roll, pitch, yaw_);
-
+    yaw_ = imu_yaw_;  // Initialize wheel odometry yaw with IMU
     yaw_initialized_ = true;
-    RCLCPP_INFO(this->get_logger(), "Initial yaw set to: %f rad (%f deg)", yaw_, yaw_ * 180.0 / M_PI);
+    RCLCPP_INFO(this->get_logger(), "Initial yaw set from IMU to: %f rad (%f deg)", yaw_, yaw_ * 180.0 / M_PI);
+  }
+
+  // Log IMU updates periodically for debugging
+  static int imu_count = 0;
+  if (++imu_count % 50 == 0) {
+    RCLCPP_DEBUG(this->get_logger(), "IMU yaw: %f rad (%f deg), use_imu_yaw: %s",
+                 imu_yaw_, imu_yaw_ * 180.0 / M_PI, use_imu_yaw_ ? "true" : "false");
   }
 }
 

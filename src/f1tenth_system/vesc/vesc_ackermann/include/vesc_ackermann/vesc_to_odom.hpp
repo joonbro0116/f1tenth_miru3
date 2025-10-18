@@ -69,6 +69,9 @@ private:
   // odometry state
   double x_, y_, yaw_;
   bool yaw_initialized_;
+  bool use_imu_yaw_;  ///< Use IMU for yaw instead of wheel odometry
+  double imu_yaw_;  ///< Latest yaw from IMU
+  rclcpp::Time last_imu_time_;  ///< Timestamp of last IMU message
   Float64::SharedPtr last_servo_cmd_;  ///< Last servo position commanded value
   VescStateStamped::SharedPtr last_state_;  ///< Last received state message
 

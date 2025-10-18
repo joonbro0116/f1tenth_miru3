@@ -1,0 +1,106 @@
+[0.000000] (-) TimerEvent: {}
+[0.001911] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.003766] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.004614] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.004890] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.005307] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.005492] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.005742] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.005898] (-) JobUnselected: {'identifier': 'path_follow'}
+[0.006062] (-) JobUnselected: {'identifier': 'pure_pursuit'}
+[0.006266] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.006434] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.006620] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.012161] (-) JobUnselected: {'identifier': 'vesc'}
+[0.018066] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.018462] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.018622] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.019118] (map_controller) JobQueued: {'identifier': 'map_controller', 'dependencies': OrderedDict()}
+[0.019645] (map_controller) JobStarted: {'identifier': 'map_controller'}
+[0.100664] (-) TimerEvent: {}
+[0.203655] (-) TimerEvent: {}
+[0.305972] (-) TimerEvent: {}
+[0.407483] (-) TimerEvent: {}
+[0.508459] (-) TimerEvent: {}
+[0.609443] (-) TimerEvent: {}
+[0.710389] (-) TimerEvent: {}
+[0.811248] (-) TimerEvent: {}
+[0.912192] (-) TimerEvent: {}
+[1.013107] (-) TimerEvent: {}
+[1.114055] (-) TimerEvent: {}
+[1.214932] (-) TimerEvent: {}
+[1.315895] (-) TimerEvent: {}
+[1.416877] (-) TimerEvent: {}
+[1.517856] (-) TimerEvent: {}
+[1.618887] (-) TimerEvent: {}
+[1.720565] (-) TimerEvent: {}
+[1.822581] (-) TimerEvent: {}
+[1.923574] (-) TimerEvent: {}
+[2.024537] (-) TimerEvent: {}
+[2.125496] (-) TimerEvent: {}
+[2.226387] (-) TimerEvent: {}
+[2.327337] (-) TimerEvent: {}
+[2.428338] (-) TimerEvent: {}
+[2.529294] (-) TimerEvent: {}
+[2.630236] (-) TimerEvent: {}
+[2.731171] (-) TimerEvent: {}
+[2.832222] (-) TimerEvent: {}
+[2.933408] (-) TimerEvent: {}
+[3.034455] (-) TimerEvent: {}
+[3.135544] (-) TimerEvent: {}
+[3.236449] (-) TimerEvent: {}
+[3.337432] (-) TimerEvent: {}
+[3.438655] (-) TimerEvent: {}
+[3.539755] (-) TimerEvent: {}
+[3.640614] (-) TimerEvent: {}
+[3.741532] (-) TimerEvent: {}
+[3.842413] (-) TimerEvent: {}
+[3.943465] (-) TimerEvent: {}
+[4.021165] (map_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/map_controller', 'build', '--build-base', '/home/f1/f1tenth_ws/build/map_controller/build', 'install', '--record', '/home/f1/f1tenth_ws/build/map_controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/f1/f1tenth_ws/src/map_controller', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'TMUX': '/tmp//tmux-1001/default,15510,0', 'LC_TIME': 'ko_KR.UTF-8', 'USER': 'f1', 'SSH_AGENT_PID': '6630', 'XDG_SESSION_TYPE': 'x11', 'LD_LIBRARY_PATH': '/home/f1/f1tenth_ws/install/vesc_driver/lib:/home/f1/f1tenth_ws/install/vesc_ackermann/lib:/home/f1/f1tenth_ws/install/vesc_msgs/lib:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'SHLVL': '2', 'CONDA_SHLVL': '0', 'HOME': '/home/f1', 'LESS': '-R', 'OLDPWD': '/home/f1/f1tenth_ws', 'QT4_IM_MODULE': 'fcitx', 'DESKTOP_SESSION': 'ubuntu', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'ZSH': '/home/f1/.oh-my-zsh', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '2266', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', 'VISUAL': 'nvim', 'COLORTERM': 'truecolor', '_CE_M': '', '_CONDA_ROOT': '/home/f1/miniconda3', 'NVM_DIR': '/home/f1/.nvm', '_colcon_cd_root': '/opt/ros/foxy/', 'COLCON_PREFIX_PATH': '/home/f1/f1tenth_ws/install', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'f1', 'JOURNAL_STREAM': '8:67853', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'USERNAME': 'f1', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/home/f1/.npm-global/bin:/home/f1/miniconda3/condabin:/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/home/f1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'INVOCATION_ID': 'afcf963b73b4420480d747c0b2780221', 'PAPERSIZE': 'a4', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/6693,unix/ubuntu:/tmp/.ICE-unix/6693', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/63374d34_7c89_465a_b03a_9219190ab502', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1001', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'GNOME_TERMINAL_SERVICE': ':1.85', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XAUTHORITY': '/run/user/1001/gdm/Xauthority', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=fcitx', 'AMENT_PREFIX_PATH': '/home/f1/f1tenth_ws/install/f1tenth_slam_nav:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/real_pure_pursuit:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/pure_pursuit:/home/f1/f1tenth_ws/install/path_planner:/home/f1/f1tenth_ws/install/path_follow:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/map_controller:/home/f1/f1tenth_ws/install/lidar_processing:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/home/f1/f1tenth_ws/install/center_follow_cpp:/home/f1/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy', 'CONDA_PYTHON_EXE': '/home/f1/miniconda3/bin/python', 'ROS_DOMAIN_ID': '73', 'SSH_AUTH_SOCK': '/run/user/1001/keyring/ssh', 'LC_NAME': 'ko_KR.UTF-8', 'SHELL': '/usr/bin/zsh', 'GDMSESSION': 'ubuntu', 'QT_ACCESSIBILITY': '1', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GJS_DEBUG_OUTPUT': 'stderr', 'GPG_AGENT_INFO': '/run/user/1001/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', '_CONDA_EXE': '/home/f1/miniconda3/bin/conda', 'QT_IM_MODULE': 'fcitx', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/f1/f1tenth_ws/build/map_controller', 'CLUTTER_IM_MODULE': 'fcitx', 'CONDA_EXE': '/home/f1/miniconda3/bin/conda', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'LC_NUMERIC': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/f1/f1tenth_ws/build/map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/f1tenth_slam_nav/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/f1tenth_stack:/home/f1/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/joy_teleop:/home/f1/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/pygame_key_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/mouse_teleop:/home/f1/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/map_controller:/home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages:/home/f1/f1tenth_ws/build/key_teleop:/home/f1/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/home/f1/f1tenth_ws/install/f1tenth_path_planner/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_PAPER': 'ko_KR.UTF-8', 'TMUX_PLUGIN_MANAGER_PATH': '/home/f1/.tmux/plugins/', 'COLCON': '1', 'TMUX_PANE': '%3', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/f1/f1tenth_ws/install/f1tenth_slam_nav:/home/f1/f1tenth_ws/install/vesc:/home/f1/f1tenth_ws/install/vesc_driver:/home/f1/f1tenth_ws/install/vesc_ackermann:/home/f1/f1tenth_ws/install/vesc_msgs:/home/f1/f1tenth_ws/install/teleop_tools:/home/f1/f1tenth_ws/install/teleop_tools_msgs:/home/f1/f1tenth_ws/install/real_pure_pursuit:/home/f1/f1tenth_ws/install/pure_pursuit:/home/f1/f1tenth_ws/install/path_planner:/home/f1/f1tenth_ws/install/path_follow:/home/f1/f1tenth_ws/install/lidar_processing:/home/f1/f1tenth_ws/install/center_follow_cpp:/home/f1/f1tenth_ws/install/ackermann_mux', 'EDITOR': 'nvim'}, 'shell': False}
+[4.060917] (-) TimerEvent: {}
+[4.175662] (-) TimerEvent: {}
+[4.277184] (-) TimerEvent: {}
+[4.378429] (-) TimerEvent: {}
+[4.480853] (-) TimerEvent: {}
+[4.581903] (-) TimerEvent: {}
+[4.683204] (-) TimerEvent: {}
+[4.786075] (-) TimerEvent: {}
+[4.887115] (-) TimerEvent: {}
+[4.988149] (-) TimerEvent: {}
+[5.089098] (-) TimerEvent: {}
+[5.190095] (-) TimerEvent: {}
+[5.291157] (-) TimerEvent: {}
+[5.392155] (-) TimerEvent: {}
+[5.493129] (-) TimerEvent: {}
+[5.594172] (-) TimerEvent: {}
+[5.647219] (map_controller) StdoutLine: {'line': b'running egg_info\n'}
+[5.651091] (map_controller) StdoutLine: {'line': b'writing ../../build/map_controller/map_controller.egg-info/PKG-INFO\n'}
+[5.653635] (map_controller) StdoutLine: {'line': b'writing dependency_links to ../../build/map_controller/map_controller.egg-info/dependency_links.txt\n'}
+[5.654750] (map_controller) StdoutLine: {'line': b'writing entry points to ../../build/map_controller/map_controller.egg-info/entry_points.txt\n'}
+[5.655701] (map_controller) StdoutLine: {'line': b'writing requirements to ../../build/map_controller/map_controller.egg-info/requires.txt\n'}
+[5.656754] (map_controller) StdoutLine: {'line': b'writing top-level names to ../../build/map_controller/map_controller.egg-info/top_level.txt\n'}
+[5.694398] (-) TimerEvent: {}
+[5.796924] (-) TimerEvent: {}
+[5.865716] (map_controller) StdoutLine: {'line': b"reading manifest file '../../build/map_controller/map_controller.egg-info/SOURCES.txt'\n"}
+[5.873275] (map_controller) StdoutLine: {'line': b"writing manifest file '../../build/map_controller/map_controller.egg-info/SOURCES.txt'\n"}
+[5.874468] (map_controller) StdoutLine: {'line': b'running build\n'}
+[5.875102] (map_controller) StdoutLine: {'line': b'running build_py\n'}
+[5.876269] (map_controller) StdoutLine: {'line': b'copying map_controller/controller_manager.py -> /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller\n'}
+[5.879895] (map_controller) StdoutLine: {'line': b'running install\n'}
+[5.886801] (map_controller) StdoutLine: {'line': b'running install_lib\n'}
+[5.892833] (map_controller) StdoutLine: {'line': b'copying /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller/controller_manager.py -> /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller\n'}
+[5.897139] (-) TimerEvent: {}
+[5.898902] (map_controller) StdoutLine: {'line': b'byte-compiling /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller/controller_manager.py to controller_manager.cpython-38.pyc\n'}
+[5.929479] (map_controller) StdoutLine: {'line': b'running install_data\n'}
+[5.931083] (map_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.943861] (map_controller) StdoutLine: {'line': b"removing '/home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller-1.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.946341] (map_controller) StdoutLine: {'line': b'Copying ../../build/map_controller/map_controller.egg-info to /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller-1.0.0-py3.8.egg-info\n'}
+[5.955971] (map_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[5.997383] (-) TimerEvent: {}
+[6.055786] (map_controller) StdoutLine: {'line': b'Installing map_controller script to /home/f1/f1tenth_ws/install/map_controller/lib/map_controller\n'}
+[6.058153] (map_controller) StdoutLine: {'line': b"writing list of installed files to '/home/f1/f1tenth_ws/build/map_controller/install.log'\n"}
+[6.097761] (-) TimerEvent: {}
+[6.181441] (map_controller) CommandEnded: {'returncode': 0}
+[6.197977] (-) TimerEvent: {}
+[6.275024] (map_controller) JobEnded: {'identifier': 'map_controller', 'rc': 0}
+[6.279594] (-) EventReactorShutdown: {}

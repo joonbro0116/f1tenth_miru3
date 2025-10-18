@@ -1,0 +1,21 @@
+running develop
+running egg_info
+writing map_controller.egg-info/PKG-INFO
+writing dependency_links to map_controller.egg-info/dependency_links.txt
+writing entry points to map_controller.egg-info/entry_points.txt
+writing requirements to map_controller.egg-info/requires.txt
+writing top-level names to map_controller.egg-info/top_level.txt
+reading manifest file 'map_controller.egg-info/SOURCES.txt'
+writing manifest file 'map_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map-controller.egg-link (link to .)
+Installing map_controller script to /home/f1/f1tenth_ws/install/map_controller/lib/map_controller
+
+Installed /home/f1/f1tenth_ws/build/map_controller
+running symlink_data
+symbolically linking /home/f1/f1tenth_ws/build/map_controller/resource/map_controller -> /home/f1/f1tenth_ws/install/map_controller/share/ament_index/resource_index/packages
+symbolically linking /home/f1/f1tenth_ws/build/map_controller/package.xml -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller
+symbolically linking /home/f1/f1tenth_ws/build/map_controller/launch/map_controller.launch.py -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/launch
+symbolically linking /home/f1/f1tenth_ws/build/map_controller/launch/map_with_bound.launch.py -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/launch
+symbolically linking /home/f1/f1tenth_ws/build/map_controller/config/map_controller_params.yaml -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/config
+symbolically linking /home/f1/f1tenth_ws/build/map_controller/config/steering_lut/NUC2_pacejka_lookup_table.csv -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/config/steering_lut

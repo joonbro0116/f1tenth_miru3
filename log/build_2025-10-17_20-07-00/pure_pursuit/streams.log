@@ -1,0 +1,50 @@
+[0.520s] Invoking command in '/home/f1/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/pure_pursuit -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/pure_pursuit
+[0.620s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.735s] -- Using PYTHON_EXECUTABLE: /home/f1/miniconda3/bin/python3
+[1.772s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.821s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.037s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.063s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.681s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.039s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.046s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.929s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[4.208s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[4.683s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[4.878s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[4.930s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[6.616s] -- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[6.645s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[6.784s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[7.391s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.402s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.406s] -- Configured cppcheck include dirs: /home/f1/f1tenth_ws/src/pure_pursuit/include
+[7.407s] -- Configured cppcheck exclude dirs and/or files: 
+[7.413s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.414s] -- Configured cpplint exclude dirs and/or files: 
+[7.416s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.420s] -- Added test 'lint_cmake' to check CMake code style
+[7.422s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[7.429s] -- Added test 'uncrustify' to check C / C++ code style
+[7.430s] -- Configured uncrustify additional arguments: 
+[7.432s] -- Added test 'xmllint' to check XML markup files
+[7.463s] -- Configuring done
+[7.563s] -- Generating done
+[7.607s] -- Build files have been written to: /home/f1/f1tenth_ws/build/pure_pursuit
+[7.653s] Invoked command in '/home/f1/f1tenth_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/f1/f1tenth_ws/src/pure_pursuit -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/pure_pursuit
+[7.661s] Invoking command in '/home/f1/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/pure_pursuit -- -j6 -l6
+[7.946s] [35m[1mScanning dependencies of target pure_pursuit_node[0m
+[8.331s] [ 50%] [32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o[0m
+[17.507s] [01m[K/home/f1/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:673:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[17.510s]   673 |     [01;31m[K}[m[K
+[17.510s]       |     [01;31m[K^[m[K
+[17.511s] [01m[K/home/f1/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:70:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[17.512s]    70 | [01;36m[K{[m[K
+[17.512s]       | [01;36m[K^[m[K
+[18.661s] [01m[K/home/f1/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:673:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[18.662s]   673 |     [01;31m[K}[m[K
+[18.662s]       |     [01;31m[K^[m[K
+[29.329s] make[2]: *** [CMakeFiles/pure_pursuit_node.dir/build.make:63: CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o] Error 1
+[29.330s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/pure_pursuit_node.dir/all] Error 2
+[29.331s] make: *** [Makefile:141: all] Error 2
+[29.344s] Invoked command in '/home/f1/f1tenth_ws/build/pure_pursuit' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/pure_pursuit -- -j6 -l6

@@ -1,0 +1,15 @@
+[3.536s] Invoking command in '/home/f1/f1tenth_ws/build/map_controller': PYTHONPATH=/home/f1/f1tenth_ws/build/map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/map_controller/build --no-deps symlink_data
+[4.846s] running develop
+[5.659s] running egg_info
+[5.660s] writing map_controller.egg-info/PKG-INFO
+[5.662s] writing dependency_links to map_controller.egg-info/dependency_links.txt
+[5.664s] writing requirements to map_controller.egg-info/requires.txt
+[5.664s] writing top-level names to map_controller.egg-info/top_level.txt
+[5.835s] reading manifest file 'map_controller.egg-info/SOURCES.txt'
+[5.840s] writing manifest file 'map_controller.egg-info/SOURCES.txt'
+[6.030s] running build_ext
+[6.032s] Creating /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map-controller.egg-link (link to .)
+[6.036s] 
+[6.036s] Installed /home/f1/f1tenth_ws/build/map_controller
+[6.037s] running symlink_data
+[6.166s] Invoked command in '/home/f1/f1tenth_ws/build/map_controller' returned '0': PYTHONPATH=/home/f1/f1tenth_ws/build/map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/f1/f1tenth_ws/build/map_controller/build --no-deps symlink_data

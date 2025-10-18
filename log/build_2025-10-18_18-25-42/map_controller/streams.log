@@ -1,0 +1,22 @@
+[4.456s] Invoking command in '/home/f1/f1tenth_ws/src/map_controller': PYTHONPATH=/home/f1/f1tenth_ws/build/map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/map_controller build --build-base /home/f1/f1tenth_ws/build/map_controller/build install --record /home/f1/f1tenth_ws/build/map_controller/install.log --single-version-externally-managed install_data
+[5.993s] running egg_info
+[5.995s] writing ../../build/map_controller/map_controller.egg-info/PKG-INFO
+[5.999s] writing dependency_links to ../../build/map_controller/map_controller.egg-info/dependency_links.txt
+[5.999s] writing entry points to ../../build/map_controller/map_controller.egg-info/entry_points.txt
+[6.000s] writing requirements to ../../build/map_controller/map_controller.egg-info/requires.txt
+[6.001s] writing top-level names to ../../build/map_controller/map_controller.egg-info/top_level.txt
+[6.220s] reading manifest file '../../build/map_controller/map_controller.egg-info/SOURCES.txt'
+[6.225s] writing manifest file '../../build/map_controller/map_controller.egg-info/SOURCES.txt'
+[6.226s] running build
+[6.226s] running build_py
+[6.229s] running install
+[6.233s] running install_lib
+[6.245s] running install_data
+[6.247s] copying config/map_controller_params.yaml -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/config
+[6.249s] running install_egg_info
+[6.264s] removing '/home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller-1.0.0-py3.8.egg-info' (and everything under it)
+[6.271s] Copying ../../build/map_controller/map_controller.egg-info to /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller-1.0.0-py3.8.egg-info
+[6.274s] running install_scripts
+[6.371s] Installing map_controller script to /home/f1/f1tenth_ws/install/map_controller/lib/map_controller
+[6.373s] writing list of installed files to '/home/f1/f1tenth_ws/build/map_controller/install.log'
+[6.493s] Invoked command in '/home/f1/f1tenth_ws/src/map_controller' returned '0': PYTHONPATH=/home/f1/f1tenth_ws/build/map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/map_controller build --build-base /home/f1/f1tenth_ws/build/map_controller/build install --record /home/f1/f1tenth_ws/build/map_controller/install.log --single-version-externally-managed install_data

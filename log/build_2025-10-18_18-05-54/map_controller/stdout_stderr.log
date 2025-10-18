@@ -1,0 +1,38 @@
+running develop
+Removing /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map-controller.egg-link (link to .)
+running egg_info
+writing ../../build/map_controller/map_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/map_controller/map_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/map_controller/map_controller.egg-info/entry_points.txt
+writing requirements to ../../build/map_controller/map_controller.egg-info/requires.txt
+writing top-level names to ../../build/map_controller/map_controller.egg-info/top_level.txt
+reading manifest file '../../build/map_controller/map_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/map_controller/map_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+copying map_controller/controller_manager.py -> /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller
+running install
+running install_lib
+creating /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller
+copying /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller/__init__.py -> /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller
+copying /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller/controller_manager.py -> /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller
+copying /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller/frenet_converter.py -> /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller
+copying /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller/map_controller.py -> /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller
+copying /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller/steering_lookup.py -> /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller
+byte-compiling /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller/controller_manager.py to controller_manager.cpython-38.pyc
+byte-compiling /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller/frenet_converter.py to frenet_converter.cpython-38.pyc
+byte-compiling /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller/map_controller.py to map_controller.cpython-38.pyc
+byte-compiling /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller/steering_lookup.py to steering_lookup.cpython-38.pyc
+running install_data
+copying resource/map_controller -> /home/f1/f1tenth_ws/install/map_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller
+copying launch/map_controller.launch.py -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/launch
+copying launch/map_with_bound.launch.py -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/launch
+copying config/map_controller_params.yaml -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/config
+copying config/steering_lut/NUC2_pacejka_lookup_table.csv -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/config/steering_lut
+running install_egg_info
+Copying ../../build/map_controller/map_controller.egg-info to /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller-1.0.0-py3.8.egg-info
+running install_scripts
+Installing map_controller script to /home/f1/f1tenth_ws/install/map_controller/lib/map_controller
+writing list of installed files to '/home/f1/f1tenth_ws/build/map_controller/install.log'

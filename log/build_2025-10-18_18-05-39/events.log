@@ -1,0 +1,33 @@
+[0.000000] (-) TimerEvent: {}
+[0.005385] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.008457] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.009449] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.011075] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.012767] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.028940] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.029244] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.029425] (-) JobUnselected: {'identifier': 'path_follow'}
+[0.029665] (-) JobUnselected: {'identifier': 'pure_pursuit'}
+[0.029791] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.029906] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.030017] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.030125] (-) JobUnselected: {'identifier': 'vesc'}
+[0.030232] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.030346] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.030454] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.030582] (map_controller) JobQueued: {'identifier': 'map_controller', 'dependencies': OrderedDict()}
+[0.030708] (map_controller) JobStarted: {'identifier': 'map_controller'}
+[0.097284] (-) TimerEvent: {}
+[0.198392] (-) TimerEvent: {}
+[0.298970] (-) TimerEvent: {}
+[0.399562] (-) TimerEvent: {}
+[0.500155] (-) TimerEvent: {}
+[0.600739] (-) TimerEvent: {}
+[0.701291] (-) TimerEvent: {}
+[0.801889] (-) TimerEvent: {}
+[0.902490] (-) TimerEvent: {}
+[1.003086] (-) TimerEvent: {}
+[1.103701] (-) TimerEvent: {}
+[1.204324] (-) TimerEvent: {}
+[1.304931] (-) TimerEvent: {}
+[1.405534] (-) TimerEvent: {}

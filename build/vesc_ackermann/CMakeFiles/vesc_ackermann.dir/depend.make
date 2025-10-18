@@ -665,6 +665,12 @@ CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/rosi
 CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/rosidl_typesupport_cpp/message_type_support.hpp
 CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/rosidl_typesupport_cpp/service_type_support.hpp
 CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
+CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/sensor_msgs/msg/detail/imu__builder.hpp
+CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/sensor_msgs/msg/detail/imu__struct.hpp
+CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/sensor_msgs/msg/detail/imu__traits.hpp
+CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/sensor_msgs/msg/detail/imu__type_support.hpp
+CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/sensor_msgs/msg/imu.hpp
+CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__builder.hpp
 CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp
 CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__traits.hpp
@@ -680,6 +686,13 @@ CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/std_
 CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/std_msgs/msg/detail/header__traits.hpp
 CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/std_msgs/msg/float64.hpp
 CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/tf2/LinearMath/Matrix3x3.h
+CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/tf2/LinearMath/MinMax.h
+CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/tf2/LinearMath/QuadWord.h
+CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/tf2/LinearMath/Quaternion.h
+CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/tf2/LinearMath/Scalar.h
+CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/tf2/LinearMath/Vector3.h
+CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/tf2/visibility_control.h
 CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/tf2_msgs/msg/detail/tf_message__builder.hpp
 CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/tf2_msgs/msg/detail/tf_message__struct.hpp
 CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o: /opt/ros/foxy/include/tf2_msgs/msg/detail/tf_message__traits.hpp

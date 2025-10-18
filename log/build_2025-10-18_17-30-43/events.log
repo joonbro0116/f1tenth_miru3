@@ -1,0 +1,119 @@
+[0.000000] (-) TimerEvent: {}
+[0.001253] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.002034] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.002658] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.002940] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.003086] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.003634] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.003826] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.004054] (-) JobUnselected: {'identifier': 'path_follow'}
+[0.004257] (-) JobUnselected: {'identifier': 'pure_pursuit'}
+[0.004383] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.004493] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.004598] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.004767] (-) JobUnselected: {'identifier': 'vesc'}
+[0.005677] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.006161] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.006305] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.006528] (map_controller) JobQueued: {'identifier': 'map_controller', 'dependencies': OrderedDict()}
+[0.006743] (map_controller) JobStarted: {'identifier': 'map_controller'}
+[0.098681] (-) TimerEvent: {}
+[0.199787] (-) TimerEvent: {}
+[0.300402] (-) TimerEvent: {}
+[0.400926] (-) TimerEvent: {}
+[0.501486] (-) TimerEvent: {}
+[0.602124] (-) TimerEvent: {}
+[0.702755] (-) TimerEvent: {}
+[0.803400] (-) TimerEvent: {}
+[0.903978] (-) TimerEvent: {}
+[1.004646] (-) TimerEvent: {}
+[1.105257] (-) TimerEvent: {}
+[1.205822] (-) TimerEvent: {}
+[1.306490] (-) TimerEvent: {}
+[1.407114] (-) TimerEvent: {}
+[1.508135] (-) TimerEvent: {}
+[1.609431] (-) TimerEvent: {}
+[1.710308] (-) TimerEvent: {}
+[1.810962] (-) TimerEvent: {}
+[1.911512] (-) TimerEvent: {}
+[2.012118] (-) TimerEvent: {}
+[2.112664] (-) TimerEvent: {}
+[2.213213] (-) TimerEvent: {}
+[2.313757] (-) TimerEvent: {}
+[2.414299] (-) TimerEvent: {}
+[2.514910] (-) TimerEvent: {}
+[2.615767] (-) TimerEvent: {}
+[2.716340] (-) TimerEvent: {}
+[2.816889] (-) TimerEvent: {}
+[2.917416] (-) TimerEvent: {}
+[3.017968] (-) TimerEvent: {}
+[3.118623] (-) TimerEvent: {}
+[3.219193] (-) TimerEvent: {}
+[3.319733] (-) TimerEvent: {}
+[3.420224] (-) TimerEvent: {}
+[3.520760] (-) TimerEvent: {}
+[3.621313] (-) TimerEvent: {}
+[3.721934] (-) TimerEvent: {}
+[3.774774] (map_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/f1/f1tenth_ws/build/map_controller/build', '--no-deps', 'symlink_data'], 'cwd': '/home/f1/f1tenth_ws/build/map_controller', 'env': {'VSCODE_CWD': '/home/f1', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'USER': 'f1', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_CLIENT': '172.16.75.183 54784 22', 'VSCODE_NLS_CONFIG': '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/f1/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/nls.messages.json","locale":"en","availableLanguages":{}}', 'CLAUDE_CODE_ENTRYPOINT': 'claude-vscode', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'GIT_EDITOR': 'true', 'XDG_SESSION_TYPE': 'tty', 'DEBUG': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'BROWSER': '/home/f1/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/helpers/browser.sh', 'HOME': '/home/f1', 'MOTD_SHOWN': 'pam', 'OLDPWD': '/home/f1/f1tenth_ws', 'LESS': '-R', 'CONDA_SHLVL': '0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1001/vscode-ipc-631f80f7-b27d-47c4-8e4b-15b5a961396c.sock', 'ZSH': '/home/f1/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ko_KR.UTF-8', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', 'VISUAL': 'nvim', '_CE_M': '', '_CONDA_ROOT': '/home/f1/miniconda3', '_colcon_cd_root': '/opt/ros/foxy/', 'NVM_DIR': '/home/f1/.nvm', 'ROS_DISTRO': 'foxy', 'APPLICATION_INSIGHTS_NO_STATSBEAT': 'true', 'VSCODE_L10N_BUNDLE_LOCATION': '', 'LOGNAME': 'f1', '_': '/usr/bin/colcon', 'VSCODE_HANDLES_SIGPIPE': 'true', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '4', 'VSCODE_CLI_REQUIRE_TOKEN': '0673e1ba-2796-44b0-a2eb-b007e343d71d', 'TERM': 'xterm-256color', 'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE': 'delta', 'ROS_LOCALHOST_ONLY': '0', '_CE_CONDA': '', 'PATH': '/home/f1/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/remote-cli:/home/f1/miniconda3/condabin:/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'a4', 'VSCODE_AGENT_FOLDER': '/home/f1/.vscode-server', 'XDG_RUNTIME_DIR': '/run/user/1001', 'LC_ADDRESS': 'ko_KR.UTF-8', 'COREPACK_ENABLE_AUTO_PIN': '0', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'NoDefaultCurrentDirectoryInExePath': '1', 'LS_COLORS': '', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'ROS_DOMAIN_ID': '73', 'CONDA_PYTHON_EXE': '/home/f1/miniconda3/bin/python', 'SHELL': '/usr/bin/zsh', 'LC_NAME': 'ko_KR.UTF-8', 'ELECTRON_RUN_AS_NODE': '1', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'CLAUDECODE': '1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', '_CONDA_EXE': '/home/f1/miniconda3/bin/conda', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/f1/f1tenth_ws/build/map_controller', 'SSH_CONNECTION': '172.16.75.183 54784 172.16.225.243 22', 'CONDA_EXE': '/home/f1/miniconda3/bin/conda', 'LC_NUMERIC': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/f1/f1tenth_ws/build/map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'EDITOR': 'nvim'}, 'shell': False}
+[3.822494] (-) TimerEvent: {}
+[3.923202] (-) TimerEvent: {}
+[4.023823] (-) TimerEvent: {}
+[4.124416] (-) TimerEvent: {}
+[4.225024] (-) TimerEvent: {}
+[4.325852] (-) TimerEvent: {}
+[4.426472] (-) TimerEvent: {}
+[4.527032] (-) TimerEvent: {}
+[4.627597] (-) TimerEvent: {}
+[4.728176] (-) TimerEvent: {}
+[4.828730] (-) TimerEvent: {}
+[4.929341] (-) TimerEvent: {}
+[5.029922] (-) TimerEvent: {}
+[5.130558] (-) TimerEvent: {}
+[5.132307] (map_controller) StdoutLine: {'line': b'running develop\n'}
+[5.230809] (-) TimerEvent: {}
+[5.331381] (-) TimerEvent: {}
+[5.431935] (-) TimerEvent: {}
+[5.532510] (-) TimerEvent: {}
+[5.633095] (-) TimerEvent: {}
+[5.733685] (-) TimerEvent: {}
+[5.834310] (-) TimerEvent: {}
+[5.934944] (-) TimerEvent: {}
+[6.005134] (map_controller) StdoutLine: {'line': b'running egg_info\n'}
+[6.005950] (map_controller) StdoutLine: {'line': b'creating map_controller.egg-info\n'}
+[6.007181] (map_controller) StdoutLine: {'line': b'writing map_controller.egg-info/PKG-INFO\n'}
+[6.008565] (map_controller) StdoutLine: {'line': b'writing dependency_links to map_controller.egg-info/dependency_links.txt\n'}
+[6.009051] (map_controller) StdoutLine: {'line': b'writing requirements to map_controller.egg-info/requires.txt\n'}
+[6.009500] (map_controller) StdoutLine: {'line': b'writing top-level names to map_controller.egg-info/top_level.txt\n'}
+[6.017699] (map_controller) StdoutLine: {'line': b"writing manifest file 'map_controller.egg-info/SOURCES.txt'\n"}
+[6.035131] (-) TimerEvent: {}
+[6.135672] (-) TimerEvent: {}
+[6.190759] (map_controller) StdoutLine: {'line': b"reading manifest file 'map_controller.egg-info/SOURCES.txt'\n"}
+[6.195295] (map_controller) StdoutLine: {'line': b"writing manifest file 'map_controller.egg-info/SOURCES.txt'\n"}
+[6.235874] (-) TimerEvent: {}
+[6.336529] (-) TimerEvent: {}
+[6.392197] (map_controller) StdoutLine: {'line': b'running build_ext\n'}
+[6.394145] (map_controller) StdoutLine: {'line': b'Creating /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/site.py\n'}
+[6.406764] (map_controller) StdoutLine: {'line': b'Creating /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map-controller.egg-link (link to .)\n'}
+[6.410510] (map_controller) StdoutLine: {'line': b'\n'}
+[6.413677] (map_controller) StdoutLine: {'line': b'Installed /home/f1/f1tenth_ws/build/map_controller\n'}
+[6.416767] (map_controller) StdoutLine: {'line': b'running symlink_data\n'}
+[6.417352] (map_controller) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/map_controller/share/ament_index\n'}
+[6.417827] (map_controller) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/map_controller/share/ament_index/resource_index\n'}
+[6.418290] (map_controller) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/map_controller/share/ament_index/resource_index/packages\n'}
+[6.419067] (map_controller) StdoutLine: {'line': b'symbolically linking /home/f1/f1tenth_ws/build/map_controller/resource/map_controller -> /home/f1/f1tenth_ws/install/map_controller/share/ament_index/resource_index/packages\n'}
+[6.419601] (map_controller) StdoutLine: {'line': b'symbolically linking /home/f1/f1tenth_ws/build/map_controller/package.xml -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller\n'}
+[6.420251] (map_controller) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/map_controller/share/map_controller/launch\n'}
+[6.420783] (map_controller) StdoutLine: {'line': b'symbolically linking /home/f1/f1tenth_ws/build/map_controller/launch/map_controller.launch.py -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/launch\n'}
+[6.421300] (map_controller) StdoutLine: {'line': b'symbolically linking /home/f1/f1tenth_ws/build/map_controller/launch/map_with_bound.launch.py -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/launch\n'}
+[6.421697] (map_controller) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/map_controller/share/map_controller/config\n'}
+[6.422105] (map_controller) StdoutLine: {'line': b'symbolically linking /home/f1/f1tenth_ws/build/map_controller/config/map_controller_params.yaml -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/config\n'}
+[6.422631] (map_controller) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/map_controller/share/map_controller/config/steering_lut\n'}
+[6.423042] (map_controller) StdoutLine: {'line': b'symbolically linking /home/f1/f1tenth_ws/build/map_controller/config/steering_lut/NUC2_pacejka_lookup_table.csv -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/config/steering_lut\n'}
+[6.423460] (map_controller) StdoutLine: {'line': b'creating /home/f1/f1tenth_ws/install/map_controller/lib/map_controller\n'}
+[6.423863] (map_controller) StdoutLine: {'line': b'symbolically linking /home/f1/f1tenth_ws/build/map_controller/scripts/map_controller -> /home/f1/f1tenth_ws/install/map_controller/lib/map_controller\n'}
+[6.436848] (-) TimerEvent: {}
+[6.537428] (-) TimerEvent: {}
+[6.543527] (map_controller) CommandEnded: {'returncode': 0}
+[6.638725] (-) TimerEvent: {}
+[6.650719] (map_controller) JobEnded: {'identifier': 'map_controller', 'rc': 0}
+[6.654918] (-) EventReactorShutdown: {}

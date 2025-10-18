@@ -1,0 +1,73 @@
+[0.000000] (-) TimerEvent: {}
+[0.000495] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.001219] (-) JobUnselected: {'identifier': 'center_follow_cpp'}
+[0.002415] (-) JobUnselected: {'identifier': 'f1tenth_slam_nav'}
+[0.002561] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.003228] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.003774] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.004091] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.004648] (-) JobUnselected: {'identifier': 'path_follow'}
+[0.004897] (-) JobUnselected: {'identifier': 'pygame_key_teleop'}
+[0.005040] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.005204] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.005436] (-) JobUnselected: {'identifier': 'vesc'}
+[0.005598] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.006558] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.006799] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.007173] (pure_pursuit) JobQueued: {'identifier': 'pure_pursuit', 'dependencies': OrderedDict()}
+[0.007431] (pure_pursuit) JobStarted: {'identifier': 'pure_pursuit'}
+[0.057802] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'cmake'}
+[0.065090] (pure_pursuit) Command: {'cmd': ['/usr/bin/cmake', '/home/f1/f1tenth_ws/src/pure_pursuit', '-DCMAKE_INSTALL_PREFIX=/home/f1/f1tenth_ws/install/pure_pursuit'], 'cwd': '/home/f1/f1tenth_ws/build/pure_pursuit', 'env': OrderedDict([('VSCODE_CWD', '/home/f1'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('USER', 'f1'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_CLIENT', '172.16.75.183 52950 22'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/f1/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/nls.messages.json","locale":"en","availableLanguages":{}}'), ('CLAUDE_CODE_ENTRYPOINT', 'claude-vscode'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('DEBUG', '1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/f1/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/helpers/browser.sh'), ('HOME', '/home/f1'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/f1/f1tenth_ws'), ('LESS', '-R'), ('CONDA_SHLVL', '0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1001/vscode-ipc-157132c0-dada-45b7-bfa5-2f0fc4aa420d.sock'), ('ZSH', '/home/f1/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('VISUAL', 'nvim'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/f1/miniconda3'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('NVM_DIR', '/home/f1/.nvm'), ('ROS_DISTRO', 'foxy'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('LOGNAME', 'f1'), ('_', '/usr/bin/colcon'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('VSCODE_CLI_REQUIRE_TOKEN', '9b00101e-7ed5-4d62-b93a-cce0dec651d4'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('ROS_LOCALHOST_ONLY', '0'), ('_CE_CONDA', ''), ('PATH', '/home/f1/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/remote-cli:/home/f1/miniconda3/condabin:/home/f1/.npm-global/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('VSCODE_AGENT_FOLDER', '/home/f1/.vscode-server'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ROS_DOMAIN_ID', '73'), ('CONDA_PYTHON_EXE', '/home/f1/miniconda3/bin/python'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('ELECTRON_RUN_AS_NODE', '1'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('CLAUDECODE', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('_CONDA_EXE', '/home/f1/miniconda3/bin/conda'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/f1/f1tenth_ws/build/pure_pursuit'), ('SSH_CONNECTION', '172.16.75.183 52950 172.16.225.243 22'), ('CONDA_EXE', '/home/f1/miniconda3/bin/conda'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('EDITOR', 'nvim'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.098693] (-) TimerEvent: {}
+[0.154745] (pure_pursuit) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.198851] (-) TimerEvent: {}
+[0.249226] (pure_pursuit) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /home/f1/miniconda3/bin/python3\n'}
+[0.299217] (-) TimerEvent: {}
+[0.399886] (-) TimerEvent: {}
+[0.500638] (-) TimerEvent: {}
+[0.601233] (-) TimerEvent: {}
+[0.701811] (-) TimerEvent: {}
+[0.802388] (-) TimerEvent: {}
+[0.903002] (-) TimerEvent: {}
+[1.003656] (-) TimerEvent: {}
+[1.047604] (pure_pursuit) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.088365] (pure_pursuit) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.103841] (-) TimerEvent: {}
+[1.205027] (-) TimerEvent: {}
+[1.267877] (pure_pursuit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.291310] (pure_pursuit) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.304914] (-) TimerEvent: {}
+[1.405573] (-) TimerEvent: {}
+[1.506203] (-) TimerEvent: {}
+[1.606835] (-) TimerEvent: {}
+[1.707455] (-) TimerEvent: {}
+[1.708989] (pure_pursuit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.807757] (-) TimerEvent: {}
+[1.908351] (-) TimerEvent: {}
+[1.952805] (pure_pursuit) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.960365] (pure_pursuit) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.008603] (-) TimerEvent: {}
+[2.109174] (-) TimerEvent: {}
+[2.209806] (-) TimerEvent: {}
+[2.310435] (-) TimerEvent: {}
+[2.411077] (-) TimerEvent: {}
+[2.511690] (-) TimerEvent: {}
+[2.611953] (pure_pursuit) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[2.612958] (-) TimerEvent: {}
+[2.713365] (-) TimerEvent: {}
+[2.761510] (pure_pursuit) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[2.813574] (-) TimerEvent: {}
+[2.914125] (-) TimerEvent: {}
+[3.014701] (-) TimerEvent: {}
+[3.061090] (pure_pursuit) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)\n'}
+[3.114916] (-) TimerEvent: {}
+[3.209625] (pure_pursuit) StdoutLine: {'line': b'-- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[3.215187] (-) TimerEvent: {}
+[3.253744] (pure_pursuit) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[3.315438] (-) TimerEvent: {}
+[3.416008] (-) TimerEvent: {}
+[3.516625] (-) TimerEvent: {}
+[3.617275] (-) TimerEvent: {}
+[3.718008] (-) TimerEvent: {}
+[3.818548] (-) TimerEvent: {}
+[3.919183] (-) TimerEvent: {}

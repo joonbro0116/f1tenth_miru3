@@ -1,0 +1,24 @@
+[0.864s] Invoking command in '/home/f1/f1tenth_ws/build/path_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_follow -- -j6 -l6
+[1.662s] [100%] Built target path_follow_node
+[2.933s] Invoked command in '/home/f1/f1tenth_ws/build/path_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_follow -- -j6 -l6
+[2.957s] Invoking command in '/home/f1/f1tenth_ws/build/path_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/path_follow
+[3.093s] -- Install configuration: "Release"
+[3.094s] -- Execute custom install script
+[3.095s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/lib/path_follow/path_follow_node
+[3.095s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/launch/path_follow_launch.py
+[3.096s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/ament_index/resource_index/package_run_dependencies/path_follow
+[3.096s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/ament_index/resource_index/parent_prefix_path/path_follow
+[3.097s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/environment/ament_prefix_path.sh
+[3.097s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/environment/ament_prefix_path.dsv
+[3.098s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/environment/path.sh
+[3.098s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/environment/path.dsv
+[3.099s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/local_setup.bash
+[3.099s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/local_setup.sh
+[3.100s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/local_setup.zsh
+[3.101s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/local_setup.dsv
+[3.101s] -- Symlinking: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/package.dsv
+[3.146s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/ament_index/resource_index/packages/path_follow
+[3.150s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/cmake/path_followConfig.cmake
+[3.153s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/cmake/path_followConfig-version.cmake
+[3.155s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/package.xml
+[3.224s] Invoked command in '/home/f1/f1tenth_ws/build/path_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/path_follow

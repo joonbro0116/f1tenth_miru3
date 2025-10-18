@@ -666,6 +666,12 @@ CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o
  /opt/ros/foxy/include/rosidl_typesupport_cpp/message_type_support.hpp
  /opt/ros/foxy/include/rosidl_typesupport_cpp/service_type_support.hpp
  /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
+ /opt/ros/foxy/include/sensor_msgs/msg/detail/imu__builder.hpp
+ /opt/ros/foxy/include/sensor_msgs/msg/detail/imu__struct.hpp
+ /opt/ros/foxy/include/sensor_msgs/msg/detail/imu__traits.hpp
+ /opt/ros/foxy/include/sensor_msgs/msg/detail/imu__type_support.hpp
+ /opt/ros/foxy/include/sensor_msgs/msg/imu.hpp
+ /opt/ros/foxy/include/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__builder.hpp
  /opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp
  /opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__traits.hpp
@@ -681,6 +687,13 @@ CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o
  /opt/ros/foxy/include/std_msgs/msg/detail/header__traits.hpp
  /opt/ros/foxy/include/std_msgs/msg/float64.hpp
  /opt/ros/foxy/include/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/foxy/include/tf2/LinearMath/Matrix3x3.h
+ /opt/ros/foxy/include/tf2/LinearMath/MinMax.h
+ /opt/ros/foxy/include/tf2/LinearMath/QuadWord.h
+ /opt/ros/foxy/include/tf2/LinearMath/Quaternion.h
+ /opt/ros/foxy/include/tf2/LinearMath/Scalar.h
+ /opt/ros/foxy/include/tf2/LinearMath/Vector3.h
+ /opt/ros/foxy/include/tf2/visibility_control.h
  /opt/ros/foxy/include/tf2_msgs/msg/detail/tf_message__builder.hpp
  /opt/ros/foxy/include/tf2_msgs/msg/detail/tf_message__struct.hpp
  /opt/ros/foxy/include/tf2_msgs/msg/detail/tf_message__traits.hpp

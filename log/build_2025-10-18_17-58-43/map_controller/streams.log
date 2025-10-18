@@ -1,0 +1,49 @@
+[4.882s] Invoking command in '/home/f1/f1tenth_ws/build/map_controller': PYTHONPATH=/home/f1/f1tenth_ws/build/map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/f1/f1tenth_ws/build/map_controller/build
+[6.459s] running develop
+[7.326s] Removing /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map-controller.egg-link (link to .)
+[7.495s] Invoked command in '/home/f1/f1tenth_ws/build/map_controller' returned '0': PYTHONPATH=/home/f1/f1tenth_ws/build/map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/f1/f1tenth_ws/build/map_controller/build
+[7.510s] Invoking command in '/home/f1/f1tenth_ws/src/map_controller': PYTHONPATH=/home/f1/f1tenth_ws/build/map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/map_controller build --build-base /home/f1/f1tenth_ws/build/map_controller/build install --record /home/f1/f1tenth_ws/build/map_controller/install.log --single-version-externally-managed install_data --force
+[9.050s] running egg_info
+[9.056s] writing ../../build/map_controller/map_controller.egg-info/PKG-INFO
+[9.060s] writing dependency_links to ../../build/map_controller/map_controller.egg-info/dependency_links.txt
+[9.064s] writing entry points to ../../build/map_controller/map_controller.egg-info/entry_points.txt
+[9.066s] writing requirements to ../../build/map_controller/map_controller.egg-info/requires.txt
+[9.069s] writing top-level names to ../../build/map_controller/map_controller.egg-info/top_level.txt
+[9.307s] reading manifest file '../../build/map_controller/map_controller.egg-info/SOURCES.txt'
+[9.323s] writing manifest file '../../build/map_controller/map_controller.egg-info/SOURCES.txt'
+[9.324s] running build
+[9.325s] running build_py
+[9.326s] creating /home/f1/f1tenth_ws/build/map_controller/build
+[9.326s] creating /home/f1/f1tenth_ws/build/map_controller/build/lib
+[9.326s] creating /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller
+[9.330s] copying map_controller/__init__.py -> /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller
+[9.334s] copying map_controller/controller_manager.py -> /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller
+[9.338s] copying map_controller/frenet_converter.py -> /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller
+[9.343s] copying map_controller/map_controller.py -> /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller
+[9.347s] copying map_controller/steering_lookup.py -> /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller
+[9.352s] running install
+[9.359s] running install_lib
+[9.371s] creating /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller
+[9.372s] copying /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller/__init__.py -> /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller
+[9.373s] copying /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller/controller_manager.py -> /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller
+[9.377s] copying /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller/frenet_converter.py -> /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller
+[9.382s] copying /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller/map_controller.py -> /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller
+[9.386s] copying /home/f1/f1tenth_ws/build/map_controller/build/lib/map_controller/steering_lookup.py -> /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller
+[9.392s] byte-compiling /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller/__init__.py to __init__.cpython-38.pyc
+[9.405s] byte-compiling /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller/controller_manager.py to controller_manager.cpython-38.pyc
+[9.431s] byte-compiling /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller/frenet_converter.py to frenet_converter.cpython-38.pyc
+[9.441s] byte-compiling /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller/map_controller.py to map_controller.cpython-38.pyc
+[9.455s] byte-compiling /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller/steering_lookup.py to steering_lookup.cpython-38.pyc
+[9.463s] running install_data
+[9.464s] copying resource/map_controller -> /home/f1/f1tenth_ws/install/map_controller/share/ament_index/resource_index/packages
+[9.465s] copying package.xml -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller
+[9.471s] copying launch/map_controller.launch.py -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/launch
+[9.473s] copying launch/map_with_bound.launch.py -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/launch
+[9.474s] copying config/map_controller_params.yaml -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/config
+[9.474s] copying config/steering_lut/NUC2_pacejka_lookup_table.csv -> /home/f1/f1tenth_ws/install/map_controller/share/map_controller/config/steering_lut
+[9.475s] running install_egg_info
+[9.486s] Copying ../../build/map_controller/map_controller.egg-info to /home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages/map_controller-1.0.0-py3.8.egg-info
+[9.503s] running install_scripts
+[9.630s] Installing map_controller script to /home/f1/f1tenth_ws/install/map_controller/lib/map_controller
+[9.631s] writing list of installed files to '/home/f1/f1tenth_ws/build/map_controller/install.log'
+[9.812s] Invoked command in '/home/f1/f1tenth_ws/src/map_controller' returned '0': PYTHONPATH=/home/f1/f1tenth_ws/build/map_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/f1/f1tenth_ws/install/map_controller/lib/python3.8/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/map_controller build --build-base /home/f1/f1tenth_ws/build/map_controller/build install --record /home/f1/f1tenth_ws/build/map_controller/install.log --single-version-externally-managed install_data --force

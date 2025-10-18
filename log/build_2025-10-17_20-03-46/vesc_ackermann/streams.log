@@ -1,0 +1,29 @@
+[2.109s] Invoking command in '/home/f1/f1tenth_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/f1/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/f1/f1tenth_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/f1/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/f1/f1tenth_ws/build/vesc_ackermann -- -j6 -l6
+[2.437s] -- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[2.740s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.880s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[6.633s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.674s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[7.660s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.974s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[9.984s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[13.093s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[13.200s] -- Added test 'copyright' to check source files copyright and LICENSE
+[13.209s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[13.210s] -- Configured cppcheck include dirs: /home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/include
+[13.212s] -- Configured cppcheck exclude dirs and/or files: 
+[13.220s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[13.220s] -- Configured cpplint exclude dirs and/or files: 
+[13.225s] -- Added test 'lint_cmake' to check CMake code style
+[13.236s] -- Added test 'uncrustify' to check C / C++ code style
+[13.236s] -- Configured uncrustify additional arguments: 
+[13.238s] -- Added test 'xmllint' to check XML markup files
+[13.288s] -- Configuring done
+[13.472s] -- Generating done
+[13.534s] -- Build files have been written to: /home/f1/f1tenth_ws/build/vesc_ackermann
+[13.853s] [ 28%] Built target ackermann_to_vesc_node
+[13.939s] [35m[1mScanning dependencies of target vesc_ackermann[0m
+[14.408s] [ 42%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o[0m
+[83.724s] [ 57%] [32m[1mLinking CXX shared library libvesc_ackermann.so[0m
+[84.889s] [ 71%] Built target vesc_ackermann
+[85.065s] [100%] Built target vesc_to_odom_node

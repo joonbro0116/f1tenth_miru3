@@ -1,0 +1,24 @@
+[2.836s] Invoking command in '/home/f1/f1tenth_ws/build/path_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/map_controller:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_follow -- -j6 -l6
+[3.475s] [100%] Built target path_follow_node
+[5.859s] Invoked command in '/home/f1/f1tenth_ws/build/path_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/map_controller:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy /usr/bin/cmake --build /home/f1/f1tenth_ws/build/path_follow -- -j6 -l6
+[5.919s] Invoking command in '/home/f1/f1tenth_ws/build/path_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/map_controller:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/path_follow
+[6.058s] -- Install configuration: "Release"
+[6.059s] -- Execute custom install script
+[6.063s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/lib/path_follow/path_follow_node
+[6.101s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/launch/path_follow_launch.py
+[6.102s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/ament_index/resource_index/package_run_dependencies/path_follow
+[6.116s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/ament_index/resource_index/parent_prefix_path/path_follow
+[6.123s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/environment/ament_prefix_path.sh
+[6.124s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/environment/ament_prefix_path.dsv
+[6.124s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/environment/path.sh
+[6.125s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/environment/path.dsv
+[6.136s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/local_setup.bash
+[6.137s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/local_setup.sh
+[6.138s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/local_setup.zsh
+[6.138s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/local_setup.dsv
+[6.141s] -- Symlinking: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/package.dsv
+[6.245s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/ament_index/resource_index/packages/path_follow
+[6.248s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/cmake/path_followConfig.cmake
+[6.252s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/cmake/path_followConfig-version.cmake
+[6.258s] -- Up-to-date symlink: /home/f1/f1tenth_ws/install/path_follow/share/path_follow/package.xml
+[6.299s] Invoked command in '/home/f1/f1tenth_ws/build/path_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/f1/f1tenth_ws/install/f1tenth_stack:/home/f1/f1tenth_ws/install/joy_teleop:/home/f1/f1tenth_ws/install/pygame_key_teleop:/home/f1/f1tenth_ws/install/mouse_teleop:/home/f1/f1tenth_ws/install/map_controller:/home/f1/f1tenth_ws/install/key_teleop:/home/f1/f1tenth_ws/install/f1tenth_path_planner:/opt/ros/foxy /usr/bin/cmake --install /home/f1/f1tenth_ws/build/path_follow

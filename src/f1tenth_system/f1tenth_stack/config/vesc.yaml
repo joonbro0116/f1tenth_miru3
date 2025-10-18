@@ -33,7 +33,9 @@ vesc_to_odom_node:
     # publish odom to base link tf
     publish_tf: true
     use_servo_cmd_to_calc_angular_velocity: true
-    # car wheelbase is about 
+    # Use IMU for yaw (true) or wheel odometry (false)
+    use_imu_yaw: true
+    # car wheelbase is about
     wheelbase: 0.32
 
 # No longer needed, all parameters are shared
