@@ -8,12 +8,12 @@
 
     # L1 Controller Parameters (from race_stack/forza, tuned for real car)
     # Lookahead distance clipping
-    t_clip_min: 1.0      # Minimum lookahead time [s] (conservative for real car)
-    t_clip_max: 2.0      # Maximum lookahead time [s] (increased for stability)
+    t_clip_min: 1.0      # Minimum lookahead time [s] (race_stack typical)
+    t_clip_max: 5.0      # Maximum lookahead time [s] (race_stack typical)
 
     # L1 lookahead calculation: L1 = q_l1 + m_l1 * speed
-    m_l1: 0.6            # Lookahead slope (adaptive to speed)
-    q_l1: 0.0            # Lookahead offset (increased for real car safety)
+    m_l1: 0.3            # Lookahead slope (race_stack typical)
+    q_l1: 0.15           # Lookahead offset (race_stack typical)
 
     # Speed lookahead for delay compensation
     speed_lookahead: 0.25              # Time lookahead for speed selection [s]
@@ -21,10 +21,13 @@
 
     # Lateral error speed reduction
     lat_err_coeff: 1.0   # Coefficient for speed reduction based on lateral error [0-1]
+    # Speed scaling toggles (bool)
+    use_lat_err_speed_scale: false
+    use_heading_speed_scale: false
 
     # Steering scaling based on acceleration
-    acc_scaler_for_steer: 1.2   # Increase steering when accelerating
-    dec_scaler_for_steer: 0.9   # Decrease steering when braking
+    acc_scaler_for_steer: 1.0   # Increase steering when accelerating
+    dec_scaler_for_steer: 1.0   # Decrease steering when braking
 
     # Steering scaling based on speed
     start_scale_speed: 7.0     # Speed where steering starts to scale down [m/s]
@@ -44,5 +47,7 @@
     use_odom_pose: false            # Fallback: use odom pose (SIM)
     use_amcl_pose: false            # Fallback: use AMCL topic
 
-    # Control loop rate
-    loop_rate_hz: 40.0
+    # Control loop rate and FF toggle
+    loop_rate_hz: 80.0
+    use_ff: true
+    ff_lookahead_time: 0.0   # seconds; 0.0 = no FF lookahead

@@ -3,6 +3,10 @@
 MAP Controller - Ported from race_stack to ROS2
 Original: https://github.com/ForzaETH/race_stack
 Minimal changes: only ROS2 compatibility, keeping all original logic intact
+
+한글 설명:
+race_stack의 MAP 컨트롤러를 ROS2로 포팅한 구현입니다.
+핵심 로직은 유지하고 ROS2 API에 맞춘 최소 변경만 적용했습니다.
 """
 
 import logging
@@ -13,6 +17,10 @@ from .steering_lookup import LookupSteerAngle
 class MAP_Controller:
     """This class implements a MAP controller for autonomous driving.
     Input and output topics are managed by the controller manager
+
+    한글 설명:
+    자율주행용 MAP 컨트롤러 구현입니다.
+    입출력 토픽 관리는 컨트롤러 매니저에서 수행합니다.
     """
 
     def __init__(self,
@@ -22,6 +30,8 @@ class MAP_Controller:
                 q_l1,
                 speed_lookahead,
                 lat_err_coeff,
+                use_lat_err_speed_scale,
+                use_heading_speed_scale,
                 acc_scaler_for_steer,
                 dec_scaler_for_steer,
                 start_scale_speed,
@@ -50,6 +60,8 @@ class MAP_Controller:
         self.q_l1 = q_l1
         self.speed_lookahead = speed_lookahead
         self.lat_err_coeff = lat_err_coeff
+        self.use_lat_err_speed_scale = use_lat_err_speed_scale
+        self.use_heading_speed_scale = use_heading_speed_scale
         self.acc_scaler_for_steer = acc_scaler_for_steer
         self.dec_scaler_for_steer = dec_scaler_for_steer
         self.start_scale_speed = start_scale_speed
@@ -149,16 +161,25 @@ class MAP_Controller:
         Returns:
             steering_angle: calculated steering angle
 
+        한글 설명:
+        L1 지점, 목표 횡가속, 속도를 이용해 조향각을 계산합니다.
 
+        입력:
+            L1_point: 차량 전방 L1 거리의 프레네 좌표 지점
+            L1_distance: 차량과 L1 지점 간 거리
+            yaw: 차량 요각
+            lat_e_norm: 정규화된 횡오차
+            v: 속도 벡터
+
+        반환:
+            steering_angle: 계산된 조향각
         """
         # lookahead for steer (steering delay incorporation by propagating position)
-        if self.state == "TRAILING" and (self.opponent is not None):
-            speed_la_for_lu = self.speed_now
-        else:
-            adv_ts_st = self.speed_lookahead_for_steer
-            la_position_steer = [self.position_in_map[0, 0] + v[0]*adv_ts_st, self.position_in_map[0, 1] + v[1]*adv_ts_st]
-            idx_la_steer = self.nearest_waypoint(la_position_steer, self.waypoint_array_in_map[:, :2])
-            speed_la_for_lu = self.waypoint_array_in_map[idx_la_steer, 2]
+        # Trailing disabled: always use lookahead-based speed for steering lookup
+        adv_ts_st = self.speed_lookahead_for_steer
+        la_position_steer = [self.position_in_map[0, 0] + v[0]*adv_ts_st, self.position_in_map[0, 1] + v[1]*adv_ts_st]
+        idx_la_steer = self.nearest_waypoint(la_position_steer, self.waypoint_array_in_map[:, :2])
+        speed_la_for_lu = self.waypoint_array_in_map[idx_la_steer, 2]
         speed_for_lu = self.speed_adjust_lat_err(speed_la_for_lu, lat_e_norm)
 
         L1_vector = np.array([L1_point[0] - self.position_in_map[0, 0], L1_point[1] - self.position_in_map[0, 1]])
@@ -201,6 +222,15 @@ class MAP_Controller:
         Returns:
             L1_point: point in frenet coordinates at L1 distance in front of the car
             L1_distance: distance of the L1 point to the car
+
+        한글 설명:
+        L1 지점과 그 거리를 계산합니다.
+
+        입력:
+            lateral_error: 최근접 웨이포인트까지 프레네 d(횡) 거리
+        반환:
+            L1_point: 차량 전방 L1 거리의 프레네 지점
+            L1_distance: L1 지점까지 거리
         """
 
         self.idx_nearest_waypoint = self.nearest_waypoint(
@@ -238,6 +268,15 @@ class MAP_Controller:
             curvature_waypoints: -
         Returns:
             speed_command: calculated and adjusted speed, which can be sent to mux
+
+        한글 설명:
+        속도 계산을 메인 루프와 분리하여 수행합니다.
+
+        입력:
+            v: 속도 벡터
+            lat_e_norm: 정규화된 횡오차
+        반환:
+            speed_command: 보정된 목표 속도
         """
 
         # lookahead for speed (speed delay incorporation by propagating position)
@@ -245,45 +284,23 @@ class MAP_Controller:
         la_position = [self.position_in_map[0, 0] + v[0]*adv_ts_sp, self.position_in_map[0, 1] + v[1]*adv_ts_sp]
         idx_la_position = self.nearest_waypoint(la_position, self.waypoint_array_in_map[:, :2])
         global_speed = self.waypoint_array_in_map[idx_la_position, 2]
-        if(self.state == "TRAILING" and (self.opponent is not None)): #Trailing controller
-            speed_command = self.trailing_controller(global_speed)
-        else:
-            self.trailing_speed = global_speed
-            self.i_gap = 0
-            speed_command = global_speed
+        # Trailing disabled: follow global speed directly
+        speed_command = global_speed
 
-        speed_command = self.speed_adjust_lat_err(speed_command, lat_e_norm)
+        if self.use_lat_err_speed_scale:
+            speed_command = self.speed_adjust_lat_err(speed_command, lat_e_norm)
+        if self.use_heading_speed_scale:
+            speed_command = self.speed_adjust_heading(speed_command)
 
         return speed_command
 
     def trailing_controller(self, global_speed):
+        """Deprecated: trailing disabled. Return global speed unmodified.
+
+        한글 설명:
+        사용 중지됨: 트레일링 기능 비활성화. 입력 속도를 그대로 반환합니다.
         """
-        Adjust the speed of the ego car to trail the opponent at a fixed distance
-        Inputs:
-            speed_command: velocity of global raceline
-            self.opponent: frenet s position and vs velocity of opponent
-            self.position_in_map_frenet: frenet s position and vs veloctz of ego car
-        Returns:
-            trailing_command: reference velocity for trailing
-        """
-
-        self.gap = (self.opponent[0] - self.position_in_map_frenet[0])%self.track_length # gap to opponent
-        self.gap_actual = self.gap
-        self.gap_should = self.trailing_gap
-        self.gap_error = self.gap_should - self.gap_actual
-        self.v_diff =  self.position_in_map_frenet[2] - self.opponent[2]
-        self.i_gap = np.clip(self.i_gap + self.gap_error/self.loop_rate, -10, 10)
-
-        p_value = self.gap_error * self.trailing_p_gain
-        d_value = self.v_diff * self.trailing_d_gain
-        i_value = self.i_gap * self.trailing_i_gain
-
-
-        self.trailing_command = np.clip(self.opponent[2] - p_value - i_value - d_value, 0, global_speed)
-        if not self.opponent[4] and self.gap_actual > self.gap_should:
-            self.trailing_command = max(self.blind_trailing_speed, self.trailing_command)
-
-        return self.trailing_command
+        return global_speed
 
 
     def distance(self, point1, point2):
@@ -297,6 +314,12 @@ class MAP_Controller:
 
         Returns:
             steer: scaled steering angle based on acceleration
+
+        한글 설명:
+        가감속에 따라 조향을 스케일링합니다(가속 시 증가, 감속 시 감소).
+
+        반환:
+            steer: 가감속 기준으로 보정된 조향각
         """
         if np.mean(self.acc_now) >= 1:
             steer *= self.acc_scaler_for_steer
@@ -311,6 +334,12 @@ class MAP_Controller:
 
         Returns:
             steer: scaled steering angle based on speed
+
+        한글 설명:
+        속도에 따라 조향을 스케일링합니다(고속일수록 조향 감소).
+
+        반환:
+            steer: 속도 기준으로 보정된 조향각
         """
         speed_diff = max(0.1,self.end_scale_speed-self.start_scale_speed) # to prevent division by zero
         factor = 1 - np.clip((speed - self.start_scale_speed)/(speed_diff), 0.0, 1.0) * self.downscale_factor
@@ -324,6 +353,13 @@ class MAP_Controller:
         Returns:
             lat_e_norm: normalization of the lateral error
             lateral_error: distance from car's position to nearest waypoint
+
+        한글 설명:
+        횡오차와 정규화된 횡오차(lat_e_norm)를 계산합니다.
+
+        반환:
+            lat_e_norm: 정규화된 횡오차
+            lateral_error: 최근접 웨이포인트까지의 횡 거리
         """
         # DONE rename function and adapt
         lateral_error = abs(self.position_in_map_frenet[1]) # frenet coordinates d
@@ -343,13 +379,19 @@ class MAP_Controller:
 
         Returns:
             global_speed: the speed we want to follow
-        """
-        # scaling down global speed with lateral error and curvature
-        # lat_e_coeff = self.lat_err_coeff # must be in [0, 1]
-        # lat_e_norm *= 2
-        # curv = np.clip(2*(np.mean(self.curvature_waypoints)/0.8) - 2, a_min = 0, a_max = 1) # 0.8 ca. max curvature mean
 
-        # global_speed *= (1 - lat_e_coeff + lat_e_coeff*np.exp(-lat_e_norm*curv))
+        한글 설명:
+        횡오차와 트랙 곡률에 따라 속도를 감소시킵니다.
+        lat_e_coeff(0~1)로 감소 정도를 조절합니다.
+
+        반환:
+            global_speed: 보정된 목표 속도
+        """
+        # race_stack와 동일한 형태로 횡오차/곡률 기반 속도 스케일링
+        lat_e_coeff = self.lat_err_coeff  # [0, 1]
+        lat_e_norm *= 2
+        curv = np.clip(2 * (np.mean(self.curvature_waypoints) / 0.8) - 2, a_min=0, a_max=1)
+        global_speed *= (1 - lat_e_coeff + lat_e_coeff * np.exp(-lat_e_norm * curv))
         return global_speed
 
     def speed_adjust_heading(self, speed_command):
@@ -360,6 +402,12 @@ class MAP_Controller:
 
         Returns:
             global_speed: the speed we want to follow
+
+        한글 설명:
+        헤딩 오차가 큰 경우(>20도) 속도를 선형으로 최대 0.5배까지 줄입니다.
+
+        반환:
+            global_speed: 보정된 속도 명령
         """
 
         heading = self.position_in_map[0,2]
@@ -384,6 +432,12 @@ class MAP_Controller:
 
         Returns:
             index of nearest waypoint to the car
+
+        한글 설명:
+        차량에서 가장 가까운 웨이포인트의 인덱스를 계산합니다.
+
+        반환:
+            최근접 웨이포인트 인덱스
         """
         position_array = np.array([position]*len(waypoints))
         distances_to_position = np.linalg.norm(abs(position_array - waypoints), axis=1)
@@ -395,6 +449,12 @@ class MAP_Controller:
 
         Returns:
             waypoint as numpy array at a ceratin distance in front of the car
+
+        한글 설명:
+        차량 전방 특정 프레네 거리만큼 떨어진 웨이포인트를 계산합니다.
+
+        반환:
+            해당 거리의 웨이포인트(NumPy 배열)
         """
         if distance is None:
             distance = self.t_clip_min
