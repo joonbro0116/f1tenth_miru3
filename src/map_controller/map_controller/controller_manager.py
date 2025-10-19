@@ -21,8 +21,8 @@ from ackermann_msgs.msg import AckermannDriveStamped
 from geometry_msgs.msg import PoseWithCovarianceStamped, PoseStamped, PoseArray, Pose
 from nav_msgs.msg import Odometry, Path
 from sensor_msgs.msg import Imu
-from std_msgs.msg import Float32
 from transforms3d.euler import quat2euler
+from std_msgs.msg import Float32
 from tf2_ros import TransformException, LookupException, ConnectivityException, ExtrapolationException, Buffer, TransformListener
 import csv
 
@@ -51,7 +51,7 @@ class LongitudinalController:
         self.prev_error = 0.0
         self.prev_v_ref = None
 
-    def step(self, v_ref, v_meas, a_ff=None, use_ff=True):
+    def step(self, v_ref, v_meas, a_ff=None):
         # Prefer externally supplied feedforward acceleration; fallback to time-difference estimate
         if a_ff is None:
             if self.prev_v_ref is None:
@@ -63,11 +63,7 @@ class LongitudinalController:
         self.integral += error * self.dt
         derivative = (error - self.prev_error) / max(self.dt, 1e-6)
 
-        # Optionally disable feedforward path entirely
-        if use_ff:
-            u_ff = self.ff_acc_gain * a_ff + self.ff_vel_gain * v_ref
-        else:
-            u_ff = 0.0
+        u_ff = self.ff_acc_gain * a_ff + self.ff_vel_gain * v_ref
         u_fb = self.kp * error + self.ki * self.integral + self.kd * derivative
 
         cmd = u_ff + u_fb
@@ -148,12 +144,12 @@ class ControllerManager(Node):
             downscale_factor=self.downscale_factor,
             speed_lookahead_for_steer=self.speed_lookahead_for_steer,
 
-            prioritize_dyn=self.prioritize_dyn,
-            trailing_gap=self.trailing_gap,
-            trailing_p_gain=self.trailing_p_gain,
-            trailing_i_gain=self.trailing_i_gain,
-            trailing_d_gain=self.trailing_d_gain,
-            blind_trailing_speed=self.blind_trailing_speed,
+            prioritize_dyn=False,  # No opponent tracking
+            trailing_gap=0.0,
+            trailing_p_gain=0.0,
+            trailing_i_gain=0.0,
+            trailing_d_gain=0.0,
+            blind_trailing_speed=0.0,
 
             loop_rate=self.loop_rate,
             LUT_name=self.LUT_name,
@@ -244,16 +240,17 @@ class ControllerManager(Node):
         # CSV file path
         self.declare_parameter('csv_file_path', '')
 
-        # L1 controller parameters (matching race_stack)
+        # L1 controller parameters (Forza-aligned defaults)
         self.declare_parameter('t_clip_min', 1.0)
         self.declare_parameter('t_clip_max', 5.0)
         self.declare_parameter('m_l1', 0.3)
         self.declare_parameter('q_l1', 0.15)
-        self.declare_parameter('speed_lookahead', 0.20)
+        self.declare_parameter('speed_lookahead', 0.25)
         self.declare_parameter('lat_err_coeff', 1.0)
         # Speed scaling toggles (default OFF)
         self.declare_parameter('use_lat_err_speed_scale', False)
         self.declare_parameter('use_heading_speed_scale', False)
+        # Steering scaling defaults
         self.declare_parameter('acc_scaler_for_steer', 1.0)
         self.declare_parameter('dec_scaler_for_steer', 1.0)
         self.declare_parameter('start_scale_speed', 7.0)
@@ -264,20 +261,10 @@ class ControllerManager(Node):
         # Steering lookup table name
         self.declare_parameter('steering_lut', '')  # Empty = use kinematic fallback
 
-        # Loop rate
+        # Loop rate and FF toggles
         self.declare_parameter('loop_rate_hz', 80.0)  # 12.5 ms period
-        # Longitudinal feedforward toggle (default ON)
         self.declare_parameter('use_ff', True)
-        # Feedforward lookahead time for a_ff sampling (seconds)
         self.declare_parameter('ff_lookahead_time', 0.0)
-
-        # Trailing / dynamic behavior (from race_stack)
-        self.declare_parameter('prioritize_dyn', False)
-        self.declare_parameter('trailing_gap', 3.0)
-        self.declare_parameter('trailing_p_gain', 0.2)
-        self.declare_parameter('trailing_i_gain', 0.0)
-        self.declare_parameter('trailing_d_gain', 0.0)
-        self.declare_parameter('blind_trailing_speed', 1.5)
 
         # Real car settings: TF for real-time localization (like pure_pursuit)
         self.declare_parameter('use_tf_for_localization', True)  # True = use TF (REAL CAR)
@@ -303,10 +290,10 @@ class ControllerManager(Node):
         self.declare_parameter('long_min_speed', 0.0)
         self.declare_parameter('long_max_speed', 15.0)
         # Rate limit (conservative defaults)
-        self.declare_parameter('long_a_max', 1.2)   # [m/s^2] max accel
-        self.declare_parameter('long_d_max', 2.0)   # [m/s^2] max decel (positive number)
+        self.declare_parameter('long_a_max', 1.5)   # [m/s^2] max accel
+        self.declare_parameter('long_d_max', 2.5)   # [m/s^2] max decel (positive number)
         # Feedforward clamp to avoid spikes from noisy dv/ds
-        self.declare_parameter('long_ff_a_limit', 2.0)  # [m/s^2]
+        self.declare_parameter('long_ff_a_limit', 3.0)  # [m/s^2]
 
     def load_parameters(self):
         """Load all parameters from ROS2 parameter server"""
@@ -325,13 +312,22 @@ class ControllerManager(Node):
         self.downscale_factor = self.get_parameter('downscale_factor').value
         self.speed_lookahead_for_steer = self.get_parameter('speed_lookahead_for_steer').value
         # Speed scaling toggles
-        self.use_lat_err_speed_scale = bool(self.get_parameter('use_lat_err_speed_scale').value)
-        self.use_heading_speed_scale = bool(self.get_parameter('use_heading_speed_scale').value)
+        try:
+            self.use_lat_err_speed_scale = bool(self.get_parameter('use_lat_err_speed_scale').value)
+            self.use_heading_speed_scale = bool(self.get_parameter('use_heading_speed_scale').value)
+        except Exception:
+            self.use_lat_err_speed_scale = False
+            self.use_heading_speed_scale = False
 
         self.LUT_name = self.get_parameter('steering_lut').value
         self.loop_rate = self.get_parameter('loop_rate_hz').value
-        self.use_ff = bool(self.get_parameter('use_ff').value)
-        self.ff_lookahead_time = self.get_parameter('ff_lookahead_time').value
+        # FF toggles
+        try:
+            self.use_ff = bool(self.get_parameter('use_ff').value)
+            self.ff_lookahead_time = self.get_parameter('ff_lookahead_time').value
+        except Exception:
+            self.use_ff = True
+            self.ff_lookahead_time = 0.0
 
         # TF localization parameters
         self.use_tf_for_localization = bool(self.get_parameter('use_tf_for_localization').value)
@@ -347,14 +343,6 @@ class ControllerManager(Node):
         self.amcl_topic = self.get_parameter('amcl_topic').value
         self.imu_topic = self.get_parameter('imu_topic').value
         self.drive_topic = self.get_parameter('drive_topic').value
-
-        # Trailing / dynamic behavior (race_stack)
-        self.prioritize_dyn = bool(self.get_parameter('prioritize_dyn').value)
-        self.trailing_gap = float(self.get_parameter('trailing_gap').value)
-        self.trailing_p_gain = float(self.get_parameter('trailing_p_gain').value)
-        self.trailing_i_gain = float(self.get_parameter('trailing_i_gain').value)
-        self.trailing_d_gain = float(self.get_parameter('trailing_d_gain').value)
-        self.blind_trailing_speed = float(self.get_parameter('blind_trailing_speed').value)
 
         # Longitudinal controller
         self.long_kp = float(self.get_parameter('long_kp').value)
@@ -756,7 +744,7 @@ class ControllerManager(Node):
 
         try:
             # Call MAP controller main_loop (matching race_stack API)
-            speed_ref, acceleration, jerk, steering_angle, L1_point, L1_distance, idx_nearest = \
+            speed, acceleration, jerk, steering_angle, L1_point, L1_distance, idx_nearest = \
                 self.map_controller.main_loop(
                     state=self.state,
                     position_in_map=self.position_in_map,
@@ -771,7 +759,7 @@ class ControllerManager(Node):
             # Debug output
             self.get_logger().info(
                 f"Control: pos=({self.position_in_map[0,0]:.2f},{self.position_in_map[0,1]:.2f}), "
-                f"speed_ref={speed_ref:.2f}, steer={steering_angle:.3f}, frenet=({self.position_in_map_frenet[0]:.2f},{self.position_in_map_frenet[1]:.2f})",
+                f"speed={speed:.2f}, steer={steering_angle:.3f}, frenet=({self.position_in_map_frenet[0]:.2f},{self.position_in_map_frenet[1]:.2f})",
                 throttle_duration_sec=1.0
             )
 
@@ -779,13 +767,13 @@ class ControllerManager(Node):
             ack_msg = AckermannDriveStamped()
             ack_msg.header.stamp = self.get_clock().now().to_msg()
             ack_msg.header.frame_id = 'base_link'
-            # speed will be set after PID+FF and rate limit
+            ack_msg.drive.speed = float(speed)
             ack_msg.drive.acceleration = float(acceleration)
             ack_msg.drive.jerk = float(jerk)
             ack_msg.drive.steering_angle = float(steering_angle)
 
             # Apply longitudinal controller (PID + feedforward)
-            v_ref = max(speed_ref, 0.0)
+            v_ref = max(speed, 0.0)
             v_meas = max(self.speed_now, 0.0)
 
             # Feedforward acceleration from profile a = v * dv/ds (precomputed at waypoints[:,7])
@@ -794,8 +782,7 @@ class ControllerManager(Node):
                 if self.has_waypoints and self.track_length > 0.0:
                     s_curr = float(self.position_in_map_frenet[0])
                     vs = float(self.position_in_map_frenet[2])
-                    # Use dedicated FF lookahead time (seconds)
-                    s_la = s_curr + vs * float(self.ff_lookahead_time)
+                    s_la = s_curr + vs * self.speed_lookahead
                     # wrap-around track length
                     s_la = s_la % self.track_length
                     s_col = self.waypoint_array_in_map[:, 4]
@@ -810,7 +797,7 @@ class ControllerManager(Node):
             if a_ff is not None:
                 a_ff = float(np.clip(a_ff, -self.long_ff_a_limit, self.long_ff_a_limit))
 
-            speed_cmd = self.longitudinal_ctrl.step(v_ref, v_meas, a_ff=a_ff, use_ff=self.use_ff)
+            speed = self.longitudinal_ctrl.step(v_ref, v_meas, a_ff=a_ff)
 
             # Apply conservative rate limiting on commanded speed
             now = self.get_clock().now()
@@ -823,13 +810,13 @@ class ControllerManager(Node):
             v_prev_cmd = self._last_cmd_speed if self._last_cmd_speed is not None else v_meas
             v_min = v_prev_cmd - self.long_d_max * dt_rl
             v_max = v_prev_cmd + self.long_a_max * dt_rl
-            speed_cmd = float(np.clip(speed_cmd, v_min, v_max))
+            speed = float(np.clip(speed, v_min, v_max))
 
             # Update rate limiter state
-            self._last_cmd_speed = speed_cmd
+            self._last_cmd_speed = speed
             self._last_cmd_time = now
 
-            ack_msg.drive.speed = float(speed_cmd)
+            ack_msg.drive.speed = float(speed)
 
             self.drive_pub.publish(ack_msg)
 
