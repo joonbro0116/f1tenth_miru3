@@ -34,6 +34,7 @@ class FrenetConverter:
             prev_wpnt_x = wpnt_x
             prev_wpnt_y = wpnt_y
             self.waypoints_s.append(self.waypoints_s[-1] + dist)
+        self.waypoints_s = np.array(self.waypoints_s)
         self.spline_x = CubicSpline(self.waypoints_s, self.waypoints_x)
         self.spline_y = CubicSpline(self.waypoints_s, self.waypoints_y)
         self.raceline_length = self.waypoints_s[-1]
@@ -73,7 +74,9 @@ class FrenetConverter:
         """
         if self.waypoints_psi is None:
             raise ValueError("FRENET CONVERTER: waypoints_psi is None, provide psi to use frenet velocities when initializing the converter.")
-        s_idx = int(s / self.waypoints_distance_m)
+        s_wrapped = np.mod(s, self.raceline_length)
+        s_idx = np.searchsorted(self.waypoints_s, s_wrapped, side='right') - 1
+        s_idx = np.clip(s_idx, 0, len(self.waypoints_psi) - 1)
         delta_psi = theta - self.waypoints_psi[s_idx]
         s_dot = vx * np.cos(delta_psi) - vy * np.sin(delta_psi)
         d_dot = vx * np.sin(delta_psi) + vy * np.cos(delta_psi)
