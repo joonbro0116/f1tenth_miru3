@@ -1,1 +1,0 @@
-/home/f1/f1tenth_ws/src/f1tenth_system/ackermann_mux/include/ackermann_mux/topic_handle.hpp

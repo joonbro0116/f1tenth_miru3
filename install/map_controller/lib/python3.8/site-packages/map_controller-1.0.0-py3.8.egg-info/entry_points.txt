@@ -1,3 +1,0 @@
-[console_scripts]
-map_controller = map_controller.controller_manager:main
-

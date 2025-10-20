@@ -1,1 +1,0 @@
-/home/f1/f1tenth_ws/build/center_follow_cpp/ament_cmake_environment_hooks/local_setup.zsh

@@ -1,1 +1,0 @@
-/home/f1/f1tenth_ws/src/real_pure_pursuit/launch/real_autonomous_driving.launch.py

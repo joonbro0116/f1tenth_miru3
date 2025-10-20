@@ -1,1 +1,0 @@
-/home/f1/f1tenth_ws/src/f1tenth_system/vesc/vesc_driver/include/vesc_driver/vesc_packet.hpp

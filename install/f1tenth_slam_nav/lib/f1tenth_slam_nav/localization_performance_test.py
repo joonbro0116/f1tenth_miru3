@@ -1,1 +1,0 @@
-/home/f1/f1tenth_ws/src/f1tenth_slam_nav/scripts/localization_performance_test.py

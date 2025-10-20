@@ -1,4 +1,0 @@
-[01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:[m[K In member function ‘[01m[Kvoid MinCurvaturePlanner::analyzeMapData()[m[K’:
-[01m[K/home/f1/f1tenth_ws/src/path_planner/src/min_curvature_planner.cpp:102:26:[m[K [01;35m[Kwarning: [m[Kstructured bindings only available with ‘[01m[K-std=c++17[m[K’ or ‘[01m[K-std=gnu++17[m[K’
-  102 |         for (const auto& [01;35m[K[[m[Kvalue, count] : value_counts) {
-      |                          [01;35m[K^[m[K

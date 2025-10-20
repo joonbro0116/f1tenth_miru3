@@ -1,1 +1,0 @@
-/home/f1/f1tenth_ws/src/pure_pursuit/launch/pure_pursuit_launch.py

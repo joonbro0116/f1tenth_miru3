@@ -1,1 +1,0 @@
-/home/f1/f1tenth_ws/src/f1tenth_system/teleop_tools/joy_teleop/setup.py

@@ -1,1 +1,0 @@
-/home/f1/f1tenth_ws/build/vesc_ackermann/ament_cmake_core/vesc_ackermannConfig.cmake
